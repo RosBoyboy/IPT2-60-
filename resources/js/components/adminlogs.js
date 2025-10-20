@@ -22,6 +22,9 @@ export default function AdminLogs() {
         <div className="sfms-login-page">
             <div className="login-card">
                 <div className="brand">
+                    <div className="login-logo">
+                        <img src="/img/sfms-logo2.png" alt="SFMS Logo" />
+                    </div>
                     <h2>SFMS Management System</h2>
                     <p>Student & Faculty Management</p>
                 </div>
