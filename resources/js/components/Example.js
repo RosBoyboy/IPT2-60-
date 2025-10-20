@@ -248,7 +248,8 @@ export default function Dashboard() {
             <aside className="sfms-sidebar">
                 <div className="sidebar-brand">
                     <div className="logo">
-                        <img src="./images/sfms-logo2.png" alt="SFMS Logo" />
+                        {/* Load from public/img so the file served by the webserver is used */}
+                        <img src="/img/sfms-logo2.png" alt="SFMS Logo" />
                     </div>
                     <div className="brand-text">Profile System</div>
                 </div>

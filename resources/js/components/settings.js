@@ -35,7 +35,7 @@ export default function SettingsPage() {
         'Business Administration Program',
         'Arts & Sciences Program',
         'Engineering Program',
-        'Teachers Eductation Program',
+        'Teachers Education Program',
         'Accountancy Program',
         'Nursing Program',
         'Criminal Justice Program',
@@ -46,6 +46,19 @@ export default function SettingsPage() {
         '2023-2024',
         '2024-2025', 
         '2025-2026'
+    ];
+
+    // Default courses to match Student page
+    const defaultCourses = [
+        'Computer Science',
+        'Business Administration',
+        'Arts & Sciences',
+        'Engineering',
+        'Teachers Education',
+        'Accountancy',
+        'Nursing',
+        'Criminal Justice',
+        'Tourism Management'
     ];
 
     function logout() {
@@ -126,12 +139,12 @@ export default function SettingsPage() {
                 saveToLocalStorage('sfms_departments', initialDepartments);
             }
 
-            // Courses (keep behaviour as before — reuse defaultDepartments)
+            // Courses - use defaultCourses so it matches Student page
             const savedCourses = localStorage.getItem('sfms_courses');
             if (savedCourses) {
                 setCourses(JSON.parse(savedCourses));
             } else {
-                const initialCourses = defaultDepartments.map((name, index) => ({
+                const initialCourses = defaultCourses.map((name, index) => ({
                     id: index + 1,
                     name: name,
                     status: 'ACTIVE',
@@ -411,7 +424,7 @@ export default function SettingsPage() {
             <aside className="sfms-sidebar">
                 <div className="sidebar-brand">
                     <div className="logo">
-                        <img src="Screenshot 2025-10-13 010627.png" alt="SFMS Logo" />
+                        <img src="/img/sfms-logo2.png" alt="SFMS Logo" />
                     </div>
                     <div className="brand-text">Profile System</div>
                 </div>
@@ -607,46 +620,49 @@ export default function SettingsPage() {
                                                 </tr>
                                             </thead>
                                             <tbody>
-                                                {courses.map((course) => (
-                                                    <tr key={course.id}>
-                                                        <td className="fw-semibold">{course.name}</td>
-                                                        <td>
-                                                            {course.isDefault ? (
-                                                                <span className="badge badge-info">Default</span>
-                                                            ) : (
-                                                                <span className="badge badge-secondary">Custom</span>
-                                                            )}
-                                                        </td>
-                                                        <td>
-                                                            <span className={`badge ${course.status === 'ACTIVE' ? 'badge-active' : 'badge-inactive'}`}>
-                                                                {course.status}
-                                                            </span>
-                                                        </td>
-                                                        <td>
-                                                            <button 
-                                                                className="btn btn-sm btn-outline-primary me-2"
-                                                                onClick={() => handleEdit(course)}
-                                                                disabled={course.isDefault}
-                                                            >
-                                                                Edit
-                                                            </button>
-                                                            <button 
-                                                                className="btn btn-sm btn-outline-secondary me-2"
-                                                                onClick={() => toggleStatus(course)}
-                                                                disabled={course.isDefault}
-                                                            >
-                                                                {course.status === 'ACTIVE' ? 'Deactivate' : 'Activate'}
-                                                            </button>
-                                                            <button 
-                                                                className="btn btn-sm btn-outline-danger"
-                                                                onClick={() => handleDelete(course)}
-                                                                disabled={course.isDefault}
-                                                            >
-                                                                Delete
-                                                            </button>
-                                                        </td>
-                                                    </tr>
-                                                ))}
+                                                {courses.map((course) => {
+                                                    const displayName = course.name.replace(' Program', '');
+                                                    return (
+                                                        <tr key={course.id}>
+                                                            <td className="fw-semibold">{displayName}</td>
+                                                            <td>
+                                                                {course.isDefault ? (
+                                                                    <span className="badge badge-info">Default</span>
+                                                                ) : (
+                                                                    <span className="badge badge-secondary">Custom</span>
+                                                                )}
+                                                            </td>
+                                                            <td>
+                                                                <span className={`badge ${course.status === 'ACTIVE' ? 'badge-active' : 'badge-inactive'}`}>
+                                                                    {course.status}
+                                                                </span>
+                                                            </td>
+                                                            <td>
+                                                                <button 
+                                                                    className="btn btn-sm btn-outline-primary me-2"
+                                                                    onClick={() => handleEdit(course)}
+                                                                    disabled={course.isDefault}
+                                                                >
+                                                                    Edit
+                                                                </button>
+                                                                <button 
+                                                                    className="btn btn-sm btn-outline-secondary me-2"
+                                                                    onClick={() => toggleStatus(course)}
+                                                                    disabled={course.isDefault}
+                                                                >
+                                                                    {course.status === 'ACTIVE' ? 'Deactivate' : 'Activate'}
+                                                                </button>
+                                                                <button 
+                                                                    className="btn btn-sm btn-outline-danger"
+                                                                    onClick={() => handleDelete(course)}
+                                                                    disabled={course.isDefault}
+                                                                >
+                                                                    Delete
+                                                                </button>
+                                                            </td>
+                                                        </tr>
+                                                    );
+                                                })}
                                             </tbody>
                                         </table>
                                     ) : (
@@ -831,7 +847,7 @@ export default function SettingsPage() {
                                                             value={courseFormData.name}
                                                             onChange={handleCourseInputChange}
                                                             required
-                                                            placeholder="e.g., Computer Science Program"
+                                                            placeholder="e.g., Computer Science"
                                                         />
                                                         <div className="form-text">
                                                             This will appear in the "Course" dropdown when adding students.

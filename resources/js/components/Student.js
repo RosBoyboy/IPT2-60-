@@ -87,16 +87,13 @@ export default function StudentPage() {
             setCourses([
                 'Computer Science',
                 'Business Administration',
-                'Arts & Humanities',
+                'Arts & Sciences',
                 'Engineering',
-                'Mathematics',
-                'Physics',
-                'Chemistry',
-                'Biology',
-                'Psychology',
-                'Economics',
-                'Political Science',
-                'Sociology'
+                'Teachers Education',
+                'Accountancy',
+                'Nursing',
+                'Criminal Justice',
+                'Tourism Management'
             ]);
         }
 
@@ -478,7 +475,7 @@ export default function StudentPage() {
             <aside className="sfms-sidebar">
                 <div className="sidebar-brand">
                     <div className="logo">
-                        <img src="Screenshot 2025-10-13 010627.png" alt="SFMS Logo" />
+                        <img src="/img/sfms-logo2.png" alt="SFMS Logo" />
                     </div>
                     <div className="brand-text">Profile System</div>
                 </div>
@@ -529,9 +526,12 @@ export default function StudentPage() {
                                     onChange={handleFilterChange}
                                 >
                                     <option value="">All Courses</option>
-                                    {courses.map(course => (
-                                        <option key={course} value={course}>{course}</option>
-                                    ))}
+                                    {courses.map(course => {
+                                        const displayName = course.replace(' Program', '');
+                                        return (
+                                            <option key={course} value={course}>{displayName}</option>
+                                        );
+                                    })}
                                 </select>
                             </div>
                             <div className="col-md-2">
@@ -607,49 +607,54 @@ export default function StudentPage() {
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    {studentData.map((student) => (
-                                        <tr key={student.id}>
-                                            <td className="fw-semibold">{student.student_number}</td>
-                                            <td>
-                                                <div className="d-flex align-items-center">
-                                                    <div className="avatar-sm bg-light rounded-circle d-flex align-items-center justify-content-center me-3">
-                                                        <span className="text-muted">
-                                                            {student.name.split(' ').map(n => n[0]).join('')}
-                                                        </span>
+                                    {studentData.map((student) => {
+                                        const displayCourse = student.course.replace(' Program', '');
+                                        return (
+                                            <tr key={student.id}>
+                                                <td className="fw-semibold">{student.student_number}</td>
+                                                <td>
+                                                    <div className="d-flex align-items-center">
+                                                        <div className="avatar-sm bg-light rounded-circle d-flex align-items-center justify-content-center me-3">
+                                                            <span className="text-muted">
+                                                                {student.name.split(' ').map(n => n[0]).join('')}
+                                                            </span>
+                                                        </div>
+                                                        <div>
+                                                            <div className="fw-semibold">{student.name}</div>
+                                                        </div>
                                                     </div>
-                                                    <div>
-                                                        <div className="fw-semibold">{student.name}</div>
+                                                </td>
+                                                <td>{displayCourse}</td>
+                                                <td>{student.year_level}</td>
+                                                <td>{student.academic_year}</td>
+                                                <td>{student.email}</td>
+                                                <td>{student.contact}</td>
+                                                <td>
+                                                    {student.status === 'ACTIVE' ? (
+                                                        <span className="badge-active">Active</span>
+                                                    ) : (
+                                                        <span className="badge-inactive">Inactive</span>
+                                                    )}
+                                                </td>
+                                                <td>
+                                                    <div className="action-buttons">
+                                                        <button 
+                                                            className="btn btn-sm btn-outline-primary"
+                                                            onClick={() => handleEdit(student)}
+                                                        >
+                                                            Edit
+                                                        </button>
+                                                        <button 
+                                                            className="btn btn-sm btn-outline-danger"
+                                                            onClick={() => handleDelete(student)}
+                                                        >
+                                                            Delete
+                                                        </button>
                                                     </div>
-                                                </div>
-                                            </td>
-                                            <td>{student.course}</td>
-                                            <td>{student.year_level}</td>
-                                            <td>{student.academic_year}</td>
-                                            <td>{student.email}</td>
-                                            <td>{student.contact}</td>
-                                            <td>
-                                                {student.status === 'ACTIVE' ? (
-                                                    <span className="badge-active">Active</span>
-                                                ) : (
-                                                    <span className="badge-inactive">Inactive</span>
-                                                )}
-                                            </td>
-                                            <td>
-                                                <button 
-                                                    className="btn btn-sm btn-outline-primary me-2"
-                                                    onClick={() => handleEdit(student)}
-                                                >
-                                                    Edit
-                                                </button>
-                                                <button 
-                                                    className="btn btn-sm btn-outline-danger"
-                                                    onClick={() => handleDelete(student)}
-                                                >
-                                                    Delete
-                                                </button>
-                                            </td>
-                                        </tr>
-                                    ))}
+                                                </td>
+                                            </tr>
+                                        );
+                                    })}
                                 </tbody>
                             </table>
                         ) : (
@@ -739,9 +744,12 @@ export default function StudentPage() {
                                                         required
                                                     >
                                                         <option value="">Select Course</option>
-                                                        {courses.map(course => (
-                                                            <option key={course} value={course}>{course}</option>
-                                                        ))}
+                                                        {courses.map(course => {
+                                                            const displayName = course.replace(' Program', '');
+                                                            return (
+                                                                <option key={course} value={course}>{displayName}</option>
+                                                            );
+                                                        })}
                                                     </select>
                                                 </div>
                                                 <div className="col-md-6">
@@ -914,9 +922,12 @@ export default function StudentPage() {
                                                     onChange={handleArchiveFilterChange}
                                                 >
                                                     <option value="">All Courses</option>
-                                                    {courses.map(course => (
-                                                        <option key={course} value={course}>{course}</option>
-                                                    ))}
+                                                    {courses.map(course => {
+                                                        const displayName = course.replace(' Program', '');
+                                                        return (
+                                                            <option key={course} value={course}>{displayName}</option>
+                                                        );
+                                                    })}
                                                 </select>
                                             </div>
                                             <div className="col-md-6">
@@ -962,48 +973,51 @@ export default function StudentPage() {
                                                     </tr>
                                                 </thead>
                                                 <tbody>
-                                                    {archivedData.map((student) => (
-                                                        <tr key={student.id}>
-                                                            <td className="fw-semibold">{student.student_number}</td>
-                                                            <td>
-                                                                <div className="d-flex align-items-center">
-                                                                    <div className="avatar-sm bg-light rounded-circle d-flex align-items-center justify-content-center me-3">
-                                                                        <span className="text-muted">
-                                                                            {student.name.split(' ').map(n => n[0]).join('')}
-                                                                        </span>
+                                                    {archivedData.map((student) => {
+                                                        const displayCourse = student.course.replace(' Program', '');
+                                                        return (
+                                                            <tr key={student.id}>
+                                                                <td className="fw-semibold">{student.student_number}</td>
+                                                                <td>
+                                                                    <div className="d-flex align-items-center">
+                                                                        <div className="avatar-sm bg-light rounded-circle d-flex align-items-center justify-content-center me-3">
+                                                                            <span className="text-muted">
+                                                                                {student.name.split(' ').map(n => n[0]).join('')}
+                                                                            </span>
+                                                                        </div>
+                                                                        <div>
+                                                                            <div className="fw-semibold">{student.name}</div>
+                                                                            <div className="text-muted small">{student.email}</div>
+                                                                        </div>
                                                                     </div>
-                                                                    <div>
-                                                                        <div className="fw-semibold">{student.name}</div>
-                                                                        <div className="text-muted small">{student.email}</div>
+                                                                </td>
+                                                                <td>{displayCourse}</td>
+                                                                <td>{student.year_level}</td>
+                                                                <td>
+                                                                    <div className="text-muted small">
+                                                                        {new Date(student.archived_at).toLocaleDateString()}
                                                                     </div>
-                                                                </div>
-                                                            </td>
-                                                            <td>{student.course}</td>
-                                                            <td>{student.year_level}</td>
-                                                            <td>
-                                                                <div className="text-muted small">
-                                                                    {new Date(student.archived_at).toLocaleDateString()}
-                                                                </div>
-                                                                <div className="text-muted extra-small">
-                                                                    {new Date(student.archived_at).toLocaleTimeString()}
-                                                                </div>
-                                                            </td>
-                                                            <td>
-                                                                <button 
-                                                                    className="btn btn-sm btn-success me-2"
-                                                                    onClick={() => handleRestore(student)}
-                                                                >
-                                                                    Restore
-                                                                </button>
-                                                                <button 
-                                                                    className="btn btn-sm btn-outline-danger"
-                                                                    onClick={() => handlePermanentDelete(student)}
-                                                                >
-                                                                    Delete
-                                                                </button>
-                                                            </td>
-                                                        </tr>
-                                                    ))}
+                                                                    <div className="text-muted extra-small">
+                                                                        {new Date(student.archived_at).toLocaleTimeString()}
+                                                                    </div>
+                                                                </td>
+                                                                <td>
+                                                                    <button 
+                                                                        className="btn btn-sm btn-success me-2"
+                                                                        onClick={() => handleRestore(student)}
+                                                                    >
+                                                                        Restore
+                                                                    </button>
+                                                                    <button 
+                                                                        className="btn btn-sm btn-outline-danger"
+                                                                        onClick={() => handlePermanentDelete(student)}
+                                                                    >
+                                                                        Delete
+                                                                    </button>
+                                                                </td>
+                                                            </tr>
+                                                        );
+                                                    })}
                                                 </tbody>
                                             </table>
                                         ) : (
