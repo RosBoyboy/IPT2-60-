@@ -70934,7 +70934,7 @@ function Dashboard() {
         children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
           className: "logo",
           children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("img", {
-            src: "/img/sfms-logo2.png",
+            src: "./img/sfms-logo2.png",
             alt: "SFMS Logo"
           })
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
@@ -72337,20 +72337,23 @@ function FacultyPage() {
                       className: "badge-inactive",
                       children: "Inactive"
                     })
-                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("td", {
-                    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("button", {
-                      className: "btn btn-sm btn-outline-primary me-2",
-                      onClick: function onClick() {
-                        return handleEdit(faculty);
-                      },
-                      children: "Edit"
-                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("button", {
-                      className: "btn btn-sm btn-outline-danger",
-                      onClick: function onClick() {
-                        return handleDelete(faculty);
-                      },
-                      children: "Delete"
-                    })]
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("td", {
+                    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
+                      className: "action-buttons",
+                      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("button", {
+                        className: "btn btn-sm btn-outline-primary",
+                        onClick: function onClick() {
+                          return handleEdit(faculty);
+                        },
+                        children: "Edit"
+                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("button", {
+                        className: "btn btn-sm btn-outline-danger",
+                        onClick: function onClick() {
+                          return handleDelete(faculty);
+                        },
+                        children: "Delete"
+                      })]
+                    })
                   })]
                 }, faculty.id);
               })
@@ -74103,7 +74106,7 @@ function StudentPage() {
                   type: "button",
                   className: "btn btn-warning",
                   onClick: confirmDelete,
-                  children: "Move to Inactive"
+                  children: "Move to Archive"
                 })]
               })]
             })
@@ -74337,7 +74340,13 @@ function AdminLogs() {
       className: "login-card",
       children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
         className: "brand",
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("h2", {
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+          className: "login-logo",
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("img", {
+            src: "/img/sfms-logo2.png",
+            alt: "SFMS Logo"
+          })
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("h2", {
           children: "SFMS Management System"
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("p", {
           children: "Student & Faculty Management"
@@ -76839,29 +76848,32 @@ function SettingsPage() {
                           className: "badge ".concat(department.status === 'ACTIVE' ? 'badge-active' : 'badge-inactive'),
                           children: department.status
                         })
-                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("td", {
-                        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("button", {
-                          className: "btn btn-sm btn-outline-primary me-2",
-                          onClick: function onClick() {
-                            return handleEdit(department);
-                          },
-                          disabled: department.isDefault,
-                          children: "Edit"
-                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("button", {
-                          className: "btn btn-sm btn-outline-secondary me-2",
-                          onClick: function onClick() {
-                            return toggleStatus(department);
-                          },
-                          disabled: department.isDefault,
-                          children: department.status === 'ACTIVE' ? 'Deactivate' : 'Activate'
-                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("button", {
-                          className: "btn btn-sm btn-outline-danger",
-                          onClick: function onClick() {
-                            return handleDelete(department);
-                          },
-                          disabled: department.isDefault,
-                          children: "Delete"
-                        })]
+                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("td", {
+                        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
+                          className: "action-buttons",
+                          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("button", {
+                            className: "btn btn-sm btn-outline-primary",
+                            onClick: function onClick() {
+                              return handleEdit(department);
+                            },
+                            disabled: department.isDefault,
+                            children: "Edit"
+                          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("button", {
+                            className: "btn btn-sm btn-outline-secondary",
+                            onClick: function onClick() {
+                              return toggleStatus(department);
+                            },
+                            disabled: department.isDefault,
+                            children: department.status === 'ACTIVE' ? 'Deactivate' : 'Activate'
+                          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("button", {
+                            className: "btn btn-sm btn-outline-danger",
+                            onClick: function onClick() {
+                              return handleDelete(department);
+                            },
+                            disabled: department.isDefault,
+                            children: "Delete"
+                          })]
+                        })
                       })]
                     }, department.id);
                   })

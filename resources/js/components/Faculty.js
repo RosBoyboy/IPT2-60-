@@ -623,18 +623,20 @@ export default function FacultyPage() {
                                                 )}
                                             </td>
                                             <td>
-                                                <button 
-                                                    className="btn btn-sm btn-outline-primary me-2"
-                                                    onClick={() => handleEdit(faculty)}
-                                                >
-                                                    Edit
-                                                </button>
-                                                <button 
-                                                    className="btn btn-sm btn-outline-danger"
-                                                    onClick={() => handleDelete(faculty)}
-                                                >
-                                                    Delete
-                                                </button>
+                                                <div className="action-buttons">
+                                                    <button 
+                                                        className="btn btn-sm btn-outline-primary"
+                                                        onClick={() => handleEdit(faculty)}
+                                                    >
+                                                        Edit
+                                                    </button>
+                                                    <button 
+                                                        className="btn btn-sm btn-outline-danger"
+                                                        onClick={() => handleDelete(faculty)}
+                                                    >
+                                                        Delete
+                                                    </button>
+                                                </div>
                                             </td>
                                         </tr>
                                     ))}
