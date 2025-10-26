@@ -44,7 +44,7 @@ export default function AdminLogs() {
                     <label>Password</label>
                     <div className="input">
                         <input
-                            type="password"
+                            type="Password"
                             value={password}
                             onChange={(e) => setPassword(e.target.value)}
                             placeholder="Enter password"
