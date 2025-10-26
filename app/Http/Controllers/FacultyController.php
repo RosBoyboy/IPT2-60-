@@ -38,10 +38,22 @@ class FacultyController extends Controller
         $validated = $request->validate([
             'faculty_number' => 'required|string|max:50|unique:faculties,faculty_number',
             'name'           => 'required|string|max:255',
+            'family_name'    => 'nullable|string|max:255',
+            'given_name'     => 'nullable|string|max:255',
+            'middle_name'    => 'nullable|string|max:255',
+            'date_of_birth'  => 'nullable|date',
+            'gender'         => 'nullable|string|max:50',
+            'marital_status' => 'nullable|string|max:50',
             'department'     => 'nullable|string|max:255',
             'position'       => 'nullable|string|max:255',
-            'email'          => 'nullable|email|max:255',
+            'hire_date'      => 'nullable|date',
+            'education'      => 'nullable|string|max:500',
+            'specialization' => 'nullable|string|max:500',
+            'address'        => 'nullable|string|max:500',
             'contact'        => 'nullable|string|max:50',
+            'email'          => 'nullable|email|max:255',
+            'languages'      => 'nullable|string|max:500',
+            'additional_info'=> 'nullable|string',
             'status'         => 'required|in:ACTIVE,INACTIVE',
         ]);
 
@@ -60,10 +72,22 @@ class FacultyController extends Controller
         $validated = $request->validate([
             'faculty_number' => 'required|string|max:50|unique:faculties,faculty_number,' . $faculty->id,
             'name'           => 'required|string|max:255',
+            'family_name'    => 'nullable|string|max:255',
+            'given_name'     => 'nullable|string|max:255',
+            'middle_name'    => 'nullable|string|max:255',
+            'date_of_birth'  => 'nullable|date',
+            'gender'         => 'nullable|string|max:50',
+            'marital_status' => 'nullable|string|max:50',
             'department'     => 'nullable|string|max:255',
             'position'       => 'nullable|string|max:255',
-            'email'          => 'nullable|email|max:255',
+            'hire_date'      => 'nullable|date',
+            'education'      => 'nullable|string|max:500',
+            'specialization' => 'nullable|string|max:500',
+            'address'        => 'nullable|string|max:500',
             'contact'        => 'nullable|string|max:50',
+            'email'          => 'nullable|email|max:255',
+            'languages'      => 'nullable|string|max:500',
+            'additional_info'=> 'nullable|string',
             'status'         => 'required|in:ACTIVE,INACTIVE',
         ]);
 
@@ -82,14 +106,26 @@ class FacultyController extends Controller
         // Instead of deleting, set status to INACTIVE
         $faculty->update(['status' => 'INACTIVE']);
 
-        // Also archive the record
+        // Also archive the record including demographic fields
         ArchivedFaculty::create([
             'faculty_number' => $faculty->faculty_number,
             'name' => $faculty->name,
+            'family_name' => $faculty->family_name,
+            'given_name' => $faculty->given_name,
+            'middle_name' => $faculty->middle_name,
+            'date_of_birth' => $faculty->date_of_birth,
+            'gender' => $faculty->gender,
+            'marital_status' => $faculty->marital_status,
             'department' => $faculty->department,
             'position' => $faculty->position,
-            'email' => $faculty->email,
+            'hire_date' => $faculty->hire_date,
+            'education' => $faculty->education,
+            'specialization' => $faculty->specialization,
+            'address' => $faculty->address,
             'contact' => $faculty->contact,
+            'email' => $faculty->email,
+            'languages' => $faculty->languages,
+            'additional_info' => $faculty->additional_info,
             'status' => 'INACTIVE',
             'archived_at' => now(),
             'archived_reason' => 'Moved to inactive status'

@@ -12,10 +12,27 @@ class Faculty extends Model
     protected $fillable = [
         'faculty_number',
         'name',
+        'family_name',
+        'given_name',
+        'middle_name',
+        'date_of_birth',
+        'gender',
+        'marital_status',
         'department',
         'position',
-        'email',
+        'hire_date',
+        'education',
+        'specialization',
+        'address',
         'contact',
+        'email',
+        'languages',
+        'additional_info',
         'status',
+    ];
+
+    protected $casts = [
+        'date_of_birth' => 'date',
+        'hire_date' => 'date',
     ];
 }

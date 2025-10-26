@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
+import FacultyForm from './FacultyForm';
 
 export default function FacultyPage() {
     const navigate = useNavigate();
@@ -455,6 +456,22 @@ export default function FacultyPage() {
         });
     };
 
+    const handleSavedFaculty = (saved) => {
+        if (!saved) return;
+        if (editingFaculty) {
+            setFacultyData(prev => prev.map(f => f.id === saved.id ? saved : f));
+            setToastMessage('Faculty updated successfully!');
+        } else {
+            setFacultyData(prev => [saved, ...prev]);
+            setToastMessage('Faculty added successfully!');
+        }
+
+        setShowModal(false);
+        setEditingFaculty(null);
+        setShowToast(true);
+        setTimeout(() => setShowToast(false), 3000);
+    };
+
     const handleCloseArchiveModal = () => {
         setShowArchiveModal(false);
         setDeletingFaculty(null);
@@ -688,120 +705,13 @@ export default function FacultyPage() {
                                         </div>
                                     )}
 
-                                    <form onSubmit={handleSubmit}>
-                                        <div className="modal-body">
-                                            <div className="row g-3">
-                                                <div className="col-md-6">
-                                                    <label htmlFor="faculty_number">Faculty Number *</label>
-                                                    <input
-                                                        type="text"
-                                                        className="form-control"
-                                                        id="faculty_number"
-                                                        name="faculty_number"
-                                                        value={formData.faculty_number}
-                                                        onChange={handleInputChange}
-                                                        required
-                                                        placeholder="e.g., FAC-001"
-                                                        disabled={editingFaculty}
-                                                    />
-                                                </div>
-                                                <div className="col-md-6">
-                                                    <label htmlFor="name">Full Name *</label>
-                                                    <input
-                                                        type="text"
-                                                        className="form-control"
-                                                        id="name"
-                                                        name="name"
-                                                        value={formData.name}
-                                                        onChange={handleInputChange}
-                                                        required
-                                                        placeholder="e.g., Dr. John Smith"
-                                                    />
-                                                </div>
-                                                <div className="col-md-6">
-                                                    <label htmlFor="department">Department</label>
-                                                    <select
-                                                        className="form-select"
-                                                        id="department"
-                                                        name="department"
-                                                        value={formData.department}
-                                                        onChange={handleInputChange}
-                                                    >
-                                                        <option value="">Select Department</option>
-                                                        {departments.map(dept => (
-                                                            <option key={dept} value={dept}>{dept}</option>
-                                                        ))}
-                                                    </select>
-                                                </div>
-                                                <div className="col-md-6">
-                                                    <label htmlFor="position">Position</label>
-                                                    <input
-                                                        type="text"
-                                                        className="form-control"
-                                                        id="position"
-                                                        name="position"
-                                                        value={formData.position}
-                                                        onChange={handleInputChange}
-                                                        placeholder="e.g., Professor, Associate Professor"
-                                                    />
-                                                </div>
-                                                <div className="col-md-6">
-                                                    <label htmlFor="email">Email Address</label>
-                                                    <input
-                                                        type="email"
-                                                        className="form-control"
-                                                        id="email"
-                                                        name="email"
-                                                        value={formData.email}
-                                                        onChange={handleInputChange}
-                                                        placeholder="e.g., faculty@university.edu"
-                                                    />
-                                                </div>
-                                                <div className="col-md-6">
-                                                    <label htmlFor="contact">Contact Number</label>
-                                                    <input
-                                                        type="text"
-                                                        className="form-control"
-                                                        id="contact"
-                                                        name="contact"
-                                                        value={formData.contact}
-                                                        onChange={handleInputChange}
-                                                        placeholder="e.g., +1234567890"
-                                                    />
-                                                </div>
-                                                <div className="col-md-6">
-                                                    <label htmlFor="status">Status *</label>
-                                                    <select
-                                                        className="form-select"
-                                                        id="status"
-                                                        name="status"
-                                                        value={formData.status}
-                                                        onChange={handleInputChange}
-                                                        required
-                                                    >
-                                                        <option value="ACTIVE">Active</option>
-                                                        <option value="INACTIVE">Inactive</option>
-                                                    </select>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div className="modal-actions d-flex justify-content-end gap-2">
-                                            <button
-                                                type="button"
-                                                className="btn btn-outline-secondary"
-                                                onClick={handleCloseModal}
-                                            >
-                                                Cancel
-                                            </button>
-                                            <button
-                                                type="submit"
-                                                className="btn btn-primary"
-                                            >
-                                                {editingFaculty ? 'Update Faculty' : 'Add Faculty'}
-                                            </button>
-                                        </div>
-                                    </form>
+                                    <FacultyForm
+                                        editing={editingFaculty}
+                                        initialData={formData}
+                                        departments={departments}
+                                        onSaved={handleSavedFaculty}
+                                        onCancel={handleCloseModal}
+                                    />
                                 </div>
                             </div>
                         </div>

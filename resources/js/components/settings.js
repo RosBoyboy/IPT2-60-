@@ -546,29 +546,27 @@ export default function SettingsPage() {
                                                             </span>
                                                         </td>
                                                         <td>
-                                                            <div className="action-buttons">
-                                                                <button 
-                                                                    className="btn btn-sm btn-outline-primary"
-                                                                    onClick={() => handleEdit(department)}
-                                                                    disabled={department.isDefault}
-                                                                >
-                                                                    Edit
-                                                                </button>
-                                                                <button 
-                                                                    className="btn btn-sm btn-outline-secondary"
-                                                                    onClick={() => toggleStatus(department)}
-                                                                    disabled={department.isDefault}
-                                                                >
-                                                                    {department.status === 'ACTIVE' ? 'Deactivate' : 'Activate'}
-                                                                </button>
-                                                                <button 
-                                                                    className="btn btn-sm btn-outline-danger"
-                                                                    onClick={() => handleDelete(department)}
-                                                                    disabled={department.isDefault}
-                                                                >
-                                                                    Delete
-                                                                </button>
-                                                            </div>
+                                                            <button 
+                                                                className="btn btn-sm btn-outline-primary me-2"
+                                                                onClick={() => handleEdit(department)}
+                                                                disabled={department.isDefault}
+                                                            >
+                                                                Edit
+                                                            </button>
+                                                            <button 
+                                                                className="btn btn-sm btn-outline-secondary me-2"
+                                                                onClick={() => toggleStatus(department)}
+                                                                disabled={department.isDefault}
+                                                            >
+                                                                {department.status === 'ACTIVE' ? 'Deactivate' : 'Activate'}
+                                                            </button>
+                                                            <button 
+                                                                className="btn btn-sm btn-outline-danger"
+                                                                onClick={() => handleDelete(department)}
+                                                                disabled={department.isDefault}
+                                                            >
+                                                                Delete
+                                                            </button>
                                                         </td>
                                                     </tr>
                                                 ))}

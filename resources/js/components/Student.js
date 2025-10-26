@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
+import StudentForm from './StudentForm';
 
 export default function StudentPage() {
     const navigate = useNavigate();
@@ -446,6 +447,22 @@ export default function StudentPage() {
         });
     };
 
+    const handleSavedStudent = (saved) => {
+        if (!saved) return;
+        if (editingStudent) {
+            setStudentData(prev => prev.map(s => s.id === saved.id ? saved : s));
+            setToastMessage('Student updated successfully!');
+        } else {
+            setStudentData(prev => [saved, ...prev]);
+            setToastMessage('Student added successfully!');
+        }
+
+        setShowModal(false);
+        setEditingStudent(null);
+        setShowToast(true);
+        setTimeout(() => setShowToast(false), 3000);
+    };
+
     const handleCloseArchiveModal = () => {
         setShowArchiveModal(false);
         setDeletingStudent(null);
@@ -703,144 +720,14 @@ export default function StudentPage() {
                                         </div>
                                     )}
 
-                                    <form onSubmit={handleSubmit}>
-                                        <div className="modal-body">
-                                            <div className="row g-3">
-                                                <div className="col-md-6">
-                                                    <label htmlFor="student_number">Student Number *</label>
-                                                    <input
-                                                        type="text"
-                                                        className="form-control"
-                                                        id="student_number"
-                                                        name="student_number"
-                                                        value={formData.student_number}
-                                                        onChange={handleInputChange}
-                                                        required
-                                                        placeholder="e.g., 2023-001"
-                                                        disabled={editingStudent}
-                                                    />
-                                                </div>
-                                                <div className="col-md-6">
-                                                    <label htmlFor="name">Full Name *</label>
-                                                    <input
-                                                        type="text"
-                                                        className="form-control"
-                                                        id="name"
-                                                        name="name"
-                                                        value={formData.name}
-                                                        onChange={handleInputChange}
-                                                        required
-                                                        placeholder="e.g., John Doe"
-                                                    />
-                                                </div>
-                                                <div className="col-md-6">
-                                                    <label htmlFor="course">Course *</label>
-                                                    <select
-                                                        className="form-select"
-                                                        id="course"
-                                                        name="course"
-                                                        value={formData.course}
-                                                        onChange={handleInputChange}
-                                                        required
-                                                    >
-                                                        <option value="">Select Course</option>
-                                                        {courses.map(course => {
-                                                            const displayName = course.replace(' Program', '');
-                                                            return (
-                                                                <option key={course} value={course}>{displayName}</option>
-                                                            );
-                                                        })}
-                                                    </select>
-                                                </div>
-                                                <div className="col-md-6">
-                                                    <label htmlFor="year_level">Year Level *</label>
-                                                    <select
-                                                        className="form-select"
-                                                        id="year_level"
-                                                        name="year_level"
-                                                        value={formData.year_level}
-                                                        onChange={handleInputChange}
-                                                        required
-                                                    >
-                                                        <option value="">Select Year Level</option>
-                                                        {yearLevels.map(year => (
-                                                            <option key={year} value={year}>{year}</option>
-                                                        ))}
-                                                    </select>
-                                                </div>
-                                                <div className="col-md-6">
-                                                    <label htmlFor="academic_year">Academic Year *</label>
-                                                    <select
-                                                        className="form-select"
-                                                        id="academic_year"
-                                                        name="academic_year"
-                                                        value={formData.academic_year}
-                                                        onChange={handleInputChange}
-                                                        required
-                                                    >
-                                                        <option value="">Select Academic Year</option>
-                                                        {academicYears.map(year => (
-                                                            <option key={year} value={year}>{year}</option>
-                                                        ))}
-                                                    </select>
-                                                </div>
-                                                <div className="col-md-6">
-                                                    <label htmlFor="email">Email Address</label>
-                                                    <input
-                                                        type="email"
-                                                        className="form-control"
-                                                        id="email"
-                                                        name="email"
-                                                        value={formData.email}
-                                                        onChange={handleInputChange}
-                                                        placeholder="e.g., student@university.edu"
-                                                    />
-                                                </div>
-                                                <div className="col-md-6">
-                                                    <label htmlFor="contact">Contact Number</label>
-                                                    <input
-                                                        type="text"
-                                                        className="form-control"
-                                                        id="contact"
-                                                        name="contact"
-                                                        value={formData.contact}
-                                                        onChange={handleInputChange}
-                                                        placeholder="e.g., +1234567890"
-                                                    />
-                                                </div>
-                                                <div className="col-md-6">
-                                                    <label htmlFor="status">Status *</label>
-                                                    <select
-                                                        className="form-select"
-                                                        id="status"
-                                                        name="status"
-                                                        value={formData.status}
-                                                        onChange={handleInputChange}
-                                                        required
-                                                    >
-                                                        <option value="ACTIVE">Active</option>
-                                                        <option value="INACTIVE">Inactive</option>
-                                                    </select>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div className="modal-actions d-flex justify-content-end gap-2">
-                                            <button
-                                                type="button"
-                                                className="btn btn-outline-secondary"
-                                                onClick={handleCloseModal}
-                                            >
-                                                Cancel
-                                            </button>
-                                            <button
-                                                type="submit"
-                                                className="btn btn-primary"
-                                            >
-                                                {editingStudent ? 'Update Student' : 'Add Student'}
-                                            </button>
-                                        </div>
-                                    </form>
+                                    <StudentForm
+                                        editing={editingStudent}
+                                        initialData={formData}
+                                        courses={courses}
+                                        academicYears={academicYears}
+                                        onSaved={handleSavedStudent}
+                                        onCancel={handleCloseModal}
+                                    />
                                 </div>
                             </div>
                         </div>
