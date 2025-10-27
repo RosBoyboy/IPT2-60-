@@ -20,7 +20,14 @@ export default function StudentPage() {
         academic_year: '',
         email: '',
         contact: '',
-        status: 'ACTIVE'
+        status: 'ACTIVE',
+        gender: '',
+        dob: '',
+        age: '',
+        street_address: '',
+        city_municipality: '',
+        province_region: '',
+        zip_code: ''
     });
     const [errors, setErrors] = useState([]);
     const [showToast, setShowToast] = useState(false);
@@ -188,6 +195,29 @@ export default function StudentPage() {
 
     const handleInputChange = (e) => {
         const { name, value } = e.target;
+        // If dob changed, auto-calculate age
+        if (name === 'dob') {
+            const dobVal = value;
+            let age = '';
+            if (dobVal) {
+                const dobDate = new Date(dobVal);
+                const today = new Date();
+                let a = today.getFullYear() - dobDate.getFullYear();
+                const m = today.getMonth() - dobDate.getMonth();
+                if (m < 0 || (m === 0 && today.getDate() < dobDate.getDate())) {
+                    a--;
+                }
+                age = a >= 0 ? a : '';
+            }
+
+            setFormData(prev => ({
+                ...prev,
+                dob: dobVal,
+                age: age
+            }));
+            return;
+        }
+
         setFormData(prev => ({
             ...prev,
             [name]: value
@@ -274,7 +304,14 @@ export default function StudentPage() {
                     academic_year: academicYears[0] || '',
                     email: '',
                     contact: '',
-                    status: 'ACTIVE'
+                    status: 'ACTIVE',
+                    gender: '',
+                    dob: '',
+                    age: '',
+                    street_address: '',
+                    city_municipality: '',
+                    province_region: '',
+                    zip_code: ''
                 });
 
                 setTimeout(() => setShowToast(false), 3000);
@@ -304,7 +341,14 @@ export default function StudentPage() {
             academic_year: student.academic_year,
             email: student.email,
             contact: student.contact,
-            status: student.status
+            status: student.status,
+            gender: student.gender || '',
+            dob: student.dob || '',
+            age: student.age || '',
+            street_address: student.street_address || '',
+            city_municipality: student.city_municipality || '',
+            province_region: student.province_region || '',
+            zip_code: student.zip_code || ''
         });
         setShowModal(true);
     };
@@ -445,7 +489,14 @@ export default function StudentPage() {
             academic_year: academicYears[0] || '',
             email: '',
             contact: '',
-            status: 'ACTIVE'
+            status: 'ACTIVE',
+            gender: '',
+            dob: '',
+            age: '',
+            street_address: '',
+            city_municipality: '',
+            province_region: '',
+            zip_code: ''
         });
     };
 
@@ -600,6 +651,10 @@ export default function StudentPage() {
                                         <th>Course</th>
                                         <th>Year Level</th>
                                         <th>Academic Year</th>
+                                        <th>Gender</th>
+                                        <th>DOB</th>
+                                        <th>Age</th>
+                                        <th>Address</th>
                                         <th>Email</th>
                                         <th>Contact</th>
                                         <th>Status</th>
@@ -625,6 +680,19 @@ export default function StudentPage() {
                                             <td>{student.course}</td>
                                             <td>{student.year_level}</td>
                                             <td>{student.academic_year}</td>
+                                            <td>{student.gender || '-'}</td>
+                                            <td>{student.dob ? new Date(student.dob).toLocaleDateString() : '-'}</td>
+                                            <td>{student.age ?? '-'}</td>
+                                            <td>
+                                                <div className="small text-muted">
+                                                    {student.street_address ? (<div>{student.street_address}</div>) : null}
+                                                    {(student.city_municipality || student.province_region || student.zip_code) ? (
+                                                        <div>
+                                                            {student.city_municipality}{student.city_municipality && student.province_region ? ', ' : ''}{student.province_region}{(student.zip_code && (student.city_municipality || student.province_region)) ? ' - ' + student.zip_code : (student.zip_code || '')}
+                                                        </div>
+                                                    ) : null}
+                                                </div>
+                                            </td>
                                             <td>{student.email}</td>
                                             <td>{student.contact}</td>
                                             <td>
@@ -800,6 +868,92 @@ export default function StudentPage() {
                                                         placeholder="e.g., +1234567890"
                                                     />
                                                 </div>
+                                                <div className="col-md-4">
+                                                    <label htmlFor="gender">Gender</label>
+                                                    <select
+                                                        className="form-select"
+                                                        id="gender"
+                                                        name="gender"
+                                                        value={formData.gender}
+                                                        onChange={handleInputChange}
+                                                    >
+                                                        <option value="">Select Gender</option>
+                                                        <option value="Male">Male</option>
+                                                        <option value="Female">Female</option>
+                                                        <option value="Other">Other</option>
+                                                    </select>
+                                                </div>
+                                                <div className="col-md-4">
+                                                    <label htmlFor="dob">Date of Birth</label>
+                                                    <input
+                                                        type="date"
+                                                        className="form-control"
+                                                        id="dob"
+                                                        name="dob"
+                                                        value={formData.dob}
+                                                        onChange={handleInputChange}
+                                                    />
+                                                </div>
+                                                <div className="col-md-4">
+                                                    <label htmlFor="age">Age</label>
+                                                    <input
+                                                        type="text"
+                                                        readOnly
+                                                        className="form-control"
+                                                        id="age"
+                                                        name="age"
+                                                        value={formData.age}
+                                                        placeholder="Auto-calculated from DOB"
+                                                    />
+                                                </div>
+                                                <div className="col-md-12">
+                                                    <label htmlFor="street_address">Street Address</label>
+                                                    <input
+                                                        type="text"
+                                                        className="form-control"
+                                                        id="street_address"
+                                                        name="street_address"
+                                                        value={formData.street_address}
+                                                        onChange={handleInputChange}
+                                                        placeholder="House no., Street"
+                                                    />
+                                                </div>
+                                                <div className="col-md-4">
+                                                    <label htmlFor="city_municipality">City / Municipality</label>
+                                                    <input
+                                                        type="text"
+                                                        className="form-control"
+                                                        id="city_municipality"
+                                                        name="city_municipality"
+                                                        value={formData.city_municipality}
+                                                        onChange={handleInputChange}
+                                                        placeholder="City or Municipality"
+                                                    />
+                                                </div>
+                                                <div className="col-md-4">
+                                                    <label htmlFor="province_region">Province / Region</label>
+                                                    <input
+                                                        type="text"
+                                                        className="form-control"
+                                                        id="province_region"
+                                                        name="province_region"
+                                                        value={formData.province_region}
+                                                        onChange={handleInputChange}
+                                                        placeholder="Province or Region"
+                                                    />
+                                                </div>
+                                                <div className="col-md-4">
+                                                    <label htmlFor="zip_code">ZIP Code</label>
+                                                    <input
+                                                        type="text"
+                                                        className="form-control"
+                                                        id="zip_code"
+                                                        name="zip_code"
+                                                        value={formData.zip_code}
+                                                        onChange={handleInputChange}
+                                                        placeholder="ZIP / Postal Code"
+                                                    />
+                                                </div>
                                                 <div className="col-md-6">
                                                     <label htmlFor="status">Status *</label>
                                                     <select
@@ -958,6 +1112,10 @@ export default function StudentPage() {
                                                         <th>Course</th>
                                                         <th>Year Level</th>
                                                         <th>Archived Date</th>
+                                                        <th>Gender</th>
+                                                        <th>DOB</th>
+                                                        <th>Age</th>
+                                                        <th>Address</th>
                                                         <th>Actions</th>
                                                     </tr>
                                                 </thead>
@@ -986,6 +1144,19 @@ export default function StudentPage() {
                                                                 </div>
                                                                 <div className="text-muted extra-small">
                                                                     {new Date(student.archived_at).toLocaleTimeString()}
+                                                                </div>
+                                                            </td>
+                                                            <td>{student.gender || '-'}</td>
+                                                            <td>{student.dob ? new Date(student.dob).toLocaleDateString() : '-'}</td>
+                                                            <td>{student.age ?? '-'}</td>
+                                                            <td>
+                                                                <div className="small text-muted">
+                                                                    {student.street_address ? (<div>{student.street_address}</div>) : null}
+                                                                    {(student.city_municipality || student.province_region || student.zip_code) ? (
+                                                                        <div>
+                                                                            {student.city_municipality}{student.city_municipality && student.province_region ? ', ' : ''}{student.province_region}{(student.zip_code && (student.city_municipality || student.province_region)) ? ' - ' + student.zip_code : (student.zip_code || '')}
+                                                                        </div>
+                                                                    ) : null}
                                                                 </div>
                                                             </td>
                                                             <td>
