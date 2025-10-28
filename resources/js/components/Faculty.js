@@ -19,7 +19,14 @@ export default function FacultyPage() {
         position: '',
         email: '',
         contact: '',
-        status: 'ACTIVE'
+        status: 'ACTIVE',
+        gender: '',
+        dob: '',
+        age: '',
+        street: '',
+        city: '',
+        province: '',
+        zip_code: ''
     });
     const [errors, setErrors] = useState([]);
     const [showToast, setShowToast] = useState(false);
@@ -191,6 +198,25 @@ export default function FacultyPage() {
 
     const handleInputChange = (e) => {
         const { name, value } = e.target;
+
+        // If dob changed, compute age (client-side) and set read-only age
+        if (name === 'dob') {
+            let computed = '';
+            if (value) {
+                const dobDate = new Date(value);
+                const today = new Date();
+                let age = today.getFullYear() - dobDate.getFullYear();
+                const m = today.getMonth() - dobDate.getMonth();
+                if (m < 0 || (m === 0 && today.getDate() < dobDate.getDate())) {
+                    age--;
+                }
+                if (!Number.isNaN(age)) computed = String(age);
+            }
+
+            setFormData(prev => ({ ...prev, [name]: value, age: computed }));
+            return;
+        }
+
         setFormData(prev => ({
             ...prev,
             [name]: value
@@ -276,7 +302,14 @@ export default function FacultyPage() {
                     position: '',
                     email: '',
                     contact: '',
-                    status: 'ACTIVE'
+                    status: 'ACTIVE',
+                    gender: '',
+                    dob: '',
+                    age: '',
+                    street: '',
+                    city: '',
+                    province: '',
+                    zip_code: ''
                 });
 
                 setTimeout(() => setShowToast(false), 3000);
@@ -305,7 +338,14 @@ export default function FacultyPage() {
             position: faculty.position,
             email: faculty.email,
             contact: faculty.contact,
-            status: faculty.status
+            status: faculty.status,
+            gender: faculty.gender || '',
+            dob: faculty.dob || '',
+            age: faculty.age || '',
+            street: faculty.street || '',
+            city: faculty.city || '',
+            province: faculty.province || '',
+            zip_code: faculty.zip_code || ''
         });
         setShowModal(true);
     };
@@ -451,7 +491,14 @@ export default function FacultyPage() {
             position: '',
             email: '',
             contact: '',
-            status: 'ACTIVE'
+            status: 'ACTIVE',
+            gender: '',
+            dob: '',
+            age: '',
+            street: '',
+            city: '',
+            province: '',
+            zip_code: ''
         });
     };
 
@@ -703,6 +750,7 @@ export default function FacultyPage() {
                                                         disabled={editingFaculty}
                                                     />
                                                 </div>
+
                                                 <div className="col-md-6">
                                                     <label htmlFor="name">Full Name *</label>
                                                     <input
@@ -716,6 +764,7 @@ export default function FacultyPage() {
                                                         placeholder="e.g., Dr. John Smith"
                                                     />
                                                 </div>
+
                                                 <div className="col-md-6">
                                                     <label htmlFor="department">Department</label>
                                                     <select
@@ -731,6 +780,7 @@ export default function FacultyPage() {
                                                         ))}
                                                     </select>
                                                 </div>
+
                                                 <div className="col-md-6">
                                                     <label htmlFor="position">Position</label>
                                                     <input
@@ -743,6 +793,7 @@ export default function FacultyPage() {
                                                         placeholder="e.g., Professor, Associate Professor"
                                                     />
                                                 </div>
+
                                                 <div className="col-md-6">
                                                     <label htmlFor="email">Email Address</label>
                                                     <input
@@ -755,6 +806,7 @@ export default function FacultyPage() {
                                                         placeholder="e.g., faculty@university.edu"
                                                     />
                                                 </div>
+
                                                 <div className="col-md-6">
                                                     <label htmlFor="contact">Contact Number</label>
                                                     <input
@@ -767,7 +819,106 @@ export default function FacultyPage() {
                                                         placeholder="e.g., +1234567890"
                                                     />
                                                 </div>
+
                                                 <div className="col-md-6">
+                                                    <label htmlFor="gender">Gender</label>
+                                                    <select
+                                                        className="form-select"
+                                                        id="gender"
+                                                        name="gender"
+                                                        value={formData.gender}
+                                                        onChange={handleInputChange}
+                                                    >
+                                                        <option value="">Select Gender</option>
+                                                        <option value="Male">Male</option>
+                                                        <option value="Female">Female</option>
+                                                        <option value="Other">Other</option>
+                                                    </select>
+                                                </div>
+
+                                                <div className="col-md-6">
+                                                    <label htmlFor="dob">Date of Birth</label>
+                                                    <input
+                                                        type="date"
+                                                        className="form-control"
+                                                        id="dob"
+                                                        name="dob"
+                                                        value={formData.dob}
+                                                        onChange={handleInputChange}
+                                                    />
+                                                </div>
+
+                                                <div className="col-md-6">
+                                                    <label htmlFor="age">Age</label>
+                                                    <input
+                                                        type="number"
+                                                        className="form-control"
+                                                        id="age"
+                                                        name="age"
+                                                        value={formData.age}
+                                                        onChange={handleInputChange}
+                                                        placeholder="Auto-calculated from DOB"
+                                                        readOnly
+                                                    />
+                                                </div>
+
+                                                <div className="col-12">
+                                                    <label htmlFor="street">Street Address</label>
+                                                    <input
+                                                        type="text"
+                                                        className="form-control"
+                                                        id="street"
+                                                        name="street"
+                                                        value={formData.street}
+                                                        onChange={handleInputChange}
+                                                        placeholder="House no., Street"
+                                                    />
+                                                </div>
+
+                                                <div className="col-md-4">
+                                                    <label htmlFor="city">City / Municipality</label>
+                                                    <input
+                                                        type="text"
+                                                        className="form-control"
+                                                        id="city"
+                                                        name="city"
+                                                        value={formData.city}
+                                                        onChange={handleInputChange}
+                                                        placeholder="City or Municipality"
+                                                    />
+                                                </div>
+
+                                                <div className="col-md-4">
+                                                    <label htmlFor="province">Province / Region</label>
+                                                    <input
+                                                        type="text"
+                                                        className="form-control"
+                                                        id="province"
+                                                        name="province"
+                                                        value={formData.province}
+                                                        onChange={handleInputChange}
+                                                        placeholder="Province or Region"
+                                                    />
+                                                </div>
+
+                                                <div className="col-md-4">
+                                                    <label htmlFor="zip_code">ZIP Code</label>
+                                                    <input
+                                                        type="text"
+                                                        className="form-control"
+                                                        id="zip_code"
+                                                        name="zip_code"
+                                                        value={formData.zip_code}
+                                                        onChange={handleInputChange}
+                                                        placeholder="ZIP / Postal Code"
+                                                    />
+                                                </div>
+
+                                                <div className="col-12">
+                                                    <hr />
+                                                </div>
+
+                                                <div className="col-12">
                                                     <label htmlFor="status">Status *</label>
                                                     <select
                                                         className="form-select"
@@ -842,7 +993,7 @@ export default function FacultyPage() {
                                             className="btn btn-warning"
                                             onClick={confirmDelete}
                                         >
-                                            Move to Inactive
+                                            Move to Archive
                                         </button>
                                     </div>
                                 </div>

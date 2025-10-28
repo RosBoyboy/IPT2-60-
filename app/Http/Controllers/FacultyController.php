@@ -43,6 +43,13 @@ class FacultyController extends Controller
             'email'          => 'nullable|email|max:255',
             'contact'        => 'nullable|string|max:50',
             'status'         => 'required|in:ACTIVE,INACTIVE',
+            'gender'         => 'nullable|in:Male,Female,Other',
+            'dob'            => 'nullable|date',
+            'age'            => 'nullable|integer|min:0|max:150',
+            'street'         => 'nullable|string|max:255',
+            'city'           => 'nullable|string|max:255',
+            'province'       => 'nullable|string|max:255',
+            'zip_code'       => 'nullable|string|max:20',
         ]);
 
         $faculty = Faculty::create($validated);
@@ -65,6 +72,13 @@ class FacultyController extends Controller
             'email'          => 'nullable|email|max:255',
             'contact'        => 'nullable|string|max:50',
             'status'         => 'required|in:ACTIVE,INACTIVE',
+            'gender'         => 'nullable|in:Male,Female,Other',
+            'dob'            => 'nullable|date',
+            'age'            => 'nullable|integer|min:0|max:150',
+            'street'         => 'nullable|string|max:255',
+            'city'           => 'nullable|string|max:255',
+            'province'       => 'nullable|string|max:255',
+            'zip_code'       => 'nullable|string|max:20',
         ]);
 
         $faculty->update($validated);
@@ -91,6 +105,13 @@ class FacultyController extends Controller
             'email' => $faculty->email,
             'contact' => $faculty->contact,
             'status' => 'INACTIVE',
+            'gender' => $faculty->gender,
+            'dob' => $faculty->dob,
+            'age' => $faculty->age,
+            'street' => $faculty->street,
+            'city' => $faculty->city,
+            'province' => $faculty->province,
+            'zip_code' => $faculty->zip_code,
             'archived_at' => now(),
             'archived_reason' => 'Moved to inactive status'
         ]);

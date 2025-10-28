@@ -71471,7 +71471,14 @@ function FacultyPage() {
       position: '',
       email: '',
       contact: '',
-      status: 'ACTIVE'
+      status: 'ACTIVE',
+      gender: '',
+      dob: '',
+      age: '',
+      street: '',
+      city: '',
+      province: '',
+      zip_code: ''
     }),
     _useState18 = _slicedToArray(_useState17, 2),
     formData = _useState18[0],
@@ -71697,6 +71704,25 @@ function FacultyPage() {
     var _e$target = e.target,
       name = _e$target.name,
       value = _e$target.value;
+
+    // If dob changed, compute age (client-side) and set read-only age
+    if (name === 'dob') {
+      var computed = '';
+      if (value) {
+        var dobDate = new Date(value);
+        var today = new Date();
+        var age = today.getFullYear() - dobDate.getFullYear();
+        var m = today.getMonth() - dobDate.getMonth();
+        if (m < 0 || m === 0 && today.getDate() < dobDate.getDate()) {
+          age--;
+        }
+        if (!Number.isNaN(age)) computed = String(age);
+      }
+      setFormData(function (prev) {
+        return _objectSpread(_objectSpread({}, prev), {}, _defineProperty(_defineProperty({}, name, value), "age", computed));
+      });
+      return;
+    }
     setFormData(function (prev) {
       return _objectSpread(_objectSpread({}, prev), {}, _defineProperty({}, name, value));
     });
@@ -71793,7 +71819,14 @@ function FacultyPage() {
                 position: '',
                 email: '',
                 contact: '',
-                status: 'ACTIVE'
+                status: 'ACTIVE',
+                gender: '',
+                dob: '',
+                age: '',
+                street: '',
+                city: '',
+                province: '',
+                zip_code: ''
               });
               setTimeout(function () {
                 return setShowToast(false);
@@ -71833,7 +71866,14 @@ function FacultyPage() {
       position: faculty.position,
       email: faculty.email,
       contact: faculty.contact,
-      status: faculty.status
+      status: faculty.status,
+      gender: faculty.gender || '',
+      dob: faculty.dob || '',
+      age: faculty.age || '',
+      street: faculty.street || '',
+      city: faculty.city || '',
+      province: faculty.province || '',
+      zip_code: faculty.zip_code || ''
     });
     setShowModal(true);
   };
@@ -72082,7 +72122,14 @@ function FacultyPage() {
       position: '',
       email: '',
       contact: '',
-      status: 'ACTIVE'
+      status: 'ACTIVE',
+      gender: '',
+      dob: '',
+      age: '',
+      street: '',
+      city: '',
+      province: '',
+      zip_code: ''
     });
   };
   var handleCloseArchiveModal = function handleCloseArchiveModal() {
@@ -72498,6 +72545,118 @@ function FacultyPage() {
                       })]
                     }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
                       className: "col-md-6",
+                      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("label", {
+                        htmlFor: "gender",
+                        children: "Gender"
+                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("select", {
+                        className: "form-select",
+                        id: "gender",
+                        name: "gender",
+                        value: formData.gender,
+                        onChange: handleInputChange,
+                        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("option", {
+                          value: "",
+                          children: "Select Gender"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("option", {
+                          value: "Male",
+                          children: "Male"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("option", {
+                          value: "Female",
+                          children: "Female"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("option", {
+                          value: "Other",
+                          children: "Other"
+                        })]
+                      })]
+                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
+                      className: "col-md-6",
+                      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("label", {
+                        htmlFor: "dob",
+                        children: "Date of Birth"
+                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("input", {
+                        type: "date",
+                        className: "form-control",
+                        id: "dob",
+                        name: "dob",
+                        value: formData.dob,
+                        onChange: handleInputChange
+                      })]
+                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
+                      className: "col-md-6",
+                      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("label", {
+                        htmlFor: "age",
+                        children: "Age"
+                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("input", {
+                        type: "number",
+                        className: "form-control",
+                        id: "age",
+                        name: "age",
+                        value: formData.age,
+                        onChange: handleInputChange,
+                        placeholder: "Auto-calculated from DOB",
+                        readOnly: true
+                      })]
+                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
+                      className: "col-12",
+                      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("label", {
+                        htmlFor: "street",
+                        children: "Street Address"
+                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("input", {
+                        type: "text",
+                        className: "form-control",
+                        id: "street",
+                        name: "street",
+                        value: formData.street,
+                        onChange: handleInputChange,
+                        placeholder: "House no., Street"
+                      })]
+                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
+                      className: "col-md-4",
+                      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("label", {
+                        htmlFor: "city",
+                        children: "City / Municipality"
+                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("input", {
+                        type: "text",
+                        className: "form-control",
+                        id: "city",
+                        name: "city",
+                        value: formData.city,
+                        onChange: handleInputChange,
+                        placeholder: "City or Municipality"
+                      })]
+                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
+                      className: "col-md-4",
+                      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("label", {
+                        htmlFor: "province",
+                        children: "Province / Region"
+                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("input", {
+                        type: "text",
+                        className: "form-control",
+                        id: "province",
+                        name: "province",
+                        value: formData.province,
+                        onChange: handleInputChange,
+                        placeholder: "Province or Region"
+                      })]
+                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
+                      className: "col-md-4",
+                      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("label", {
+                        htmlFor: "zip_code",
+                        children: "ZIP Code"
+                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("input", {
+                        type: "text",
+                        className: "form-control",
+                        id: "zip_code",
+                        name: "zip_code",
+                        value: formData.zip_code,
+                        onChange: handleInputChange,
+                        placeholder: "ZIP / Postal Code"
+                      })]
+                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
+                      className: "col-12",
+                      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("hr", {})
+                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
+                      className: "col-12",
                       children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("label", {
                         htmlFor: "status",
                         children: "Status *"
