@@ -83,28 +83,16 @@ $shadow: 0 12px 30px rgba(6, 30, 60, 0.18);
   position: relative;
 }
 
-/* small circular icon placeholder on left */
+/* removed left icon placeholder — inputs now use full width without the decorative square */
 .login-form .input::before {
-  content: '';
-  position: absolute;
-  left: 10px;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 36px;
-  height: 36px;
-  background: #f1f4f8;
-  border-radius: 10px;
-  box-shadow: inset 0 -1px 0 rgba(0,0,0,0.02);
-  /* optional decorative icon using small dot */
-  background-image: radial-gradient(circle at 50% 40%, rgba(0,0,0,0.08) 0, rgba(0,0,0,0.02) 2px, transparent 3px);
-  pointer-events: none;
+  display: none; /* kept selector in case some pages rely on it; hides the grey square */
 }
 
 /* actual text input */
 .login-form input[type="text"],
 .login-form input[type="password"] {
   width: 100%;
-  padding: 12px 16px 12px 56px; /* left padding to clear icon */
+  padding: 12px 16px; /* removed left padding now that icon is hidden */
   border: 1px solid #e6eaee;
   border-radius: 10px;
   background: #fff;
