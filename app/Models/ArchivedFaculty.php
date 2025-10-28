@@ -15,8 +15,15 @@ class ArchivedFaculty extends Model
         'department',
         'position',
         'email',
-        'contact',
-        'status',
+          'contact',
+          'status',
+          'gender',
+          'dob',
+          'age',
+          'street',
+          'city',
+          'province',
+          'zip_code',
         'archived_at',
         'archived_reason'
     ];
