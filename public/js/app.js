@@ -14803,7 +14803,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".student-page {\n  padding: 0;\n}\n.student-page .student-filters {\n  border-radius: 12px;\n  box-shadow: 0 6px 20px rgba(13, 38, 59, 0.04);\n}\n.student-page .student-filters .form-select, .student-page .student-filters .form-control {\n  height: 44px;\n  border-radius: 8px;\n  border: 1px solid #e6edf3;\n}\n.student-page .student-filters .form-select:focus, .student-page .student-filters .form-control:focus {\n  border-color: #0b63d6;\n  box-shadow: 0 0 0 3px rgba(11, 99, 214, 0.1);\n}\n.student-page .student-filters .btn-search {\n  background: linear-gradient(90deg, #0b63d6, #2a9df4);\n  color: #fff;\n  border-radius: 8px;\n  height: 44px;\n  border: none;\n  font-weight: 600;\n  transition: all 0.2s ease;\n}\n.student-page .student-filters .btn-search:hover {\n  transform: translateY(-1px);\n  box-shadow: 0 6px 14px rgba(11, 99, 214, 0.18);\n}\n.student-page .student-table {\n  border-radius: 12px;\n  overflow: hidden;\n  box-shadow: 0 6px 20px rgba(13, 38, 59, 0.04);\n}\n.student-page .student-table .table {\n  margin-bottom: 0;\n}\n.student-page .student-table .table th, .student-page .student-table .table td {\n  padding: 16px;\n  vertical-align: middle;\n}\n.student-page .student-table thead.table-light th {\n  border-bottom: 0;\n  color: #6b7280;\n  font-weight: 600;\n  background: #f8fafc;\n}\n.student-page .student-table tbody td {\n  border-top: 1px solid #f1f5f9;\n}\n.student-page .student-table .avatar-sm {\n  width: 36px;\n  height: 36px;\n  font-size: 12px;\n  font-weight: 600;\n}\n.student-page .student-table .badge-active {\n  display: inline-block;\n  background: #d1fae5;\n  color: #065f46;\n  padding: 6px 10px;\n  border-radius: 999px;\n  font-weight: 600;\n  font-size: 12px;\n}\n.student-page .student-table .badge-inactive {\n  display: inline-block;\n  background: #fee2e2;\n  color: #981b1b;\n  padding: 6px 10px;\n  border-radius: 999px;\n  font-weight: 600;\n  font-size: 12px;\n}\n.student-page .student-table .btn-sm {\n  padding: 4px 12px;\n  font-size: 12px;\n}\n.student-page {\n  /* Archive button styles */\n}\n.student-page .student-archive-btn {\n  position: fixed;\n  right: 20px;\n  bottom: 80px;\n  z-index: 1000;\n}\n.student-page .student-archive-btn .btn-archive {\n  background: linear-gradient(90deg, #6b7280, #9ca3af);\n  color: white;\n  border: none;\n  padding: 12px 20px;\n  border-radius: 8px;\n  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);\n  font-weight: 600;\n  transition: all 0.3s ease;\n}\n.student-page .student-archive-btn .btn-archive:hover {\n  transform: translateY(-2px);\n  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);\n  background: linear-gradient(90deg, #5a6268, #7b8794);\n}\n.student-page {\n  /* Modal Styles */\n}\n.student-page .sfms-modal {\n  position: fixed;\n  inset: 0;\n  z-index: 2000;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n}\n.student-page .sfms-modal .sfms-modal-backdrop {\n  position: absolute;\n  inset: 0;\n  background: rgba(15, 23, 42, 0.45);\n  backdrop-filter: blur(2px);\n  animation: fadeIn 0.2s ease;\n}\n.student-page .sfms-modal .sfms-modal-window {\n  position: relative;\n  width: 880px;\n  max-width: calc(100% - 32px);\n  border-radius: 12px;\n  padding: 0;\n  box-shadow: 0 20px 60px rgba(2, 6, 23, 0.18);\n  transform: translateY(0);\n  z-index: 2020;\n  animation: slideUp 0.3s ease;\n}\n.student-page .sfms-modal .modal-form {\n  padding: 20px;\n}\n.student-page .sfms-modal .modal-form .modal-top {\n  padding-bottom: 8px;\n  border-bottom: 1px solid #eef2f6;\n}\n.student-page .sfms-modal .modal-form .modal-top h5 {\n  margin: 0;\n  font-weight: 700;\n  color: #111827;\n}\n.student-page .sfms-modal .modal-form .modal-top .btn-close {\n  background: transparent;\n  border: 0;\n  font-size: 24px;\n  cursor: pointer;\n  color: #6b7280;\n  padding: 4px;\n  line-height: 1;\n}\n.student-page .sfms-modal .modal-form .modal-top .btn-close:hover {\n  color: #111827;\n}\n.student-page .sfms-modal .modal-form .modal-body {\n  padding: 18px 0;\n}\n.student-page .sfms-modal .modal-form .modal-body .form-control, .student-page .sfms-modal .modal-form .modal-body .form-select {\n  border-radius: 8px;\n  height: 44px;\n  padding: 8px 12px;\n  border: 1px solid #e6edf3;\n}\n.student-page .sfms-modal .modal-form .modal-body .form-control:focus, .student-page .sfms-modal .modal-form .modal-body .form-select:focus {\n  border-color: #0b63d6;\n  box-shadow: 0 0 0 3px rgba(11, 99, 214, 0.1);\n}\n.student-page .sfms-modal .modal-form .modal-actions {\n  padding-top: 12px;\n  border-top: 1px solid #eef2f6;\n  margin-top: 10px;\n}\n.student-page .sfms-modal .modal-form .modal-actions .btn {\n  padding: 10px 20px;\n  font-weight: 600;\n}\n.student-page .sfms-modal .modal-form .modal-actions .btn.btn-primary {\n  background: linear-gradient(90deg, #0b63d6, #2a9df4);\n  border: none;\n}\n.student-page .sfms-modal .modal-form label {\n  font-size: 13px;\n  color: #374151;\n  font-weight: 600;\n  display: block;\n  margin-bottom: 6px;\n}\n.student-page .sfms-modal .modal-form .student-errors {\n  background: #fff1f2;\n  color: #7f1d1d;\n  border-radius: 8px;\n  padding: 10px;\n  margin-bottom: 12px;\n}\n.student-page .sfms-modal .modal-form .student-errors ul {\n  margin: 0;\n  padding-left: 16px;\n}\n.student-page .sfms-modal .modal-form .student-errors ul li {\n  font-size: 14px;\n}\n.student-page {\n  /* Archive page modal */\n}\n.student-page .archive-page-modal {\n  width: 95% !important;\n  max-width: 1400px !important;\n  height: 90vh;\n}\n.student-page .archive-page-modal .sfms-modal-window {\n  height: 100%;\n  display: flex;\n  flex-direction: column;\n}\n.student-page .archive-page-modal .sfms-modal-window .modal-form {\n  flex: 1;\n  display: flex;\n  flex-direction: column;\n}\n.student-page .archive-page-modal .sfms-modal-window .modal-form .student-table {\n  flex: 1;\n  overflow-y: auto;\n}\n.student-page {\n  /* Archive specific styles */\n}\n.student-page .btn-success {\n  background: linear-gradient(90deg, #10b981, #059669);\n  color: white;\n  border: none;\n}\n.student-page .btn-success:hover {\n  background: linear-gradient(90deg, #34d399, #0d9488);\n}\n.student-page .btn-warning {\n  background: linear-gradient(90deg, #f59e0b, #d97706);\n  color: white;\n  border: none;\n}\n.student-page .btn-warning:hover {\n  background: linear-gradient(90deg, #eab308, #b45309);\n}\n.student-page .extra-small {\n  font-size: 0.75rem;\n}\n.student-page {\n  /* Light background for archive filters */\n}\n.student-page .student-filters.bg-light {\n  background: #f8fafc !important;\n  border-radius: 8px;\n}\n.student-page {\n  /* Toast Notification */\n}\n.student-page .student-toast {\n  position: fixed;\n  right: 20px;\n  bottom: 24px;\n  z-index: 3000;\n  background: linear-gradient(90deg, #10b981, #06b6d4);\n  color: white;\n  padding: 12px 16px;\n  border-radius: 10px;\n  box-shadow: 0 10px 30px rgba(2, 6, 23, 0.18);\n  font-weight: 600;\n  animation: slideInRight 0.3s ease;\n}\n.student-page {\n  /* Loading Spinner */\n}\n.student-page .spinner-border {\n  width: 2rem;\n  height: 2rem;\n}\n\n/* Animations */\n@keyframes fadeIn {\n  from {\n    opacity: 0;\n  }\n  to {\n    opacity: 1;\n  }\n}\n@keyframes slideUp {\n  from {\n    opacity: 0;\n    transform: translateY(20px);\n  }\n  to {\n    opacity: 1;\n    transform: translateY(0);\n  }\n}\n@keyframes slideInRight {\n  from {\n    opacity: 0;\n    transform: translateX(100%);\n  }\n  to {\n    opacity: 1;\n    transform: translateX(0);\n  }\n}\n/* Helper to disable body scroll while modal open */\nbody.sfms-modal-open {\n  overflow: hidden;\n}\n\n/* Responsive Design */\n@media (max-width: 1200px) {\n  .student-filters .row .col-md-1, .student-filters .row .col-md-2, .student-filters .row .col-md-3, .student-filters .row .col-md-4 {\n    margin-bottom: 1rem;\n  }\n  .student-table {\n    overflow-x: auto;\n  }\n  .student-table .table {\n    min-width: 1000px;\n  }\n}\n@media (max-width: 768px) {\n  .student-page .student-filters .row .col-md-1, .student-page .student-filters .row .col-md-2, .student-page .student-filters .row .col-md-3, .student-page .student-filters .row .col-md-4 {\n    flex: 0 0 100%;\n    max-width: 100%;\n  }\n  .archive-page-modal {\n    width: 98% !important;\n    margin: 1%;\n  }\n}", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, ".student-page {\n  padding: 0;\n}\n.student-page .student-filters {\n  border-radius: 12px;\n  box-shadow: 0 6px 20px rgba(13, 38, 59, 0.04);\n}\n.student-page .student-filters .form-select, .student-page .student-filters .form-control {\n  height: 44px;\n  border-radius: 8px;\n  border: 1px solid #e6edf3;\n}\n.student-page .student-filters .form-select:focus, .student-page .student-filters .form-control:focus {\n  border-color: #0b63d6;\n  box-shadow: 0 0 0 3px rgba(11, 99, 214, 0.1);\n}\n.student-page .student-filters .btn-search {\n  background: linear-gradient(90deg, #0b63d6, #2a9df4);\n  color: #fff;\n  border-radius: 8px;\n  height: 44px;\n  border: none;\n  font-weight: 600;\n  transition: all 0.2s ease;\n}\n.student-page .student-filters .btn-search:hover {\n  transform: translateY(-1px);\n  box-shadow: 0 6px 14px rgba(11, 99, 214, 0.18);\n}\n.student-page .student-table {\n  border-radius: 12px;\n  overflow: hidden;\n  box-shadow: 0 6px 20px rgba(13, 38, 59, 0.04);\n}\n.student-page .student-table .table {\n  margin-bottom: 0;\n}\n.student-page .student-table .table th, .student-page .student-table .table td {\n  padding: 16px;\n  vertical-align: middle;\n}\n.student-page .student-table thead.table-light th {\n  border-bottom: 0;\n  color: #6b7280;\n  font-weight: 600;\n  background: #f8fafc;\n}\n.student-page .student-table tbody td {\n  border-top: 1px solid #f1f5f9;\n}\n.student-page .student-table .avatar-sm {\n  width: 36px;\n  height: 36px;\n  font-size: 12px;\n  font-weight: 600;\n}\n.student-page .student-table .badge-active {\n  display: inline-block;\n  background: #d1fae5;\n  color: #065f46;\n  padding: 6px 10px;\n  border-radius: 999px;\n  font-weight: 600;\n  font-size: 12px;\n}\n.student-page .student-table .badge-inactive {\n  display: inline-block;\n  background: #fee2e2;\n  color: #981b1b;\n  padding: 6px 10px;\n  border-radius: 999px;\n  font-weight: 600;\n  font-size: 12px;\n}\n.student-page .student-table .btn-sm {\n  padding: 4px 12px;\n  font-size: 12px;\n}\n.student-page .student-table .action-buttons {\n  display: inline-flex;\n  gap: 8px;\n  align-items: center;\n  white-space: nowrap;\n}\n.student-page {\n  /* Archive button styles */\n}\n.student-page .student-archive-btn {\n  position: fixed;\n  right: 20px;\n  bottom: 80px;\n  z-index: 1000;\n}\n.student-page .student-archive-btn .btn-archive {\n  background: linear-gradient(90deg, #6b7280, #9ca3af);\n  color: white;\n  border: none;\n  padding: 12px 20px;\n  border-radius: 8px;\n  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);\n  font-weight: 600;\n  transition: all 0.3s ease;\n}\n.student-page .student-archive-btn .btn-archive:hover {\n  transform: translateY(-2px);\n  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);\n  background: linear-gradient(90deg, #5a6268, #7b8794);\n}\n.student-page {\n  /* Modal Styles */\n}\n.student-page .sfms-modal {\n  position: fixed;\n  inset: 0;\n  z-index: 2000;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n}\n.student-page .sfms-modal .sfms-modal-backdrop {\n  position: absolute;\n  inset: 0;\n  background: rgba(15, 23, 42, 0.45);\n  backdrop-filter: blur(2px);\n  animation: fadeIn 0.2s ease;\n}\n.student-page .sfms-modal .sfms-modal-window {\n  position: relative;\n  width: 880px;\n  max-width: calc(100% - 32px);\n  border-radius: 12px;\n  padding: 0;\n  box-shadow: 0 20px 60px rgba(2, 6, 23, 0.18);\n  transform: translateY(0);\n  z-index: 2020;\n  animation: slideUp 0.3s ease;\n}\n.student-page .sfms-modal .modal-form {\n  padding: 20px;\n}\n.student-page .sfms-modal .modal-form .modal-top {\n  padding-bottom: 8px;\n  border-bottom: 1px solid #eef2f6;\n}\n.student-page .sfms-modal .modal-form .modal-top h5 {\n  margin: 0;\n  font-weight: 700;\n  color: #111827;\n}\n.student-page .sfms-modal .modal-form .modal-top .btn-close {\n  background: transparent;\n  border: 0;\n  font-size: 24px;\n  cursor: pointer;\n  color: #6b7280;\n  padding: 4px;\n  line-height: 1;\n}\n.student-page .sfms-modal .modal-form .modal-top .btn-close:hover {\n  color: #111827;\n}\n.student-page .sfms-modal .modal-form .modal-body {\n  padding: 18px 0;\n}\n.student-page .sfms-modal .modal-form .modal-body .form-control, .student-page .sfms-modal .modal-form .modal-body .form-select {\n  border-radius: 8px;\n  height: 44px;\n  padding: 8px 12px;\n  border: 1px solid #e6edf3;\n}\n.student-page .sfms-modal .modal-form .modal-body .form-control:focus, .student-page .sfms-modal .modal-form .modal-body .form-select:focus {\n  border-color: #0b63d6;\n  box-shadow: 0 0 0 3px rgba(11, 99, 214, 0.1);\n}\n.student-page .sfms-modal .modal-form .modal-actions {\n  padding-top: 12px;\n  border-top: 1px solid #eef2f6;\n  margin-top: 10px;\n}\n.student-page .sfms-modal .modal-form .modal-actions .btn {\n  padding: 10px 20px;\n  font-weight: 600;\n}\n.student-page .sfms-modal .modal-form .modal-actions .btn.btn-primary {\n  background: linear-gradient(90deg, #0b63d6, #2a9df4);\n  border: none;\n}\n.student-page .sfms-modal .modal-form label {\n  font-size: 13px;\n  color: #374151;\n  font-weight: 600;\n  display: block;\n  margin-bottom: 6px;\n}\n.student-page .sfms-modal .modal-form .student-errors {\n  background: #fff1f2;\n  color: #7f1d1d;\n  border-radius: 8px;\n  padding: 10px;\n  margin-bottom: 12px;\n}\n.student-page .sfms-modal .modal-form .student-errors ul {\n  margin: 0;\n  padding-left: 16px;\n}\n.student-page .sfms-modal .modal-form .student-errors ul li {\n  font-size: 14px;\n}\n.student-page {\n  /* Archive page modal */\n}\n.student-page .archive-page-modal {\n  width: 95% !important;\n  max-width: 1400px !important;\n  height: 90vh;\n}\n.student-page .archive-page-modal .sfms-modal-window {\n  height: 100%;\n  display: flex;\n  flex-direction: column;\n}\n.student-page .archive-page-modal .sfms-modal-window .modal-form {\n  flex: 1;\n  display: flex;\n  flex-direction: column;\n}\n.student-page .archive-page-modal .sfms-modal-window .modal-form .student-table {\n  flex: 1;\n  overflow-y: auto;\n}\n.student-page {\n  /* Archive specific styles */\n}\n.student-page .btn-success {\n  background: linear-gradient(90deg, #10b981, #059669);\n  color: white;\n  border: none;\n}\n.student-page .btn-success:hover {\n  background: linear-gradient(90deg, #34d399, #0d9488);\n}\n.student-page .btn-warning {\n  background: linear-gradient(90deg, #f59e0b, #d97706);\n  color: white;\n  border: none;\n}\n.student-page .btn-warning:hover {\n  background: linear-gradient(90deg, #eab308, #b45309);\n}\n.student-page .extra-small {\n  font-size: 0.75rem;\n}\n.student-page {\n  /* Light background for archive filters */\n}\n.student-page .student-filters.bg-light {\n  background: #f8fafc !important;\n  border-radius: 8px;\n}\n.student-page {\n  /* Toast Notification */\n}\n.student-page .student-toast {\n  position: fixed;\n  right: 20px;\n  bottom: 24px;\n  z-index: 3000;\n  background: linear-gradient(90deg, #10b981, #06b6d4);\n  color: white;\n  padding: 12px 16px;\n  border-radius: 10px;\n  box-shadow: 0 10px 30px rgba(2, 6, 23, 0.18);\n  font-weight: 600;\n  animation: slideInRight 0.3s ease;\n}\n.student-page {\n  /* Loading Spinner */\n}\n.student-page .spinner-border {\n  width: 2rem;\n  height: 2rem;\n}\n\n/* Animations */\n@keyframes fadeIn {\n  from {\n    opacity: 0;\n  }\n  to {\n    opacity: 1;\n  }\n}\n@keyframes slideUp {\n  from {\n    opacity: 0;\n    transform: translateY(20px);\n  }\n  to {\n    opacity: 1;\n    transform: translateY(0);\n  }\n}\n@keyframes slideInRight {\n  from {\n    opacity: 0;\n    transform: translateX(100%);\n  }\n  to {\n    opacity: 1;\n    transform: translateX(0);\n  }\n}\n/* Helper to disable body scroll while modal open */\nbody.sfms-modal-open {\n  overflow: hidden;\n}\n\n/* Responsive Design */\n@media (max-width: 1200px) {\n  .student-filters .row .col-md-1, .student-filters .row .col-md-2, .student-filters .row .col-md-3, .student-filters .row .col-md-4 {\n    margin-bottom: 1rem;\n  }\n  .student-table {\n    overflow-x: auto;\n  }\n  .student-table .table {\n    min-width: 1000px;\n  }\n}\n@media (max-width: 768px) {\n  .student-page .student-filters .row .col-md-1, .student-page .student-filters .row .col-md-2, .student-page .student-filters .row .col-md-3, .student-page .student-filters .row .col-md-4 {\n    flex: 0 0 100%;\n    max-width: 100%;\n  }\n  .archive-page-modal {\n    width: 98% !important;\n    margin: 1%;\n  }\n}", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -70934,7 +70934,11 @@ function Dashboard() {
         children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
           className: "logo",
           children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("img", {
+<<<<<<< HEAD
             src: "/img/sfms-logo2.png",
+=======
+            src: "./img/sfms-logo2.png",
+>>>>>>> 92ae0ff90a63482911e089572ccd9f0c258e4c55
             alt: "SFMS Logo"
           })
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
@@ -72337,20 +72341,23 @@ function FacultyPage() {
                       className: "badge-inactive",
                       children: "Inactive"
                     })
-                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("td", {
-                    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("button", {
-                      className: "btn btn-sm btn-outline-primary me-2",
-                      onClick: function onClick() {
-                        return handleEdit(faculty);
-                      },
-                      children: "Edit"
-                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("button", {
-                      className: "btn btn-sm btn-outline-danger",
-                      onClick: function onClick() {
-                        return handleDelete(faculty);
-                      },
-                      children: "Delete"
-                    })]
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("td", {
+                    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
+                      className: "action-buttons",
+                      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("button", {
+                        className: "btn btn-sm btn-outline-primary",
+                        onClick: function onClick() {
+                          return handleEdit(faculty);
+                        },
+                        children: "Edit"
+                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("button", {
+                        className: "btn btn-sm btn-outline-danger",
+                        onClick: function onClick() {
+                          return handleDelete(faculty);
+                        },
+                        children: "Delete"
+                      })]
+                    })
                   })]
                 }, faculty.id);
               })
@@ -73032,7 +73039,7 @@ function StudentPage() {
       }));
     } else {
       // Fallback to default courses if not found
-      setCourses(['Computer Science', 'Business Administration', 'Arts & Humanities', 'Engineering', 'Mathematics', 'Physics', 'Chemistry', 'Biology', 'Psychology', 'Economics', 'Political Science', 'Sociology']);
+      setCourses(['Computer Science', 'Business Administration', 'Arts & Sciences', 'Engineering', 'Teachers Education', 'Accountancy', 'Nursing', 'Criminal Justice', 'Tourism Management']);
     }
 
     // Load academic years from localStorage
@@ -73732,9 +73739,10 @@ function StudentPage() {
                   value: "",
                   children: "All Courses"
                 }), courses.map(function (course) {
+                  var displayName = course.replace(' Program', '');
                   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("option", {
                     value: course,
-                    children: course
+                    children: displayName
                   }, course);
                 })]
               })]
@@ -73848,7 +73856,11 @@ function StudentPage() {
               })
             }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("tbody", {
               children: studentData.map(function (student) {
+<<<<<<< HEAD
                 var _student$age;
+=======
+                var displayCourse = student.course.replace(' Program', '');
+>>>>>>> 92ae0ff90a63482911e089572ccd9f0c258e4c55
                 return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("tr", {
                   children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("td", {
                     className: "fw-semibold",
@@ -73872,7 +73884,7 @@ function StudentPage() {
                       })]
                     })
                   }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("td", {
-                    children: student.course
+                    children: displayCourse
                   }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("td", {
                     children: student.year_level
                   }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("td", {
@@ -73904,20 +73916,23 @@ function StudentPage() {
                       className: "badge-inactive",
                       children: "Inactive"
                     })
-                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("td", {
-                    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("button", {
-                      className: "btn btn-sm btn-outline-primary me-2",
-                      onClick: function onClick() {
-                        return handleEdit(student);
-                      },
-                      children: "Edit"
-                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("button", {
-                      className: "btn btn-sm btn-outline-danger",
-                      onClick: function onClick() {
-                        return handleDelete(student);
-                      },
-                      children: "Delete"
-                    })]
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("td", {
+                    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
+                      className: "action-buttons",
+                      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("button", {
+                        className: "btn btn-sm btn-outline-primary",
+                        onClick: function onClick() {
+                          return handleEdit(student);
+                        },
+                        children: "Edit"
+                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("button", {
+                        className: "btn btn-sm btn-outline-danger",
+                        onClick: function onClick() {
+                          return handleDelete(student);
+                        },
+                        children: "Delete"
+                      })]
+                    })
                   })]
                 }, student.id);
               })
@@ -74016,9 +74031,10 @@ function StudentPage() {
                           value: "",
                           children: "Select Course"
                         }), courses.map(function (course) {
+                          var displayName = course.replace(' Program', '');
                           return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("option", {
                             value: course,
-                            children: course
+                            children: displayName
                           }, course);
                         })]
                       })]
@@ -74279,7 +74295,7 @@ function StudentPage() {
                   type: "button",
                   className: "btn btn-warning",
                   onClick: confirmDelete,
-                  children: "Move to Inactive"
+                  children: "Move to Archive"
                 })]
               })]
             })
@@ -74320,9 +74336,10 @@ function StudentPage() {
                         value: "",
                         children: "All Courses"
                       }), courses.map(function (course) {
+                        var displayName = course.replace(' Program', '');
                         return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("option", {
                           value: course,
-                          children: course
+                          children: displayName
                         }, course);
                       })]
                     })]
@@ -74389,7 +74406,11 @@ function StudentPage() {
                     })
                   }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("tbody", {
                     children: archivedData.map(function (student) {
+<<<<<<< HEAD
                       var _student$age2;
+=======
+                      var displayCourse = student.course.replace(' Program', '');
+>>>>>>> 92ae0ff90a63482911e089572ccd9f0c258e4c55
                       return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("tr", {
                         children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("td", {
                           className: "fw-semibold",
@@ -74416,7 +74437,7 @@ function StudentPage() {
                             })]
                           })
                         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("td", {
-                          children: student.course
+                          children: displayCourse
                         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("td", {
                           children: student.year_level
                         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("td", {
@@ -75427,7 +75448,7 @@ function ReportsPage() {
         }));
       } else {
         // Use default courses if not found
-        var defaultCourses = ['Computer Science Program', 'Business Administration Program', 'Arts & Sciences Program', 'Engineering Program', 'Teachers Education Program', 'Accountancy Program', 'Nursing Program', 'Criminal Justice Program', 'Tourism Management Program'];
+        var defaultCourses = ['Computer Science', 'Business Administration', 'Arts & Sciences', 'Engineering', 'Teachers Education', 'Accountancy', 'Nursing', 'Criminal Justice', 'Tourism Management'];
         setCourses(defaultCourses);
       }
 
@@ -75708,7 +75729,7 @@ function ReportsPage() {
     var filteredStudents = getFilteredStudentData();
     var headers = ['Student Number', 'Name', 'Course', 'Year Level', 'Academic Year', 'Email', 'Contact', 'Status'];
     var csvData = filteredStudents.map(function (student) {
-      return [student.student_number, student.name, student.course, student.year_level, student.academic_year, student.email || 'N/A', student.contact || 'N/A', student.status];
+      return [student.student_number, student.name, student.course.replace(' Program', ''), student.year_level, student.academic_year, student.email || 'N/A', student.contact || 'N/A', student.status];
     });
     downloadCSV([headers].concat(_toConsumableArray(csvData)), 'student_report.csv');
   };
@@ -75874,9 +75895,10 @@ function ReportsPage() {
                     value: "",
                     children: "All Courses"
                   }), courses.map(function (course) {
+                    var displayName = course.replace(' Program', '');
                     return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("option", {
                       value: course,
-                      children: course
+                      children: displayName
                     }, course);
                   })]
                 })]
@@ -75992,10 +76014,11 @@ function ReportsPage() {
                 }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("tbody", {
                   children: [courses.map(function (course) {
                     var _studentSummary$cours, _studentSummary$cours2, _studentSummary$cours3, _studentSummary$cours4, _studentSummary$cours5;
+                    var displayName = course.replace(' Program', '');
                     return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("tr", {
                       children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("td", {
                         className: "fw-semibold",
-                        children: course
+                        children: displayName
                       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("td", {
                         children: ((_studentSummary$cours = studentSummary[course]) === null || _studentSummary$cours === void 0 ? void 0 : _studentSummary$cours.year1) || 0
                       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("td", {
@@ -76089,6 +76112,7 @@ function ReportsPage() {
                   })
                 }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("tbody", {
                   children: filteredStudents.map(function (student) {
+                    var displayCourse = student.course.replace(' Program', '');
                     return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("tr", {
                       children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("td", {
                         className: "fw-semibold",
@@ -76112,7 +76136,7 @@ function ReportsPage() {
                           })]
                         })
                       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("td", {
-                        children: student.course
+                        children: displayCourse
                       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("td", {
                         children: student.year_level
                       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("td", {
@@ -76468,8 +76492,11 @@ function SettingsPage() {
   var DEPARTMENTS_VERSION = '2';
 
   // Default options that should always be available
-  var defaultDepartments = ['Computer Science Program', 'Business Administration Program', 'Arts & Sciences Program', 'Engineering Program', 'Teachers Eductation Program', 'Accountancy Program', 'Nursing Program', 'Criminal Justice Program', 'Tourism Management Program'];
+  var defaultDepartments = ['Computer Science Program', 'Business Administration Program', 'Arts & Sciences Program', 'Engineering Program', 'Teachers Education Program', 'Accountancy Program', 'Nursing Program', 'Criminal Justice Program', 'Tourism Management Program'];
   var defaultAcademicYears = ['2023-2024', '2024-2025', '2025-2026'];
+
+  // Default courses to match Student page
+  var defaultCourses = ['Computer Science', 'Business Administration', 'Arts & Sciences', 'Engineering', 'Teachers Education', 'Accountancy', 'Nursing', 'Criminal Justice', 'Tourism Management'];
   function logout() {
     localStorage.removeItem('sfms_auth');
     navigate('/login');
@@ -76545,12 +76572,12 @@ function SettingsPage() {
         saveToLocalStorage('sfms_departments', initialDepartments);
       }
 
-      // Courses (keep behaviour as before — reuse defaultDepartments)
+      // Courses - use defaultCourses so it matches Student page
       var savedCourses = localStorage.getItem('sfms_courses');
       if (savedCourses) {
         setCourses(JSON.parse(savedCourses));
       } else {
-        var initialCourses = defaultDepartments.map(function (name, index) {
+        var initialCourses = defaultCourses.map(function (name, index) {
           return {
             id: index + 1,
             name: name,
@@ -77037,29 +77064,32 @@ function SettingsPage() {
                           className: "badge ".concat(department.status === 'ACTIVE' ? 'badge-active' : 'badge-inactive'),
                           children: department.status
                         })
-                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("td", {
-                        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("button", {
-                          className: "btn btn-sm btn-outline-primary me-2",
-                          onClick: function onClick() {
-                            return handleEdit(department);
-                          },
-                          disabled: department.isDefault,
-                          children: "Edit"
-                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("button", {
-                          className: "btn btn-sm btn-outline-secondary me-2",
-                          onClick: function onClick() {
-                            return toggleStatus(department);
-                          },
-                          disabled: department.isDefault,
-                          children: department.status === 'ACTIVE' ? 'Deactivate' : 'Activate'
-                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("button", {
-                          className: "btn btn-sm btn-outline-danger",
-                          onClick: function onClick() {
-                            return handleDelete(department);
-                          },
-                          disabled: department.isDefault,
-                          children: "Delete"
-                        })]
+                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("td", {
+                        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
+                          className: "action-buttons",
+                          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("button", {
+                            className: "btn btn-sm btn-outline-primary",
+                            onClick: function onClick() {
+                              return handleEdit(department);
+                            },
+                            disabled: department.isDefault,
+                            children: "Edit"
+                          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("button", {
+                            className: "btn btn-sm btn-outline-secondary",
+                            onClick: function onClick() {
+                              return toggleStatus(department);
+                            },
+                            disabled: department.isDefault,
+                            children: department.status === 'ACTIVE' ? 'Deactivate' : 'Activate'
+                          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("button", {
+                            className: "btn btn-sm btn-outline-danger",
+                            onClick: function onClick() {
+                              return handleDelete(department);
+                            },
+                            disabled: department.isDefault,
+                            children: "Delete"
+                          })]
+                        })
                       })]
                     }, department.id);
                   })
@@ -77120,10 +77150,11 @@ function SettingsPage() {
                   })
                 }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("tbody", {
                   children: courses.map(function (course) {
+                    var displayName = course.name.replace(' Program', '');
                     return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("tr", {
                       children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("td", {
                         className: "fw-semibold",
-                        children: course.name
+                        children: displayName
                       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("td", {
                         children: course.isDefault ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("span", {
                           className: "badge badge-info",
@@ -77360,7 +77391,7 @@ function SettingsPage() {
                         value: courseFormData.name,
                         onChange: handleCourseInputChange,
                         required: true,
-                        placeholder: "e.g., Computer Science Program"
+                        placeholder: "e.g., Computer Science"
                       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
                         className: "form-text",
                         children: "This will appear in the \"Course\" dropdown when adding students."

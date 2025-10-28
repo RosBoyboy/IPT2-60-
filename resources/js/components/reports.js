@@ -71,15 +71,15 @@ export default function ReportsPage() {
             } else {
                 // Use default courses if not found
                 const defaultCourses = [
-                    'Computer Science Program',
-                    'Business Administration Program',
-                    'Arts & Sciences Program',
-                    'Engineering Program',
-                    'Teachers Education Program',
-                    'Accountancy Program',
-                    'Nursing Program',
-                    'Criminal Justice Program',
-                    'Tourism Management Program'
+                    'Computer Science',
+                    'Business Administration',
+                    'Arts & Sciences',
+                    'Engineering',
+                    'Teachers Education',
+                    'Accountancy',
+                    'Nursing',
+                    'Criminal Justice',
+                    'Tourism Management'
                 ];
                 setCourses(defaultCourses);
             }
@@ -306,7 +306,7 @@ export default function ReportsPage() {
         const csvData = filteredStudents.map(student => [
             student.student_number,
             student.name,
-            student.course,
+            student.course.replace(' Program', ''),
             student.year_level,
             student.academic_year,
             student.email || 'N/A',
@@ -431,9 +431,12 @@ export default function ReportsPage() {
                                             onChange={handleFilterChange}
                                         >
                                             <option value="">All Courses</option>
-                                            {courses.map(course => (
-                                                <option key={course} value={course}>{course}</option>
-                                            ))}
+                                            {courses.map(course => {
+                                                const displayName = course.replace(' Program', '');
+                                                return (
+                                                    <option key={course} value={course}>{displayName}</option>
+                                                );
+                                            })}
                                         </select>
                                     </div>
                                     <div className="col-md-2">
@@ -515,16 +518,19 @@ export default function ReportsPage() {
                                             </tr>
                                         </thead>
                                         <tbody>
-                                            {courses.map(course => (
-                                                <tr key={course}>
-                                                    <td className="fw-semibold">{course}</td>
-                                                    <td>{studentSummary[course]?.year1 || 0}</td>
-                                                    <td>{studentSummary[course]?.year2 || 0}</td>
-                                                    <td>{studentSummary[course]?.year3 || 0}</td>
-                                                    <td>{studentSummary[course]?.year4 || 0}</td>
-                                                    <td className="fw-bold">{studentSummary[course]?.total || 0}</td>
-                                                </tr>
-                                            ))}
+                                            {courses.map(course => {
+                                                const displayName = course.replace(' Program', '');
+                                                return (
+                                                    <tr key={course}>
+                                                        <td className="fw-semibold">{displayName}</td>
+                                                        <td>{studentSummary[course]?.year1 || 0}</td>
+                                                        <td>{studentSummary[course]?.year2 || 0}</td>
+                                                        <td>{studentSummary[course]?.year3 || 0}</td>
+                                                        <td>{studentSummary[course]?.year4 || 0}</td>
+                                                        <td className="fw-bold">{studentSummary[course]?.total || 0}</td>
+                                                    </tr>
+                                                );
+                                            })}
                                             <tr className="table-light">
                                                 <td className="fw-bold">Grand Total</td>
                                                 <td className="fw-bold">{filteredStudents.filter(s => s.year_level === '1st Year').length}</td>
@@ -569,35 +575,38 @@ export default function ReportsPage() {
                                                 </tr>
                                             </thead>
                                             <tbody>
-                                                {filteredStudents.map((student) => (
-                                                    <tr key={student.id}>
-                                                        <td className="fw-semibold">{student.student_number}</td>
-                                                        <td>
-                                                            <div className="d-flex align-items-center">
-                                                                <div className="avatar-sm bg-light rounded-circle d-flex align-items-center justify-content-center me-3">
-                                                                    <span className="text-muted">
-                                                                        {student.name.split(' ').map(n => n[0]).join('')}
-                                                                    </span>
+                                                {filteredStudents.map((student) => {
+                                                    const displayCourse = student.course.replace(' Program', '');
+                                                    return (
+                                                        <tr key={student.id}>
+                                                            <td className="fw-semibold">{student.student_number}</td>
+                                                            <td>
+                                                                <div className="d-flex align-items-center">
+                                                                    <div className="avatar-sm bg-light rounded-circle d-flex align-items-center justify-content-center me-3">
+                                                                        <span className="text-muted">
+                                                                            {student.name.split(' ').map(n => n[0]).join('')}
+                                                                        </span>
+                                                                    </div>
+                                                                    <div>
+                                                                        <div className="fw-semibold">{student.name}</div>
+                                                                    </div>
                                                                 </div>
-                                                                <div>
-                                                                    <div className="fw-semibold">{student.name}</div>
-                                                                </div>
-                                                            </div>
-                                                        </td>
-                                                        <td>{student.course}</td>
-                                                        <td>{student.year_level}</td>
-                                                        <td>{student.academic_year}</td>
-                                                        <td>{student.email || 'N/A'}</td>
-                                                        <td>{student.contact || 'N/A'}</td>
-                                                        <td>
-                                                            {student.status === 'ACTIVE' ? (
-                                                                <span className="badge-active">Active</span>
-                                                            ) : (
-                                                                <span className="badge-inactive">Inactive</span>
-                                                            )}
-                                                        </td>
-                                                    </tr>
-                                                ))}
+                                                            </td>
+                                                            <td>{displayCourse}</td>
+                                                            <td>{student.year_level}</td>
+                                                            <td>{student.academic_year}</td>
+                                                            <td>{student.email || 'N/A'}</td>
+                                                            <td>{student.contact || 'N/A'}</td>
+                                                            <td>
+                                                                {student.status === 'ACTIVE' ? (
+                                                                    <span className="badge-active">Active</span>
+                                                                ) : (
+                                                                    <span className="badge-inactive">Inactive</span>
+                                                                )}
+                                                            </td>
+                                                        </tr>
+                                                    );
+                                                })}
                                             </tbody>
                                         </table>
                                     </div>
