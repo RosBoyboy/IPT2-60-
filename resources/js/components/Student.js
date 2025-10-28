@@ -1029,7 +1029,7 @@ export default function StudentPage() {
                                             className="btn btn-warning"
                                             onClick={confirmDelete}
                                         >
-                                            Move to Inactive
+                                            Move to Archive
                                         </button>
                                     </div>
                                 </div>
