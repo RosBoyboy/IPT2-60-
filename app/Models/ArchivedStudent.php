@@ -18,6 +18,13 @@ class ArchivedStudent extends Model
         'email',
         'contact',
         'status',
+        'gender',
+        'dob',
+        'age',
+        'street_address',
+        'city_municipality',
+        'province_region',
+        'zip_code',
         'archived_at',
         'archived_reason'
     ];

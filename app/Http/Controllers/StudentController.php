@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Student;
 use App\Models\ArchivedStudent;
 use Illuminate\Http\Request;
+use Carbon\Carbon;
 
 class StudentController extends Controller
 {
@@ -46,7 +47,23 @@ class StudentController extends Controller
             'email'          => 'nullable|email|max:255',
             'contact'        => 'nullable|string|max:50',
             'status'         => 'required|in:ACTIVE,INACTIVE',
+            'gender'         => 'nullable|string|max:20',
+            'dob'            => 'nullable|date',
+            'age'            => 'nullable|integer|min:0',
+            'street_address' => 'nullable|string|max:255',
+            'city_municipality' => 'nullable|string|max:255',
+            'province_region'   => 'nullable|string|max:255',
+            'zip_code'       => 'nullable|string|max:20',
         ]);
+
+        // If dob provided, compute age server-side to ensure correctness
+        if (!empty($validated['dob'])) {
+            try {
+                $validated['age'] = Carbon::parse($validated['dob'])->age;
+            } catch (\Exception $e) {
+                // ignore parse issues, age will remain as provided or null
+            }
+        }
 
         $student = Student::create($validated);
 
@@ -69,7 +86,21 @@ class StudentController extends Controller
             'email'          => 'nullable|email|max:255',
             'contact'        => 'nullable|string|max:50',
             'status'         => 'required|in:ACTIVE,INACTIVE',
+            'gender'         => 'nullable|string|max:20',
+            'dob'            => 'nullable|date',
+            'age'            => 'nullable|integer|min:0',
+            'street_address' => 'nullable|string|max:255',
+            'city_municipality' => 'nullable|string|max:255',
+            'province_region'   => 'nullable|string|max:255',
+            'zip_code'       => 'nullable|string|max:20',
         ]);
+
+        if (!empty($validated['dob'])) {
+            try {
+                $validated['age'] = Carbon::parse($validated['dob'])->age;
+            } catch (\Exception $e) {
+            }
+        }
 
         $student->update($validated);
 
@@ -95,6 +126,13 @@ class StudentController extends Controller
             'academic_year' => $student->academic_year,
             'email' => $student->email,
             'contact' => $student->contact,
+            'gender' => $student->gender,
+            'dob' => $student->dob,
+            'age' => $student->age,
+            'street_address' => $student->street_address,
+            'city_municipality' => $student->city_municipality,
+            'province_region' => $student->province_region,
+            'zip_code' => $student->zip_code,
             'status' => 'INACTIVE',
             'archived_at' => now(),
             'archived_reason' => 'Moved to inactive status'
