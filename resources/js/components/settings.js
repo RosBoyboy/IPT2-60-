@@ -3,6 +3,7 @@ import { Link, useNavigate } from 'react-router-dom';
 
 export default function SettingsPage() {
     const navigate = useNavigate();
+    const [profileData, setProfileData] = useState({ name: '' });
     const [currentView, setCurrentView] = useState('departments');
     const [departments, setDepartments] = useState([]);
     const [courses, setCourses] = useState([]);
@@ -78,6 +79,7 @@ export default function SettingsPage() {
 
     useEffect(() => {
         loadFromLocalStorage();
+        fetchProfile();
     }, []);
 
     // Save data to localStorage (also store meta for departments version)
@@ -160,6 +162,17 @@ export default function SettingsPage() {
         } finally {
             setLoading(false);
         }
+    };
+
+    const fetchProfile = async () => {
+        try {
+            const res = await fetch('/api/profile');
+            if (res.ok) {
+                const data = await res.json();
+                const u = data.user || {};
+                setProfileData({ name: u.name || '' });
+            }
+        } catch (e) {}
     };
 
     const handleInputChange = (e) => {
@@ -436,7 +449,7 @@ export default function SettingsPage() {
                     </div>
 
                     <div className="topbar-right">
-                        <div className="welcome">Welcome back, John Doe</div>
+                        <div className="welcome">Welcome back, {profileData.name || 'Admin'}</div>
                         <div className="top-actions">
                             <button className="icon-btn">⠇</button>
                         </div>
@@ -448,7 +461,7 @@ export default function SettingsPage() {
                         <h1>System Settings</h1>
                         <p className="text-muted">Manage courses, departments, and academic years</p>
                         <p className="text-info small mt-2">
-                            Changes made here will update the dropdown options in "Add Student" and "Add Faculty" forms.
+                            
                         </p>
                     </div>
 

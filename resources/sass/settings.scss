@@ -29,13 +29,13 @@
                 transition: all 0.3s ease;
 
                 &:hover {
-                    background: #e9ecef;
-                    border-color: #dee2e6;
+                    background: #eef6ff;
+                    border-color: #d6e9ff;
                 }
 
                 &.active {
-                    background: #3498db;
-                    border-color: #3498db;
+                    background: #0f79e0;
+                    border-color: #0f79e0;
                     color: white;
                 }
             }
@@ -50,12 +50,12 @@
             }
 
             .btn-primary {
-                background: #3498db;
-                border-color: #3498db;
+                background: #0f79e0;
+                border-color: #0f79e0;
                 
                 &:hover {
-                    background: #2980b9;
-                    border-color: #2980b9;
+                    background: #0b6ec0;
+                    border-color: #0b6ec0;
                 }
             }
         }
@@ -65,7 +65,7 @@
         .academic-years-table {
             .table {
                 th {
-                    background: #2c3e50;
+                    background: #0f79e0;
                     color: white;
                     font-weight: 600;
                     border: none;
@@ -107,11 +107,11 @@
                     padding: 4px 8px;
 
                     &.btn-outline-primary {
-                        color: #3498db;
-                        border-color: #3498db;
+                        color: #0f79e0;
+                        border-color: #0f79e0;
                         
                         &:hover {
-                            background: #3498db;
+                            background: #0f79e0;
                             color: white;
                         }
 

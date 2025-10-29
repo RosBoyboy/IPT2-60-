@@ -3,6 +3,7 @@ import { Link, useNavigate } from 'react-router-dom';
 
 export default function ReportsPage() {
     const navigate = useNavigate();
+    const [profileData, setProfileData] = useState({ name: '' });
     const [currentView, setCurrentView] = useState('student');
     const [studentData, setStudentData] = useState([]);
     const [facultyData, setFacultyData] = useState([]);
@@ -58,6 +59,7 @@ export default function ReportsPage() {
     // Load settings data from localStorage
     useEffect(() => {
         loadSettingsData();
+        fetchProfile();
     }, []);
 
     const loadSettingsData = () => {
@@ -119,6 +121,17 @@ export default function ReportsPage() {
         } catch (error) {
             console.error('Error loading settings data:', error);
         }
+    };
+
+    const fetchProfile = async () => {
+        try {
+            const res = await fetch('/api/profile');
+            if (res.ok) {
+                const data = await res.json();
+                const u = data.user || {};
+                setProfileData({ name: u.name || '' });
+            }
+        } catch (e) {}
     };
 
     useEffect(() => {
@@ -385,7 +398,7 @@ export default function ReportsPage() {
                     </div>
 
                     <div className="topbar-right">
-                        <div className="welcome">Welcome back, John Doe</div>
+                        <div className="welcome">Welcome back, {profileData.name || 'Admin'}</div>
                         <div className="top-actions">
                             <button className="icon-btn">⠇</button>
                         </div>

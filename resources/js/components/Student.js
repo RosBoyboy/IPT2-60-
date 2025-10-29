@@ -3,6 +3,7 @@ import { Link, useNavigate } from 'react-router-dom';
 
 export default function StudentPage() {
     const navigate = useNavigate();
+    const [profileData, setProfileData] = useState({ name: '' });
     const [studentData, setStudentData] = useState([]);
     const [archivedData, setArchivedData] = useState([]);
     const [loading, setLoading] = useState(true);
@@ -80,6 +81,7 @@ export default function StudentPage() {
     // Load courses and academic years from localStorage
     useEffect(() => {
         loadSettingsData();
+        fetchProfile();
     }, []);
 
     const loadSettingsData = () => {
@@ -117,6 +119,17 @@ export default function StudentPage() {
             // Fallback to default academic years if not found
             setAcademicYears(['2023-2024', '2024-2025', '2025-2026']);
         }
+    };
+
+    const fetchProfile = async () => {
+        try {
+            const res = await fetch('/api/profile');
+            if (res.ok) {
+                const data = await res.json();
+                const u = data.user || {};
+                setProfileData({ name: u.name || '' });
+            }
+        } catch (e) {}
     };
 
     useEffect(() => {
@@ -554,7 +567,7 @@ export default function StudentPage() {
                     </div>
 
                     <div className="topbar-right">
-                        <div className="welcome">Welcome back, John Doe</div>
+                        <div className="welcome">Welcome back, {profileData.name || 'Admin'}</div>
                         <div className="top-actions">
                             <button 
                                 className="btn small outline"
@@ -1029,7 +1042,7 @@ export default function StudentPage() {
                                             className="btn btn-warning"
                                             onClick={confirmDelete}
                                         >
-                                            Move to Inactive
+                                            Move to Archive
                                         </button>
                                     </div>
                                 </div>

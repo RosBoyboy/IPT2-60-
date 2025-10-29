@@ -14707,7 +14707,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".faculty-page {\n  padding: 0;\n}\n.faculty-page .faculty-filters {\n  border-radius: 12px;\n  box-shadow: 0 6px 20px rgba(13, 38, 59, 0.04);\n}\n.faculty-page .faculty-filters .form-select, .faculty-page .faculty-filters .form-control {\n  height: 44px;\n  border-radius: 8px;\n  border: 1px solid #e6edf3;\n}\n.faculty-page .faculty-filters .form-select:focus, .faculty-page .faculty-filters .form-control:focus {\n  border-color: #0b63d6;\n  box-shadow: 0 0 0 3px rgba(11, 99, 214, 0.1);\n}\n.faculty-page .faculty-filters .btn-search {\n  background: linear-gradient(90deg, #0b63d6, #2a9df4);\n  color: #fff;\n  border-radius: 8px;\n  height: 44px;\n  border: none;\n  font-weight: 600;\n  transition: all 0.2s ease;\n}\n.faculty-page .faculty-filters .btn-search:hover {\n  transform: translateY(-1px);\n  box-shadow: 0 6px 14px rgba(11, 99, 214, 0.18);\n}\n.faculty-page .faculty-table {\n  border-radius: 12px;\n  overflow: hidden;\n  box-shadow: 0 6px 20px rgba(13, 38, 59, 0.04);\n}\n.faculty-page .faculty-table .table {\n  margin-bottom: 0;\n}\n.faculty-page .faculty-table .table th, .faculty-page .faculty-table .table td {\n  padding: 16px;\n  vertical-align: middle;\n}\n.faculty-page .faculty-table thead.table-light th {\n  border-bottom: 0;\n  color: #6b7280;\n  font-weight: 600;\n  background: #f8fafc;\n}\n.faculty-page .faculty-table tbody td {\n  border-top: 1px solid #f1f5f9;\n}\n.faculty-page .faculty-table .avatar-sm {\n  width: 36px;\n  height: 36px;\n  font-size: 12px;\n  font-weight: 600;\n}\n.faculty-page .faculty-table .badge-active {\n  display: inline-block;\n  background: #d1fae5;\n  color: #065f46;\n  padding: 6px 10px;\n  border-radius: 999px;\n  font-weight: 600;\n  font-size: 12px;\n}\n.faculty-page .faculty-table .badge-inactive {\n  display: inline-block;\n  background: #fee2e2;\n  color: #981b1b;\n  padding: 6px 10px;\n  border-radius: 999px;\n  font-weight: 600;\n  font-size: 12px;\n}\n.faculty-page .faculty-table .btn-sm {\n  padding: 4px 12px;\n  font-size: 12px;\n}\n.faculty-page {\n  /* Modal Styles */\n}\n.faculty-page .sfms-modal {\n  position: fixed;\n  inset: 0;\n  z-index: 2000;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n}\n.faculty-page .sfms-modal .sfms-modal-backdrop {\n  position: absolute;\n  inset: 0;\n  background: rgba(15, 23, 42, 0.45);\n  backdrop-filter: blur(2px);\n  animation: fadeIn 0.2s ease;\n}\n.faculty-page .sfms-modal .sfms-modal-window {\n  position: relative;\n  width: 880px;\n  max-width: calc(100% - 32px);\n  border-radius: 12px;\n  padding: 0;\n  box-shadow: 0 20px 60px rgba(2, 6, 23, 0.18);\n  transform: translateY(0);\n  z-index: 2020;\n  animation: slideUp 0.3s ease;\n}\n.faculty-page .sfms-modal .modal-form {\n  padding: 20px;\n}\n.faculty-page .sfms-modal .modal-form .modal-top {\n  padding-bottom: 8px;\n  border-bottom: 1px solid #eef2f6;\n}\n.faculty-page .sfms-modal .modal-form .modal-top h5 {\n  margin: 0;\n  font-weight: 700;\n  color: #111827;\n}\n.faculty-page .sfms-modal .modal-form .modal-top .btn-close {\n  background: transparent;\n  border: 0;\n  font-size: 24px;\n  cursor: pointer;\n  color: #6b7280;\n  padding: 4px;\n  line-height: 1;\n}\n.faculty-page .sfms-modal .modal-form .modal-top .btn-close:hover {\n  color: #111827;\n}\n.faculty-page .sfms-modal .modal-form .modal-body {\n  padding: 18px 0;\n}\n.faculty-page .sfms-modal .modal-form .modal-body .form-control, .faculty-page .sfms-modal .modal-form .modal-body .form-select {\n  border-radius: 8px;\n  height: 44px;\n  padding: 8px 12px;\n  border: 1px solid #e6edf3;\n}\n.faculty-page .sfms-modal .modal-form .modal-body .form-control:focus, .faculty-page .sfms-modal .modal-form .modal-body .form-select:focus {\n  border-color: #0b63d6;\n  box-shadow: 0 0 0 3px rgba(11, 99, 214, 0.1);\n}\n.faculty-page .sfms-modal .modal-form .modal-actions {\n  padding-top: 12px;\n  border-top: 1px solid #eef2f6;\n  margin-top: 10px;\n}\n.faculty-page .sfms-modal .modal-form .modal-actions .btn {\n  padding: 10px 20px;\n  font-weight: 600;\n}\n.faculty-page .sfms-modal .modal-form .modal-actions .btn.btn-primary {\n  background: linear-gradient(90deg, #0b63d6, #2a9df4);\n  border: none;\n}\n.faculty-page .sfms-modal .modal-form label {\n  font-size: 13px;\n  color: #374151;\n  font-weight: 600;\n  display: block;\n  margin-bottom: 6px;\n}\n.faculty-page .sfms-modal .modal-form .faculty-errors {\n  background: #fff1f2;\n  color: #7f1d1d;\n  border-radius: 8px;\n  padding: 10px;\n  margin-bottom: 12px;\n}\n.faculty-page .sfms-modal .modal-form .faculty-errors ul {\n  margin: 0;\n  padding-left: 16px;\n}\n.faculty-page .sfms-modal .modal-form .faculty-errors ul li {\n  font-size: 14px;\n}\n.faculty-page {\n  /* Toast Notification */\n}\n.faculty-page .faculty-toast {\n  position: fixed;\n  right: 20px;\n  bottom: 24px;\n  z-index: 3000;\n  background: linear-gradient(90deg, #10b981, #06b6d4);\n  color: white;\n  padding: 12px 16px;\n  border-radius: 10px;\n  box-shadow: 0 10px 30px rgba(2, 6, 23, 0.18);\n  font-weight: 600;\n  animation: slideInRight 0.3s ease;\n}\n.faculty-page {\n  /* Loading Spinner */\n}\n.faculty-page .spinner-border {\n  width: 2rem;\n  height: 2rem;\n}\n\n/* Animations */\n@keyframes fadeIn {\n  from {\n    opacity: 0;\n  }\n  to {\n    opacity: 1;\n  }\n}\n@keyframes slideUp {\n  from {\n    opacity: 0;\n    transform: translateY(20px);\n  }\n  to {\n    opacity: 1;\n    transform: translateY(0);\n  }\n}\n@keyframes slideInRight {\n  from {\n    opacity: 0;\n    transform: translateX(100%);\n  }\n  to {\n    opacity: 1;\n    transform: translateX(0);\n  }\n}\n/* Helper to disable body scroll while modal open */\nbody.sfms-modal-open {\n  overflow: hidden;\n}\n\n.faculty-archive-btn {\n  position: fixed;\n  right: 20px;\n  bottom: 80px;\n  z-index: 1000;\n}\n.faculty-archive-btn .btn-archive {\n  background: linear-gradient(90deg, #6b7280, #9ca3af);\n  color: white;\n  border: none;\n  padding: 12px 20px;\n  border-radius: 8px;\n  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);\n  font-weight: 600;\n  transition: all 0.3s ease;\n}\n.faculty-archive-btn .btn-archive:hover {\n  transform: translateY(-2px);\n  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);\n  background: linear-gradient(90deg, #5a6268, #7b8794);\n}\n\n.archive-page-modal {\n  width: 95% !important;\n  max-width: 1400px !important;\n  height: 90vh;\n}\n.archive-page-modal .sfms-modal-window {\n  height: 100%;\n  display: flex;\n  flex-direction: column;\n}\n.archive-page-modal .sfms-modal-window .modal-form {\n  flex: 1;\n  display: flex;\n  flex-direction: column;\n}\n.archive-page-modal .sfms-modal-window .modal-form .faculty-table {\n  flex: 1;\n  overflow-y: auto;\n}\n\n.btn-success {\n  background: linear-gradient(90deg, #10b981, #059669);\n  color: white;\n  border: none;\n}\n.btn-success:hover {\n  background: linear-gradient(90deg, #34d399, #0d9488);\n}\n\n.btn-warning {\n  background: linear-gradient(90deg, #f59e0b, #d97706);\n  color: white;\n  border: none;\n}\n.btn-warning:hover {\n  background: linear-gradient(90deg, #eab308, #b45309);\n}\n\n.extra-small {\n  font-size: 0.75rem;\n}\n\n.faculty-filters.bg-light {\n  background: #f8fafc !important;\n  border-radius: 8px;\n}", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, ".faculty-page {\n  padding: 0;\n}\n.faculty-page .faculty-filters {\n  border-radius: 12px;\n  box-shadow: 0 6px 20px rgba(13, 38, 59, 0.04);\n}\n.faculty-page .faculty-filters .form-select, .faculty-page .faculty-filters .form-control {\n  height: 44px;\n  border-radius: 8px;\n  border: 1px solid #e6edf3;\n}\n.faculty-page .faculty-filters .form-select:focus, .faculty-page .faculty-filters .form-control:focus {\n  border-color: #0b63d6;\n  box-shadow: 0 0 0 3px rgba(11, 99, 214, 0.1);\n}\n.faculty-page .faculty-filters .btn-search {\n  background: linear-gradient(90deg, #0b63d6, #2a9df4);\n  color: #fff;\n  border-radius: 8px;\n  height: 44px;\n  border: none;\n  font-weight: 600;\n  transition: all 0.2s ease;\n}\n.faculty-page .faculty-filters .btn-search:hover {\n  transform: translateY(-1px);\n  box-shadow: 0 6px 14px rgba(11, 99, 214, 0.18);\n}\n.faculty-page .faculty-table {\n  border-radius: 12px;\n  overflow: hidden;\n  box-shadow: 0 6px 20px rgba(13, 38, 59, 0.04);\n}\n.faculty-page .faculty-table .table {\n  margin-bottom: 0;\n}\n.faculty-page .faculty-table .table th, .faculty-page .faculty-table .table td {\n  padding: 16px;\n  vertical-align: middle;\n}\n.faculty-page .faculty-table thead.table-light th {\n  border-bottom: 0;\n  color: #ffffff;\n  font-weight: 600;\n  background: #0f79e0; /* blue header */\n}\n.faculty-page .faculty-table tbody td {\n  border-top: 1px solid #f1f5f9;\n}\n.faculty-page .faculty-table .avatar-sm {\n  width: 36px;\n  height: 36px;\n  font-size: 12px;\n  font-weight: 600;\n}\n.faculty-page .faculty-table .badge-active {\n  display: inline-block;\n  background: #d1fae5;\n  color: #065f46;\n  padding: 6px 10px;\n  border-radius: 999px;\n  font-weight: 600;\n  font-size: 12px;\n}\n.faculty-page .faculty-table .badge-inactive {\n  display: inline-block;\n  background: #fee2e2;\n  color: #981b1b;\n  padding: 6px 10px;\n  border-radius: 999px;\n  font-weight: 600;\n  font-size: 12px;\n}\n.faculty-page .faculty-table .btn-sm {\n  padding: 4px 12px;\n  font-size: 12px;\n}\n.faculty-page {\n  /* Modal Styles */\n}\n.faculty-page .sfms-modal {\n  position: fixed;\n  inset: 0;\n  z-index: 2000;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n}\n.faculty-page .sfms-modal .sfms-modal-backdrop {\n  position: absolute;\n  inset: 0;\n  background: rgba(15, 23, 42, 0.45);\n  backdrop-filter: blur(2px);\n  animation: fadeIn 0.2s ease;\n}\n.faculty-page .sfms-modal .sfms-modal-window {\n  position: relative;\n  width: 880px;\n  max-width: calc(100% - 32px);\n  border-radius: 12px;\n  padding: 0;\n  box-shadow: 0 20px 60px rgba(2, 6, 23, 0.18);\n  transform: translateY(0);\n  z-index: 2020;\n  animation: slideUp 0.3s ease;\n}\n.faculty-page .sfms-modal .modal-form {\n  padding: 20px;\n}\n.faculty-page .sfms-modal .modal-form .modal-top {\n  padding-bottom: 8px;\n  border-bottom: 1px solid #eef2f6;\n}\n.faculty-page .sfms-modal .modal-form .modal-top h5 {\n  margin: 0;\n  font-weight: 700;\n  color: #111827;\n}\n.faculty-page .sfms-modal .modal-form .modal-top .btn-close {\n  background: transparent;\n  border: 0;\n  font-size: 24px;\n  cursor: pointer;\n  color: #6b7280;\n  padding: 4px;\n  line-height: 1;\n}\n.faculty-page .sfms-modal .modal-form .modal-top .btn-close:hover {\n  color: #111827;\n}\n.faculty-page .sfms-modal .modal-form .modal-body {\n  padding: 18px 0;\n}\n.faculty-page .sfms-modal .modal-form .modal-body .form-control, .faculty-page .sfms-modal .modal-form .modal-body .form-select {\n  border-radius: 8px;\n  height: 44px;\n  padding: 8px 12px;\n  border: 1px solid #e6edf3;\n}\n.faculty-page .sfms-modal .modal-form .modal-body .form-control:focus, .faculty-page .sfms-modal .modal-form .modal-body .form-select:focus {\n  border-color: #0b63d6;\n  box-shadow: 0 0 0 3px rgba(11, 99, 214, 0.1);\n}\n.faculty-page .sfms-modal .modal-form .modal-actions {\n  padding-top: 12px;\n  border-top: 1px solid #eef2f6;\n  margin-top: 10px;\n}\n.faculty-page .sfms-modal .modal-form .modal-actions .btn {\n  padding: 10px 20px;\n  font-weight: 600;\n}\n.faculty-page .sfms-modal .modal-form .modal-actions .btn.btn-primary {\n  background: linear-gradient(90deg, #0b63d6, #2a9df4);\n  border: none;\n}\n.faculty-page .sfms-modal .modal-form label {\n  font-size: 13px;\n  color: #374151;\n  font-weight: 600;\n  display: block;\n  margin-bottom: 6px;\n}\n.faculty-page .sfms-modal .modal-form .faculty-errors {\n  background: #fff1f2;\n  color: #7f1d1d;\n  border-radius: 8px;\n  padding: 10px;\n  margin-bottom: 12px;\n}\n.faculty-page .sfms-modal .modal-form .faculty-errors ul {\n  margin: 0;\n  padding-left: 16px;\n}\n.faculty-page .sfms-modal .modal-form .faculty-errors ul li {\n  font-size: 14px;\n}\n.faculty-page {\n  /* Toast Notification */\n}\n.faculty-page .faculty-toast {\n  position: fixed;\n  right: 20px;\n  bottom: 24px;\n  z-index: 3000;\n  background: linear-gradient(90deg, #10b981, #06b6d4);\n  color: white;\n  padding: 12px 16px;\n  border-radius: 10px;\n  box-shadow: 0 10px 30px rgba(2, 6, 23, 0.18);\n  font-weight: 600;\n  animation: slideInRight 0.3s ease;\n}\n.faculty-page {\n  /* Loading Spinner */\n}\n.faculty-page .spinner-border {\n  width: 2rem;\n  height: 2rem;\n}\n\n/* Animations */\n@keyframes fadeIn {\n  from {\n    opacity: 0;\n  }\n  to {\n    opacity: 1;\n  }\n}\n@keyframes slideUp {\n  from {\n    opacity: 0;\n    transform: translateY(20px);\n  }\n  to {\n    opacity: 1;\n    transform: translateY(0);\n  }\n}\n@keyframes slideInRight {\n  from {\n    opacity: 0;\n    transform: translateX(100%);\n  }\n  to {\n    opacity: 1;\n    transform: translateX(0);\n  }\n}\n/* Helper to disable body scroll while modal open */\nbody.sfms-modal-open {\n  overflow: hidden;\n}\n\n.faculty-archive-btn {\n  position: fixed;\n  right: 20px;\n  bottom: 80px;\n  z-index: 1000;\n}\n.faculty-archive-btn .btn-archive {\n  background: linear-gradient(90deg, #6b7280, #9ca3af);\n  color: white;\n  border: none;\n  padding: 12px 20px;\n  border-radius: 8px;\n  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);\n  font-weight: 600;\n  transition: all 0.3s ease;\n}\n.faculty-archive-btn .btn-archive:hover {\n  transform: translateY(-2px);\n  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);\n  background: linear-gradient(90deg, #5a6268, #7b8794);\n}\n\n.archive-page-modal {\n  width: 95% !important;\n  max-width: 1400px !important;\n  height: 90vh;\n}\n.archive-page-modal .sfms-modal-window {\n  height: 100%;\n  display: flex;\n  flex-direction: column;\n}\n.archive-page-modal .sfms-modal-window .modal-form {\n  flex: 1;\n  display: flex;\n  flex-direction: column;\n}\n.archive-page-modal .sfms-modal-window .modal-form .faculty-table {\n  flex: 1;\n  overflow-y: auto;\n}\n\n.btn-success {\n  background: linear-gradient(90deg, #10b981, #059669);\n  color: white;\n  border: none;\n}\n.btn-success:hover {\n  background: linear-gradient(90deg, #34d399, #0d9488);\n}\n\n.btn-warning {\n  background: linear-gradient(90deg, #f59e0b, #d97706);\n  color: white;\n  border: none;\n}\n.btn-warning:hover {\n  background: linear-gradient(90deg, #eab308, #b45309);\n}\n\n.extra-small {\n  font-size: 0.75rem;\n}\n\n.faculty-filters.bg-light {\n  background: #f8fafc !important;\n  border-radius: 8px;\n}", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -14755,7 +14755,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".reports-page .reports-header h1 {\n  color: #2c3e50;\n  margin-bottom: 8px;\n  font-size: 28px;\n}\n.reports-page .reports-header p {\n  color: #7f8c8d;\n  font-size: 16px;\n  margin-bottom: 0;\n}\n.reports-page .reports-nav .nav-buttons {\n  display: flex;\n  gap: 10px;\n}\n.reports-page .reports-nav .nav-buttons .nav-btn {\n  padding: 12px 24px;\n  border: 2px solid #e9ecef;\n  background: #f8f9fa;\n  color: #6c757d;\n  border-radius: 6px;\n  cursor: pointer;\n  font-weight: 500;\n  transition: all 0.3s ease;\n}\n.reports-page .reports-nav .nav-buttons .nav-btn:hover {\n  background: #e9ecef;\n  border-color: #dee2e6;\n}\n.reports-page .reports-nav .nav-buttons .nav-btn.active {\n  background: #3498db;\n  border-color: #3498db;\n  color: white;\n}\n.reports-page .student-filters .form-label,\n.reports-page .faculty-filters .form-label {\n  font-weight: 500;\n  color: #2c3e50;\n  margin-bottom: 8px;\n}\n.reports-page .student-filters .form-select,\n.reports-page .student-filters .form-control,\n.reports-page .faculty-filters .form-select,\n.reports-page .faculty-filters .form-control {\n  border: 1px solid #ddd;\n  border-radius: 4px;\n}\n.reports-page .student-filters .form-select:focus,\n.reports-page .student-filters .form-control:focus,\n.reports-page .faculty-filters .form-select:focus,\n.reports-page .faculty-filters .form-control:focus {\n  border-color: #3498db;\n  box-shadow: 0 0 0 0.2rem rgba(52, 152, 219, 0.25);\n}\n.reports-page .student-filters .btn-primary,\n.reports-page .faculty-filters .btn-primary {\n  background: #3498db;\n  border-color: #3498db;\n}\n.reports-page .student-filters .btn-primary:hover,\n.reports-page .faculty-filters .btn-primary:hover {\n  background: #2980b9;\n  border-color: #2980b9;\n}\n.reports-page .summary-section .summary-table .table th {\n  background: #3498db;\n  color: white;\n  font-weight: 600;\n  text-align: center;\n}\n.reports-page .summary-section .summary-table .table td {\n  text-align: center;\n  vertical-align: middle;\n}\n.reports-page .summary-section .summary-table .table .table-light {\n  background: #f8f9fa;\n}\n.reports-page .summary-section .summary-table .table .table-light td {\n  font-weight: 600;\n  color: #2c3e50;\n}\n.reports-page .faculty-summary .summary-card {\n  transition: all 0.3s ease;\n}\n.reports-page .faculty-summary .summary-card:hover {\n  transform: translateY(-2px);\n  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);\n}\n.reports-page .faculty-summary .summary-card h3 {\n  font-size: 2.5rem;\n  font-weight: 700;\n  margin-bottom: 0.5rem;\n}\n.reports-page .student-data-section .table th,\n.reports-page .faculty-data-section .table th {\n  background: #2c3e50;\n  color: white;\n  font-weight: 600;\n  border: none;\n}\n.reports-page .student-data-section .table td,\n.reports-page .faculty-data-section .table td {\n  vertical-align: middle;\n}\n.reports-page .student-data-section .table .avatar-sm,\n.reports-page .faculty-data-section .table .avatar-sm {\n  width: 36px;\n  height: 36px;\n  font-size: 12px;\n  font-weight: 600;\n}\n.reports-page .badge-active {\n  background: #d4edda;\n  color: #155724;\n  padding: 4px 8px;\n  border-radius: 12px;\n  font-size: 12px;\n  font-weight: 500;\n}\n.reports-page .badge-inactive {\n  background: #f8d7da;\n  color: #721c24;\n  padding: 4px 8px;\n  border-radius: 12px;\n  font-size: 12px;\n  font-weight: 500;\n}\n\n@media (max-width: 768px) {\n  .reports-page .reports-nav .nav-buttons {\n    flex-direction: column;\n  }\n  .reports-page .reports-nav .nav-buttons .nav-btn {\n    text-align: center;\n  }\n  .reports-page .student-filters .row .col-md-2,\n  .reports-page .student-filters .row .col-md-3,\n  .reports-page .faculty-filters .row .col-md-2,\n  .reports-page .faculty-filters .row .col-md-3 {\n    margin-bottom: 15px;\n  }\n  .reports-page .faculty-summary .row .col-md-4 {\n    margin-bottom: 15px;\n  }\n  .reports-page .table-responsive {\n    font-size: 14px;\n  }\n}", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, ".reports-page .reports-header h1 {\n  color: #2c3e50;\n  margin-bottom: 8px;\n  font-size: 28px;\n}\n.reports-page .reports-header p {\n  color: #7f8c8d;\n  font-size: 16px;\n  margin-bottom: 0;\n}\n.reports-page .reports-nav .nav-buttons {\n  display: flex;\n  gap: 10px;\n}\n.reports-page .reports-nav .nav-buttons .nav-btn {\n  padding: 12px 24px;\n  border: 2px solid #e9ecef;\n  background: #f8f9fa;\n  color: #6c757d;\n  border-radius: 6px;\n  cursor: pointer;\n  font-weight: 500;\n  transition: all 0.3s ease;\n}\n.reports-page .reports-nav .nav-buttons .nav-btn:hover {\n  background: #eef6ff;\n  border-color: #d6e9ff;\n}\n.reports-page .reports-nav .nav-buttons .nav-btn.active {\n  background: #0f79e0;\n  border-color: #0f79e0;\n  color: white;\n}\n.reports-page .student-filters .form-label,\n.reports-page .faculty-filters .form-label {\n  font-weight: 500;\n  color: #2c3e50;\n  margin-bottom: 8px;\n}\n.reports-page .student-filters .form-select,\n.reports-page .student-filters .form-control,\n.reports-page .faculty-filters .form-select,\n.reports-page .faculty-filters .form-control {\n  border: 1px solid #ddd;\n  border-radius: 4px;\n}\n.reports-page .student-filters .form-select:focus,\n.reports-page .student-filters .form-control:focus,\n.reports-page .faculty-filters .form-select:focus,\n.reports-page .faculty-filters .form-control:focus {\n  border-color: #0f79e0;\n  box-shadow: 0 0 0 0.2rem rgba(15, 121, 224, 0.25);\n}\n.reports-page .student-filters .btn-primary,\n.reports-page .faculty-filters .btn-primary {\n  background: #0f79e0;\n  border-color: #0f79e0;\n}\n.reports-page .student-filters .btn-primary:hover,\n.reports-page .faculty-filters .btn-primary:hover {\n  background: #0b6ec0;\n  border-color: #0b6ec0;\n}\n.reports-page .summary-section .summary-table .table th {\n  background: #0f79e0;\n  color: white;\n  font-weight: 600;\n  text-align: center;\n}\n.reports-page .summary-section .summary-table .table td {\n  text-align: center;\n  vertical-align: middle;\n}\n.reports-page .summary-section .summary-table .table .table-light {\n  background: #f8f9fa;\n}\n.reports-page .summary-section .summary-table .table .table-light td {\n  font-weight: 600;\n  color: #2c3e50;\n}\n.reports-page .faculty-summary .summary-card {\n  transition: all 0.3s ease;\n}\n.reports-page .faculty-summary .summary-card:hover {\n  transform: translateY(-2px);\n  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);\n}\n.reports-page .faculty-summary .summary-card h3 {\n  font-size: 2.5rem;\n  font-weight: 700;\n  margin-bottom: 0.5rem;\n}\n.reports-page .student-data-section .table th,\n.reports-page .faculty-data-section .table th {\n  background: #0f79e0;\n  color: white;\n  font-weight: 600;\n  border: none;\n}\n.reports-page .student-data-section .table td,\n.reports-page .faculty-data-section .table td {\n  vertical-align: middle;\n}\n.reports-page .student-data-section .table .avatar-sm,\n.reports-page .faculty-data-section .table .avatar-sm {\n  width: 36px;\n  height: 36px;\n  font-size: 12px;\n  font-weight: 600;\n}\n.reports-page .badge-active {\n  background: #d4edda;\n  color: #155724;\n  padding: 4px 8px;\n  border-radius: 12px;\n  font-size: 12px;\n  font-weight: 500;\n}\n.reports-page .badge-inactive {\n  background: #f8d7da;\n  color: #721c24;\n  padding: 4px 8px;\n  border-radius: 12px;\n  font-size: 12px;\n  font-weight: 500;\n}\n\n@media (max-width: 768px) {\n  .reports-page .reports-nav .nav-buttons {\n    flex-direction: column;\n  }\n  .reports-page .reports-nav .nav-buttons .nav-btn {\n    text-align: center;\n  }\n  .reports-page .student-filters .row .col-md-2,\n  .reports-page .student-filters .row .col-md-3,\n  .reports-page .faculty-filters .row .col-md-2,\n  .reports-page .faculty-filters .row .col-md-3 {\n    margin-bottom: 15px;\n  }\n  .reports-page .faculty-summary .row .col-md-4 {\n    margin-bottom: 15px;\n  }\n  .reports-page .table-responsive {\n    font-size: 14px;\n  }\n}", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -14779,7 +14779,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".settings-page .settings-header h1 {\n  color: #2c3e50;\n  margin-bottom: 8px;\n  font-size: 28px;\n}\n.settings-page .settings-header p {\n  color: #7f8c8d;\n  font-size: 16px;\n  margin-bottom: 0;\n}\n.settings-page .settings-nav .nav-buttons {\n  display: flex;\n  gap: 10px;\n}\n.settings-page .settings-nav .nav-buttons .nav-btn {\n  padding: 12px 24px;\n  border: 2px solid #e9ecef;\n  background: #f8f9fa;\n  color: #6c757d;\n  border-radius: 6px;\n  cursor: pointer;\n  font-weight: 500;\n  transition: all 0.3s ease;\n}\n.settings-page .settings-nav .nav-buttons .nav-btn:hover {\n  background: #e9ecef;\n  border-color: #dee2e6;\n}\n.settings-page .settings-nav .nav-buttons .nav-btn.active {\n  background: #3498db;\n  border-color: #3498db;\n  color: white;\n}\n.settings-page .settings-content .section-header h5 {\n  color: #2c3e50;\n  margin-bottom: 0;\n}\n.settings-page .settings-content .section-header .btn-primary {\n  background: #3498db;\n  border-color: #3498db;\n}\n.settings-page .settings-content .section-header .btn-primary:hover {\n  background: #2980b9;\n  border-color: #2980b9;\n}\n.settings-page .settings-content .departments-table .table th,\n.settings-page .settings-content .courses-table .table th,\n.settings-page .settings-content .academic-years-table .table th {\n  background: #2c3e50;\n  color: white;\n  font-weight: 600;\n  border: none;\n}\n.settings-page .settings-content .departments-table .table td,\n.settings-page .settings-content .courses-table .table td,\n.settings-page .settings-content .academic-years-table .table td {\n  vertical-align: middle;\n}\n.settings-page .settings-content .departments-table .table .badge,\n.settings-page .settings-content .courses-table .table .badge,\n.settings-page .settings-content .academic-years-table .table .badge {\n  padding: 6px 12px;\n  border-radius: 12px;\n  font-size: 12px;\n  font-weight: 500;\n}\n.settings-page .settings-content .departments-table .table .badge.badge-active,\n.settings-page .settings-content .courses-table .table .badge.badge-active,\n.settings-page .settings-content .academic-years-table .table .badge.badge-active {\n  background: #d4edda;\n  color: #155724;\n}\n.settings-page .settings-content .departments-table .table .badge.badge-inactive,\n.settings-page .settings-content .courses-table .table .badge.badge-inactive,\n.settings-page .settings-content .academic-years-table .table .badge.badge-inactive {\n  background: #f8d7da;\n  color: #721c24;\n}\n.settings-page .settings-content .departments-table .table .badge.badge-info,\n.settings-page .settings-content .courses-table .table .badge.badge-info,\n.settings-page .settings-content .academic-years-table .table .badge.badge-info {\n  background: #d1ecf1;\n  color: #0c5460;\n}\n.settings-page .settings-content .departments-table .table .badge.badge-secondary,\n.settings-page .settings-content .courses-table .table .badge.badge-secondary,\n.settings-page .settings-content .academic-years-table .table .badge.badge-secondary {\n  background: #e2e3e5;\n  color: #383d41;\n}\n.settings-page .settings-content .departments-table .table .btn,\n.settings-page .settings-content .courses-table .table .btn,\n.settings-page .settings-content .academic-years-table .table .btn {\n  font-size: 12px;\n  padding: 4px 8px;\n}\n.settings-page .settings-content .departments-table .table .btn.btn-outline-primary,\n.settings-page .settings-content .courses-table .table .btn.btn-outline-primary,\n.settings-page .settings-content .academic-years-table .table .btn.btn-outline-primary {\n  color: #3498db;\n  border-color: #3498db;\n}\n.settings-page .settings-content .departments-table .table .btn.btn-outline-primary:hover,\n.settings-page .settings-content .courses-table .table .btn.btn-outline-primary:hover,\n.settings-page .settings-content .academic-years-table .table .btn.btn-outline-primary:hover {\n  background: #3498db;\n  color: white;\n}\n.settings-page .settings-content .departments-table .table .btn.btn-outline-primary:disabled,\n.settings-page .settings-content .courses-table .table .btn.btn-outline-primary:disabled,\n.settings-page .settings-content .academic-years-table .table .btn.btn-outline-primary:disabled {\n  color: #6c757d;\n  border-color: #6c757d;\n  background: transparent;\n  cursor: not-allowed;\n}\n.settings-page .settings-content .departments-table .table .btn.btn-outline-secondary,\n.settings-page .settings-content .courses-table .table .btn.btn-outline-secondary,\n.settings-page .settings-content .academic-years-table .table .btn.btn-outline-secondary {\n  color: #6c757d;\n  border-color: #6c757d;\n}\n.settings-page .settings-content .departments-table .table .btn.btn-outline-secondary:hover,\n.settings-page .settings-content .courses-table .table .btn.btn-outline-secondary:hover,\n.settings-page .settings-content .academic-years-table .table .btn.btn-outline-secondary:hover {\n  background: #6c757d;\n  color: white;\n}\n.settings-page .settings-content .departments-table .table .btn.btn-outline-secondary:disabled,\n.settings-page .settings-content .courses-table .table .btn.btn-outline-secondary:disabled,\n.settings-page .settings-content .academic-years-table .table .btn.btn-outline-secondary:disabled {\n  color: #6c757d;\n  border-color: #6c757d;\n  background: transparent;\n  cursor: not-allowed;\n}\n.settings-page .settings-content .departments-table .table .btn.btn-outline-danger,\n.settings-page .settings-content .courses-table .table .btn.btn-outline-danger,\n.settings-page .settings-content .academic-years-table .table .btn.btn-outline-danger {\n  color: #dc3545;\n  border-color: #dc3545;\n}\n.settings-page .settings-content .departments-table .table .btn.btn-outline-danger:hover,\n.settings-page .settings-content .courses-table .table .btn.btn-outline-danger:hover,\n.settings-page .settings-content .academic-years-table .table .btn.btn-outline-danger:hover {\n  background: #dc3545;\n  color: white;\n}\n.settings-page .settings-content .departments-table .table .btn.btn-outline-danger:disabled,\n.settings-page .settings-content .courses-table .table .btn.btn-outline-danger:disabled,\n.settings-page .settings-content .academic-years-table .table .btn.btn-outline-danger:disabled {\n  color: #6c757d;\n  border-color: #6c757d;\n  background: transparent;\n  cursor: not-allowed;\n}\n.settings-page .sfms-modal {\n  position: fixed;\n  top: 0;\n  left: 0;\n  width: 100%;\n  height: 100%;\n  z-index: 1050;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n}\n.settings-page .sfms-modal .sfms-modal-backdrop {\n  position: absolute;\n  top: 0;\n  left: 0;\n  width: 100%;\n  height: 100%;\n  background: rgba(0, 0, 0, 0.5);\n  backdrop-filter: blur(2px);\n}\n.settings-page .sfms-modal .settings-modal-window {\n  position: relative;\n  width: 90%;\n  max-width: 500px;\n  max-height: 90vh;\n  border-radius: 12px;\n  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);\n  overflow: hidden;\n  animation: modalSlideIn 0.3s ease-out;\n}\n.settings-page .sfms-modal .settings-modal-window .modal-form {\n  padding: 0;\n}\n.settings-page .sfms-modal .settings-modal-window .modal-form .modal-top {\n  padding: 20px 24px 0;\n  border-bottom: 1px solid #e9ecef;\n}\n.settings-page .sfms-modal .settings-modal-window .modal-form .modal-top h5 {\n  margin: 0;\n  color: #2c3e50;\n  font-size: 18px;\n  font-weight: 600;\n}\n.settings-page .sfms-modal .settings-modal-window .modal-form .modal-top .btn-close {\n  background: none;\n  border: none;\n  font-size: 24px;\n  color: #6c757d;\n  cursor: pointer;\n  padding: 0;\n  width: 30px;\n  height: 30px;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  border-radius: 4px;\n  transition: all 0.2s ease;\n}\n.settings-page .sfms-modal .settings-modal-window .modal-form .modal-top .btn-close:hover {\n  background: #f8f9fa;\n  color: #495057;\n}\n.settings-page .sfms-modal .settings-modal-window .modal-form .modal-body {\n  padding: 24px;\n  max-height: 60vh;\n  overflow-y: auto;\n}\n.settings-page .sfms-modal .settings-modal-window .modal-form .modal-body .form-label {\n  font-weight: 500;\n  color: #2c3e50;\n  margin-bottom: 8px;\n  display: block;\n}\n.settings-page .sfms-modal .settings-modal-window .modal-form .modal-body .form-control,\n.settings-page .sfms-modal .settings-modal-window .modal-form .modal-body .form-select {\n  border: 1px solid #ddd;\n  border-radius: 6px;\n  padding: 10px 12px;\n  font-size: 14px;\n  transition: all 0.2s ease;\n}\n.settings-page .sfms-modal .settings-modal-window .modal-form .modal-body .form-control:focus,\n.settings-page .sfms-modal .settings-modal-window .modal-form .modal-body .form-select:focus {\n  border-color: #3498db;\n  box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.1);\n  outline: none;\n}\n.settings-page .sfms-modal .settings-modal-window .modal-form .modal-body .form-text {\n  font-size: 12px;\n  color: #6c757d;\n  margin-top: 4px;\n}\n.settings-page .sfms-modal .settings-modal-window .modal-form .modal-body .row.g-3 {\n  margin: 0 -8px;\n}\n.settings-page .sfms-modal .settings-modal-window .modal-form .modal-body .row.g-3 .col-md-12 {\n  padding: 0 8px;\n  margin-bottom: 16px;\n}\n.settings-page .sfms-modal .settings-modal-window .modal-form .modal-actions {\n  padding: 16px 24px 24px;\n  border-top: 1px solid #e9ecef;\n  background: #f8f9fa;\n}\n.settings-page .sfms-modal .settings-modal-window .modal-form .modal-actions .btn {\n  padding: 10px 20px;\n  border-radius: 6px;\n  font-weight: 500;\n  transition: all 0.2s ease;\n}\n.settings-page .sfms-modal .settings-modal-window .modal-form .modal-actions .btn.btn-outline-secondary {\n  border: 1px solid #6c757d;\n  color: #6c757d;\n}\n.settings-page .sfms-modal .settings-modal-window .modal-form .modal-actions .btn.btn-outline-secondary:hover {\n  background: #6c757d;\n  color: white;\n}\n.settings-page .sfms-modal .settings-modal-window .modal-form .modal-actions .btn.btn-primary {\n  background: #3498db;\n  border: 1px solid #3498db;\n  color: white;\n}\n.settings-page .sfms-modal .settings-modal-window .modal-form .modal-actions .btn.btn-primary:hover {\n  background: #2980b9;\n  border-color: #2980b9;\n}\n.settings-page .settings-errors {\n  background: #f8d7da;\n  color: #721c24;\n  padding: 12px 16px;\n  border-radius: 6px;\n  margin: 16px 24px 0;\n  border: 1px solid #f5c6cb;\n}\n.settings-page .settings-errors ul {\n  margin: 0;\n  padding-left: 20px;\n}\n.settings-page .settings-errors ul li {\n  font-size: 14px;\n}\n.settings-page .settings-toast {\n  position: fixed;\n  top: 20px;\n  right: 20px;\n  background: #28a745;\n  color: white;\n  padding: 12px 20px;\n  border-radius: 6px;\n  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);\n  z-index: 1060;\n  font-weight: 500;\n  animation: toastSlideIn 0.3s ease-out;\n}\n\n@keyframes modalSlideIn {\n  from {\n    opacity: 0;\n    transform: translateY(-20px) scale(0.95);\n  }\n  to {\n    opacity: 1;\n    transform: translateY(0) scale(1);\n  }\n}\n@keyframes toastSlideIn {\n  from {\n    opacity: 0;\n    transform: translateX(100%);\n  }\n  to {\n    opacity: 1;\n    transform: translateX(0);\n  }\n}\n@media (max-width: 768px) {\n  .settings-page .settings-nav .nav-buttons {\n    flex-direction: column;\n  }\n  .settings-page .settings-nav .nav-buttons .nav-btn {\n    text-align: center;\n  }\n  .settings-page .section-header .d-flex {\n    flex-direction: column;\n    gap: 15px;\n  }\n  .settings-page .section-header .d-flex .btn {\n    width: 100%;\n  }\n  .settings-page .table-responsive {\n    font-size: 14px;\n  }\n  .settings-page .sfms-modal .settings-modal-window {\n    width: 95%;\n    margin: 20px;\n  }\n  .settings-page .sfms-modal .settings-modal-window .modal-form .modal-body {\n    padding: 16px;\n  }\n  .settings-page .sfms-modal .settings-modal-window .modal-form .modal-actions {\n    padding: 16px;\n  }\n  .settings-page .sfms-modal .settings-modal-window .modal-form .modal-actions .btn {\n    width: 100%;\n    margin-bottom: 8px;\n  }\n  .settings-page .sfms-modal .settings-modal-window .modal-form .modal-actions .btn:last-child {\n    margin-bottom: 0;\n  }\n}\nbody.sfms-modal-open {\n  overflow: hidden;\n}", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, ".settings-page .settings-header h1 {\n  color: #2c3e50;\n  margin-bottom: 8px;\n  font-size: 28px;\n}\n.settings-page .settings-header p {\n  color: #7f8c8d;\n  font-size: 16px;\n  margin-bottom: 0;\n}\n.settings-page .settings-nav .nav-buttons {\n  display: flex;\n  gap: 10px;\n}\n.settings-page .settings-nav .nav-buttons .nav-btn {\n  padding: 12px 24px;\n  border: 2px solid #e9ecef;\n  background: #f8f9fa;\n  color: #6c757d;\n  border-radius: 6px;\n  cursor: pointer;\n  font-weight: 500;\n  transition: all 0.3s ease;\n}\n.settings-page .settings-nav .nav-buttons .nav-btn:hover {\n  background: #eef6ff;\n  border-color: #d6e9ff;\n}\n.settings-page .settings-nav .nav-buttons .nav-btn.active {\n  background: #0f79e0;\n  border-color: #0f79e0;\n  color: white;\n}\n.settings-page .settings-content .section-header h5 {\n  color: #2c3e50;\n  margin-bottom: 0;\n}\n.settings-page .settings-content .section-header .btn-primary {\n  background: #0f79e0;\n  border-color: #0f79e0;\n}\n.settings-page .settings-content .section-header .btn-primary:hover {\n  background: #0b6ec0;\n  border-color: #0b6ec0;\n}\n.settings-page .settings-content .departments-table .table th,\n.settings-page .settings-content .courses-table .table th,\n.settings-page .settings-content .academic-years-table .table th {\n  background: #0f79e0;\n  color: white;\n  font-weight: 600;\n  border: none;\n}\n.settings-page .settings-content .departments-table .table td,\n.settings-page .settings-content .courses-table .table td,\n.settings-page .settings-content .academic-years-table .table td {\n  vertical-align: middle;\n}\n.settings-page .settings-content .departments-table .table .badge,\n.settings-page .settings-content .courses-table .table .badge,\n.settings-page .settings-content .academic-years-table .table .badge {\n  padding: 6px 12px;\n  border-radius: 12px;\n  font-size: 12px;\n  font-weight: 500;\n}\n.settings-page .settings-content .departments-table .table .badge.badge-active,\n.settings-page .settings-content .courses-table .table .badge.badge-active,\n.settings-page .settings-content .academic-years-table .table .badge.badge-active {\n  background: #d4edda;\n  color: #155724;\n}\n.settings-page .settings-content .departments-table .table .badge.badge-inactive,\n.settings-page .settings-content .courses-table .table .badge.badge-inactive,\n.settings-page .settings-content .academic-years-table .table .badge.badge-inactive {\n  background: #f8d7da;\n  color: #721c24;\n}\n.settings-page .settings-content .departments-table .table .badge.badge-info,\n.settings-page .settings-content .courses-table .table .badge.badge-info,\n.settings-page .settings-content .academic-years-table .table .badge.badge-info {\n  background: #d1ecf1;\n  color: #0c5460;\n}\n.settings-page .settings-content .departments-table .table .badge.badge-secondary,\n.settings-page .settings-content .courses-table .table .badge.badge-secondary,\n.settings-page .settings-content .academic-years-table .table .badge.badge-secondary {\n  background: #e2e3e5;\n  color: #383d41;\n}\n.settings-page .settings-content .departments-table .table .btn,\n.settings-page .settings-content .courses-table .table .btn,\n.settings-page .settings-content .academic-years-table .table .btn {\n  font-size: 12px;\n  padding: 4px 8px;\n}\n.settings-page .settings-content .departments-table .table .btn.btn-outline-primary,\n.settings-page .settings-content .courses-table .table .btn.btn-outline-primary,\n.settings-page .settings-content .academic-years-table .table .btn.btn-outline-primary {\n  color: #0f79e0;\n  border-color: #0f79e0;\n}\n.settings-page .settings-content .departments-table .table .btn.btn-outline-primary:hover,\n.settings-page .settings-content .courses-table .table .btn.btn-outline-primary:hover,\n.settings-page .settings-content .academic-years-table .table .btn.btn-outline-primary:hover {\n  background: #0f79e0;\n  color: white;\n}\n.settings-page .settings-content .departments-table .table .btn.btn-outline-primary:disabled,\n.settings-page .settings-content .courses-table .table .btn.btn-outline-primary:disabled,\n.settings-page .settings-content .academic-years-table .table .btn.btn-outline-primary:disabled {\n  color: #6c757d;\n  border-color: #6c757d;\n  background: transparent;\n  cursor: not-allowed;\n}\n.settings-page .settings-content .departments-table .table .btn.btn-outline-secondary,\n.settings-page .settings-content .courses-table .table .btn.btn-outline-secondary,\n.settings-page .settings-content .academic-years-table .table .btn.btn-outline-secondary {\n  color: #6c757d;\n  border-color: #6c757d;\n}\n.settings-page .settings-content .departments-table .table .btn.btn-outline-secondary:hover,\n.settings-page .settings-content .courses-table .table .btn.btn-outline-secondary:hover,\n.settings-page .settings-content .academic-years-table .table .btn.btn-outline-secondary:hover {\n  background: #6c757d;\n  color: white;\n}\n.settings-page .settings-content .departments-table .table .btn.btn-outline-secondary:disabled,\n.settings-page .settings-content .courses-table .table .btn.btn-outline-secondary:disabled,\n.settings-page .settings-content .academic-years-table .table .btn.btn-outline-secondary:disabled {\n  color: #6c757d;\n  border-color: #6c757d;\n  background: transparent;\n  cursor: not-allowed;\n}\n.settings-page .settings-content .departments-table .table .btn.btn-outline-danger,\n.settings-page .settings-content .courses-table .table .btn.btn-outline-danger,\n.settings-page .settings-content .academic-years-table .table .btn.btn-outline-danger {\n  color: #dc3545;\n  border-color: #dc3545;\n}\n.settings-page .settings-content .departments-table .table .btn.btn-outline-danger:hover,\n.settings-page .settings-content .courses-table .table .btn.btn-outline-danger:hover,\n.settings-page .settings-content .academic-years-table .table .btn.btn-outline-danger:hover {\n  background: #dc3545;\n  color: white;\n}\n.settings-page .settings-content .departments-table .table .btn.btn-outline-danger:disabled,\n.settings-page .settings-content .courses-table .table .btn.btn-outline-danger:disabled,\n.settings-page .settings-content .academic-years-table .table .btn.btn-outline-danger:disabled {\n  color: #6c757d;\n  border-color: #6c757d;\n  background: transparent;\n  cursor: not-allowed;\n}\n.settings-page .sfms-modal {\n  position: fixed;\n  top: 0;\n  left: 0;\n  width: 100%;\n  height: 100%;\n  z-index: 1050;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n}\n.settings-page .sfms-modal .sfms-modal-backdrop {\n  position: absolute;\n  top: 0;\n  left: 0;\n  width: 100%;\n  height: 100%;\n  background: rgba(0, 0, 0, 0.5);\n  backdrop-filter: blur(2px);\n}\n.settings-page .sfms-modal .settings-modal-window {\n  position: relative;\n  width: 90%;\n  max-width: 500px;\n  max-height: 90vh;\n  border-radius: 12px;\n  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);\n  overflow: hidden;\n  animation: modalSlideIn 0.3s ease-out;\n}\n.settings-page .sfms-modal .settings-modal-window .modal-form {\n  padding: 0;\n}\n.settings-page .sfms-modal .settings-modal-window .modal-form .modal-top {\n  padding: 20px 24px 0;\n  border-bottom: 1px solid #e9ecef;\n}\n.settings-page .sfms-modal .settings-modal-window .modal-form .modal-top h5 {\n  margin: 0;\n  color: #2c3e50;\n  font-size: 18px;\n  font-weight: 600;\n}\n.settings-page .sfms-modal .settings-modal-window .modal-form .modal-top .btn-close {\n  background: none;\n  border: none;\n  font-size: 24px;\n  color: #6c757d;\n  cursor: pointer;\n  padding: 0;\n  width: 30px;\n  height: 30px;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  border-radius: 4px;\n  transition: all 0.2s ease;\n}\n.settings-page .sfms-modal .settings-modal-window .modal-form .modal-top .btn-close:hover {\n  background: #f8f9fa;\n  color: #495057;\n}\n.settings-page .sfms-modal .settings-modal-window .modal-form .modal-body {\n  padding: 24px;\n  max-height: 60vh;\n  overflow-y: auto;\n}\n.settings-page .sfms-modal .settings-modal-window .modal-form .modal-body .form-label {\n  font-weight: 500;\n  color: #2c3e50;\n  margin-bottom: 8px;\n  display: block;\n}\n.settings-page .sfms-modal .settings-modal-window .modal-form .modal-body .form-control,\n.settings-page .sfms-modal .settings-modal-window .modal-form .modal-body .form-select {\n  border: 1px solid #ddd;\n  border-radius: 6px;\n  padding: 10px 12px;\n  font-size: 14px;\n  transition: all 0.2s ease;\n}\n.settings-page .sfms-modal .settings-modal-window .modal-form .modal-body .form-control:focus,\n.settings-page .sfms-modal .settings-modal-window .modal-form .modal-body .form-select:focus {\n  border-color: #3498db;\n  box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.1);\n  outline: none;\n}\n.settings-page .sfms-modal .settings-modal-window .modal-form .modal-body .form-text {\n  font-size: 12px;\n  color: #6c757d;\n  margin-top: 4px;\n}\n.settings-page .sfms-modal .settings-modal-window .modal-form .modal-body .row.g-3 {\n  margin: 0 -8px;\n}\n.settings-page .sfms-modal .settings-modal-window .modal-form .modal-body .row.g-3 .col-md-12 {\n  padding: 0 8px;\n  margin-bottom: 16px;\n}\n.settings-page .sfms-modal .settings-modal-window .modal-form .modal-actions {\n  padding: 16px 24px 24px;\n  border-top: 1px solid #e9ecef;\n  background: #f8f9fa;\n}\n.settings-page .sfms-modal .settings-modal-window .modal-form .modal-actions .btn {\n  padding: 10px 20px;\n  border-radius: 6px;\n  font-weight: 500;\n  transition: all 0.2s ease;\n}\n.settings-page .sfms-modal .settings-modal-window .modal-form .modal-actions .btn.btn-outline-secondary {\n  border: 1px solid #6c757d;\n  color: #6c757d;\n}\n.settings-page .sfms-modal .settings-modal-window .modal-form .modal-actions .btn.btn-outline-secondary:hover {\n  background: #6c757d;\n  color: white;\n}\n.settings-page .sfms-modal .settings-modal-window .modal-form .modal-actions .btn.btn-primary {\n  background: #3498db;\n  border: 1px solid #3498db;\n  color: white;\n}\n.settings-page .sfms-modal .settings-modal-window .modal-form .modal-actions .btn.btn-primary:hover {\n  background: #2980b9;\n  border-color: #2980b9;\n}\n.settings-page .settings-errors {\n  background: #f8d7da;\n  color: #721c24;\n  padding: 12px 16px;\n  border-radius: 6px;\n  margin: 16px 24px 0;\n  border: 1px solid #f5c6cb;\n}\n.settings-page .settings-errors ul {\n  margin: 0;\n  padding-left: 20px;\n}\n.settings-page .settings-errors ul li {\n  font-size: 14px;\n}\n.settings-page .settings-toast {\n  position: fixed;\n  top: 20px;\n  right: 20px;\n  background: #28a745;\n  color: white;\n  padding: 12px 20px;\n  border-radius: 6px;\n  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);\n  z-index: 1060;\n  font-weight: 500;\n  animation: toastSlideIn 0.3s ease-out;\n}\n\n@keyframes modalSlideIn {\n  from {\n    opacity: 0;\n    transform: translateY(-20px) scale(0.95);\n  }\n  to {\n    opacity: 1;\n    transform: translateY(0) scale(1);\n  }\n}\n@keyframes toastSlideIn {\n  from {\n    opacity: 0;\n    transform: translateX(100%);\n  }\n  to {\n    opacity: 1;\n    transform: translateX(0);\n  }\n}\n@media (max-width: 768px) {\n  .settings-page .settings-nav .nav-buttons {\n    flex-direction: column;\n  }\n  .settings-page .settings-nav .nav-buttons .nav-btn {\n    text-align: center;\n  }\n  .settings-page .section-header .d-flex {\n    flex-direction: column;\n    gap: 15px;\n  }\n  .settings-page .section-header .d-flex .btn {\n    width: 100%;\n  }\n  .settings-page .table-responsive {\n    font-size: 14px;\n  }\n  .settings-page .sfms-modal .settings-modal-window {\n    width: 95%;\n    margin: 20px;\n  }\n  .settings-page .sfms-modal .settings-modal-window .modal-form .modal-body {\n    padding: 16px;\n  }\n  .settings-page .sfms-modal .settings-modal-window .modal-form .modal-actions {\n    padding: 16px;\n  }\n  .settings-page .sfms-modal .settings-modal-window .modal-form .modal-actions .btn {\n    width: 100%;\n    margin-bottom: 8px;\n  }\n  .settings-page .sfms-modal .settings-modal-window .modal-form .modal-actions .btn:last-child {\n    margin-bottom: 0;\n  }\n}\nbody.sfms-modal-open {\n  overflow: hidden;\n}", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -14803,7 +14803,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".student-page {\n  padding: 0;\n}\n.student-page .student-filters {\n  border-radius: 12px;\n  box-shadow: 0 6px 20px rgba(13, 38, 59, 0.04);\n}\n.student-page .student-filters .form-select, .student-page .student-filters .form-control {\n  height: 44px;\n  border-radius: 8px;\n  border: 1px solid #e6edf3;\n}\n.student-page .student-filters .form-select:focus, .student-page .student-filters .form-control:focus {\n  border-color: #0b63d6;\n  box-shadow: 0 0 0 3px rgba(11, 99, 214, 0.1);\n}\n.student-page .student-filters .btn-search {\n  background: linear-gradient(90deg, #0b63d6, #2a9df4);\n  color: #fff;\n  border-radius: 8px;\n  height: 44px;\n  border: none;\n  font-weight: 600;\n  transition: all 0.2s ease;\n}\n.student-page .student-filters .btn-search:hover {\n  transform: translateY(-1px);\n  box-shadow: 0 6px 14px rgba(11, 99, 214, 0.18);\n}\n.student-page .student-table {\n  border-radius: 12px;\n  overflow: hidden;\n  box-shadow: 0 6px 20px rgba(13, 38, 59, 0.04);\n}\n.student-page .student-table .table {\n  margin-bottom: 0;\n}\n.student-page .student-table .table th, .student-page .student-table .table td {\n  padding: 16px;\n  vertical-align: middle;\n}\n.student-page .student-table thead.table-light th {\n  border-bottom: 0;\n  color: #6b7280;\n  font-weight: 600;\n  background: #f8fafc;\n}\n.student-page .student-table tbody td {\n  border-top: 1px solid #f1f5f9;\n}\n.student-page .student-table .avatar-sm {\n  width: 36px;\n  height: 36px;\n  font-size: 12px;\n  font-weight: 600;\n}\n.student-page .student-table .badge-active {\n  display: inline-block;\n  background: #d1fae5;\n  color: #065f46;\n  padding: 6px 10px;\n  border-radius: 999px;\n  font-weight: 600;\n  font-size: 12px;\n}\n.student-page .student-table .badge-inactive {\n  display: inline-block;\n  background: #fee2e2;\n  color: #981b1b;\n  padding: 6px 10px;\n  border-radius: 999px;\n  font-weight: 600;\n  font-size: 12px;\n}\n.student-page .student-table .btn-sm {\n  padding: 4px 12px;\n  font-size: 12px;\n}\n.student-page {\n  /* Archive button styles */\n}\n.student-page .student-archive-btn {\n  position: fixed;\n  right: 20px;\n  bottom: 80px;\n  z-index: 1000;\n}\n.student-page .student-archive-btn .btn-archive {\n  background: linear-gradient(90deg, #6b7280, #9ca3af);\n  color: white;\n  border: none;\n  padding: 12px 20px;\n  border-radius: 8px;\n  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);\n  font-weight: 600;\n  transition: all 0.3s ease;\n}\n.student-page .student-archive-btn .btn-archive:hover {\n  transform: translateY(-2px);\n  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);\n  background: linear-gradient(90deg, #5a6268, #7b8794);\n}\n.student-page {\n  /* Modal Styles */\n}\n.student-page .sfms-modal {\n  position: fixed;\n  inset: 0;\n  z-index: 2000;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n}\n.student-page .sfms-modal .sfms-modal-backdrop {\n  position: absolute;\n  inset: 0;\n  background: rgba(15, 23, 42, 0.45);\n  backdrop-filter: blur(2px);\n  animation: fadeIn 0.2s ease;\n}\n.student-page .sfms-modal .sfms-modal-window {\n  position: relative;\n  width: 880px;\n  max-width: calc(100% - 32px);\n  border-radius: 12px;\n  padding: 0;\n  box-shadow: 0 20px 60px rgba(2, 6, 23, 0.18);\n  transform: translateY(0);\n  z-index: 2020;\n  animation: slideUp 0.3s ease;\n}\n.student-page .sfms-modal .modal-form {\n  padding: 20px;\n}\n.student-page .sfms-modal .modal-form .modal-top {\n  padding-bottom: 8px;\n  border-bottom: 1px solid #eef2f6;\n}\n.student-page .sfms-modal .modal-form .modal-top h5 {\n  margin: 0;\n  font-weight: 700;\n  color: #111827;\n}\n.student-page .sfms-modal .modal-form .modal-top .btn-close {\n  background: transparent;\n  border: 0;\n  font-size: 24px;\n  cursor: pointer;\n  color: #6b7280;\n  padding: 4px;\n  line-height: 1;\n}\n.student-page .sfms-modal .modal-form .modal-top .btn-close:hover {\n  color: #111827;\n}\n.student-page .sfms-modal .modal-form .modal-body {\n  padding: 18px 0;\n}\n.student-page .sfms-modal .modal-form .modal-body .form-control, .student-page .sfms-modal .modal-form .modal-body .form-select {\n  border-radius: 8px;\n  height: 44px;\n  padding: 8px 12px;\n  border: 1px solid #e6edf3;\n}\n.student-page .sfms-modal .modal-form .modal-body .form-control:focus, .student-page .sfms-modal .modal-form .modal-body .form-select:focus {\n  border-color: #0b63d6;\n  box-shadow: 0 0 0 3px rgba(11, 99, 214, 0.1);\n}\n.student-page .sfms-modal .modal-form .modal-actions {\n  padding-top: 12px;\n  border-top: 1px solid #eef2f6;\n  margin-top: 10px;\n}\n.student-page .sfms-modal .modal-form .modal-actions .btn {\n  padding: 10px 20px;\n  font-weight: 600;\n}\n.student-page .sfms-modal .modal-form .modal-actions .btn.btn-primary {\n  background: linear-gradient(90deg, #0b63d6, #2a9df4);\n  border: none;\n}\n.student-page .sfms-modal .modal-form label {\n  font-size: 13px;\n  color: #374151;\n  font-weight: 600;\n  display: block;\n  margin-bottom: 6px;\n}\n.student-page .sfms-modal .modal-form .student-errors {\n  background: #fff1f2;\n  color: #7f1d1d;\n  border-radius: 8px;\n  padding: 10px;\n  margin-bottom: 12px;\n}\n.student-page .sfms-modal .modal-form .student-errors ul {\n  margin: 0;\n  padding-left: 16px;\n}\n.student-page .sfms-modal .modal-form .student-errors ul li {\n  font-size: 14px;\n}\n.student-page {\n  /* Archive page modal */\n}\n.student-page .archive-page-modal {\n  width: 95% !important;\n  max-width: 1400px !important;\n  height: 90vh;\n}\n.student-page .archive-page-modal .sfms-modal-window {\n  height: 100%;\n  display: flex;\n  flex-direction: column;\n}\n.student-page .archive-page-modal .sfms-modal-window .modal-form {\n  flex: 1;\n  display: flex;\n  flex-direction: column;\n}\n.student-page .archive-page-modal .sfms-modal-window .modal-form .student-table {\n  flex: 1;\n  overflow-y: auto;\n}\n.student-page {\n  /* Archive specific styles */\n}\n.student-page .btn-success {\n  background: linear-gradient(90deg, #10b981, #059669);\n  color: white;\n  border: none;\n}\n.student-page .btn-success:hover {\n  background: linear-gradient(90deg, #34d399, #0d9488);\n}\n.student-page .btn-warning {\n  background: linear-gradient(90deg, #f59e0b, #d97706);\n  color: white;\n  border: none;\n}\n.student-page .btn-warning:hover {\n  background: linear-gradient(90deg, #eab308, #b45309);\n}\n.student-page .extra-small {\n  font-size: 0.75rem;\n}\n.student-page {\n  /* Light background for archive filters */\n}\n.student-page .student-filters.bg-light {\n  background: #f8fafc !important;\n  border-radius: 8px;\n}\n.student-page {\n  /* Toast Notification */\n}\n.student-page .student-toast {\n  position: fixed;\n  right: 20px;\n  bottom: 24px;\n  z-index: 3000;\n  background: linear-gradient(90deg, #10b981, #06b6d4);\n  color: white;\n  padding: 12px 16px;\n  border-radius: 10px;\n  box-shadow: 0 10px 30px rgba(2, 6, 23, 0.18);\n  font-weight: 600;\n  animation: slideInRight 0.3s ease;\n}\n.student-page {\n  /* Loading Spinner */\n}\n.student-page .spinner-border {\n  width: 2rem;\n  height: 2rem;\n}\n\n/* Animations */\n@keyframes fadeIn {\n  from {\n    opacity: 0;\n  }\n  to {\n    opacity: 1;\n  }\n}\n@keyframes slideUp {\n  from {\n    opacity: 0;\n    transform: translateY(20px);\n  }\n  to {\n    opacity: 1;\n    transform: translateY(0);\n  }\n}\n@keyframes slideInRight {\n  from {\n    opacity: 0;\n    transform: translateX(100%);\n  }\n  to {\n    opacity: 1;\n    transform: translateX(0);\n  }\n}\n/* Helper to disable body scroll while modal open */\nbody.sfms-modal-open {\n  overflow: hidden;\n}\n\n/* Responsive Design */\n@media (max-width: 1200px) {\n  .student-filters .row .col-md-1, .student-filters .row .col-md-2, .student-filters .row .col-md-3, .student-filters .row .col-md-4 {\n    margin-bottom: 1rem;\n  }\n  .student-table {\n    overflow-x: auto;\n  }\n  .student-table .table {\n    min-width: 1000px;\n  }\n}\n@media (max-width: 768px) {\n  .student-page .student-filters .row .col-md-1, .student-page .student-filters .row .col-md-2, .student-page .student-filters .row .col-md-3, .student-page .student-filters .row .col-md-4 {\n    flex: 0 0 100%;\n    max-width: 100%;\n  }\n  .archive-page-modal {\n    width: 98% !important;\n    margin: 1%;\n  }\n}", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, ".student-page {\n  padding: 0;\n}\n.student-page .student-filters {\n  border-radius: 12px;\n  box-shadow: 0 6px 20px rgba(13, 38, 59, 0.04);\n}\n.student-page .student-filters .form-select, .student-page .student-filters .form-control {\n  height: 44px;\n  border-radius: 8px;\n  border: 1px solid #e6edf3;\n}\n.student-page .student-filters .form-select:focus, .student-page .student-filters .form-control:focus {\n  border-color: #0b63d6;\n  box-shadow: 0 0 0 3px rgba(11, 99, 214, 0.1);\n}\n.student-page .student-filters .btn-search {\n  background: linear-gradient(90deg, #0b63d6, #2a9df4);\n  color: #fff;\n  border-radius: 8px;\n  height: 44px;\n  border: none;\n  font-weight: 600;\n  transition: all 0.2s ease;\n}\n.student-page .student-filters .btn-search:hover {\n  transform: translateY(-1px);\n  box-shadow: 0 6px 14px rgba(11, 99, 214, 0.18);\n}\n.student-page .student-table {\n  border-radius: 12px;\n  overflow: hidden;\n  box-shadow: 0 6px 20px rgba(13, 38, 59, 0.04);\n}\n.student-page .student-table .table {\n  margin-bottom: 0;\n}\n.student-page .student-table .table th, .student-page .student-table .table td {\n  padding: 16px;\n  vertical-align: middle;\n}\n.student-page .student-table thead.table-light th {\n  border-bottom: 0;\n  color: #ffffff;\n  font-weight: 600;\n  background: #0f79e0; /* blue header */\n}\n.student-page .student-table tbody td {\n  border-top: 1px solid #f1f5f9;\n}\n.student-page .student-table .avatar-sm {\n  width: 36px;\n  height: 36px;\n  font-size: 12px;\n  font-weight: 600;\n}\n.student-page .student-table .badge-active {\n  display: inline-block;\n  background: #d1fae5;\n  color: #065f46;\n  padding: 6px 10px;\n  border-radius: 999px;\n  font-weight: 600;\n  font-size: 12px;\n}\n.student-page .student-table .badge-inactive {\n  display: inline-block;\n  background: #fee2e2;\n  color: #981b1b;\n  padding: 6px 10px;\n  border-radius: 999px;\n  font-weight: 600;\n  font-size: 12px;\n}\n.student-page .student-table .btn-sm {\n  padding: 4px 12px;\n  font-size: 12px;\n}\n.student-page {\n  /* Archive button styles */\n}\n.student-page .student-archive-btn {\n  position: fixed;\n  right: 20px;\n  bottom: 80px;\n  z-index: 1000;\n}\n.student-page .student-archive-btn .btn-archive {\n  background: linear-gradient(90deg, #6b7280, #9ca3af);\n  color: white;\n  border: none;\n  padding: 12px 20px;\n  border-radius: 8px;\n  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);\n  font-weight: 600;\n  transition: all 0.3s ease;\n}\n.student-page .student-archive-btn .btn-archive:hover {\n  transform: translateY(-2px);\n  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);\n  background: linear-gradient(90deg, #5a6268, #7b8794);\n}\n.student-page {\n  /* Modal Styles */\n}\n.student-page .sfms-modal {\n  position: fixed;\n  inset: 0;\n  z-index: 2000;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n}\n.student-page .sfms-modal .sfms-modal-backdrop {\n  position: absolute;\n  inset: 0;\n  background: rgba(15, 23, 42, 0.45);\n  backdrop-filter: blur(2px);\n  animation: fadeIn 0.2s ease;\n}\n.student-page .sfms-modal .sfms-modal-window {\n  position: relative;\n  width: 880px;\n  max-width: calc(100% - 32px);\n  border-radius: 12px;\n  padding: 0;\n  box-shadow: 0 20px 60px rgba(2, 6, 23, 0.18);\n  transform: translateY(0);\n  z-index: 2020;\n  animation: slideUp 0.3s ease;\n}\n.student-page .sfms-modal .modal-form {\n  padding: 20px;\n}\n.student-page .sfms-modal .modal-form .modal-top {\n  padding-bottom: 8px;\n  border-bottom: 1px solid #eef2f6;\n}\n.student-page .sfms-modal .modal-form .modal-top h5 {\n  margin: 0;\n  font-weight: 700;\n  color: #111827;\n}\n.student-page .sfms-modal .modal-form .modal-top .btn-close {\n  background: transparent;\n  border: 0;\n  font-size: 24px;\n  cursor: pointer;\n  color: #6b7280;\n  padding: 4px;\n  line-height: 1;\n}\n.student-page .sfms-modal .modal-form .modal-top .btn-close:hover {\n  color: #111827;\n}\n.student-page .sfms-modal .modal-form .modal-body {\n  padding: 18px 0;\n}\n.student-page .sfms-modal .modal-form .modal-body .form-control, .student-page .sfms-modal .modal-form .modal-body .form-select {\n  border-radius: 8px;\n  height: 44px;\n  padding: 8px 12px;\n  border: 1px solid #e6edf3;\n}\n.student-page .sfms-modal .modal-form .modal-body .form-control:focus, .student-page .sfms-modal .modal-form .modal-body .form-select:focus {\n  border-color: #0b63d6;\n  box-shadow: 0 0 0 3px rgba(11, 99, 214, 0.1);\n}\n.student-page .sfms-modal .modal-form .modal-actions {\n  padding-top: 12px;\n  border-top: 1px solid #eef2f6;\n  margin-top: 10px;\n}\n.student-page .sfms-modal .modal-form .modal-actions .btn {\n  padding: 10px 20px;\n  font-weight: 600;\n}\n.student-page .sfms-modal .modal-form .modal-actions .btn.btn-primary {\n  background: linear-gradient(90deg, #0b63d6, #2a9df4);\n  border: none;\n}\n.student-page .sfms-modal .modal-form label {\n  font-size: 13px;\n  color: #374151;\n  font-weight: 600;\n  display: block;\n  margin-bottom: 6px;\n}\n.student-page .sfms-modal .modal-form .student-errors {\n  background: #fff1f2;\n  color: #7f1d1d;\n  border-radius: 8px;\n  padding: 10px;\n  margin-bottom: 12px;\n}\n.student-page .sfms-modal .modal-form .student-errors ul {\n  margin: 0;\n  padding-left: 16px;\n}\n.student-page .sfms-modal .modal-form .student-errors ul li {\n  font-size: 14px;\n}\n.student-page {\n  /* Archive page modal */\n}\n.student-page .archive-page-modal {\n  width: 95% !important;\n  max-width: 1400px !important;\n  height: 90vh;\n}\n.student-page .archive-page-modal .sfms-modal-window {\n  height: 100%;\n  display: flex;\n  flex-direction: column;\n}\n.student-page .archive-page-modal .sfms-modal-window .modal-form {\n  flex: 1;\n  display: flex;\n  flex-direction: column;\n}\n.student-page .archive-page-modal .sfms-modal-window .modal-form .student-table {\n  flex: 1;\n  overflow-y: auto;\n}\n.student-page {\n  /* Archive specific styles */\n}\n.student-page .btn-success {\n  background: linear-gradient(90deg, #10b981, #059669);\n  color: white;\n  border: none;\n}\n.student-page .btn-success:hover {\n  background: linear-gradient(90deg, #34d399, #0d9488);\n}\n.student-page .btn-warning {\n  background: linear-gradient(90deg, #f59e0b, #d97706);\n  color: white;\n  border: none;\n}\n.student-page .btn-warning:hover {\n  background: linear-gradient(90deg, #eab308, #b45309);\n}\n.student-page .extra-small {\n  font-size: 0.75rem;\n}\n.student-page {\n  /* Light background for archive filters */\n}\n.student-page .student-filters.bg-light {\n  background: #f8fafc !important;\n  border-radius: 8px;\n}\n.student-page {\n  /* Toast Notification */\n}\n.student-page .student-toast {\n  position: fixed;\n  right: 20px;\n  bottom: 24px;\n  z-index: 3000;\n  background: linear-gradient(90deg, #10b981, #06b6d4);\n  color: white;\n  padding: 12px 16px;\n  border-radius: 10px;\n  box-shadow: 0 10px 30px rgba(2, 6, 23, 0.18);\n  font-weight: 600;\n  animation: slideInRight 0.3s ease;\n}\n.student-page {\n  /* Loading Spinner */\n}\n.student-page .spinner-border {\n  width: 2rem;\n  height: 2rem;\n}\n\n/* Animations */\n@keyframes fadeIn {\n  from {\n    opacity: 0;\n  }\n  to {\n    opacity: 1;\n  }\n}\n@keyframes slideUp {\n  from {\n    opacity: 0;\n    transform: translateY(20px);\n  }\n  to {\n    opacity: 1;\n    transform: translateY(0);\n  }\n}\n@keyframes slideInRight {\n  from {\n    opacity: 0;\n    transform: translateX(100%);\n  }\n  to {\n    opacity: 1;\n    transform: translateX(0);\n  }\n}\n/* Helper to disable body scroll while modal open */\nbody.sfms-modal-open {\n  overflow: hidden;\n}\n\n/* Responsive Design */\n@media (max-width: 1200px) {\n  .student-filters .row .col-md-1, .student-filters .row .col-md-2, .student-filters .row .col-md-3, .student-filters .row .col-md-4 {\n    margin-bottom: 1rem;\n  }\n  .student-table {\n    overflow-x: auto;\n  }\n  .student-table .table {\n    min-width: 1000px;\n  }\n}\n@media (max-width: 768px) {\n  .student-page .student-filters .row .col-md-1, .student-page .student-filters .row .col-md-2, .student-page .student-filters .row .col-md-3, .student-page .student-filters .row .col-md-4 {\n    flex: 0 0 100%;\n    max-width: 100%;\n  }\n  .archive-page-modal {\n    width: 98% !important;\n    margin: 1%;\n  }\n}", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -70615,13 +70615,13 @@ function _toConsumableArray(r) { return _arrayWithoutHoles(r) || _iterableToArra
 function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
 function _iterableToArray(r) { if ("undefined" != typeof Symbol && null != r[Symbol.iterator] || null != r["@@iterator"]) return Array.from(r); }
 function _arrayWithoutHoles(r) { if (Array.isArray(r)) return _arrayLikeToArray(r); }
-function _regenerator() { /*! regenerator-runtime -- Copyright (c) 2014-present, Facebook, Inc. -- license (MIT): https://github.com/babel/babel/blob/main/packages/babel-helpers/LICENSE */ var e, t, r = "function" == typeof Symbol ? Symbol : {}, n = r.iterator || "@@iterator", o = r.toStringTag || "@@toStringTag"; function i(r, n, o, i) { var c = n && n.prototype instanceof Generator ? n : Generator, u = Object.create(c.prototype); return _regeneratorDefine2(u, "_invoke", function (r, n, o) { var i, c, u, f = 0, p = o || [], y = !1, G = { p: 0, n: 0, v: e, a: d, f: d.bind(e, 4), d: function d(t, r) { return i = t, c = 0, u = e, G.n = r, a; } }; function d(r, n) { for (c = r, u = n, t = 0; !y && f && !o && t < p.length; t++) { var o, i = p[t], d = G.p, l = i[2]; r > 3 ? (o = l === n) && (u = i[(c = i[4]) ? 5 : (c = 3, 3)], i[4] = i[5] = e) : i[0] <= d && ((o = r < 2 && d < i[1]) ? (c = 0, G.v = n, G.n = i[1]) : d < l && (o = r < 3 || i[0] > n || n > l) && (i[4] = r, i[5] = n, G.n = l, c = 0)); } if (o || r > 1) return a; throw y = !0, n; } return function (o, p, l) { if (f > 1) throw TypeError("Generator is already running"); for (y && 1 === p && d(p, l), c = p, u = l; (t = c < 2 ? e : u) || !y;) { i || (c ? c < 3 ? (c > 1 && (G.n = -1), d(c, u)) : G.n = u : G.v = u); try { if (f = 2, i) { if (c || (o = "next"), t = i[o]) { if (!(t = t.call(i, u))) throw TypeError("iterator result is not an object"); if (!t.done) return t; u = t.value, c < 2 && (c = 0); } else 1 === c && (t = i["return"]) && t.call(i), c < 2 && (u = TypeError("The iterator does not provide a '" + o + "' method"), c = 1); i = e; } else if ((t = (y = G.n < 0) ? u : r.call(n, G)) !== a) break; } catch (t) { i = e, c = 1, u = t; } finally { f = 1; } } return { value: t, done: y }; }; }(r, o, i), !0), u; } var a = {}; function Generator() {} function GeneratorFunction() {} function GeneratorFunctionPrototype() {} t = Object.getPrototypeOf; var c = [][n] ? t(t([][n]())) : (_regeneratorDefine2(t = {}, n, function () { return this; }), t), u = GeneratorFunctionPrototype.prototype = Generator.prototype = Object.create(c); function f(e) { return Object.setPrototypeOf ? Object.setPrototypeOf(e, GeneratorFunctionPrototype) : (e.__proto__ = GeneratorFunctionPrototype, _regeneratorDefine2(e, o, "GeneratorFunction")), e.prototype = Object.create(u), e; } return GeneratorFunction.prototype = GeneratorFunctionPrototype, _regeneratorDefine2(u, "constructor", GeneratorFunctionPrototype), _regeneratorDefine2(GeneratorFunctionPrototype, "constructor", GeneratorFunction), GeneratorFunction.displayName = "GeneratorFunction", _regeneratorDefine2(GeneratorFunctionPrototype, o, "GeneratorFunction"), _regeneratorDefine2(u), _regeneratorDefine2(u, o, "Generator"), _regeneratorDefine2(u, n, function () { return this; }), _regeneratorDefine2(u, "toString", function () { return "[object Generator]"; }), (_regenerator = function _regenerator() { return { w: i, m: f }; })(); }
-function _regeneratorDefine2(e, r, n, t) { var i = Object.defineProperty; try { i({}, "", {}); } catch (e) { i = 0; } _regeneratorDefine2 = function _regeneratorDefine(e, r, n, t) { function o(r, n) { _regeneratorDefine2(e, r, function (e) { return this._invoke(r, n, e); }); } r ? i ? i(e, r, { value: n, enumerable: !t, configurable: !t, writable: !t }) : e[r] = n : (o("next", 0), o("throw", 1), o("return", 2)); }, _regeneratorDefine2(e, r, n, t); }
 function ownKeys(e, r) { var t = Object.keys(e); if (Object.getOwnPropertySymbols) { var o = Object.getOwnPropertySymbols(e); r && (o = o.filter(function (r) { return Object.getOwnPropertyDescriptor(e, r).enumerable; })), t.push.apply(t, o); } return t; }
 function _objectSpread(e) { for (var r = 1; r < arguments.length; r++) { var t = null != arguments[r] ? arguments[r] : {}; r % 2 ? ownKeys(Object(t), !0).forEach(function (r) { _defineProperty(e, r, t[r]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : ownKeys(Object(t)).forEach(function (r) { Object.defineProperty(e, r, Object.getOwnPropertyDescriptor(t, r)); }); } return e; }
 function _defineProperty(e, r, t) { return (r = _toPropertyKey(r)) in e ? Object.defineProperty(e, r, { value: t, enumerable: !0, configurable: !0, writable: !0 }) : e[r] = t, e; }
 function _toPropertyKey(t) { var i = _toPrimitive(t, "string"); return "symbol" == _typeof(i) ? i : i + ""; }
 function _toPrimitive(t, r) { if ("object" != _typeof(t) || !t) return t; var e = t[Symbol.toPrimitive]; if (void 0 !== e) { var i = e.call(t, r || "default"); if ("object" != _typeof(i)) return i; throw new TypeError("@@toPrimitive must return a primitive value."); } return ("string" === r ? String : Number)(t); }
+function _regenerator() { /*! regenerator-runtime -- Copyright (c) 2014-present, Facebook, Inc. -- license (MIT): https://github.com/babel/babel/blob/main/packages/babel-helpers/LICENSE */ var e, t, r = "function" == typeof Symbol ? Symbol : {}, n = r.iterator || "@@iterator", o = r.toStringTag || "@@toStringTag"; function i(r, n, o, i) { var c = n && n.prototype instanceof Generator ? n : Generator, u = Object.create(c.prototype); return _regeneratorDefine2(u, "_invoke", function (r, n, o) { var i, c, u, f = 0, p = o || [], y = !1, G = { p: 0, n: 0, v: e, a: d, f: d.bind(e, 4), d: function d(t, r) { return i = t, c = 0, u = e, G.n = r, a; } }; function d(r, n) { for (c = r, u = n, t = 0; !y && f && !o && t < p.length; t++) { var o, i = p[t], d = G.p, l = i[2]; r > 3 ? (o = l === n) && (u = i[(c = i[4]) ? 5 : (c = 3, 3)], i[4] = i[5] = e) : i[0] <= d && ((o = r < 2 && d < i[1]) ? (c = 0, G.v = n, G.n = i[1]) : d < l && (o = r < 3 || i[0] > n || n > l) && (i[4] = r, i[5] = n, G.n = l, c = 0)); } if (o || r > 1) return a; throw y = !0, n; } return function (o, p, l) { if (f > 1) throw TypeError("Generator is already running"); for (y && 1 === p && d(p, l), c = p, u = l; (t = c < 2 ? e : u) || !y;) { i || (c ? c < 3 ? (c > 1 && (G.n = -1), d(c, u)) : G.n = u : G.v = u); try { if (f = 2, i) { if (c || (o = "next"), t = i[o]) { if (!(t = t.call(i, u))) throw TypeError("iterator result is not an object"); if (!t.done) return t; u = t.value, c < 2 && (c = 0); } else 1 === c && (t = i["return"]) && t.call(i), c < 2 && (u = TypeError("The iterator does not provide a '" + o + "' method"), c = 1); i = e; } else if ((t = (y = G.n < 0) ? u : r.call(n, G)) !== a) break; } catch (t) { i = e, c = 1, u = t; } finally { f = 1; } } return { value: t, done: y }; }; }(r, o, i), !0), u; } var a = {}; function Generator() {} function GeneratorFunction() {} function GeneratorFunctionPrototype() {} t = Object.getPrototypeOf; var c = [][n] ? t(t([][n]())) : (_regeneratorDefine2(t = {}, n, function () { return this; }), t), u = GeneratorFunctionPrototype.prototype = Generator.prototype = Object.create(c); function f(e) { return Object.setPrototypeOf ? Object.setPrototypeOf(e, GeneratorFunctionPrototype) : (e.__proto__ = GeneratorFunctionPrototype, _regeneratorDefine2(e, o, "GeneratorFunction")), e.prototype = Object.create(u), e; } return GeneratorFunction.prototype = GeneratorFunctionPrototype, _regeneratorDefine2(u, "constructor", GeneratorFunctionPrototype), _regeneratorDefine2(GeneratorFunctionPrototype, "constructor", GeneratorFunction), GeneratorFunction.displayName = "GeneratorFunction", _regeneratorDefine2(GeneratorFunctionPrototype, o, "GeneratorFunction"), _regeneratorDefine2(u), _regeneratorDefine2(u, o, "Generator"), _regeneratorDefine2(u, n, function () { return this; }), _regeneratorDefine2(u, "toString", function () { return "[object Generator]"; }), (_regenerator = function _regenerator() { return { w: i, m: f }; })(); }
+function _regeneratorDefine2(e, r, n, t) { var i = Object.defineProperty; try { i({}, "", {}); } catch (e) { i = 0; } _regeneratorDefine2 = function _regeneratorDefine(e, r, n, t) { function o(r, n) { _regeneratorDefine2(e, r, function (e) { return this._invoke(r, n, e); }); } r ? i ? i(e, r, { value: n, enumerable: !t, configurable: !t, writable: !t }) : e[r] = n : (o("next", 0), o("throw", 1), o("return", 2)); }, _regeneratorDefine2(e, r, n, t); }
 function asyncGeneratorStep(n, t, e, r, o, a, c) { try { var i = n[a](c), u = i.value; } catch (n) { return void e(n); } i.done ? t(u) : Promise.resolve(u).then(r, o); }
 function _asyncToGenerator(n) { return function () { var t = this, e = arguments; return new Promise(function (r, o) { var a = n.apply(t, e); function _next(n) { asyncGeneratorStep(a, r, o, _next, _throw, "next", n); } function _throw(n) { asyncGeneratorStep(a, r, o, _next, _throw, "throw", n); } _next(void 0); }); }; }
 function _slicedToArray(r, e) { return _arrayWithHoles(r) || _iterableToArrayLimit(r, e) || _unsupportedIterableToArray(r, e) || _nonIterableRest(); }
@@ -70636,6 +70636,12 @@ function _arrayWithHoles(r) { if (Array.isArray(r)) return r; }
 function Dashboard() {
   var navigate = (0,react_router_dom__WEBPACK_IMPORTED_MODULE_1__.useNavigate)();
   var _useState = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)({
+      name: ''
+    }),
+    _useState2 = _slicedToArray(_useState, 2),
+    profileData = _useState2[0],
+    setProfileData = _useState2[1];
+  var _useState3 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)({
       totalFaculty: 0,
       totalStudents: 0,
       activeCourses: 0,
@@ -70644,9 +70650,9 @@ function Dashboard() {
       studentsByCourse: {},
       loading: true
     }),
-    _useState2 = _slicedToArray(_useState, 2),
-    dashboardData = _useState2[0],
-    setDashboardData = _useState2[1];
+    _useState4 = _slicedToArray(_useState3, 2),
+    dashboardData = _useState4[0],
+    setDashboardData = _useState4[1];
   function logout() {
     localStorage.removeItem('sfms_auth');
     navigate('/login');
@@ -70655,14 +70661,53 @@ function Dashboard() {
   // Fetch all dashboard data
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function () {
     fetchDashboardData();
+    fetchProfile();
   }, []);
-  var fetchDashboardData = /*#__PURE__*/function () {
+  var fetchProfile = /*#__PURE__*/function () {
     var _ref = _asyncToGenerator(/*#__PURE__*/_regenerator().m(function _callee() {
-      var facultyResponse, studentResponse, facultyData, studentData, activeFaculty, activeStudents, departmentCount, courseCount, savedCourses, savedDepartments, activeCoursesCount, activeDepartmentsCount, coursesData, departmentsData, _t;
+      var res, data, u, _t;
       return _regenerator().w(function (_context) {
         while (1) switch (_context.p = _context.n) {
           case 0:
             _context.p = 0;
+            _context.n = 1;
+            return fetch('/api/profile');
+          case 1:
+            res = _context.v;
+            if (!res.ok) {
+              _context.n = 3;
+              break;
+            }
+            _context.n = 2;
+            return res.json();
+          case 2:
+            data = _context.v;
+            u = data.user || {};
+            setProfileData({
+              name: u.name || ''
+            });
+          case 3:
+            _context.n = 5;
+            break;
+          case 4:
+            _context.p = 4;
+            _t = _context.v;
+          case 5:
+            return _context.a(2);
+        }
+      }, _callee, null, [[0, 4]]);
+    }));
+    return function fetchProfile() {
+      return _ref.apply(this, arguments);
+    };
+  }();
+  var fetchDashboardData = /*#__PURE__*/function () {
+    var _ref2 = _asyncToGenerator(/*#__PURE__*/_regenerator().m(function _callee2() {
+      var facultyResponse, studentResponse, facultyData, studentData, activeFaculty, activeStudents, departmentCount, courseCount, savedCourses, savedDepartments, activeCoursesCount, activeDepartmentsCount, coursesData, departmentsData, _t2;
+      return _regenerator().w(function (_context2) {
+        while (1) switch (_context2.p = _context2.n) {
+          case 0:
+            _context2.p = 0;
             setDashboardData(function (prev) {
               return _objectSpread(_objectSpread({}, prev), {}, {
                 loading: true
@@ -70670,7 +70715,7 @@ function Dashboard() {
             });
 
             // Fetch faculty data
-            _context.n = 1;
+            _context2.n = 1;
             return fetch('/api/faculties', {
               method: 'GET',
               headers: {
@@ -70680,8 +70725,8 @@ function Dashboard() {
               }
             });
           case 1:
-            facultyResponse = _context.v;
-            _context.n = 2;
+            facultyResponse = _context2.v;
+            _context2.n = 2;
             return fetch('/api/students', {
               method: 'GET',
               headers: {
@@ -70691,19 +70736,19 @@ function Dashboard() {
               }
             });
           case 2:
-            studentResponse = _context.v;
+            studentResponse = _context2.v;
             if (!(facultyResponse.ok && studentResponse.ok)) {
-              _context.n = 5;
+              _context2.n = 5;
               break;
             }
-            _context.n = 3;
+            _context2.n = 3;
             return facultyResponse.json();
           case 3:
-            facultyData = _context.v;
-            _context.n = 4;
+            facultyData = _context2.v;
+            _context2.n = 4;
             return studentResponse.json();
           case 4:
-            studentData = _context.v;
+            studentData = _context2.v;
             activeFaculty = facultyData.faculties ? facultyData.faculties.filter(function (f) {
               return f.status === 'ACTIVE';
             }) : [];
@@ -70759,7 +70804,7 @@ function Dashboard() {
                 loading: false
               });
             });
-            _context.n = 6;
+            _context2.n = 6;
             break;
           case 5:
             console.error('Failed to fetch dashboard data');
@@ -70769,24 +70814,24 @@ function Dashboard() {
               });
             });
           case 6:
-            _context.n = 8;
+            _context2.n = 8;
             break;
           case 7:
-            _context.p = 7;
-            _t = _context.v;
-            console.error('Error fetching dashboard data:', _t);
+            _context2.p = 7;
+            _t2 = _context2.v;
+            console.error('Error fetching dashboard data:', _t2);
             setDashboardData(function (prev) {
               return _objectSpread(_objectSpread({}, prev), {}, {
                 loading: false
               });
             });
           case 8:
-            return _context.a(2);
+            return _context2.a(2);
         }
-      }, _callee, null, [[0, 7]]);
+      }, _callee2, null, [[0, 7]]);
     }));
     return function fetchDashboardData() {
-      return _ref.apply(this, arguments);
+      return _ref2.apply(this, arguments);
     };
   }();
 
@@ -70833,11 +70878,11 @@ function Dashboard() {
 
   // Get top courses for bar chart
   var getTopCourses = function getTopCourses() {
-    var courses = Object.entries(dashboardData.studentsByCourse).sort(function (_ref2, _ref3) {
-      var _ref4 = _slicedToArray(_ref2, 2),
-        a = _ref4[1];
+    var courses = Object.entries(dashboardData.studentsByCourse).sort(function (_ref3, _ref4) {
       var _ref5 = _slicedToArray(_ref3, 2),
-        b = _ref5[1];
+        a = _ref5[1];
+      var _ref6 = _slicedToArray(_ref4, 2),
+        b = _ref6[1];
       return b - a;
     }).slice(0, 5); // Top 5 courses
 
@@ -70847,15 +70892,15 @@ function Dashboard() {
     }
 
     // Calculate max for percentage scaling
-    var maxStudents = Math.max.apply(Math, _toConsumableArray(courses.map(function (_ref6) {
-      var _ref7 = _slicedToArray(_ref6, 2),
-        count = _ref7[1];
+    var maxStudents = Math.max.apply(Math, _toConsumableArray(courses.map(function (_ref7) {
+      var _ref8 = _slicedToArray(_ref7, 2),
+        count = _ref8[1];
       return count;
     })));
-    return courses.map(function (_ref8) {
-      var _ref9 = _slicedToArray(_ref8, 2),
-        course = _ref9[0],
-        count = _ref9[1];
+    return courses.map(function (_ref9) {
+      var _ref0 = _slicedToArray(_ref9, 2),
+        course = _ref0[0],
+        count = _ref0[1];
       return [course.split(' ')[0] + '...',
       // Abbreviate for display
       Math.round(count / maxStudents * 100)];
@@ -70886,10 +70931,10 @@ function Dashboard() {
       }];
     }
     var colors = ['#0f79e0', '#1dbb7a', '#ffd166', '#43c6d8', '#8b5cf6', '#ef476f', '#06d6a0', '#118ab2', '#ff9e00', '#9d4edd', '#f15bb5', '#00bbf9', '#00f5d4', '#fee440', '#f72585'];
-    return departments.map(function (_ref0, index) {
-      var _ref1 = _slicedToArray(_ref0, 2),
-        dept = _ref1[0],
-        count = _ref1[1];
+    return departments.map(function (_ref1, index) {
+      var _ref10 = _slicedToArray(_ref1, 2),
+        dept = _ref10[0],
+        count = _ref10[1];
       return {
         department: dept.split(' ')[0] + (dept.split(' ')[1] ? '...' : ''),
         count: count,
@@ -70995,9 +71040,9 @@ function Dashboard() {
           })
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
           className: "topbar-right",
-          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
             className: "welcome",
-            children: "Welcome back, John Doe"
+            children: ["Welcome back, ", profileData.name || 'Admin']
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
             className: "top-actions",
             children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("button", {
@@ -71024,8 +71069,8 @@ function Dashboard() {
           className: "welcome-section",
           children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
             className: "welcome-card",
-            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("h3", {
-              children: "Welcome back, John Doe"
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("h3", {
+              children: ["Welcome back, ", profileData.name || 'Admin']
             }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("p", {
               children: "Here's what's happening in your campus today"
             })]
@@ -71141,10 +71186,10 @@ function Dashboard() {
                   })]
                 }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
                   className: "bar-chart-bars",
-                  children: topCourses.map(function (_ref10, index) {
-                    var _ref11 = _slicedToArray(_ref10, 2),
-                      course = _ref11[0],
-                      percentage = _ref11[1];
+                  children: topCourses.map(function (_ref11, index) {
+                    var _ref12 = _slicedToArray(_ref11, 2),
+                      course = _ref12[0],
+                      percentage = _ref12[1];
                     return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
                       className: "bar-container",
                       children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
@@ -71428,43 +71473,49 @@ function _arrayWithHoles(r) { if (Array.isArray(r)) return r; }
 
 function FacultyPage() {
   var navigate = (0,react_router_dom__WEBPACK_IMPORTED_MODULE_1__.useNavigate)();
-  var _useState = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)([]),
+  var _useState = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)({
+      name: ''
+    }),
     _useState2 = _slicedToArray(_useState, 2),
-    facultyData = _useState2[0],
-    setFacultyData = _useState2[1];
+    profileData = _useState2[0],
+    setProfileData = _useState2[1];
   var _useState3 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)([]),
     _useState4 = _slicedToArray(_useState3, 2),
-    archivedData = _useState4[0],
-    setArchivedData = _useState4[1];
-  var _useState5 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(true),
+    facultyData = _useState4[0],
+    setFacultyData = _useState4[1];
+  var _useState5 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)([]),
     _useState6 = _slicedToArray(_useState5, 2),
-    loading = _useState6[0],
-    setLoading = _useState6[1];
-  var _useState7 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false),
+    archivedData = _useState6[0],
+    setArchivedData = _useState6[1];
+  var _useState7 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(true),
     _useState8 = _slicedToArray(_useState7, 2),
-    archiveLoading = _useState8[0],
-    setArchiveLoading = _useState8[1];
+    loading = _useState8[0],
+    setLoading = _useState8[1];
   var _useState9 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false),
     _useState0 = _slicedToArray(_useState9, 2),
-    showModal = _useState0[0],
-    setShowModal = _useState0[1];
+    archiveLoading = _useState0[0],
+    setArchiveLoading = _useState0[1];
   var _useState1 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false),
     _useState10 = _slicedToArray(_useState1, 2),
-    showArchiveModal = _useState10[0],
-    setShowArchiveModal = _useState10[1];
+    showModal = _useState10[0],
+    setShowModal = _useState10[1];
   var _useState11 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false),
     _useState12 = _slicedToArray(_useState11, 2),
-    showArchivePage = _useState12[0],
-    setShowArchivePage = _useState12[1];
-  var _useState13 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(null),
+    showArchiveModal = _useState12[0],
+    setShowArchiveModal = _useState12[1];
+  var _useState13 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false),
     _useState14 = _slicedToArray(_useState13, 2),
-    editingFaculty = _useState14[0],
-    setEditingFaculty = _useState14[1];
+    showArchivePage = _useState14[0],
+    setShowArchivePage = _useState14[1];
   var _useState15 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(null),
     _useState16 = _slicedToArray(_useState15, 2),
-    deletingFaculty = _useState16[0],
-    setDeletingFaculty = _useState16[1];
-  var _useState17 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)({
+    editingFaculty = _useState16[0],
+    setEditingFaculty = _useState16[1];
+  var _useState17 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(null),
+    _useState18 = _slicedToArray(_useState17, 2),
+    deletingFaculty = _useState18[0],
+    setDeletingFaculty = _useState18[1];
+  var _useState19 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)({
       faculty_number: '',
       name: '',
       department: '',
@@ -71480,42 +71531,42 @@ function FacultyPage() {
       province_region: '',
       zip_code: ''
     }),
-    _useState18 = _slicedToArray(_useState17, 2),
-    formData = _useState18[0],
-    setFormData = _useState18[1];
-  var _useState19 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)([]),
     _useState20 = _slicedToArray(_useState19, 2),
-    errors = _useState20[0],
-    setErrors = _useState20[1];
-  var _useState21 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false),
+    formData = _useState20[0],
+    setFormData = _useState20[1];
+  var _useState21 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)([]),
     _useState22 = _slicedToArray(_useState21, 2),
-    showToast = _useState22[0],
-    setShowToast = _useState22[1];
-  var _useState23 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(''),
+    errors = _useState22[0],
+    setErrors = _useState22[1];
+  var _useState23 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false),
     _useState24 = _slicedToArray(_useState23, 2),
-    toastMessage = _useState24[0],
-    setToastMessage = _useState24[1];
-  var _useState25 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)({
+    showToast = _useState24[0],
+    setShowToast = _useState24[1];
+  var _useState25 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(''),
+    _useState26 = _slicedToArray(_useState25, 2),
+    toastMessage = _useState26[0],
+    setToastMessage = _useState26[1];
+  var _useState27 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)({
       department: '',
       status: '',
       search: ''
     }),
-    _useState26 = _slicedToArray(_useState25, 2),
-    filters = _useState26[0],
-    setFilters = _useState26[1];
-  var _useState27 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)({
+    _useState28 = _slicedToArray(_useState27, 2),
+    filters = _useState28[0],
+    setFilters = _useState28[1];
+  var _useState29 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)({
       department: '',
       search: ''
     }),
-    _useState28 = _slicedToArray(_useState27, 2),
-    archiveFilters = _useState28[0],
-    setArchiveFilters = _useState28[1];
+    _useState30 = _slicedToArray(_useState29, 2),
+    archiveFilters = _useState30[0],
+    setArchiveFilters = _useState30[1];
 
   // Load departments from localStorage
-  var _useState29 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)([]),
-    _useState30 = _slicedToArray(_useState29, 2),
-    departments = _useState30[0],
-    setDepartments = _useState30[1];
+  var _useState31 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)([]),
+    _useState32 = _slicedToArray(_useState31, 2),
+    departments = _useState32[0],
+    setDepartments = _useState32[1];
   function logout() {
     localStorage.removeItem('sfms_auth');
     navigate('/login');
@@ -71542,6 +71593,7 @@ function FacultyPage() {
   // Load departments from localStorage
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function () {
     loadSettingsData();
+    fetchProfile();
   }, []);
 
   // must match settings.js version
@@ -71580,80 +71632,60 @@ function FacultyPage() {
     // Fallback to default departments if not found or version mismatch
     setDepartments(['Computer Science Program', 'Business Administration Program', 'Arts & Sciences Program', 'Engineering Program', 'Teachers Eductation Program', 'Accountancy Program', 'Nursing Program', 'Criminal Justice Program', 'Tourism Management Program']);
   };
-  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function () {
-    fetchFacultyData();
-  }, [filters]);
-  var fetchFacultyData = /*#__PURE__*/function () {
+  var fetchProfile = /*#__PURE__*/function () {
     var _ref = _asyncToGenerator(/*#__PURE__*/_regenerator().m(function _callee() {
-      var queryParams, url, response, data, _t;
+      var res, data, u, _t;
       return _regenerator().w(function (_context) {
         while (1) switch (_context.p = _context.n) {
           case 0:
             _context.p = 0;
-            setLoading(true);
-            queryParams = new URLSearchParams();
-            if (filters.department) queryParams.append('department', filters.department);
-            if (filters.status) queryParams.append('status', filters.status);
-            if (filters.search) queryParams.append('search', filters.search);
-            url = "/api/faculties".concat(queryParams.toString() ? "?".concat(queryParams.toString()) : '');
             _context.n = 1;
-            return fetch(url, {
-              method: 'GET',
-              headers: {
-                'Content-Type': 'application/json',
-                'Accept': 'application/json',
-                'X-Requested-With': 'XMLHttpRequest'
-              }
-            });
+            return fetch('/api/profile');
           case 1:
-            response = _context.v;
-            if (!response.ok) {
+            res = _context.v;
+            if (!res.ok) {
               _context.n = 3;
               break;
             }
             _context.n = 2;
-            return response.json();
+            return res.json();
           case 2:
             data = _context.v;
-            setFacultyData(data.faculties || data);
-            _context.n = 4;
-            break;
+            u = data.user || {};
+            setProfileData({
+              name: u.name || ''
+            });
           case 3:
-            console.error('Failed to fetch faculty data');
-            setErrors(['Failed to load faculty data']);
-          case 4:
-            _context.n = 6;
+            _context.n = 5;
             break;
-          case 5:
-            _context.p = 5;
+          case 4:
+            _context.p = 4;
             _t = _context.v;
-            console.error('Error fetching faculty data:', _t);
-            setErrors(['Network error occurred while loading data']);
-          case 6:
-            _context.p = 6;
-            setLoading(false);
-            return _context.f(6);
-          case 7:
+          case 5:
             return _context.a(2);
         }
-      }, _callee, null, [[0, 5, 6, 7]]);
+      }, _callee, null, [[0, 4]]);
     }));
-    return function fetchFacultyData() {
+    return function fetchProfile() {
       return _ref.apply(this, arguments);
     };
   }();
-  var fetchArchivedData = /*#__PURE__*/function () {
+  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function () {
+    fetchFacultyData();
+  }, [filters]);
+  var fetchFacultyData = /*#__PURE__*/function () {
     var _ref2 = _asyncToGenerator(/*#__PURE__*/_regenerator().m(function _callee2() {
       var queryParams, url, response, data, _t2;
       return _regenerator().w(function (_context2) {
         while (1) switch (_context2.p = _context2.n) {
           case 0:
             _context2.p = 0;
-            setArchiveLoading(true);
+            setLoading(true);
             queryParams = new URLSearchParams();
-            if (archiveFilters.department) queryParams.append('department', archiveFilters.department);
-            if (archiveFilters.search) queryParams.append('search', archiveFilters.search);
-            url = "/api/archived-faculties".concat(queryParams.toString() ? "?".concat(queryParams.toString()) : '');
+            if (filters.department) queryParams.append('department', filters.department);
+            if (filters.status) queryParams.append('status', filters.status);
+            if (filters.search) queryParams.append('search', filters.search);
+            url = "/api/faculties".concat(queryParams.toString() ? "?".concat(queryParams.toString()) : '');
             _context2.n = 1;
             return fetch(url, {
               method: 'GET',
@@ -71673,31 +71705,89 @@ function FacultyPage() {
             return response.json();
           case 2:
             data = _context2.v;
-            setArchivedData(data.archived_faculties || data);
+            setFacultyData(data.faculties || data);
             _context2.n = 4;
             break;
           case 3:
-            console.error('Failed to fetch archived data');
-            setErrors(['Failed to load archived data']);
+            console.error('Failed to fetch faculty data');
+            setErrors(['Failed to load faculty data']);
           case 4:
             _context2.n = 6;
             break;
           case 5:
             _context2.p = 5;
             _t2 = _context2.v;
-            console.error('Error fetching archived data:', _t2);
-            setErrors(['Network error occurred while loading archived data']);
+            console.error('Error fetching faculty data:', _t2);
+            setErrors(['Network error occurred while loading data']);
           case 6:
             _context2.p = 6;
-            setArchiveLoading(false);
+            setLoading(false);
             return _context2.f(6);
           case 7:
             return _context2.a(2);
         }
       }, _callee2, null, [[0, 5, 6, 7]]);
     }));
-    return function fetchArchivedData() {
+    return function fetchFacultyData() {
       return _ref2.apply(this, arguments);
+    };
+  }();
+  var fetchArchivedData = /*#__PURE__*/function () {
+    var _ref3 = _asyncToGenerator(/*#__PURE__*/_regenerator().m(function _callee3() {
+      var queryParams, url, response, data, _t3;
+      return _regenerator().w(function (_context3) {
+        while (1) switch (_context3.p = _context3.n) {
+          case 0:
+            _context3.p = 0;
+            setArchiveLoading(true);
+            queryParams = new URLSearchParams();
+            if (archiveFilters.department) queryParams.append('department', archiveFilters.department);
+            if (archiveFilters.search) queryParams.append('search', archiveFilters.search);
+            url = "/api/archived-faculties".concat(queryParams.toString() ? "?".concat(queryParams.toString()) : '');
+            _context3.n = 1;
+            return fetch(url, {
+              method: 'GET',
+              headers: {
+                'Content-Type': 'application/json',
+                'Accept': 'application/json',
+                'X-Requested-With': 'XMLHttpRequest'
+              }
+            });
+          case 1:
+            response = _context3.v;
+            if (!response.ok) {
+              _context3.n = 3;
+              break;
+            }
+            _context3.n = 2;
+            return response.json();
+          case 2:
+            data = _context3.v;
+            setArchivedData(data.archived_faculties || data);
+            _context3.n = 4;
+            break;
+          case 3:
+            console.error('Failed to fetch archived data');
+            setErrors(['Failed to load archived data']);
+          case 4:
+            _context3.n = 6;
+            break;
+          case 5:
+            _context3.p = 5;
+            _t3 = _context3.v;
+            console.error('Error fetching archived data:', _t3);
+            setErrors(['Network error occurred while loading archived data']);
+          case 6:
+            _context3.p = 6;
+            setArchiveLoading(false);
+            return _context3.f(6);
+          case 7:
+            return _context3.a(2);
+        }
+      }, _callee3, null, [[0, 5, 6, 7]]);
+    }));
+    return function fetchArchivedData() {
+      return _ref3.apply(this, arguments);
     };
   }();
   var handleInputChange = function handleInputChange(e) {
@@ -71747,14 +71837,14 @@ function FacultyPage() {
     });
   };
   var handleSubmit = /*#__PURE__*/function () {
-    var _ref3 = _asyncToGenerator(/*#__PURE__*/_regenerator().m(function _callee3(e) {
-      var csrfToken, headers, url, method, response, contentType, data, text, errorMessages, _t3;
-      return _regenerator().w(function (_context3) {
-        while (1) switch (_context3.p = _context3.n) {
+    var _ref4 = _asyncToGenerator(/*#__PURE__*/_regenerator().m(function _callee4(e) {
+      var csrfToken, headers, url, method, response, contentType, data, text, errorMessages, _t4;
+      return _regenerator().w(function (_context4) {
+        while (1) switch (_context4.p = _context4.n) {
           case 0:
             e.preventDefault();
             setErrors([]);
-            _context3.p = 1;
+            _context4.p = 1;
             csrfToken = getCsrfToken();
             headers = {
               'Content-Type': 'application/json',
@@ -71766,30 +71856,30 @@ function FacultyPage() {
             }
             url = editingFaculty ? "/api/faculties/".concat(editingFaculty.id) : '/api/faculties';
             method = editingFaculty ? 'PUT' : 'POST';
-            _context3.n = 2;
+            _context4.n = 2;
             return fetch(url, {
               method: method,
               headers: headers,
               body: JSON.stringify(formData)
             });
           case 2:
-            response = _context3.v;
+            response = _context4.v;
             contentType = response.headers.get('content-type');
             if (!(contentType && contentType.includes('application/json'))) {
-              _context3.n = 4;
+              _context4.n = 4;
               break;
             }
-            _context3.n = 3;
+            _context4.n = 3;
             return response.json();
           case 3:
-            data = _context3.v;
-            _context3.n = 6;
+            data = _context4.v;
+            _context4.n = 6;
             break;
           case 4:
-            _context3.n = 5;
+            _context4.n = 5;
             return response.text();
           case 5:
-            text = _context3.v;
+            text = _context4.v;
             try {
               data = JSON.parse(text);
             } catch (_unused) {
@@ -71844,20 +71934,20 @@ function FacultyPage() {
                 setErrors(['Failed to save faculty member. Please try again.']);
               }
             }
-            _context3.n = 8;
+            _context4.n = 8;
             break;
           case 7:
-            _context3.p = 7;
-            _t3 = _context3.v;
-            console.error('Error saving faculty:', _t3);
+            _context4.p = 7;
+            _t4 = _context4.v;
+            console.error('Error saving faculty:', _t4);
             setErrors(['Network error occurred. Please check your connection and try again.']);
           case 8:
-            return _context3.a(2);
+            return _context4.a(2);
         }
-      }, _callee3, null, [[1, 7]]);
+      }, _callee4, null, [[1, 7]]);
     }));
     return function handleSubmit(_x) {
-      return _ref3.apply(this, arguments);
+      return _ref4.apply(this, arguments);
     };
   }();
   var handleEdit = function handleEdit(faculty) {
@@ -71885,18 +71975,18 @@ function FacultyPage() {
     setShowArchiveModal(true);
   };
   var confirmDelete = /*#__PURE__*/function () {
-    var _ref4 = _asyncToGenerator(/*#__PURE__*/_regenerator().m(function _callee4() {
-      var csrfToken, headers, response, data, _t4;
-      return _regenerator().w(function (_context4) {
-        while (1) switch (_context4.p = _context4.n) {
+    var _ref5 = _asyncToGenerator(/*#__PURE__*/_regenerator().m(function _callee5() {
+      var csrfToken, headers, response, data, _t5;
+      return _regenerator().w(function (_context5) {
+        while (1) switch (_context5.p = _context5.n) {
           case 0:
             if (deletingFaculty) {
-              _context4.n = 1;
+              _context5.n = 1;
               break;
             }
-            return _context4.a(2);
+            return _context5.a(2);
           case 1:
-            _context4.p = 1;
+            _context5.p = 1;
             csrfToken = getCsrfToken();
             headers = {
               'Content-Type': 'application/json',
@@ -71906,15 +71996,15 @@ function FacultyPage() {
             if (csrfToken) {
               headers['X-CSRF-TOKEN'] = csrfToken;
             }
-            _context4.n = 2;
+            _context5.n = 2;
             return fetch("/api/faculties/".concat(deletingFaculty.id), {
               method: 'DELETE',
               headers: headers
             });
           case 2:
-            response = _context4.v;
+            response = _context5.v;
             if (!response.ok) {
-              _context4.n = 3;
+              _context5.n = 3;
               break;
             }
             // Remove from current list (since it's now inactive)
@@ -71928,43 +72018,43 @@ function FacultyPage() {
             setTimeout(function () {
               return setShowToast(false);
             }, 3000);
-            _context4.n = 5;
+            _context5.n = 5;
             break;
           case 3:
-            _context4.n = 4;
+            _context5.n = 4;
             return response.json();
           case 4:
-            data = _context4.v;
+            data = _context5.v;
             setErrors([data.message || 'Failed to archive faculty member.']);
           case 5:
-            _context4.n = 7;
+            _context5.n = 7;
             break;
           case 6:
-            _context4.p = 6;
-            _t4 = _context4.v;
-            console.error('Error deleting faculty:', _t4);
+            _context5.p = 6;
+            _t5 = _context5.v;
+            console.error('Error deleting faculty:', _t5);
             setErrors(['Network error occurred. Please try again.']);
           case 7:
-            _context4.p = 7;
+            _context5.p = 7;
             setShowArchiveModal(false);
             setDeletingFaculty(null);
-            return _context4.f(7);
+            return _context5.f(7);
           case 8:
-            return _context4.a(2);
+            return _context5.a(2);
         }
-      }, _callee4, null, [[1, 6, 7, 8]]);
+      }, _callee5, null, [[1, 6, 7, 8]]);
     }));
     return function confirmDelete() {
-      return _ref4.apply(this, arguments);
+      return _ref5.apply(this, arguments);
     };
   }();
   var handleRestore = /*#__PURE__*/function () {
-    var _ref5 = _asyncToGenerator(/*#__PURE__*/_regenerator().m(function _callee5(archivedFaculty) {
-      var csrfToken, headers, response, data, _t5;
-      return _regenerator().w(function (_context5) {
-        while (1) switch (_context5.p = _context5.n) {
+    var _ref6 = _asyncToGenerator(/*#__PURE__*/_regenerator().m(function _callee6(archivedFaculty) {
+      var csrfToken, headers, response, data, _t6;
+      return _regenerator().w(function (_context6) {
+        while (1) switch (_context6.p = _context6.n) {
           case 0:
-            _context5.p = 0;
+            _context6.p = 0;
             csrfToken = getCsrfToken();
             headers = {
               'Content-Type': 'application/json',
@@ -71974,15 +72064,15 @@ function FacultyPage() {
             if (csrfToken) {
               headers['X-CSRF-TOKEN'] = csrfToken;
             }
-            _context5.n = 1;
+            _context6.n = 1;
             return fetch("/api/archived-faculties/".concat(archivedFaculty.id, "/restore"), {
               method: 'POST',
               headers: headers
             });
           case 1:
-            response = _context5.v;
+            response = _context6.v;
             if (!response.ok) {
-              _context5.n = 2;
+              _context6.n = 2;
               break;
             }
             // Remove from archived list
@@ -71999,44 +72089,44 @@ function FacultyPage() {
             setTimeout(function () {
               return setShowToast(false);
             }, 3000);
-            _context5.n = 4;
+            _context6.n = 4;
             break;
           case 2:
-            _context5.n = 3;
+            _context6.n = 3;
             return response.json();
           case 3:
-            data = _context5.v;
+            data = _context6.v;
             setErrors([data.message || 'Failed to restore faculty member.']);
           case 4:
-            _context5.n = 6;
+            _context6.n = 6;
             break;
           case 5:
-            _context5.p = 5;
-            _t5 = _context5.v;
-            console.error('Error restoring faculty:', _t5);
+            _context6.p = 5;
+            _t6 = _context6.v;
+            console.error('Error restoring faculty:', _t6);
             setErrors(['Network error occurred. Please try again.']);
           case 6:
-            return _context5.a(2);
+            return _context6.a(2);
         }
-      }, _callee5, null, [[0, 5]]);
+      }, _callee6, null, [[0, 5]]);
     }));
     return function handleRestore(_x2) {
-      return _ref5.apply(this, arguments);
+      return _ref6.apply(this, arguments);
     };
   }();
   var handlePermanentDelete = /*#__PURE__*/function () {
-    var _ref6 = _asyncToGenerator(/*#__PURE__*/_regenerator().m(function _callee6(archivedFaculty) {
-      var csrfToken, headers, response, data, _t6;
-      return _regenerator().w(function (_context6) {
-        while (1) switch (_context6.p = _context6.n) {
+    var _ref7 = _asyncToGenerator(/*#__PURE__*/_regenerator().m(function _callee7(archivedFaculty) {
+      var csrfToken, headers, response, data, _t7;
+      return _regenerator().w(function (_context7) {
+        while (1) switch (_context7.p = _context7.n) {
           case 0:
             if (window.confirm("Are you sure you want to permanently delete ".concat(archivedFaculty.name, "? This action cannot be undone."))) {
-              _context6.n = 1;
+              _context7.n = 1;
               break;
             }
-            return _context6.a(2);
+            return _context7.a(2);
           case 1:
-            _context6.p = 1;
+            _context7.p = 1;
             csrfToken = getCsrfToken();
             headers = {
               'Content-Type': 'application/json',
@@ -72046,15 +72136,15 @@ function FacultyPage() {
             if (csrfToken) {
               headers['X-CSRF-TOKEN'] = csrfToken;
             }
-            _context6.n = 2;
+            _context7.n = 2;
             return fetch("/api/archived-faculties/".concat(archivedFaculty.id, "/force"), {
               method: 'DELETE',
               headers: headers
             });
           case 2:
-            response = _context6.v;
+            response = _context7.v;
             if (!response.ok) {
-              _context6.n = 3;
+              _context7.n = 3;
               break;
             }
             // Remove from archived list
@@ -72068,46 +72158,46 @@ function FacultyPage() {
             setTimeout(function () {
               return setShowToast(false);
             }, 3000);
-            _context6.n = 5;
+            _context7.n = 5;
             break;
           case 3:
-            _context6.n = 4;
+            _context7.n = 4;
             return response.json();
           case 4:
-            data = _context6.v;
+            data = _context7.v;
             setErrors([data.message || 'Failed to delete faculty member.']);
           case 5:
-            _context6.n = 7;
+            _context7.n = 7;
             break;
           case 6:
-            _context6.p = 6;
-            _t6 = _context6.v;
-            console.error('Error deleting faculty:', _t6);
+            _context7.p = 6;
+            _t7 = _context7.v;
+            console.error('Error deleting faculty:', _t7);
             setErrors(['Network error occurred. Please try again.']);
           case 7:
-            return _context6.a(2);
+            return _context7.a(2);
         }
-      }, _callee6, null, [[1, 6]]);
+      }, _callee7, null, [[1, 6]]);
     }));
     return function handlePermanentDelete(_x3) {
-      return _ref6.apply(this, arguments);
+      return _ref7.apply(this, arguments);
     };
   }();
   var openArchivePage = /*#__PURE__*/function () {
-    var _ref7 = _asyncToGenerator(/*#__PURE__*/_regenerator().m(function _callee7() {
-      return _regenerator().w(function (_context7) {
-        while (1) switch (_context7.n) {
+    var _ref8 = _asyncToGenerator(/*#__PURE__*/_regenerator().m(function _callee8() {
+      return _regenerator().w(function (_context8) {
+        while (1) switch (_context8.n) {
           case 0:
             setShowArchivePage(true);
-            _context7.n = 1;
+            _context8.n = 1;
             return fetchArchivedData();
           case 1:
-            return _context7.a(2);
+            return _context8.a(2);
         }
-      }, _callee7);
+      }, _callee8);
     }));
     return function openArchivePage() {
-      return _ref7.apply(this, arguments);
+      return _ref8.apply(this, arguments);
     };
   }();
   var closeArchivePage = function closeArchivePage() {
@@ -72226,9 +72316,9 @@ function FacultyPage() {
           })
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
           className: "topbar-right",
-          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
             className: "welcome",
-            children: "Welcome back, John Doe"
+            children: ["Welcome back, ", profileData.name || 'Admin']
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
             className: "top-actions",
             children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("button", {
@@ -72755,7 +72845,7 @@ function FacultyPage() {
                   type: "button",
                   className: "btn btn-warning",
                   onClick: confirmDelete,
-                  children: "Move to Inactive"
+                  children: "Move to Archive"
                 })]
               })]
             })
@@ -73103,43 +73193,49 @@ function _arrayWithHoles(r) { if (Array.isArray(r)) return r; }
 
 function StudentPage() {
   var navigate = (0,react_router_dom__WEBPACK_IMPORTED_MODULE_1__.useNavigate)();
-  var _useState = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)([]),
+  var _useState = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)({
+      name: ''
+    }),
     _useState2 = _slicedToArray(_useState, 2),
-    studentData = _useState2[0],
-    setStudentData = _useState2[1];
+    profileData = _useState2[0],
+    setProfileData = _useState2[1];
   var _useState3 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)([]),
     _useState4 = _slicedToArray(_useState3, 2),
-    archivedData = _useState4[0],
-    setArchivedData = _useState4[1];
-  var _useState5 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(true),
+    studentData = _useState4[0],
+    setStudentData = _useState4[1];
+  var _useState5 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)([]),
     _useState6 = _slicedToArray(_useState5, 2),
-    loading = _useState6[0],
-    setLoading = _useState6[1];
-  var _useState7 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false),
+    archivedData = _useState6[0],
+    setArchivedData = _useState6[1];
+  var _useState7 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(true),
     _useState8 = _slicedToArray(_useState7, 2),
-    archiveLoading = _useState8[0],
-    setArchiveLoading = _useState8[1];
+    loading = _useState8[0],
+    setLoading = _useState8[1];
   var _useState9 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false),
     _useState0 = _slicedToArray(_useState9, 2),
-    showModal = _useState0[0],
-    setShowModal = _useState0[1];
+    archiveLoading = _useState0[0],
+    setArchiveLoading = _useState0[1];
   var _useState1 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false),
     _useState10 = _slicedToArray(_useState1, 2),
-    showArchiveModal = _useState10[0],
-    setShowArchiveModal = _useState10[1];
+    showModal = _useState10[0],
+    setShowModal = _useState10[1];
   var _useState11 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false),
     _useState12 = _slicedToArray(_useState11, 2),
-    showArchivePage = _useState12[0],
-    setShowArchivePage = _useState12[1];
-  var _useState13 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(null),
+    showArchiveModal = _useState12[0],
+    setShowArchiveModal = _useState12[1];
+  var _useState13 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false),
     _useState14 = _slicedToArray(_useState13, 2),
-    editingStudent = _useState14[0],
-    setEditingStudent = _useState14[1];
+    showArchivePage = _useState14[0],
+    setShowArchivePage = _useState14[1];
   var _useState15 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(null),
     _useState16 = _slicedToArray(_useState15, 2),
-    deletingStudent = _useState16[0],
-    setDeletingStudent = _useState16[1];
-  var _useState17 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)({
+    editingStudent = _useState16[0],
+    setEditingStudent = _useState16[1];
+  var _useState17 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(null),
+    _useState18 = _slicedToArray(_useState17, 2),
+    deletingStudent = _useState18[0],
+    setDeletingStudent = _useState18[1];
+  var _useState19 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)({
       student_number: '',
       name: '',
       course: '',
@@ -73156,47 +73252,47 @@ function StudentPage() {
       province_region: '',
       zip_code: ''
     }),
-    _useState18 = _slicedToArray(_useState17, 2),
-    formData = _useState18[0],
-    setFormData = _useState18[1];
-  var _useState19 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)([]),
     _useState20 = _slicedToArray(_useState19, 2),
-    errors = _useState20[0],
-    setErrors = _useState20[1];
-  var _useState21 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false),
+    formData = _useState20[0],
+    setFormData = _useState20[1];
+  var _useState21 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)([]),
     _useState22 = _slicedToArray(_useState21, 2),
-    showToast = _useState22[0],
-    setShowToast = _useState22[1];
-  var _useState23 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(''),
+    errors = _useState22[0],
+    setErrors = _useState22[1];
+  var _useState23 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false),
     _useState24 = _slicedToArray(_useState23, 2),
-    toastMessage = _useState24[0],
-    setToastMessage = _useState24[1];
-  var _useState25 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)({
+    showToast = _useState24[0],
+    setShowToast = _useState24[1];
+  var _useState25 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(''),
+    _useState26 = _slicedToArray(_useState25, 2),
+    toastMessage = _useState26[0],
+    setToastMessage = _useState26[1];
+  var _useState27 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)({
       course: '',
       year_level: '',
       status: '',
       search: ''
     }),
-    _useState26 = _slicedToArray(_useState25, 2),
-    filters = _useState26[0],
-    setFilters = _useState26[1];
-  var _useState27 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)({
+    _useState28 = _slicedToArray(_useState27, 2),
+    filters = _useState28[0],
+    setFilters = _useState28[1];
+  var _useState29 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)({
       course: '',
       search: ''
     }),
-    _useState28 = _slicedToArray(_useState27, 2),
-    archiveFilters = _useState28[0],
-    setArchiveFilters = _useState28[1];
+    _useState30 = _slicedToArray(_useState29, 2),
+    archiveFilters = _useState30[0],
+    setArchiveFilters = _useState30[1];
 
   // Load courses and academic years from localStorage
-  var _useState29 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)([]),
-    _useState30 = _slicedToArray(_useState29, 2),
-    courses = _useState30[0],
-    setCourses = _useState30[1];
   var _useState31 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)([]),
     _useState32 = _slicedToArray(_useState31, 2),
-    academicYears = _useState32[0],
-    setAcademicYears = _useState32[1];
+    courses = _useState32[0],
+    setCourses = _useState32[1];
+  var _useState33 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)([]),
+    _useState34 = _slicedToArray(_useState33, 2),
+    academicYears = _useState34[0],
+    setAcademicYears = _useState34[1];
   var yearLevels = ['1st Year', '2nd Year', '3rd Year', '4th Year'];
   function logout() {
     localStorage.removeItem('sfms_auth');
@@ -73224,6 +73320,7 @@ function StudentPage() {
   // Load courses and academic years from localStorage
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function () {
     loadSettingsData();
+    fetchProfile();
   }, []);
   var loadSettingsData = function loadSettingsData() {
     // Load courses from localStorage
@@ -73256,16 +73353,54 @@ function StudentPage() {
       setAcademicYears(['2023-2024', '2024-2025', '2025-2026']);
     }
   };
-  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function () {
-    fetchStudentData();
-  }, [filters]);
-  var fetchStudentData = /*#__PURE__*/function () {
+  var fetchProfile = /*#__PURE__*/function () {
     var _ref = _asyncToGenerator(/*#__PURE__*/_regenerator().m(function _callee() {
-      var queryParams, url, response, data, _t;
+      var res, data, u, _t;
       return _regenerator().w(function (_context) {
         while (1) switch (_context.p = _context.n) {
           case 0:
             _context.p = 0;
+            _context.n = 1;
+            return fetch('/api/profile');
+          case 1:
+            res = _context.v;
+            if (!res.ok) {
+              _context.n = 3;
+              break;
+            }
+            _context.n = 2;
+            return res.json();
+          case 2:
+            data = _context.v;
+            u = data.user || {};
+            setProfileData({
+              name: u.name || ''
+            });
+          case 3:
+            _context.n = 5;
+            break;
+          case 4:
+            _context.p = 4;
+            _t = _context.v;
+          case 5:
+            return _context.a(2);
+        }
+      }, _callee, null, [[0, 4]]);
+    }));
+    return function fetchProfile() {
+      return _ref.apply(this, arguments);
+    };
+  }();
+  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function () {
+    fetchStudentData();
+  }, [filters]);
+  var fetchStudentData = /*#__PURE__*/function () {
+    var _ref2 = _asyncToGenerator(/*#__PURE__*/_regenerator().m(function _callee2() {
+      var queryParams, url, response, data, _t2;
+      return _regenerator().w(function (_context2) {
+        while (1) switch (_context2.p = _context2.n) {
+          case 0:
+            _context2.p = 0;
             setLoading(true);
             queryParams = new URLSearchParams();
             if (filters.course) queryParams.append('course', filters.course);
@@ -73273,64 +73408,6 @@ function StudentPage() {
             if (filters.status) queryParams.append('status', filters.status);
             if (filters.search) queryParams.append('search', filters.search);
             url = "/api/students".concat(queryParams.toString() ? "?".concat(queryParams.toString()) : '');
-            _context.n = 1;
-            return fetch(url, {
-              method: 'GET',
-              headers: {
-                'Content-Type': 'application/json',
-                'Accept': 'application/json',
-                'X-Requested-With': 'XMLHttpRequest'
-              }
-            });
-          case 1:
-            response = _context.v;
-            if (!response.ok) {
-              _context.n = 3;
-              break;
-            }
-            _context.n = 2;
-            return response.json();
-          case 2:
-            data = _context.v;
-            setStudentData(data.students || data);
-            _context.n = 4;
-            break;
-          case 3:
-            console.error('Failed to fetch student data');
-            setErrors(['Failed to load student data']);
-          case 4:
-            _context.n = 6;
-            break;
-          case 5:
-            _context.p = 5;
-            _t = _context.v;
-            console.error('Error fetching student data:', _t);
-            setErrors(['Network error occurred while loading data']);
-          case 6:
-            _context.p = 6;
-            setLoading(false);
-            return _context.f(6);
-          case 7:
-            return _context.a(2);
-        }
-      }, _callee, null, [[0, 5, 6, 7]]);
-    }));
-    return function fetchStudentData() {
-      return _ref.apply(this, arguments);
-    };
-  }();
-  var fetchArchivedData = /*#__PURE__*/function () {
-    var _ref2 = _asyncToGenerator(/*#__PURE__*/_regenerator().m(function _callee2() {
-      var queryParams, url, response, data, _t2;
-      return _regenerator().w(function (_context2) {
-        while (1) switch (_context2.p = _context2.n) {
-          case 0:
-            _context2.p = 0;
-            setArchiveLoading(true);
-            queryParams = new URLSearchParams();
-            if (archiveFilters.course) queryParams.append('course', archiveFilters.course);
-            if (archiveFilters.search) queryParams.append('search', archiveFilters.search);
-            url = "/api/archived-students".concat(queryParams.toString() ? "?".concat(queryParams.toString()) : '');
             _context2.n = 1;
             return fetch(url, {
               method: 'GET',
@@ -73350,31 +73427,89 @@ function StudentPage() {
             return response.json();
           case 2:
             data = _context2.v;
-            setArchivedData(data.archived_students || data);
+            setStudentData(data.students || data);
             _context2.n = 4;
             break;
           case 3:
-            console.error('Failed to fetch archived data');
-            setErrors(['Failed to load archived data']);
+            console.error('Failed to fetch student data');
+            setErrors(['Failed to load student data']);
           case 4:
             _context2.n = 6;
             break;
           case 5:
             _context2.p = 5;
             _t2 = _context2.v;
-            console.error('Error fetching archived data:', _t2);
-            setErrors(['Network error occurred while loading archived data']);
+            console.error('Error fetching student data:', _t2);
+            setErrors(['Network error occurred while loading data']);
           case 6:
             _context2.p = 6;
-            setArchiveLoading(false);
+            setLoading(false);
             return _context2.f(6);
           case 7:
             return _context2.a(2);
         }
       }, _callee2, null, [[0, 5, 6, 7]]);
     }));
-    return function fetchArchivedData() {
+    return function fetchStudentData() {
       return _ref2.apply(this, arguments);
+    };
+  }();
+  var fetchArchivedData = /*#__PURE__*/function () {
+    var _ref3 = _asyncToGenerator(/*#__PURE__*/_regenerator().m(function _callee3() {
+      var queryParams, url, response, data, _t3;
+      return _regenerator().w(function (_context3) {
+        while (1) switch (_context3.p = _context3.n) {
+          case 0:
+            _context3.p = 0;
+            setArchiveLoading(true);
+            queryParams = new URLSearchParams();
+            if (archiveFilters.course) queryParams.append('course', archiveFilters.course);
+            if (archiveFilters.search) queryParams.append('search', archiveFilters.search);
+            url = "/api/archived-students".concat(queryParams.toString() ? "?".concat(queryParams.toString()) : '');
+            _context3.n = 1;
+            return fetch(url, {
+              method: 'GET',
+              headers: {
+                'Content-Type': 'application/json',
+                'Accept': 'application/json',
+                'X-Requested-With': 'XMLHttpRequest'
+              }
+            });
+          case 1:
+            response = _context3.v;
+            if (!response.ok) {
+              _context3.n = 3;
+              break;
+            }
+            _context3.n = 2;
+            return response.json();
+          case 2:
+            data = _context3.v;
+            setArchivedData(data.archived_students || data);
+            _context3.n = 4;
+            break;
+          case 3:
+            console.error('Failed to fetch archived data');
+            setErrors(['Failed to load archived data']);
+          case 4:
+            _context3.n = 6;
+            break;
+          case 5:
+            _context3.p = 5;
+            _t3 = _context3.v;
+            console.error('Error fetching archived data:', _t3);
+            setErrors(['Network error occurred while loading archived data']);
+          case 6:
+            _context3.p = 6;
+            setArchiveLoading(false);
+            return _context3.f(6);
+          case 7:
+            return _context3.a(2);
+        }
+      }, _callee3, null, [[0, 5, 6, 7]]);
+    }));
+    return function fetchArchivedData() {
+      return _ref3.apply(this, arguments);
     };
   }();
   var handleInputChange = function handleInputChange(e) {
@@ -73424,14 +73559,14 @@ function StudentPage() {
     });
   };
   var handleSubmit = /*#__PURE__*/function () {
-    var _ref3 = _asyncToGenerator(/*#__PURE__*/_regenerator().m(function _callee3(e) {
-      var csrfToken, headers, url, method, response, contentType, data, text, errorMessages, _t3;
-      return _regenerator().w(function (_context3) {
-        while (1) switch (_context3.p = _context3.n) {
+    var _ref4 = _asyncToGenerator(/*#__PURE__*/_regenerator().m(function _callee4(e) {
+      var csrfToken, headers, url, method, response, contentType, data, text, errorMessages, _t4;
+      return _regenerator().w(function (_context4) {
+        while (1) switch (_context4.p = _context4.n) {
           case 0:
             e.preventDefault();
             setErrors([]);
-            _context3.p = 1;
+            _context4.p = 1;
             csrfToken = getCsrfToken();
             headers = {
               'Content-Type': 'application/json',
@@ -73443,30 +73578,30 @@ function StudentPage() {
             }
             url = editingStudent ? "/api/students/".concat(editingStudent.id) : '/api/students';
             method = editingStudent ? 'PUT' : 'POST';
-            _context3.n = 2;
+            _context4.n = 2;
             return fetch(url, {
               method: method,
               headers: headers,
               body: JSON.stringify(formData)
             });
           case 2:
-            response = _context3.v;
+            response = _context4.v;
             contentType = response.headers.get('content-type');
             if (!(contentType && contentType.includes('application/json'))) {
-              _context3.n = 4;
+              _context4.n = 4;
               break;
             }
-            _context3.n = 3;
+            _context4.n = 3;
             return response.json();
           case 3:
-            data = _context3.v;
-            _context3.n = 6;
+            data = _context4.v;
+            _context4.n = 6;
             break;
           case 4:
-            _context3.n = 5;
+            _context4.n = 5;
             return response.text();
           case 5:
-            text = _context3.v;
+            text = _context4.v;
             try {
               data = JSON.parse(text);
             } catch (_unused) {
@@ -73522,20 +73657,20 @@ function StudentPage() {
                 setErrors(['Failed to save student. Please try again.']);
               }
             }
-            _context3.n = 8;
+            _context4.n = 8;
             break;
           case 7:
-            _context3.p = 7;
-            _t3 = _context3.v;
-            console.error('Error saving student:', _t3);
+            _context4.p = 7;
+            _t4 = _context4.v;
+            console.error('Error saving student:', _t4);
             setErrors(['Network error occurred. Please check your connection and try again.']);
           case 8:
-            return _context3.a(2);
+            return _context4.a(2);
         }
-      }, _callee3, null, [[1, 7]]);
+      }, _callee4, null, [[1, 7]]);
     }));
     return function handleSubmit(_x) {
-      return _ref3.apply(this, arguments);
+      return _ref4.apply(this, arguments);
     };
   }();
   var handleEdit = function handleEdit(student) {
@@ -73564,18 +73699,18 @@ function StudentPage() {
     setShowArchiveModal(true);
   };
   var confirmDelete = /*#__PURE__*/function () {
-    var _ref4 = _asyncToGenerator(/*#__PURE__*/_regenerator().m(function _callee4() {
-      var csrfToken, headers, response, data, _t4;
-      return _regenerator().w(function (_context4) {
-        while (1) switch (_context4.p = _context4.n) {
+    var _ref5 = _asyncToGenerator(/*#__PURE__*/_regenerator().m(function _callee5() {
+      var csrfToken, headers, response, data, _t5;
+      return _regenerator().w(function (_context5) {
+        while (1) switch (_context5.p = _context5.n) {
           case 0:
             if (deletingStudent) {
-              _context4.n = 1;
+              _context5.n = 1;
               break;
             }
-            return _context4.a(2);
+            return _context5.a(2);
           case 1:
-            _context4.p = 1;
+            _context5.p = 1;
             csrfToken = getCsrfToken();
             headers = {
               'Content-Type': 'application/json',
@@ -73585,15 +73720,15 @@ function StudentPage() {
             if (csrfToken) {
               headers['X-CSRF-TOKEN'] = csrfToken;
             }
-            _context4.n = 2;
+            _context5.n = 2;
             return fetch("/api/students/".concat(deletingStudent.id), {
               method: 'DELETE',
               headers: headers
             });
           case 2:
-            response = _context4.v;
+            response = _context5.v;
             if (!response.ok) {
-              _context4.n = 3;
+              _context5.n = 3;
               break;
             }
             setStudentData(function (prev) {
@@ -73606,43 +73741,43 @@ function StudentPage() {
             setTimeout(function () {
               return setShowToast(false);
             }, 3000);
-            _context4.n = 5;
+            _context5.n = 5;
             break;
           case 3:
-            _context4.n = 4;
+            _context5.n = 4;
             return response.json();
           case 4:
-            data = _context4.v;
+            data = _context5.v;
             setErrors([data.message || 'Failed to archive student.']);
           case 5:
-            _context4.n = 7;
+            _context5.n = 7;
             break;
           case 6:
-            _context4.p = 6;
-            _t4 = _context4.v;
-            console.error('Error deleting student:', _t4);
+            _context5.p = 6;
+            _t5 = _context5.v;
+            console.error('Error deleting student:', _t5);
             setErrors(['Network error occurred. Please try again.']);
           case 7:
-            _context4.p = 7;
+            _context5.p = 7;
             setShowArchiveModal(false);
             setDeletingStudent(null);
-            return _context4.f(7);
+            return _context5.f(7);
           case 8:
-            return _context4.a(2);
+            return _context5.a(2);
         }
-      }, _callee4, null, [[1, 6, 7, 8]]);
+      }, _callee5, null, [[1, 6, 7, 8]]);
     }));
     return function confirmDelete() {
-      return _ref4.apply(this, arguments);
+      return _ref5.apply(this, arguments);
     };
   }();
   var handleRestore = /*#__PURE__*/function () {
-    var _ref5 = _asyncToGenerator(/*#__PURE__*/_regenerator().m(function _callee5(archivedStudent) {
-      var csrfToken, headers, response, data, _t5;
-      return _regenerator().w(function (_context5) {
-        while (1) switch (_context5.p = _context5.n) {
+    var _ref6 = _asyncToGenerator(/*#__PURE__*/_regenerator().m(function _callee6(archivedStudent) {
+      var csrfToken, headers, response, data, _t6;
+      return _regenerator().w(function (_context6) {
+        while (1) switch (_context6.p = _context6.n) {
           case 0:
-            _context5.p = 0;
+            _context6.p = 0;
             csrfToken = getCsrfToken();
             headers = {
               'Content-Type': 'application/json',
@@ -73652,15 +73787,15 @@ function StudentPage() {
             if (csrfToken) {
               headers['X-CSRF-TOKEN'] = csrfToken;
             }
-            _context5.n = 1;
+            _context6.n = 1;
             return fetch("/api/archived-students/".concat(archivedStudent.id, "/restore"), {
               method: 'POST',
               headers: headers
             });
           case 1:
-            response = _context5.v;
+            response = _context6.v;
             if (!response.ok) {
-              _context5.n = 2;
+              _context6.n = 2;
               break;
             }
             setArchivedData(function (prev) {
@@ -73674,44 +73809,44 @@ function StudentPage() {
             setTimeout(function () {
               return setShowToast(false);
             }, 3000);
-            _context5.n = 4;
+            _context6.n = 4;
             break;
           case 2:
-            _context5.n = 3;
+            _context6.n = 3;
             return response.json();
           case 3:
-            data = _context5.v;
+            data = _context6.v;
             setErrors([data.message || 'Failed to restore student.']);
           case 4:
-            _context5.n = 6;
+            _context6.n = 6;
             break;
           case 5:
-            _context5.p = 5;
-            _t5 = _context5.v;
-            console.error('Error restoring student:', _t5);
+            _context6.p = 5;
+            _t6 = _context6.v;
+            console.error('Error restoring student:', _t6);
             setErrors(['Network error occurred. Please try again.']);
           case 6:
-            return _context5.a(2);
+            return _context6.a(2);
         }
-      }, _callee5, null, [[0, 5]]);
+      }, _callee6, null, [[0, 5]]);
     }));
     return function handleRestore(_x2) {
-      return _ref5.apply(this, arguments);
+      return _ref6.apply(this, arguments);
     };
   }();
   var handlePermanentDelete = /*#__PURE__*/function () {
-    var _ref6 = _asyncToGenerator(/*#__PURE__*/_regenerator().m(function _callee6(archivedStudent) {
-      var csrfToken, headers, response, data, _t6;
-      return _regenerator().w(function (_context6) {
-        while (1) switch (_context6.p = _context6.n) {
+    var _ref7 = _asyncToGenerator(/*#__PURE__*/_regenerator().m(function _callee7(archivedStudent) {
+      var csrfToken, headers, response, data, _t7;
+      return _regenerator().w(function (_context7) {
+        while (1) switch (_context7.p = _context7.n) {
           case 0:
             if (window.confirm("Are you sure you want to permanently delete ".concat(archivedStudent.name, "? This action cannot be undone."))) {
-              _context6.n = 1;
+              _context7.n = 1;
               break;
             }
-            return _context6.a(2);
+            return _context7.a(2);
           case 1:
-            _context6.p = 1;
+            _context7.p = 1;
             csrfToken = getCsrfToken();
             headers = {
               'Content-Type': 'application/json',
@@ -73721,15 +73856,15 @@ function StudentPage() {
             if (csrfToken) {
               headers['X-CSRF-TOKEN'] = csrfToken;
             }
-            _context6.n = 2;
+            _context7.n = 2;
             return fetch("/api/archived-students/".concat(archivedStudent.id, "/force"), {
               method: 'DELETE',
               headers: headers
             });
           case 2:
-            response = _context6.v;
+            response = _context7.v;
             if (!response.ok) {
-              _context6.n = 3;
+              _context7.n = 3;
               break;
             }
             setArchivedData(function (prev) {
@@ -73742,46 +73877,46 @@ function StudentPage() {
             setTimeout(function () {
               return setShowToast(false);
             }, 3000);
-            _context6.n = 5;
+            _context7.n = 5;
             break;
           case 3:
-            _context6.n = 4;
+            _context7.n = 4;
             return response.json();
           case 4:
-            data = _context6.v;
+            data = _context7.v;
             setErrors([data.message || 'Failed to delete student.']);
           case 5:
-            _context6.n = 7;
+            _context7.n = 7;
             break;
           case 6:
-            _context6.p = 6;
-            _t6 = _context6.v;
-            console.error('Error deleting student:', _t6);
+            _context7.p = 6;
+            _t7 = _context7.v;
+            console.error('Error deleting student:', _t7);
             setErrors(['Network error occurred. Please try again.']);
           case 7:
-            return _context6.a(2);
+            return _context7.a(2);
         }
-      }, _callee6, null, [[1, 6]]);
+      }, _callee7, null, [[1, 6]]);
     }));
     return function handlePermanentDelete(_x3) {
-      return _ref6.apply(this, arguments);
+      return _ref7.apply(this, arguments);
     };
   }();
   var openArchivePage = /*#__PURE__*/function () {
-    var _ref7 = _asyncToGenerator(/*#__PURE__*/_regenerator().m(function _callee7() {
-      return _regenerator().w(function (_context7) {
-        while (1) switch (_context7.n) {
+    var _ref8 = _asyncToGenerator(/*#__PURE__*/_regenerator().m(function _callee8() {
+      return _regenerator().w(function (_context8) {
+        while (1) switch (_context8.n) {
           case 0:
             setShowArchivePage(true);
-            _context7.n = 1;
+            _context8.n = 1;
             return fetchArchivedData();
           case 1:
-            return _context7.a(2);
+            return _context8.a(2);
         }
-      }, _callee7);
+      }, _callee8);
     }));
     return function openArchivePage() {
-      return _ref7.apply(this, arguments);
+      return _ref8.apply(this, arguments);
     };
   }();
   var closeArchivePage = function closeArchivePage() {
@@ -73901,9 +74036,9 @@ function StudentPage() {
           })
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
           className: "topbar-right",
-          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
             className: "welcome",
-            children: "Welcome back, John Doe"
+            children: ["Welcome back, ", profileData.name || 'Admin']
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
             className: "top-actions",
             children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("button", {
@@ -74485,7 +74620,7 @@ function StudentPage() {
                   type: "button",
                   className: "btn btn-warning",
                   onClick: confirmDelete,
-                  children: "Move to Inactive"
+                  children: "Move to Archive"
                 })]
               })]
             })
@@ -75626,8 +75761,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/dist/index.js");
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
 function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, _typeof(o); }
-function _regenerator() { /*! regenerator-runtime -- Copyright (c) 2014-present, Facebook, Inc. -- license (MIT): https://github.com/babel/babel/blob/main/packages/babel-helpers/LICENSE */ var e, t, r = "function" == typeof Symbol ? Symbol : {}, n = r.iterator || "@@iterator", o = r.toStringTag || "@@toStringTag"; function i(r, n, o, i) { var c = n && n.prototype instanceof Generator ? n : Generator, u = Object.create(c.prototype); return _regeneratorDefine2(u, "_invoke", function (r, n, o) { var i, c, u, f = 0, p = o || [], y = !1, G = { p: 0, n: 0, v: e, a: d, f: d.bind(e, 4), d: function d(t, r) { return i = t, c = 0, u = e, G.n = r, a; } }; function d(r, n) { for (c = r, u = n, t = 0; !y && f && !o && t < p.length; t++) { var o, i = p[t], d = G.p, l = i[2]; r > 3 ? (o = l === n) && (u = i[(c = i[4]) ? 5 : (c = 3, 3)], i[4] = i[5] = e) : i[0] <= d && ((o = r < 2 && d < i[1]) ? (c = 0, G.v = n, G.n = i[1]) : d < l && (o = r < 3 || i[0] > n || n > l) && (i[4] = r, i[5] = n, G.n = l, c = 0)); } if (o || r > 1) return a; throw y = !0, n; } return function (o, p, l) { if (f > 1) throw TypeError("Generator is already running"); for (y && 1 === p && d(p, l), c = p, u = l; (t = c < 2 ? e : u) || !y;) { i || (c ? c < 3 ? (c > 1 && (G.n = -1), d(c, u)) : G.n = u : G.v = u); try { if (f = 2, i) { if (c || (o = "next"), t = i[o]) { if (!(t = t.call(i, u))) throw TypeError("iterator result is not an object"); if (!t.done) return t; u = t.value, c < 2 && (c = 0); } else 1 === c && (t = i["return"]) && t.call(i), c < 2 && (u = TypeError("The iterator does not provide a '" + o + "' method"), c = 1); i = e; } else if ((t = (y = G.n < 0) ? u : r.call(n, G)) !== a) break; } catch (t) { i = e, c = 1, u = t; } finally { f = 1; } } return { value: t, done: y }; }; }(r, o, i), !0), u; } var a = {}; function Generator() {} function GeneratorFunction() {} function GeneratorFunctionPrototype() {} t = Object.getPrototypeOf; var c = [][n] ? t(t([][n]())) : (_regeneratorDefine2(t = {}, n, function () { return this; }), t), u = GeneratorFunctionPrototype.prototype = Generator.prototype = Object.create(c); function f(e) { return Object.setPrototypeOf ? Object.setPrototypeOf(e, GeneratorFunctionPrototype) : (e.__proto__ = GeneratorFunctionPrototype, _regeneratorDefine2(e, o, "GeneratorFunction")), e.prototype = Object.create(u), e; } return GeneratorFunction.prototype = GeneratorFunctionPrototype, _regeneratorDefine2(u, "constructor", GeneratorFunctionPrototype), _regeneratorDefine2(GeneratorFunctionPrototype, "constructor", GeneratorFunction), GeneratorFunction.displayName = "GeneratorFunction", _regeneratorDefine2(GeneratorFunctionPrototype, o, "GeneratorFunction"), _regeneratorDefine2(u), _regeneratorDefine2(u, o, "Generator"), _regeneratorDefine2(u, n, function () { return this; }), _regeneratorDefine2(u, "toString", function () { return "[object Generator]"; }), (_regenerator = function _regenerator() { return { w: i, m: f }; })(); }
-function _regeneratorDefine2(e, r, n, t) { var i = Object.defineProperty; try { i({}, "", {}); } catch (e) { i = 0; } _regeneratorDefine2 = function _regeneratorDefine(e, r, n, t) { function o(r, n) { _regeneratorDefine2(e, r, function (e) { return this._invoke(r, n, e); }); } r ? i ? i(e, r, { value: n, enumerable: !t, configurable: !t, writable: !t }) : e[r] = n : (o("next", 0), o("throw", 1), o("return", 2)); }, _regeneratorDefine2(e, r, n, t); }
 function _toConsumableArray(r) { return _arrayWithoutHoles(r) || _iterableToArray(r) || _unsupportedIterableToArray(r) || _nonIterableSpread(); }
 function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
 function _iterableToArray(r) { if ("undefined" != typeof Symbol && null != r[Symbol.iterator] || null != r["@@iterator"]) return Array.from(r); }
@@ -75637,6 +75770,8 @@ function _objectSpread(e) { for (var r = 1; r < arguments.length; r++) { var t =
 function _defineProperty(e, r, t) { return (r = _toPropertyKey(r)) in e ? Object.defineProperty(e, r, { value: t, enumerable: !0, configurable: !0, writable: !0 }) : e[r] = t, e; }
 function _toPropertyKey(t) { var i = _toPrimitive(t, "string"); return "symbol" == _typeof(i) ? i : i + ""; }
 function _toPrimitive(t, r) { if ("object" != _typeof(t) || !t) return t; var e = t[Symbol.toPrimitive]; if (void 0 !== e) { var i = e.call(t, r || "default"); if ("object" != _typeof(i)) return i; throw new TypeError("@@toPrimitive must return a primitive value."); } return ("string" === r ? String : Number)(t); }
+function _regenerator() { /*! regenerator-runtime -- Copyright (c) 2014-present, Facebook, Inc. -- license (MIT): https://github.com/babel/babel/blob/main/packages/babel-helpers/LICENSE */ var e, t, r = "function" == typeof Symbol ? Symbol : {}, n = r.iterator || "@@iterator", o = r.toStringTag || "@@toStringTag"; function i(r, n, o, i) { var c = n && n.prototype instanceof Generator ? n : Generator, u = Object.create(c.prototype); return _regeneratorDefine2(u, "_invoke", function (r, n, o) { var i, c, u, f = 0, p = o || [], y = !1, G = { p: 0, n: 0, v: e, a: d, f: d.bind(e, 4), d: function d(t, r) { return i = t, c = 0, u = e, G.n = r, a; } }; function d(r, n) { for (c = r, u = n, t = 0; !y && f && !o && t < p.length; t++) { var o, i = p[t], d = G.p, l = i[2]; r > 3 ? (o = l === n) && (u = i[(c = i[4]) ? 5 : (c = 3, 3)], i[4] = i[5] = e) : i[0] <= d && ((o = r < 2 && d < i[1]) ? (c = 0, G.v = n, G.n = i[1]) : d < l && (o = r < 3 || i[0] > n || n > l) && (i[4] = r, i[5] = n, G.n = l, c = 0)); } if (o || r > 1) return a; throw y = !0, n; } return function (o, p, l) { if (f > 1) throw TypeError("Generator is already running"); for (y && 1 === p && d(p, l), c = p, u = l; (t = c < 2 ? e : u) || !y;) { i || (c ? c < 3 ? (c > 1 && (G.n = -1), d(c, u)) : G.n = u : G.v = u); try { if (f = 2, i) { if (c || (o = "next"), t = i[o]) { if (!(t = t.call(i, u))) throw TypeError("iterator result is not an object"); if (!t.done) return t; u = t.value, c < 2 && (c = 0); } else 1 === c && (t = i["return"]) && t.call(i), c < 2 && (u = TypeError("The iterator does not provide a '" + o + "' method"), c = 1); i = e; } else if ((t = (y = G.n < 0) ? u : r.call(n, G)) !== a) break; } catch (t) { i = e, c = 1, u = t; } finally { f = 1; } } return { value: t, done: y }; }; }(r, o, i), !0), u; } var a = {}; function Generator() {} function GeneratorFunction() {} function GeneratorFunctionPrototype() {} t = Object.getPrototypeOf; var c = [][n] ? t(t([][n]())) : (_regeneratorDefine2(t = {}, n, function () { return this; }), t), u = GeneratorFunctionPrototype.prototype = Generator.prototype = Object.create(c); function f(e) { return Object.setPrototypeOf ? Object.setPrototypeOf(e, GeneratorFunctionPrototype) : (e.__proto__ = GeneratorFunctionPrototype, _regeneratorDefine2(e, o, "GeneratorFunction")), e.prototype = Object.create(u), e; } return GeneratorFunction.prototype = GeneratorFunctionPrototype, _regeneratorDefine2(u, "constructor", GeneratorFunctionPrototype), _regeneratorDefine2(GeneratorFunctionPrototype, "constructor", GeneratorFunction), GeneratorFunction.displayName = "GeneratorFunction", _regeneratorDefine2(GeneratorFunctionPrototype, o, "GeneratorFunction"), _regeneratorDefine2(u), _regeneratorDefine2(u, o, "Generator"), _regeneratorDefine2(u, n, function () { return this; }), _regeneratorDefine2(u, "toString", function () { return "[object Generator]"; }), (_regenerator = function _regenerator() { return { w: i, m: f }; })(); }
+function _regeneratorDefine2(e, r, n, t) { var i = Object.defineProperty; try { i({}, "", {}); } catch (e) { i = 0; } _regeneratorDefine2 = function _regeneratorDefine(e, r, n, t) { function o(r, n) { _regeneratorDefine2(e, r, function (e) { return this._invoke(r, n, e); }); } r ? i ? i(e, r, { value: n, enumerable: !t, configurable: !t, writable: !t }) : e[r] = n : (o("next", 0), o("throw", 1), o("return", 2)); }, _regeneratorDefine2(e, r, n, t); }
 function asyncGeneratorStep(n, t, e, r, o, a, c) { try { var i = n[a](c), u = i.value; } catch (n) { return void e(n); } i.done ? t(u) : Promise.resolve(u).then(r, o); }
 function _asyncToGenerator(n) { return function () { var t = this, e = arguments; return new Promise(function (r, o) { var a = n.apply(t, e); function _next(n) { asyncGeneratorStep(a, r, o, _next, _throw, "next", n); } function _throw(n) { asyncGeneratorStep(a, r, o, _next, _throw, "throw", n); } _next(void 0); }); }; }
 function _slicedToArray(r, e) { return _arrayWithHoles(r) || _iterableToArrayLimit(r, e) || _unsupportedIterableToArray(r, e) || _nonIterableRest(); }
@@ -75650,54 +75785,60 @@ function _arrayWithHoles(r) { if (Array.isArray(r)) return r; }
 
 function ReportsPage() {
   var navigate = (0,react_router_dom__WEBPACK_IMPORTED_MODULE_1__.useNavigate)();
-  var _useState = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)('student'),
+  var _useState = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)({
+      name: ''
+    }),
     _useState2 = _slicedToArray(_useState, 2),
-    currentView = _useState2[0],
-    setCurrentView = _useState2[1];
-  var _useState3 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)([]),
+    profileData = _useState2[0],
+    setProfileData = _useState2[1];
+  var _useState3 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)('student'),
     _useState4 = _slicedToArray(_useState3, 2),
-    studentData = _useState4[0],
-    setStudentData = _useState4[1];
+    currentView = _useState4[0],
+    setCurrentView = _useState4[1];
   var _useState5 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)([]),
     _useState6 = _slicedToArray(_useState5, 2),
-    facultyData = _useState6[0],
-    setFacultyData = _useState6[1];
-  var _useState7 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false),
+    studentData = _useState6[0],
+    setStudentData = _useState6[1];
+  var _useState7 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)([]),
     _useState8 = _slicedToArray(_useState7, 2),
-    loading = _useState8[0],
-    setLoading = _useState8[1];
-  var _useState9 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)({
+    facultyData = _useState8[0],
+    setFacultyData = _useState8[1];
+  var _useState9 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false),
+    _useState0 = _slicedToArray(_useState9, 2),
+    loading = _useState0[0],
+    setLoading = _useState0[1];
+  var _useState1 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)({
       course: '',
       year_level: '',
       status: '',
       academic_year: '',
       search: ''
     }),
-    _useState0 = _slicedToArray(_useState9, 2),
-    filters = _useState0[0],
-    setFilters = _useState0[1];
-  var _useState1 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)({
+    _useState10 = _slicedToArray(_useState1, 2),
+    filters = _useState10[0],
+    setFilters = _useState10[1];
+  var _useState11 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)({
       department: '',
       status: '',
       search: ''
     }),
-    _useState10 = _slicedToArray(_useState1, 2),
-    facultyFilters = _useState10[0],
-    setFacultyFilters = _useState10[1];
+    _useState12 = _slicedToArray(_useState11, 2),
+    facultyFilters = _useState12[0],
+    setFacultyFilters = _useState12[1];
 
   // Load data from localStorage
-  var _useState11 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)([]),
-    _useState12 = _slicedToArray(_useState11, 2),
-    courses = _useState12[0],
-    setCourses = _useState12[1];
   var _useState13 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)([]),
     _useState14 = _slicedToArray(_useState13, 2),
-    departments = _useState14[0],
-    setDepartments = _useState14[1];
+    courses = _useState14[0],
+    setCourses = _useState14[1];
   var _useState15 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)([]),
     _useState16 = _slicedToArray(_useState15, 2),
-    academicYears = _useState16[0],
-    setAcademicYears = _useState16[1];
+    departments = _useState16[0],
+    setDepartments = _useState16[1];
+  var _useState17 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)([]),
+    _useState18 = _slicedToArray(_useState17, 2),
+    academicYears = _useState18[0],
+    setAcademicYears = _useState18[1];
   var yearLevels = ['1st Year', '2nd Year', '3rd Year', '4th Year'];
   function logout() {
     localStorage.removeItem('sfms_auth');
@@ -75725,6 +75866,7 @@ function ReportsPage() {
   // Load settings data from localStorage
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function () {
     loadSettingsData();
+    fetchProfile();
   }, []);
   var loadSettingsData = function loadSettingsData() {
     try {
@@ -75778,6 +75920,44 @@ function ReportsPage() {
       console.error('Error loading settings data:', error);
     }
   };
+  var fetchProfile = /*#__PURE__*/function () {
+    var _ref = _asyncToGenerator(/*#__PURE__*/_regenerator().m(function _callee() {
+      var res, data, u, _t;
+      return _regenerator().w(function (_context) {
+        while (1) switch (_context.p = _context.n) {
+          case 0:
+            _context.p = 0;
+            _context.n = 1;
+            return fetch('/api/profile');
+          case 1:
+            res = _context.v;
+            if (!res.ok) {
+              _context.n = 3;
+              break;
+            }
+            _context.n = 2;
+            return res.json();
+          case 2:
+            data = _context.v;
+            u = data.user || {};
+            setProfileData({
+              name: u.name || ''
+            });
+          case 3:
+            _context.n = 5;
+            break;
+          case 4:
+            _context.p = 4;
+            _t = _context.v;
+          case 5:
+            return _context.a(2);
+        }
+      }, _callee, null, [[0, 4]]);
+    }));
+    return function fetchProfile() {
+      return _ref.apply(this, arguments);
+    };
+  }();
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function () {
     if (currentView === 'student') {
       fetchStudentData();
@@ -75793,98 +75973,17 @@ function ReportsPage() {
 
   // Fetch combined student data (active + archived)
   var fetchStudentData = /*#__PURE__*/function () {
-    var _ref = _asyncToGenerator(/*#__PURE__*/_regenerator().m(function _callee() {
-      var activeResponse, archivedResponse, activeData, archivedData, activeStudents, archivedStudents, processedArchived, allStudents, _t;
-      return _regenerator().w(function (_context) {
-        while (1) switch (_context.p = _context.n) {
-          case 0:
-            _context.p = 0;
-            setLoading(true);
-
-            // Fetch active students
-            _context.n = 1;
-            return fetch('/api/students', {
-              method: 'GET',
-              headers: {
-                'Content-Type': 'application/json',
-                'Accept': 'application/json',
-                'X-Requested-With': 'XMLHttpRequest'
-              }
-            });
-          case 1:
-            activeResponse = _context.v;
-            _context.n = 2;
-            return fetch('/api/archived-students', {
-              method: 'GET',
-              headers: {
-                'Content-Type': 'application/json',
-                'Accept': 'application/json',
-                'X-Requested-With': 'XMLHttpRequest'
-              }
-            });
-          case 2:
-            archivedResponse = _context.v;
-            if (!(activeResponse.ok && archivedResponse.ok)) {
-              _context.n = 5;
-              break;
-            }
-            _context.n = 3;
-            return activeResponse.json();
-          case 3:
-            activeData = _context.v;
-            _context.n = 4;
-            return archivedResponse.json();
-          case 4:
-            archivedData = _context.v;
-            // Combine and process data
-            activeStudents = Array.isArray(activeData) ? activeData : activeData.students || [];
-            archivedStudents = Array.isArray(archivedData) ? archivedData : archivedData.archived_students || []; // Mark archived students as INACTIVE
-            processedArchived = archivedStudents.map(function (student) {
-              return _objectSpread(_objectSpread({}, student), {}, {
-                status: 'INACTIVE',
-                isArchived: true
-              });
-            });
-            allStudents = [].concat(_toConsumableArray(activeStudents), _toConsumableArray(processedArchived));
-            setStudentData(allStudents);
-            _context.n = 6;
-            break;
-          case 5:
-            console.error('Failed to fetch student data');
-          case 6:
-            _context.n = 8;
-            break;
-          case 7:
-            _context.p = 7;
-            _t = _context.v;
-            console.error('Error fetching student data:', _t);
-          case 8:
-            _context.p = 8;
-            setLoading(false);
-            return _context.f(8);
-          case 9:
-            return _context.a(2);
-        }
-      }, _callee, null, [[0, 7, 8, 9]]);
-    }));
-    return function fetchStudentData() {
-      return _ref.apply(this, arguments);
-    };
-  }();
-
-  // Fetch combined faculty data (active + archived)
-  var fetchFacultyData = /*#__PURE__*/function () {
     var _ref2 = _asyncToGenerator(/*#__PURE__*/_regenerator().m(function _callee2() {
-      var activeResponse, archivedResponse, activeData, archivedData, activeFaculty, archivedFaculty, processedArchived, allFaculty, _t2;
+      var activeResponse, archivedResponse, activeData, archivedData, activeStudents, archivedStudents, processedArchived, allStudents, _t2;
       return _regenerator().w(function (_context2) {
         while (1) switch (_context2.p = _context2.n) {
           case 0:
             _context2.p = 0;
             setLoading(true);
 
-            // Fetch active faculty
+            // Fetch active students
             _context2.n = 1;
-            return fetch('/api/faculties', {
+            return fetch('/api/students', {
               method: 'GET',
               headers: {
                 'Content-Type': 'application/json',
@@ -75895,7 +75994,7 @@ function ReportsPage() {
           case 1:
             activeResponse = _context2.v;
             _context2.n = 2;
-            return fetch('/api/archived-faculties', {
+            return fetch('/api/archived-students', {
               method: 'GET',
               headers: {
                 'Content-Type': 'application/json',
@@ -75918,6 +76017,87 @@ function ReportsPage() {
           case 4:
             archivedData = _context2.v;
             // Combine and process data
+            activeStudents = Array.isArray(activeData) ? activeData : activeData.students || [];
+            archivedStudents = Array.isArray(archivedData) ? archivedData : archivedData.archived_students || []; // Mark archived students as INACTIVE
+            processedArchived = archivedStudents.map(function (student) {
+              return _objectSpread(_objectSpread({}, student), {}, {
+                status: 'INACTIVE',
+                isArchived: true
+              });
+            });
+            allStudents = [].concat(_toConsumableArray(activeStudents), _toConsumableArray(processedArchived));
+            setStudentData(allStudents);
+            _context2.n = 6;
+            break;
+          case 5:
+            console.error('Failed to fetch student data');
+          case 6:
+            _context2.n = 8;
+            break;
+          case 7:
+            _context2.p = 7;
+            _t2 = _context2.v;
+            console.error('Error fetching student data:', _t2);
+          case 8:
+            _context2.p = 8;
+            setLoading(false);
+            return _context2.f(8);
+          case 9:
+            return _context2.a(2);
+        }
+      }, _callee2, null, [[0, 7, 8, 9]]);
+    }));
+    return function fetchStudentData() {
+      return _ref2.apply(this, arguments);
+    };
+  }();
+
+  // Fetch combined faculty data (active + archived)
+  var fetchFacultyData = /*#__PURE__*/function () {
+    var _ref3 = _asyncToGenerator(/*#__PURE__*/_regenerator().m(function _callee3() {
+      var activeResponse, archivedResponse, activeData, archivedData, activeFaculty, archivedFaculty, processedArchived, allFaculty, _t3;
+      return _regenerator().w(function (_context3) {
+        while (1) switch (_context3.p = _context3.n) {
+          case 0:
+            _context3.p = 0;
+            setLoading(true);
+
+            // Fetch active faculty
+            _context3.n = 1;
+            return fetch('/api/faculties', {
+              method: 'GET',
+              headers: {
+                'Content-Type': 'application/json',
+                'Accept': 'application/json',
+                'X-Requested-With': 'XMLHttpRequest'
+              }
+            });
+          case 1:
+            activeResponse = _context3.v;
+            _context3.n = 2;
+            return fetch('/api/archived-faculties', {
+              method: 'GET',
+              headers: {
+                'Content-Type': 'application/json',
+                'Accept': 'application/json',
+                'X-Requested-With': 'XMLHttpRequest'
+              }
+            });
+          case 2:
+            archivedResponse = _context3.v;
+            if (!(activeResponse.ok && archivedResponse.ok)) {
+              _context3.n = 5;
+              break;
+            }
+            _context3.n = 3;
+            return activeResponse.json();
+          case 3:
+            activeData = _context3.v;
+            _context3.n = 4;
+            return archivedResponse.json();
+          case 4:
+            archivedData = _context3.v;
+            // Combine and process data
             activeFaculty = Array.isArray(activeData) ? activeData : activeData.faculties || [];
             archivedFaculty = Array.isArray(archivedData) ? archivedData : archivedData.archived_faculties || []; // Mark archived faculty as INACTIVE
             processedArchived = archivedFaculty.map(function (faculty) {
@@ -75928,28 +76108,28 @@ function ReportsPage() {
             });
             allFaculty = [].concat(_toConsumableArray(activeFaculty), _toConsumableArray(processedArchived));
             setFacultyData(allFaculty);
-            _context2.n = 6;
+            _context3.n = 6;
             break;
           case 5:
             console.error('Failed to fetch faculty data');
           case 6:
-            _context2.n = 8;
+            _context3.n = 8;
             break;
           case 7:
-            _context2.p = 7;
-            _t2 = _context2.v;
-            console.error('Error fetching faculty data:', _t2);
+            _context3.p = 7;
+            _t3 = _context3.v;
+            console.error('Error fetching faculty data:', _t3);
           case 8:
-            _context2.p = 8;
+            _context3.p = 8;
             setLoading(false);
-            return _context2.f(8);
+            return _context3.f(8);
           case 9:
-            return _context2.a(2);
+            return _context3.a(2);
         }
-      }, _callee2, null, [[0, 7, 8, 9]]);
+      }, _callee3, null, [[0, 7, 8, 9]]);
     }));
     return function fetchFacultyData() {
-      return _ref2.apply(this, arguments);
+      return _ref3.apply(this, arguments);
     };
   }();
   var handleFilterChange = function handleFilterChange(e) {
@@ -76128,9 +76308,9 @@ function ReportsPage() {
           })
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
           className: "topbar-right",
-          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
             className: "welcome",
-            children: "Welcome back, John Doe"
+            children: ["Welcome back, ", profileData.name || 'Admin']
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
             className: "top-actions",
             children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("button", {
@@ -76691,19 +76871,19 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/dist/index.js");
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
 function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, _typeof(o); }
-function _regenerator() { /*! regenerator-runtime -- Copyright (c) 2014-present, Facebook, Inc. -- license (MIT): https://github.com/babel/babel/blob/main/packages/babel-helpers/LICENSE */ var e, t, r = "function" == typeof Symbol ? Symbol : {}, n = r.iterator || "@@iterator", o = r.toStringTag || "@@toStringTag"; function i(r, n, o, i) { var c = n && n.prototype instanceof Generator ? n : Generator, u = Object.create(c.prototype); return _regeneratorDefine2(u, "_invoke", function (r, n, o) { var i, c, u, f = 0, p = o || [], y = !1, G = { p: 0, n: 0, v: e, a: d, f: d.bind(e, 4), d: function d(t, r) { return i = t, c = 0, u = e, G.n = r, a; } }; function d(r, n) { for (c = r, u = n, t = 0; !y && f && !o && t < p.length; t++) { var o, i = p[t], d = G.p, l = i[2]; r > 3 ? (o = l === n) && (u = i[(c = i[4]) ? 5 : (c = 3, 3)], i[4] = i[5] = e) : i[0] <= d && ((o = r < 2 && d < i[1]) ? (c = 0, G.v = n, G.n = i[1]) : d < l && (o = r < 3 || i[0] > n || n > l) && (i[4] = r, i[5] = n, G.n = l, c = 0)); } if (o || r > 1) return a; throw y = !0, n; } return function (o, p, l) { if (f > 1) throw TypeError("Generator is already running"); for (y && 1 === p && d(p, l), c = p, u = l; (t = c < 2 ? e : u) || !y;) { i || (c ? c < 3 ? (c > 1 && (G.n = -1), d(c, u)) : G.n = u : G.v = u); try { if (f = 2, i) { if (c || (o = "next"), t = i[o]) { if (!(t = t.call(i, u))) throw TypeError("iterator result is not an object"); if (!t.done) return t; u = t.value, c < 2 && (c = 0); } else 1 === c && (t = i["return"]) && t.call(i), c < 2 && (u = TypeError("The iterator does not provide a '" + o + "' method"), c = 1); i = e; } else if ((t = (y = G.n < 0) ? u : r.call(n, G)) !== a) break; } catch (t) { i = e, c = 1, u = t; } finally { f = 1; } } return { value: t, done: y }; }; }(r, o, i), !0), u; } var a = {}; function Generator() {} function GeneratorFunction() {} function GeneratorFunctionPrototype() {} t = Object.getPrototypeOf; var c = [][n] ? t(t([][n]())) : (_regeneratorDefine2(t = {}, n, function () { return this; }), t), u = GeneratorFunctionPrototype.prototype = Generator.prototype = Object.create(c); function f(e) { return Object.setPrototypeOf ? Object.setPrototypeOf(e, GeneratorFunctionPrototype) : (e.__proto__ = GeneratorFunctionPrototype, _regeneratorDefine2(e, o, "GeneratorFunction")), e.prototype = Object.create(u), e; } return GeneratorFunction.prototype = GeneratorFunctionPrototype, _regeneratorDefine2(u, "constructor", GeneratorFunctionPrototype), _regeneratorDefine2(GeneratorFunctionPrototype, "constructor", GeneratorFunction), GeneratorFunction.displayName = "GeneratorFunction", _regeneratorDefine2(GeneratorFunctionPrototype, o, "GeneratorFunction"), _regeneratorDefine2(u), _regeneratorDefine2(u, o, "Generator"), _regeneratorDefine2(u, n, function () { return this; }), _regeneratorDefine2(u, "toString", function () { return "[object Generator]"; }), (_regenerator = function _regenerator() { return { w: i, m: f }; })(); }
-function _regeneratorDefine2(e, r, n, t) { var i = Object.defineProperty; try { i({}, "", {}); } catch (e) { i = 0; } _regeneratorDefine2 = function _regeneratorDefine(e, r, n, t) { function o(r, n) { _regeneratorDefine2(e, r, function (e) { return this._invoke(r, n, e); }); } r ? i ? i(e, r, { value: n, enumerable: !t, configurable: !t, writable: !t }) : e[r] = n : (o("next", 0), o("throw", 1), o("return", 2)); }, _regeneratorDefine2(e, r, n, t); }
 function _toConsumableArray(r) { return _arrayWithoutHoles(r) || _iterableToArray(r) || _unsupportedIterableToArray(r) || _nonIterableSpread(); }
 function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
 function _iterableToArray(r) { if ("undefined" != typeof Symbol && null != r[Symbol.iterator] || null != r["@@iterator"]) return Array.from(r); }
 function _arrayWithoutHoles(r) { if (Array.isArray(r)) return _arrayLikeToArray(r); }
-function asyncGeneratorStep(n, t, e, r, o, a, c) { try { var i = n[a](c), u = i.value; } catch (n) { return void e(n); } i.done ? t(u) : Promise.resolve(u).then(r, o); }
-function _asyncToGenerator(n) { return function () { var t = this, e = arguments; return new Promise(function (r, o) { var a = n.apply(t, e); function _next(n) { asyncGeneratorStep(a, r, o, _next, _throw, "next", n); } function _throw(n) { asyncGeneratorStep(a, r, o, _next, _throw, "throw", n); } _next(void 0); }); }; }
 function ownKeys(e, r) { var t = Object.keys(e); if (Object.getOwnPropertySymbols) { var o = Object.getOwnPropertySymbols(e); r && (o = o.filter(function (r) { return Object.getOwnPropertyDescriptor(e, r).enumerable; })), t.push.apply(t, o); } return t; }
 function _objectSpread(e) { for (var r = 1; r < arguments.length; r++) { var t = null != arguments[r] ? arguments[r] : {}; r % 2 ? ownKeys(Object(t), !0).forEach(function (r) { _defineProperty(e, r, t[r]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : ownKeys(Object(t)).forEach(function (r) { Object.defineProperty(e, r, Object.getOwnPropertyDescriptor(t, r)); }); } return e; }
 function _defineProperty(e, r, t) { return (r = _toPropertyKey(r)) in e ? Object.defineProperty(e, r, { value: t, enumerable: !0, configurable: !0, writable: !0 }) : e[r] = t, e; }
 function _toPropertyKey(t) { var i = _toPrimitive(t, "string"); return "symbol" == _typeof(i) ? i : i + ""; }
 function _toPrimitive(t, r) { if ("object" != _typeof(t) || !t) return t; var e = t[Symbol.toPrimitive]; if (void 0 !== e) { var i = e.call(t, r || "default"); if ("object" != _typeof(i)) return i; throw new TypeError("@@toPrimitive must return a primitive value."); } return ("string" === r ? String : Number)(t); }
+function _regenerator() { /*! regenerator-runtime -- Copyright (c) 2014-present, Facebook, Inc. -- license (MIT): https://github.com/babel/babel/blob/main/packages/babel-helpers/LICENSE */ var e, t, r = "function" == typeof Symbol ? Symbol : {}, n = r.iterator || "@@iterator", o = r.toStringTag || "@@toStringTag"; function i(r, n, o, i) { var c = n && n.prototype instanceof Generator ? n : Generator, u = Object.create(c.prototype); return _regeneratorDefine2(u, "_invoke", function (r, n, o) { var i, c, u, f = 0, p = o || [], y = !1, G = { p: 0, n: 0, v: e, a: d, f: d.bind(e, 4), d: function d(t, r) { return i = t, c = 0, u = e, G.n = r, a; } }; function d(r, n) { for (c = r, u = n, t = 0; !y && f && !o && t < p.length; t++) { var o, i = p[t], d = G.p, l = i[2]; r > 3 ? (o = l === n) && (u = i[(c = i[4]) ? 5 : (c = 3, 3)], i[4] = i[5] = e) : i[0] <= d && ((o = r < 2 && d < i[1]) ? (c = 0, G.v = n, G.n = i[1]) : d < l && (o = r < 3 || i[0] > n || n > l) && (i[4] = r, i[5] = n, G.n = l, c = 0)); } if (o || r > 1) return a; throw y = !0, n; } return function (o, p, l) { if (f > 1) throw TypeError("Generator is already running"); for (y && 1 === p && d(p, l), c = p, u = l; (t = c < 2 ? e : u) || !y;) { i || (c ? c < 3 ? (c > 1 && (G.n = -1), d(c, u)) : G.n = u : G.v = u); try { if (f = 2, i) { if (c || (o = "next"), t = i[o]) { if (!(t = t.call(i, u))) throw TypeError("iterator result is not an object"); if (!t.done) return t; u = t.value, c < 2 && (c = 0); } else 1 === c && (t = i["return"]) && t.call(i), c < 2 && (u = TypeError("The iterator does not provide a '" + o + "' method"), c = 1); i = e; } else if ((t = (y = G.n < 0) ? u : r.call(n, G)) !== a) break; } catch (t) { i = e, c = 1, u = t; } finally { f = 1; } } return { value: t, done: y }; }; }(r, o, i), !0), u; } var a = {}; function Generator() {} function GeneratorFunction() {} function GeneratorFunctionPrototype() {} t = Object.getPrototypeOf; var c = [][n] ? t(t([][n]())) : (_regeneratorDefine2(t = {}, n, function () { return this; }), t), u = GeneratorFunctionPrototype.prototype = Generator.prototype = Object.create(c); function f(e) { return Object.setPrototypeOf ? Object.setPrototypeOf(e, GeneratorFunctionPrototype) : (e.__proto__ = GeneratorFunctionPrototype, _regeneratorDefine2(e, o, "GeneratorFunction")), e.prototype = Object.create(u), e; } return GeneratorFunction.prototype = GeneratorFunctionPrototype, _regeneratorDefine2(u, "constructor", GeneratorFunctionPrototype), _regeneratorDefine2(GeneratorFunctionPrototype, "constructor", GeneratorFunction), GeneratorFunction.displayName = "GeneratorFunction", _regeneratorDefine2(GeneratorFunctionPrototype, o, "GeneratorFunction"), _regeneratorDefine2(u), _regeneratorDefine2(u, o, "Generator"), _regeneratorDefine2(u, n, function () { return this; }), _regeneratorDefine2(u, "toString", function () { return "[object Generator]"; }), (_regenerator = function _regenerator() { return { w: i, m: f }; })(); }
+function _regeneratorDefine2(e, r, n, t) { var i = Object.defineProperty; try { i({}, "", {}); } catch (e) { i = 0; } _regeneratorDefine2 = function _regeneratorDefine(e, r, n, t) { function o(r, n) { _regeneratorDefine2(e, r, function (e) { return this._invoke(r, n, e); }); } r ? i ? i(e, r, { value: n, enumerable: !t, configurable: !t, writable: !t }) : e[r] = n : (o("next", 0), o("throw", 1), o("return", 2)); }, _regeneratorDefine2(e, r, n, t); }
+function asyncGeneratorStep(n, t, e, r, o, a, c) { try { var i = n[a](c), u = i.value; } catch (n) { return void e(n); } i.done ? t(u) : Promise.resolve(u).then(r, o); }
+function _asyncToGenerator(n) { return function () { var t = this, e = arguments; return new Promise(function (r, o) { var a = n.apply(t, e); function _next(n) { asyncGeneratorStep(a, r, o, _next, _throw, "next", n); } function _throw(n) { asyncGeneratorStep(a, r, o, _next, _throw, "throw", n); } _next(void 0); }); }; }
 function _slicedToArray(r, e) { return _arrayWithHoles(r) || _iterableToArrayLimit(r, e) || _unsupportedIterableToArray(r, e) || _nonIterableRest(); }
 function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
 function _unsupportedIterableToArray(r, a) { if (r) { if ("string" == typeof r) return _arrayLikeToArray(r, a); var t = {}.toString.call(r).slice(8, -1); return "Object" === t && r.constructor && (t = r.constructor.name), "Map" === t || "Set" === t ? Array.from(r) : "Arguments" === t || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(t) ? _arrayLikeToArray(r, a) : void 0; } }
@@ -76715,67 +76895,73 @@ function _arrayWithHoles(r) { if (Array.isArray(r)) return r; }
 
 function SettingsPage() {
   var navigate = (0,react_router_dom__WEBPACK_IMPORTED_MODULE_1__.useNavigate)();
-  var _useState = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)('departments'),
+  var _useState = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)({
+      name: ''
+    }),
     _useState2 = _slicedToArray(_useState, 2),
-    currentView = _useState2[0],
-    setCurrentView = _useState2[1];
-  var _useState3 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)([]),
+    profileData = _useState2[0],
+    setProfileData = _useState2[1];
+  var _useState3 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)('departments'),
     _useState4 = _slicedToArray(_useState3, 2),
-    departments = _useState4[0],
-    setDepartments = _useState4[1];
+    currentView = _useState4[0],
+    setCurrentView = _useState4[1];
   var _useState5 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)([]),
     _useState6 = _slicedToArray(_useState5, 2),
-    courses = _useState6[0],
-    setCourses = _useState6[1];
+    departments = _useState6[0],
+    setDepartments = _useState6[1];
   var _useState7 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)([]),
     _useState8 = _slicedToArray(_useState7, 2),
-    academicYears = _useState8[0],
-    setAcademicYears = _useState8[1];
-  var _useState9 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false),
+    courses = _useState8[0],
+    setCourses = _useState8[1];
+  var _useState9 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)([]),
     _useState0 = _slicedToArray(_useState9, 2),
-    loading = _useState0[0],
-    setLoading = _useState0[1];
+    academicYears = _useState0[0],
+    setAcademicYears = _useState0[1];
   var _useState1 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false),
     _useState10 = _slicedToArray(_useState1, 2),
-    showModal = _useState10[0],
-    setShowModal = _useState10[1];
-  var _useState11 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(null),
+    loading = _useState10[0],
+    setLoading = _useState10[1];
+  var _useState11 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false),
     _useState12 = _slicedToArray(_useState11, 2),
-    editingItem = _useState12[0],
-    setEditingItem = _useState12[1];
-  var _useState13 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)({
-      name: '',
-      status: 'ACTIVE'
-    }),
+    showModal = _useState12[0],
+    setShowModal = _useState12[1];
+  var _useState13 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(null),
     _useState14 = _slicedToArray(_useState13, 2),
-    formData = _useState14[0],
-    setFormData = _useState14[1];
+    editingItem = _useState14[0],
+    setEditingItem = _useState14[1];
   var _useState15 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)({
       name: '',
       status: 'ACTIVE'
     }),
     _useState16 = _slicedToArray(_useState15, 2),
-    courseFormData = _useState16[0],
-    setCourseFormData = _useState16[1];
+    formData = _useState16[0],
+    setFormData = _useState16[1];
   var _useState17 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)({
-      year: '',
+      name: '',
       status: 'ACTIVE'
     }),
     _useState18 = _slicedToArray(_useState17, 2),
-    academicYearFormData = _useState18[0],
-    setAcademicYearFormData = _useState18[1];
-  var _useState19 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)([]),
+    courseFormData = _useState18[0],
+    setCourseFormData = _useState18[1];
+  var _useState19 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)({
+      year: '',
+      status: 'ACTIVE'
+    }),
     _useState20 = _slicedToArray(_useState19, 2),
-    errors = _useState20[0],
-    setErrors = _useState20[1];
-  var _useState21 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false),
+    academicYearFormData = _useState20[0],
+    setAcademicYearFormData = _useState20[1];
+  var _useState21 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)([]),
     _useState22 = _slicedToArray(_useState21, 2),
-    showToast = _useState22[0],
-    setShowToast = _useState22[1];
-  var _useState23 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(''),
+    errors = _useState22[0],
+    setErrors = _useState22[1];
+  var _useState23 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false),
     _useState24 = _slicedToArray(_useState23, 2),
-    toastMessage = _useState24[0],
-    setToastMessage = _useState24[1];
+    showToast = _useState24[0],
+    setShowToast = _useState24[1];
+  var _useState25 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(''),
+    _useState26 = _slicedToArray(_useState25, 2),
+    toastMessage = _useState26[0],
+    setToastMessage = _useState26[1];
 
   // bump this if you change the defaultDepartments list in the future
   var DEPARTMENTS_VERSION = '2';
@@ -76807,6 +76993,7 @@ function SettingsPage() {
   };
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function () {
     loadFromLocalStorage();
+    fetchProfile();
   }, []);
 
   // Save data to localStorage (also store meta for departments version)
@@ -76897,6 +77084,44 @@ function SettingsPage() {
       setLoading(false);
     }
   };
+  var fetchProfile = /*#__PURE__*/function () {
+    var _ref = _asyncToGenerator(/*#__PURE__*/_regenerator().m(function _callee() {
+      var res, data, u, _t;
+      return _regenerator().w(function (_context) {
+        while (1) switch (_context.p = _context.n) {
+          case 0:
+            _context.p = 0;
+            _context.n = 1;
+            return fetch('/api/profile');
+          case 1:
+            res = _context.v;
+            if (!res.ok) {
+              _context.n = 3;
+              break;
+            }
+            _context.n = 2;
+            return res.json();
+          case 2:
+            data = _context.v;
+            u = data.user || {};
+            setProfileData({
+              name: u.name || ''
+            });
+          case 3:
+            _context.n = 5;
+            break;
+          case 4:
+            _context.p = 4;
+            _t = _context.v;
+          case 5:
+            return _context.a(2);
+        }
+      }, _callee, null, [[0, 4]]);
+    }));
+    return function fetchProfile() {
+      return _ref.apply(this, arguments);
+    };
+  }();
   var handleInputChange = function handleInputChange(e) {
     var _e$target = e.target,
       name = _e$target.name,
@@ -76922,10 +77147,10 @@ function SettingsPage() {
     });
   };
   var handleSubmit = /*#__PURE__*/function () {
-    var _ref = _asyncToGenerator(/*#__PURE__*/_regenerator().m(function _callee(e) {
+    var _ref2 = _asyncToGenerator(/*#__PURE__*/_regenerator().m(function _callee2(e) {
       var newItem, updatedData;
-      return _regenerator().w(function (_context) {
-        while (1) switch (_context.n) {
+      return _regenerator().w(function (_context2) {
+        while (1) switch (_context2.n) {
           case 0:
             e.preventDefault();
             setErrors([]);
@@ -77003,12 +77228,12 @@ function SettingsPage() {
               setErrors(['Error occurred while saving. Please try again.']);
             }
           case 1:
-            return _context.a(2);
+            return _context2.a(2);
         }
-      }, _callee);
+      }, _callee2);
     }));
     return function handleSubmit(_x) {
-      return _ref.apply(this, arguments);
+      return _ref2.apply(this, arguments);
     };
   }();
   var resetForms = function resetForms() {
@@ -77235,9 +77460,9 @@ function SettingsPage() {
           })
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
           className: "topbar-right",
-          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
             className: "welcome",
-            children: "Welcome back, John Doe"
+            children: ["Welcome back, ", profileData.name || 'Admin']
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
             className: "top-actions",
             children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("button", {
@@ -77256,8 +77481,7 @@ function SettingsPage() {
             className: "text-muted",
             children: "Manage courses, departments, and academic years"
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("p", {
-            className: "text-info small mt-2",
-            children: "Changes made here will update the dropdown options in \"Add Student\" and \"Add Faculty\" forms."
+            className: "text-info small mt-2"
           })]
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
           className: "settings-nav bg-white p-4 mb-4",

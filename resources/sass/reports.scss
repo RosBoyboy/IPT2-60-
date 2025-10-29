@@ -29,13 +29,13 @@
                 transition: all 0.3s ease;
 
                 &:hover {
-                    background: #e9ecef;
-                    border-color: #dee2e6;
+                    background: #eef6ff;
+                    border-color: #d6e9ff;
                 }
 
                 &.active {
-                    background: #3498db;
-                    border-color: #3498db;
+                    background: #0f79e0;
+                    border-color: #0f79e0;
                     color: white;
                 }
             }
@@ -56,18 +56,18 @@
             border-radius: 4px;
             
             &:focus {
-                border-color: #3498db;
-                box-shadow: 0 0 0 0.2rem rgba(52, 152, 219, 0.25);
+                border-color: #0f79e0;
+                box-shadow: 0 0 0 0.2rem rgba(15, 121, 224, 0.25);
             }
         }
 
         .btn-primary {
-            background: #3498db;
-            border-color: #3498db;
+            background: #0f79e0;
+            border-color: #0f79e0;
             
             &:hover {
-                background: #2980b9;
-                border-color: #2980b9;
+                background: #0b6ec0;
+                border-color: #0b6ec0;
             }
         }
     }
@@ -76,7 +76,7 @@
         .summary-table {
             .table {
                 th {
-                    background: #3498db;
+                    background: #0f79e0;
                     color: white;
                     font-weight: 600;
                     text-align: center;
@@ -120,7 +120,7 @@
     .faculty-data-section {
         .table {
             th {
-                background: #2c3e50;
+                background: #0f79e0;
                 color: white;
                 font-weight: 600;
                 border: none;

@@ -3,6 +3,9 @@ import { Link, useNavigate } from 'react-router-dom';
 
 export default function Dashboard() {
     const navigate = useNavigate();
+    const [profileData, setProfileData] = useState({
+        name: ''
+    });
     const [dashboardData, setDashboardData] = useState({
         totalFaculty: 0,
         totalStudents: 0,
@@ -21,7 +24,19 @@ export default function Dashboard() {
     // Fetch all dashboard data
     useEffect(() => {
         fetchDashboardData();
+        fetchProfile();
     }, []);
+
+    const fetchProfile = async () => {
+        try {
+            const res = await fetch('/api/profile');
+            if (res.ok) {
+                const data = await res.json();
+                const u = data.user || {};
+                setProfileData({ name: u.name || '' });
+            }
+        } catch (e) {}
+    };
 
     const fetchDashboardData = async () => {
         try {
@@ -274,7 +289,7 @@ export default function Dashboard() {
                     </div>
 
                     <div className="topbar-right">
-                        <div className="welcome">Welcome back, John Doe</div>
+                        <div className="welcome">Welcome back, {profileData.name || 'Admin'}</div>
                         <div className="top-actions">
                             <button 
                                 className="btn small" 
@@ -296,7 +311,7 @@ export default function Dashboard() {
                 <div className="dashboard-content">
                     <div className="welcome-section">
                         <div className="welcome-card">
-                            <h3>Welcome back, John Doe</h3>
+                            <h3>Welcome back, {profileData.name || 'Admin'}</h3>
                             <p>Here's what's happening in your campus today</p>
                         </div>
                     </div>

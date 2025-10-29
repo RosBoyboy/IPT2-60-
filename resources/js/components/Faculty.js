@@ -3,6 +3,7 @@ import { Link, useNavigate } from 'react-router-dom';
 
 export default function FacultyPage() {
     const navigate = useNavigate();
+    const [profileData, setProfileData] = useState({ name: '' });
     const [facultyData, setFacultyData] = useState([]);
     const [archivedData, setArchivedData] = useState([]);
     const [loading, setLoading] = useState(true);
@@ -75,6 +76,7 @@ export default function FacultyPage() {
     // Load departments from localStorage
     useEffect(() => {
         loadSettingsData();
+        fetchProfile();
     }, []);
 
     // must match settings.js version
@@ -121,6 +123,17 @@ export default function FacultyPage() {
             'Criminal Justice Program',
             'Tourism Management Program'
         ]);
+    };
+
+    const fetchProfile = async () => {
+        try {
+            const res = await fetch('/api/profile');
+            if (res.ok) {
+                const data = await res.json();
+                const u = data.user || {};
+                setProfileData({ name: u.name || '' });
+            }
+        } catch (e) {}
     };
 
     useEffect(() => {
@@ -560,7 +573,7 @@ export default function FacultyPage() {
                     </div>
 
                     <div className="topbar-right">
-                        <div className="welcome">Welcome back, John Doe</div>
+                        <div className="welcome">Welcome back, {profileData.name || 'Admin'}</div>
                         <div className="top-actions">
                             <button 
                                 className="btn small outline"
@@ -996,7 +1009,7 @@ export default function FacultyPage() {
                                             className="btn btn-warning"
                                             onClick={confirmDelete}
                                         >
-                                            Move to Inactive
+                                            Move to Archive
                                         </button>
                                     </div>
                                 </div>
