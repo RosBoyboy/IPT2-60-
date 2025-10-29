@@ -19,7 +19,14 @@ export default function FacultyPage() {
         position: '',
         email: '',
         contact: '',
-        status: 'ACTIVE'
+		status: 'ACTIVE',
+		gender: '',
+		dob: '',
+		age: '',
+		street_address: '',
+		city_municipality: '',
+		province_region: '',
+		zip_code: ''
     });
     const [errors, setErrors] = useState([]);
     const [showToast, setShowToast] = useState(false);
@@ -189,13 +196,36 @@ export default function FacultyPage() {
         }
     };
 
-    const handleInputChange = (e) => {
-        const { name, value } = e.target;
-        setFormData(prev => ({
-            ...prev,
-            [name]: value
-        }));
-    };
+	const handleInputChange = (e) => {
+		const { name, value } = e.target;
+		// Auto-calculate age when DOB changes
+		if (name === 'dob') {
+			const dobVal = value;
+			let computedAge = '';
+			if (dobVal) {
+				const dobDate = new Date(dobVal);
+				const today = new Date();
+				let a = today.getFullYear() - dobDate.getFullYear();
+				const m = today.getMonth() - dobDate.getMonth();
+				if (m < 0 || (m === 0 && today.getDate() < dobDate.getDate())) {
+					a--;
+				}
+				computedAge = a >= 0 ? a : '';
+			}
+
+			setFormData(prev => ({
+				...prev,
+				dob: dobVal,
+				age: computedAge
+			}));
+			return;
+		}
+
+		setFormData(prev => ({
+			...prev,
+			[name]: value
+		}));
+	};
 
     const handleFilterChange = (e) => {
         const { name, value } = e.target;
@@ -269,15 +299,22 @@ export default function FacultyPage() {
                 setEditingFaculty(null);
                 setShowToast(true);
                 
-                setFormData({
-                    faculty_number: '',
-                    name: '',
-                    department: '',
-                    position: '',
-                    email: '',
-                    contact: '',
-                    status: 'ACTIVE'
-                });
+				setFormData({
+					faculty_number: '',
+					name: '',
+					department: '',
+					position: '',
+					email: '',
+					contact: '',
+					status: 'ACTIVE',
+					gender: '',
+					dob: '',
+					age: '',
+					street_address: '',
+					city_municipality: '',
+					province_region: '',
+					zip_code: ''
+				});
 
                 setTimeout(() => setShowToast(false), 3000);
             } else {
@@ -298,14 +335,21 @@ export default function FacultyPage() {
 
     const handleEdit = (faculty) => {
         setEditingFaculty(faculty);
-        setFormData({
+	setFormData({
             faculty_number: faculty.faculty_number,
             name: faculty.name,
             department: faculty.department,
             position: faculty.position,
             email: faculty.email,
             contact: faculty.contact,
-            status: faculty.status
+		status: faculty.status,
+		gender: faculty.gender || '',
+		dob: faculty.dob || '',
+		age: faculty.age || '',
+		street_address: faculty.street_address || '',
+		city_municipality: faculty.city_municipality || '',
+		province_region: faculty.province_region || '',
+		zip_code: faculty.zip_code || ''
         });
         setShowModal(true);
     };
@@ -444,15 +488,22 @@ export default function FacultyPage() {
         setShowModal(false);
         setEditingFaculty(null);
         setErrors([]);
-        setFormData({
-            faculty_number: '',
-            name: '',
-            department: '',
-            position: '',
-            email: '',
-            contact: '',
-            status: 'ACTIVE'
-        });
+		setFormData({
+			faculty_number: '',
+			name: '',
+			department: '',
+			position: '',
+			email: '',
+			contact: '',
+			status: 'ACTIVE',
+			gender: '',
+			dob: '',
+			age: '',
+			street_address: '',
+			city_municipality: '',
+			province_region: '',
+			zip_code: ''
+		});
     };
 
     const handleCloseArchiveModal = () => {
@@ -583,12 +634,16 @@ export default function FacultyPage() {
                             </div>
                         ) : facultyData.length > 0 ? (
                             <table className="table">
-                                <thead className="table-light">
+								<thead className="table-light">
                                     <tr>
                                         <th>Faculty Number</th>
                                         <th>Name</th>
                                         <th>Department</th>
                                         <th>Position</th>
+										<th>Gender</th>
+										<th>DOB</th>
+										<th>Age</th>
+										<th>Address</th>
                                         <th>Email</th>
                                         <th>Contact</th>
                                         <th>Status</th>
@@ -613,6 +668,19 @@ export default function FacultyPage() {
                                             </td>
                                             <td>{faculty.department}</td>
                                             <td>{faculty.position}</td>
+											<td>{faculty.gender || '-'}</td>
+											<td>{faculty.dob ? new Date(faculty.dob).toLocaleDateString() : '-'}</td>
+											<td>{faculty.age ?? '-'}</td>
+											<td>
+												<div className="small text-muted">
+													{faculty.street_address ? (<div>{faculty.street_address}</div>) : null}
+													{(faculty.city_municipality || faculty.province_region || faculty.zip_code) ? (
+														<div>
+															{faculty.city_municipality}{faculty.city_municipality && faculty.province_region ? ', ' : ''}{faculty.province_region}{(faculty.zip_code && (faculty.city_municipality || faculty.province_region)) ? ' - ' + faculty.zip_code : (faculty.zip_code || '')}
+														</div>
+													) : null}
+												</div>
+											</td>
                                             <td>{faculty.email}</td>
                                             <td>{faculty.contact}</td>
                                             <td>
@@ -767,6 +835,92 @@ export default function FacultyPage() {
                                                         placeholder="e.g., +1234567890"
                                                     />
                                                 </div>
+								<div className="col-md-4">
+									<label htmlFor="gender">Gender</label>
+									<select
+										className="form-select"
+										id="gender"
+										name="gender"
+										value={formData.gender}
+										onChange={handleInputChange}
+									>
+										<option value="">Select Gender</option>
+										<option value="Male">Male</option>
+										<option value="Female">Female</option>
+										<option value="Other">Other</option>
+									</select>
+								</div>
+								<div className="col-md-4">
+									<label htmlFor="dob">Date of Birth</label>
+									<input
+										type="date"
+										className="form-control"
+										id="dob"
+										name="dob"
+										value={formData.dob}
+										onChange={handleInputChange}
+									/>
+								</div>
+								<div className="col-md-4">
+									<label htmlFor="age">Age</label>
+									<input
+										type="text"
+										readOnly
+										className="form-control"
+										id="age"
+										name="age"
+										value={formData.age}
+										placeholder="Auto-calculated from DOB"
+									/>
+								</div>
+								<div className="col-md-12">
+									<label htmlFor="street_address">Street Address</label>
+									<input
+										type="text"
+										className="form-control"
+										id="street_address"
+										name="street_address"
+										value={formData.street_address}
+										onChange={handleInputChange}
+										placeholder="House no., Street"
+									/>
+								</div>
+								<div className="col-md-4">
+									<label htmlFor="city_municipality">City / Municipality</label>
+									<input
+										type="text"
+										className="form-control"
+										id="city_municipality"
+										name="city_municipality"
+										value={formData.city_municipality}
+										onChange={handleInputChange}
+										placeholder="City or Municipality"
+									/>
+								</div>
+								<div className="col-md-4">
+									<label htmlFor="province_region">Province / Region</label>
+									<input
+										type="text"
+										className="form-control"
+										id="province_region"
+										name="province_region"
+										value={formData.province_region}
+										onChange={handleInputChange}
+										placeholder="Province or Region"
+									/>
+								</div>
+								<div className="col-md-4">
+									<label htmlFor="zip_code">ZIP Code</label>
+									<input
+										type="text"
+										className="form-control"
+										id="zip_code"
+										name="zip_code"
+										value={formData.zip_code}
+										onChange={handleInputChange}
+										placeholder="ZIP / Postal Code"
+									/>
+								</div>
                                                 <div className="col-md-6">
                                                     <label htmlFor="status">Status *</label>
                                                     <select
@@ -918,13 +1072,17 @@ export default function FacultyPage() {
                                             </div>
                                         ) : archivedData.length > 0 ? (
                                             <table className="table">
-                                                <thead className="table-light">
+									<thead className="table-light">
                                                     <tr>
                                                         <th>Faculty Number</th>
                                                         <th>Name</th>
                                                         <th>Department</th>
                                                         <th>Position</th>
                                                         <th>Archived Date</th>
+											<th>Gender</th>
+											<th>DOB</th>
+											<th>Age</th>
+											<th>Address</th>
                                                         <th>Actions</th>
                                                     </tr>
                                                 </thead>
@@ -955,6 +1113,19 @@ export default function FacultyPage() {
                                                                     {new Date(faculty.archived_at).toLocaleTimeString()}
                                                                 </div>
                                                             </td>
+												<td>{faculty.gender || '-'}</td>
+												<td>{faculty.dob ? new Date(faculty.dob).toLocaleDateString() : '-'}</td>
+												<td>{faculty.age ?? '-'}</td>
+												<td>
+													<div className="small text-muted">
+														{faculty.street_address ? (<div>{faculty.street_address}</div>) : null}
+														{(faculty.city_municipality || faculty.province_region || faculty.zip_code) ? (
+															<div>
+																{faculty.city_municipality}{faculty.city_municipality && faculty.province_region ? ', ' : ''}{faculty.province_region}{(faculty.zip_code && (faculty.city_municipality || faculty.province_region)) ? ' - ' + faculty.zip_code : (faculty.zip_code || '')}
+															</div>
+														) : null}
+													</div>
+												</td>
                                                             <td>
                                                                 <button 
                                                                     className="btn btn-sm btn-success me-2"

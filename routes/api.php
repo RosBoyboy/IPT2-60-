@@ -4,6 +4,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\FacultyController;
 use App\Http\Controllers\StudentController;
+use App\Http\Controllers\ProfileController;
 
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
@@ -30,3 +31,9 @@ Route::delete('/students/{id}', [StudentController::class, 'destroy']);
 Route::get('/archived-students', [StudentController::class, 'archiveIndex']);
 Route::post('/archived-students/{id}/restore', [StudentController::class, 'restore']);
 Route::delete('/archived-students/{id}/force', [StudentController::class, 'forceDelete']);
+
+// Profile & Activity Logs
+Route::get('/profile', [ProfileController::class, 'show']);
+Route::put('/profile', [ProfileController::class, 'update']);
+Route::post('/profile/change-password', [ProfileController::class, 'changePassword']);
+Route::get('/activity-logs', [ProfileController::class, 'logs']);

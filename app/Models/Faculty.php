@@ -17,5 +17,14 @@ class Faculty extends Model
         'email',
         'contact',
         'status',
+        // Additional personal and contact details
+        'gender',
+        'dob',
+        'age',
+        'street_address',
+        'city_municipality',
+        'province_region',
+        'zip_code',
+        'archived_at',
     ];
 }

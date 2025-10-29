@@ -71471,7 +71471,14 @@ function FacultyPage() {
       position: '',
       email: '',
       contact: '',
-      status: 'ACTIVE'
+      status: 'ACTIVE',
+      gender: '',
+      dob: '',
+      age: '',
+      street_address: '',
+      city_municipality: '',
+      province_region: '',
+      zip_code: ''
     }),
     _useState18 = _slicedToArray(_useState17, 2),
     formData = _useState18[0],
@@ -71697,6 +71704,28 @@ function FacultyPage() {
     var _e$target = e.target,
       name = _e$target.name,
       value = _e$target.value;
+    // Auto-calculate age when DOB changes
+    if (name === 'dob') {
+      var dobVal = value;
+      var computedAge = '';
+      if (dobVal) {
+        var dobDate = new Date(dobVal);
+        var today = new Date();
+        var a = today.getFullYear() - dobDate.getFullYear();
+        var m = today.getMonth() - dobDate.getMonth();
+        if (m < 0 || m === 0 && today.getDate() < dobDate.getDate()) {
+          a--;
+        }
+        computedAge = a >= 0 ? a : '';
+      }
+      setFormData(function (prev) {
+        return _objectSpread(_objectSpread({}, prev), {}, {
+          dob: dobVal,
+          age: computedAge
+        });
+      });
+      return;
+    }
     setFormData(function (prev) {
       return _objectSpread(_objectSpread({}, prev), {}, _defineProperty({}, name, value));
     });
@@ -71793,7 +71822,14 @@ function FacultyPage() {
                 position: '',
                 email: '',
                 contact: '',
-                status: 'ACTIVE'
+                status: 'ACTIVE',
+                gender: '',
+                dob: '',
+                age: '',
+                street_address: '',
+                city_municipality: '',
+                province_region: '',
+                zip_code: ''
               });
               setTimeout(function () {
                 return setShowToast(false);
@@ -71833,7 +71869,14 @@ function FacultyPage() {
       position: faculty.position,
       email: faculty.email,
       contact: faculty.contact,
-      status: faculty.status
+      status: faculty.status,
+      gender: faculty.gender || '',
+      dob: faculty.dob || '',
+      age: faculty.age || '',
+      street_address: faculty.street_address || '',
+      city_municipality: faculty.city_municipality || '',
+      province_region: faculty.province_region || '',
+      zip_code: faculty.zip_code || ''
     });
     setShowModal(true);
   };
@@ -72082,7 +72125,14 @@ function FacultyPage() {
       position: '',
       email: '',
       contact: '',
-      status: 'ACTIVE'
+      status: 'ACTIVE',
+      gender: '',
+      dob: '',
+      age: '',
+      street_address: '',
+      city_municipality: '',
+      province_region: '',
+      zip_code: ''
     });
   };
   var handleCloseArchiveModal = function handleCloseArchiveModal() {
@@ -72288,6 +72338,14 @@ function FacultyPage() {
                 }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("th", {
                   children: "Position"
                 }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("th", {
+                  children: "Gender"
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("th", {
+                  children: "DOB"
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("th", {
+                  children: "Age"
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("th", {
+                  children: "Address"
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("th", {
                   children: "Email"
                 }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("th", {
                   children: "Contact"
@@ -72299,6 +72357,7 @@ function FacultyPage() {
               })
             }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("tbody", {
               children: facultyData.map(function (faculty) {
+                var _faculty$age;
                 return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("tr", {
                   children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("td", {
                     className: "fw-semibold",
@@ -72325,6 +72384,21 @@ function FacultyPage() {
                     children: faculty.department
                   }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("td", {
                     children: faculty.position
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("td", {
+                    children: faculty.gender || '-'
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("td", {
+                    children: faculty.dob ? new Date(faculty.dob).toLocaleDateString() : '-'
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("td", {
+                    children: (_faculty$age = faculty.age) !== null && _faculty$age !== void 0 ? _faculty$age : '-'
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("td", {
+                    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
+                      className: "small text-muted",
+                      children: [faculty.street_address ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
+                        children: faculty.street_address
+                      }) : null, faculty.city_municipality || faculty.province_region || faculty.zip_code ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
+                        children: [faculty.city_municipality, faculty.city_municipality && faculty.province_region ? ', ' : '', faculty.province_region, faculty.zip_code && (faculty.city_municipality || faculty.province_region) ? ' - ' + faculty.zip_code : faculty.zip_code || '']
+                      }) : null]
+                    })
                   }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("td", {
                     children: faculty.email
                   }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("td", {
@@ -72495,6 +72569,114 @@ function FacultyPage() {
                         value: formData.contact,
                         onChange: handleInputChange,
                         placeholder: "e.g., +1234567890"
+                      })]
+                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
+                      className: "col-md-4",
+                      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("label", {
+                        htmlFor: "gender",
+                        children: "Gender"
+                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("select", {
+                        className: "form-select",
+                        id: "gender",
+                        name: "gender",
+                        value: formData.gender,
+                        onChange: handleInputChange,
+                        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("option", {
+                          value: "",
+                          children: "Select Gender"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("option", {
+                          value: "Male",
+                          children: "Male"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("option", {
+                          value: "Female",
+                          children: "Female"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("option", {
+                          value: "Other",
+                          children: "Other"
+                        })]
+                      })]
+                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
+                      className: "col-md-4",
+                      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("label", {
+                        htmlFor: "dob",
+                        children: "Date of Birth"
+                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("input", {
+                        type: "date",
+                        className: "form-control",
+                        id: "dob",
+                        name: "dob",
+                        value: formData.dob,
+                        onChange: handleInputChange
+                      })]
+                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
+                      className: "col-md-4",
+                      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("label", {
+                        htmlFor: "age",
+                        children: "Age"
+                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("input", {
+                        type: "text",
+                        readOnly: true,
+                        className: "form-control",
+                        id: "age",
+                        name: "age",
+                        value: formData.age,
+                        placeholder: "Auto-calculated from DOB"
+                      })]
+                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
+                      className: "col-md-12",
+                      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("label", {
+                        htmlFor: "street_address",
+                        children: "Street Address"
+                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("input", {
+                        type: "text",
+                        className: "form-control",
+                        id: "street_address",
+                        name: "street_address",
+                        value: formData.street_address,
+                        onChange: handleInputChange,
+                        placeholder: "House no., Street"
+                      })]
+                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
+                      className: "col-md-4",
+                      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("label", {
+                        htmlFor: "city_municipality",
+                        children: "City / Municipality"
+                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("input", {
+                        type: "text",
+                        className: "form-control",
+                        id: "city_municipality",
+                        name: "city_municipality",
+                        value: formData.city_municipality,
+                        onChange: handleInputChange,
+                        placeholder: "City or Municipality"
+                      })]
+                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
+                      className: "col-md-4",
+                      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("label", {
+                        htmlFor: "province_region",
+                        children: "Province / Region"
+                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("input", {
+                        type: "text",
+                        className: "form-control",
+                        id: "province_region",
+                        name: "province_region",
+                        value: formData.province_region,
+                        onChange: handleInputChange,
+                        placeholder: "Province or Region"
+                      })]
+                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
+                      className: "col-md-4",
+                      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("label", {
+                        htmlFor: "zip_code",
+                        children: "ZIP Code"
+                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("input", {
+                        type: "text",
+                        className: "form-control",
+                        id: "zip_code",
+                        name: "zip_code",
+                        value: formData.zip_code,
+                        onChange: handleInputChange,
+                        placeholder: "ZIP / Postal Code"
                       })]
                     }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
                       className: "col-md-6",
@@ -72670,11 +72852,20 @@ function FacultyPage() {
                       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("th", {
                         children: "Archived Date"
                       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("th", {
+                        children: "Gender"
+                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("th", {
+                        children: "DOB"
+                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("th", {
+                        children: "Age"
+                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("th", {
+                        children: "Address"
+                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("th", {
                         children: "Actions"
                       })]
                     })
                   }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("tbody", {
                     children: archivedData.map(function (faculty) {
+                      var _faculty$age2;
                       return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("tr", {
                         children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("td", {
                           className: "fw-semibold",
@@ -72712,6 +72903,21 @@ function FacultyPage() {
                             className: "text-muted extra-small",
                             children: new Date(faculty.archived_at).toLocaleTimeString()
                           })]
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("td", {
+                          children: faculty.gender || '-'
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("td", {
+                          children: faculty.dob ? new Date(faculty.dob).toLocaleDateString() : '-'
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("td", {
+                          children: (_faculty$age2 = faculty.age) !== null && _faculty$age2 !== void 0 ? _faculty$age2 : '-'
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("td", {
+                          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
+                            className: "small text-muted",
+                            children: [faculty.street_address ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
+                              children: faculty.street_address
+                            }) : null, faculty.city_municipality || faculty.province_region || faculty.zip_code ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
+                              children: [faculty.city_municipality, faculty.city_municipality && faculty.province_region ? ', ' : '', faculty.province_region, faculty.zip_code && (faculty.city_municipality || faculty.province_region) ? ' - ' + faculty.zip_code : faculty.zip_code || '']
+                            }) : null]
+                          })
                         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("td", {
                           children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("button", {
                             className: "btn btn-sm btn-success me-2",
@@ -74695,10 +74901,10 @@ function _objectSpread(e) { for (var r = 1; r < arguments.length; r++) { var t =
 function _defineProperty(e, r, t) { return (r = _toPropertyKey(r)) in e ? Object.defineProperty(e, r, { value: t, enumerable: !0, configurable: !0, writable: !0 }) : e[r] = t, e; }
 function _toPropertyKey(t) { var i = _toPrimitive(t, "string"); return "symbol" == _typeof(i) ? i : i + ""; }
 function _toPrimitive(t, r) { if ("object" != _typeof(t) || !t) return t; var e = t[Symbol.toPrimitive]; if (void 0 !== e) { var i = e.call(t, r || "default"); if ("object" != _typeof(i)) return i; throw new TypeError("@@toPrimitive must return a primitive value."); } return ("string" === r ? String : Number)(t); }
-function _toConsumableArray(r) { return _arrayWithoutHoles(r) || _iterableToArray(r) || _unsupportedIterableToArray(r) || _nonIterableSpread(); }
-function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
-function _iterableToArray(r) { if ("undefined" != typeof Symbol && null != r[Symbol.iterator] || null != r["@@iterator"]) return Array.from(r); }
-function _arrayWithoutHoles(r) { if (Array.isArray(r)) return _arrayLikeToArray(r); }
+function _regenerator() { /*! regenerator-runtime -- Copyright (c) 2014-present, Facebook, Inc. -- license (MIT): https://github.com/babel/babel/blob/main/packages/babel-helpers/LICENSE */ var e, t, r = "function" == typeof Symbol ? Symbol : {}, n = r.iterator || "@@iterator", o = r.toStringTag || "@@toStringTag"; function i(r, n, o, i) { var c = n && n.prototype instanceof Generator ? n : Generator, u = Object.create(c.prototype); return _regeneratorDefine2(u, "_invoke", function (r, n, o) { var i, c, u, f = 0, p = o || [], y = !1, G = { p: 0, n: 0, v: e, a: d, f: d.bind(e, 4), d: function d(t, r) { return i = t, c = 0, u = e, G.n = r, a; } }; function d(r, n) { for (c = r, u = n, t = 0; !y && f && !o && t < p.length; t++) { var o, i = p[t], d = G.p, l = i[2]; r > 3 ? (o = l === n) && (u = i[(c = i[4]) ? 5 : (c = 3, 3)], i[4] = i[5] = e) : i[0] <= d && ((o = r < 2 && d < i[1]) ? (c = 0, G.v = n, G.n = i[1]) : d < l && (o = r < 3 || i[0] > n || n > l) && (i[4] = r, i[5] = n, G.n = l, c = 0)); } if (o || r > 1) return a; throw y = !0, n; } return function (o, p, l) { if (f > 1) throw TypeError("Generator is already running"); for (y && 1 === p && d(p, l), c = p, u = l; (t = c < 2 ? e : u) || !y;) { i || (c ? c < 3 ? (c > 1 && (G.n = -1), d(c, u)) : G.n = u : G.v = u); try { if (f = 2, i) { if (c || (o = "next"), t = i[o]) { if (!(t = t.call(i, u))) throw TypeError("iterator result is not an object"); if (!t.done) return t; u = t.value, c < 2 && (c = 0); } else 1 === c && (t = i["return"]) && t.call(i), c < 2 && (u = TypeError("The iterator does not provide a '" + o + "' method"), c = 1); i = e; } else if ((t = (y = G.n < 0) ? u : r.call(n, G)) !== a) break; } catch (t) { i = e, c = 1, u = t; } finally { f = 1; } } return { value: t, done: y }; }; }(r, o, i), !0), u; } var a = {}; function Generator() {} function GeneratorFunction() {} function GeneratorFunctionPrototype() {} t = Object.getPrototypeOf; var c = [][n] ? t(t([][n]())) : (_regeneratorDefine2(t = {}, n, function () { return this; }), t), u = GeneratorFunctionPrototype.prototype = Generator.prototype = Object.create(c); function f(e) { return Object.setPrototypeOf ? Object.setPrototypeOf(e, GeneratorFunctionPrototype) : (e.__proto__ = GeneratorFunctionPrototype, _regeneratorDefine2(e, o, "GeneratorFunction")), e.prototype = Object.create(u), e; } return GeneratorFunction.prototype = GeneratorFunctionPrototype, _regeneratorDefine2(u, "constructor", GeneratorFunctionPrototype), _regeneratorDefine2(GeneratorFunctionPrototype, "constructor", GeneratorFunction), GeneratorFunction.displayName = "GeneratorFunction", _regeneratorDefine2(GeneratorFunctionPrototype, o, "GeneratorFunction"), _regeneratorDefine2(u), _regeneratorDefine2(u, o, "Generator"), _regeneratorDefine2(u, n, function () { return this; }), _regeneratorDefine2(u, "toString", function () { return "[object Generator]"; }), (_regenerator = function _regenerator() { return { w: i, m: f }; })(); }
+function _regeneratorDefine2(e, r, n, t) { var i = Object.defineProperty; try { i({}, "", {}); } catch (e) { i = 0; } _regeneratorDefine2 = function _regeneratorDefine(e, r, n, t) { function o(r, n) { _regeneratorDefine2(e, r, function (e) { return this._invoke(r, n, e); }); } r ? i ? i(e, r, { value: n, enumerable: !t, configurable: !t, writable: !t }) : e[r] = n : (o("next", 0), o("throw", 1), o("return", 2)); }, _regeneratorDefine2(e, r, n, t); }
+function asyncGeneratorStep(n, t, e, r, o, a, c) { try { var i = n[a](c), u = i.value; } catch (n) { return void e(n); } i.done ? t(u) : Promise.resolve(u).then(r, o); }
+function _asyncToGenerator(n) { return function () { var t = this, e = arguments; return new Promise(function (r, o) { var a = n.apply(t, e); function _next(n) { asyncGeneratorStep(a, r, o, _next, _throw, "next", n); } function _throw(n) { asyncGeneratorStep(a, r, o, _next, _throw, "throw", n); } _next(void 0); }); }; }
 function _slicedToArray(r, e) { return _arrayWithHoles(r) || _iterableToArrayLimit(r, e) || _unsupportedIterableToArray(r, e) || _nonIterableRest(); }
 function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
 function _unsupportedIterableToArray(r, a) { if (r) { if ("string" == typeof r) return _arrayLikeToArray(r, a); var t = {}.toString.call(r).slice(8, -1); return "Object" === t && r.constructor && (t = r.constructor.name), "Map" === t || "Set" === t ? Array.from(r) : "Arguments" === t || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(t) ? _arrayLikeToArray(r, a) : void 0; } }
@@ -74715,12 +74921,12 @@ function ProfilePage() {
     activeTab = _useState2[0],
     setActiveTab = _useState2[1];
   var _useState3 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)({
-      name: 'John Doe',
-      email: 'admin@university.edu',
+      name: '',
+      email: '',
       role: 'Administrator',
-      department: 'System Administration',
-      lastLogin: new Date().toISOString(),
-      joinDate: '2023-01-15'
+      department: '',
+      lastLogin: '',
+      joinDate: ''
     }),
     _useState4 = _slicedToArray(_useState3, 2),
     profileData = _useState4[0],
@@ -74761,122 +74967,229 @@ function ProfilePage() {
     navigate('/login');
   }
 
-  // Load activity logs from localStorage
+  // Load profile and logs from API
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function () {
-    loadActivityLogs();
-    // Load profile data from localStorage if available
-    var savedProfile = localStorage.getItem('sfms_profile');
-    if (savedProfile) {
-      setProfileData(JSON.parse(savedProfile));
-    }
+    fetchProfile();
+    fetchLogs();
   }, []);
-  var loadActivityLogs = function loadActivityLogs() {
-    var savedLogs = localStorage.getItem('sfms_activity_logs');
-    if (savedLogs) {
-      setActivityLogs(JSON.parse(savedLogs));
-    } else {
-      // Initialize with default logs
-      var defaultLogs = [{
-        id: 1,
-        timestamp: new Date('2023-12-15T10:30:00').toISOString(),
-        activity: 'Logged in successfully',
-        ipAddress: '192.168.1.100',
-        details: ''
-      }, {
-        id: 2,
-        timestamp: new Date('2023-12-14T15:45:00').toISOString(),
-        activity: 'Updated profile information',
-        ipAddress: '192.168.1.100',
-        details: ''
-      }, {
-        id: 3,
-        timestamp: new Date('2023-12-13T09:15:00').toISOString(),
-        activity: 'Logged in successfully',
-        ipAddress: '192.168.1.100',
-        details: ''
-      }, {
-        id: 4,
-        timestamp: new Date('2023-12-12T14:20:00').toISOString(),
-        activity: 'Changed password',
-        ipAddress: '192.168.1.100',
-        details: ''
-      }];
-      setActivityLogs(defaultLogs);
-      localStorage.setItem('sfms_activity_logs', JSON.stringify(defaultLogs));
-    }
-  };
-
-  // Function to log activities
-  var logActivity = function logActivity(activity) {
-    var details = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : '';
-    var newLog = {
-      id: Date.now(),
-      timestamp: new Date().toISOString(),
-      activity: activity,
-      ipAddress: '192.168.1.100',
-      // In real app, get from server
-      details: details
+  var fetchProfile = /*#__PURE__*/function () {
+    var _ref = _asyncToGenerator(/*#__PURE__*/_regenerator().m(function _callee() {
+      var res, data, u, _t;
+      return _regenerator().w(function (_context) {
+        while (1) switch (_context.p = _context.n) {
+          case 0:
+            _context.p = 0;
+            _context.n = 1;
+            return fetch('/api/profile');
+          case 1:
+            res = _context.v;
+            if (!res.ok) {
+              _context.n = 3;
+              break;
+            }
+            _context.n = 2;
+            return res.json();
+          case 2:
+            data = _context.v;
+            u = data.user || {};
+            setProfileData({
+              name: u.name || '',
+              email: u.email || '',
+              role: u.role || 'Administrator',
+              department: u.department || '',
+              lastLogin: u.last_login_at || '',
+              joinDate: u.joined_at || ''
+            });
+          case 3:
+            _context.n = 5;
+            break;
+          case 4:
+            _context.p = 4;
+            _t = _context.v;
+          case 5:
+            return _context.a(2);
+        }
+      }, _callee, null, [[0, 4]]);
+    }));
+    return function fetchProfile() {
+      return _ref.apply(this, arguments);
     };
-    var updatedLogs = [newLog].concat(_toConsumableArray(activityLogs.slice(0, 49))); // Keep last 50 logs
-    setActivityLogs(updatedLogs);
-    localStorage.setItem('sfms_activity_logs', JSON.stringify(updatedLogs));
-  };
-  var handleProfileUpdate = function handleProfileUpdate(e) {
-    e.preventDefault();
-    setLoading(true);
-    setErrors([]);
+  }();
+  var fetchLogs = /*#__PURE__*/function () {
+    var _ref2 = _asyncToGenerator(/*#__PURE__*/_regenerator().m(function _callee2() {
+      var res, data, logs, _t2;
+      return _regenerator().w(function (_context2) {
+        while (1) switch (_context2.p = _context2.n) {
+          case 0:
+            _context2.p = 0;
+            _context2.n = 1;
+            return fetch('/api/activity-logs');
+          case 1:
+            res = _context2.v;
+            if (!res.ok) {
+              _context2.n = 3;
+              break;
+            }
+            _context2.n = 2;
+            return res.json();
+          case 2:
+            data = _context2.v;
+            logs = (data.logs || []).map(function (l) {
+              return {
+                id: l.id,
+                timestamp: l.created_at,
+                activity: l.action,
+                ipAddress: l.ip_address,
+                details: l.details
+              };
+            });
+            setActivityLogs(logs);
+          case 3:
+            _context2.n = 5;
+            break;
+          case 4:
+            _context2.p = 4;
+            _t2 = _context2.v;
+          case 5:
+            return _context2.a(2);
+        }
+      }, _callee2, null, [[0, 4]]);
+    }));
+    return function fetchLogs() {
+      return _ref2.apply(this, arguments);
+    };
+  }();
 
-    // Simulate API call
-    setTimeout(function () {
-      localStorage.setItem('sfms_profile', JSON.stringify(profileData));
-      logActivity('Updated profile information');
-      setToastMessage('Profile updated successfully!');
-      setShowToast(true);
-      setLoading(false);
-      setTimeout(function () {
-        return setShowToast(false);
-      }, 3000);
-    }, 1000);
-  };
-  var handlePasswordChange = function handlePasswordChange(e) {
-    e.preventDefault();
-    setErrors([]);
+  // Client will just refetch logs after server writes them via controllers
 
-    // Validation
-    var validationErrors = [];
-    if (passwordData.currentPassword !== 'admin123') {
-      validationErrors.push('Current password is incorrect');
-    }
-    if (passwordData.newPassword.length < 8) {
-      validationErrors.push('Password must be at least 8 characters long');
-    }
-    if (passwordData.newPassword !== passwordData.confirmPassword) {
-      validationErrors.push('New passwords do not match');
-    }
-    if (validationErrors.length > 0) {
-      setErrors(validationErrors);
-      return;
-    }
-    setLoading(true);
+  var handleProfileUpdate = /*#__PURE__*/function () {
+    var _ref3 = _asyncToGenerator(/*#__PURE__*/_regenerator().m(function _callee3(e) {
+      var res, data;
+      return _regenerator().w(function (_context3) {
+        while (1) switch (_context3.p = _context3.n) {
+          case 0:
+            e.preventDefault();
+            setLoading(true);
+            setErrors([]);
+            _context3.p = 1;
+            _context3.n = 2;
+            return fetch('/api/profile', {
+              method: 'PUT',
+              headers: {
+                'Content-Type': 'application/json'
+              },
+              body: JSON.stringify({
+                name: profileData.name,
+                email: profileData.email,
+                department: profileData.department
+              })
+            });
+          case 2:
+            res = _context3.v;
+            _context3.n = 3;
+            return res.json();
+          case 3:
+            data = _context3.v;
+            if (res.ok) {
+              setToastMessage(data.success || 'Profile updated successfully!');
+              setShowToast(true);
+              fetchLogs();
+            } else if (data.errors) {
+              setErrors(Object.values(data.errors).flat());
+            }
+          case 4:
+            _context3.p = 4;
+            setLoading(false);
+            setTimeout(function () {
+              return setShowToast(false);
+            }, 3000);
+            return _context3.f(4);
+          case 5:
+            return _context3.a(2);
+        }
+      }, _callee3, null, [[1,, 4, 5]]);
+    }));
+    return function handleProfileUpdate(_x) {
+      return _ref3.apply(this, arguments);
+    };
+  }();
+  var handlePasswordChange = /*#__PURE__*/function () {
+    var _ref4 = _asyncToGenerator(/*#__PURE__*/_regenerator().m(function _callee4(e) {
+      var validationErrors, res, data;
+      return _regenerator().w(function (_context4) {
+        while (1) switch (_context4.p = _context4.n) {
+          case 0:
+            e.preventDefault();
+            setErrors([]);
 
-    // Simulate API call
-    setTimeout(function () {
-      logActivity('Changed password');
-      setToastMessage('Password changed successfully!');
-      setShowToast(true);
-      setLoading(false);
-
-      // Reset form
-      setPasswordData({
-        currentPassword: '',
-        newPassword: '',
-        confirmPassword: ''
-      });
-      setTimeout(function () {
-        return setShowToast(false);
-      }, 3000);
-    }, 1000);
-  };
+            // Validation
+            validationErrors = [];
+            if (passwordData.currentPassword !== 'admin123') {
+              validationErrors.push('Current password is incorrect');
+            }
+            if (passwordData.newPassword.length < 8) {
+              validationErrors.push('Password must be at least 8 characters long');
+            }
+            if (passwordData.newPassword !== passwordData.confirmPassword) {
+              validationErrors.push('New passwords do not match');
+            }
+            if (!(validationErrors.length > 0)) {
+              _context4.n = 1;
+              break;
+            }
+            setErrors(validationErrors);
+            return _context4.a(2);
+          case 1:
+            setLoading(true);
+            _context4.p = 2;
+            _context4.n = 3;
+            return fetch('/api/profile/change-password', {
+              method: 'POST',
+              headers: {
+                'Content-Type': 'application/json'
+              },
+              body: JSON.stringify({
+                current_password: passwordData.currentPassword,
+                new_password: passwordData.newPassword,
+                new_password_confirmation: passwordData.confirmPassword
+              })
+            });
+          case 3:
+            res = _context4.v;
+            _context4.n = 4;
+            return res.json();
+          case 4:
+            data = _context4.v;
+            if (res.ok) {
+              setToastMessage(data.success || 'Password changed successfully!');
+              setShowToast(true);
+              setPasswordData({
+                currentPassword: '',
+                newPassword: '',
+                confirmPassword: ''
+              });
+              fetchLogs();
+            } else if (data.errors) {
+              setErrors(Object.values(data.errors).flat());
+            } else if (data.message) {
+              setErrors([data.message]);
+            }
+          case 5:
+            _context4.p = 5;
+            setLoading(false);
+            setTimeout(function () {
+              return setShowToast(false);
+            }, 3000);
+            return _context4.f(5);
+          case 6:
+            return _context4.a(2);
+        }
+      }, _callee4, null, [[2,, 5, 6]]);
+    }));
+    return function handlePasswordChange(_x2) {
+      return _ref4.apply(this, arguments);
+    };
+  }();
   var handleProfileInputChange = function handleProfileInputChange(e) {
     var _e$target = e.target,
       name = _e$target.name,
@@ -74974,7 +75287,7 @@ function ProfilePage() {
           className: "topbar-right",
           children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
             className: "welcome",
-            children: ["Welcome back, ", profileData.name]
+            children: ["Welcome back, ", profileData.name || 'Admin']
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
             className: "top-actions",
             children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("button", {
@@ -75019,7 +75332,7 @@ function ProfilePage() {
                     children: profileData.role
                   }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("small", {
                     className: "text-muted",
-                    children: ["Member since ", new Date(profileData.joinDate).toLocaleDateString()]
+                    children: ["Member since ", profileData.joinDate ? new Date(profileData.joinDate).toLocaleDateString() : '—']
                   })]
                 }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("nav", {
                   className: "profile-nav-links",
@@ -75122,7 +75435,7 @@ function ProfilePage() {
                       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("input", {
                         type: "text",
                         className: "form-control",
-                        value: formatDate(profileData.lastLogin),
+                        value: profileData.lastLogin ? formatDate(profileData.lastLogin) : '—',
                         disabled: true
                       })]
                     }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {

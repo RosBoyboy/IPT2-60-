@@ -5,12 +5,12 @@ export default function ProfilePage() {
     const navigate = useNavigate();
     const [activeTab, setActiveTab] = useState('profile');
     const [profileData, setProfileData] = useState({
-        name: 'John Doe',
-        email: 'admin@university.edu',
+        name: '',
+        email: '',
         role: 'Administrator',
-        department: 'System Administration',
-        lastLogin: new Date().toISOString(),
-        joinDate: '2023-01-15'
+        department: '',
+        lastLogin: '',
+        joinDate: ''
     });
     const [passwordData, setPasswordData] = useState({
         currentPassword: '',
@@ -31,89 +31,79 @@ export default function ProfilePage() {
         navigate('/login');
     }
 
-    // Load activity logs from localStorage
+    // Load profile and logs from API
     useEffect(() => {
-        loadActivityLogs();
-        // Load profile data from localStorage if available
-        const savedProfile = localStorage.getItem('sfms_profile');
-        if (savedProfile) {
-            setProfileData(JSON.parse(savedProfile));
-        }
+        fetchProfile();
+        fetchLogs();
     }, []);
 
-    const loadActivityLogs = () => {
-        const savedLogs = localStorage.getItem('sfms_activity_logs');
-        if (savedLogs) {
-            setActivityLogs(JSON.parse(savedLogs));
-        } else {
-            // Initialize with default logs
-            const defaultLogs = [
-                {
-                    id: 1,
-                    timestamp: new Date('2023-12-15T10:30:00').toISOString(),
-                    activity: 'Logged in successfully',
-                    ipAddress: '192.168.1.100',
-                    details: ''
-                },
-                {
-                    id: 2,
-                    timestamp: new Date('2023-12-14T15:45:00').toISOString(),
-                    activity: 'Updated profile information',
-                    ipAddress: '192.168.1.100',
-                    details: ''
-                },
-                {
-                    id: 3,
-                    timestamp: new Date('2023-12-13T09:15:00').toISOString(),
-                    activity: 'Logged in successfully',
-                    ipAddress: '192.168.1.100',
-                    details: ''
-                },
-                {
-                    id: 4,
-                    timestamp: new Date('2023-12-12T14:20:00').toISOString(),
-                    activity: 'Changed password',
-                    ipAddress: '192.168.1.100',
-                    details: ''
-                }
-            ];
-            setActivityLogs(defaultLogs);
-            localStorage.setItem('sfms_activity_logs', JSON.stringify(defaultLogs));
-        }
+    const fetchProfile = async () => {
+        try {
+            const res = await fetch('/api/profile');
+            if (res.ok) {
+                const data = await res.json();
+                const u = data.user || {};
+                setProfileData({
+                    name: u.name || '',
+                    email: u.email || '',
+                    role: u.role || 'Administrator',
+                    department: u.department || '',
+                    lastLogin: u.last_login_at || '',
+                    joinDate: u.joined_at || ''
+                });
+            }
+        } catch (e) {}
     };
 
-    // Function to log activities
-    const logActivity = (activity, details = '') => {
-        const newLog = {
-            id: Date.now(),
-            timestamp: new Date().toISOString(),
-            activity: activity,
-            ipAddress: '192.168.1.100', // In real app, get from server
-            details: details
-        };
-
-        const updatedLogs = [newLog, ...activityLogs.slice(0, 49)]; // Keep last 50 logs
-        setActivityLogs(updatedLogs);
-        localStorage.setItem('sfms_activity_logs', JSON.stringify(updatedLogs));
+    const fetchLogs = async () => {
+        try {
+            const res = await fetch('/api/activity-logs');
+            if (res.ok) {
+                const data = await res.json();
+                const logs = (data.logs || []).map(l => ({
+                    id: l.id,
+                    timestamp: l.created_at,
+                    activity: l.action,
+                    ipAddress: l.ip_address,
+                    details: l.details
+                }));
+                setActivityLogs(logs);
+            }
+        } catch (e) {}
     };
 
-    const handleProfileUpdate = (e) => {
+    // Client will just refetch logs after server writes them via controllers
+
+    const handleProfileUpdate = async (e) => {
         e.preventDefault();
         setLoading(true);
         setErrors([]);
 
-        // Simulate API call
-        setTimeout(() => {
-            localStorage.setItem('sfms_profile', JSON.stringify(profileData));
-            logActivity('Updated profile information');
-            setToastMessage('Profile updated successfully!');
-            setShowToast(true);
+        try {
+            const res = await fetch('/api/profile', {
+                method: 'PUT',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({
+                    name: profileData.name,
+                    email: profileData.email,
+                    department: profileData.department,
+                })
+            });
+            const data = await res.json();
+            if (res.ok) {
+                setToastMessage(data.success || 'Profile updated successfully!');
+                setShowToast(true);
+                fetchLogs();
+            } else if (data.errors) {
+                setErrors(Object.values(data.errors).flat());
+            }
+        } finally {
             setLoading(false);
             setTimeout(() => setShowToast(false), 3000);
-        }, 1000);
+        }
     };
 
-    const handlePasswordChange = (e) => {
+    const handlePasswordChange = async (e) => {
         e.preventDefault();
         setErrors([]);
 
@@ -138,23 +128,31 @@ export default function ProfilePage() {
         }
 
         setLoading(true);
-
-        // Simulate API call
-        setTimeout(() => {
-            logActivity('Changed password');
-            setToastMessage('Password changed successfully!');
-            setShowToast(true);
-            setLoading(false);
-            
-            // Reset form
-            setPasswordData({
-                currentPassword: '',
-                newPassword: '',
-                confirmPassword: ''
+        try {
+            const res = await fetch('/api/profile/change-password', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({
+                    current_password: passwordData.currentPassword,
+                    new_password: passwordData.newPassword,
+                    new_password_confirmation: passwordData.confirmPassword
+                })
             });
-            
+            const data = await res.json();
+            if (res.ok) {
+                setToastMessage(data.success || 'Password changed successfully!');
+                setShowToast(true);
+                setPasswordData({ currentPassword: '', newPassword: '', confirmPassword: '' });
+                fetchLogs();
+            } else if (data.errors) {
+                setErrors(Object.values(data.errors).flat());
+            } else if (data.message) {
+                setErrors([data.message]);
+            }
+        } finally {
+            setLoading(false);
             setTimeout(() => setShowToast(false), 3000);
-        }, 1000);
+        }
     };
 
     const handleProfileInputChange = (e) => {
@@ -213,7 +211,7 @@ export default function ProfilePage() {
                     </div>
 
                     <div className="topbar-right">
-                        <div className="welcome">Welcome back, {profileData.name}</div>
+                        <div className="welcome">Welcome back, {profileData.name || 'Admin'}</div>
                         <div className="top-actions">
                             <button className="icon-btn">⠇</button>
                         </div>
@@ -240,7 +238,7 @@ export default function ProfilePage() {
                                         <h5 className="mb-1">{profileData.name}</h5>
                                         <p className="text-muted mb-2">{profileData.role}</p>
                                         <small className="text-muted">
-                                            Member since {new Date(profileData.joinDate).toLocaleDateString()}
+                                            Member since {profileData.joinDate ? new Date(profileData.joinDate).toLocaleDateString() : '—'}
                                         </small>
                                     </div>
 
@@ -327,7 +325,7 @@ export default function ProfilePage() {
                                                     <input
                                                         type="text"
                                                         className="form-control"
-                                                        value={formatDate(profileData.lastLogin)}
+                                                        value={profileData.lastLogin ? formatDate(profileData.lastLogin) : '—'}
                                                         disabled
                                                     />
                                                 </div>

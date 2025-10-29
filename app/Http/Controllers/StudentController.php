@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Student;
 use App\Models\ArchivedStudent;
+use App\Models\ActivityLog;
 use Illuminate\Http\Request;
 use Carbon\Carbon;
 
@@ -67,6 +68,15 @@ class StudentController extends Controller
 
         $student = Student::create($validated);
 
+        ActivityLog::create([
+            'user_id' => 1,
+            'action' => 'student.create',
+            'entity_type' => 'student',
+            'entity_id' => $student->id,
+            'ip_address' => $request->ip(),
+            'details' => $student->student_number,
+        ]);
+
         return response()->json([
             'student' => $student,
             'success' => 'Student added successfully!'
@@ -104,6 +114,15 @@ class StudentController extends Controller
 
         $student->update($validated);
 
+        ActivityLog::create([
+            'user_id' => 1,
+            'action' => 'student.update',
+            'entity_type' => 'student',
+            'entity_id' => $student->id,
+            'ip_address' => $request->ip(),
+            'details' => $student->student_number,
+        ]);
+
         return response()->json([
             'student' => $student,
             'success' => 'Student updated successfully!'
@@ -114,8 +133,8 @@ class StudentController extends Controller
     {
         $student = Student::findOrFail($id);
 
-        // Set status to INACTIVE
-        $student->update(['status' => 'INACTIVE']);
+        // Set status to INACTIVE and mark archived timestamp
+        $student->update(['status' => 'INACTIVE', 'archived_at' => now()]);
 
         // Archive the record
         ArchivedStudent::create([
@@ -136,6 +155,15 @@ class StudentController extends Controller
             'status' => 'INACTIVE',
             'archived_at' => now(),
             'archived_reason' => 'Moved to inactive status'
+        ]);
+
+        ActivityLog::create([
+            'user_id' => 1,
+            'action' => 'student.archive',
+            'entity_type' => 'student',
+            'entity_id' => $student->id,
+            'ip_address' => $request->ip(),
+            'details' => $student->student_number,
         ]);
 
         return response()->json([
@@ -172,11 +200,20 @@ class StudentController extends Controller
         $student = Student::where('student_number', $archivedStudent->student_number)->first();
 
         if ($student) {
-            // Update the existing student to ACTIVE
-            $student->update(['status' => 'ACTIVE']);
+            // Update the existing student to ACTIVE and clear archived timestamp
+            $student->update(['status' => 'ACTIVE', 'archived_at' => null]);
             
             // Delete from archived
             $archivedStudent->delete();
+
+            ActivityLog::create([
+                'user_id' => 1,
+                'action' => 'student.restore',
+                'entity_type' => 'student',
+                'entity_id' => $student->id,
+                'ip_address' => $request->ip(),
+                'details' => $student->student_number,
+            ]);
 
             return response()->json([
                 'student' => $student,
@@ -192,7 +229,24 @@ class StudentController extends Controller
     public function forceDelete($id)
     {
         $archivedStudent = ArchivedStudent::findOrFail($id);
+
+        // Also remove the original record from students table if it exists
+        $student = Student::where('student_number', $archivedStudent->student_number)->first();
+        if ($student) {
+            $student->delete();
+        }
+
+        // Remove from archived table
         $archivedStudent->delete();
+
+        ActivityLog::create([
+            'user_id' => 1,
+            'action' => 'student.force_delete',
+            'entity_type' => 'student',
+            'entity_id' => $id,
+            'ip_address' => request()->ip(),
+            'details' => $archivedStudent->student_number,
+        ]);
 
         return response()->json([
             'success' => 'Archived student permanently deleted!'

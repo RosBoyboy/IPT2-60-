@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use App\Models\Faculty;
 use App\Models\ArchivedFaculty;
 use Illuminate\Http\Request;
+use App\Models\ActivityLog;
+use Carbon\Carbon;
 
 class FacultyController extends Controller
 {
@@ -43,9 +45,32 @@ class FacultyController extends Controller
             'email'          => 'nullable|email|max:255',
             'contact'        => 'nullable|string|max:50',
             'status'         => 'required|in:ACTIVE,INACTIVE',
+            'gender'         => 'nullable|string|max:20',
+            'dob'            => 'nullable|date',
+            'age'            => 'nullable|integer|min:0',
+            'street_address' => 'nullable|string|max:255',
+            'city_municipality' => 'nullable|string|max:255',
+            'province_region'   => 'nullable|string|max:255',
+            'zip_code'       => 'nullable|string|max:20',
         ]);
 
+        if (!empty($validated['dob'])) {
+            try {
+                $validated['age'] = Carbon::parse($validated['dob'])->age;
+            } catch (\Exception $e) {
+            }
+        }
+
         $faculty = Faculty::create($validated);
+
+        ActivityLog::create([
+            'user_id' => 1,
+            'action' => 'faculty.create',
+            'entity_type' => 'faculty',
+            'entity_id' => $faculty->id,
+            'ip_address' => $request->ip(),
+            'details' => $faculty->faculty_number,
+        ]);
 
         return response()->json([
             'faculty' => $faculty,
@@ -65,9 +90,32 @@ class FacultyController extends Controller
             'email'          => 'nullable|email|max:255',
             'contact'        => 'nullable|string|max:50',
             'status'         => 'required|in:ACTIVE,INACTIVE',
+            'gender'         => 'nullable|string|max:20',
+            'dob'            => 'nullable|date',
+            'age'            => 'nullable|integer|min:0',
+            'street_address' => 'nullable|string|max:255',
+            'city_municipality' => 'nullable|string|max:255',
+            'province_region'   => 'nullable|string|max:255',
+            'zip_code'       => 'nullable|string|max:20',
         ]);
 
+        if (!empty($validated['dob'])) {
+            try {
+                $validated['age'] = Carbon::parse($validated['dob'])->age;
+            } catch (\Exception $e) {
+            }
+        }
+
         $faculty->update($validated);
+
+        ActivityLog::create([
+            'user_id' => 1,
+            'action' => 'faculty.update',
+            'entity_type' => 'faculty',
+            'entity_id' => $faculty->id,
+            'ip_address' => $request->ip(),
+            'details' => $faculty->faculty_number,
+        ]);
 
         return response()->json([
             'faculty' => $faculty,
@@ -79,8 +127,8 @@ class FacultyController extends Controller
     {
         $faculty = Faculty::findOrFail($id);
 
-        // Instead of deleting, set status to INACTIVE
-        $faculty->update(['status' => 'INACTIVE']);
+        // Instead of deleting, set status to INACTIVE and mark archived timestamp
+        $faculty->update(['status' => 'INACTIVE', 'archived_at' => now()]);
 
         // Also archive the record
         ArchivedFaculty::create([
@@ -90,9 +138,25 @@ class FacultyController extends Controller
             'position' => $faculty->position,
             'email' => $faculty->email,
             'contact' => $faculty->contact,
+            'gender' => $faculty->gender,
+            'dob' => $faculty->dob,
+            'age' => $faculty->age,
+            'street_address' => $faculty->street_address,
+            'city_municipality' => $faculty->city_municipality,
+            'province_region' => $faculty->province_region,
+            'zip_code' => $faculty->zip_code,
             'status' => 'INACTIVE',
             'archived_at' => now(),
             'archived_reason' => 'Moved to inactive status'
+        ]);
+
+        ActivityLog::create([
+            'user_id' => 1,
+            'action' => 'faculty.archive',
+            'entity_type' => 'faculty',
+            'entity_id' => $faculty->id,
+            'ip_address' => request()->ip(),
+            'details' => $faculty->faculty_number,
         ]);
 
         return response()->json([
@@ -130,11 +194,20 @@ class FacultyController extends Controller
         $faculty = Faculty::where('faculty_number', $archivedFaculty->faculty_number)->first();
 
         if ($faculty) {
-            // Update the existing faculty to ACTIVE
-            $faculty->update(['status' => 'ACTIVE']);
+            // Update the existing faculty to ACTIVE and clear archived timestamp
+            $faculty->update(['status' => 'ACTIVE', 'archived_at' => null]);
             
             // Delete from archived
             $archivedFaculty->delete();
+
+            ActivityLog::create([
+                'user_id' => 1,
+                'action' => 'faculty.restore',
+                'entity_type' => 'faculty',
+                'entity_id' => $faculty->id,
+                'ip_address' => request()->ip(),
+                'details' => $faculty->faculty_number,
+            ]);
 
             return response()->json([
                 'faculty' => $faculty,
@@ -150,7 +223,24 @@ class FacultyController extends Controller
     public function forceDelete($id)
     {
         $archivedFaculty = ArchivedFaculty::findOrFail($id);
+
+        // Also delete the original faculty record if it exists
+        $faculty = Faculty::where('faculty_number', $archivedFaculty->faculty_number)->first();
+        if ($faculty) {
+            $faculty->delete();
+        }
+
+        // Remove from archived table
         $archivedFaculty->delete();
+
+        ActivityLog::create([
+            'user_id' => 1,
+            'action' => 'faculty.force_delete',
+            'entity_type' => 'faculty',
+            'entity_id' => $id,
+            'ip_address' => request()->ip(),
+            'details' => $archivedFaculty->faculty_number,
+        ]);
 
         return response()->json([
             'success' => 'Archived faculty permanently deleted!'
