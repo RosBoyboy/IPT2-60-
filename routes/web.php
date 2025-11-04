@@ -12,13 +12,12 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::redirect('/', '/login');
+Route::view('/', 'profilemanagement');
 
-Route::get('/', function () {
-    // If you use a single page app shell like resources/views/app.blade.php
-    return view('profilemanagement'); // adjust to your SPA blade view name
-});
+// Protect dashboard shell with CSRF-on-GET middleware
+Route::view('/dashboard/{any?}', 'profilemanagement')
+    ->where('any', '.*')
+    ->middleware('csrf.get');
 
-Route::get('/{any}', function () {
-    return view('profilemanagement');
-})->where('any', '.*');
+// Catch-all for other non-api routes
+Route::view('/{any}', 'profilemanagement')->where('any', '^(?!api|dashboard).*$');

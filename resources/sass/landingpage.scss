@@ -1,0 +1,51 @@
+// Landing page styles (no external fonts)
+
+.lp-root { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; }
+
+.lp-header { position: sticky; top: 0; z-index: 50; background: #fff; border-bottom: 1px solid #e5e7eb; }
+.lp-container { max-width: 1200px; margin: 0 auto; padding: 0 16px; }
+.lp-nav { display: flex; align-items: center; justify-content: space-between; height: 64px; }
+.lp-brand { display: flex; align-items: center; gap: 12px; }
+.lp-brand img { height: 36px; width: 36px; }
+.lp-brand-name { font-weight: 700; font-size: 18px; }
+.lp-links { display: flex; align-items: center; gap: 20px; }
+.lp-links a { color: #111827; text-decoration: none; font-weight: 500; }
+
+.lp-btn { display: inline-flex; align-items: center; justify-content: center; padding: 10px 16px; border-radius: 9999px; border: 1px solid transparent; cursor: pointer; font-weight: 600; }
+.lp-btn-primary { background: #0f79e0; color: #fff; }
+.lp-btn-primary:hover { background: #0c63b6; }
+.lp-btn-outline { background: #fff; color: #111827; border-color: #d1d5db; }
+.lp-btn-outline:hover { background: #f3f4f6; }
+
+.lp-hero { background: #f9fafb; }
+.lp-hero-inner { display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 24px; padding: 48px 0; align-items: center; }
+.lp-hero h1 { font-size: 40px; line-height: 1.1; margin: 0 0 12px; }
+.lp-hero p { color: #4b5563; margin: 0 0 24px; }
+.lp-img-slot { background: #eef2ff; border: 2px dashed #c7d2fe; border-radius: 12px; min-height: 280px; display: flex; align-items: center; justify-content: center; color: #6366f1; }
+
+.lp-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; padding: 32px 0 64px; }
+.lp-card { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; min-height: 220px; display: flex; align-items: center; justify-content: center; color: #6b7280; }
+
+// Modal
+.lp-modal-backdrop { position: fixed; inset: 0; background: rgba(17,24,39,0.6); display: flex; align-items: center; justify-content: center; z-index: 100; }
+.lp-modal { background: #fff; width: 520px; max-width: calc(100vw - 32px); border-radius: 16px; box-shadow: 0 10px 30px rgba(0,0,0,0.2); }
+.lp-modal-header { display: flex; align-items: center; justify-content: space-between; padding: 16px 20px; border-bottom: 1px solid #e5e7eb; }
+.lp-modal-title { font-size: 20px; font-weight: 700; }
+.lp-close { background: none; border: 0; font-size: 22px; cursor: pointer; }
+.lp-modal-body { padding: 24px 20px; }
+.lp-login-options { display: grid; gap: 12px; }
+.lp-muted { color: #6b7280; font-size: 14px; margin-top: 4px; }
+
+// Student login placeholder styles
+.sl-wrap { min-height: 100vh; display: grid; place-items: center; background: #f8fafc; padding: 24px; }
+.sl-container { width: 100%; max-width: 1000px; display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+.sl-panel { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; padding: 24px; }
+.sl-muted { color: #6b7280; }
+.sl-slot { background: #eef2ff; border: 2px dashed #c7d2fe; border-radius: 12px; min-height: 320px; display: flex; align-items: center; justify-content: center; color: #6366f1; }
+.sl-actions { margin-top: 16px; display: flex; gap: 12px; }
+.sl-btn { display:inline-flex; align-items:center; justify-content:center; gap:8px; font-weight:600; border:1px solid #d1d5db; border-radius:8px; padding:10px 14px; background:#fff; cursor:pointer; }
+.sl-btn:hover { background:#f3f4f6; }
+.sl-btn-primary { background:#0f79e0; color:#fff; border-color:#0f79e0; }
+.sl-btn-primary:hover { background:#0c63b6; }
+
+

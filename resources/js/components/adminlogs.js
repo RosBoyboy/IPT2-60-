@@ -12,7 +12,11 @@ export default function AdminLogs() {
         // Hardcoded admin credentials
         if (username === 'admin' && password === 'admin456') {
             localStorage.setItem('sfms_auth', 'true');
-            navigate('/dashboard');
+            // Set XSRF-TOKEN cookie for GET protection (Sanctum route)
+            fetch('/sanctum/csrf-cookie', { credentials: 'same-origin' })
+                .finally(() => {
+                    navigate('/dashboard');
+                });
         } else {
             setError('Invalid username or password');
         }

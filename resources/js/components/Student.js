@@ -706,56 +706,10 @@ export default function StudentPage() {
                                                             Delete
                                                         </button>
                                                     </div>
-<<<<<<< HEAD
-                                                </div>
-                                            </td>
-                                            <td>{student.course}</td>
-                                            <td>{student.year_level}</td>
-                                            <td>{student.academic_year}</td>
-                                            <td>{student.gender || '-'}</td>
-                                            <td>{student.dob ? new Date(student.dob).toLocaleDateString() : '-'}</td>
-                                            <td>{student.age ?? '-'}</td>
-                                            <td>
-                                                <div className="small text-muted">
-                                                    {student.street_address ? (<div>{student.street_address}</div>) : null}
-                                                    {(student.city_municipality || student.province_region || student.zip_code) ? (
-                                                        <div>
-                                                            {student.city_municipality}{student.city_municipality && student.province_region ? ', ' : ''}{student.province_region}{(student.zip_code && (student.city_municipality || student.province_region)) ? ' - ' + student.zip_code : (student.zip_code || '')}
-                                                        </div>
-                                                    ) : null}
-                                                </div>
-                                            </td>
-                                            <td>{student.email}</td>
-                                            <td>{student.contact}</td>
-                                            <td>
-                                                {student.status === 'ACTIVE' ? (
-                                                    <span className="badge-active">Active</span>
-                                                ) : (
-                                                    <span className="badge-inactive">Inactive</span>
-                                                )}
-                                            </td>
-                                            <td>
-                                                <button 
-                                                    className="btn btn-sm btn-outline-primary me-2"
-                                                    onClick={() => handleEdit(student)}
-                                                >
-                                                    Edit
-                                                </button>
-                                                <button 
-                                                    className="btn btn-sm btn-outline-danger"
-                                                    onClick={() => handleDelete(student)}
-                                                >
-                                                    Delete
-                                                </button>
-                                            </td>
-                                        </tr>
-                                    ))}
-=======
                                                 </td>
                                             </tr>
                                         );
                                     })}
->>>>>>> 92ae0ff90a63482911e089572ccd9f0c258e4c55
                                 </tbody>
                             </table>
                         ) : (
@@ -1188,49 +1142,6 @@ export default function StudentPage() {
                                                                     <div className="text-muted small">
                                                                         {new Date(student.archived_at).toLocaleDateString()}
                                                                     </div>
-<<<<<<< HEAD
-                                                                </div>
-                                                            </td>
-                                                            <td>{student.course}</td>
-                                                            <td>{student.year_level}</td>
-                                                            <td>
-                                                                <div className="text-muted small">
-                                                                    {new Date(student.archived_at).toLocaleDateString()}
-                                                                </div>
-                                                                <div className="text-muted extra-small">
-                                                                    {new Date(student.archived_at).toLocaleTimeString()}
-                                                                </div>
-                                                            </td>
-                                                            <td>{student.gender || '-'}</td>
-                                                            <td>{student.dob ? new Date(student.dob).toLocaleDateString() : '-'}</td>
-                                                            <td>{student.age ?? '-'}</td>
-                                                            <td>
-                                                                <div className="small text-muted">
-                                                                    {student.street_address ? (<div>{student.street_address}</div>) : null}
-                                                                    {(student.city_municipality || student.province_region || student.zip_code) ? (
-                                                                        <div>
-                                                                            {student.city_municipality}{student.city_municipality && student.province_region ? ', ' : ''}{student.province_region}{(student.zip_code && (student.city_municipality || student.province_region)) ? ' - ' + student.zip_code : (student.zip_code || '')}
-                                                                        </div>
-                                                                    ) : null}
-                                                                </div>
-                                                            </td>
-                                                            <td>
-                                                                <button 
-                                                                    className="btn btn-sm btn-success me-2"
-                                                                    onClick={() => handleRestore(student)}
-                                                                >
-                                                                    Restore
-                                                                </button>
-                                                                <button 
-                                                                    className="btn btn-sm btn-outline-danger"
-                                                                    onClick={() => handlePermanentDelete(student)}
-                                                                >
-                                                                    Delete
-                                                                </button>
-                                                            </td>
-                                                        </tr>
-                                                    ))}
-=======
                                                                     <div className="text-muted extra-small">
                                                                         {new Date(student.archived_at).toLocaleTimeString()}
                                                                     </div>
@@ -1252,7 +1163,6 @@ export default function StudentPage() {
                                                             </tr>
                                                         );
                                                     })}
->>>>>>> 92ae0ff90a63482911e089572ccd9f0c258e4c55
                                                 </tbody>
                                             </table>
                                         ) : (
