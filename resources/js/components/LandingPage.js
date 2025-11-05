@@ -1,136 +1,123 @@
-import React, { useState, useEffect } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
-
-function ImageWithPlaceholder({ src, alt, style, className }) {
-    const [loaded, setLoaded] = useState(false);
-
-    useEffect(() => {
-        setLoaded(false);
-        if (!src) return;
-        const img = new Image();
-        img.src = src;
-        img.onload = () => setLoaded(true);
-        img.onerror = () => setLoaded(true);
-    }, [src]);
-
-    return (
-        <div style={{ position: 'relative', overflow: 'hidden', ...style }} className={className}>
-            {!loaded && (
-                <div style={{
-                    background: '#f3f4f6',
-                    width: '100%',
-                    height: '100%',
-                    display: 'flex',
-                    alignItems: 'center',
-                    justifyContent: 'center',
-                    color: '#9ca3af'
-                }}>Loading image…</div>
-            )}
-            {src && (
-                <img
-                    src={src}
-                    alt={alt}
-                    loading="lazy"
-                    style={{ display: loaded ? 'block' : 'none', width: '100%', height: '100%', objectFit: 'cover' }}
-                />
-            )}
-        </div>
-    );
-}
+import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 export default function LandingPage() {
     const navigate = useNavigate();
-    const [heroLoaded, setHeroLoaded] = useState(false);
-
-    // Use web-accessible images as placeholders; you can replace with local files later
-    const heroUrl = '/img/hero.jpg'; // if not present, component will show fallback color until loaded
-    const cards = [
-        { title: 'The best teachers', text: 'Our staff comes from diverse teaching backgrounds and they are some of the best in the country.', img: 'https://images.unsplash.com/photo-1523580494860-8d91f5a9b6a7?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=1' },
-        { title: 'Engaging activities', text: 'FSUU has exciting annual activities planned. Have a look right now.', img: 'https://images.unsplash.com/photo-1508873699372-7ae5d9f20b2c?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=2' },
-        { title: 'Come to FSUU', text: 'Our enrollment is open. Drop us a message on our contact form and we will be in touch.', img: 'https://images.unsplash.com/photo-1529070538774-1843cb3265df?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=3' }
-    ];
-
-    useEffect(() => {
-        if (!heroUrl) return;
-        const img = new Image();
-        img.src = heroUrl;
-        img.onload = () => setHeroLoaded(true);
-        img.onerror = () => setHeroLoaded(true);
-    }, [heroUrl]);
+    const [isModalOpen, setIsModalOpen] = useState(false);
 
     return (
-        <div style={{ fontFamily: 'Inter, Roboto, Arial, sans-serif', color: '#111827' }}>
-            <header style={{
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'space-between',
-                padding: '1rem 2rem',
-                background: '#2563eb',
-                position: 'sticky',
-                top: 0,
-                zIndex: 30,
-                boxShadow: '0 2px 8px rgba(37,99,235,0.08)'
-            }}>
-                <div style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
-                    <img src="/img/sfms-logo2.png" alt="SFMS" style={{ height: 40 }} />
-                    <div style={{ fontWeight: 700, color: '#ffffff' }}>Student Faculty Management School (SFMS)</div>
-                </div>
+        <div className="lp-root">
+                {/* Header (kept simple) and hero will match the example: hero full-bleed background with left-aligned overlay text */}
+                <style>{`
+                    :root{ --blue: #2563eb; }
+                    /* Header: blue, larger, navbar-like */
+                    .lp-header{ background: var(--blue); position:sticky; top:0; z-index:40; box-shadow: 0 4px 20px rgba(2,6,23,0.08); }
+                    .lp-container{ max-width:1200px; margin:0 auto; padding:0 1rem 0 1.5rem; }
+                    .lp-nav{ display:flex; align-items:center; justify-content:space-between; padding:1rem 0; }
+                    .lp-brand{ display:flex; align-items:center; gap:14px; margin-left:8px; }
+                    /* Slightly larger logo to match reference and nudge into position */
+                    .lp-brand img{ height:64px; width:auto; display:block; }
+                    .lp-brand-name{ color:#fff; font-weight:800; font-size:20px; line-height:1; display:flex; flex-direction:column; }
+                    .lp-brand-sub{ color: rgba(255,255,255,0.9); font-size:12px; font-weight:600; margin-top:2px; }
+                    .lp-links{ display:flex; gap:22px; align-items:center; margin-right:12px; }
+                    .lp-links a{ color:#fff; text-decoration:none; font-weight:700; padding:8px 10px; border-radius:6px; }
+                    .lp-links a:hover{ background: rgba(255,255,255,0.06); }
+                    /* Inverse button style for header: white bg with blue text */
+                    .lp-btn-primary{ background:#fff; color:var(--blue); border:none; padding:0.45rem 0.95rem; border-radius:8px; font-weight:800; }
 
-                <nav style={{ display: 'flex', gap: 18, alignItems: 'center' }}>
-                    <a href="#calendar" style={{ color: '#ffffff', textDecoration: 'none', opacity: 0.95 }}>Calendar</a>
-                    <a href="#contact" style={{ color: '#ffffff', textDecoration: 'none', opacity: 0.95 }}>Contact</a>
-                    <a href="#about" style={{ color: '#ffffff', textDecoration: 'none', opacity: 0.95 }}>About us</a>
-                    <a href="https://www.urios.edu.ph" target="_blank" rel="noreferrer" style={{ color: '#ffffff', textDecoration: 'none', opacity: 0.95 }}>FSUU Website</a>
-                    <Link to="/login"><button style={{ background: '#ffffff', color: '#2563eb', border: 'none', padding: '0.5rem 0.9rem', borderRadius: 999 }}>Log in</button></Link>
-                </nav>
-            </header>
+                    /* Full-bleed hero */
+                    .lp-hero{ background-image: url('/img/Welcome_to_SFMS.jpg'); background-position:center; background-size:cover; background-repeat:no-repeat; height:560px; position:relative; display:flex; align-items:center; }
+                    /* Removed dark overlay to highlight the background image (school) */
+                    .lp-hero-inner{ position:relative; z-index:2; max-width:1100px; margin:0 auto; padding:2.25rem; display:flex; gap:36px; align-items:center; }
+                    /* Left content occupies natural space; no blocking right image slot so background shows through */
+                    .lp-hero-inner > div:first-child{ flex:1 1 100%; }
+                    .lp-hero h1{ color:#fff; font-size:48px; line-height:1.02; margin:0 0 12px 0; text-shadow:0 6px 20px rgba(2,6,23,0.45); }
+                    .lp-hero p{ color: rgba(255,255,255,0.95); margin:0 0 18px 0; font-size:18px; }
+                    .lp-hero .lp-cta{ background:#fff; color:var(--blue); padding:0.7rem 1.1rem; border-radius:999px; font-weight:700; border:none; }
 
-            {/* Hero */}
-            <section style={{ position: 'relative', height: 420, overflow: 'hidden' }}>
-                <div style={{
-                    position: 'absolute', inset: 0,
-                    background: heroLoaded ? `url(${heroUrl}) center/cover no-repeat` : 'linear-gradient(180deg,#eef2ff,#f8fafc)'
-                }} />
-
-                <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(90deg, rgba(17,24,39,0.65) 0%, rgba(17,24,39,0.15) 60%)' }} />
-
-                <div style={{ position: 'relative', zIndex: 10, height: '100%', display: 'flex', alignItems: 'center' }}>
-                    <div style={{ maxWidth: 980, margin: '0 auto', padding: '2rem', display: 'flex', gap: 24, alignItems: 'center' }}>
-                        <div style={{ color: '#fff', maxWidth: 520 }}>
-                            <h1 style={{ fontSize: 42, lineHeight: 1.05, margin: 0 }}>Welcome to SFMS</h1>
-                            <p style={{ marginTop: 12, color: 'rgba(255,255,255,0.9)' }}>Student Faculty Management School — empowering learners through excellence, values and service.</p>
-                            <div style={{ marginTop: 18 }}>
-                                <a href="#about"><button style={{ background: '#fff', color: '#111827', border: 'none', padding: '0.6rem 1rem', borderRadius: 999 }}>About us</button></a>
+                    /* Features/cards: make a clean 3-column section like the reference */
+                    /* Make the cards horizontally scrollable so content can overflow at 100% width and show a scrollbar */
+                    .lp-grid{ display:flex; gap:32px; margin-top:60px; padding:40px; background: #f3f6f9; border-radius:10px; overflow-x:auto; overflow-y:hidden; -webkit-overflow-scrolling:touch; }
+                    .lp-grid::-webkit-scrollbar{ height:10px; }
+                    .lp-grid::-webkit-scrollbar-thumb{ background: rgba(37,99,235,0.9); border-radius:6px; }
+                    .lp-card{ background:#fff; text-align:center; padding:22px; min-width:360px; border-radius:12px; box-shadow:0 6px 18px rgba(2,6,23,0.04); display:flex; flex-direction:column; align-items:center; gap:12px; }
+                    .lp-card img{ width:320px; height:200px; object-fit:cover; border-radius:10px; box-shadow:0 8px 24px rgba(2,6,23,0.06); display:block; }
+                    .lp-card h3{ margin-top:8px; font-size:18px; font-weight:700; color:#0f172a; }
+                    .lp-card p{ color:#6b7280; font-size:15px; margin:6px 0 12px; max-width:320px; }
+                    .lp-card .lp-cta-small{ background:var(--blue); color:#fff; border:none; padding:10px 18px; border-radius:6px; font-weight:700; }
+                `}</style>
+                <header className="lp-header">
+                    <div className="lp-container">
+                        <nav className="lp-nav">
+                            <div className="lp-brand">
+                                <img src="/img/sfms-logo2.png" alt="SFMS" />
+                                <div className="lp-brand-name">
+                                    <span>SFMS</span>
+                                    <small className="lp-brand-sub">Student Faculty Management School</small>
+                                </div>
                             </div>
+                            <div className="lp-links">
+                                <a href="#calendar">Calendar</a>
+                                <a href="#contact">Contact</a>
+                                <a href="#about">About us</a>
+                                {/* removed FSUU Website link as requested */}
+                                <button className="lp-btn-primary" onClick={() => setIsModalOpen(true)}>Log in</button>
+                            </div>
+                        </nav>
+                    </div>
+                </header>
+
+            <main>
+                <section className="lp-hero">
+                    <div className="lp-container lp-hero-inner">
+                        <div>
+                            <h1>Welcome to the Father Saturnino Urios University</h1>
+                            <p>Empowering learners through excellence, values, and service.</p>
+                            <button className="lp-btn lp-btn-primary" onClick={() => setIsModalOpen(true)}>Get Started</button>
                         </div>
-                        <div style={{ flex: 1 }}>
-                            {/* right side can show a preview image or be empty for the large hero */}
+                        {/* removed right-side image slot so the school's background image is fully visible */}
+                    </div>
+                </section>
+
+                <div className="lp-container lp-grid">
+                    <div className="lp-card">
+                        <img src="/img/the_best_teacher.jpg" alt="Best Teacher" />
+                        <h3>Experienced Faculty</h3>
+                        <p>Learn from the best instructors who guide and inspire students every day.</p>
+                        <button className="lp-cta-small">Learn more</button>
+                    </div>
+                    <div className="lp-card">
+                        <img src="/img/Engaging_activities.jpg" alt="Activities" />
+                        <h3>Engaging Activities</h3>
+                        <p>Hands-on projects and events that build skills beyond the classroom.</p>
+                        <button className="lp-cta-small">View events</button>
+                    </div>
+                    <div className="lp-card">
+                        <img src="/img/Come to Sfms.webp" alt="Come to SFMS" />
+                        <h3>Join Us</h3>
+                        <p>Be part of our community—academic excellence and values combined.</p>
+                        <button className="lp-cta-small">Apply now</button>
+                    </div>
+                </div>
+            </main>
+
+            {isModalOpen && (
+                <div className="lp-modal-backdrop" onClick={(e) => { if (e.target === e.currentTarget) setIsModalOpen(false); }}>
+                    <div className="lp-modal">
+                        <div className="lp-modal-header">
+                            <div className="lp-modal-title">Log in</div>
+                            <button className="lp-close" onClick={() => setIsModalOpen(false)}>×</button>
+                        </div>
+                        <div className="lp-modal-body">
+                            <div className="lp-login-options">
+                                <button className="lp-btn lp-btn-outline" onClick={() => navigate('/student-login')}>Student login</button>
+                                <div className="lp-muted">Use your student account (simulation)</div>
+                                <button className="lp-btn lp-btn-primary" onClick={() => navigate('/login')}>Admin log in</button>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </section>
-
-            {/* Features */}
-            <section style={{ background: '#f8fafc', padding: '3rem 1rem' }}>
-                <div style={{ maxWidth: 1100, margin: '0 auto', display: 'grid', gridTemplateColumns: 'repeat(3,1fr)', gap: 36 }}>
-                    {cards.map((c, idx) => (
-                        <div key={idx} style={{ background: '#fff', borderRadius: 10, padding: 20, textAlign: 'center', boxShadow: '0 6px 18px rgba(15,23,42,0.06)' }}>
-                            <div style={{ height: 180, borderRadius: 8, overflow: 'hidden' }}>
-                                <ImageWithPlaceholder src={c.img} alt={c.title} />
-                            </div>
-                            <h3 style={{ marginTop: 18 }}>{c.title}</h3>
-                            <p style={{ color: '#6b7280' }}>{c.text}</p>
-                            <div style={{ marginTop: 12 }}>
-                                <button style={{ background: '#2563eb', color: '#fff', border: 'none', padding: '0.5rem 0.9rem', borderRadius: 6 }}>Learn more</button>
-                            </div>
-                        </div>
-                    ))}
-                </div>
-            </section>
-
-            <footer style={{ padding: '2rem 1rem', background: '#fff' }}>
-                <div style={{ maxWidth: 1100, margin: '0 auto', color: '#6b7280' }}>Built for classroom/demo use.</div>
-            </footer>
+            )}
         </div>
     );
 }

@@ -72768,14 +72768,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router/dist/index.js");
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/dist/index.js");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
-function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, _typeof(o); }
-function ownKeys(e, r) { var t = Object.keys(e); if (Object.getOwnPropertySymbols) { var o = Object.getOwnPropertySymbols(e); r && (o = o.filter(function (r) { return Object.getOwnPropertyDescriptor(e, r).enumerable; })), t.push.apply(t, o); } return t; }
-function _objectSpread(e) { for (var r = 1; r < arguments.length; r++) { var t = null != arguments[r] ? arguments[r] : {}; r % 2 ? ownKeys(Object(t), !0).forEach(function (r) { _defineProperty(e, r, t[r]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : ownKeys(Object(t)).forEach(function (r) { Object.defineProperty(e, r, Object.getOwnPropertyDescriptor(t, r)); }); } return e; }
-function _defineProperty(e, r, t) { return (r = _toPropertyKey(r)) in e ? Object.defineProperty(e, r, { value: t, enumerable: !0, configurable: !0, writable: !0 }) : e[r] = t, e; }
-function _toPropertyKey(t) { var i = _toPrimitive(t, "string"); return "symbol" == _typeof(i) ? i : i + ""; }
-function _toPrimitive(t, r) { if ("object" != _typeof(t) || !t) return t; var e = t[Symbol.toPrimitive]; if (void 0 !== e) { var i = e.call(t, r || "default"); if ("object" != _typeof(i)) return i; throw new TypeError("@@toPrimitive must return a primitive value."); } return ("string" === r ? String : Number)(t); }
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
 function _slicedToArray(r, e) { return _arrayWithHoles(r) || _iterableToArrayLimit(r, e) || _unsupportedIterableToArray(r, e) || _nonIterableRest(); }
 function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
 function _unsupportedIterableToArray(r, a) { if (r) { if ("string" == typeof r) return _arrayLikeToArray(r, a); var t = {}.toString.call(r).slice(8, -1); return "Object" === t && r.constructor && (t = r.constructor.name), "Map" === t || "Set" === t ? Array.from(r) : "Arguments" === t || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(t) ? _arrayLikeToArray(r, a) : void 0; } }
@@ -72785,330 +72778,160 @@ function _arrayWithHoles(r) { if (Array.isArray(r)) return r; }
 
 
 
-function ImageWithPlaceholder(_ref) {
-  var src = _ref.src,
-    alt = _ref.alt,
-    style = _ref.style,
-    className = _ref.className;
-  var _useState = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false),
-    _useState2 = _slicedToArray(_useState, 2),
-    loaded = _useState2[0],
-    setLoaded = _useState2[1];
-  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function () {
-    setLoaded(false);
-    if (!src) return;
-    var img = new Image();
-    img.src = src;
-    img.onload = function () {
-      return setLoaded(true);
-    };
-    img.onerror = function () {
-      return setLoaded(true);
-    };
-  }, [src]);
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
-    style: _objectSpread({
-      position: 'relative',
-      overflow: 'hidden'
-    }, style),
-    className: className,
-    children: [!loaded && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
-      style: {
-        background: '#f3f4f6',
-        width: '100%',
-        height: '100%',
-        display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'center',
-        color: '#9ca3af'
-      },
-      children: "Loading image\u2026"
-    }), src && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("img", {
-      src: src,
-      alt: alt,
-      loading: "lazy",
-      style: {
-        display: loaded ? 'block' : 'none',
-        width: '100%',
-        height: '100%',
-        objectFit: 'cover'
-      }
-    })]
-  });
-}
 function LandingPage() {
   var navigate = (0,react_router_dom__WEBPACK_IMPORTED_MODULE_1__.useNavigate)();
-  var _useState3 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false),
-    _useState4 = _slicedToArray(_useState3, 2),
-    heroLoaded = _useState4[0],
-    setHeroLoaded = _useState4[1];
-
-  // Use web-accessible images as placeholders; you can replace with local files later
-  var heroUrl = '/img/hero.jpg'; // if not present, component will show fallback color until loaded
-  var cards = [{
-    title: 'The best teachers',
-    text: 'Our staff comes from diverse teaching backgrounds and they are some of the best in the country.',
-    img: 'https://images.unsplash.com/photo-1523580494860-8d91f5a9b6a7?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=1'
-  }, {
-    title: 'Engaging activities',
-    text: 'FSUU has exciting annual activities planned. Have a look right now.',
-    img: 'https://images.unsplash.com/photo-1508873699372-7ae5d9f20b2c?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=2'
-  }, {
-    title: 'Come to FSUU',
-    text: 'Our enrollment is open. Drop us a message on our contact form and we will be in touch.',
-    img: 'https://images.unsplash.com/photo-1529070538774-1843cb3265df?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=3'
-  }];
-  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function () {
-    if (!heroUrl) return;
-    var img = new Image();
-    img.src = heroUrl;
-    img.onload = function () {
-      return setHeroLoaded(true);
-    };
-    img.onerror = function () {
-      return setHeroLoaded(true);
-    };
-  }, [heroUrl]);
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
-    style: {
-      fontFamily: 'Inter, Roboto, Arial, sans-serif',
-      color: '#111827'
-    },
-    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("header", {
-      style: {
-        display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'space-between',
-        padding: '1rem 2rem',
-        background: '#2563eb',
-        position: 'sticky',
-        top: 0,
-        zIndex: 30,
-        boxShadow: '0 2px 8px rgba(37,99,235,0.08)'
-      },
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
-        style: {
-          display: 'flex',
-          alignItems: 'center',
-          gap: 12
-        },
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("img", {
-          src: "/img/sfms-logo2.png",
-          alt: "SFMS",
-          style: {
-            height: 40
-          }
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
-          style: {
-            fontWeight: 700,
-            color: '#ffffff'
-          },
-          children: "Student Faculty Management School (SFMS)"
-        })]
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("nav", {
-        style: {
-          display: 'flex',
-          gap: 18,
-          alignItems: 'center'
-        },
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("a", {
-          href: "#calendar",
-          style: {
-            color: '#ffffff',
-            textDecoration: 'none',
-            opacity: 0.95
-          },
-          children: "Calendar"
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("a", {
-          href: "#contact",
-          style: {
-            color: '#ffffff',
-            textDecoration: 'none',
-            opacity: 0.95
-          },
-          children: "Contact"
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("a", {
-          href: "#about",
-          style: {
-            color: '#ffffff',
-            textDecoration: 'none',
-            opacity: 0.95
-          },
-          children: "About us"
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("a", {
-          href: "https://www.urios.edu.ph",
-          target: "_blank",
-          rel: "noreferrer",
-          style: {
-            color: '#ffffff',
-            textDecoration: 'none',
-            opacity: 0.95
-          },
-          children: "FSUU Website"
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_2__.Link, {
-          to: "/login",
-          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("button", {
-            style: {
-              background: '#ffffff',
-              color: '#2563eb',
-              border: 'none',
-              padding: '0.5rem 0.9rem',
-              borderRadius: 999
-            },
-            children: "Log in"
-          })
-        })]
-      })]
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("section", {
-      style: {
-        position: 'relative',
-        height: 420,
-        overflow: 'hidden'
-      },
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
-        style: {
-          position: 'absolute',
-          inset: 0,
-          background: heroLoaded ? "url(".concat(heroUrl, ") center/cover no-repeat") : 'linear-gradient(180deg,#eef2ff,#f8fafc)'
-        }
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
-        style: {
-          position: 'absolute',
-          inset: 0,
-          background: 'linear-gradient(90deg, rgba(17,24,39,0.65) 0%, rgba(17,24,39,0.15) 60%)'
-        }
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
-        style: {
-          position: 'relative',
-          zIndex: 10,
-          height: '100%',
-          display: 'flex',
-          alignItems: 'center'
-        },
-        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
-          style: {
-            maxWidth: 980,
-            margin: '0 auto',
-            padding: '2rem',
-            display: 'flex',
-            gap: 24,
-            alignItems: 'center'
-          },
-          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
-            style: {
-              color: '#fff',
-              maxWidth: 520
-            },
-            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("h1", {
-              style: {
-                fontSize: 42,
-                lineHeight: 1.05,
-                margin: 0
-              },
-              children: "Welcome to SFMS"
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("p", {
-              style: {
-                marginTop: 12,
-                color: 'rgba(255,255,255,0.9)'
-              },
-              children: "Student Faculty Management School \u2014 empowering learners through excellence, values and service."
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
-              style: {
-                marginTop: 18
-              },
-              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("a", {
-                href: "#about",
-                children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("button", {
-                  style: {
-                    background: '#fff',
-                    color: '#111827',
-                    border: 'none',
-                    padding: '0.6rem 1rem',
-                    borderRadius: 999
-                  },
-                  children: "About us"
-                })
-              })
+  var _useState = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false),
+    _useState2 = _slicedToArray(_useState, 2),
+    isModalOpen = _useState2[0],
+    setIsModalOpen = _useState2[1];
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+    className: "lp-root",
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("style", {
+      children: "\n                    :root{ --blue: #2563eb; }\n                    /* Header: blue, larger, navbar-like */\n                    .lp-header{ background: var(--blue); position:sticky; top:0; z-index:40; box-shadow: 0 4px 20px rgba(2,6,23,0.08); }\n                    .lp-container{ max-width:1200px; margin:0 auto; padding:0 1rem 0 1.5rem; }\n                    .lp-nav{ display:flex; align-items:center; justify-content:space-between; padding:1rem 0; }\n                    .lp-brand{ display:flex; align-items:center; gap:14px; margin-left:8px; }\n                    /* Slightly larger logo to match reference and nudge into position */\n                    .lp-brand img{ height:64px; width:auto; display:block; }\n                    .lp-brand-name{ color:#fff; font-weight:800; font-size:20px; line-height:1; display:flex; flex-direction:column; }\n                    .lp-brand-sub{ color: rgba(255,255,255,0.9); font-size:12px; font-weight:600; margin-top:2px; }\n                    .lp-links{ display:flex; gap:22px; align-items:center; margin-right:12px; }\n                    .lp-links a{ color:#fff; text-decoration:none; font-weight:700; padding:8px 10px; border-radius:6px; }\n                    .lp-links a:hover{ background: rgba(255,255,255,0.06); }\n                    /* Inverse button style for header: white bg with blue text */\n                    .lp-btn-primary{ background:#fff; color:var(--blue); border:none; padding:0.45rem 0.95rem; border-radius:8px; font-weight:800; }\n\n                    /* Full-bleed hero */\n                    .lp-hero{ background-image: url('/img/Welcome_to_SFMS.jpg'); background-position:center; background-size:cover; background-repeat:no-repeat; height:560px; position:relative; display:flex; align-items:center; }\n                    /* Removed dark overlay to highlight the background image (school) */\n                    .lp-hero-inner{ position:relative; z-index:2; max-width:1100px; margin:0 auto; padding:2.25rem; display:flex; gap:36px; align-items:center; }\n                    /* Left content occupies natural space; no blocking right image slot so background shows through */\n                    .lp-hero-inner > div:first-child{ flex:1 1 100%; }\n                    .lp-hero h1{ color:#fff; font-size:48px; line-height:1.02; margin:0 0 12px 0; text-shadow:0 6px 20px rgba(2,6,23,0.45); }\n                    .lp-hero p{ color: rgba(255,255,255,0.95); margin:0 0 18px 0; font-size:18px; }\n                    .lp-hero .lp-cta{ background:#fff; color:var(--blue); padding:0.7rem 1.1rem; border-radius:999px; font-weight:700; border:none; }\n\n                    /* Features/cards: make a clean 3-column section like the reference */\n                    /* Make the cards horizontally scrollable so content can overflow at 100% width and show a scrollbar */\n                    .lp-grid{ display:flex; gap:32px; margin-top:60px; padding:40px; background: #f3f6f9; border-radius:10px; overflow-x:auto; overflow-y:hidden; -webkit-overflow-scrolling:touch; }\n                    .lp-grid::-webkit-scrollbar{ height:10px; }\n                    .lp-grid::-webkit-scrollbar-thumb{ background: rgba(37,99,235,0.9); border-radius:6px; }\n                    .lp-card{ background:#fff; text-align:center; padding:22px; min-width:360px; border-radius:12px; box-shadow:0 6px 18px rgba(2,6,23,0.04); display:flex; flex-direction:column; align-items:center; gap:12px; }\n                    .lp-card img{ width:320px; height:200px; object-fit:cover; border-radius:10px; box-shadow:0 8px 24px rgba(2,6,23,0.06); display:block; }\n                    .lp-card h3{ margin-top:8px; font-size:18px; font-weight:700; color:#0f172a; }\n                    .lp-card p{ color:#6b7280; font-size:15px; margin:6px 0 12px; max-width:320px; }\n                    .lp-card .lp-cta-small{ background:var(--blue); color:#fff; border:none; padding:10px 18px; border-radius:6px; font-weight:700; }\n                "
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("header", {
+      className: "lp-header",
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+        className: "lp-container",
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("nav", {
+          className: "lp-nav",
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+            className: "lp-brand",
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("img", {
+              src: "/img/sfms-logo2.png",
+              alt: "SFMS"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+              className: "lp-brand-name",
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("span", {
+                children: "SFMS"
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("small", {
+                className: "lp-brand-sub",
+                children: "Student Faculty Management School"
+              })]
             })]
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
-            style: {
-              flex: 1
-            }
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+            className: "lp-links",
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("a", {
+              href: "#calendar",
+              children: "Calendar"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("a", {
+              href: "#contact",
+              children: "Contact"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("a", {
+              href: "#about",
+              children: "About us"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("button", {
+              className: "lp-btn-primary",
+              onClick: function onClick() {
+                return setIsModalOpen(true);
+              },
+              children: "Log in"
+            })]
           })]
         })
-      })]
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("section", {
-      style: {
-        background: '#f8fafc',
-        padding: '3rem 1rem'
-      },
-      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
-        style: {
-          maxWidth: 1100,
-          margin: '0 auto',
-          display: 'grid',
-          gridTemplateColumns: 'repeat(3,1fr)',
-          gap: 36
-        },
-        children: cards.map(function (c, idx) {
-          return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
-            style: {
-              background: '#fff',
-              borderRadius: 10,
-              padding: 20,
-              textAlign: 'center',
-              boxShadow: '0 6px 18px rgba(15,23,42,0.06)'
-            },
-            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
-              style: {
-                height: 180,
-                borderRadius: 8,
-                overflow: 'hidden'
-              },
-              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(ImageWithPlaceholder, {
-                src: c.img,
-                alt: c.title
-              })
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("h3", {
-              style: {
-                marginTop: 18
-              },
-              children: c.title
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("p", {
-              style: {
-                color: '#6b7280'
-              },
-              children: c.text
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
-              style: {
-                marginTop: 12
-              },
-              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("button", {
-                style: {
-                  background: '#2563eb',
-                  color: '#fff',
-                  border: 'none',
-                  padding: '0.5rem 0.9rem',
-                  borderRadius: 6
-                },
-                children: "Learn more"
-              })
-            })]
-          }, idx);
-        })
       })
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("footer", {
-      style: {
-        padding: '2rem 1rem',
-        background: '#fff'
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("main", {
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("section", {
+        className: "lp-hero",
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+          className: "lp-container lp-hero-inner",
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("h1", {
+              children: "Welcome to the Father Saturnino Urios University"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("p", {
+              children: "Empowering learners through excellence, values, and service."
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("button", {
+              className: "lp-btn lp-btn-primary",
+              onClick: function onClick() {
+                return setIsModalOpen(true);
+              },
+              children: "Get Started"
+            })]
+          })
+        })
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+        className: "lp-container lp-grid",
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+          className: "lp-card",
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("img", {
+            src: "/img/the_best_teacher.jpg",
+            alt: "Best Teacher"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("h3", {
+            children: "Experienced Faculty"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("p", {
+            children: "Learn from the best instructors who guide and inspire students every day."
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("button", {
+            className: "lp-cta-small",
+            children: "Learn more"
+          })]
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+          className: "lp-card",
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("img", {
+            src: "/img/Engaging_activities.jpg",
+            alt: "Activities"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("h3", {
+            children: "Engaging Activities"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("p", {
+            children: "Hands-on projects and events that build skills beyond the classroom."
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("button", {
+            className: "lp-cta-small",
+            children: "View events"
+          })]
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+          className: "lp-card",
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("img", {
+            src: "/img/Come to Sfms.webp",
+            alt: "Come to SFMS"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("h3", {
+            children: "Join Us"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("p", {
+            children: "Be part of our community\u2014academic excellence and values combined."
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("button", {
+            className: "lp-cta-small",
+            children: "Apply now"
+          })]
+        })]
+      })]
+    }), isModalOpen && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+      className: "lp-modal-backdrop",
+      onClick: function onClick(e) {
+        if (e.target === e.currentTarget) setIsModalOpen(false);
       },
-      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
-        style: {
-          maxWidth: 1100,
-          margin: '0 auto',
-          color: '#6b7280'
-        },
-        children: "Built for classroom/demo use."
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+        className: "lp-modal",
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+          className: "lp-modal-header",
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+            className: "lp-modal-title",
+            children: "Log in"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("button", {
+            className: "lp-close",
+            onClick: function onClick() {
+              return setIsModalOpen(false);
+            },
+            children: "\xD7"
+          })]
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+          className: "lp-modal-body",
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+            className: "lp-login-options",
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("button", {
+              className: "lp-btn lp-btn-outline",
+              onClick: function onClick() {
+                return navigate('/student-login');
+              },
+              children: "Student login"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+              className: "lp-muted",
+              children: "Use your student account (simulation)"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("button", {
+              className: "lp-btn lp-btn-primary",
+              onClick: function onClick() {
+                return navigate('/login');
+              },
+              children: "Admin log in"
+            })]
+          })
+        })]
       })
     })]
   });
