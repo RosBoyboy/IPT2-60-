@@ -9,13 +9,13 @@ import Reports from './reports';
 import Settings from './settings';
 import Profile from './profile';
 import AuthenticationError from './authentication';
+import LandingPage from './LandingPage';
+import StudentLogin from './StudentLogin';
 
 // Simple auth helper (client-side only)
-const isAuthenticated = () => {
-    return localStorage.getItem('sfms_auth') === 'true';
-};
+const isAuthenticated = () => localStorage.getItem('sfms_auth') === 'true';
 
-// Guard that renders an error page when unauthenticated
+// Guard that shows an error page when unauthenticated (no redirect)
 function PrivateRoute({ children }) {
     return isAuthenticated() ? children : <AuthenticationError loginPath="/login" />;
 }
@@ -24,7 +24,9 @@ export default function AppRouter() {
     return (
         <BrowserRouter>
             <Routes>
+                <Route path="/" element={<LandingPage />} />
                 <Route path="/login" element={<AdminLogs />} />
+                <Route path="/student-login" element={<StudentLogin />} />
 
                 {/* Dashboard root - protected */}
                 <Route
@@ -79,11 +81,8 @@ export default function AppRouter() {
                     }
                 />
 
-                {/* root -> go to login */}
-                <Route path="/" element={<Navigate to="/login" replace />} />
-
-                {/* fallback -> go to login */}
-                <Route path="*" element={<Navigate to="/login" replace />} />
+                {/* fallback -> go to home */}
+                <Route path="*" element={<Navigate to="/" replace />} />
             </Routes>
         </BrowserRouter>
     );

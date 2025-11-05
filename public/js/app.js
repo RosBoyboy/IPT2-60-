@@ -70934,11 +70934,7 @@ function Dashboard() {
         children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
           className: "logo",
           children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("img", {
-<<<<<<< HEAD
             src: "/img/sfms-logo2.png",
-=======
-            src: "./img/sfms-logo2.png",
->>>>>>> 92ae0ff90a63482911e089572ccd9f0c258e4c55
             alt: "SFMS Logo"
           })
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
@@ -72758,6 +72754,191 @@ function FacultyPage() {
 
 /***/ }),
 
+/***/ "./resources/js/components/LandingPage.js":
+/*!************************************************!*\
+  !*** ./resources/js/components/LandingPage.js ***!
+  \************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ LandingPage)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router/dist/index.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+function _slicedToArray(r, e) { return _arrayWithHoles(r) || _iterableToArrayLimit(r, e) || _unsupportedIterableToArray(r, e) || _nonIterableRest(); }
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+function _unsupportedIterableToArray(r, a) { if (r) { if ("string" == typeof r) return _arrayLikeToArray(r, a); var t = {}.toString.call(r).slice(8, -1); return "Object" === t && r.constructor && (t = r.constructor.name), "Map" === t || "Set" === t ? Array.from(r) : "Arguments" === t || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(t) ? _arrayLikeToArray(r, a) : void 0; } }
+function _arrayLikeToArray(r, a) { (null == a || a > r.length) && (a = r.length); for (var e = 0, n = Array(a); e < a; e++) n[e] = r[e]; return n; }
+function _iterableToArrayLimit(r, l) { var t = null == r ? null : "undefined" != typeof Symbol && r[Symbol.iterator] || r["@@iterator"]; if (null != t) { var e, n, i, u, a = [], f = !0, o = !1; try { if (i = (t = t.call(r)).next, 0 === l) { if (Object(t) !== t) return; f = !1; } else for (; !(f = (e = i.call(t)).done) && (a.push(e.value), a.length !== l); f = !0); } catch (r) { o = !0, n = r; } finally { try { if (!f && null != t["return"] && (u = t["return"](), Object(u) !== u)) return; } finally { if (o) throw n; } } return a; } }
+function _arrayWithHoles(r) { if (Array.isArray(r)) return r; }
+
+
+
+function LandingPage() {
+  var navigate = (0,react_router_dom__WEBPACK_IMPORTED_MODULE_1__.useNavigate)();
+  var _useState = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false),
+    _useState2 = _slicedToArray(_useState, 2),
+    isModalOpen = _useState2[0],
+    setIsModalOpen = _useState2[1];
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+    className: "lp-root",
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("style", {
+      children: "\n                    :root{ --blue: #2563eb; }\n                    /* Header: blue, larger, navbar-like */\n                    .lp-header{ background: var(--blue); position:sticky; top:0; z-index:40; box-shadow: 0 4px 20px rgba(2,6,23,0.08); }\n                    .lp-container{ max-width:1200px; margin:0 auto; padding:0 1rem 0 1.5rem; }\n                    .lp-nav{ display:flex; align-items:center; justify-content:space-between; padding:1rem 0; }\n                    .lp-brand{ display:flex; align-items:center; gap:14px; margin-left:8px; }\n                    /* Slightly larger logo to match reference and nudge into position */\n                    .lp-brand img{ height:64px; width:auto; display:block; }\n                    .lp-brand-name{ color:#fff; font-weight:800; font-size:20px; line-height:1; display:flex; flex-direction:column; }\n                    .lp-brand-sub{ color: rgba(255,255,255,0.9); font-size:12px; font-weight:600; margin-top:2px; }\n                    .lp-links{ display:flex; gap:22px; align-items:center; margin-right:12px; }\n                    .lp-links a{ color:#fff; text-decoration:none; font-weight:700; padding:8px 10px; border-radius:6px; }\n                    .lp-links a:hover{ background: rgba(255,255,255,0.06); }\n                    /* Inverse button style for header: white bg with blue text */\n                    .lp-btn-primary{ background:#fff; color:var(--blue); border:none; padding:0.45rem 0.95rem; border-radius:8px; font-weight:800; }\n\n                    /* Full-bleed hero */\n                    .lp-hero{ background-image: url('/img/Welcome_to_SFMS.jpg'); background-position:center; background-size:cover; background-repeat:no-repeat; height:560px; position:relative; display:flex; align-items:center; }\n                    /* Removed dark overlay to highlight the background image (school) */\n                    .lp-hero-inner{ position:relative; z-index:2; max-width:1100px; margin:0 auto; padding:2.25rem; display:flex; gap:36px; align-items:center; }\n                    /* Left content occupies natural space; no blocking right image slot so background shows through */\n                    .lp-hero-inner > div:first-child{ flex:1 1 100%; }\n                    .lp-hero h1{ color:#fff; font-size:48px; line-height:1.02; margin:0 0 12px 0; text-shadow:0 6px 20px rgba(2,6,23,0.45); }\n                    .lp-hero p{ color: rgba(255,255,255,0.95); margin:0 0 18px 0; font-size:18px; }\n                    .lp-hero .lp-cta{ background:#fff; color:var(--blue); padding:0.7rem 1.1rem; border-radius:999px; font-weight:700; border:none; }\n\n                    /* Features/cards: make a clean 3-column section like the reference */\n                    /* Make the cards horizontally scrollable so content can overflow at 100% width and show a scrollbar */\n                    .lp-grid{ display:flex; gap:32px; margin-top:60px; padding:40px; background: #f3f6f9; border-radius:10px; overflow-x:auto; overflow-y:hidden; -webkit-overflow-scrolling:touch; }\n                    .lp-grid::-webkit-scrollbar{ height:10px; }\n                    .lp-grid::-webkit-scrollbar-thumb{ background: rgba(37,99,235,0.9); border-radius:6px; }\n                    .lp-card{ background:#fff; text-align:center; padding:22px; min-width:360px; border-radius:12px; box-shadow:0 6px 18px rgba(2,6,23,0.04); display:flex; flex-direction:column; align-items:center; gap:12px; }\n                    .lp-card img{ width:320px; height:200px; object-fit:cover; border-radius:10px; box-shadow:0 8px 24px rgba(2,6,23,0.06); display:block; }\n                    .lp-card h3{ margin-top:8px; font-size:18px; font-weight:700; color:#0f172a; }\n                    .lp-card p{ color:#6b7280; font-size:15px; margin:6px 0 12px; max-width:320px; }\n                    .lp-card .lp-cta-small{ background:var(--blue); color:#fff; border:none; padding:10px 18px; border-radius:6px; font-weight:700; }\n                "
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("header", {
+      className: "lp-header",
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+        className: "lp-container",
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("nav", {
+          className: "lp-nav",
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+            className: "lp-brand",
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("img", {
+              src: "/img/sfms-logo2.png",
+              alt: "SFMS"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+              className: "lp-brand-name",
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("span", {
+                children: "SFMS"
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("small", {
+                className: "lp-brand-sub",
+                children: "Student Faculty Management School"
+              })]
+            })]
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+            className: "lp-links",
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("a", {
+              href: "#calendar",
+              children: "Calendar"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("a", {
+              href: "#contact",
+              children: "Contact"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("a", {
+              href: "#about",
+              children: "About us"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("button", {
+              className: "lp-btn-primary",
+              onClick: function onClick() {
+                return setIsModalOpen(true);
+              },
+              children: "Log in"
+            })]
+          })]
+        })
+      })
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("main", {
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("section", {
+        className: "lp-hero",
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+          className: "lp-container lp-hero-inner",
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("h1", {
+              children: "Welcome to the Father Saturnino Urios University"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("p", {
+              children: "Empowering learners through excellence, values, and service."
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("button", {
+              className: "lp-btn lp-btn-primary",
+              onClick: function onClick() {
+                return setIsModalOpen(true);
+              },
+              children: "Get Started"
+            })]
+          })
+        })
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+        className: "lp-container lp-grid",
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+          className: "lp-card",
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("img", {
+            src: "/img/the_best_teacher.jpg",
+            alt: "Best Teacher"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("h3", {
+            children: "Experienced Faculty"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("p", {
+            children: "Learn from the best instructors who guide and inspire students every day."
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("button", {
+            className: "lp-cta-small",
+            children: "Learn more"
+          })]
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+          className: "lp-card",
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("img", {
+            src: "/img/Engaging_activities.jpg",
+            alt: "Activities"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("h3", {
+            children: "Engaging Activities"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("p", {
+            children: "Hands-on projects and events that build skills beyond the classroom."
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("button", {
+            className: "lp-cta-small",
+            children: "View events"
+          })]
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+          className: "lp-card",
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("img", {
+            src: "/img/Come to Sfms.webp",
+            alt: "Come to SFMS"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("h3", {
+            children: "Join Us"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("p", {
+            children: "Be part of our community\u2014academic excellence and values combined."
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("button", {
+            className: "lp-cta-small",
+            children: "Apply now"
+          })]
+        })]
+      })]
+    }), isModalOpen && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+      className: "lp-modal-backdrop",
+      onClick: function onClick(e) {
+        if (e.target === e.currentTarget) setIsModalOpen(false);
+      },
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+        className: "lp-modal",
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+          className: "lp-modal-header",
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+            className: "lp-modal-title",
+            children: "Log in"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("button", {
+            className: "lp-close",
+            onClick: function onClick() {
+              return setIsModalOpen(false);
+            },
+            children: "\xD7"
+          })]
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+          className: "lp-modal-body",
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+            className: "lp-login-options",
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("button", {
+              className: "lp-btn lp-btn-outline",
+              onClick: function onClick() {
+                return navigate('/student-login');
+              },
+              children: "Student login"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+              className: "lp-muted",
+              children: "Use your student account (simulation)"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("button", {
+              className: "lp-btn lp-btn-primary",
+              onClick: function onClick() {
+                return navigate('/login');
+              },
+              children: "Admin log in"
+            })]
+          })
+        })]
+      })
+    })]
+  });
+}
+
+/***/ }),
+
 /***/ "./resources/js/components/Routers.js":
 /*!********************************************!*\
   !*** ./resources/js/components/Routers.js ***!
@@ -72781,8 +72962,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _settings__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./settings */ "./resources/js/components/settings.js");
 /* harmony import */ var _profile__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./profile */ "./resources/js/components/profile.js");
 /* harmony import */ var _authentication__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./authentication */ "./resources/js/components/authentication.js");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+/* harmony import */ var _LandingPage__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./LandingPage */ "./resources/js/components/LandingPage.js");
+/* harmony import */ var _StudentLogin__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./StudentLogin */ "./resources/js/components/StudentLogin.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
 // ...existing code...
+
+
 
 
 
@@ -72800,59 +72985,59 @@ var isAuthenticated = function isAuthenticated() {
   return localStorage.getItem('sfms_auth') === 'true';
 };
 
-// Guard that renders an error page when unauthenticated
+// Guard that shows an error page when unauthenticated (no redirect)
 function PrivateRoute(_ref) {
   var children = _ref.children;
-  return isAuthenticated() ? children : /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_11__.jsx)(_authentication__WEBPACK_IMPORTED_MODULE_10__["default"], {
+  return isAuthenticated() ? children : /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)(_authentication__WEBPACK_IMPORTED_MODULE_10__["default"], {
     loginPath: "/login"
   });
 }
 function AppRouter() {
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_11__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_1__.BrowserRouter, {
-    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_11__.jsxs)(react_router_dom__WEBPACK_IMPORTED_MODULE_2__.Routes, {
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_11__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_2__.Route, {
-        path: "/login",
-        element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_11__.jsx)(_adminlogs__WEBPACK_IMPORTED_MODULE_3__["default"], {})
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_11__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_2__.Route, {
-        path: "/dashboard",
-        element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_11__.jsx)(PrivateRoute, {
-          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_11__.jsx)(_Example__WEBPACK_IMPORTED_MODULE_4__["default"], {})
-        })
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_11__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_2__.Route, {
-        path: "/dashboard/faculty",
-        element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_11__.jsx)(PrivateRoute, {
-          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_11__.jsx)(_Faculty__WEBPACK_IMPORTED_MODULE_5__["default"], {})
-        })
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_11__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_2__.Route, {
-        path: "/dashboard/students",
-        element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_11__.jsx)(PrivateRoute, {
-          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_11__.jsx)(_Student__WEBPACK_IMPORTED_MODULE_6__["default"], {})
-        })
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_11__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_2__.Route, {
-        path: "/dashboard/reports",
-        element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_11__.jsx)(PrivateRoute, {
-          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_11__.jsx)(_reports__WEBPACK_IMPORTED_MODULE_7__["default"], {})
-        })
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_11__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_2__.Route, {
-        path: "/dashboard/settings",
-        element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_11__.jsx)(PrivateRoute, {
-          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_11__.jsx)(_settings__WEBPACK_IMPORTED_MODULE_8__["default"], {})
-        })
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_11__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_2__.Route, {
-        path: "/dashboard/profile",
-        element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_11__.jsx)(PrivateRoute, {
-          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_11__.jsx)(_profile__WEBPACK_IMPORTED_MODULE_9__["default"], {})
-        })
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_11__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_2__.Route, {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_1__.BrowserRouter, {
+    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsxs)(react_router_dom__WEBPACK_IMPORTED_MODULE_2__.Routes, {
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_2__.Route, {
         path: "/",
-        element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_11__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_2__.Navigate, {
-          to: "/login",
-          replace: true
+        element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)(_LandingPage__WEBPACK_IMPORTED_MODULE_11__["default"], {})
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_2__.Route, {
+        path: "/login",
+        element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)(_adminlogs__WEBPACK_IMPORTED_MODULE_3__["default"], {})
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_2__.Route, {
+        path: "/student-login",
+        element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)(_StudentLogin__WEBPACK_IMPORTED_MODULE_12__["default"], {})
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_2__.Route, {
+        path: "/dashboard",
+        element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)(PrivateRoute, {
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)(_Example__WEBPACK_IMPORTED_MODULE_4__["default"], {})
         })
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_11__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_2__.Route, {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_2__.Route, {
+        path: "/dashboard/faculty",
+        element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)(PrivateRoute, {
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)(_Faculty__WEBPACK_IMPORTED_MODULE_5__["default"], {})
+        })
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_2__.Route, {
+        path: "/dashboard/students",
+        element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)(PrivateRoute, {
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)(_Student__WEBPACK_IMPORTED_MODULE_6__["default"], {})
+        })
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_2__.Route, {
+        path: "/dashboard/reports",
+        element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)(PrivateRoute, {
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)(_reports__WEBPACK_IMPORTED_MODULE_7__["default"], {})
+        })
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_2__.Route, {
+        path: "/dashboard/settings",
+        element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)(PrivateRoute, {
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)(_settings__WEBPACK_IMPORTED_MODULE_8__["default"], {})
+        })
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_2__.Route, {
+        path: "/dashboard/profile",
+        element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)(PrivateRoute, {
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)(_profile__WEBPACK_IMPORTED_MODULE_9__["default"], {})
+        })
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_2__.Route, {
         path: "*",
-        element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_11__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_2__.Navigate, {
-          to: "/login",
+        element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_2__.Navigate, {
+          to: "/",
           replace: true
         })
       })]
@@ -73856,11 +74041,7 @@ function StudentPage() {
               })
             }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("tbody", {
               children: studentData.map(function (student) {
-<<<<<<< HEAD
-                var _student$age;
-=======
                 var displayCourse = student.course.replace(' Program', '');
->>>>>>> 92ae0ff90a63482911e089572ccd9f0c258e4c55
                 return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("tr", {
                   children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("td", {
                     className: "fw-semibold",
@@ -73889,21 +74070,6 @@ function StudentPage() {
                     children: student.year_level
                   }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("td", {
                     children: student.academic_year
-                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("td", {
-                    children: student.gender || '-'
-                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("td", {
-                    children: student.dob ? new Date(student.dob).toLocaleDateString() : '-'
-                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("td", {
-                    children: (_student$age = student.age) !== null && _student$age !== void 0 ? _student$age : '-'
-                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("td", {
-                    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
-                      className: "small text-muted",
-                      children: [student.street_address ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
-                        children: student.street_address
-                      }) : null, student.city_municipality || student.province_region || student.zip_code ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
-                        children: [student.city_municipality, student.city_municipality && student.province_region ? ', ' : '', student.province_region, student.zip_code && (student.city_municipality || student.province_region) ? ' - ' + student.zip_code : student.zip_code || '']
-                      }) : null]
-                    })
                   }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("td", {
                     children: student.email
                   }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("td", {
@@ -74406,11 +74572,7 @@ function StudentPage() {
                     })
                   }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("tbody", {
                     children: archivedData.map(function (student) {
-<<<<<<< HEAD
-                      var _student$age2;
-=======
                       var displayCourse = student.course.replace(' Program', '');
->>>>>>> 92ae0ff90a63482911e089572ccd9f0c258e4c55
                       return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("tr", {
                         children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("td", {
                           className: "fw-semibold",
@@ -74448,21 +74610,6 @@ function StudentPage() {
                             className: "text-muted extra-small",
                             children: new Date(student.archived_at).toLocaleTimeString()
                           })]
-                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("td", {
-                          children: student.gender || '-'
-                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("td", {
-                          children: student.dob ? new Date(student.dob).toLocaleDateString() : '-'
-                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("td", {
-                          children: (_student$age2 = student.age) !== null && _student$age2 !== void 0 ? _student$age2 : '-'
-                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("td", {
-                          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
-                            className: "small text-muted",
-                            children: [student.street_address ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
-                              children: student.street_address
-                            }) : null, student.city_municipality || student.province_region || student.zip_code ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
-                              children: [student.city_municipality, student.city_municipality && student.province_region ? ', ' : '', student.province_region, student.zip_code && (student.city_municipality || student.province_region) ? ' - ' + student.zip_code : student.zip_code || '']
-                            }) : null]
-                          })
                         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("td", {
                           children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("button", {
                             className: "btn btn-sm btn-success me-2",
@@ -74497,6 +74644,67 @@ function StudentPage() {
         })]
       })]
     })]
+  });
+}
+
+/***/ }),
+
+/***/ "./resources/js/components/StudentLogin.js":
+/*!*************************************************!*\
+  !*** ./resources/js/components/StudentLogin.js ***!
+  \*************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ StudentLogin)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router/dist/index.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+
+
+
+function StudentLogin() {
+  var navigate = (0,react_router_dom__WEBPACK_IMPORTED_MODULE_1__.useNavigate)();
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+    className: "sl-wrap",
+    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+      className: "sl-container",
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+        className: "sl-panel",
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("h2", {
+          children: "Student login"
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("p", {
+          className: "sl-muted",
+          children: "This page is a placeholder for student authentication. Replace with your own logic later."
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+          className: "sl-actions",
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("button", {
+            className: "sl-btn sl-btn-primary",
+            onClick: function onClick() {
+              fetch('/sanctum/csrf-cookie', {
+                credentials: 'same-origin'
+              })["finally"](function () {
+                return navigate('/dashboard');
+              });
+            },
+            children: "Continue (simulate)"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("button", {
+            className: "sl-btn",
+            onClick: function onClick() {
+              return navigate('/');
+            },
+            children: "Back to home"
+          })]
+        })]
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+        className: "sl-slot",
+        children: "Add your student login image/content here"
+      })]
+    })
   });
 }
 
@@ -74545,7 +74753,12 @@ function AdminLogs() {
     // Hardcoded admin credentials
     if (username === 'admin' && password === 'admin456') {
       localStorage.setItem('sfms_auth', 'true');
-      navigate('/dashboard');
+      // Set XSRF-TOKEN cookie for GET protection (Sanctum route)
+      fetch('/sanctum/csrf-cookie', {
+        credentials: 'same-origin'
+      })["finally"](function () {
+        navigate('/dashboard');
+      });
     } else {
       setError('Invalid username or password');
     }

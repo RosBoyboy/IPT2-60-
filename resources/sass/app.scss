@@ -1,8 +1,20 @@
-// Fonts
-@import url('https://fonts.googleapis.com/css?family=Nunito');
+// ...existing code...
+// Fonts (avoid external providers)
 
 // Variables
 @import 'variables';
 
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
+
+// Project styles (import each .scss in this folder)
+@import 'adminlogs';
+@import 'dashboard';
+@import 'faculty';
+@import 'profile';
+@import 'reports';
+@import 'settings';
+@import 'student';
+@import 'landingpage';
+// add other partials here as needed
+// ...existing code...
