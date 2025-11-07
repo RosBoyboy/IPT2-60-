@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
+import NotificationBell from './NotificationBell';
 
 export default function FacultyPage() {
     const navigate = useNavigate();
@@ -49,6 +50,16 @@ export default function FacultyPage() {
         localStorage.removeItem('sfms_auth');
         navigate('/login');
     }
+    // Menus (profile only)
+    const [showProfileMenu, setShowProfileMenu] = useState(false);
+    const profileMenuRef = React.useRef(null);
+    useEffect(() => {
+        const onDown = (e) => {
+            if (profileMenuRef.current && !profileMenuRef.current.contains(e.target)) setShowProfileMenu(false);
+        };
+        document.addEventListener('mousedown', onDown);
+        return () => document.removeEventListener('mousedown', onDown);
+    }, []);
 
     const getCsrfToken = () => {
         const metaTag = document.querySelector('meta[name="csrf-token"]');
@@ -71,6 +82,17 @@ export default function FacultyPage() {
         
         console.warn('CSRF token not found');
         return null;
+    };
+
+    const pushNotification = (notification) => {
+        try {
+            const raw = localStorage.getItem('sfms_notifications');
+            const arr = raw ? JSON.parse(raw) : [];
+            const list = Array.isArray(arr) ? arr : [];
+            list.unshift(notification);
+            localStorage.setItem('sfms_notifications', JSON.stringify(list));
+            try { window.dispatchEvent(new CustomEvent('sfms-notifications-updated', { detail: { count: list.length } })); } catch (e) {}
+        } catch (e) {}
     };
 
     // Load departments from localStorage
@@ -306,6 +328,16 @@ export default function FacultyPage() {
                 } else {
                     setFacultyData(prev => [data.faculty, ...prev]);
                     setToastMessage(data.success || 'Faculty added successfully!');
+
+                    // Add notification for new faculty
+                    pushNotification({
+                        id: `faculty-create-${Date.now()}`,
+                        type: 'success',
+                        title: 'New faculty added',
+                        desc: `${data.faculty.faculty_number} - ${data.faculty.name}`,
+                        time: Date.now(),
+                        read: false
+                    });
                 }
                 
                 setShowModal(false);
@@ -543,6 +575,96 @@ export default function FacultyPage() {
         };
     }, [showModal, showArchiveModal, showArchivePage]);
 
+    // Icons (stroke currentColor)
+    const withStroke = (isWhite) => ({ stroke: isWhite ? 'white' : 'currentColor' });
+    const calendarIcon = () => (
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" {...withStroke(false)} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+            <rect x="3" y="4" width="18" height="18" rx="4" ry="4"></rect>
+            <line x1="16" y1="2" x2="16" y2="6"></line>
+            <line x1="8" y1="2" x2="8" y2="6"></line>
+            <line x1="3" y1="10" x2="21" y2="10"></line>
+        </svg>
+    );
+    const bellIcon = () => (
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" {...withStroke(false)} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+            <path d="M18 8a6 6 0 10-12 0c0 7-3 8-3 8h18s-3-1-3-8"></path>
+            <path d="M13.73 21a2 2 0 01-3.46 0"></path>
+        </svg>
+    );
+    const settingsIcon = () => (
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" {...withStroke(false)} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+            <circle cx="12" cy="12" r="3"></circle>
+            <path d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 010 2.83 2 2 0 01-2.83 0l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-4 0v-.09a1.65 1.65 0 00-1-1.51 1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 01-2.83 0 2 2 0 010-2.83l.06-.06a1.65 1.65 0 00.33-1.82 1.65 1.65 0 00-1.51-1H3a2 2 0 010-4h.09a1.65 1.65 0 001.51-1 1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 010-2.83 2 2 0 012.83 0l.06.06a1.65 1.65 0 001.82.33H9a1.65 1.65 0 001-1.51V3a2 2 0 014 0v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 012.83 0 2 2 0 010 2.83l-.06.06a1.65 1.65 0 00-.33 1.82V9c0 .69.28 1.32.73 1.77.45.45 1.08.73 1.77.73h.09a2 2 0 010 4h-.09a1.65 1.65 0 00-1.77.73z"></path>
+        </svg>
+    );
+    const dashboardIcon = () => (
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" {...withStroke(false)} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+            <rect x="3" y="3" width="7" height="7" rx="2"></rect>
+            <rect x="14" y="3" width="7" height="7" rx="2"></rect>
+            <rect x="14" y="14" width="7" height="7" rx="2"></rect>
+            <rect x="3" y="14" width="7" height="7" rx="2"></rect>
+        </svg>
+    );
+    const studentsIcon = () => (
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" {...withStroke(false)} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+            <path d="M12 14c-4.418 0-8 1.79-8 4v2"></path>
+            <circle cx="12" cy="7" r="4"></circle>
+        </svg>
+    );
+    const facultyIcon = () => (
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" {...withStroke(false)} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+            <path d="M2 20v-1c0-2.21 3.582-4 8-4s8 1.79 8 4v1"></path>
+            <circle cx="10" cy="7" r="4"></circle>
+            <circle cx="18" cy="8" r="3"></circle>
+        </svg>
+    );
+    const reportsIcon = () => (
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" {...withStroke(false)} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+            <path d="M3 12h18"></path>
+            <path d="M3 6h18"></path>
+            <path d="M3 18h18"></path>
+        </svg>
+    );
+    const profileIcon = () => (
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" {...withStroke(false)} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+            <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
+            <circle cx="12" cy="7" r="4"></circle>
+        </svg>
+    );
+    const archiveIcon = () => (
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" {...withStroke(false)} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+            <path d="M4 19.5V6a2 2 0 012-2h10l4 4v11.5a1.5 1.5 0 01-1.5 1.5H5.5A1.5 1.5 0 014 19.5z"></path>
+            <path d="M14 4v4h4"></path>
+        </svg>
+    );
+    const logoutIcon = () => (
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" {...withStroke(false)} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+            <path d="M9 21H5a2 2 0 01-2-2V5a2 2 0 012-2h4"></path>
+            <polyline points="16 17 21 12 16 7"></polyline>
+            <line x1="21" y1="12" x2="9" y2="12"></line>
+        </svg>
+    );
+
+    const userInitials = (profileData.name || 'Admin').split(' ').map(n => n && n[0]).filter(Boolean).join('').slice(0,2).toUpperCase();
+
+    const renderAvatar = (name, photoUrl) => {
+        if (photoUrl) {
+            return <img src={photoUrl} alt={name} className="avatar-img" />;
+        }
+        const initials = (name || '')
+            .split(' ')
+            .map(n => n && n[0])
+            .filter(Boolean)
+            .join('')
+            .slice(0,2)
+            .toUpperCase();
+        return (
+            <div className="avatar-sm bg-primary rounded-circle d-flex align-items-center justify-content-center text-white">
+                <span className="fw-bold" style={{fontSize: '12px'}}>{initials}</span>
+            </div>
+        );
+    };
+
     return (
         <div className="sfms-dashboard">
             <aside className="sfms-sidebar">
@@ -550,18 +672,18 @@ export default function FacultyPage() {
                     <div className="logo">
                         <img src="/img/sfms-logo2.png" alt="SFMS Logo" />
                     </div>
-                    <div className="brand-text">Profile System</div>
+                    <div className="brand-text">SFMS</div>
                 </div>
 
                 <nav className="sidebar-nav">
                     <ul>
-                        <li><Link to="/dashboard">Dashboard</Link></li>
-                        <li className="active"><Link to="/dashboard/faculty">Faculty</Link></li>
-                        <li><Link to="/dashboard/students">Students</Link></li>
-                        <li><Link to="/dashboard/reports">Reports</Link></li>
-                        <li><Link to="/dashboard/settings">Settings</Link></li>
-                        <li><Link to="/dashboard/profile">Profile</Link></li>
-                        <li><button className="link-button" onClick={logout}>Logout</button></li>
+                        <li><Link to="/dashboard"><span className="nav-icon">{dashboardIcon()}</span>Dashboard</Link></li>
+                        <li className="active"><Link to="/dashboard/faculty"><span className="nav-icon">{facultyIcon()}</span>Faculty</Link></li>
+                        <li><Link to="/dashboard/students"><span className="nav-icon">{studentsIcon()}</span>Students</Link></li>
+                        <li><Link to="/dashboard/calendar"><span className="nav-icon">{calendarIcon()}</span>Calendar</Link></li>
+                        <li><Link to="/dashboard/reports"><span className="nav-icon">{reportsIcon()}</span>Reports</Link></li>
+                        <li><Link to="/dashboard/settings"><span className="nav-icon">{settingsIcon()}</span>Settings</Link></li>
+                        <li><Link to="/dashboard/profile"><span className="nav-icon">{profileIcon()}</span>Profile</Link></li>
                     </ul>
                 </nav>
             </aside>
@@ -573,7 +695,6 @@ export default function FacultyPage() {
                     </div>
 
                     <div className="topbar-right">
-                        <div className="welcome">Welcome back, {profileData.name || 'Admin'}</div>
                         <div className="top-actions">
                             <button 
                                 className="btn small outline"
@@ -581,7 +702,28 @@ export default function FacultyPage() {
                             >
                                 Add Faculty
                             </button>
-                            <button className="icon-btn">⠇</button>
+                        </div>
+                        <div className="top-icons">
+                            
+                            <NotificationBell />
+                            <button className="icon-circle" title="Settings" onClick={() => navigate('/dashboard/settings')}>
+                                {settingsIcon()}
+                            </button>
+                            <div className="profile-menu-wrapper" ref={profileMenuRef} style={{ position: 'relative' }}>
+                                <button className="profile-chip" title="Profile" onClick={() => setShowProfileMenu(p => !p)} aria-expanded={showProfileMenu}>
+                                    <span className="avatar-sm">{userInitials}</span>
+                                    <span className="profile-name">{profileData.name || 'Admin'}</span>
+                                </button>
+                                {showProfileMenu && (
+                                    <div className="notifications-dropdown" style={{ position: 'absolute', right: 0, top: 'calc(100% + 10px)', width: 200, background: 'white', borderRadius: 12, boxShadow: '0 16px 40px rgba(0,0,0,0.18)', overflow: 'hidden', zIndex: 4000 }}>
+                                        <ul className="dropdown-list" style={{ margin: 0, padding: 0 }}>
+                                            <li className="dropdown-item" style={{ padding: '12px 14px', cursor: 'pointer' }} onClick={() => { setShowProfileMenu(false); navigate('/dashboard/profile'); }}>View Profile</li>
+                                            <li className="dropdown-item" style={{ padding: '12px 14px', cursor: 'pointer' }} onClick={() => { setShowProfileMenu(false); navigate('/dashboard/settings'); }}>Settings</li>
+                                            <li className="dropdown-item" style={{ padding: '12px 14px', cursor: 'pointer', color: '#ef4444' }} onClick={() => { setShowProfileMenu(false); logout(); }}>Logout</li>
+                                        </ul>
+                                    </div>
+                                )}
+                            </div>
                         </div>
                     </div>
                 </header>
@@ -649,12 +791,13 @@ export default function FacultyPage() {
                             <table className="table">
 								<thead className="table-light">
                                     <tr>
+                                        <th>Photo</th>
                                         <th>Faculty Number</th>
                                         <th>Name</th>
                                         <th>Department</th>
                                         <th>Position</th>
 										<th>Gender</th>
-										<th>DOB</th>
+								<th>Date of Birth</th>
 										<th>Age</th>
 										<th>Address</th>
                                         <th>Email</th>
@@ -666,19 +809,11 @@ export default function FacultyPage() {
                                 <tbody>
                                     {facultyData.map((faculty) => (
                                         <tr key={faculty.id}>
-                                            <td className="fw-semibold">{faculty.faculty_number}</td>
                                             <td>
-                                                <div className="d-flex align-items-center">
-                                                    <div className="avatar-sm bg-light rounded-circle d-flex align-items-center justify-content-center me-3">
-                                                        <span className="text-muted">
-                                                            {faculty.name.split(' ').map(n => n[0]).join('')}
-                                                        </span>
-                                                    </div>
-                                                    <div>
-                                                        <div className="fw-semibold">{faculty.name}</div>
-                                                    </div>
-                                                </div>
+                                                {renderAvatar(faculty.name, faculty.photo_url || faculty.profile_photo_url)}
                                             </td>
+                                            <td className="fw-semibold">{faculty.faculty_number}</td>
+                                            <td><div className="fw-semibold">{faculty.name}</div></td>
                                             <td>{faculty.department}</td>
                                             <td>{faculty.position}</td>
 											<td>{faculty.gender || '-'}</td>
@@ -732,9 +867,10 @@ export default function FacultyPage() {
                     <div className="faculty-archive-btn">
                         <button 
                             className="btn btn-archive"
+                            style={{ backgroundColor: '#0f79e0', borderColor: '#0f79e0', color: '#ffffff' }}
                             onClick={openArchivePage}
                         >
-                            📁 View Archive
+                            {archiveIcon()} <span style={{ marginLeft: 8 }}>View Archive</span>
                         </button>
                     </div>
 
@@ -864,7 +1000,7 @@ export default function FacultyPage() {
 									</select>
 								</div>
 								<div className="col-md-4">
-									<label htmlFor="dob">Date of Birth</label>
+										<label htmlFor="dob">Date of Birth</label>
 									<input
 										type="date"
 										className="form-control"
@@ -883,7 +1019,7 @@ export default function FacultyPage() {
 										id="age"
 										name="age"
 										value={formData.age}
-										placeholder="Auto-calculated from DOB"
+											placeholder="Auto-calculated from Date of Birth"
 									/>
 								</div>
 								<div className="col-md-12">
@@ -1087,13 +1223,14 @@ export default function FacultyPage() {
                                             <table className="table">
 									<thead className="table-light">
                                                     <tr>
+                                                        <th>Photo</th>
                                                         <th>Faculty Number</th>
                                                         <th>Name</th>
                                                         <th>Department</th>
                                                         <th>Position</th>
                                                         <th>Archived Date</th>
 											<th>Gender</th>
-											<th>DOB</th>
+										<th>Date of Birth</th>
 											<th>Age</th>
 											<th>Address</th>
                                                         <th>Actions</th>
@@ -1102,19 +1239,13 @@ export default function FacultyPage() {
                                                 <tbody>
                                                     {archivedData.map((faculty) => (
                                                         <tr key={faculty.id}>
+                                                            <td>
+                                                                {renderAvatar(faculty.name, faculty.photo_url || faculty.profile_photo_url)}
+                                                            </td>
                                                             <td className="fw-semibold">{faculty.faculty_number}</td>
                                                             <td>
-                                                                <div className="d-flex align-items-center">
-                                                                    <div className="avatar-sm bg-light rounded-circle d-flex align-items-center justify-content-center me-3">
-                                                                        <span className="text-muted">
-                                                                            {faculty.name.split(' ').map(n => n[0]).join('')}
-                                                                        </span>
-                                                                    </div>
-                                                                    <div>
-                                                                        <div className="fw-semibold">{faculty.name}</div>
-                                                                        <div className="text-muted small">{faculty.email}</div>
-                                                                    </div>
-                                                                </div>
+                                                                <div className="fw-semibold">{faculty.name}</div>
+                                                                <div className="text-muted small">{faculty.email}</div>
                                                             </td>
                                                             <td>{faculty.department}</td>
                                                             <td>{faculty.position}</td>

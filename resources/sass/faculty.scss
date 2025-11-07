@@ -64,6 +64,13 @@
       font-size: 12px;
       font-weight: 600;
     }
+    .avatar-img {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      object-fit: cover;
+      display: block;
+    }
     
     .badge-active {
       display:inline-block;
@@ -270,7 +277,7 @@ body.sfms-modal-open {
   z-index: 1000;
 
   .btn-archive {
-    background: linear-gradient(90deg, #6b7280, #9ca3af);
+    background: linear-gradient(90deg, #0b63d6, #2a9df4);
     color: white;
     border: none;
     padding: 12px 20px;
@@ -282,7 +289,7 @@ body.sfms-modal-open {
     &:hover {
       transform: translateY(-2px);
       box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
-      background: linear-gradient(90deg, #5a6268, #7b8794);
+      background: linear-gradient(90deg, #0f79e0, #3aa0ff);
     }
   }
 }

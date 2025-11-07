@@ -8,6 +8,7 @@ import Student from './Student';
 import Reports from './reports';
 import Settings from './settings';
 import Profile from './profile';
+import CalendarPage from './Calendar';
 import AuthenticationError from './authentication';
 
 // Simple auth helper (client-side only)
@@ -54,6 +55,16 @@ export default function AppRouter() {
                         </PrivateRoute>
                     }
                 />
+                <Route
+                    path="/dashboard/calendar"
+                    element={
+                        <PrivateRoute>
+                            <CalendarPage />
+                        </PrivateRoute>
+                    }
+                />
+
+                {/* Existing */}
                 <Route
                     path="/dashboard/reports"
                     element={

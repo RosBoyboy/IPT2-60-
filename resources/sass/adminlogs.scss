@@ -100,6 +100,26 @@ $shadow: 0 12px 30px rgba(6, 30, 60, 0.18);
   pointer-events: none;
 }
 
+/* inline SVG icon positioned over the placeholder */
+.login-form .input .input-icon {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 36px;
+  height: 36px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #64748b; /* slate-500 */
+  pointer-events: none;
+}
+
+.login-form .input .input-icon svg {
+  width: 18px;
+  height: 18px;
+}
+
 /* actual text input */
 .login-form input[type="text"],
 .login-form input[type="password"] {
