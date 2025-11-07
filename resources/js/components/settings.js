@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
+import NotificationBell from './NotificationBell';
 
 export default function SettingsPage() {
     const navigate = useNavigate();
@@ -53,6 +54,16 @@ export default function SettingsPage() {
         localStorage.removeItem('sfms_auth');
         navigate('/login');
     }
+    // Menus (profile only)
+    const [showProfileMenu, setShowProfileMenu] = useState(false);
+    const profileMenuRef = React.useRef(null);
+    useEffect(() => {
+        const onDown = (e) => {
+            if (profileMenuRef.current && !profileMenuRef.current.contains(e.target)) setShowProfileMenu(false);
+        };
+        document.addEventListener('mousedown', onDown);
+        return () => document.removeEventListener('mousedown', onDown);
+    }, []);
 
     const getCsrfToken = () => {
         const metaTag = document.querySelector('meta[name="csrf-token"]');
@@ -77,6 +88,17 @@ export default function SettingsPage() {
         return null;
     };
 
+    const pushNotification = (notification) => {
+        try {
+            const raw = localStorage.getItem('sfms_notifications');
+            const arr = raw ? JSON.parse(raw) : [];
+            const list = Array.isArray(arr) ? arr : [];
+            list.unshift(notification);
+            localStorage.setItem('sfms_notifications', JSON.stringify(list));
+            try { window.dispatchEvent(new CustomEvent('sfms-notifications-updated', { detail: { count: list.length } })); } catch (e) {}
+        } catch (e) {}
+    };
+
     useEffect(() => {
         loadFromLocalStorage();
         fetchProfile();
@@ -94,11 +116,11 @@ export default function SettingsPage() {
         }
     };
 
-    // Load data from localStorage or initialize with defaults
-    const loadFromLocalStorage = () => {
+    // Load data from localStorage first, then refresh departments from API (persisted)
+    const loadFromLocalStorage = async () => {
         setLoading(true);
         try {
-            // Departments with version check
+            // Departments with version check (local cache)
             const savedDepartmentsRaw = localStorage.getItem('sfms_departments');
             const savedDepartmentsMetaRaw = localStorage.getItem('sfms_departments_meta');
             let useSavedDepartments = false;
@@ -117,15 +139,35 @@ export default function SettingsPage() {
             if (useSavedDepartments && savedDepartmentsRaw) {
                 setDepartments(JSON.parse(savedDepartmentsRaw));
             } else {
-                // Initialize with default departments
+                // Initialize with defaults (temporary) until API loads
                 const initialDepartments = defaultDepartments.map((name, index) => ({
                     id: index + 1,
                     name: name,
                     status: 'ACTIVE',
-                    isDefault: true
+                    is_default: true
                 }));
                 setDepartments(initialDepartments);
                 saveToLocalStorage('sfms_departments', initialDepartments);
+            }
+
+            // Always try to refresh from API so data persists to MySQL
+            try {
+                const res = await fetch('/api/departments');
+                if (res.ok) {
+                    const data = await res.json();
+                    const deptList = (data.departments || []).map(d => ({
+                        id: d.id,
+                        name: d.name,
+                        status: d.status,
+                        is_default: !!d.is_default
+                    }));
+                    if (deptList.length > 0) {
+                        setDepartments(deptList);
+                        saveToLocalStorage('sfms_departments', deptList);
+                    }
+                }
+            } catch (e) {
+                // ignore API errors; UI will keep using cache/defaults
             }
 
             // Courses (keep behaviour as before — reuse defaultDepartments)
@@ -208,24 +250,51 @@ export default function SettingsPage() {
             let updatedData;
 
             if (currentView === 'departments') {
+                const csrfToken = getCsrfToken();
+                const headers = {
+                    'Content-Type': 'application/json',
+                    'Accept': 'application/json',
+                    'X-Requested-With': 'XMLHttpRequest',
+                };
+                if (csrfToken) headers['X-CSRF-TOKEN'] = csrfToken;
+
                 if (editingItem) {
-                    updatedData = departments.map(dept => 
-                        dept.id === editingItem.id ? { ...dept, ...formData } : dept
-                    );
-                    setDepartments(updatedData);
-                    saveToLocalStorage('sfms_departments', updatedData);
-                    setToastMessage('Department updated successfully!');
+                    const res = await fetch(`/api/departments/${editingItem.id}`, {
+                        method: 'PUT',
+                        headers,
+                        body: JSON.stringify({ name: formData.name, status: formData.status })
+                    });
+                    const data = await res.json();
+                    if (!res.ok) {
+                        setErrors([data.message || 'Failed to update department']);
+                        return;
+                    }
+                    await refetchDepartments();
+                    setToastMessage(data.success || 'Department updated successfully!');
                 } else {
-                    newItem = {
-                        id: Date.now(),
-                        name: formData.name,
-                        status: formData.status,
-                        isDefault: false
-                    };
-                    updatedData = [newItem, ...departments];
-                    setDepartments(updatedData);
-                    saveToLocalStorage('sfms_departments', updatedData);
-                    setToastMessage('Department added successfully!');
+                    const res = await fetch('/api/departments', {
+                        method: 'POST',
+                        headers,
+                        body: JSON.stringify({ name: formData.name, status: formData.status })
+                    });
+                    const data = await res.json();
+                    if (!res.ok) {
+                        const err = data.errors ? Object.values(data.errors).flat() : [data.message || 'Failed to add department'];
+                        setErrors(err);
+                        return;
+                    }
+                    await refetchDepartments();
+                    setToastMessage(data.success || 'Department added successfully!');
+
+                    // Add notification for new department
+                    pushNotification({
+                        id: `department-create-${Date.now()}`,
+                        type: 'success',
+                        title: 'New department added',
+                        desc: formData.name,
+                        time: Date.now(),
+                        read: false
+                    });
                 }
             } else if (currentView === 'courses') {
                 if (editingItem) {
@@ -246,6 +315,16 @@ export default function SettingsPage() {
                     setCourses(updatedData);
                     saveToLocalStorage('sfms_courses', updatedData);
                     setToastMessage('Course added successfully!');
+
+                    // Add notification for new course
+                    pushNotification({
+                        id: `course-create-${Date.now()}`,
+                        type: 'success',
+                        title: 'New course added',
+                        desc: courseFormData.name,
+                        time: Date.now(),
+                        read: false
+                    });
                 }
             } else if (currentView === 'academic-years') {
                 if (editingItem) {
@@ -266,6 +345,16 @@ export default function SettingsPage() {
                     setAcademicYears(updatedData);
                     saveToLocalStorage('sfms_academic_years', updatedData);
                     setToastMessage('Academic year added successfully!');
+
+                    // Add notification for new academic year
+                    pushNotification({
+                        id: `ay-create-${Date.now()}`,
+                        type: 'success',
+                        title: 'New academic year added',
+                        desc: academicYearFormData.year,
+                        time: Date.now(),
+                        read: false
+                    });
                 }
             }
             
@@ -279,6 +368,23 @@ export default function SettingsPage() {
             console.error('Error saving:', error);
             setErrors(['Error occurred while saving. Please try again.']);
         }
+    };
+
+    const refetchDepartments = async () => {
+        try {
+            const res = await fetch('/api/departments');
+            if (res.ok) {
+                const data = await res.json();
+                const list = (data.departments || []).map(d => ({
+                    id: d.id,
+                    name: d.name,
+                    status: d.status,
+                    is_default: !!d.is_default
+                }));
+                setDepartments(list);
+                saveToLocalStorage('sfms_departments', list);
+            }
+        } catch (e) {}
     };
 
     const resetForms = () => {
@@ -317,8 +423,8 @@ export default function SettingsPage() {
         setShowModal(true);
     };
 
-    const handleDelete = (item) => {
-        if (item.isDefault) {
+    const handleDelete = async (item) => {
+        if (item.is_default) {
             alert('Default items cannot be deleted.');
             return;
         }
@@ -330,6 +436,12 @@ export default function SettingsPage() {
         try {
             let updatedData;
             if (currentView === 'departments') {
+                const res = await fetch(`/api/departments/${item.id}`, { method: 'DELETE' });
+                if (!res.ok) {
+                    const data = await res.json();
+                    setErrors([data.message || 'Failed to delete department.']);
+                    return;
+                }
                 updatedData = departments.filter(dept => dept.id !== item.id);
                 setDepartments(updatedData);
                 saveToLocalStorage('sfms_departments', updatedData);
@@ -364,8 +476,8 @@ export default function SettingsPage() {
         resetForms();
     };
 
-    const toggleStatus = (item) => {
-        if (item.isDefault) {
+    const toggleStatus = async (item) => {
+        if (item.is_default) {
             alert('Default items status cannot be changed.');
             return;
         }
@@ -375,6 +487,16 @@ export default function SettingsPage() {
             const newStatus = item.status === 'ACTIVE' ? 'INACTIVE' : 'ACTIVE';
 
             if (currentView === 'departments') {
+                const res = await fetch(`/api/departments/${item.id}`, {
+                    method: 'PUT',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ status: newStatus })
+                });
+                if (!res.ok) {
+                    const data = await res.json();
+                    setErrors([data.message || 'Failed to update status.']);
+                    return;
+                }
                 updatedData = departments.map(dept => 
                     dept.id === item.id ? { ...dept, status: newStatus } : dept
                 );
@@ -419,6 +541,72 @@ export default function SettingsPage() {
         };
     }, [showModal]);
 
+    // Icons (stroke currentColor)
+    const withStroke = (isWhite) => ({ stroke: isWhite ? 'white' : 'currentColor' });
+    const calendarIcon = () => (
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" {...withStroke(false)} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+            <rect x="3" y="4" width="18" height="18" rx="4" ry="4"></rect>
+            <line x1="16" y1="2" x2="16" y2="6"></line>
+            <line x1="8" y1="2" x2="8" y2="6"></line>
+            <line x1="3" y1="10" x2="21" y2="10"></line>
+        </svg>
+    );
+    const bellIcon = () => (
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" {...withStroke(false)} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+            <path d="M18 8a6 6 0 10-12 0c0 7-3 8-3 8h18s-3-1-3-8"></path>
+            <path d="M13.73 21a2 2 0 01-3.46 0"></path>
+        </svg>
+    );
+    const settingsIcon = () => (
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" {...withStroke(false)} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+            <circle cx="12" cy="12" r="3"></circle>
+            <path d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 010 2.83 2 2 0 01-2.83 0l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-4 0v-.09a1.65 1.65 0 00-1-1.51 1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 01-2.83 0 2 2 0 010-2.83l.06-.06a1.65 1.65 0 00.33-1.82 1.65 1.65 0 00-1.51-1H3a2 2 0 010-4h.09a1.65 1.65 0 001.51-1 1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 010-2.83 2 2 0 012.83 0l.06.06a1.65 1.65 0 001.82.33H9a1.65 1.65 0 001-1.51V3a2 2 0 014 0v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 012.83 0 2 2 0 010 2.83l-.06.06a1.65 1.65 0 00-.33 1.82V9c0 .69.28 1.32.73 1.77.45.45 1.08.73 1.77.73h.09a2 2 0 010 4h-.09a1.65 1.65 0 00-1.77.73z"></path>
+        </svg>
+    );
+    const dashboardIcon = () => (
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" {...withStroke(false)} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+            <rect x="3" y="3" width="7" height="7" rx="2"></rect>
+            <rect x="14" y="3" width="7" height="7" rx="2"></rect>
+            <rect x="14" y="14" width="7" height="7" rx="2"></rect>
+            <rect x="3" y="14" width="7" height="7" rx="2"></rect>
+        </svg>
+    );
+    const studentsIcon = () => (
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" {...withStroke(false)} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+            <path d="M12 14c-4.418 0-8 1.79-8 4v2"></path>
+            <circle cx="12" cy="7" r="4"></circle>
+        </svg>
+    );
+    const facultyIcon = () => (
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" {...withStroke(false)} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+            <path d="M2 20v-1c0-2.21 3.582-4 8-4s8 1.79 8 4v1"></path>
+            <circle cx="10" cy="7" r="4"></circle>
+            <circle cx="18" cy="8" r="3"></circle>
+        </svg>
+    );
+    const reportsIcon = () => (
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" {...withStroke(false)} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+            <path d="M3 12h18"></path>
+            <path d="M3 6h18"></path>
+            <path d="M3 18h18"></path>
+        </svg>
+    );
+    const profileIcon = () => (
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" {...withStroke(false)} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+            <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
+            <circle cx="12" cy="7" r="4"></circle>
+        </svg>
+    );
+    const logoutIcon = () => (
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" {...withStroke(false)} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+            <path d="M9 21H5a2 2 0 01-2-2V5a2 2 0 012-2h4"></path>
+            <polyline points="16 17 21 12 16 7"></polyline>
+            <line x1="21" y1="12" x2="9" y2="12"></line>
+        </svg>
+    );
+
+    const userInitials = (profileData.name || 'Admin').split(' ').map(n => n && n[0]).filter(Boolean).join('').slice(0,2).toUpperCase();
+
     return (
         <div className="sfms-dashboard">
             <aside className="sfms-sidebar">
@@ -426,18 +614,18 @@ export default function SettingsPage() {
                     <div className="logo">
                         <img src="/img/sfms-logo2.png" alt="SFMS Logo" />
                     </div>
-                    <div className="brand-text">Profile System</div>
+                    <div className="brand-text">SFMS</div>
                 </div>
 
                 <nav className="sidebar-nav">
                     <ul>
-                        <li><Link to="/dashboard">Dashboard</Link></li>
-                        <li><Link to="/dashboard/faculty">Faculty</Link></li>
-                        <li><Link to="/dashboard/students">Students</Link></li>
-                        <li><Link to="/dashboard/reports">Reports</Link></li>
-                        <li className="active"><a href="#">Settings</a></li>
-                        <li><Link to="/dashboard/profile">Profile</Link></li>
-                        <li><button className="link-button" onClick={logout}>Logout</button></li>
+                        <li><Link to="/dashboard"><span className="nav-icon">{dashboardIcon()}</span>Dashboard</Link></li>
+                        <li><Link to="/dashboard/faculty"><span className="nav-icon">{facultyIcon()}</span>Faculty</Link></li>
+                        <li><Link to="/dashboard/students"><span className="nav-icon">{studentsIcon()}</span>Students</Link></li>
+                        <li><Link to="/dashboard/calendar"><span className="nav-icon">{calendarIcon()}</span>Calendar</Link></li>
+                        <li><Link to="/dashboard/reports"><span className="nav-icon">{reportsIcon()}</span>Reports</Link></li>
+                        <li className="active"><a href="#"><span className="nav-icon">{settingsIcon()}</span>Settings</a></li>
+                        <li><Link to="/dashboard/profile"><span className="nav-icon">{profileIcon()}</span>Profile</Link></li>
                     </ul>
                 </nav>
             </aside>
@@ -449,9 +637,27 @@ export default function SettingsPage() {
                     </div>
 
                     <div className="topbar-right">
-                        <div className="welcome">Welcome back, {profileData.name || 'Admin'}</div>
-                        <div className="top-actions">
-                            <button className="icon-btn">⠇</button>
+                        <div className="top-icons">
+                            
+                            <NotificationBell />
+                            <button className="icon-circle" title="Settings" onClick={() => navigate('/dashboard/settings')}>
+                                {settingsIcon()}
+                            </button>
+                            <div className="profile-menu-wrapper" ref={profileMenuRef} style={{ position: 'relative' }}>
+                                <button className="profile-chip" title="Profile" onClick={() => setShowProfileMenu(p => !p)} aria-expanded={showProfileMenu}>
+                                    <span className="avatar-sm">{(profileData.name || 'Admin').split(' ').map(n => n && n[0]).filter(Boolean).join('').slice(0,2).toUpperCase()}</span>
+                                    <span className="profile-name">{profileData.name || 'Admin'}</span>
+                                </button>
+                                {showProfileMenu && (
+                                    <div className="notifications-dropdown" style={{ position: 'absolute', right: 0, top: 'calc(100% + 10px)', width: 200, background: 'white', borderRadius: 12, boxShadow: '0 16px 40px rgba(0,0,0,0.18)', overflow: 'hidden', zIndex: 4000 }}>
+                                        <ul className="dropdown-list" style={{ margin: 0, padding: 0 }}>
+                                            <li className="dropdown-item" style={{ padding: '12px 14px', cursor: 'pointer' }} onClick={() => { setShowProfileMenu(false); navigate('/dashboard/profile'); }}>View Profile</li>
+                                            <li className="dropdown-item" style={{ padding: '12px 14px', cursor: 'pointer' }} onClick={() => { setShowProfileMenu(false); navigate('/dashboard/settings'); }}>Settings</li>
+                                            <li className="dropdown-item" style={{ padding: '12px 14px', cursor: 'pointer', color: '#ef4444' }} onClick={() => { setShowProfileMenu(false); logout(); }}>Logout</li>
+                                        </ul>
+                                    </div>
+                                )}
+                            </div>
                         </div>
                     </div>
                 </header>
@@ -534,7 +740,7 @@ export default function SettingsPage() {
                                                     <tr key={department.id}>
                                                         <td className="fw-semibold">{department.name}</td>
                                                         <td>
-                                                            {department.isDefault ? (
+                                                            {department.is_default ? (
                                                                 <span className="badge badge-info">Default</span>
                                                             ) : (
                                                                 <span className="badge badge-secondary">Custom</span>
@@ -549,21 +755,21 @@ export default function SettingsPage() {
                                                             <button 
                                                                 className="btn btn-sm btn-outline-primary me-2"
                                                                 onClick={() => handleEdit(department)}
-                                                                disabled={department.isDefault}
+                                                                disabled={department.is_default}
                                                             >
                                                                 Edit
                                                             </button>
                                                             <button 
                                                                 className="btn btn-sm btn-outline-secondary me-2"
                                                                 onClick={() => toggleStatus(department)}
-                                                                disabled={department.isDefault}
+                                                                disabled={department.is_default}
                                                             >
                                                                 {department.status === 'ACTIVE' ? 'Deactivate' : 'Activate'}
                                                             </button>
                                                             <button 
                                                                 className="btn btn-sm btn-outline-danger"
                                                                 onClick={() => handleDelete(department)}
-                                                                disabled={department.isDefault}
+                                                                disabled={department.is_default}
                                                             >
                                                                 Delete
                                                             </button>

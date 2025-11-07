@@ -1,4 +1,22 @@
 .reports-page {
+    $card-radius: 10px;
+    $shadow: 0 8px 28px rgba(9,30,66,0.08);
+    $muted: #6b7280;
+    $blue: #0f79e0;
+
+    // Card look for major blocks
+    .reports-header,
+    .reports-nav,
+    .student-filters,
+    .faculty-filters,
+    .summary-section,
+    .student-data-section,
+    .faculty-data-section {
+        background: #fff;
+        border-radius: $card-radius;
+        box-shadow: $shadow;
+        border: 1px solid rgba(0,0,0,0.04);
+    }
     .reports-header {
         h1 {
             color: #2c3e50;
@@ -19,24 +37,25 @@
             gap: 10px;
             
             .nav-btn {
-                padding: 12px 24px;
-                border: 2px solid #e9ecef;
-                background: #f8f9fa;
-                color: #6c757d;
-                border-radius: 6px;
+                padding: 10px 18px;
+                border: 1.5px solid rgba(15,121,224,0.18);
+                background: #f5f9ff;
+                color: #1f2937;
+                border-radius: 999px;
                 cursor: pointer;
                 font-weight: 500;
                 transition: all 0.3s ease;
 
                 &:hover {
-                    background: #eef6ff;
-                    border-color: #d6e9ff;
+                    background: rgba(15,121,224,0.08);
+                    border-color: rgba(15,121,224,0.45);
                 }
 
                 &.active {
-                    background: #0f79e0;
-                    border-color: #0f79e0;
-                    color: white;
+                    background: linear-gradient(90deg, #1772d9, #0f79e0);
+                    border-color: transparent;
+                    color: #fff;
+                    box-shadow: 0 2px 10px rgba(15,121,224,0.3);
                 }
             }
         }
@@ -52,22 +71,25 @@
 
         .form-select,
         .form-control {
-            border: 1px solid #ddd;
-            border-radius: 4px;
+            border: 1px solid #e5e7eb;
+            border-radius: 8px;
+            padding: 10px 12px;
             
             &:focus {
-                border-color: #0f79e0;
-                box-shadow: 0 0 0 0.2rem rgba(15, 121, 224, 0.25);
+                border-color: $blue;
+                box-shadow: 0 0 0 3px rgba(15, 121, 224, 0.12);
             }
         }
 
         .btn-primary {
-            background: #0f79e0;
+            background: linear-gradient(90deg, #1772d9, #0f79e0);
             border-color: #0f79e0;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(15,121,224,0.3);
             
             &:hover {
-                background: #0b6ec0;
-                border-color: #0b6ec0;
+                transform: translateY(-1px);
+                box-shadow: 0 4px 12px rgba(15,121,224,0.4);
             }
         }
     }
@@ -75,21 +97,39 @@
     .summary-section {
         .summary-table {
             .table {
+                // Prevent the first row top border from peeking through rounded header corners
+                border-collapse: separate;
+                border-spacing: 0;
                 th {
                     background: #0f79e0;
                     color: white;
                     font-weight: 600;
                     text-align: center;
+                    border: none;
                 }
-                
+
+                thead tr th:first-child { border-top-left-radius: 10px; }
+                thead tr th:last-child { border-top-right-radius: 10px; }
+
+                tbody tr {
+                    transition: background-color 0.2s ease;
+                }
+                tbody tr:hover { background: #f7fbff; }
+
+                tbody tr:last-child td:first-child { border-bottom-left-radius: 10px; }
+                tbody tr:last-child td:last-child { border-bottom-right-radius: 10px; }
+                td { border-top: 1px solid #eef2f6; }
+                // Remove top border on the very first body row so it doesn't show near rounded header corners
+                thead + tbody tr:first-child td { border-top: 0; }
+
                 td {
                     text-align: center;
                     vertical-align: middle;
                 }
-                
+
                 .table-light {
                     background: #f8f9fa;
-                    
+
                     td {
                         font-weight: 600;
                         color: #2c3e50;
@@ -119,12 +159,20 @@
     .student-data-section,
     .faculty-data-section {
         .table {
+            border-collapse: separate;
+            border-spacing: 0;
             th {
                 background: #0f79e0;
                 color: white;
                 font-weight: 600;
                 border: none;
             }
+            thead tr th:first-child { border-top-left-radius: 10px; }
+            thead tr th:last-child { border-top-right-radius: 10px; }
+            tbody tr:last-child td:first-child { border-bottom-left-radius: 10px; }
+            tbody tr:last-child td:last-child { border-bottom-right-radius: 10px; }
+            td { border-top: 1px solid #eef2f6; }
+            thead + tbody tr:first-child td { border-top: 0; }
             
             td {
                 vertical-align: middle;
@@ -143,7 +191,7 @@
         background: #d4edda;
         color: #155724;
         padding: 4px 8px;
-        border-radius: 12px;
+        border-radius: 999px;
         font-size: 12px;
         font-weight: 500;
     }
@@ -152,7 +200,7 @@
         background: #f8d7da;
         color: #721c24;
         padding: 4px 8px;
-        border-radius: 12px;
+        border-radius: 999px;
         font-size: 12px;
         font-weight: 500;
     }
