@@ -1,8 +1,22 @@
 // Fonts
 @import url('https://fonts.googleapis.com/css?family=Nunito');
 
-// Variables
+// Variables (must come first)
 @import 'variables';
 
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
+
+// Page / feature styles
+// Keep page-specific styles grouped; add new files here as needed.
+@import 'landingpage';
+@import 'loginpage';
+@import 'adminlogs';
+@import 'dashboard';
+@import 'faculty';
+@import 'student';
+@import 'profile';
+@import 'reports';
+@import 'settings';
+
+// If you add more partials, import them above.

@@ -14659,7 +14659,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "/* Login page styles for SFMS - follows Frame 28 prototype */\n.sfms-login-page {\n  min-height: 100vh;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  background: linear-gradient(135deg, #0a4b99 0%, #1b88e6 100%);\n  font-family: -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial;\n  padding: 40px;\n}\n\n.login-card {\n  width: 420px;\n  border-radius: 12px;\n  overflow: hidden;\n  box-shadow: 0 12px 30px rgba(6, 30, 60, 0.18);\n  background: transparent;\n  display: flex;\n  flex-direction: column;\n}\n\n/* top branded header */\n.login-card .brand {\n  background: linear-gradient(180deg, #0b4ea6 0%, #0f79e0 100%);\n  color: white;\n  padding: 36px 28px;\n  text-align: center;\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  gap: 8px;\n}\n\n.login-card .brand .logo {\n  width: 56px;\n  height: 56px;\n  border-radius: 8px;\n  background: rgba(255, 255, 255, 0.12);\n  display: inline-flex;\n  align-items: center;\n  justify-content: center;\n  font-weight: 700;\n  font-size: 20px;\n}\n\n.login-card .brand h2 {\n  margin: 0;\n  font-size: 20px;\n  line-height: 1.1;\n  font-weight: 700;\n}\n\n.login-card .brand p {\n  margin: 0;\n  font-size: 13px;\n  opacity: 0.9;\n}\n\n/* white form area */\n.login-form {\n  background: #fff;\n  padding: 26px;\n  display: flex;\n  flex-direction: column;\n  gap: 14px;\n}\n\n.login-form label {\n  font-size: 13px;\n  color: #444;\n  margin-bottom: 6px;\n  display: block;\n}\n\n/* input wrapper to allow icon on left */\n.login-form .input {\n  position: relative;\n}\n\n/* small circular icon placeholder on left */\n.login-form .input::before {\n  content: \"\";\n  position: absolute;\n  left: 10px;\n  top: 50%;\n  transform: translateY(-50%);\n  width: 36px;\n  height: 36px;\n  background: #f1f4f8;\n  border-radius: 10px;\n  box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.02);\n  /* optional decorative icon using small dot */\n  background-image: radial-gradient(circle at 50% 40%, rgba(0, 0, 0, 0.08) 0, rgba(0, 0, 0, 0.02) 2px, transparent 3px);\n  pointer-events: none;\n}\n\n/* inline SVG icon positioned over the placeholder */\n.login-form .input .input-icon {\n  position: absolute;\n  left: 10px;\n  top: 50%;\n  transform: translateY(-50%);\n  width: 36px;\n  height: 36px;\n  display: inline-flex;\n  align-items: center;\n  justify-content: center;\n  color: #64748b; /* slate-500 */\n  pointer-events: none;\n}\n\n.login-form .input .input-icon svg {\n  width: 18px;\n  height: 18px;\n}\n\n/* actual text input */\n.login-form input[type=text],\n.login-form input[type=password] {\n  width: 100%;\n  padding: 12px 16px 12px 56px; /* left padding to clear icon */\n  border: 1px solid #e6eaee;\n  border-radius: 10px;\n  background: #fff;\n  box-shadow: 0 2px 6px rgba(16, 24, 40, 0.03);\n  font-size: 14px;\n  outline: none;\n  transition: border-color 0.15s, box-shadow 0.15s;\n}\n\n.login-form input:focus {\n  border-color: rgba(15, 121, 224, 0.9);\n  box-shadow: 0 6px 18px rgba(16, 121, 224, 0.12);\n}\n\n/* error message */\n.form-error {\n  color: #d04444;\n  font-size: 13px;\n  padding: 8px 10px;\n  border-radius: 8px;\n  background: #fff5f5;\n  border: 1px solid rgba(208, 68, 68, 0.08);\n}\n\n/* login button */\n.btn-login {\n  margin-top: 10px;\n  height: 44px;\n  width: 100%;\n  border: none;\n  cursor: pointer;\n  color: #fff;\n  font-weight: 600;\n  background: linear-gradient(90deg, rgb(13.719665272, 110.6719665272, 204.880334728) 0%, #0f79e0 100%);\n  border-radius: 10px;\n  box-shadow: 0 8px 22px rgba(15, 121, 224, 0.18);\n  display: inline-flex;\n  align-items: center;\n  justify-content: center;\n  gap: 10px;\n  transition: transform 0.08s ease, box-shadow 0.12s ease;\n}\n\n.btn-login:active {\n  transform: translateY(1px);\n}\n\n.btn-login:hover {\n  box-shadow: 0 10px 28px rgba(15, 121, 224, 0.22);\n}\n\n/* demo credentials text */\n.demo-credentials {\n  margin-top: 12px;\n  font-size: 13px;\n  color: #6b7280;\n  text-align: center;\n}\n\n/* small helper for alignment and spacing on very small screens */\n@media (max-width: 480px) {\n  .login-card {\n    width: 92%;\n  }\n  .login-card .brand {\n    padding: 28px 18px;\n  }\n  .login-form {\n    padding: 18px;\n  }\n}", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "/* Login page styles for SFMS - follows Frame 28 prototype */\n.sfms-login-page {\n  min-height: 100vh;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  background: linear-gradient(135deg, #0a4b99 0%, #1b88e6 100%);\n  font-family: -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial;\n  padding: 40px;\n}\n\n.login-card {\n  width: 420px;\n  border-radius: 12px;\n  overflow: hidden;\n  box-shadow: 0 12px 30px rgba(6, 30, 60, 0.18);\n  background: transparent;\n  display: flex;\n  flex-direction: column;\n  position: relative; /* needed for blurred background pseudo-element */\n}\n\n/* decorative blurred photo behind the card using the Loginpage image */\n.login-card::before {\n  content: \"\";\n  position: absolute;\n  inset: 0;\n  z-index: 0;\n  background-image: url(\"/img/Loginpage_background.jpg\");\n  background-size: cover;\n  background-position: center center;\n  background-repeat: no-repeat;\n  transform: scale(1.03);\n  filter: blur(6px) brightness(0.92) saturate(0.95);\n  will-change: transform, filter;\n}\n\n/* top branded header */\n.login-card .brand {\n  background: linear-gradient(180deg, #0b4ea6 0%, #0f79e0 100%);\n  color: white;\n  padding: 36px 28px;\n  text-align: center;\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  gap: 8px;\n}\n\n.login-card .brand .logo {\n  width: 56px;\n  height: 56px;\n  border-radius: 8px;\n  background: rgba(255, 255, 255, 0.12);\n  display: inline-flex;\n  align-items: center;\n  justify-content: center;\n  font-weight: 700;\n  font-size: 20px;\n}\n\n.login-card .brand h2 {\n  margin: 0;\n  font-size: 20px;\n  line-height: 1.1;\n  font-weight: 700;\n}\n\n.login-card .brand p {\n  margin: 0;\n  font-size: 13px;\n  opacity: 0.9;\n}\n\n/* white form area - slightly translucent so blurred photo peeks through */\n.login-form {\n  background: rgba(255, 255, 255, 0.92);\n  backdrop-filter: blur(2px);\n  padding: 26px;\n  display: flex;\n  flex-direction: column;\n  gap: 14px;\n}\n\n.login-form label {\n  font-size: 13px;\n  color: #444;\n  margin-bottom: 6px;\n  display: block;\n}\n\n/* input wrapper to allow icon on left */\n.login-form .input {\n  position: relative;\n}\n\n/* small circular icon placeholder on left */\n.login-form .input::before {\n  content: \"\";\n  position: absolute;\n  left: 10px;\n  top: 50%;\n  transform: translateY(-50%);\n  width: 36px;\n  height: 36px;\n  background: #f1f4f8;\n  border-radius: 10px;\n  box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.02);\n  /* optional decorative icon using small dot */\n  background-image: radial-gradient(circle at 50% 40%, rgba(0, 0, 0, 0.08) 0, rgba(0, 0, 0, 0.02) 2px, transparent 3px);\n  pointer-events: none;\n}\n\n/* inline SVG icon positioned over the placeholder */\n.login-form .input .input-icon {\n  position: absolute;\n  left: 10px;\n  top: 50%;\n  transform: translateY(-50%);\n  width: 36px;\n  height: 36px;\n  display: inline-flex;\n  align-items: center;\n  justify-content: center;\n  color: #64748b; /* slate-500 */\n  pointer-events: none;\n}\n\n.login-form .input .input-icon svg {\n  width: 18px;\n  height: 18px;\n}\n\n/* actual text input */\n.login-form input[type=text],\n.login-form input[type=password] {\n  width: 100%;\n  padding: 12px 16px 12px 56px; /* left padding to clear icon */\n  border: 1px solid #e6eaee;\n  border-radius: 10px;\n  background: #fff;\n  box-shadow: 0 2px 6px rgba(16, 24, 40, 0.03);\n  font-size: 14px;\n  outline: none;\n  transition: border-color 0.15s, box-shadow 0.15s;\n}\n\n.login-form input:focus {\n  border-color: rgba(15, 121, 224, 0.9);\n  box-shadow: 0 6px 18px rgba(16, 121, 224, 0.12);\n}\n\n/* error message */\n.form-error {\n  color: #d04444;\n  font-size: 13px;\n  padding: 8px 10px;\n  border-radius: 8px;\n  background: #fff5f5;\n  border: 1px solid rgba(208, 68, 68, 0.08);\n}\n\n/* login button */\n.btn-login {\n  margin-top: 10px;\n  height: 44px;\n  width: 100%;\n  border: none;\n  cursor: pointer;\n  color: #fff;\n  font-weight: 600;\n  background: linear-gradient(90deg, rgb(13.719665272, 110.6719665272, 204.880334728) 0%, #0f79e0 100%);\n  border-radius: 10px;\n  box-shadow: 0 8px 22px rgba(15, 121, 224, 0.18);\n  display: inline-flex;\n  align-items: center;\n  justify-content: center;\n  gap: 10px;\n  transition: transform 0.08s ease, box-shadow 0.12s ease;\n}\n\n.btn-login:active {\n  transform: translateY(1px);\n}\n\n.btn-login:hover {\n  box-shadow: 0 10px 28px rgba(15, 121, 224, 0.22);\n}\n\n/* demo credentials text */\n.demo-credentials {\n  margin-top: 12px;\n  font-size: 13px;\n  color: #6b7280;\n  text-align: center;\n}\n\n/* small helper for alignment and spacing on very small screens */\n@media (max-width: 480px) {\n  .login-card {\n    width: 92%;\n  }\n  .login-card .brand {\n    padding: 28px 18px;\n  }\n  .login-form {\n    padding: 18px;\n  }\n}\n/* ensure card children render above the blurred background */\n.login-card > * {\n  position: relative;\n  z-index: 1;\n}", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -74833,8 +74833,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _profile__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./profile */ "./resources/js/components/profile.js");
 /* harmony import */ var _Calendar__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./Calendar */ "./resources/js/components/Calendar.js");
 /* harmony import */ var _authentication__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./authentication */ "./resources/js/components/authentication.js");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+/* harmony import */ var _landingpage__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./landingpage */ "./resources/js/components/landingpage.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
 // ...existing code...
+
 
 
 
@@ -74856,61 +74858,58 @@ var isAuthenticated = function isAuthenticated() {
 // Guard that renders an error page when unauthenticated
 function PrivateRoute(_ref) {
   var children = _ref.children;
-  return isAuthenticated() ? children : /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)(_authentication__WEBPACK_IMPORTED_MODULE_11__["default"], {
+  return isAuthenticated() ? children : /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)(_authentication__WEBPACK_IMPORTED_MODULE_11__["default"], {
     loginPath: "/login"
   });
 }
 function AppRouter() {
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_1__.BrowserRouter, {
-    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsxs)(react_router_dom__WEBPACK_IMPORTED_MODULE_2__.Routes, {
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_2__.Route, {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_1__.BrowserRouter, {
+    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsxs)(react_router_dom__WEBPACK_IMPORTED_MODULE_2__.Routes, {
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_2__.Route, {
         path: "/login",
-        element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)(_adminlogs__WEBPACK_IMPORTED_MODULE_3__["default"], {})
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_2__.Route, {
+        element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)(_adminlogs__WEBPACK_IMPORTED_MODULE_3__["default"], {})
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_2__.Route, {
         path: "/dashboard",
-        element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)(PrivateRoute, {
-          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)(_Example__WEBPACK_IMPORTED_MODULE_4__["default"], {})
+        element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)(PrivateRoute, {
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)(_Example__WEBPACK_IMPORTED_MODULE_4__["default"], {})
         })
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_2__.Route, {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_2__.Route, {
         path: "/dashboard/faculty",
-        element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)(PrivateRoute, {
-          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)(_Faculty__WEBPACK_IMPORTED_MODULE_5__["default"], {})
+        element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)(PrivateRoute, {
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)(_Faculty__WEBPACK_IMPORTED_MODULE_5__["default"], {})
         })
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_2__.Route, {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_2__.Route, {
         path: "/dashboard/students",
-        element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)(PrivateRoute, {
-          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)(_Student__WEBPACK_IMPORTED_MODULE_6__["default"], {})
+        element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)(PrivateRoute, {
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)(_Student__WEBPACK_IMPORTED_MODULE_6__["default"], {})
         })
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_2__.Route, {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_2__.Route, {
         path: "/dashboard/calendar",
-        element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)(PrivateRoute, {
-          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)(_Calendar__WEBPACK_IMPORTED_MODULE_10__["default"], {})
+        element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)(PrivateRoute, {
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)(_Calendar__WEBPACK_IMPORTED_MODULE_10__["default"], {})
         })
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_2__.Route, {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_2__.Route, {
         path: "/dashboard/reports",
-        element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)(PrivateRoute, {
-          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)(_reports__WEBPACK_IMPORTED_MODULE_7__["default"], {})
+        element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)(PrivateRoute, {
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)(_reports__WEBPACK_IMPORTED_MODULE_7__["default"], {})
         })
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_2__.Route, {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_2__.Route, {
         path: "/dashboard/settings",
-        element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)(PrivateRoute, {
-          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)(_settings__WEBPACK_IMPORTED_MODULE_8__["default"], {})
+        element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)(PrivateRoute, {
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)(_settings__WEBPACK_IMPORTED_MODULE_8__["default"], {})
         })
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_2__.Route, {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_2__.Route, {
         path: "/dashboard/profile",
-        element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)(PrivateRoute, {
-          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)(_profile__WEBPACK_IMPORTED_MODULE_9__["default"], {})
+        element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)(PrivateRoute, {
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)(_profile__WEBPACK_IMPORTED_MODULE_9__["default"], {})
         })
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_2__.Route, {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_2__.Route, {
         path: "/",
-        element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_2__.Navigate, {
-          to: "/login",
-          replace: true
-        })
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_2__.Route, {
+        element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)(_landingpage__WEBPACK_IMPORTED_MODULE_12__["default"], {})
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_2__.Route, {
         path: "*",
-        element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_2__.Navigate, {
-          to: "/login",
+        element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_2__.Navigate, {
+          to: "/",
           replace: true
         })
       })]
@@ -77221,6 +77220,130 @@ function AuthenticationError(_ref) {
         children: "Go to Login"
       })]
     })
+  });
+}
+
+/***/ }),
+
+/***/ "./resources/js/components/landingpage.js":
+/*!************************************************!*\
+  !*** ./resources/js/components/landingpage.js ***!
+  \************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ LandingPage)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+
+
+function LandingPage() {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
+    className: "lp-root",
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("header", {
+      className: "lp-header",
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
+        className: "lp-container",
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("nav", {
+          className: "lp-nav",
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
+            className: "lp-brand",
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("img", {
+              src: "/img/sfms-logo2.png",
+              alt: "SFMS"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
+              className: "lp-brand-name",
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("span", {
+                children: "SFMS"
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("small", {
+                className: "lp-brand-sub",
+                children: "Student Faculty Management School"
+              })]
+            })]
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
+            className: "lp-links",
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
+              href: "#calendar",
+              children: "Calendar"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
+              href: "#contact",
+              children: "Contact"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
+              href: "#about",
+              children: "About us"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
+              className: "lp-btn lp-btn-primary",
+              href: "http://127.0.0.1:8000/login",
+              children: "Log in"
+            })]
+          })]
+        })
+      })
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("main", {
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("section", {
+        className: "lp-hero",
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
+          className: "lp-container lp-hero-inner",
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("h1", {
+              children: "Student Faculty Management System"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("p", {
+              children: "Student & Faculty Management"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
+              className: "lp-btn lp-btn-primary",
+              href: "http://127.0.0.1:8000/login",
+              children: "Get Started"
+            })]
+          })
+        })
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
+        className: "lp-container lp-grid",
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
+          className: "lp-card",
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("img", {
+            src: "/img/the_best_teacher.jpg",
+            alt: "Best Teacher"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("h3", {
+            children: "Experienced Faculty"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("p", {
+            children: "Learn from the best instructors who guide and inspire students every day."
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("button", {
+            className: "lp-cta-small",
+            children: "Learn more"
+          })]
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
+          className: "lp-card",
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("img", {
+            src: "/img/Engaging_activities.jpg",
+            alt: "Activities"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("h3", {
+            children: "Engaging Activities"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("p", {
+            children: "Hands-on projects and events that build skills beyond the classroom."
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("button", {
+            className: "lp-cta-small",
+            children: "View events"
+          })]
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
+          className: "lp-card",
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("img", {
+            src: "/img/Come to Sfms.webp",
+            alt: "Come to SFMS"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("h3", {
+            children: "Join Us"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("p", {
+            children: "Be part of our community\u2014academic excellence and values combined."
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("button", {
+            className: "lp-cta-small",
+            children: "Apply now"
+          })]
+        })]
+      })]
+    })]
   });
 }
 

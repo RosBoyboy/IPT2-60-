@@ -10,6 +10,7 @@ import Settings from './settings';
 import Profile from './profile';
 import CalendarPage from './Calendar';
 import AuthenticationError from './authentication';
+import LandingPage from './landingpage';
 
 // Simple auth helper (client-side only)
 const isAuthenticated = () => {
@@ -90,11 +91,11 @@ export default function AppRouter() {
                     }
                 />
 
-                {/* root -> go to login */}
-                <Route path="/" element={<Navigate to="/login" replace />} />
+                {/* root -> landing page */}
+                <Route path="/" element={<LandingPage />} />
 
-                {/* fallback -> go to login */}
-                <Route path="*" element={<Navigate to="/login" replace />} />
+                {/* fallback -> go to landing page */}
+                <Route path="*" element={<Navigate to="/" replace />} />
             </Routes>
         </BrowserRouter>
     );

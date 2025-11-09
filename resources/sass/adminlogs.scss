@@ -23,6 +23,22 @@ $shadow: 0 12px 30px rgba(6, 30, 60, 0.18);
   background: transparent;
   display: flex;
   flex-direction: column;
+  position: relative; /* needed for blurred background pseudo-element */
+}
+
+/* decorative blurred photo behind the card using the Loginpage image */
+.login-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background-image: url('/img/Loginpage_background.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  transform: scale(1.03);
+  filter: blur(6px) brightness(0.92) saturate(0.95);
+  will-change: transform, filter;
 }
 
 /* top branded header */
@@ -62,9 +78,10 @@ $shadow: 0 12px 30px rgba(6, 30, 60, 0.18);
   opacity: 0.9;
 }
 
-/* white form area */
+/* white form area - slightly translucent so blurred photo peeks through */
 .login-form {
-  background: #fff;
+  background: rgba(255,255,255,0.92);
+  backdrop-filter: blur(2px);
   padding: 26px;
   display: flex;
   flex-direction: column;
@@ -185,3 +202,6 @@ $shadow: 0 12px 30px rgba(6, 30, 60, 0.18);
   .login-card .brand { padding: 28px 18px; }
   .login-form { padding: 18px; }
 }
+
+/* ensure card children render above the blurred background */
+.login-card > * { position: relative; z-index: 1; }
