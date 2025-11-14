@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
+import { initTheme, toggleTheme } from '../utils/theme';
 
 export default function Dashboard() {
     const navigate = useNavigate();
@@ -22,6 +23,7 @@ export default function Dashboard() {
     const notificationsWrapperRef = useRef(null);
     const profileMenuRef = useRef(null);
     const [showProfileMenu, setShowProfileMenu] = useState(false);
+    const [theme, setTheme] = useState('light');
 
     const saveNotificationsToStorage = (list) => {
         try {
@@ -119,6 +121,7 @@ export default function Dashboard() {
     useEffect(() => {
         fetchDashboardData();
         fetchProfile();
+        try { const t = initTheme(); setTheme(t); } catch (e) {}
     }, []);
 
     const fetchProfile = async () => {
@@ -177,29 +180,28 @@ export default function Dashboard() {
                     courseCount[course] = (courseCount[course] || 0) + 1;
                 });
 
-                // Load courses and departments from localStorage for counts
-                const savedCourses = localStorage.getItem('sfms_courses');
-                const savedDepartments = localStorage.getItem('sfms_departments');
-                
+                // Fetch courses and departments from API (replace localStorage reliance)
                 let activeCoursesCount = 0;
                 let activeDepartmentsCount = 0;
+                try {
+                    const [coursesResp, deptsResp] = await Promise.all([
+                        fetch('/api/courses', { method: 'GET', headers: { 'Accept': 'application/json', 'X-Requested-With': 'XMLHttpRequest' } }),
+                        fetch('/api/departments', { method: 'GET', headers: { 'Accept': 'application/json', 'X-Requested-With': 'XMLHttpRequest' } })
+                    ]);
 
-                if (savedCourses) {
-                    try {
-                        const coursesData = JSON.parse(savedCourses);
-                        activeCoursesCount = coursesData.filter(course => course.status === 'ACTIVE').length;
-                    } catch (error) {
-                        console.error('Error parsing courses data:', error);
+                    if (coursesResp.ok) {
+                        const cdata = await coursesResp.json();
+                        const list = Array.isArray(cdata) ? cdata : (cdata.courses || []);
+                        activeCoursesCount = (list.filter ? list.filter(c => c.status === 'ACTIVE').length : 0);
                     }
-                }
 
-                if (savedDepartments) {
-                    try {
-                        const departmentsData = JSON.parse(savedDepartments);
-                        activeDepartmentsCount = departmentsData.filter(dept => dept.status === 'ACTIVE').length;
-                    } catch (error) {
-                        console.error('Error parsing departments data:', error);
+                    if (deptsResp.ok) {
+                        const ddata = await deptsResp.json();
+                        const dlist = Array.isArray(ddata) ? ddata : (ddata.departments || []);
+                        activeDepartmentsCount = (dlist.filter ? dlist.filter(d => d.status === 'ACTIVE').length : 0);
                     }
+                } catch (err) {
+                    console.error('Error fetching courses/departments for dashboard counts:', err);
                 }
 
                 setDashboardData(prev => ({
@@ -289,11 +291,11 @@ export default function Dashboard() {
         if (courses.length === 0) {
             // Return default courses if no data
             return [
-                ['Computer Science Program', 70],
-                ['Business Administration Program', 85],
-                ['Engineering Program', 60],
-                ['Nursing Program', 45],
-                ['Accountancy Program', 30]
+                ['Computer Science', 70],
+                ['Business Administration', 85],
+                ['Engineering', 60],
+                ['Nursing', 45],
+                ['Accountancy', 30]
             ];
         }
 
@@ -386,6 +388,24 @@ export default function Dashboard() {
         <svg viewBox="0 0 24 24" width="18" height="18" fill="none" {...withStroke(isWhite)} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
             <path d="M18 8a6 6 0 10-12 0c0 7-3 8-3 8h18s-3-1-3-8"></path>
             <path d="M13.73 21a2 2 0 01-3.46 0"></path>
+        </svg>
+    );
+    const sunIcon = (isWhite = false) => (
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" {...withStroke(isWhite)} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+            <circle cx="12" cy="12" r="4"></circle>
+            <path d="M12 2v2"></path>
+            <path d="M12 20v2"></path>
+            <path d="M4.93 4.93l1.41 1.41"></path>
+            <path d="M17.66 17.66l1.41 1.41"></path>
+            <path d="M2 12h2"></path>
+            <path d="M20 12h2"></path>
+            <path d="M4.93 19.07l1.41-1.41"></path>
+            <path d="M17.66 6.34l1.41-1.41"></path>
+        </svg>
+    );
+    const moonIcon = (isWhite = false) => (
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" {...withStroke(isWhite)} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+            <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
         </svg>
     );
     const dashboardIcon = (isWhite = false) => (
@@ -547,6 +567,13 @@ export default function Dashboard() {
                                     </div>
                                 )}
                             </div>
+                            <button 
+                                className="icon-circle" 
+                                title={theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode'}
+                                onClick={() => { const t = toggleTheme(); setTheme(t); }}
+                            >
+                                {theme === 'dark' ? sunIcon() : moonIcon()}
+                            </button>
                             <button 
                                 className="icon-circle" 
                                 title="Settings"

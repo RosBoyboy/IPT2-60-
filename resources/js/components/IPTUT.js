@@ -27,13 +27,6 @@ export default function ReportsPage() {
     const [courses, setCourses] = useState([]);
     const [departments, setDepartments] = useState([]);
     const [academicYears, setAcademicYears] = useState([]);
-    const [showReportModal, setShowReportModal] = useState(false);
-    const [reportFilters, setReportFilters] = useState({ course: '', year_level: '', academic_year: '' });
-    const [reportData, setReportData] = useState([]);
-    // Faculty-specific report modal state (separate from student modal)
-    const [showFacultyReportModal, setShowFacultyReportModal] = useState(false);
-    const [facultyReportFilters, setFacultyReportFilters] = useState({ department: '', status: '' });
-    const [facultyReportData, setFacultyReportData] = useState([]);
     
     const yearLevels = ['1st Year', '2nd Year', '3rd Year', '4th Year'];
 
@@ -77,7 +70,7 @@ export default function ReportsPage() {
         return null;
     };
 
-    // Load settings data from API (courses/departments) and local defaults for academic years
+    // Load settings data from API
     useEffect(() => {
         (async () => {
             await loadSettingsData();
@@ -88,7 +81,7 @@ export default function ReportsPage() {
 
     const loadSettingsData = async () => {
         try {
-            // Fetch courses
+            // Fetch courses from API
             try {
                 const res = await fetch('/api/courses', { method: 'GET', headers: { 'Accept': 'application/json', 'X-Requested-With': 'XMLHttpRequest' } });
                 if (res.ok) {
@@ -97,10 +90,20 @@ export default function ReportsPage() {
                     const activeCourses = (list.filter ? list.filter(c => c.status === 'ACTIVE') : []);
                     setCourses(activeCourses.map(course => (course.name || '').replace(/\s*Program$/i, '')));
                 } else {
-                    throw new Error('Failed to fetch courses');
+                    setCourses([
+                        'Computer Science',
+                        'Business Administration',
+                        'Arts & Humanities',
+                        'Engineering',
+                        'Teacher Education',
+                        'Accountancy',
+                        'Nursing',
+                        'Criminal Justice',
+                        'Tourism Management'
+                    ]);
                 }
             } catch (err) {
-                console.warn('Falling back to default courses due to error:', err);
+                console.warn('Failed to fetch courses, using defaults', err);
                 setCourses([
                     'Computer Science',
                     'Business Administration',
@@ -114,7 +117,7 @@ export default function ReportsPage() {
                 ]);
             }
 
-            // Fetch departments
+            // Fetch departments from API
             try {
                 const resd = await fetch('/api/departments', { method: 'GET', headers: { 'Accept': 'application/json', 'X-Requested-With': 'XMLHttpRequest' } });
                 if (resd.ok) {
@@ -123,10 +126,20 @@ export default function ReportsPage() {
                     const activeDepartments = (dlist.filter ? dlist.filter(d => d.status === 'ACTIVE') : []);
                     setDepartments(activeDepartments.map(dept => (dept.name || '').replace(/\s*Program$/i, '')));
                 } else {
-                    throw new Error('Failed to fetch departments');
+                    setDepartments([
+                        'Computer Science',
+                        'Business Administration',
+                        'Arts & Humanities',
+                        'Engineering',
+                        'Teacher Education',
+                        'Accountancy',
+                        'Nursing',
+                        'Criminal Justice',
+                        'Tourism Management'
+                    ]);
                 }
             } catch (err) {
-                console.warn('Falling back to default departments due to error:', err);
+                console.warn('Failed to fetch departments, using defaults', err);
                 setDepartments([
                     'Computer Science',
                     'Business Administration',
@@ -140,20 +153,8 @@ export default function ReportsPage() {
                 ]);
             }
 
-            // Academic years: keep local defaults if no central API
-            try {
-                const resy = await fetch('/api/academic-years', { method: 'GET', headers: { 'Accept': 'application/json', 'X-Requested-With': 'XMLHttpRequest' } });
-                if (resy.ok) {
-                    const ydata = await resy.json();
-                    const ylist = Array.isArray(ydata) ? ydata : (ydata.years || []);
-                    if (ylist && ylist.length > 0) setAcademicYears(ylist.map(y => y.year || y));
-                    else setAcademicYears(['2023-2024', '2024-2025', '2025-2026']);
-                } else {
-                    setAcademicYears(['2023-2024', '2024-2025', '2025-2026']);
-                }
-            } catch (err) {
-                setAcademicYears(['2023-2024', '2024-2025', '2025-2026']);
-            }
+            // Academic years: default list
+            setAcademicYears(['2023-2024', '2024-2025', '2025-2026']);
         } catch (error) {
             console.error('Error loading settings data:', error);
         }
@@ -399,71 +400,6 @@ export default function ReportsPage() {
         downloadExcel(html, 'student_report.xls');
     };
 
-    // Create a more organized student report (grouped by course, then year) and download as Excel
-    const exportFilteredStudentReport = () => {
-        const students = getFilteredStudentData();
-        // Build rows grouped by course and year level with subtotals
-        const headers = ['Course', 'Year Level', 'Student Number', 'Name', 'Academic Year', 'Email', 'Contact', 'Status'];
-        const rows = [];
-
-        const byCourse = {};
-        students.forEach(s => {
-            const course = s.course || 'Unspecified';
-            if (!byCourse[course]) byCourse[course] = [];
-            byCourse[course].push(s);
-        });
-
-        Object.keys(byCourse).sort().forEach(course => {
-            const group = byCourse[course];
-            ['1st Year','2nd Year','3rd Year','4th Year'].forEach(yl => {
-                const subset = group.filter(x => x.year_level === yl);
-                subset.forEach(student => {
-                    rows.push([course, yl, student.student_number, student.name, student.academic_year || '', student.email || 'N/A', student.contact || 'N/A', student.status]);
-                });
-                if (subset.length > 0) {
-                    // subtotal row for this course/year
-                    rows.push([course, `${yl} Subtotal`, subset.length, '', '', '', '', '']);
-                }
-            });
-            // course total
-            rows.push([course, 'Course Total', group.length, '', '', '', '', '']);
-            // blank spacer row
-            rows.push(['', '', '', '', '', '', '', '']);
-        });
-
-        const html = buildExcelHtml('Student Records Report', headers, rows);
-        const now = new Date().toISOString().slice(0,19).replace(/[:T]/g,'-');
-        downloadExcel(html, `student_records_report_${now}.xls`);
-    };
-
-    const createReportFromModal = () => {
-        // apply filters from reportFilters to build the reportData
-        const filtered = studentData.filter(s => {
-            const courseMatch = !reportFilters.course || s.course === reportFilters.course;
-            const yearMatch = !reportFilters.year_level || s.year_level === reportFilters.year_level;
-            const yearAcadMatch = !reportFilters.academic_year || s.academic_year === reportFilters.academic_year;
-            return courseMatch && yearMatch && yearAcadMatch;
-        });
-        setReportData(filtered);
-    };
-
-    const exportReportModalCsv = () => {
-        const rows = reportData.map(student => [
-            student.student_number,
-            student.name,
-            student.course,
-            student.year_level,
-            student.academic_year,
-            student.email || 'N/A',
-            student.contact || 'N/A',
-            student.status
-        ]);
-        const headers = ['Student Number', 'Name', 'Course', 'Year Level', 'Academic Year', 'Email', 'Contact', 'Status'];
-        const html = buildExcelHtml('Student Report (Filtered)', headers, rows);
-        const now = new Date().toISOString().slice(0,19).replace(/[:T]/g,'-');
-        downloadExcel(html, `student_report_filtered_${now}.xls`);
-    };
-
     // Export faculty data to an Excel (.xls) file with organized table
     const exportFacultyData = () => {
         const filteredFaculty = getFilteredFacultyData();
@@ -480,33 +416,6 @@ export default function ReportsPage() {
 
         const html = buildExcelHtml('Faculty Report', headers, rows);
         downloadExcel(html, 'faculty_report.xls');
-    };
-
-    // Create faculty report from the faculty modal filters
-    const createFacultyReportFromModal = () => {
-        const filtered = facultyData.filter(f => {
-            const deptMatch = !facultyReportFilters.department || (f.department || '') === facultyReportFilters.department;
-            const statusMatch = !facultyReportFilters.status || (f.status || '') === facultyReportFilters.status;
-            return deptMatch && statusMatch;
-        });
-        setFacultyReportData(filtered);
-    };
-
-    // Export the faculty report currently previewed in the faculty modal
-    const exportFacultyReportModalCsv = () => {
-        const rows = facultyReportData.map(faculty => [
-            faculty.faculty_number,
-            faculty.name,
-            faculty.department || 'N/A',
-            faculty.position || 'N/A',
-            faculty.email || 'N/A',
-            faculty.contact || 'N/A',
-            faculty.status || 'N/A'
-        ]);
-        const headers = ['Faculty Number', 'Name', 'Department', 'Position', 'Email', 'Contact', 'Status'];
-        const html = buildExcelHtml('Faculty Report (Filtered)', headers, rows);
-        const now = new Date().toISOString().slice(0,19).replace(/[:T]/g,'-');
-        downloadExcel(html, `faculty_report_filtered_${now}.xls`);
     };
 
     const filteredStudents = getFilteredStudentData();
@@ -755,24 +664,13 @@ export default function ReportsPage() {
                                             onChange={handleFilterChange}
                                         />
                                     </div>
-                                            <div className="col-md-2">
-                                        <div className="d-flex gap-2">
-                                            <button 
-                                                type="button"
-                                                className="btn btn-primary w-100"
-                                                onClick={exportStudentData}
-                                            >
-                                                Export CSV
-                                            </button>
-                                            <button
-                                                type="button"
-                                                className="btn btn-success w-100"
-                                                onClick={() => setShowReportModal(true)}
-                                                title="Open report builder"
-                                            >
-                                                Make Report
-                                            </button>
-                                        </div>
+                                    <div className="col-md-2">
+                                        <button 
+                                            className="btn btn-primary w-100"
+                                            onClick={exportStudentData}
+                                        >
+                                            Export CSV
+                                        </button>
                                     </div>
                                 </div>
                             </div>
@@ -885,108 +783,6 @@ export default function ReportsPage() {
                                     </div>
                                 )}
                             </div>
-                            {/* Report Builder Modal (fixed floating overlay) */}
-                            {showReportModal && (
-                                <div
-                                    className="sfms-modal"
-                                    style={{ position: 'fixed', left: 0, top: 0, width: '100%', height: '100%', zIndex: 5050 }}
-                                >
-                                    {/* Backdrop */}
-                                    <div
-                                        onClick={() => { setShowReportModal(false); setReportData([]); }}
-                                        style={{ position: 'fixed', left: 0, top: 0, width: '100%', height: '100%', background: 'rgba(0,0,0,0.35)', zIndex: 5050 }}
-                                    />
-
-                                    {/* Modal window */}
-                                    <div
-                                        role="dialog"
-                                        aria-modal="true"
-                                        onClick={e => e.stopPropagation()}
-                                        style={{
-                                            position: 'fixed',
-                                            left: '50%',
-                                            top: '50%',
-                                            transform: 'translate(-50%, -50%)',
-                                            width: '92%',
-                                            maxWidth: 920,
-                                            maxHeight: '85vh',
-                                            overflow: 'auto',
-                                            background: 'var(--bs-body-bg, #fff)',
-                                            color: 'var(--bs-body-color, #000)',
-                                            borderRadius: 12,
-                                            padding: 20,
-                                            boxShadow: '0 24px 60px rgba(2,6,23,0.5)',
-                                            zIndex: 5060
-                                        }}
-                                        className="settings-modal-window"
-                                    >
-                                        <div className="modal-form">
-                                            <div className="modal-top d-flex justify-content-between align-items-center mb-4">
-                                                <h5>Create Student Report</h5>
-                                                <button type="button" className="btn-close" onClick={() => { setShowReportModal(false); setReportData([]); }}>×</button>
-                                            </div>
-
-                                            <div className="row g-3 mb-3">
-                                                <div className="col-md-4">
-                                                    <label>Course</label>
-                                                    <select className="form-select" value={reportFilters.course} onChange={e => setReportFilters(prev => ({ ...prev, course: e.target.value }))}>
-                                                        <option value="">All Courses</option>
-                                                        {courses.map(c => <option key={c} value={c}>{c}</option>)}
-                                                    </select>
-                                                </div>
-                                                <div className="col-md-4">
-                                                    <label>Year Level</label>
-                                                    <select className="form-select" value={reportFilters.year_level} onChange={e => setReportFilters(prev => ({ ...prev, year_level: e.target.value }))}>
-                                                        <option value="">All Years</option>
-                                                        {yearLevels.map(y => <option key={y} value={y}>{y}</option>)}
-                                                    </select>
-                                                </div>
-                                                <div className="col-md-4">
-                                                    <label>Academic Year</label>
-                                                    <select className="form-select" value={reportFilters.academic_year} onChange={e => setReportFilters(prev => ({ ...prev, academic_year: e.target.value }))}>
-                                                        <option value="">All Years</option>
-                                                        {academicYears.map(y => <option key={y} value={y}>{y}</option>)}
-                                                    </select>
-                                                </div>
-                                            </div>
-
-                                            <div className="d-flex justify-content-end gap-2">
-                                                <button type="button" className="btn btn-outline-secondary" onClick={() => { setShowReportModal(false); setReportData([]); }}>Cancel</button>
-                                                <button type="button" className="btn btn-primary" onClick={() => { createReportFromModal(); }}>Create</button>
-                                                <button type="button" className="btn btn-success" disabled={!(reportData && reportData.length > 0)} onClick={() => { exportReportModalCsv(); }}>{reportData && reportData.length > 0 ? 'Export CSV' : 'Export (Create first)'}</button>
-                                            </div>
-
-                                            {reportData && reportData.length > 0 && (
-                                                <div className="mt-4">
-                                                    <h6>Preview: {reportData.length} records</h6>
-                                                    <div style={{ maxHeight: 260, overflowY: 'auto' }}>
-                                                        <table className="table table-sm">
-                                                            <thead>
-                                                                <tr>
-                                                                    <th>Student #</th>
-                                                                    <th>Name</th>
-                                                                    <th>Course</th>
-                                                                    <th>Year</th>
-                                                                </tr>
-                                                            </thead>
-                                                            <tbody>
-                                                                {reportData.slice(0,50).map(s => (
-                                                                    <tr key={s.id}>
-                                                                        <td>{s.student_number}</td>
-                                                                        <td>{s.name}</td>
-                                                                        <td>{s.course}</td>
-                                                                        <td>{s.year_level}</td>
-                                                                    </tr>
-                                                                ))}
-                                                            </tbody>
-                                                        </table>
-                                                    </div>
-                                                </div>
-                                            )}
-                                        </div>
-                                    </div>
-                                </div>
-                            )}
                         </div>
                     )}
 
@@ -1035,30 +831,12 @@ export default function ReportsPage() {
                                         />
                                     </div>
                                     <div className="col-md-2">
-                                        <div className="d-flex gap-2">
-                                            <button 
-                                                className="btn btn-primary w-100"
-                                                onClick={exportFacultyData}
-                                            >
-                                                Export CSV
-                                            </button>
-                                            <button
-                                                type="button"
-                                                className="btn btn-success w-100"
-                                                onClick={() => {
-                                                    // Prefill faculty modal filters from visible filters
-                                                    setFacultyReportFilters({
-                                                        department: facultyFilters.department || '',
-                                                        status: facultyFilters.status || ''
-                                                    });
-                                                    setFacultyReportData([]);
-                                                    setShowFacultyReportModal(true);
-                                                }}
-                                                title="Open faculty report builder"
-                                            >
-                                                Make Report
-                                            </button>
-                                        </div>
+                                        <button 
+                                            className="btn btn-primary w-100"
+                                            onClick={exportFacultyData}
+                                        >
+                                            Export CSV
+                                        </button>
                                     </div>
                                 </div>
                             </div>
@@ -1153,74 +931,6 @@ export default function ReportsPage() {
                                         <p className="text-muted">No faculty records found.</p>
                                     </div>
                                 )}
-                            </div>
-                        </div>
-                    )}
-
-                    {/* Faculty Report Builder Modal (floating overlay) */}
-                    {showFacultyReportModal && currentView === 'faculty' && (
-                        <div className="sfms-modal" style={{ position: 'fixed', left: 0, top: 0, width: '100%', height: '100%', zIndex: 5050 }}>
-                            <div onClick={() => { setShowFacultyReportModal(false); setFacultyReportData([]); }} style={{ position: 'fixed', left: 0, top: 0, width: '100%', height: '100%', background: 'rgba(0,0,0,0.35)', zIndex: 5050 }} />
-
-                            <div role="dialog" aria-modal="true" onClick={e => e.stopPropagation()} style={{ position: 'fixed', left: '50%', top: '50%', transform: 'translate(-50%, -50%)', width: '92%', maxWidth: 760, maxHeight: '80vh', overflow: 'auto', background: 'var(--bs-body-bg, #fff)', color: 'var(--bs-body-color, #000)', borderRadius: 12, padding: 20, boxShadow: '0 24px 60px rgba(2,6,23,0.5)', zIndex: 5060 }} className="settings-modal-window">
-                                <div className="modal-form">
-                                    <div className="modal-top d-flex justify-content-between align-items-center mb-4">
-                                        <h5>Create Faculty Report</h5>
-                                        <button type="button" className="btn-close" onClick={() => { setShowFacultyReportModal(false); setFacultyReportData([]); }}>×</button>
-                                    </div>
-
-                                    <div className="row g-3 mb-3">
-                                        <div className="col-md-6">
-                                            <label>Department</label>
-                                            <select className="form-select" value={facultyReportFilters.department} onChange={e => setFacultyReportFilters(prev => ({ ...prev, department: e.target.value }))}>
-                                                <option value="">All Departments</option>
-                                                {departments.map(d => <option key={d} value={d}>{d}</option>)}
-                                            </select>
-                                        </div>
-                                        <div className="col-md-6">
-                                            <label>Status</label>
-                                            <select className="form-select" value={facultyReportFilters.status} onChange={e => setFacultyReportFilters(prev => ({ ...prev, status: e.target.value }))}>
-                                                <option value="">All Status</option>
-                                                <option value="ACTIVE">Active</option>
-                                                <option value="INACTIVE">Inactive</option>
-                                            </select>
-                                        </div>
-                                    </div>
-
-                                    <div className="d-flex justify-content-end gap-2">
-                                        <button type="button" className="btn btn-outline-secondary" onClick={() => { setShowFacultyReportModal(false); setFacultyReportData([]); }}>Cancel</button>
-                                        <button type="button" className="btn btn-primary" onClick={() => { createFacultyReportFromModal(); }}>Create</button>
-                                        <button type="button" className="btn btn-success" disabled={!(facultyReportData && facultyReportData.length > 0)} onClick={() => { exportFacultyReportModalCsv(); }}>{facultyReportData && facultyReportData.length > 0 ? 'Export CSV' : 'Export (Create first)'}</button>
-                                    </div>
-
-                                    {facultyReportData && facultyReportData.length > 0 && (
-                                        <div className="mt-4">
-                                            <h6>Preview: {facultyReportData.length} records</h6>
-                                            <div style={{ maxHeight: 300, overflowY: 'auto' }}>
-                                                <table className="table table-sm">
-                                                    <thead>
-                                                        <tr>
-                                                            <th>Faculty #</th>
-                                                            <th>Name</th>
-                                                            <th>Department</th>
-                                                            <th>Position</th>
-                                                        </tr>
-                                                    </thead>
-                                                    <tbody>
-                                                        {facultyReportData.slice(0,200).map(f => (
-                                                            <tr key={f.id || f.faculty_number}>
-                                                                <td>{f.faculty_number}</td>
-                                                                <td>{f.name}</td>
-                                                                <td>{f.department}</td>
-                                                                <td>{f.position}</td>
-                                                            </tr>
-                                                        ))}
-                                                    </tbody>
-                                                </table>
-                                            </div>
-                                        </div>
-                                    )}
-                                </div>
                             </div>
                         </div>
                     )}

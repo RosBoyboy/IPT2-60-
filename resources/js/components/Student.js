@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import NotificationBell from './NotificationBell';
+import { initTheme, toggleTheme } from '../utils/theme';
 
 export default function StudentPage() {
     const navigate = useNavigate();
@@ -29,8 +30,34 @@ export default function StudentPage() {
         street_address: '',
         city_municipality: '',
         province_region: '',
-        zip_code: ''
+        zip_code: '',
+        // Parent names
+        mother_name: '',
+        father_name: ''
     });
+    // File attachments
+    const [photoFile, setPhotoFile] = useState(null);
+    const [gradeSlipFile, setGradeSlipFile] = useState(null);
+    const [photoPreview, setPhotoPreview] = useState(null);
+    // Persisted uploaded student photos fallback (student_number -> dataURL)
+    const [uploadedStudentPhotos, setUploadedStudentPhotos] = useState({});
+
+    useEffect(() => {
+        try {
+            const raw = localStorage.getItem('sfms_uploaded_student_photos');
+            if (raw) setUploadedStudentPhotos(JSON.parse(raw));
+        } catch (e) {
+            console.error('Failed to load uploaded student photos from localStorage', e);
+        }
+    }, []);
+
+    const saveUploadedStudentPhotos = (map) => {
+        try {
+            localStorage.setItem('sfms_uploaded_student_photos', JSON.stringify(map || {}));
+        } catch (e) {
+            console.error('Failed to save uploaded student photos to localStorage', e);
+        }
+    };
     const [errors, setErrors] = useState([]);
     const [showToast, setShowToast] = useState(false);
     const [toastMessage, setToastMessage] = useState('');
@@ -58,6 +85,7 @@ export default function StudentPage() {
     // Menus (profile only)
     const [showProfileMenu, setShowProfileMenu] = useState(false);
     const profileMenuRef = React.useRef(null);
+    const [theme, setTheme] = useState('light');
     useEffect(() => {
         const onDown = (e) => {
             if (profileMenuRef.current && !profileMenuRef.current.contains(e.target)) setShowProfileMenu(false);
@@ -100,35 +128,29 @@ export default function StudentPage() {
         } catch (e) {}
     };
 
-    // Load courses and academic years from localStorage
+    // Load courses and academic years from API (fallback to localStorage)
     useEffect(() => {
         loadSettingsData();
         fetchProfile();
+        try { const t = initTheme(); setTheme(t); } catch (e) {}
     }, []);
 
-    const loadSettingsData = () => {
-        // Load courses from localStorage
-        const savedCourses = localStorage.getItem('sfms_courses');
-        if (savedCourses) {
-            const coursesData = JSON.parse(savedCourses);
-            const activeCourses = coursesData.filter(course => course.status === 'ACTIVE');
-            setCourses(activeCourses.map(course => course.name));
-        } else {
-            // Fallback to default courses if not found
-            setCourses([
-                'Computer Science',
-                'Business Administration',
-                'Arts & Humanities',
-                'Engineering',
-                'Mathematics',
-                'Physics',
-                'Chemistry',
-                'Biology',
-                'Psychology',
-                'Economics',
-                'Political Science',
-                'Sociology'
-            ]);
+    const loadSettingsData = async () => {
+        // Courses: try API first
+        try {
+            const res = await fetch('/api/courses');
+            if (res.ok) {
+                const data = await res.json();
+                const list = (data.courses || []).filter(c => c.status === 'ACTIVE').map(c => ({ id: c.id, name: (c.name || '').replace(/\s*Program$/i, '') }));
+                setCourses(list);
+            } else {
+                throw new Error('API courses not ok');
+            }
+        } catch (e) {
+            // Fallback to small default set
+            console.warn('Failed to fetch courses, using defaults', e);
+            const defaults = ['Computer Science','Business Administration','Arts & Humanities','Engineering','Mathematics','Physics','Chemistry','Biology','Psychology','Economics','Political Science','Sociology'];
+            setCourses(defaults.map((n,i) => ({ id: i+1, name: n })));
         }
 
         // Load academic years from localStorage
@@ -181,7 +203,23 @@ export default function StudentPage() {
             
             if (response.ok) {
                 const data = await response.json();
-                setStudentData(data.students || data);
+                const list = data.students || data;
+                setStudentData(list);
+                // Clean up any local fallback images for items that now have server photo_url
+                try {
+                    const next = { ...(uploadedStudentPhotos || {}) };
+                    (Array.isArray(list) ? list : []).forEach(s => {
+                        if (s && s.student_number && s.photo_url && next[s.student_number]) {
+                            delete next[s.student_number];
+                        }
+                    });
+                    if (JSON.stringify(next) !== JSON.stringify(uploadedStudentPhotos)) {
+                        setUploadedStudentPhotos(next);
+                        saveUploadedStudentPhotos(next);
+                    }
+                } catch (e) {
+                    console.error('Error cleaning uploadedStudentPhotos after fetch', e);
+                }
             } else {
                 console.error('Failed to fetch student data');
                 setErrors(['Failed to load student data']);
@@ -275,72 +313,98 @@ export default function StudentPage() {
         }));
     };
 
+    // File input handlers
+    const handlePhotoChange = (e) => {
+        const file = e.target.files && e.target.files[0];
+        if (file) {
+            setPhotoFile(file);
+            try { setPhotoPreview(URL.createObjectURL(file)); } catch (err) { console.error(err); }
+        } else {
+            setPhotoFile(null);
+            setPhotoPreview(null);
+        }
+    };
+
+    const handleGradeSlipChange = (e) => {
+        const file = e.target.files && e.target.files[0];
+        if (file) setGradeSlipFile(file); else setGradeSlipFile(null);
+    };
+
     const handleSubmit = async (e) => {
         e.preventDefault();
         setErrors([]);
 
         try {
-            const csrfToken = getCsrfToken();
-            const headers = {
-                'Content-Type': 'application/json',
-                'Accept': 'application/json',
-                'X-Requested-With': 'XMLHttpRequest',
-            };
+            setLoading(true);
 
-            if (csrfToken) {
-                headers['X-CSRF-TOKEN'] = csrfToken;
-            }
+            const isEdit = !!editingStudent;
+            const url = isEdit ? `/api/students/${editingStudent.id}` : '/api/students';
 
-            const url = editingStudent ? `/api/students/${editingStudent.id}` : '/api/students';
-            const method = editingStudent ? 'PUT' : 'POST';
+            const payload = new FormData();
 
-            const response = await fetch(url, {
-                method: method,
-                headers: headers,
-                body: JSON.stringify(formData)
+            // Append all form fields
+            Object.keys(formData).forEach(key => {
+                // skip undefined
+                if (formData[key] !== undefined) payload.append(key, formData[key]);
             });
 
-            const contentType = response.headers.get('content-type');
-            let data;
-            
-            if (contentType && contentType.includes('application/json')) {
-                data = await response.json();
-            } else {
-                const text = await response.text();
-                try {
-                    data = JSON.parse(text);
-                } catch {
-                    data = { message: text };
-                }
+            // Attach files if provided
+            if (photoFile) payload.append('photo', photoFile);
+            if (gradeSlipFile) payload.append('grade_slip', gradeSlipFile);
+
+            // If editing, use method override for Laravel
+            if (isEdit) payload.append('_method', 'PUT');
+
+            const csrfToken = getCsrfToken();
+
+            const headers = {
+                'X-Requested-With': 'XMLHttpRequest',
+                ...(csrfToken ? { 'X-CSRF-TOKEN': csrfToken } : {})
+            };
+
+            const response = await fetch(url, {
+                method: 'POST', // use POST so form-data with _method works for PUT
+                headers: headers,
+                body: payload
+            });
+
+            const contentType = response.headers.get('content-type') || '';
+            let data = {};
+            if (contentType.includes('application/json')) data = await response.json();
+            else {
+                const text = await response.text().catch(() => '');
+                try { data = JSON.parse(text); } catch { data = { message: text }; }
             }
 
             if (response.ok) {
-                if (editingStudent) {
-                    setStudentData(prev => 
-                        prev.map(student => 
-                            student.id === editingStudent.id ? data.student : student
-                        )
-                    );
-                    setToastMessage(data.success || 'Student updated successfully!');
-                } else {
-                    setStudentData(prev => [data.student, ...prev]);
-                    setToastMessage(data.success || 'Student added successfully!');
-
-                    // Add notification for new student
-                    pushNotification({
-                        id: `student-create-${Date.now()}`,
-                        type: 'success',
-                        title: 'New student added',
-                        desc: `${data.student.student_number} - ${data.student.name}`,
-                        time: Date.now(),
-                        read: false
-                    });
+                // If we uploaded a photo file, persist a local dataURL fallback so the avatar
+                // displays immediately and survives refresh if the server doesn't return photo_url.
+                const studentNumber = (isEdit ? (editingStudent && editingStudent.student_number) : formData.student_number) || (data && data.student && data.student.student_number) || '';
+                if (photoFile && studentNumber) {
+                    try {
+                        const reader = new FileReader();
+                        reader.onload = () => {
+                            const dataUrl = reader.result;
+                            const next = { ...(uploadedStudentPhotos || {}) };
+                            next[studentNumber] = dataUrl;
+                            setUploadedStudentPhotos(next);
+                            saveUploadedStudentPhotos(next);
+                        };
+                        reader.readAsDataURL(photoFile);
+                    } catch (e) {
+                        console.error('Failed to read uploaded student photo for local persistence', e);
+                    }
                 }
-                
+
+                // refresh list
+                await fetchStudentData();
+
                 setShowModal(false);
                 setEditingStudent(null);
-                setShowToast(true);
-                
+                setPhotoFile(null);
+                setGradeSlipFile(null);
+                setPhotoPreview(null);
+
                 setFormData({
                     student_number: '',
                     name: '',
@@ -356,9 +420,13 @@ export default function StudentPage() {
                     street_address: '',
                     city_municipality: '',
                     province_region: '',
-                    zip_code: ''
+                    zip_code: '',
+                    mother_name: '',
+                    father_name: ''
                 });
 
+                setToastMessage(isEdit ? (data.success || 'Student updated successfully!') : (data.success || 'Student added successfully!'));
+                setShowToast(true);
                 setTimeout(() => setShowToast(false), 3000);
             } else {
                 if (data.errors) {
@@ -373,6 +441,8 @@ export default function StudentPage() {
         } catch (error) {
             console.error('Error saving student:', error);
             setErrors(['Network error occurred. Please check your connection and try again.']);
+        } finally {
+            setLoading(false);
         }
     };
 
@@ -393,8 +463,21 @@ export default function StudentPage() {
             street_address: student.street_address || '',
             city_municipality: student.city_municipality || '',
             province_region: student.province_region || '',
-            zip_code: student.zip_code || ''
+            zip_code: student.zip_code || '',
+            mother_name: student.mother_name || '',
+            father_name: student.father_name || ''
         });
+        // try to set course_id if available
+        try {
+            const sel = courses.find(c => c.name === student.course);
+            if (sel && sel.id) {
+                setFormData(prev => ({ ...prev, course_id: sel.id }));
+            }
+        } catch (e) {}
+        // show existing photo if available, prefer server URL then local fallback
+        setPhotoPreview(student.photo_url || student.profile_photo_url || uploadedStudentPhotos[student.student_number] || null);
+        setPhotoFile(null);
+        setGradeSlipFile(null);
         setShowModal(true);
     };
 
@@ -541,8 +624,13 @@ export default function StudentPage() {
             street_address: '',
             city_municipality: '',
             province_region: '',
-            zip_code: ''
+            zip_code: '',
+            mother_name: '',
+            father_name: ''
         });
+        setPhotoFile(null);
+        setGradeSlipFile(null);
+        setPhotoPreview(null);
     };
 
     const handleCloseArchiveModal = () => {
@@ -583,6 +671,24 @@ export default function StudentPage() {
         <svg viewBox="0 0 24 24" width="18" height="18" fill="none" {...withStroke(false)} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
             <path d="M18 8a6 6 0 10-12 0c0 7-3 8-3 8h18s-3-1-3-8"></path>
             <path d="M13.73 21a2 2 0 01-3.46 0"></path>
+        </svg>
+    );
+    const sunIcon = (isWhite = false) => (
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" {...withStroke(isWhite)} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+            <circle cx="12" cy="12" r="4"></circle>
+            <path d="M12 2v2"></path>
+            <path d="M12 20v2"></path>
+            <path d="M4.93 4.93l1.41 1.41"></path>
+            <path d="M17.66 17.66l1.41 1.41"></path>
+            <path d="M2 12h2"></path>
+            <path d="M20 12h2"></path>
+            <path d="M4.93 19.07l1.41-1.41"></path>
+            <path d="M17.66 6.34l1.41-1.41"></path>
+        </svg>
+    );
+    const moonIcon = (isWhite = false) => (
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" {...withStroke(isWhite)} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+            <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
         </svg>
     );
     const settingsIcon = () => (
@@ -701,6 +807,13 @@ export default function StudentPage() {
                         <div className="top-icons">
                             
                             <NotificationBell />
+                            <button 
+                                className="icon-circle" 
+                                title={theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode'}
+                                onClick={() => { const t = toggleTheme(); setTheme(t); }}
+                            >
+                                {theme === 'dark' ? sunIcon() : moonIcon()}
+                            </button>
                             <button className="icon-circle" title="Settings" onClick={() => navigate('/dashboard/settings')}>
                                 {settingsIcon()}
                             </button>
@@ -737,7 +850,7 @@ export default function StudentPage() {
                                 >
                                     <option value="">All Courses</option>
                                     {courses.map(course => (
-                                        <option key={course} value={course}>{course}</option>
+                                        <option key={course.id || course.name} value={course.name}>{course.name}</option>
                                     ))}
                                 </select>
                             </div>
@@ -822,7 +935,7 @@ export default function StudentPage() {
                                     {studentData.map((student) => (
                                         <tr key={student.id}>
                                             <td>
-                                                {renderAvatar(student.name, student.photo_url || student.profile_photo_url)}
+                                                {renderAvatar(student.name, student.photo_url || student.profile_photo_url || uploadedStudentPhotos[student.student_number])}
                                             </td>
                                             <td className="fw-semibold">{student.student_number}</td>
                                             <td><div className="fw-semibold">{student.name}</div></td>
@@ -894,7 +1007,7 @@ export default function StudentPage() {
                                 className="sfms-modal-backdrop"
                                 onClick={handleCloseModal}
                             ></div>
-                            <div className="sfms-modal-window bg-white">
+                            <div className="sfms-modal-window bg-white" style={{ maxHeight: '80vh', overflowY: 'auto' }}>
                                 <div className="modal-form">
                                     <div className="modal-top d-flex justify-content-between align-items-center mb-4">
                                         <h5>{editingStudent ? 'Edit Student' : 'Add New Student'}</h5>
@@ -953,12 +1066,16 @@ export default function StudentPage() {
                                                         id="course"
                                                         name="course"
                                                         value={formData.course}
-                                                        onChange={handleInputChange}
+                                                        onChange={(e) => {
+                                                            const val = e.target.value;
+                                                            const selected = courses.find(c => c.name === val);
+                                                            setFormData(prev => ({ ...prev, course: val, course_id: selected ? selected.id : null }));
+                                                        }}
                                                         required
                                                     >
                                                         <option value="">Select Course</option>
                                                         {courses.map(course => (
-                                                            <option key={course} value={course}>{course}</option>
+                                                            <option key={course.id || course.name} value={course.name}>{course.name}</option>
                                                         ))}
                                                     </select>
                                                 </div>
@@ -1016,6 +1133,30 @@ export default function StudentPage() {
                                                         value={formData.contact}
                                                         onChange={handleInputChange}
                                                         placeholder="e.g., +1234567890"
+                                                    />
+                                                </div>
+                                                <div className="col-md-6">
+                                                    <label htmlFor="mother_name">Name of Mother</label>
+                                                    <input
+                                                        type="text"
+                                                        className="form-control"
+                                                        id="mother_name"
+                                                        name="mother_name"
+                                                        value={formData.mother_name}
+                                                        onChange={handleInputChange}
+                                                        placeholder="e.g., Maria Santos"
+                                                    />
+                                                </div>
+                                                <div className="col-md-6">
+                                                    <label htmlFor="father_name">Name of Father</label>
+                                                    <input
+                                                        type="text"
+                                                        className="form-control"
+                                                        id="father_name"
+                                                        name="father_name"
+                                                        value={formData.father_name}
+                                                        onChange={handleInputChange}
+                                                        placeholder="e.g., Juan Santos"
                                                     />
                                                 </div>
                                                 <div className="col-md-4">
@@ -1105,6 +1246,34 @@ export default function StudentPage() {
                                                     />
                                                 </div>
                                                 <div className="col-md-6">
+                                                    <label htmlFor="photo">Add Photo</label>
+                                                    <input
+                                                        type="file"
+                                                        accept="image/*"
+                                                        className="form-control"
+                                                        id="photo"
+                                                        name="photo"
+                                                        onChange={handlePhotoChange}
+                                                    />
+                                                    {photoPreview && (
+                                                        <div style={{ marginTop: 8 }}>
+                                                            <img src={photoPreview} alt="preview" style={{ maxWidth: 120, borderRadius: 8 }} />
+                                                        </div>
+                                                    )}
+                                                </div>
+                                                <div className="col-md-6">
+                                                    <label htmlFor="grade_slip">Grade Slip</label>
+                                                    <input
+                                                        type="file"
+                                                        accept="application/pdf,image/*"
+                                                        className="form-control"
+                                                        id="grade_slip"
+                                                        name="grade_slip"
+                                                        onChange={handleGradeSlipChange}
+                                                    />
+                                                    <div className="small text-muted" style={{ marginTop: 6 }}>Accepted: PDF or image</div>
+                                                </div>
+                                                <div className="col-md-6">
                                                     <label htmlFor="status">Status *</label>
                                                     <select
                                                         className="form-select"
@@ -1149,7 +1318,7 @@ export default function StudentPage() {
                                 className="sfms-modal-backdrop"
                                 onClick={handleCloseArchiveModal}
                             ></div>
-                            <div className="sfms-modal-window bg-white">
+                            <div className="sfms-modal-window bg-white" style={{ maxHeight: '60vh', overflowY: 'auto' }}>
                                 <div className="modal-form">
                                     <div className="modal-top d-flex justify-content-between align-items-center mb-4">
                                         <h5>Move Student to Inactive</h5>
@@ -1194,7 +1363,7 @@ export default function StudentPage() {
                                 className="sfms-modal-backdrop"
                                 onClick={closeArchivePage}
                             ></div>
-                            <div className="sfms-modal-window bg-white archive-page-modal">
+                            <div className="sfms-modal-window bg-white archive-page-modal" style={{ maxHeight: '85vh', overflowY: 'auto' }}>
                                 <div className="modal-form">
                                     <div className="modal-top d-flex justify-content-between align-items-center mb-4">
                                         <h5>Student Archive</h5>
@@ -1219,7 +1388,7 @@ export default function StudentPage() {
                                                 >
                                                     <option value="">All Courses</option>
                                                     {courses.map(course => (
-                                                        <option key={course} value={course}>{course}</option>
+                                                        <option key={course.id || course.name} value={course.name}>{course.name}</option>
                                                     ))}
                                                 </select>
                                             </div>
@@ -1274,7 +1443,7 @@ export default function StudentPage() {
                                                     {archivedData.map((student) => (
                                                         <tr key={student.id}>
                                                             <td>
-                                                                {renderAvatar(student.name, student.photo_url || student.profile_photo_url)}
+                                                                {renderAvatar(student.name, student.photo_url || student.profile_photo_url || uploadedStudentPhotos[student.student_number])}
                                                             </td>
                                                             <td className="fw-semibold">{student.student_number}</td>
                                                             <td>

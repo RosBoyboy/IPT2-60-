@@ -1,6 +1,7 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import NotificationBell from './NotificationBell';
+import { toggleTheme, getStoredTheme } from '../utils/theme';
 
 export default function ProfilePage() {
     const navigate = useNavigate();
@@ -13,6 +14,10 @@ export default function ProfilePage() {
         lastLogin: '',
         joinDate: ''
     });
+    const [profilePic, setProfilePic] = useState(''); // preview URL or server URL
+    const [profilePicFile, setProfilePicFile] = useState(null);
+    const [theme, setTheme] = useState((typeof window !== 'undefined' && getStoredTheme && getStoredTheme()) || 'light');
+    const fileInputRef = useRef(null);
     const [passwordData, setPasswordData] = useState({
         currentPassword: '',
         newPassword: '',
@@ -52,6 +57,16 @@ export default function ProfilePage() {
                     lastLogin: u.last_login_at || '',
                     joinDate: u.joined_at || ''
                 });
+                // set avatar if provided by API, otherwise check local fallback
+                if (u.avatar_url) {
+                    setProfilePic(u.avatar_url);
+                    try { localStorage.removeItem('sfms_profile_pic'); } catch (e) {}
+                } else {
+                    try {
+                        const local = localStorage.getItem('sfms_profile_pic');
+                        if (local) setProfilePic(local);
+                    } catch (e) {}
+                }
             }
         } catch (e) {}
     };
@@ -81,20 +96,40 @@ export default function ProfilePage() {
         setErrors([]);
 
         try {
-            const res = await fetch('/api/profile', {
-                method: 'PUT',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({
-                    name: profileData.name,
-                    email: profileData.email,
-                    department: profileData.department,
-                })
-            });
-            const data = await res.json();
+            let res;
+            let data;
+
+            // If a new picture was selected, send multipart/form-data
+            if (profilePicFile) {
+                const form = new FormData();
+                form.append('name', profileData.name);
+                form.append('email', profileData.email);
+                form.append('department', profileData.department);
+                form.append('avatar', profilePicFile);
+
+                res = await fetch('/api/profile', {
+                    method: 'POST', // use POST for multipart; backend should accept
+                    body: form
+                });
+                data = await res.json();
+            } else {
+                res = await fetch('/api/profile', {
+                    method: 'PUT',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({
+                        name: profileData.name,
+                        email: profileData.email,
+                        department: profileData.department,
+                    })
+                });
+                data = await res.json();
+            }
             if (res.ok) {
                 setToastMessage(data.success || 'Profile updated successfully!');
                 setShowToast(true);
                 fetchLogs();
+                // if server returned avatar url update preview
+                if (data.user && data.user.avatar_url) setProfilePic(data.user.avatar_url);
             } else if (data.errors) {
                 setErrors(Object.values(data.errors).flat());
             }
@@ -102,6 +137,49 @@ export default function ProfilePage() {
             setLoading(false);
             setTimeout(() => setShowToast(false), 3000);
         }
+    };
+
+    // Handle selecting a local image file for profile picture
+    const handleFileChange = (e) => {
+        const file = e.target.files && e.target.files[0];
+        if (!file) return;
+        // basic client-side validation
+        if (!file.type.startsWith('image/')) {
+            setErrors(['Selected file is not an image']);
+            return;
+        }
+        setProfilePicFile(file);
+        // create preview data URL and persist locally until server returns avatar_url
+        try {
+            const reader = new FileReader();
+            reader.onload = function(evt) {
+                const dataUrl = evt.target.result;
+                setProfilePic(dataUrl);
+                try { localStorage.setItem('sfms_profile_pic', dataUrl); } catch (e) {}
+            };
+            reader.readAsDataURL(file);
+        } catch (e) {
+            // fallback to object URL
+            const url = URL.createObjectURL(file);
+            setProfilePic(url);
+        }
+    };
+
+    useEffect(() => {
+        // cleanup object URL when component unmounts or when a new file is selected
+        return () => {
+            if (profilePic && profilePic.startsWith('blob:')) {
+                URL.revokeObjectURL(profilePic);
+            }
+        };
+    }, [profilePic]);
+
+    // Theme toggle handler for this page
+    const handleToggleTheme = () => {
+        try {
+            const next = toggleTheme();
+            setTheme(next);
+        } catch (err) {}
     };
 
     const handlePasswordChange = async (e) => {
@@ -273,6 +351,18 @@ export default function ProfilePage() {
                     <div className="topbar-right">
                         <div className="top-icons">
                             <NotificationBell />
+                            <button
+                                className="icon-circle"
+                                title="Toggle theme"
+                                onClick={handleToggleTheme}
+                                style={{ marginRight: 8 }}
+                            >
+                                {theme === 'dark' ? (
+                                    <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="5"></circle><path d="M12 1v2"></path><path d="M12 21v2"></path><path d="M4.22 4.22l1.42 1.42"></path><path d="M18.36 18.36l1.42 1.42"></path><path d="M1 12h2"></path><path d="M21 12h2"></path><path d="M4.22 19.78l1.42-1.42"></path><path d="M18.36 5.64l1.42-1.42"></path></svg>
+                                ) : (
+                                    <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path></svg>
+                                )}
+                            </button>
                             <button 
                                 className="icon-circle" 
                                 title="Settings"
@@ -307,10 +397,20 @@ export default function ProfilePage() {
                             <div className="col-md-3">
                                 <div className="profile-nav bg-white p-4">
                                     <div className="user-info text-center mb-4">
-                                        <div className="avatar-lg bg-primary rounded-circle d-flex align-items-center justify-content-center mx-auto mb-3">
-                                            <span className="text-white fs-4">
-                                                {profileData.name.split(' ').map(n => n[0]).join('')}
-                                            </span>
+                                        <div className="avatar-lg bg-primary rounded-circle d-flex align-items-center justify-content-center mx-auto mb-2" style={{width:96, height:96, overflow:'hidden'}}>
+                                            {profilePic ? (
+                                                <img src={profilePic} alt="Profile" style={{width:'100%', height:'100%', objectFit:'cover'}} />
+                                            ) : (
+                                                <span className="text-white fs-4">
+                                                    {profileData.name.split(' ').map(n => n[0]).join('')}
+                                                </span>
+                                            )}
+                                        </div>
+                                        <div>
+                                            <button type="button" className="btn btn-sm btn-outline-secondary mb-2" onClick={() => fileInputRef.current && fileInputRef.current.click()}>
+                                                Change Photo
+                                            </button>
+                                            <input ref={fileInputRef} type="file" accept="image/*" style={{display:'none'}} onChange={handleFileChange} />
                                         </div>
                                         <h5 className="mb-1">{profileData.name}</h5>
                                         <p className="text-muted mb-2">{profileData.role}</p>

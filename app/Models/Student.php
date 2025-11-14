@@ -13,6 +13,7 @@ class Student extends Model
         'student_number',
         'name',
         'course',
+        'course_id',
         'year_level',
         'academic_year',
         'email',
@@ -28,4 +29,9 @@ class Student extends Model
         'zip_code',
         'archived_at',
     ];
+
+    public function courseRelation()
+    {
+        return $this->belongsTo(\App\Models\Course::class, 'course_id');
+    }
 }

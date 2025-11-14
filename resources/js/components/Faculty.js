@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import NotificationBell from './NotificationBell';
+import { initTheme, toggleTheme } from '../utils/theme';
 
 export default function FacultyPage() {
     const navigate = useNavigate();
@@ -45,6 +46,29 @@ export default function FacultyPage() {
 
     // Load departments from localStorage
     const [departments, setDepartments] = useState([]);
+    // Photo upload state
+    const [photoFile, setPhotoFile] = useState(null);
+    const [photoPreview, setPhotoPreview] = useState(null);
+    // Persisted uploaded photos (data URLs) fallback when server doesn't return photo_url
+    const [uploadedPhotos, setUploadedPhotos] = useState({});
+
+    // Load persisted uploaded photos from localStorage on mount
+    useEffect(() => {
+        try {
+            const raw = localStorage.getItem('sfms_uploaded_faculty_photos');
+            if (raw) setUploadedPhotos(JSON.parse(raw));
+        } catch (e) {
+            console.error('Failed to load uploaded faculty photos from localStorage', e);
+        }
+    }, []);
+
+    const saveUploadedPhotos = (map) => {
+        try {
+            localStorage.setItem('sfms_uploaded_faculty_photos', JSON.stringify(map || {}));
+        } catch (e) {
+            console.error('Failed to save uploaded faculty photos to localStorage', e);
+        }
+    };
 
     function logout() {
         localStorage.removeItem('sfms_auth');
@@ -53,6 +77,7 @@ export default function FacultyPage() {
     // Menus (profile only)
     const [showProfileMenu, setShowProfileMenu] = useState(false);
     const profileMenuRef = React.useRef(null);
+    const [theme, setTheme] = useState('light');
     useEffect(() => {
         const onDown = (e) => {
             if (profileMenuRef.current && !profileMenuRef.current.contains(e.target)) setShowProfileMenu(false);
@@ -95,55 +120,43 @@ export default function FacultyPage() {
         } catch (e) {}
     };
 
-    // Load departments from localStorage
+    // Load departments from API (replace localStorage reliance)
     useEffect(() => {
-        loadSettingsData();
-        fetchProfile();
+        (async () => {
+            await loadSettingsData();
+            fetchProfile();
+            try { const t = initTheme(); setTheme(t); } catch (e) {}
+        })();
     }, []);
 
     // must match settings.js version
     const DEPARTMENTS_VERSION = '2';
 
-    const loadSettingsData = () => {
-        // Load departments from localStorage with version check
-        const savedDepartmentsRaw = localStorage.getItem('sfms_departments');
-        const savedDepartmentsMetaRaw = localStorage.getItem('sfms_departments_meta');
-        let useSavedDepartments = false;
-
-        if (savedDepartmentsRaw && savedDepartmentsMetaRaw) {
-            try {
-                const meta = JSON.parse(savedDepartmentsMetaRaw);
-                if (meta && meta.version === DEPARTMENTS_VERSION) {
-                    useSavedDepartments = true;
-                }
-            } catch (e) {
-                useSavedDepartments = false;
-            }
-        }
-
-        if (useSavedDepartments) {
-            try {
-                const deptData = JSON.parse(savedDepartmentsRaw);
-                const activeDepartments = deptData.filter(dept => dept.status === 'ACTIVE');
-                setDepartments(activeDepartments.map(dept => dept.name));
+    const loadSettingsData = async () => {
+        try {
+            const res = await fetch('/api/departments', { method: 'GET', headers: { 'Accept': 'application/json', 'X-Requested-With': 'XMLHttpRequest' } });
+            if (res.ok) {
+                const data = await res.json();
+                const list = Array.isArray(data) ? data : (data.departments || []);
+                const activeDepartments = (list.filter ? list.filter(d => d.status === 'ACTIVE') : []);
+                setDepartments(activeDepartments.map(dept => (dept.name || '').replace(/\s*Program$/i, '')));
                 return;
-            } catch (err) {
-                // fallthrough to initialize defaults
-                console.warn('Invalid saved departments, falling back to defaults');
             }
+        } catch (err) {
+            console.warn('Failed to fetch departments from API, falling back to defaults', err);
         }
 
-        // Fallback to default departments if not found or version mismatch
+        // Fallback defaults
         setDepartments([
-            'Computer Science Program',
-            'Business Administration Program',
-            'Arts & Sciences Program',
-            'Engineering Program',
-            'Teachers Eductation Program',
-            'Accountancy Program',
-            'Nursing Program',
-            'Criminal Justice Program',
-            'Tourism Management Program'
+            'Computer Science',
+            'Business Administration',
+            'Arts & Humanities',
+            'Engineering',
+            'Teacher Education',
+            'Accountancy',
+            'Nursing',
+            'Criminal Justice',
+            'Tourism Management'
         ]);
     };
 
@@ -184,7 +197,24 @@ export default function FacultyPage() {
             
             if (response.ok) {
                 const data = await response.json();
-                setFacultyData(data.faculties || data);
+                const list = data.faculties || data;
+                setFacultyData(list);
+                // Clean up any local fallback images for items that now have server photo_url
+                try {
+                    const next = { ...(uploadedPhotos || {}) };
+                    (Array.isArray(list) ? list : []).forEach(f => {
+                        if (f && f.faculty_number && f.photo_url && next[f.faculty_number]) {
+                            delete next[f.faculty_number];
+                        }
+                    });
+                    // Only update if changed
+                    if (JSON.stringify(next) !== JSON.stringify(uploadedPhotos)) {
+                        setUploadedPhotos(next);
+                        saveUploadedPhotos(next);
+                    }
+                } catch (e) {
+                    console.error('Error cleaning uploadedPhotos after fetch', e);
+                }
             } else {
                 console.error('Failed to fetch faculty data');
                 setErrors(['Failed to load faculty data']);
@@ -270,6 +300,18 @@ export default function FacultyPage() {
         }));
     };
 
+    // File input handler for faculty photo
+    const handlePhotoChange = (e) => {
+        const file = e.target.files && e.target.files[0];
+        if (file) {
+            setPhotoFile(file);
+            try { setPhotoPreview(URL.createObjectURL(file)); } catch (err) { console.error(err); }
+        } else {
+            setPhotoFile(null);
+            setPhotoPreview(null);
+        }
+    };
+
     const handleArchiveFilterChange = (e) => {
         const { name, value } = e.target;
         setArchiveFilters(prev => ({
@@ -281,92 +323,93 @@ export default function FacultyPage() {
     const handleSubmit = async (e) => {
         e.preventDefault();
         setErrors([]);
-
         try {
+            const isEdit = !!editingFaculty;
+            const url = isEdit ? `/api/faculties/${editingFaculty.id}` : '/api/faculties';
+
+            // Use FormData so we can attach photo files. Laravel accepts multipart even for new records.
+            const payload = new FormData();
+            Object.keys(formData).forEach(key => {
+                if (formData[key] !== undefined && formData[key] !== null) payload.append(key, formData[key]);
+            });
+            if (photoFile) payload.append('photo', photoFile);
+            if (isEdit) payload.append('_method', 'PUT');
+
             const csrfToken = getCsrfToken();
             const headers = {
-                'Content-Type': 'application/json',
-                'Accept': 'application/json',
                 'X-Requested-With': 'XMLHttpRequest',
+                ...(csrfToken ? { 'X-CSRF-TOKEN': csrfToken } : {})
             };
 
-            if (csrfToken) {
-                headers['X-CSRF-TOKEN'] = csrfToken;
-            }
-
-            const url = editingFaculty ? `/api/faculties/${editingFaculty.id}` : '/api/faculties';
-            const method = editingFaculty ? 'PUT' : 'POST';
-
             const response = await fetch(url, {
-                method: method,
+                method: 'POST', // POST with _method=PUT for editing
                 headers: headers,
-                body: JSON.stringify(formData)
+                body: payload
             });
 
             const contentType = response.headers.get('content-type');
             let data;
-            
-            if (contentType && contentType.includes('application/json')) {
-                data = await response.json();
-            } else {
-                const text = await response.text();
-                try {
-                    data = JSON.parse(text);
-                } catch {
-                    data = { message: text };
-                }
+            const ct = contentType || '';
+            if (ct.includes('application/json')) data = await response.json();
+            else {
+                const text = await response.text().catch(() => '');
+                try { data = JSON.parse(text); } catch { data = { message: text }; }
             }
 
             if (response.ok) {
-                if (editingFaculty) {
-                    setFacultyData(prev => 
-                        prev.map(faculty => 
-                            faculty.id === editingFaculty.id ? data.faculty : faculty
-                        )
-                    );
-                    setToastMessage(data.success || 'Faculty updated successfully!');
-                } else {
-                    setFacultyData(prev => [data.faculty, ...prev]);
-                    setToastMessage(data.success || 'Faculty added successfully!');
-
-                    // Add notification for new faculty
-                    pushNotification({
-                        id: `faculty-create-${Date.now()}`,
-                        type: 'success',
-                        title: 'New faculty added',
-                        desc: `${data.faculty.faculty_number} - ${data.faculty.name}`,
-                        time: Date.now(),
-                        read: false
-                    });
+                // If we uploaded a photo file, also persist a local dataURL fallback so the avatar
+                // displays immediately and survives refresh if the server doesn't return photo_url.
+                const facultyNumber = (isEdit ? (editingFaculty && editingFaculty.faculty_number) : formData.faculty_number) || (data && data.faculty && data.faculty.faculty_number) || '';
+                if (photoFile && facultyNumber) {
+                    try {
+                        const reader = new FileReader();
+                        reader.onload = () => {
+                            const dataUrl = reader.result;
+                            const next = { ...(uploadedPhotos || {}) };
+                            next[facultyNumber] = dataUrl;
+                            setUploadedPhotos(next);
+                            saveUploadedPhotos(next);
+                        };
+                        reader.readAsDataURL(photoFile);
+                    } catch (e) {
+                        console.error('Failed to read uploaded photo for local persistence', e);
+                    }
                 }
-                
+
+                // Refresh list from server so we get the saved photo_url and normalized data
+                await fetchFacultyData();
+
                 setShowModal(false);
                 setEditingFaculty(null);
                 setShowToast(true);
-                
-				setFormData({
-					faculty_number: '',
-					name: '',
-					department: '',
-					position: '',
-					email: '',
-					contact: '',
-					status: 'ACTIVE',
-					gender: '',
-					dob: '',
-					age: '',
-					street_address: '',
-					city_municipality: '',
-					province_region: '',
-					zip_code: ''
-				});
 
+                setPhotoFile(null);
+                setPhotoPreview(null);
+
+                setFormData({
+                    faculty_number: '',
+                    name: '',
+                    department: '',
+                    position: '',
+                    email: '',
+                    contact: '',
+                    status: 'ACTIVE',
+                    gender: '',
+                    dob: '',
+                    age: '',
+                    street_address: '',
+                    city_municipality: '',
+                    province_region: '',
+                    zip_code: ''
+                });
+
+                setToastMessage(data.success || (isEdit ? 'Faculty updated successfully!' : 'Faculty added successfully!'));
                 setTimeout(() => setShowToast(false), 3000);
             } else {
-                if (data.errors) {
+                if (data && data.errors) {
                     const errorMessages = Object.values(data.errors).flat();
                     setErrors(errorMessages);
-                } else if (data.message) {
+                } else if (data && data.message) {
                     setErrors([data.message]);
                 } else {
                     setErrors(['Failed to save faculty member. Please try again.']);
@@ -396,6 +439,9 @@ export default function FacultyPage() {
 		province_region: faculty.province_region || '',
 		zip_code: faculty.zip_code || ''
         });
+        // show existing photo if available
+        setPhotoPreview(faculty.photo_url || faculty.profile_photo_url || null);
+        setPhotoFile(null);
         setShowModal(true);
     };
 
@@ -549,6 +595,8 @@ export default function FacultyPage() {
 			province_region: '',
 			zip_code: ''
 		});
+                setPhotoFile(null);
+                setPhotoPreview(null);
     };
 
     const handleCloseArchiveModal = () => {
@@ -589,6 +637,24 @@ export default function FacultyPage() {
         <svg viewBox="0 0 24 24" width="18" height="18" fill="none" {...withStroke(false)} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
             <path d="M18 8a6 6 0 10-12 0c0 7-3 8-3 8h18s-3-1-3-8"></path>
             <path d="M13.73 21a2 2 0 01-3.46 0"></path>
+        </svg>
+    );
+    const sunIcon = (isWhite = false) => (
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" {...withStroke(isWhite)} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+            <circle cx="12" cy="12" r="4"></circle>
+            <path d="M12 2v2"></path>
+            <path d="M12 20v2"></path>
+            <path d="M4.93 4.93l1.41 1.41"></path>
+            <path d="M17.66 17.66l1.41 1.41"></path>
+            <path d="M2 12h2"></path>
+            <path d="M20 12h2"></path>
+            <path d="M4.93 19.07l1.41-1.41"></path>
+            <path d="M17.66 6.34l1.41-1.41"></path>
+        </svg>
+    );
+    const moonIcon = (isWhite = false) => (
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" {...withStroke(isWhite)} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+            <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
         </svg>
     );
     const settingsIcon = () => (
@@ -706,6 +772,13 @@ export default function FacultyPage() {
                         <div className="top-icons">
                             
                             <NotificationBell />
+                            <button 
+                                className="icon-circle" 
+                                title={theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode'}
+                                onClick={() => { const t = toggleTheme(); setTheme(t); }}
+                            >
+                                {theme === 'dark' ? sunIcon() : moonIcon()}
+                            </button>
                             <button className="icon-circle" title="Settings" onClick={() => navigate('/dashboard/settings')}>
                                 {settingsIcon()}
                             </button>
@@ -807,10 +880,10 @@ export default function FacultyPage() {
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    {facultyData.map((faculty) => (
+                                            {facultyData.map((faculty) => (
                                         <tr key={faculty.id}>
                                             <td>
-                                                {renderAvatar(faculty.name, faculty.photo_url || faculty.profile_photo_url)}
+                                                {renderAvatar(faculty.name, faculty.photo_url || faculty.profile_photo_url || uploadedPhotos[faculty.faculty_number])}
                                             </td>
                                             <td className="fw-semibold">{faculty.faculty_number}</td>
                                             <td><div className="fw-semibold">{faculty.name}</div></td>
@@ -983,6 +1056,22 @@ export default function FacultyPage() {
                                                         onChange={handleInputChange}
                                                         placeholder="e.g., +1234567890"
                                                     />
+                                                </div>
+                                                <div className="col-md-6">
+                                                    <label htmlFor="photo">Attach Photo</label>
+                                                    <input
+                                                        type="file"
+                                                        accept="image/*"
+                                                        className="form-control"
+                                                        id="photo"
+                                                        name="photo"
+                                                        onChange={handlePhotoChange}
+                                                    />
+                                                    {photoPreview && (
+                                                        <div style={{ marginTop: 8 }}>
+                                                            <img src={photoPreview} alt="preview" style={{ maxWidth: 120, borderRadius: 8 }} />
+                                                        </div>
+                                                    )}
                                                 </div>
 								<div className="col-md-4">
 									<label htmlFor="gender">Gender</label>
@@ -1240,7 +1329,7 @@ export default function FacultyPage() {
                                                     {archivedData.map((faculty) => (
                                                         <tr key={faculty.id}>
                                                             <td>
-                                                                {renderAvatar(faculty.name, faculty.photo_url || faculty.profile_photo_url)}
+                                                                {renderAvatar(faculty.name, faculty.photo_url || faculty.profile_photo_url || uploadedPhotos[faculty.faculty_number])}
                                                             </td>
                                                             <td className="fw-semibold">{faculty.faculty_number}</td>
                                                             <td>

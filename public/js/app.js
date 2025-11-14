@@ -14779,7 +14779,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".settings-page .settings-header,\n.settings-page .settings-nav,\n.settings-page .departments-section .section-header,\n.settings-page .courses-section .section-header,\n.settings-page .academic-years-section .section-header,\n.settings-page .departments-table,\n.settings-page .courses-table,\n.settings-page .academic-years-table {\n  background: #fff;\n  border-radius: 10px;\n  box-shadow: 0 8px 28px rgba(9, 30, 66, 0.08);\n  border: 1px solid rgba(0, 0, 0, 0.04);\n}\n.settings-page .settings-header h1 {\n  color: #2c3e50;\n  margin-bottom: 8px;\n  font-size: 28px;\n}\n.settings-page .settings-header p {\n  color: #7f8c8d;\n  font-size: 16px;\n  margin-bottom: 0;\n}\n.settings-page .settings-nav .nav-buttons {\n  display: flex;\n  gap: 10px;\n}\n.settings-page .settings-nav .nav-buttons .nav-btn {\n  padding: 10px 18px;\n  border: 1.5px solid rgba(15, 121, 224, 0.18);\n  background: #f5f9ff;\n  color: #1f2937;\n  border-radius: 999px;\n  cursor: pointer;\n  font-weight: 500;\n  transition: all 0.3s ease;\n}\n.settings-page .settings-nav .nav-buttons .nav-btn:hover {\n  background: rgba(15, 121, 224, 0.08);\n  border-color: rgba(15, 121, 224, 0.45);\n}\n.settings-page .settings-nav .nav-buttons .nav-btn.active {\n  background: linear-gradient(90deg, #1772d9, #0f79e0);\n  border-color: transparent;\n  color: #fff;\n  box-shadow: 0 2px 10px rgba(15, 121, 224, 0.3);\n}\n.settings-page .settings-content .section-header h5 {\n  color: #2c3e50;\n  margin-bottom: 0;\n}\n.settings-page .settings-content .section-header .btn-primary {\n  background: #0f79e0;\n  border-color: #0f79e0;\n}\n.settings-page .settings-content .section-header .btn-primary:hover {\n  background: #0b6ec0;\n  border-color: #0b6ec0;\n}\n.settings-page .settings-content .departments-table .table,\n.settings-page .settings-content .courses-table .table,\n.settings-page .settings-content .academic-years-table .table {\n  border-collapse: separate;\n  border-spacing: 0;\n}\n.settings-page .settings-content .departments-table .table th,\n.settings-page .settings-content .courses-table .table th,\n.settings-page .settings-content .academic-years-table .table th {\n  background: #0f79e0;\n  color: white;\n  font-weight: 600;\n  border: none;\n}\n.settings-page .settings-content .departments-table .table thead tr th:first-child,\n.settings-page .settings-content .courses-table .table thead tr th:first-child,\n.settings-page .settings-content .academic-years-table .table thead tr th:first-child {\n  border-top-left-radius: 10px;\n}\n.settings-page .settings-content .departments-table .table thead tr th:last-child,\n.settings-page .settings-content .courses-table .table thead tr th:last-child,\n.settings-page .settings-content .academic-years-table .table thead tr th:last-child {\n  border-top-right-radius: 10px;\n}\n.settings-page .settings-content .departments-table .table tbody tr:last-child td:first-child,\n.settings-page .settings-content .courses-table .table tbody tr:last-child td:first-child,\n.settings-page .settings-content .academic-years-table .table tbody tr:last-child td:first-child {\n  border-bottom-left-radius: 10px;\n}\n.settings-page .settings-content .departments-table .table tbody tr:last-child td:last-child,\n.settings-page .settings-content .courses-table .table tbody tr:last-child td:last-child,\n.settings-page .settings-content .academic-years-table .table tbody tr:last-child td:last-child {\n  border-bottom-right-radius: 10px;\n}\n.settings-page .settings-content .departments-table .table td,\n.settings-page .settings-content .courses-table .table td,\n.settings-page .settings-content .academic-years-table .table td {\n  border-top: 1px solid #eef2f6;\n}\n.settings-page .settings-content .departments-table .table thead + tbody tr:first-child td,\n.settings-page .settings-content .courses-table .table thead + tbody tr:first-child td,\n.settings-page .settings-content .academic-years-table .table thead + tbody tr:first-child td {\n  border-top: 0;\n}\n.settings-page .settings-content .departments-table .table td,\n.settings-page .settings-content .courses-table .table td,\n.settings-page .settings-content .academic-years-table .table td {\n  vertical-align: middle;\n}\n.settings-page .settings-content .departments-table .table .badge,\n.settings-page .settings-content .courses-table .table .badge,\n.settings-page .settings-content .academic-years-table .table .badge {\n  padding: 6px 12px;\n  border-radius: 12px;\n  font-size: 12px;\n  font-weight: 500;\n}\n.settings-page .settings-content .departments-table .table .badge.badge-active,\n.settings-page .settings-content .courses-table .table .badge.badge-active,\n.settings-page .settings-content .academic-years-table .table .badge.badge-active {\n  background: #d4edda;\n  color: #155724;\n}\n.settings-page .settings-content .departments-table .table .badge.badge-inactive,\n.settings-page .settings-content .courses-table .table .badge.badge-inactive,\n.settings-page .settings-content .academic-years-table .table .badge.badge-inactive {\n  background: #f8d7da;\n  color: #721c24;\n}\n.settings-page .settings-content .departments-table .table .badge.badge-info,\n.settings-page .settings-content .courses-table .table .badge.badge-info,\n.settings-page .settings-content .academic-years-table .table .badge.badge-info {\n  background: #d1ecf1;\n  color: #0c5460;\n}\n.settings-page .settings-content .departments-table .table .badge.badge-secondary,\n.settings-page .settings-content .courses-table .table .badge.badge-secondary,\n.settings-page .settings-content .academic-years-table .table .badge.badge-secondary {\n  background: #e2e3e5;\n  color: #383d41;\n}\n.settings-page .settings-content .departments-table .table .btn,\n.settings-page .settings-content .courses-table .table .btn,\n.settings-page .settings-content .academic-years-table .table .btn {\n  font-size: 12px;\n  padding: 6px 10px;\n  border-radius: 8px;\n  transition: all 0.2s ease;\n}\n.settings-page .settings-content .departments-table .table .btn.btn-outline-primary,\n.settings-page .settings-content .courses-table .table .btn.btn-outline-primary,\n.settings-page .settings-content .academic-years-table .table .btn.btn-outline-primary {\n  color: #0f79e0;\n  border-color: #0f79e0;\n}\n.settings-page .settings-content .departments-table .table .btn.btn-outline-primary:hover,\n.settings-page .settings-content .courses-table .table .btn.btn-outline-primary:hover,\n.settings-page .settings-content .academic-years-table .table .btn.btn-outline-primary:hover {\n  background: #0f79e0;\n  color: white;\n  transform: translateY(-1px);\n}\n.settings-page .settings-content .departments-table .table .btn.btn-outline-primary:disabled,\n.settings-page .settings-content .courses-table .table .btn.btn-outline-primary:disabled,\n.settings-page .settings-content .academic-years-table .table .btn.btn-outline-primary:disabled {\n  color: #6c757d;\n  border-color: #6c757d;\n  background: transparent;\n  cursor: not-allowed;\n}\n.settings-page .settings-content .departments-table .table .btn.btn-outline-secondary,\n.settings-page .settings-content .courses-table .table .btn.btn-outline-secondary,\n.settings-page .settings-content .academic-years-table .table .btn.btn-outline-secondary {\n  color: #6c757d;\n  border-color: #6c757d;\n}\n.settings-page .settings-content .departments-table .table .btn.btn-outline-secondary:hover,\n.settings-page .settings-content .courses-table .table .btn.btn-outline-secondary:hover,\n.settings-page .settings-content .academic-years-table .table .btn.btn-outline-secondary:hover {\n  background: #6c757d;\n  color: white;\n  transform: translateY(-1px);\n}\n.settings-page .settings-content .departments-table .table .btn.btn-outline-secondary:disabled,\n.settings-page .settings-content .courses-table .table .btn.btn-outline-secondary:disabled,\n.settings-page .settings-content .academic-years-table .table .btn.btn-outline-secondary:disabled {\n  color: #6c757d;\n  border-color: #6c757d;\n  background: transparent;\n  cursor: not-allowed;\n}\n.settings-page .settings-content .departments-table .table .btn.btn-outline-danger,\n.settings-page .settings-content .courses-table .table .btn.btn-outline-danger,\n.settings-page .settings-content .academic-years-table .table .btn.btn-outline-danger {\n  color: #dc3545;\n  border-color: #dc3545;\n}\n.settings-page .settings-content .departments-table .table .btn.btn-outline-danger:hover,\n.settings-page .settings-content .courses-table .table .btn.btn-outline-danger:hover,\n.settings-page .settings-content .academic-years-table .table .btn.btn-outline-danger:hover {\n  background: #dc3545;\n  color: white;\n  transform: translateY(-1px);\n}\n.settings-page .settings-content .departments-table .table .btn.btn-outline-danger:disabled,\n.settings-page .settings-content .courses-table .table .btn.btn-outline-danger:disabled,\n.settings-page .settings-content .academic-years-table .table .btn.btn-outline-danger:disabled {\n  color: #6c757d;\n  border-color: #6c757d;\n  background: transparent;\n  cursor: not-allowed;\n}\n.settings-page .sfms-modal {\n  position: fixed;\n  top: 0;\n  left: 0;\n  width: 100%;\n  height: 100%;\n  z-index: 1050;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n}\n.settings-page .sfms-modal .sfms-modal-backdrop {\n  position: absolute;\n  top: 0;\n  left: 0;\n  width: 100%;\n  height: 100%;\n  background: rgba(0, 0, 0, 0.5);\n  backdrop-filter: blur(2px);\n}\n.settings-page .sfms-modal .settings-modal-window {\n  position: relative;\n  width: 90%;\n  max-width: 500px;\n  max-height: 90vh;\n  border-radius: 12px;\n  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);\n  overflow: hidden;\n  animation: modalSlideIn 0.3s ease-out;\n}\n.settings-page .sfms-modal .settings-modal-window .modal-form {\n  padding: 0;\n}\n.settings-page .sfms-modal .settings-modal-window .modal-form .modal-top {\n  padding: 20px 24px 0;\n  border-bottom: 1px solid #e9ecef;\n}\n.settings-page .sfms-modal .settings-modal-window .modal-form .modal-top h5 {\n  margin: 0;\n  color: #2c3e50;\n  font-size: 18px;\n  font-weight: 600;\n}\n.settings-page .sfms-modal .settings-modal-window .modal-form .modal-top .btn-close {\n  background: none;\n  border: none;\n  font-size: 24px;\n  color: #6c757d;\n  cursor: pointer;\n  padding: 0;\n  width: 30px;\n  height: 30px;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  border-radius: 4px;\n  transition: all 0.2s ease;\n}\n.settings-page .sfms-modal .settings-modal-window .modal-form .modal-top .btn-close:hover {\n  background: #f8f9fa;\n  color: #495057;\n}\n.settings-page .sfms-modal .settings-modal-window .modal-form .modal-body {\n  padding: 24px;\n  max-height: 60vh;\n  overflow-y: auto;\n}\n.settings-page .sfms-modal .settings-modal-window .modal-form .modal-body .form-label {\n  font-weight: 500;\n  color: #2c3e50;\n  margin-bottom: 8px;\n  display: block;\n}\n.settings-page .sfms-modal .settings-modal-window .modal-form .modal-body .form-control,\n.settings-page .sfms-modal .settings-modal-window .modal-form .modal-body .form-select {\n  border: 1px solid #ddd;\n  border-radius: 6px;\n  padding: 10px 12px;\n  font-size: 14px;\n  transition: all 0.2s ease;\n}\n.settings-page .sfms-modal .settings-modal-window .modal-form .modal-body .form-control:focus,\n.settings-page .sfms-modal .settings-modal-window .modal-form .modal-body .form-select:focus {\n  border-color: #3498db;\n  box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.1);\n  outline: none;\n}\n.settings-page .sfms-modal .settings-modal-window .modal-form .modal-body .form-text {\n  font-size: 12px;\n  color: #6c757d;\n  margin-top: 4px;\n}\n.settings-page .sfms-modal .settings-modal-window .modal-form .modal-body .row.g-3 {\n  margin: 0 -8px;\n}\n.settings-page .sfms-modal .settings-modal-window .modal-form .modal-body .row.g-3 .col-md-12 {\n  padding: 0 8px;\n  margin-bottom: 16px;\n}\n.settings-page .sfms-modal .settings-modal-window .modal-form .modal-actions {\n  padding: 16px 24px 24px;\n  border-top: 1px solid #e9ecef;\n  background: #f8f9fa;\n}\n.settings-page .sfms-modal .settings-modal-window .modal-form .modal-actions .btn {\n  padding: 10px 20px;\n  border-radius: 6px;\n  font-weight: 500;\n  transition: all 0.2s ease;\n}\n.settings-page .sfms-modal .settings-modal-window .modal-form .modal-actions .btn.btn-outline-secondary {\n  border: 1px solid #6c757d;\n  color: #6c757d;\n}\n.settings-page .sfms-modal .settings-modal-window .modal-form .modal-actions .btn.btn-outline-secondary:hover {\n  background: #6c757d;\n  color: white;\n}\n.settings-page .sfms-modal .settings-modal-window .modal-form .modal-actions .btn.btn-primary {\n  background: #3498db;\n  border: 1px solid #3498db;\n  color: white;\n}\n.settings-page .sfms-modal .settings-modal-window .modal-form .modal-actions .btn.btn-primary:hover {\n  background: #2980b9;\n  border-color: #2980b9;\n}\n.settings-page .settings-errors {\n  background: #f8d7da;\n  color: #721c24;\n  padding: 12px 16px;\n  border-radius: 6px;\n  margin: 16px 24px 0;\n  border: 1px solid #f5c6cb;\n}\n.settings-page .settings-errors ul {\n  margin: 0;\n  padding-left: 20px;\n}\n.settings-page .settings-errors ul li {\n  font-size: 14px;\n}\n.settings-page .settings-toast {\n  position: fixed;\n  top: 20px;\n  right: 20px;\n  background: #28a745;\n  color: white;\n  padding: 12px 20px;\n  border-radius: 6px;\n  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);\n  z-index: 1060;\n  font-weight: 500;\n  animation: toastSlideIn 0.3s ease-out;\n}\n\n@keyframes modalSlideIn {\n  from {\n    opacity: 0;\n    transform: translateY(-20px) scale(0.95);\n  }\n  to {\n    opacity: 1;\n    transform: translateY(0) scale(1);\n  }\n}\n@keyframes toastSlideIn {\n  from {\n    opacity: 0;\n    transform: translateX(100%);\n  }\n  to {\n    opacity: 1;\n    transform: translateX(0);\n  }\n}\n@media (max-width: 768px) {\n  .settings-page .settings-nav .nav-buttons {\n    flex-direction: column;\n  }\n  .settings-page .settings-nav .nav-buttons .nav-btn {\n    text-align: center;\n  }\n  .settings-page .section-header .d-flex {\n    flex-direction: column;\n    gap: 15px;\n  }\n  .settings-page .section-header .d-flex .btn {\n    width: 100%;\n  }\n  .settings-page .table-responsive {\n    font-size: 14px;\n  }\n  .settings-page .sfms-modal .settings-modal-window {\n    width: 95%;\n    margin: 20px;\n  }\n  .settings-page .sfms-modal .settings-modal-window .modal-form .modal-body {\n    padding: 16px;\n  }\n  .settings-page .sfms-modal .settings-modal-window .modal-form .modal-actions {\n    padding: 16px;\n  }\n  .settings-page .sfms-modal .settings-modal-window .modal-form .modal-actions .btn {\n    width: 100%;\n    margin-bottom: 8px;\n  }\n  .settings-page .sfms-modal .settings-modal-window .modal-form .modal-actions .btn:last-child {\n    margin-bottom: 0;\n  }\n}\nbody.sfms-modal-open {\n  overflow: hidden;\n}", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, ".settings-page .settings-header,\n.settings-page .settings-nav,\n.settings-page .departments-section .section-header,\n.settings-page .courses-section .section-header,\n.settings-page .academic-years-section .section-header,\n.settings-page .departments-table,\n.settings-page .courses-table,\n.settings-page .academic-years-table {\n  background: #fff;\n  border-radius: 10px;\n  box-shadow: 0 8px 28px rgba(9, 30, 66, 0.08);\n  border: 1px solid rgba(0, 0, 0, 0.04);\n}\n.settings-page .settings-header h1 {\n  color: #2c3e50;\n  margin-bottom: 8px;\n  font-size: 28px;\n}\n.settings-page .settings-header p {\n  color: #7f8c8d;\n  font-size: 16px;\n  margin-bottom: 0;\n}\n.settings-page .settings-nav .nav-buttons {\n  display: flex;\n  gap: 10px;\n}\n.settings-page .settings-nav .nav-buttons .nav-btn {\n  padding: 10px 18px;\n  border: 1.5px solid rgba(15, 121, 224, 0.18);\n  background: #f5f9ff;\n  color: #1f2937;\n  border-radius: 999px;\n  cursor: pointer;\n  font-weight: 500;\n  transition: all 0.3s ease;\n}\n.settings-page .settings-nav .nav-buttons .nav-btn:hover {\n  background: rgba(15, 121, 224, 0.08);\n  border-color: rgba(15, 121, 224, 0.45);\n}\n.settings-page .settings-nav .nav-buttons .nav-btn.active {\n  background: linear-gradient(90deg, #1772d9, #0f79e0);\n  border-color: transparent;\n  color: #fff;\n  box-shadow: 0 2px 10px rgba(15, 121, 224, 0.3);\n}\n.settings-page .settings-content .section-header h5 {\n  color: #2c3e50;\n  margin-bottom: 0;\n}\n.settings-page .settings-content .section-header .btn-primary {\n  background: #0f79e0;\n  border-color: #0f79e0;\n}\n.settings-page .settings-content .section-header .btn-primary:hover {\n  background: #0b6ec0;\n  border-color: #0b6ec0;\n}\n.settings-page .settings-content .departments-table .table,\n.settings-page .settings-content .courses-table .table,\n.settings-page .settings-content .academic-years-table .table {\n  border-collapse: separate;\n  border-spacing: 0;\n}\n.settings-page .settings-content .departments-table .table th,\n.settings-page .settings-content .courses-table .table th,\n.settings-page .settings-content .academic-years-table .table th {\n  background: #0f79e0;\n  color: white;\n  font-weight: 600;\n  border: none;\n}\n.settings-page .settings-content .departments-table .table thead tr th:first-child,\n.settings-page .settings-content .courses-table .table thead tr th:first-child,\n.settings-page .settings-content .academic-years-table .table thead tr th:first-child {\n  border-top-left-radius: 10px;\n}\n.settings-page .settings-content .departments-table .table thead tr th:last-child,\n.settings-page .settings-content .courses-table .table thead tr th:last-child,\n.settings-page .settings-content .academic-years-table .table thead tr th:last-child {\n  border-top-right-radius: 10px;\n}\n.settings-page .settings-content .departments-table .table tbody tr:last-child td:first-child,\n.settings-page .settings-content .courses-table .table tbody tr:last-child td:first-child,\n.settings-page .settings-content .academic-years-table .table tbody tr:last-child td:first-child {\n  border-bottom-left-radius: 10px;\n}\n.settings-page .settings-content .departments-table .table tbody tr:last-child td:last-child,\n.settings-page .settings-content .courses-table .table tbody tr:last-child td:last-child,\n.settings-page .settings-content .academic-years-table .table tbody tr:last-child td:last-child {\n  border-bottom-right-radius: 10px;\n}\n.settings-page .settings-content .departments-table .table td,\n.settings-page .settings-content .courses-table .table td,\n.settings-page .settings-content .academic-years-table .table td {\n  border-top: 1px solid #eef2f6;\n}\n.settings-page .settings-content .departments-table .table thead + tbody tr:first-child td,\n.settings-page .settings-content .courses-table .table thead + tbody tr:first-child td,\n.settings-page .settings-content .academic-years-table .table thead + tbody tr:first-child td {\n  border-top: 0;\n}\n.settings-page .settings-content .departments-table .table td,\n.settings-page .settings-content .courses-table .table td,\n.settings-page .settings-content .academic-years-table .table td {\n  vertical-align: middle;\n}\n.settings-page .settings-content .departments-table .table .badge,\n.settings-page .settings-content .courses-table .table .badge,\n.settings-page .settings-content .academic-years-table .table .badge {\n  padding: 6px 12px;\n  border-radius: 12px;\n  font-size: 12px;\n  font-weight: 500;\n}\n.settings-page .settings-content .departments-table .table .badge.badge-active,\n.settings-page .settings-content .courses-table .table .badge.badge-active,\n.settings-page .settings-content .academic-years-table .table .badge.badge-active {\n  background: #d4edda;\n  color: #155724;\n}\n.settings-page .settings-content .departments-table .table .badge.badge-inactive,\n.settings-page .settings-content .courses-table .table .badge.badge-inactive,\n.settings-page .settings-content .academic-years-table .table .badge.badge-inactive {\n  background: #f8d7da;\n  color: #721c24;\n}\n.settings-page .settings-content .departments-table .table .badge.badge-info,\n.settings-page .settings-content .courses-table .table .badge.badge-info,\n.settings-page .settings-content .academic-years-table .table .badge.badge-info {\n  background: #d1ecf1;\n  color: #0c5460;\n}\n.settings-page .settings-content .departments-table .table .badge.badge-secondary,\n.settings-page .settings-content .courses-table .table .badge.badge-secondary,\n.settings-page .settings-content .academic-years-table .table .badge.badge-secondary {\n  background: #e2e3e5;\n  color: #383d41;\n}\n.settings-page .settings-content .departments-table .table .btn,\n.settings-page .settings-content .courses-table .table .btn,\n.settings-page .settings-content .academic-years-table .table .btn {\n  font-size: 12px;\n  padding: 6px 10px;\n  border-radius: 8px;\n  transition: all 0.2s ease;\n}\n.settings-page .settings-content .departments-table .table .btn.btn-outline-primary,\n.settings-page .settings-content .courses-table .table .btn.btn-outline-primary,\n.settings-page .settings-content .academic-years-table .table .btn.btn-outline-primary {\n  color: #0f79e0;\n  border-color: #0f79e0;\n}\n.settings-page .settings-content .departments-table .table .btn.btn-outline-primary:hover,\n.settings-page .settings-content .courses-table .table .btn.btn-outline-primary:hover,\n.settings-page .settings-content .academic-years-table .table .btn.btn-outline-primary:hover {\n  background: #0f79e0;\n  color: white;\n  transform: translateY(-1px);\n}\n.settings-page .settings-content .departments-table .table .btn.btn-outline-primary:disabled,\n.settings-page .settings-content .courses-table .table .btn.btn-outline-primary:disabled,\n.settings-page .settings-content .academic-years-table .table .btn.btn-outline-primary:disabled {\n  color: #6c757d;\n  border-color: #6c757d;\n  background: transparent;\n  cursor: not-allowed;\n}\n.settings-page .settings-content .departments-table .table .btn.btn-outline-secondary,\n.settings-page .settings-content .courses-table .table .btn.btn-outline-secondary,\n.settings-page .settings-content .academic-years-table .table .btn.btn-outline-secondary {\n  color: #6c757d;\n  border-color: #6c757d;\n}\n.settings-page .settings-content .departments-table .table .btn.btn-outline-secondary:hover,\n.settings-page .settings-content .courses-table .table .btn.btn-outline-secondary:hover,\n.settings-page .settings-content .academic-years-table .table .btn.btn-outline-secondary:hover {\n  background: #6c757d;\n  color: white;\n  transform: translateY(-1px);\n}\n.settings-page .settings-content .departments-table .table .btn.btn-outline-secondary:disabled,\n.settings-page .settings-content .courses-table .table .btn.btn-outline-secondary:disabled,\n.settings-page .settings-content .academic-years-table .table .btn.btn-outline-secondary:disabled {\n  color: #6c757d;\n  border-color: #6c757d;\n  background: transparent;\n  cursor: not-allowed;\n}\n.settings-page .settings-content .departments-table .table .btn.btn-outline-danger,\n.settings-page .settings-content .courses-table .table .btn.btn-outline-danger,\n.settings-page .settings-content .academic-years-table .table .btn.btn-outline-danger {\n  color: #dc3545;\n  border-color: #dc3545;\n}\n.settings-page .settings-content .departments-table .table .btn.btn-outline-danger:hover,\n.settings-page .settings-content .courses-table .table .btn.btn-outline-danger:hover,\n.settings-page .settings-content .academic-years-table .table .btn.btn-outline-danger:hover {\n  background: #dc3545;\n  color: white;\n  transform: translateY(-1px);\n}\n.settings-page .settings-content .departments-table .table .btn.btn-outline-danger:disabled,\n.settings-page .settings-content .courses-table .table .btn.btn-outline-danger:disabled,\n.settings-page .settings-content .academic-years-table .table .btn.btn-outline-danger:disabled {\n  color: #202122;\n  border-color: #8b9fb3;\n  background: transparent;\n  cursor: not-allowed;\n}\n.settings-page .sfms-modal {\n  position: fixed;\n  top: 0;\n  left: 0;\n  width: 100%;\n  height: 100%;\n  z-index: 1050;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n}\n.settings-page .sfms-modal .sfms-modal-backdrop {\n  position: absolute;\n  top: 0;\n  left: 0;\n  width: 100%;\n  height: 100%;\n  background: rgba(0, 0, 0, 0.5);\n  backdrop-filter: blur(2px);\n}\n.settings-page .sfms-modal .settings-modal-window {\n  position: relative;\n  width: 90%;\n  max-width: 500px;\n  max-height: 90vh;\n  border-radius: 12px;\n  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);\n  overflow: hidden;\n  animation: modalSlideIn 0.3s ease-out;\n}\n.settings-page .sfms-modal .settings-modal-window .modal-form {\n  padding: 0;\n}\n.settings-page .sfms-modal .settings-modal-window .modal-form .modal-top {\n  padding: 20px 24px 0;\n  border-bottom: 1px solid #e9ecef;\n}\n.settings-page .sfms-modal .settings-modal-window .modal-form .modal-top h5 {\n  margin: 0;\n  color: #2c3e50;\n  font-size: 18px;\n  font-weight: 600;\n}\n.settings-page .sfms-modal .settings-modal-window .modal-form .modal-top .btn-close {\n  background: none;\n  border: none;\n  font-size: 24px;\n  color: #6c757d;\n  cursor: pointer;\n  padding: 0;\n  width: 30px;\n  height: 30px;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  border-radius: 4px;\n  transition: all 0.2s ease;\n}\n.settings-page .sfms-modal .settings-modal-window .modal-form .modal-top .btn-close:hover {\n  background: #f8f9fa;\n  color: #495057;\n}\n.settings-page .sfms-modal .settings-modal-window .modal-form .modal-body {\n  padding: 24px;\n  max-height: 60vh;\n  overflow-y: auto;\n}\n.settings-page .sfms-modal .settings-modal-window .modal-form .modal-body .form-label {\n  font-weight: 500;\n  color: #2c3e50;\n  margin-bottom: 8px;\n  display: block;\n}\n.settings-page .sfms-modal .settings-modal-window .modal-form .modal-body .form-control,\n.settings-page .sfms-modal .settings-modal-window .modal-form .modal-body .form-select {\n  border: 1px solid #ddd;\n  border-radius: 6px;\n  padding: 10px 12px;\n  font-size: 14px;\n  transition: all 0.2s ease;\n}\n.settings-page .sfms-modal .settings-modal-window .modal-form .modal-body .form-control:focus,\n.settings-page .sfms-modal .settings-modal-window .modal-form .modal-body .form-select:focus {\n  border-color: #3498db;\n  box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.1);\n  outline: none;\n}\n.settings-page .sfms-modal .settings-modal-window .modal-form .modal-body .form-text {\n  font-size: 12px;\n  color: #6c757d;\n  margin-top: 4px;\n}\n.settings-page .sfms-modal .settings-modal-window .modal-form .modal-body .row.g-3 {\n  margin: 0 -8px;\n}\n.settings-page .sfms-modal .settings-modal-window .modal-form .modal-body .row.g-3 .col-md-12 {\n  padding: 0 8px;\n  margin-bottom: 16px;\n}\n.settings-page .sfms-modal .settings-modal-window .modal-form .modal-actions {\n  padding: 16px 24px 24px;\n  border-top: 1px solid #e9ecef;\n  background: #f8f9fa;\n}\n.settings-page .sfms-modal .settings-modal-window .modal-form .modal-actions .btn {\n  padding: 10px 20px;\n  border-radius: 6px;\n  font-weight: 500;\n  transition: all 0.2s ease;\n}\n.settings-page .sfms-modal .settings-modal-window .modal-form .modal-actions .btn.btn-outline-secondary {\n  border: 1px solid #6c757d;\n  color: #6c757d;\n}\n.settings-page .sfms-modal .settings-modal-window .modal-form .modal-actions .btn.btn-outline-secondary:hover {\n  background: #6c757d;\n  color: white;\n}\n.settings-page .sfms-modal .settings-modal-window .modal-form .modal-actions .btn.btn-primary {\n  background: #3498db;\n  border: 1px solid #3498db;\n  color: white;\n}\n.settings-page .sfms-modal .settings-modal-window .modal-form .modal-actions .btn.btn-primary:hover {\n  background: #2980b9;\n  border-color: #2980b9;\n}\n.settings-page .settings-errors {\n  background: #f8d7da;\n  color: #721c24;\n  padding: 12px 16px;\n  border-radius: 6px;\n  margin: 16px 24px 0;\n  border: 1px solid #f5c6cb;\n}\n.settings-page .settings-errors ul {\n  margin: 0;\n  padding-left: 20px;\n}\n.settings-page .settings-errors ul li {\n  font-size: 14px;\n}\n.settings-page .settings-toast {\n  position: fixed;\n  top: 20px;\n  right: 20px;\n  background: #28a745;\n  color: white;\n  padding: 12px 20px;\n  border-radius: 6px;\n  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);\n  z-index: 1060;\n  font-weight: 500;\n  animation: toastSlideIn 0.3s ease-out;\n}\n\n@keyframes modalSlideIn {\n  from {\n    opacity: 0;\n    transform: translateY(-20px) scale(0.95);\n  }\n  to {\n    opacity: 1;\n    transform: translateY(0) scale(1);\n  }\n}\n@keyframes toastSlideIn {\n  from {\n    opacity: 0;\n    transform: translateX(100%);\n  }\n  to {\n    opacity: 1;\n    transform: translateX(0);\n  }\n}\n@media (max-width: 768px) {\n  .settings-page .settings-nav .nav-buttons {\n    flex-direction: column;\n  }\n  .settings-page .settings-nav .nav-buttons .nav-btn {\n    text-align: center;\n  }\n  .settings-page .section-header .d-flex {\n    flex-direction: column;\n    gap: 15px;\n  }\n  .settings-page .section-header .d-flex .btn {\n    width: 100%;\n  }\n  .settings-page .table-responsive {\n    font-size: 14px;\n  }\n  .settings-page .sfms-modal .settings-modal-window {\n    width: 95%;\n    margin: 20px;\n  }\n  .settings-page .sfms-modal .settings-modal-window .modal-form .modal-body {\n    padding: 16px;\n  }\n  .settings-page .sfms-modal .settings-modal-window .modal-form .modal-actions {\n    padding: 16px;\n  }\n  .settings-page .sfms-modal .settings-modal-window .modal-form .modal-actions .btn {\n    width: 100%;\n    margin-bottom: 8px;\n  }\n  .settings-page .sfms-modal .settings-modal-window .modal-form .modal-actions .btn:last-child {\n    margin-bottom: 0;\n  }\n}\nbody.sfms-modal-open {\n  overflow: hidden;\n}", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -71141,7 +71141,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router/dist/index.js");
 /* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/dist/index.js");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+/* harmony import */ var _utils_theme__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../utils/theme */ "./resources/js/utils/theme.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
 function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, _typeof(o); }
 function _toConsumableArray(r) { return _arrayWithoutHoles(r) || _iterableToArray(r) || _unsupportedIterableToArray(r) || _nonIterableSpread(); }
 function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
@@ -71162,6 +71163,7 @@ function _unsupportedIterableToArray(r, a) { if (r) { if ("string" == typeof r) 
 function _arrayLikeToArray(r, a) { (null == a || a > r.length) && (a = r.length); for (var e = 0, n = Array(a); e < a; e++) n[e] = r[e]; return n; }
 function _iterableToArrayLimit(r, l) { var t = null == r ? null : "undefined" != typeof Symbol && r[Symbol.iterator] || r["@@iterator"]; if (null != t) { var e, n, i, u, a = [], f = !0, o = !1; try { if (i = (t = t.call(r)).next, 0 === l) { if (Object(t) !== t) return; f = !1; } else for (; !(f = (e = i.call(t)).done) && (a.push(e.value), a.length !== l); f = !0); } catch (r) { o = !0, n = r; } finally { try { if (!f && null != t["return"] && (u = t["return"](), Object(u) !== u)) return; } finally { if (o) throw n; } } return a; } }
 function _arrayWithHoles(r) { if (Array.isArray(r)) return r; }
+
 
 
 
@@ -71201,6 +71203,10 @@ function Dashboard() {
     _useState0 = _slicedToArray(_useState9, 2),
     showProfileMenu = _useState0[0],
     setShowProfileMenu = _useState0[1];
+  var _useState1 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)('light'),
+    _useState10 = _slicedToArray(_useState1, 2),
+    theme = _useState10[0],
+    setTheme = _useState10[1];
   var saveNotificationsToStorage = function saveNotificationsToStorage(list) {
     try {
       localStorage.setItem('sfms_notifications', JSON.stringify(list));
@@ -71307,6 +71313,10 @@ function Dashboard() {
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function () {
     fetchDashboardData();
     fetchProfile();
+    try {
+      var t = (0,_utils_theme__WEBPACK_IMPORTED_MODULE_3__.initTheme)();
+      setTheme(t);
+    } catch (e) {}
   }, []);
   var fetchProfile = /*#__PURE__*/function () {
     var _ref = _asyncToGenerator(/*#__PURE__*/_regenerator().m(function _callee() {
@@ -71348,7 +71358,7 @@ function Dashboard() {
   }();
   var fetchDashboardData = /*#__PURE__*/function () {
     var _ref2 = _asyncToGenerator(/*#__PURE__*/_regenerator().m(function _callee2() {
-      var facultyResponse, studentResponse, facultyData, studentData, activeFaculty, activeStudents, departmentCount, courseCount, savedCourses, savedDepartments, activeCoursesCount, activeDepartmentsCount, coursesData, departmentsData, _t2;
+      var facultyResponse, studentResponse, facultyData, studentData, activeFaculty, activeStudents, departmentCount, courseCount, activeCoursesCount, activeDepartmentsCount, _yield$Promise$all, _yield$Promise$all2, coursesResp, deptsResp, cdata, list, ddata, dlist, _t2, _t3;
       return _regenerator().w(function (_context2) {
         while (1) switch (_context2.p = _context2.n) {
           case 0:
@@ -71383,7 +71393,7 @@ function Dashboard() {
           case 2:
             studentResponse = _context2.v;
             if (!(facultyResponse.ok && studentResponse.ok)) {
-              _context2.n = 5;
+              _context2.n = 13;
               break;
             }
             _context2.n = 3;
@@ -71413,31 +71423,62 @@ function Dashboard() {
               courseCount[course] = (courseCount[course] || 0) + 1;
             });
 
-            // Load courses and departments from localStorage for counts
-            savedCourses = localStorage.getItem('sfms_courses');
-            savedDepartments = localStorage.getItem('sfms_departments');
+            // Fetch courses and departments from API (replace localStorage reliance)
             activeCoursesCount = 0;
             activeDepartmentsCount = 0;
-            if (savedCourses) {
-              try {
-                coursesData = JSON.parse(savedCourses);
-                activeCoursesCount = coursesData.filter(function (course) {
-                  return course.status === 'ACTIVE';
-                }).length;
-              } catch (error) {
-                console.error('Error parsing courses data:', error);
+            _context2.p = 5;
+            _context2.n = 6;
+            return Promise.all([fetch('/api/courses', {
+              method: 'GET',
+              headers: {
+                'Accept': 'application/json',
+                'X-Requested-With': 'XMLHttpRequest'
               }
-            }
-            if (savedDepartments) {
-              try {
-                departmentsData = JSON.parse(savedDepartments);
-                activeDepartmentsCount = departmentsData.filter(function (dept) {
-                  return dept.status === 'ACTIVE';
-                }).length;
-              } catch (error) {
-                console.error('Error parsing departments data:', error);
+            }), fetch('/api/departments', {
+              method: 'GET',
+              headers: {
+                'Accept': 'application/json',
+                'X-Requested-With': 'XMLHttpRequest'
               }
+            })]);
+          case 6:
+            _yield$Promise$all = _context2.v;
+            _yield$Promise$all2 = _slicedToArray(_yield$Promise$all, 2);
+            coursesResp = _yield$Promise$all2[0];
+            deptsResp = _yield$Promise$all2[1];
+            if (!coursesResp.ok) {
+              _context2.n = 8;
+              break;
             }
+            _context2.n = 7;
+            return coursesResp.json();
+          case 7:
+            cdata = _context2.v;
+            list = Array.isArray(cdata) ? cdata : cdata.courses || [];
+            activeCoursesCount = list.filter ? list.filter(function (c) {
+              return c.status === 'ACTIVE';
+            }).length : 0;
+          case 8:
+            if (!deptsResp.ok) {
+              _context2.n = 10;
+              break;
+            }
+            _context2.n = 9;
+            return deptsResp.json();
+          case 9:
+            ddata = _context2.v;
+            dlist = Array.isArray(ddata) ? ddata : ddata.departments || [];
+            activeDepartmentsCount = dlist.filter ? dlist.filter(function (d) {
+              return d.status === 'ACTIVE';
+            }).length : 0;
+          case 10:
+            _context2.n = 12;
+            break;
+          case 11:
+            _context2.p = 11;
+            _t2 = _context2.v;
+            console.error('Error fetching courses/departments for dashboard counts:', _t2);
+          case 12:
             setDashboardData(function (prev) {
               return _objectSpread(_objectSpread({}, prev), {}, {
                 totalFaculty: activeFaculty.length,
@@ -71449,31 +71490,31 @@ function Dashboard() {
                 loading: false
               });
             });
-            _context2.n = 6;
+            _context2.n = 14;
             break;
-          case 5:
+          case 13:
             console.error('Failed to fetch dashboard data');
             setDashboardData(function (prev) {
               return _objectSpread(_objectSpread({}, prev), {}, {
                 loading: false
               });
             });
-          case 6:
-            _context2.n = 8;
+          case 14:
+            _context2.n = 16;
             break;
-          case 7:
-            _context2.p = 7;
-            _t2 = _context2.v;
-            console.error('Error fetching dashboard data:', _t2);
+          case 15:
+            _context2.p = 15;
+            _t3 = _context2.v;
+            console.error('Error fetching dashboard data:', _t3);
             setDashboardData(function (prev) {
               return _objectSpread(_objectSpread({}, prev), {}, {
                 loading: false
               });
             });
-          case 8:
+          case 16:
             return _context2.a(2);
         }
-      }, _callee2, null, [[0, 7]]);
+      }, _callee2, null, [[5, 11], [0, 15]]);
     }));
     return function fetchDashboardData() {
       return _ref2.apply(this, arguments);
@@ -71547,7 +71588,7 @@ function Dashboard() {
 
     if (courses.length === 0) {
       // Return default courses if no data
-      return [['Computer Science Program', 70], ['Business Administration Program', 85], ['Engineering Program', 60], ['Nursing Program', 45], ['Accountancy Program', 30]];
+      return [['Computer Science', 70], ['Business Administration', 85], ['Engineering', 60], ['Nursing', 45], ['Accountancy', 30]];
     }
 
     // Calculate max for percentage scaling
@@ -71614,7 +71655,7 @@ function Dashboard() {
       var percentage = total > 0 ? item.count / total : 0;
       var angle = percentage * 360;
       var dashArray = "".concat(percentage * 314.16, " ", 314.16);
-      var segment = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("circle", {
+      var segment = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("circle", {
         cx: "60",
         cy: "60",
         r: "50",
@@ -71638,7 +71679,7 @@ function Dashboard() {
   };
   var calendarIcon = function calendarIcon() {
     var isWhite = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : false;
-    return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("svg", _objectSpread(_objectSpread({
+    return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("svg", _objectSpread(_objectSpread({
       viewBox: "0 0 24 24",
       width: "18",
       height: "18",
@@ -71647,24 +71688,24 @@ function Dashboard() {
       strokeWidth: "2",
       strokeLinecap: "round",
       strokeLinejoin: "round",
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("rect", {
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("rect", {
         x: "3",
         y: "4",
         width: "18",
         height: "18",
         rx: "4",
         ry: "4"
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("line", {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("line", {
         x1: "16",
         y1: "2",
         x2: "16",
         y2: "6"
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("line", {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("line", {
         x1: "8",
         y1: "2",
         x2: "8",
         y2: "6"
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("line", {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("line", {
         x1: "3",
         y1: "10",
         x2: "21",
@@ -71674,7 +71715,7 @@ function Dashboard() {
   };
   var settingsIcon = function settingsIcon() {
     var isWhite = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : false;
-    return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("svg", _objectSpread(_objectSpread({
+    return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("svg", _objectSpread(_objectSpread({
       viewBox: "0 0 24 24",
       width: "18",
       height: "18",
@@ -71683,18 +71724,18 @@ function Dashboard() {
       strokeWidth: "2",
       strokeLinecap: "round",
       strokeLinejoin: "round",
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("circle", {
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("circle", {
         cx: "12",
         cy: "12",
         r: "3"
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("path", {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("path", {
         d: "M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 010 2.83 2 2 0 01-2.83 0l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-4 0v-.09a1.65 1.65 0 00-1-1.51 1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 01-2.83 0 2 2 0 010-2.83l.06-.06a1.65 1.65 0 00.33-1.82 1.65 1.65 0 00-1.51-1H3a2 2 0 010-4h.09a1.65 1.65 0 001.51-1 1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 010-2.83 2 2 0 012.83 0l.06.06a1.65 1.65 0 001.82.33H9a1.65 1.65 0 001-1.51V3a2 2 0 014 0v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 012.83 0 2 2 0 010 2.83l-.06.06a1.65 1.65 0 00-.33 1.82V9c0 .69.28 1.32.73 1.77.45.45 1.08.73 1.77.73h.09a2 2 0 010 4h-.09a1.65 1.65 0 00-1.77.73z"
       })]
     }));
   };
   var bellIcon = function bellIcon() {
     var isWhite = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : false;
-    return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("svg", _objectSpread(_objectSpread({
+    return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("svg", _objectSpread(_objectSpread({
       viewBox: "0 0 24 24",
       width: "18",
       height: "18",
@@ -71703,16 +71744,16 @@ function Dashboard() {
       strokeWidth: "2",
       strokeLinecap: "round",
       strokeLinejoin: "round",
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("path", {
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("path", {
         d: "M18 8a6 6 0 10-12 0c0 7-3 8-3 8h18s-3-1-3-8"
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("path", {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("path", {
         d: "M13.73 21a2 2 0 01-3.46 0"
       })]
     }));
   };
-  var dashboardIcon = function dashboardIcon() {
+  var sunIcon = function sunIcon() {
     var isWhite = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : false;
-    return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("svg", _objectSpread(_objectSpread({
+    return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("svg", _objectSpread(_objectSpread({
       viewBox: "0 0 24 24",
       width: "18",
       height: "18",
@@ -71721,25 +71762,75 @@ function Dashboard() {
       strokeWidth: "2",
       strokeLinecap: "round",
       strokeLinejoin: "round",
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("rect", {
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("circle", {
+        cx: "12",
+        cy: "12",
+        r: "4"
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("path", {
+        d: "M12 2v2"
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("path", {
+        d: "M12 20v2"
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("path", {
+        d: "M4.93 4.93l1.41 1.41"
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("path", {
+        d: "M17.66 17.66l1.41 1.41"
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("path", {
+        d: "M2 12h2"
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("path", {
+        d: "M20 12h2"
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("path", {
+        d: "M4.93 19.07l1.41-1.41"
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("path", {
+        d: "M17.66 6.34l1.41-1.41"
+      })]
+    }));
+  };
+  var moonIcon = function moonIcon() {
+    var isWhite = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : false;
+    return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("svg", _objectSpread(_objectSpread({
+      viewBox: "0 0 24 24",
+      width: "18",
+      height: "18",
+      fill: "none"
+    }, withStroke(isWhite)), {}, {
+      strokeWidth: "2",
+      strokeLinecap: "round",
+      strokeLinejoin: "round",
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("path", {
+        d: "M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"
+      })
+    }));
+  };
+  var dashboardIcon = function dashboardIcon() {
+    var isWhite = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : false;
+    return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("svg", _objectSpread(_objectSpread({
+      viewBox: "0 0 24 24",
+      width: "18",
+      height: "18",
+      fill: "none"
+    }, withStroke(isWhite)), {}, {
+      strokeWidth: "2",
+      strokeLinecap: "round",
+      strokeLinejoin: "round",
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("rect", {
         x: "3",
         y: "3",
         width: "7",
         height: "7",
         rx: "2"
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("rect", {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("rect", {
         x: "14",
         y: "3",
         width: "7",
         height: "7",
         rx: "2"
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("rect", {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("rect", {
         x: "14",
         y: "14",
         width: "7",
         height: "7",
         rx: "2"
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("rect", {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("rect", {
         x: "3",
         y: "14",
         width: "7",
@@ -71750,7 +71841,7 @@ function Dashboard() {
   };
   var studentsIcon = function studentsIcon() {
     var isWhite = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : false;
-    return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("svg", _objectSpread(_objectSpread({
+    return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("svg", _objectSpread(_objectSpread({
       viewBox: "0 0 24 24",
       width: "18",
       height: "18",
@@ -71759,9 +71850,9 @@ function Dashboard() {
       strokeWidth: "2",
       strokeLinecap: "round",
       strokeLinejoin: "round",
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("path", {
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("path", {
         d: "M12 14c-4.418 0-8 1.79-8 4v2"
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("circle", {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("circle", {
         cx: "12",
         cy: "7",
         r: "4"
@@ -71770,7 +71861,7 @@ function Dashboard() {
   };
   var facultyIcon = function facultyIcon() {
     var isWhite = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : false;
-    return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("svg", _objectSpread(_objectSpread({
+    return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("svg", _objectSpread(_objectSpread({
       viewBox: "0 0 24 24",
       width: "18",
       height: "18",
@@ -71779,13 +71870,13 @@ function Dashboard() {
       strokeWidth: "2",
       strokeLinecap: "round",
       strokeLinejoin: "round",
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("path", {
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("path", {
         d: "M2 20v-1c0-2.21 3.582-4 8-4s8 1.79 8 4v1"
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("circle", {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("circle", {
         cx: "10",
         cy: "7",
         r: "4"
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("circle", {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("circle", {
         cx: "18",
         cy: "8",
         r: "3"
@@ -71794,7 +71885,7 @@ function Dashboard() {
   };
   var coursesIcon = function coursesIcon() {
     var isWhite = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : false;
-    return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("svg", _objectSpread(_objectSpread({
+    return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("svg", _objectSpread(_objectSpread({
       viewBox: "0 0 24 24",
       width: "18",
       height: "18",
@@ -71803,16 +71894,16 @@ function Dashboard() {
       strokeWidth: "2",
       strokeLinecap: "round",
       strokeLinejoin: "round",
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("path", {
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("path", {
         d: "M4 19.5V6a2 2 0 012-2h10l4 4v11.5a1.5 1.5 0 01-1.5 1.5H5.5A1.5 1.5 0 014 19.5z"
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("path", {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("path", {
         d: "M14 4v4h4"
       })]
     }));
   };
   var departmentsIcon = function departmentsIcon() {
     var isWhite = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : false;
-    return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("svg", _objectSpread(_objectSpread({
+    return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("svg", _objectSpread(_objectSpread({
       viewBox: "0 0 24 24",
       width: "18",
       height: "18",
@@ -71821,26 +71912,26 @@ function Dashboard() {
       strokeWidth: "2",
       strokeLinecap: "round",
       strokeLinejoin: "round",
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("rect", {
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("rect", {
         x: "3",
         y: "8",
         width: "18",
         height: "12",
         rx: "2"
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("path", {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("path", {
         d: "M7 8V4h10v4"
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("path", {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("path", {
         d: "M7 12h2"
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("path", {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("path", {
         d: "M11 12h2"
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("path", {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("path", {
         d: "M15 12h2"
       })]
     }));
   };
   var reportsIcon = function reportsIcon() {
     var isWhite = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : false;
-    return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("svg", _objectSpread(_objectSpread({
+    return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("svg", _objectSpread(_objectSpread({
       viewBox: "0 0 24 24",
       width: "18",
       height: "18",
@@ -71849,18 +71940,18 @@ function Dashboard() {
       strokeWidth: "2",
       strokeLinecap: "round",
       strokeLinejoin: "round",
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("path", {
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("path", {
         d: "M3 12h18"
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("path", {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("path", {
         d: "M3 6h18"
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("path", {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("path", {
         d: "M3 18h18"
       })]
     }));
   };
   var profileIcon = function profileIcon() {
     var isWhite = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : false;
-    return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("svg", _objectSpread(_objectSpread({
+    return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("svg", _objectSpread(_objectSpread({
       viewBox: "0 0 24 24",
       width: "18",
       height: "18",
@@ -71869,9 +71960,9 @@ function Dashboard() {
       strokeWidth: "2",
       strokeLinecap: "round",
       strokeLinejoin: "round",
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("path", {
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("path", {
         d: "M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("circle", {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("circle", {
         cx: "12",
         cy: "7",
         r: "4"
@@ -71880,7 +71971,7 @@ function Dashboard() {
   };
   var logoutIcon = function logoutIcon() {
     var isWhite = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : false;
-    return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("svg", _objectSpread(_objectSpread({
+    return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("svg", _objectSpread(_objectSpread({
       viewBox: "0 0 24 24",
       width: "18",
       height: "18",
@@ -71889,11 +71980,11 @@ function Dashboard() {
       strokeWidth: "2",
       strokeLinecap: "round",
       strokeLinejoin: "round",
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("path", {
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("path", {
         d: "M9 21H5a2 2 0 01-2-2V5a2 2 0 012-2h4"
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("polyline", {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("polyline", {
         points: "16 17 21 12 16 7"
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("line", {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("line", {
         x1: "21",
         y1: "12",
         x2: "9",
@@ -71904,78 +71995,78 @@ function Dashboard() {
   var userInitials = (profileData.name || 'Admin').split(' ').map(function (n) {
     return n && n[0];
   }).filter(Boolean).join('').slice(0, 2).toUpperCase();
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
     className: "sfms-dashboard",
-    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("aside", {
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("aside", {
       className: "sfms-sidebar",
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
         className: "sidebar-brand",
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
           className: "logo",
-          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("img", {
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("img", {
             src: "/img/sfms-logo2.png",
             alt: "SFMS Logo"
           })
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
           className: "brand-text",
           children: "SFMS"
         })]
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("nav", {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("nav", {
         className: "sidebar-nav",
-        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("ul", {
-          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("li", {
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("ul", {
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("li", {
             className: "active",
-            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)(react_router_dom__WEBPACK_IMPORTED_MODULE_2__.Link, {
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(react_router_dom__WEBPACK_IMPORTED_MODULE_2__.Link, {
               to: "/dashboard",
-              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("span", {
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("span", {
                 className: "nav-icon",
                 children: dashboardIcon()
               }), "Dashboard"]
             })
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("li", {
-            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)(react_router_dom__WEBPACK_IMPORTED_MODULE_2__.Link, {
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("li", {
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(react_router_dom__WEBPACK_IMPORTED_MODULE_2__.Link, {
               to: "/dashboard/faculty",
-              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("span", {
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("span", {
                 className: "nav-icon",
                 children: facultyIcon()
               }), "Faculty"]
             })
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("li", {
-            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)(react_router_dom__WEBPACK_IMPORTED_MODULE_2__.Link, {
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("li", {
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(react_router_dom__WEBPACK_IMPORTED_MODULE_2__.Link, {
               to: "/dashboard/students",
-              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("span", {
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("span", {
                 className: "nav-icon",
                 children: studentsIcon()
               }), "Students"]
             })
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("li", {
-            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)(react_router_dom__WEBPACK_IMPORTED_MODULE_2__.Link, {
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("li", {
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(react_router_dom__WEBPACK_IMPORTED_MODULE_2__.Link, {
               to: "/dashboard/calendar",
-              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("span", {
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("span", {
                 className: "nav-icon",
                 children: calendarIcon()
               }), "Calendar"]
             })
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("li", {
-            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)(react_router_dom__WEBPACK_IMPORTED_MODULE_2__.Link, {
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("li", {
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(react_router_dom__WEBPACK_IMPORTED_MODULE_2__.Link, {
               to: "/dashboard/reports",
-              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("span", {
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("span", {
                 className: "nav-icon",
                 children: reportsIcon()
               }), "Reports"]
             })
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("li", {
-            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)(react_router_dom__WEBPACK_IMPORTED_MODULE_2__.Link, {
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("li", {
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(react_router_dom__WEBPACK_IMPORTED_MODULE_2__.Link, {
               to: "/dashboard/settings",
-              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("span", {
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("span", {
                 className: "nav-icon",
                 children: settingsIcon()
               }), "Settings"]
             })
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("li", {
-            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)(react_router_dom__WEBPACK_IMPORTED_MODULE_2__.Link, {
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("li", {
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(react_router_dom__WEBPACK_IMPORTED_MODULE_2__.Link, {
               to: "/dashboard/profile",
-              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("span", {
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("span", {
                 className: "nav-icon",
                 children: profileIcon()
               }), "Profile"]
@@ -71983,31 +72074,31 @@ function Dashboard() {
           })]
         })
       })]
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("main", {
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("main", {
       className: "sfms-main",
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("header", {
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("header", {
         className: "topbar",
         style: {
           position: 'relative',
           zIndex: 100000
         },
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
           className: "topbar-left",
-          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("h4", {
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("h4", {
             children: "Dashboard"
           })
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
           className: "topbar-right",
-          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
             className: "top-icons",
-            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
               className: "notification-wrapper",
               ref: notificationsWrapperRef,
               style: {
                 position: 'relative',
                 zIndex: 2000
               },
-              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("button", {
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("button", {
                 className: "icon-circle ".concat(notifications.filter(function (n) {
                   return !n.read;
                 }).length > 0 ? 'has-badge' : ''),
@@ -72020,7 +72111,7 @@ function Dashboard() {
                 "aria-expanded": showNotifications,
                 children: [bellIcon(), notifications.filter(function (n) {
                   return !n.read;
-                }).length > 0 && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("span", {
+                }).length > 0 && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("span", {
                   className: "icon-badge",
                   children: notifications.filter(function (n) {
                     return !n.read;
@@ -72028,7 +72119,7 @@ function Dashboard() {
                     return !n.read;
                   }).length
                 })]
-              }), showNotifications && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
+              }), showNotifications && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
                 className: "notifications-dropdown",
                 style: {
                   position: 'absolute',
@@ -72041,7 +72132,7 @@ function Dashboard() {
                   overflow: 'hidden',
                   zIndex: 4000
                 },
-                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
+                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
                   className: "dropdown-header",
                   style: {
                     display: 'flex',
@@ -72050,15 +72141,15 @@ function Dashboard() {
                     padding: '12px 14px',
                     borderBottom: '1px solid #eee'
                   },
-                  children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("strong", {
+                  children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("strong", {
                     children: "Notifications"
-                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
                     className: "dropdown-actions",
                     style: {
                       display: 'flex',
                       gap: 8
                     },
-                    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("button", {
+                    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
                       className: "link-button small",
                       style: {
                         color: notifications.filter(function (n) {
@@ -72078,7 +72169,7 @@ function Dashboard() {
                         return !n.read;
                       }).length === 0,
                       children: "Mark all as read"
-                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("button", {
+                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
                       className: "link-button small",
                       style: {
                         color: notifications.length === 0 ? '#9aa4b2' : '#ef4444'
@@ -72090,7 +72181,7 @@ function Dashboard() {
                       children: "Clear"
                     })]
                   })]
-                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("ul", {
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("ul", {
                   className: "dropdown-list",
                   style: {
                     maxHeight: 360,
@@ -72098,7 +72189,7 @@ function Dashboard() {
                     margin: 0,
                     padding: 0
                   },
-                  children: notifications.length === 0 ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("li", {
+                  children: notifications.length === 0 ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("li", {
                     className: "empty",
                     style: {
                       padding: '16px 14px',
@@ -72106,7 +72197,7 @@ function Dashboard() {
                     },
                     children: "No notifications"
                   }) : notifications.map(function (n) {
-                    return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("li", {
+                    return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("li", {
                       className: "dropdown-item ".concat(n.read ? 'read' : 'unread'),
                       onClick: function onClick() {
                         return setNotifications(function (prev) {
@@ -72124,7 +72215,7 @@ function Dashboard() {
                         cursor: 'pointer',
                         background: n.read ? 'white' : '#f7fbff'
                       },
-                      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("span", {
+                      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("span", {
                         className: "dot",
                         style: {
                           width: 8,
@@ -72133,19 +72224,19 @@ function Dashboard() {
                           marginTop: 8,
                           backgroundColor: n.type === 'success' ? '#16a34a' : n.type === 'warning' ? '#f59e0b' : '#0ea5e9'
                         }
-                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
+                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
                         className: "content",
                         style: {
                           flex: 1
                         },
-                        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
+                        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
                           className: "title",
                           style: {
                             fontWeight: 600,
                             fontSize: 13
                           },
                           children: n.title
-                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
                           className: "desc",
                           style: {
                             fontSize: 12,
@@ -72153,7 +72244,7 @@ function Dashboard() {
                             marginTop: 2
                           },
                           children: n.desc
-                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
                           className: "time",
                           style: {
                             fontSize: 11,
@@ -72167,20 +72258,28 @@ function Dashboard() {
                   })
                 })]
               })]
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("button", {
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+              className: "icon-circle",
+              title: theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode',
+              onClick: function onClick() {
+                var t = (0,_utils_theme__WEBPACK_IMPORTED_MODULE_3__.toggleTheme)();
+                setTheme(t);
+              },
+              children: theme === 'dark' ? sunIcon() : moonIcon()
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
               className: "icon-circle",
               title: "Settings",
               onClick: function onClick() {
                 return navigate('/dashboard/settings');
               },
               children: settingsIcon()
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
               className: "profile-menu-wrapper",
               ref: profileMenuRef,
               style: {
                 position: 'relative'
               },
-              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("button", {
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("button", {
                 className: "profile-chip",
                 title: "Profile",
                 onClick: function onClick() {
@@ -72189,14 +72288,14 @@ function Dashboard() {
                   });
                 },
                 "aria-expanded": showProfileMenu,
-                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("span", {
+                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("span", {
                   className: "avatar-sm",
                   children: userInitials
-                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("span", {
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("span", {
                   className: "profile-name",
                   children: profileData.name || 'Admin'
                 })]
-              }), showProfileMenu && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
+              }), showProfileMenu && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
                 className: "notifications-dropdown",
                 style: {
                   position: 'absolute',
@@ -72209,13 +72308,13 @@ function Dashboard() {
                   overflow: 'hidden',
                   zIndex: 4000
                 },
-                children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("ul", {
+                children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("ul", {
                   className: "dropdown-list",
                   style: {
                     margin: 0,
                     padding: 0
                   },
-                  children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("li", {
+                  children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("li", {
                     className: "dropdown-item",
                     style: {
                       padding: '12px 14px',
@@ -72226,7 +72325,7 @@ function Dashboard() {
                       navigate('/dashboard/profile');
                     },
                     children: "View Profile"
-                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("li", {
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("li", {
                     className: "dropdown-item",
                     style: {
                       padding: '12px 14px',
@@ -72237,7 +72336,7 @@ function Dashboard() {
                       navigate('/dashboard/settings');
                     },
                     children: "Settings"
-                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("li", {
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("li", {
                     className: "dropdown-item",
                     style: {
                       padding: '12px 14px',
@@ -72255,235 +72354,235 @@ function Dashboard() {
             })]
           })
         })]
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
         className: "dashboard-content",
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
           className: "welcome-section",
-          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
             className: "welcome-card",
-            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("h3", {
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("h3", {
               children: ["Welcome back, ", profileData.name || 'Admin']
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("p", {
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("p", {
               children: "Here's what's happening in your campus today"
             })]
           })
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
           className: "stats-section",
-          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
             className: "stat-card",
-            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
               className: "stat-icon blue",
               children: studentsIcon(true)
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
               className: "stat-body",
-              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
                 className: "stat-value",
                 children: dashboardData.loading ? '...' : formatNumber(dashboardData.totalStudents)
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
                 className: "stat-label",
                 children: "Total Students"
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
                 className: "stat-change ".concat(changes.students.isPositive ? 'positive' : 'negative'),
                 children: dashboardData.loading ? '...' : "".concat(changes.students.isPositive ? '+' : '-').concat(changes.students.percentage, "% vs last term")
               })]
             })]
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
             className: "stat-card",
-            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
               className: "stat-icon green",
               children: facultyIcon(true)
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
               className: "stat-body",
-              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
                 className: "stat-value",
                 children: dashboardData.loading ? '...' : formatNumber(dashboardData.totalFaculty)
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
                 className: "stat-label",
                 children: "Total Faculty"
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
                 className: "stat-change ".concat(changes.faculty.isPositive ? 'positive' : 'negative'),
                 children: dashboardData.loading ? '...' : "".concat(changes.faculty.isPositive ? '+' : '-').concat(changes.faculty.percentage, "% vs last term")
               })]
             })]
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
             className: "stat-card",
-            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
               className: "stat-icon yellow",
               children: coursesIcon(true)
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
               className: "stat-body",
-              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
                 className: "stat-value",
                 children: dashboardData.loading ? '...' : formatNumber(dashboardData.activeCourses)
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
                 className: "stat-label",
                 children: "Active Courses"
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
                 className: "stat-change ".concat(changes.courses.isPositive ? 'positive' : 'negative'),
                 children: dashboardData.loading ? '...' : "".concat(changes.courses.isPositive ? '+' : '-').concat(changes.courses.percentage, "% vs last term")
               })]
             })]
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
             className: "stat-card",
-            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
               className: "stat-icon cyan",
               children: departmentsIcon(true)
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
               className: "stat-body",
-              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
                 className: "stat-value",
                 children: dashboardData.loading ? '...' : formatNumber(dashboardData.departments)
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
                 className: "stat-label",
                 children: "Departments"
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
                 className: "stat-change ".concat(changes.departments.isPositive ? 'positive' : 'negative'),
                 children: dashboardData.loading ? '...' : "".concat(changes.departments.isPositive ? '+' : '-').concat(changes.departments.percentage, "% vs last term")
               })]
             })]
           })]
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
           className: "charts-section",
-          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
             className: "chart-card",
-            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
               className: "chart-header",
-              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("h3", {
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("h3", {
                 children: "Students by Course"
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("button", {
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
                 className: "view-report-btn",
                 onClick: function onClick() {
                   return navigate('/dashboard/reports');
                 },
                 children: "View report"
               })]
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
               className: "chart-container",
-              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
                 className: "bar-chart",
-                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
+                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
                   className: "bar-chart-y-axis",
-                  children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
+                  children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
                     children: "100%"
-                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
                     children: "80%"
-                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
                     children: "60%"
-                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
                     children: "40%"
-                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
                     children: "20%"
-                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
                     children: "0%"
                   })]
-                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
                   className: "bar-chart-bars",
                   children: topCourses.map(function (_ref11, index) {
                     var _ref12 = _slicedToArray(_ref11, 2),
                       course = _ref12[0],
                       percentage = _ref12[1];
-                    return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
+                    return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
                       className: "bar-container",
-                      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
+                      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
                         className: "bar",
                         style: {
                           height: "".concat(percentage, "%")
                         },
                         title: "".concat(course, ": ").concat(percentage, "%")
-                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
+                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
                         className: "bar-label",
                         children: course
                       })]
                     }, index);
                   })
                 })]
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
                 className: "chart-legend",
-                children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("p", {
+                children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("p", {
                   className: "text-muted small text-center mt-3"
                 })
               })]
             })]
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
             className: "chart-card",
-            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
               className: "chart-header",
-              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("h3", {
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("h3", {
                 children: "Faculty by Department"
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("button", {
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
                 className: "view-report-btn",
                 onClick: function onClick() {
                   return navigate('/dashboard/reports');
                 },
                 children: "View report"
               })]
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
               className: "chart-container",
-              children: dashboardData.loading ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
+              children: dashboardData.loading ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
                 className: "chart-placeholder",
-                children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
+                children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
                   className: "spinner-border text-primary",
                   role: "status",
-                  children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("span", {
+                  children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("span", {
                     className: "visually-hidden",
                     children: "Loading..."
                   })
                 })
-              }) : facultyDistribution.length > 0 ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
+              }) : facultyDistribution.length > 0 ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
                 className: "donut-chart",
-                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
+                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
                   className: "donut-chart-visual",
-                  children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
+                  children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
                     className: "donut-chart-circle",
-                    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
+                    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
                       className: "donut-chart-svg",
-                      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("svg", {
+                      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("svg", {
                         width: "120",
                         height: "120",
                         viewBox: "0 0 120 120",
-                        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("circle", {
+                        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("circle", {
                           cx: "60",
                           cy: "60",
                           r: "50",
                           fill: "none",
                           stroke: "#f0f0f0",
                           strokeWidth: "20"
-                        }), getDonutSegments(), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("circle", {
+                        }), getDonutSegments(), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("circle", {
                           cx: "60",
                           cy: "60",
                           r: "30",
                           fill: "white"
                         })]
-                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
+                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
                         className: "donut-chart-center",
-                        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
+                        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
                           className: "donut-total",
                           children: facultyDistribution.reduce(function (sum, dept) {
                             return sum + dept.count;
                           }, 0)
-                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
                           className: "donut-label",
                           children: "Total Faculty"
                         })]
                       })]
                     })
                   })
-                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
                   className: "donut-chart-legend",
                   children: facultyDistribution.map(function (item, index) {
-                    return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
+                    return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
                       className: "legend-item",
-                      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
+                      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
                         className: "legend-color",
                         style: {
                           backgroundColor: item.color
                         }
-                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
+                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
                         className: "legend-label",
-                        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("span", {
+                        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("span", {
                           className: "legend-department",
                           children: item.department
-                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("span", {
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("span", {
                           className: "legend-count",
                           children: ["(", item.count, ")"]
                         })]
@@ -72491,9 +72590,9 @@ function Dashboard() {
                     }, index);
                   })
                 })]
-              }) : /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
+              }) : /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
                 className: "chart-placeholder",
-                children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("p", {
+                children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("p", {
                   className: "text-muted",
                   children: "No faculty data available"
                 })
@@ -72524,12 +72623,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router/dist/index.js");
 /* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/dist/index.js");
 /* harmony import */ var _NotificationBell__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./NotificationBell */ "./resources/js/components/NotificationBell.js");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+/* harmony import */ var _utils_theme__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../utils/theme */ "./resources/js/utils/theme.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
 function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, _typeof(o); }
-function _toConsumableArray(r) { return _arrayWithoutHoles(r) || _iterableToArray(r) || _unsupportedIterableToArray(r) || _nonIterableSpread(); }
-function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
-function _iterableToArray(r) { if ("undefined" != typeof Symbol && null != r[Symbol.iterator] || null != r["@@iterator"]) return Array.from(r); }
-function _arrayWithoutHoles(r) { if (Array.isArray(r)) return _arrayLikeToArray(r); }
 function ownKeys(e, r) { var t = Object.keys(e); if (Object.getOwnPropertySymbols) { var o = Object.getOwnPropertySymbols(e); r && (o = o.filter(function (r) { return Object.getOwnPropertyDescriptor(e, r).enumerable; })), t.push.apply(t, o); } return t; }
 function _objectSpread(e) { for (var r = 1; r < arguments.length; r++) { var t = null != arguments[r] ? arguments[r] : {}; r % 2 ? ownKeys(Object(t), !0).forEach(function (r) { _defineProperty(e, r, t[r]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : ownKeys(Object(t)).forEach(function (r) { Object.defineProperty(e, r, Object.getOwnPropertyDescriptor(t, r)); }); } return e; }
 function _defineProperty(e, r, t) { return (r = _toPropertyKey(r)) in e ? Object.defineProperty(e, r, { value: t, enumerable: !0, configurable: !0, writable: !0 }) : e[r] = t, e; }
@@ -72545,6 +72641,7 @@ function _unsupportedIterableToArray(r, a) { if (r) { if ("string" == typeof r) 
 function _arrayLikeToArray(r, a) { (null == a || a > r.length) && (a = r.length); for (var e = 0, n = Array(a); e < a; e++) n[e] = r[e]; return n; }
 function _iterableToArrayLimit(r, l) { var t = null == r ? null : "undefined" != typeof Symbol && r[Symbol.iterator] || r["@@iterator"]; if (null != t) { var e, n, i, u, a = [], f = !0, o = !1; try { if (i = (t = t.call(r)).next, 0 === l) { if (Object(t) !== t) return; f = !1; } else for (; !(f = (e = i.call(t)).done) && (a.push(e.value), a.length !== l); f = !0); } catch (r) { o = !0, n = r; } finally { try { if (!f && null != t["return"] && (u = t["return"](), Object(u) !== u)) return; } finally { if (o) throw n; } } return a; } }
 function _arrayWithHoles(r) { if (Array.isArray(r)) return r; }
+
 
 
 
@@ -72645,16 +72742,51 @@ function FacultyPage() {
     _useState32 = _slicedToArray(_useState31, 2),
     departments = _useState32[0],
     setDepartments = _useState32[1];
+  // Photo upload state
+  var _useState33 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(null),
+    _useState34 = _slicedToArray(_useState33, 2),
+    photoFile = _useState34[0],
+    setPhotoFile = _useState34[1];
+  var _useState35 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(null),
+    _useState36 = _slicedToArray(_useState35, 2),
+    photoPreview = _useState36[0],
+    setPhotoPreview = _useState36[1];
+  // Persisted uploaded photos (data URLs) fallback when server doesn't return photo_url
+  var _useState37 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)({}),
+    _useState38 = _slicedToArray(_useState37, 2),
+    uploadedPhotos = _useState38[0],
+    setUploadedPhotos = _useState38[1];
+
+  // Load persisted uploaded photos from localStorage on mount
+  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function () {
+    try {
+      var raw = localStorage.getItem('sfms_uploaded_faculty_photos');
+      if (raw) setUploadedPhotos(JSON.parse(raw));
+    } catch (e) {
+      console.error('Failed to load uploaded faculty photos from localStorage', e);
+    }
+  }, []);
+  var saveUploadedPhotos = function saveUploadedPhotos(map) {
+    try {
+      localStorage.setItem('sfms_uploaded_faculty_photos', JSON.stringify(map || {}));
+    } catch (e) {
+      console.error('Failed to save uploaded faculty photos to localStorage', e);
+    }
+  };
   function logout() {
     localStorage.removeItem('sfms_auth');
     navigate('/login');
   }
   // Menus (profile only)
-  var _useState33 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false),
-    _useState34 = _slicedToArray(_useState33, 2),
-    showProfileMenu = _useState34[0],
-    setShowProfileMenu = _useState34[1];
+  var _useState39 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false),
+    _useState40 = _slicedToArray(_useState39, 2),
+    showProfileMenu = _useState40[0],
+    setShowProfileMenu = _useState40[1];
   var profileMenuRef = react__WEBPACK_IMPORTED_MODULE_0___default().useRef(null);
+  var _useState41 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)('light'),
+    _useState42 = _slicedToArray(_useState41, 2),
+    theme = _useState42[0],
+    setTheme = _useState42[1];
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function () {
     var onDown = function onDown(e) {
       if (profileMenuRef.current && !profileMenuRef.current.contains(e.target)) setShowProfileMenu(false);
@@ -72699,103 +72831,137 @@ function FacultyPage() {
     } catch (e) {}
   };
 
-  // Load departments from localStorage
+  // Load departments from API (replace localStorage reliance)
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function () {
-    loadSettingsData();
-    fetchProfile();
+    _asyncToGenerator(/*#__PURE__*/_regenerator().m(function _callee() {
+      var t;
+      return _regenerator().w(function (_context) {
+        while (1) switch (_context.n) {
+          case 0:
+            _context.n = 1;
+            return loadSettingsData();
+          case 1:
+            fetchProfile();
+            try {
+              t = (0,_utils_theme__WEBPACK_IMPORTED_MODULE_4__.initTheme)();
+              setTheme(t);
+            } catch (e) {}
+          case 2:
+            return _context.a(2);
+        }
+      }, _callee);
+    }))();
   }, []);
 
   // must match settings.js version
   var DEPARTMENTS_VERSION = '2';
-  var loadSettingsData = function loadSettingsData() {
-    // Load departments from localStorage with version check
-    var savedDepartmentsRaw = localStorage.getItem('sfms_departments');
-    var savedDepartmentsMetaRaw = localStorage.getItem('sfms_departments_meta');
-    var useSavedDepartments = false;
-    if (savedDepartmentsRaw && savedDepartmentsMetaRaw) {
-      try {
-        var meta = JSON.parse(savedDepartmentsMetaRaw);
-        if (meta && meta.version === DEPARTMENTS_VERSION) {
-          useSavedDepartments = true;
-        }
-      } catch (e) {
-        useSavedDepartments = false;
-      }
-    }
-    if (useSavedDepartments) {
-      try {
-        var deptData = JSON.parse(savedDepartmentsRaw);
-        var activeDepartments = deptData.filter(function (dept) {
-          return dept.status === 'ACTIVE';
-        });
-        setDepartments(activeDepartments.map(function (dept) {
-          return dept.name;
-        }));
-        return;
-      } catch (err) {
-        // fallthrough to initialize defaults
-        console.warn('Invalid saved departments, falling back to defaults');
-      }
-    }
-
-    // Fallback to default departments if not found or version mismatch
-    setDepartments(['Computer Science Program', 'Business Administration Program', 'Arts & Sciences Program', 'Engineering Program', 'Teachers Eductation Program', 'Accountancy Program', 'Nursing Program', 'Criminal Justice Program', 'Tourism Management Program']);
-  };
-  var fetchProfile = /*#__PURE__*/function () {
-    var _ref = _asyncToGenerator(/*#__PURE__*/_regenerator().m(function _callee() {
-      var res, data, u, _t;
-      return _regenerator().w(function (_context) {
-        while (1) switch (_context.p = _context.n) {
+  var loadSettingsData = /*#__PURE__*/function () {
+    var _ref2 = _asyncToGenerator(/*#__PURE__*/_regenerator().m(function _callee2() {
+      var res, data, list, activeDepartments, _t;
+      return _regenerator().w(function (_context2) {
+        while (1) switch (_context2.p = _context2.n) {
           case 0:
-            _context.p = 0;
-            _context.n = 1;
-            return fetch('/api/profile');
+            _context2.p = 0;
+            _context2.n = 1;
+            return fetch('/api/departments', {
+              method: 'GET',
+              headers: {
+                'Accept': 'application/json',
+                'X-Requested-With': 'XMLHttpRequest'
+              }
+            });
           case 1:
-            res = _context.v;
+            res = _context2.v;
             if (!res.ok) {
-              _context.n = 3;
+              _context2.n = 3;
               break;
             }
-            _context.n = 2;
+            _context2.n = 2;
             return res.json();
           case 2:
-            data = _context.v;
+            data = _context2.v;
+            list = Array.isArray(data) ? data : data.departments || [];
+            activeDepartments = list.filter ? list.filter(function (d) {
+              return d.status === 'ACTIVE';
+            }) : [];
+            setDepartments(activeDepartments.map(function (dept) {
+              return (dept.name || '').replace(/\s*Program$/i, '');
+            }));
+            return _context2.a(2);
+          case 3:
+            _context2.n = 5;
+            break;
+          case 4:
+            _context2.p = 4;
+            _t = _context2.v;
+            console.warn('Failed to fetch departments from API, falling back to defaults', _t);
+          case 5:
+            // Fallback defaults
+            setDepartments(['Computer Science', 'Business Administration', 'Arts & Humanities', 'Engineering', 'Teacher Education', 'Accountancy', 'Nursing', 'Criminal Justice', 'Tourism Management']);
+          case 6:
+            return _context2.a(2);
+        }
+      }, _callee2, null, [[0, 4]]);
+    }));
+    return function loadSettingsData() {
+      return _ref2.apply(this, arguments);
+    };
+  }();
+  var fetchProfile = /*#__PURE__*/function () {
+    var _ref3 = _asyncToGenerator(/*#__PURE__*/_regenerator().m(function _callee3() {
+      var res, data, u, _t2;
+      return _regenerator().w(function (_context3) {
+        while (1) switch (_context3.p = _context3.n) {
+          case 0:
+            _context3.p = 0;
+            _context3.n = 1;
+            return fetch('/api/profile');
+          case 1:
+            res = _context3.v;
+            if (!res.ok) {
+              _context3.n = 3;
+              break;
+            }
+            _context3.n = 2;
+            return res.json();
+          case 2:
+            data = _context3.v;
             u = data.user || {};
             setProfileData({
               name: u.name || ''
             });
           case 3:
-            _context.n = 5;
+            _context3.n = 5;
             break;
           case 4:
-            _context.p = 4;
-            _t = _context.v;
+            _context3.p = 4;
+            _t2 = _context3.v;
           case 5:
-            return _context.a(2);
+            return _context3.a(2);
         }
-      }, _callee, null, [[0, 4]]);
+      }, _callee3, null, [[0, 4]]);
     }));
     return function fetchProfile() {
-      return _ref.apply(this, arguments);
+      return _ref3.apply(this, arguments);
     };
   }();
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function () {
     fetchFacultyData();
   }, [filters]);
   var fetchFacultyData = /*#__PURE__*/function () {
-    var _ref2 = _asyncToGenerator(/*#__PURE__*/_regenerator().m(function _callee2() {
-      var queryParams, url, response, data, _t2;
-      return _regenerator().w(function (_context2) {
-        while (1) switch (_context2.p = _context2.n) {
+    var _ref4 = _asyncToGenerator(/*#__PURE__*/_regenerator().m(function _callee4() {
+      var queryParams, url, response, data, list, next, _t3;
+      return _regenerator().w(function (_context4) {
+        while (1) switch (_context4.p = _context4.n) {
           case 0:
-            _context2.p = 0;
+            _context4.p = 0;
             setLoading(true);
             queryParams = new URLSearchParams();
             if (filters.department) queryParams.append('department', filters.department);
             if (filters.status) queryParams.append('status', filters.status);
             if (filters.search) queryParams.append('search', filters.search);
             url = "/api/faculties".concat(queryParams.toString() ? "?".concat(queryParams.toString()) : '');
-            _context2.n = 1;
+            _context4.n = 1;
             return fetch(url, {
               method: 'GET',
               headers: {
@@ -72805,55 +72971,72 @@ function FacultyPage() {
               }
             });
           case 1:
-            response = _context2.v;
+            response = _context4.v;
             if (!response.ok) {
-              _context2.n = 3;
+              _context4.n = 3;
               break;
             }
-            _context2.n = 2;
+            _context4.n = 2;
             return response.json();
           case 2:
-            data = _context2.v;
-            setFacultyData(data.faculties || data);
-            _context2.n = 4;
+            data = _context4.v;
+            list = data.faculties || data;
+            setFacultyData(list);
+            // Clean up any local fallback images for items that now have server photo_url
+            try {
+              next = _objectSpread({}, uploadedPhotos || {});
+              (Array.isArray(list) ? list : []).forEach(function (f) {
+                if (f && f.faculty_number && f.photo_url && next[f.faculty_number]) {
+                  delete next[f.faculty_number];
+                }
+              });
+              // Only update if changed
+              if (JSON.stringify(next) !== JSON.stringify(uploadedPhotos)) {
+                setUploadedPhotos(next);
+                saveUploadedPhotos(next);
+              }
+            } catch (e) {
+              console.error('Error cleaning uploadedPhotos after fetch', e);
+            }
+            _context4.n = 4;
             break;
           case 3:
             console.error('Failed to fetch faculty data');
             setErrors(['Failed to load faculty data']);
           case 4:
-            _context2.n = 6;
+            _context4.n = 6;
             break;
           case 5:
-            _context2.p = 5;
-            _t2 = _context2.v;
-            console.error('Error fetching faculty data:', _t2);
+            _context4.p = 5;
+            _t3 = _context4.v;
+            console.error('Error fetching faculty data:', _t3);
             setErrors(['Network error occurred while loading data']);
           case 6:
-            _context2.p = 6;
+            _context4.p = 6;
             setLoading(false);
-            return _context2.f(6);
+            return _context4.f(6);
           case 7:
-            return _context2.a(2);
+            return _context4.a(2);
         }
-      }, _callee2, null, [[0, 5, 6, 7]]);
+      }, _callee4, null, [[0, 5, 6, 7]]);
     }));
     return function fetchFacultyData() {
-      return _ref2.apply(this, arguments);
+      return _ref4.apply(this, arguments);
     };
   }();
   var fetchArchivedData = /*#__PURE__*/function () {
-    var _ref3 = _asyncToGenerator(/*#__PURE__*/_regenerator().m(function _callee3() {
-      var queryParams, url, response, data, _t3;
-      return _regenerator().w(function (_context3) {
-        while (1) switch (_context3.p = _context3.n) {
+    var _ref5 = _asyncToGenerator(/*#__PURE__*/_regenerator().m(function _callee5() {
+      var queryParams, url, response, data, _t4;
+      return _regenerator().w(function (_context5) {
+        while (1) switch (_context5.p = _context5.n) {
           case 0:
-            _context3.p = 0;
+            _context5.p = 0;
             setArchiveLoading(true);
             queryParams = new URLSearchParams();
             if (archiveFilters.department) queryParams.append('department', archiveFilters.department);
             if (archiveFilters.search) queryParams.append('search', archiveFilters.search);
             url = "/api/archived-faculties".concat(queryParams.toString() ? "?".concat(queryParams.toString()) : '');
-            _context3.n = 1;
+            _context5.n = 1;
             return fetch(url, {
               method: 'GET',
               headers: {
@@ -72863,40 +73046,40 @@ function FacultyPage() {
               }
             });
           case 1:
-            response = _context3.v;
+            response = _context5.v;
             if (!response.ok) {
-              _context3.n = 3;
+              _context5.n = 3;
               break;
             }
-            _context3.n = 2;
+            _context5.n = 2;
             return response.json();
           case 2:
-            data = _context3.v;
+            data = _context5.v;
             setArchivedData(data.archived_faculties || data);
-            _context3.n = 4;
+            _context5.n = 4;
             break;
           case 3:
             console.error('Failed to fetch archived data');
             setErrors(['Failed to load archived data']);
           case 4:
-            _context3.n = 6;
+            _context5.n = 6;
             break;
           case 5:
-            _context3.p = 5;
-            _t3 = _context3.v;
-            console.error('Error fetching archived data:', _t3);
+            _context5.p = 5;
+            _t4 = _context5.v;
+            console.error('Error fetching archived data:', _t4);
             setErrors(['Network error occurred while loading archived data']);
           case 6:
-            _context3.p = 6;
+            _context5.p = 6;
             setArchiveLoading(false);
-            return _context3.f(6);
+            return _context5.f(6);
           case 7:
-            return _context3.a(2);
+            return _context5.a(2);
         }
-      }, _callee3, null, [[0, 5, 6, 7]]);
+      }, _callee5, null, [[0, 5, 6, 7]]);
     }));
     return function fetchArchivedData() {
-      return _ref3.apply(this, arguments);
+      return _ref5.apply(this, arguments);
     };
   }();
   var handleInputChange = function handleInputChange(e) {
@@ -72937,6 +73120,22 @@ function FacultyPage() {
       return _objectSpread(_objectSpread({}, prev), {}, _defineProperty({}, name, value));
     });
   };
+
+  // File input handler for faculty photo
+  var handlePhotoChange = function handlePhotoChange(e) {
+    var file = e.target.files && e.target.files[0];
+    if (file) {
+      setPhotoFile(file);
+      try {
+        setPhotoPreview(URL.createObjectURL(file));
+      } catch (err) {
+        console.error(err);
+      }
+    } else {
+      setPhotoFile(null);
+      setPhotoPreview(null);
+    }
+  };
   var handleArchiveFilterChange = function handleArchiveFilterChange(e) {
     var _e$target3 = e.target,
       name = _e$target3.name,
@@ -72946,49 +73145,56 @@ function FacultyPage() {
     });
   };
   var handleSubmit = /*#__PURE__*/function () {
-    var _ref4 = _asyncToGenerator(/*#__PURE__*/_regenerator().m(function _callee4(e) {
-      var csrfToken, headers, url, method, response, contentType, data, text, errorMessages, _t4;
-      return _regenerator().w(function (_context4) {
-        while (1) switch (_context4.p = _context4.n) {
+    var _ref6 = _asyncToGenerator(/*#__PURE__*/_regenerator().m(function _callee6(e) {
+      var isEdit, url, payload, csrfToken, headers, response, contentType, data, ct, text, facultyNumber, reader, errorMessages, _t5;
+      return _regenerator().w(function (_context6) {
+        while (1) switch (_context6.p = _context6.n) {
           case 0:
             e.preventDefault();
             setErrors([]);
-            _context4.p = 1;
+            _context6.p = 1;
+            isEdit = !!editingFaculty;
+            url = isEdit ? "/api/faculties/".concat(editingFaculty.id) : '/api/faculties'; // Use FormData so we can attach photo files. Laravel accepts multipart even for new records.
+            payload = new FormData();
+            Object.keys(formData).forEach(function (key) {
+              if (formData[key] !== undefined && formData[key] !== null) payload.append(key, formData[key]);
+            });
+            if (photoFile) payload.append('photo', photoFile);
+            if (isEdit) payload.append('_method', 'PUT');
             csrfToken = getCsrfToken();
-            headers = {
-              'Content-Type': 'application/json',
-              'Accept': 'application/json',
+            headers = _objectSpread({
               'X-Requested-With': 'XMLHttpRequest'
-            };
-            if (csrfToken) {
-              headers['X-CSRF-TOKEN'] = csrfToken;
-            }
-            url = editingFaculty ? "/api/faculties/".concat(editingFaculty.id) : '/api/faculties';
-            method = editingFaculty ? 'PUT' : 'POST';
-            _context4.n = 2;
+            }, csrfToken ? {
+              'X-CSRF-TOKEN': csrfToken
+            } : {});
+            _context6.n = 2;
             return fetch(url, {
-              method: method,
+              method: 'POST',
+              // POST with _method=PUT for editing
               headers: headers,
-              body: JSON.stringify(formData)
+              body: payload
             });
           case 2:
-            response = _context4.v;
+            response = _context6.v;
             contentType = response.headers.get('content-type');
-            if (!(contentType && contentType.includes('application/json'))) {
-              _context4.n = 4;
+            ct = contentType || '';
+            if (!ct.includes('application/json')) {
+              _context6.n = 4;
               break;
             }
-            _context4.n = 3;
+            _context6.n = 3;
             return response.json();
           case 3:
-            data = _context4.v;
-            _context4.n = 6;
+            data = _context6.v;
+            _context6.n = 6;
             break;
           case 4:
-            _context4.n = 5;
-            return response.text();
+            _context6.n = 5;
+            return response.text()["catch"](function () {
+              return '';
+            });
           case 5:
-            text = _context4.v;
+            text = _context6.v;
             try {
               data = JSON.parse(text);
             } catch (_unused) {
@@ -72997,76 +73203,84 @@ function FacultyPage() {
               };
             }
           case 6:
-            if (response.ok) {
-              if (editingFaculty) {
-                setFacultyData(function (prev) {
-                  return prev.map(function (faculty) {
-                    return faculty.id === editingFaculty.id ? data.faculty : faculty;
-                  });
-                });
-                setToastMessage(data.success || 'Faculty updated successfully!');
-              } else {
-                setFacultyData(function (prev) {
-                  return [data.faculty].concat(_toConsumableArray(prev));
-                });
-                setToastMessage(data.success || 'Faculty added successfully!');
-
-                // Add notification for new faculty
-                pushNotification({
-                  id: "faculty-create-".concat(Date.now()),
-                  type: 'success',
-                  title: 'New faculty added',
-                  desc: "".concat(data.faculty.faculty_number, " - ").concat(data.faculty.name),
-                  time: Date.now(),
-                  read: false
-                });
-              }
-              setShowModal(false);
-              setEditingFaculty(null);
-              setShowToast(true);
-              setFormData({
-                faculty_number: '',
-                name: '',
-                department: '',
-                position: '',
-                email: '',
-                contact: '',
-                status: 'ACTIVE',
-                gender: '',
-                dob: '',
-                age: '',
-                street_address: '',
-                city_municipality: '',
-                province_region: '',
-                zip_code: ''
-              });
-              setTimeout(function () {
-                return setShowToast(false);
-              }, 3000);
-            } else {
-              if (data.errors) {
-                errorMessages = Object.values(data.errors).flat();
-                setErrors(errorMessages);
-              } else if (data.message) {
-                setErrors([data.message]);
-              } else {
-                setErrors(['Failed to save faculty member. Please try again.']);
+            if (!response.ok) {
+              _context6.n = 8;
+              break;
+            }
+            // If we uploaded a photo file, also persist a local dataURL fallback so the avatar
+            // displays immediately and survives refresh if the server doesn't return photo_url.
+            facultyNumber = (isEdit ? editingFaculty && editingFaculty.faculty_number : formData.faculty_number) || data && data.faculty && data.faculty.faculty_number || '';
+            if (photoFile && facultyNumber) {
+              try {
+                reader = new FileReader();
+                reader.onload = function () {
+                  var dataUrl = reader.result;
+                  var next = _objectSpread({}, uploadedPhotos || {});
+                  next[facultyNumber] = dataUrl;
+                  setUploadedPhotos(next);
+                  saveUploadedPhotos(next);
+                };
+                reader.readAsDataURL(photoFile);
+              } catch (e) {
+                console.error('Failed to read uploaded photo for local persistence', e);
               }
             }
-            _context4.n = 8;
-            break;
+
+            // Refresh list from server so we get the saved photo_url and normalized data
+            _context6.n = 7;
+            return fetchFacultyData();
           case 7:
-            _context4.p = 7;
-            _t4 = _context4.v;
-            console.error('Error saving faculty:', _t4);
-            setErrors(['Network error occurred. Please check your connection and try again.']);
+            setShowModal(false);
+            setEditingFaculty(null);
+            setShowToast(true);
+            setPhotoFile(null);
+            setPhotoPreview(null);
+            setFormData({
+              faculty_number: '',
+              name: '',
+              department: '',
+              position: '',
+              email: '',
+              contact: '',
+              status: 'ACTIVE',
+              gender: '',
+              dob: '',
+              age: '',
+              street_address: '',
+              city_municipality: '',
+              province_region: '',
+              zip_code: ''
+            });
+            setToastMessage(data.success || (isEdit ? 'Faculty updated successfully!' : 'Faculty added successfully!'));
+            setTimeout(function () {
+              return setShowToast(false);
+            }, 3000);
+            _context6.n = 9;
+            break;
           case 8:
-            return _context4.a(2);
+            if (data && data.errors) {
+              errorMessages = Object.values(data.errors).flat();
+              setErrors(errorMessages);
+            } else if (data && data.message) {
+              setErrors([data.message]);
+            } else {
+              setErrors(['Failed to save faculty member. Please try again.']);
+            }
+          case 9:
+            _context6.n = 11;
+            break;
+          case 10:
+            _context6.p = 10;
+            _t5 = _context6.v;
+            console.error('Error saving faculty:', _t5);
+            setErrors(['Network error occurred. Please check your connection and try again.']);
+          case 11:
+            return _context6.a(2);
         }
-      }, _callee4, null, [[1, 7]]);
+      }, _callee6, null, [[1, 10]]);
     }));
     return function handleSubmit(_x) {
-      return _ref4.apply(this, arguments);
+      return _ref6.apply(this, arguments);
     };
   }();
   var handleEdit = function handleEdit(faculty) {
@@ -73087,6 +73301,9 @@ function FacultyPage() {
       province_region: faculty.province_region || '',
       zip_code: faculty.zip_code || ''
     });
+    // show existing photo if available
+    setPhotoPreview(faculty.photo_url || faculty.profile_photo_url || null);
+    setPhotoFile(null);
     setShowModal(true);
   };
   var handleDelete = function handleDelete(faculty) {
@@ -73094,152 +73311,12 @@ function FacultyPage() {
     setShowArchiveModal(true);
   };
   var confirmDelete = /*#__PURE__*/function () {
-    var _ref5 = _asyncToGenerator(/*#__PURE__*/_regenerator().m(function _callee5() {
-      var csrfToken, headers, response, data, _t5;
-      return _regenerator().w(function (_context5) {
-        while (1) switch (_context5.p = _context5.n) {
-          case 0:
-            if (deletingFaculty) {
-              _context5.n = 1;
-              break;
-            }
-            return _context5.a(2);
-          case 1:
-            _context5.p = 1;
-            csrfToken = getCsrfToken();
-            headers = {
-              'Content-Type': 'application/json',
-              'Accept': 'application/json',
-              'X-Requested-With': 'XMLHttpRequest'
-            };
-            if (csrfToken) {
-              headers['X-CSRF-TOKEN'] = csrfToken;
-            }
-            _context5.n = 2;
-            return fetch("/api/faculties/".concat(deletingFaculty.id), {
-              method: 'DELETE',
-              headers: headers
-            });
-          case 2:
-            response = _context5.v;
-            if (!response.ok) {
-              _context5.n = 3;
-              break;
-            }
-            // Remove from current list (since it's now inactive)
-            setFacultyData(function (prev) {
-              return prev.filter(function (faculty) {
-                return faculty.id !== deletingFaculty.id;
-              });
-            });
-            setToastMessage('Faculty moved to inactive status and archived!');
-            setShowToast(true);
-            setTimeout(function () {
-              return setShowToast(false);
-            }, 3000);
-            _context5.n = 5;
-            break;
-          case 3:
-            _context5.n = 4;
-            return response.json();
-          case 4:
-            data = _context5.v;
-            setErrors([data.message || 'Failed to archive faculty member.']);
-          case 5:
-            _context5.n = 7;
-            break;
-          case 6:
-            _context5.p = 6;
-            _t5 = _context5.v;
-            console.error('Error deleting faculty:', _t5);
-            setErrors(['Network error occurred. Please try again.']);
-          case 7:
-            _context5.p = 7;
-            setShowArchiveModal(false);
-            setDeletingFaculty(null);
-            return _context5.f(7);
-          case 8:
-            return _context5.a(2);
-        }
-      }, _callee5, null, [[1, 6, 7, 8]]);
-    }));
-    return function confirmDelete() {
-      return _ref5.apply(this, arguments);
-    };
-  }();
-  var handleRestore = /*#__PURE__*/function () {
-    var _ref6 = _asyncToGenerator(/*#__PURE__*/_regenerator().m(function _callee6(archivedFaculty) {
+    var _ref7 = _asyncToGenerator(/*#__PURE__*/_regenerator().m(function _callee7() {
       var csrfToken, headers, response, data, _t6;
-      return _regenerator().w(function (_context6) {
-        while (1) switch (_context6.p = _context6.n) {
-          case 0:
-            _context6.p = 0;
-            csrfToken = getCsrfToken();
-            headers = {
-              'Content-Type': 'application/json',
-              'Accept': 'application/json',
-              'X-Requested-With': 'XMLHttpRequest'
-            };
-            if (csrfToken) {
-              headers['X-CSRF-TOKEN'] = csrfToken;
-            }
-            _context6.n = 1;
-            return fetch("/api/archived-faculties/".concat(archivedFaculty.id, "/restore"), {
-              method: 'POST',
-              headers: headers
-            });
-          case 1:
-            response = _context6.v;
-            if (!response.ok) {
-              _context6.n = 2;
-              break;
-            }
-            // Remove from archived list
-            setArchivedData(function (prev) {
-              return prev.filter(function (faculty) {
-                return faculty.id !== archivedFaculty.id;
-              });
-            });
-            setToastMessage('Faculty restored successfully!');
-            setShowToast(true);
-
-            // Refresh active faculty list
-            fetchFacultyData();
-            setTimeout(function () {
-              return setShowToast(false);
-            }, 3000);
-            _context6.n = 4;
-            break;
-          case 2:
-            _context6.n = 3;
-            return response.json();
-          case 3:
-            data = _context6.v;
-            setErrors([data.message || 'Failed to restore faculty member.']);
-          case 4:
-            _context6.n = 6;
-            break;
-          case 5:
-            _context6.p = 5;
-            _t6 = _context6.v;
-            console.error('Error restoring faculty:', _t6);
-            setErrors(['Network error occurred. Please try again.']);
-          case 6:
-            return _context6.a(2);
-        }
-      }, _callee6, null, [[0, 5]]);
-    }));
-    return function handleRestore(_x2) {
-      return _ref6.apply(this, arguments);
-    };
-  }();
-  var handlePermanentDelete = /*#__PURE__*/function () {
-    var _ref7 = _asyncToGenerator(/*#__PURE__*/_regenerator().m(function _callee7(archivedFaculty) {
-      var csrfToken, headers, response, data, _t7;
       return _regenerator().w(function (_context7) {
         while (1) switch (_context7.p = _context7.n) {
           case 0:
-            if (window.confirm("Are you sure you want to permanently delete ".concat(archivedFaculty.name, "? This action cannot be undone."))) {
+            if (deletingFaculty) {
               _context7.n = 1;
               break;
             }
@@ -73256,7 +73333,7 @@ function FacultyPage() {
               headers['X-CSRF-TOKEN'] = csrfToken;
             }
             _context7.n = 2;
-            return fetch("/api/archived-faculties/".concat(archivedFaculty.id, "/force"), {
+            return fetch("/api/faculties/".concat(deletingFaculty.id), {
               method: 'DELETE',
               headers: headers
             });
@@ -73264,6 +73341,146 @@ function FacultyPage() {
             response = _context7.v;
             if (!response.ok) {
               _context7.n = 3;
+              break;
+            }
+            // Remove from current list (since it's now inactive)
+            setFacultyData(function (prev) {
+              return prev.filter(function (faculty) {
+                return faculty.id !== deletingFaculty.id;
+              });
+            });
+            setToastMessage('Faculty moved to inactive status and archived!');
+            setShowToast(true);
+            setTimeout(function () {
+              return setShowToast(false);
+            }, 3000);
+            _context7.n = 5;
+            break;
+          case 3:
+            _context7.n = 4;
+            return response.json();
+          case 4:
+            data = _context7.v;
+            setErrors([data.message || 'Failed to archive faculty member.']);
+          case 5:
+            _context7.n = 7;
+            break;
+          case 6:
+            _context7.p = 6;
+            _t6 = _context7.v;
+            console.error('Error deleting faculty:', _t6);
+            setErrors(['Network error occurred. Please try again.']);
+          case 7:
+            _context7.p = 7;
+            setShowArchiveModal(false);
+            setDeletingFaculty(null);
+            return _context7.f(7);
+          case 8:
+            return _context7.a(2);
+        }
+      }, _callee7, null, [[1, 6, 7, 8]]);
+    }));
+    return function confirmDelete() {
+      return _ref7.apply(this, arguments);
+    };
+  }();
+  var handleRestore = /*#__PURE__*/function () {
+    var _ref8 = _asyncToGenerator(/*#__PURE__*/_regenerator().m(function _callee8(archivedFaculty) {
+      var csrfToken, headers, response, data, _t7;
+      return _regenerator().w(function (_context8) {
+        while (1) switch (_context8.p = _context8.n) {
+          case 0:
+            _context8.p = 0;
+            csrfToken = getCsrfToken();
+            headers = {
+              'Content-Type': 'application/json',
+              'Accept': 'application/json',
+              'X-Requested-With': 'XMLHttpRequest'
+            };
+            if (csrfToken) {
+              headers['X-CSRF-TOKEN'] = csrfToken;
+            }
+            _context8.n = 1;
+            return fetch("/api/archived-faculties/".concat(archivedFaculty.id, "/restore"), {
+              method: 'POST',
+              headers: headers
+            });
+          case 1:
+            response = _context8.v;
+            if (!response.ok) {
+              _context8.n = 2;
+              break;
+            }
+            // Remove from archived list
+            setArchivedData(function (prev) {
+              return prev.filter(function (faculty) {
+                return faculty.id !== archivedFaculty.id;
+              });
+            });
+            setToastMessage('Faculty restored successfully!');
+            setShowToast(true);
+
+            // Refresh active faculty list
+            fetchFacultyData();
+            setTimeout(function () {
+              return setShowToast(false);
+            }, 3000);
+            _context8.n = 4;
+            break;
+          case 2:
+            _context8.n = 3;
+            return response.json();
+          case 3:
+            data = _context8.v;
+            setErrors([data.message || 'Failed to restore faculty member.']);
+          case 4:
+            _context8.n = 6;
+            break;
+          case 5:
+            _context8.p = 5;
+            _t7 = _context8.v;
+            console.error('Error restoring faculty:', _t7);
+            setErrors(['Network error occurred. Please try again.']);
+          case 6:
+            return _context8.a(2);
+        }
+      }, _callee8, null, [[0, 5]]);
+    }));
+    return function handleRestore(_x2) {
+      return _ref8.apply(this, arguments);
+    };
+  }();
+  var handlePermanentDelete = /*#__PURE__*/function () {
+    var _ref9 = _asyncToGenerator(/*#__PURE__*/_regenerator().m(function _callee9(archivedFaculty) {
+      var csrfToken, headers, response, data, _t8;
+      return _regenerator().w(function (_context9) {
+        while (1) switch (_context9.p = _context9.n) {
+          case 0:
+            if (window.confirm("Are you sure you want to permanently delete ".concat(archivedFaculty.name, "? This action cannot be undone."))) {
+              _context9.n = 1;
+              break;
+            }
+            return _context9.a(2);
+          case 1:
+            _context9.p = 1;
+            csrfToken = getCsrfToken();
+            headers = {
+              'Content-Type': 'application/json',
+              'Accept': 'application/json',
+              'X-Requested-With': 'XMLHttpRequest'
+            };
+            if (csrfToken) {
+              headers['X-CSRF-TOKEN'] = csrfToken;
+            }
+            _context9.n = 2;
+            return fetch("/api/archived-faculties/".concat(archivedFaculty.id, "/force"), {
+              method: 'DELETE',
+              headers: headers
+            });
+          case 2:
+            response = _context9.v;
+            if (!response.ok) {
+              _context9.n = 3;
               break;
             }
             // Remove from archived list
@@ -73277,46 +73494,46 @@ function FacultyPage() {
             setTimeout(function () {
               return setShowToast(false);
             }, 3000);
-            _context7.n = 5;
+            _context9.n = 5;
             break;
           case 3:
-            _context7.n = 4;
+            _context9.n = 4;
             return response.json();
           case 4:
-            data = _context7.v;
+            data = _context9.v;
             setErrors([data.message || 'Failed to delete faculty member.']);
           case 5:
-            _context7.n = 7;
+            _context9.n = 7;
             break;
           case 6:
-            _context7.p = 6;
-            _t7 = _context7.v;
-            console.error('Error deleting faculty:', _t7);
+            _context9.p = 6;
+            _t8 = _context9.v;
+            console.error('Error deleting faculty:', _t8);
             setErrors(['Network error occurred. Please try again.']);
           case 7:
-            return _context7.a(2);
+            return _context9.a(2);
         }
-      }, _callee7, null, [[1, 6]]);
+      }, _callee9, null, [[1, 6]]);
     }));
     return function handlePermanentDelete(_x3) {
-      return _ref7.apply(this, arguments);
+      return _ref9.apply(this, arguments);
     };
   }();
   var openArchivePage = /*#__PURE__*/function () {
-    var _ref8 = _asyncToGenerator(/*#__PURE__*/_regenerator().m(function _callee8() {
-      return _regenerator().w(function (_context8) {
-        while (1) switch (_context8.n) {
+    var _ref0 = _asyncToGenerator(/*#__PURE__*/_regenerator().m(function _callee0() {
+      return _regenerator().w(function (_context0) {
+        while (1) switch (_context0.n) {
           case 0:
             setShowArchivePage(true);
-            _context8.n = 1;
+            _context0.n = 1;
             return fetchArchivedData();
           case 1:
-            return _context8.a(2);
+            return _context0.a(2);
         }
-      }, _callee8);
+      }, _callee0);
     }));
     return function openArchivePage() {
-      return _ref8.apply(this, arguments);
+      return _ref0.apply(this, arguments);
     };
   }();
   var closeArchivePage = function closeArchivePage() {
@@ -73343,6 +73560,8 @@ function FacultyPage() {
       province_region: '',
       zip_code: ''
     });
+    setPhotoFile(null);
+    setPhotoPreview(null);
   };
   var handleCloseArchiveModal = function handleCloseArchiveModal() {
     setShowArchiveModal(false);
@@ -73373,7 +73592,7 @@ function FacultyPage() {
     };
   };
   var calendarIcon = function calendarIcon() {
-    return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("svg", _objectSpread(_objectSpread({
+    return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("svg", _objectSpread(_objectSpread({
       viewBox: "0 0 24 24",
       width: "18",
       height: "18",
@@ -73382,24 +73601,24 @@ function FacultyPage() {
       strokeWidth: "2",
       strokeLinecap: "round",
       strokeLinejoin: "round",
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("rect", {
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("rect", {
         x: "3",
         y: "4",
         width: "18",
         height: "18",
         rx: "4",
         ry: "4"
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("line", {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("line", {
         x1: "16",
         y1: "2",
         x2: "16",
         y2: "6"
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("line", {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("line", {
         x1: "8",
         y1: "2",
         x2: "8",
         y2: "6"
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("line", {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("line", {
         x1: "3",
         y1: "10",
         x2: "21",
@@ -73408,7 +73627,7 @@ function FacultyPage() {
     }));
   };
   var bellIcon = function bellIcon() {
-    return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("svg", _objectSpread(_objectSpread({
+    return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("svg", _objectSpread(_objectSpread({
       viewBox: "0 0 24 24",
       width: "18",
       height: "18",
@@ -73417,15 +73636,65 @@ function FacultyPage() {
       strokeWidth: "2",
       strokeLinecap: "round",
       strokeLinejoin: "round",
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("path", {
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("path", {
         d: "M18 8a6 6 0 10-12 0c0 7-3 8-3 8h18s-3-1-3-8"
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("path", {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("path", {
         d: "M13.73 21a2 2 0 01-3.46 0"
       })]
     }));
   };
+  var sunIcon = function sunIcon() {
+    var isWhite = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : false;
+    return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("svg", _objectSpread(_objectSpread({
+      viewBox: "0 0 24 24",
+      width: "18",
+      height: "18",
+      fill: "none"
+    }, withStroke(isWhite)), {}, {
+      strokeWidth: "2",
+      strokeLinecap: "round",
+      strokeLinejoin: "round",
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("circle", {
+        cx: "12",
+        cy: "12",
+        r: "4"
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("path", {
+        d: "M12 2v2"
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("path", {
+        d: "M12 20v2"
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("path", {
+        d: "M4.93 4.93l1.41 1.41"
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("path", {
+        d: "M17.66 17.66l1.41 1.41"
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("path", {
+        d: "M2 12h2"
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("path", {
+        d: "M20 12h2"
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("path", {
+        d: "M4.93 19.07l1.41-1.41"
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("path", {
+        d: "M17.66 6.34l1.41-1.41"
+      })]
+    }));
+  };
+  var moonIcon = function moonIcon() {
+    var isWhite = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : false;
+    return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("svg", _objectSpread(_objectSpread({
+      viewBox: "0 0 24 24",
+      width: "18",
+      height: "18",
+      fill: "none"
+    }, withStroke(isWhite)), {}, {
+      strokeWidth: "2",
+      strokeLinecap: "round",
+      strokeLinejoin: "round",
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("path", {
+        d: "M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"
+      })
+    }));
+  };
   var settingsIcon = function settingsIcon() {
-    return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("svg", _objectSpread(_objectSpread({
+    return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("svg", _objectSpread(_objectSpread({
       viewBox: "0 0 24 24",
       width: "18",
       height: "18",
@@ -73434,17 +73703,17 @@ function FacultyPage() {
       strokeWidth: "2",
       strokeLinecap: "round",
       strokeLinejoin: "round",
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("circle", {
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("circle", {
         cx: "12",
         cy: "12",
         r: "3"
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("path", {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("path", {
         d: "M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 010 2.83 2 2 0 01-2.83 0l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-4 0v-.09a1.65 1.65 0 00-1-1.51 1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 01-2.83 0 2 2 0 010-2.83l.06-.06a1.65 1.65 0 00.33-1.82 1.65 1.65 0 00-1.51-1H3a2 2 0 010-4h.09a1.65 1.65 0 001.51-1 1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 010-2.83 2 2 0 012.83 0l.06.06a1.65 1.65 0 001.82.33H9a1.65 1.65 0 001-1.51V3a2 2 0 014 0v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 012.83 0 2 2 0 010 2.83l-.06.06a1.65 1.65 0 00-.33 1.82V9c0 .69.28 1.32.73 1.77.45.45 1.08.73 1.77.73h.09a2 2 0 010 4h-.09a1.65 1.65 0 00-1.77.73z"
       })]
     }));
   };
   var dashboardIcon = function dashboardIcon() {
-    return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("svg", _objectSpread(_objectSpread({
+    return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("svg", _objectSpread(_objectSpread({
       viewBox: "0 0 24 24",
       width: "18",
       height: "18",
@@ -73453,25 +73722,25 @@ function FacultyPage() {
       strokeWidth: "2",
       strokeLinecap: "round",
       strokeLinejoin: "round",
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("rect", {
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("rect", {
         x: "3",
         y: "3",
         width: "7",
         height: "7",
         rx: "2"
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("rect", {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("rect", {
         x: "14",
         y: "3",
         width: "7",
         height: "7",
         rx: "2"
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("rect", {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("rect", {
         x: "14",
         y: "14",
         width: "7",
         height: "7",
         rx: "2"
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("rect", {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("rect", {
         x: "3",
         y: "14",
         width: "7",
@@ -73481,7 +73750,7 @@ function FacultyPage() {
     }));
   };
   var studentsIcon = function studentsIcon() {
-    return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("svg", _objectSpread(_objectSpread({
+    return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("svg", _objectSpread(_objectSpread({
       viewBox: "0 0 24 24",
       width: "18",
       height: "18",
@@ -73490,9 +73759,9 @@ function FacultyPage() {
       strokeWidth: "2",
       strokeLinecap: "round",
       strokeLinejoin: "round",
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("path", {
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("path", {
         d: "M12 14c-4.418 0-8 1.79-8 4v2"
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("circle", {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("circle", {
         cx: "12",
         cy: "7",
         r: "4"
@@ -73500,7 +73769,7 @@ function FacultyPage() {
     }));
   };
   var facultyIcon = function facultyIcon() {
-    return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("svg", _objectSpread(_objectSpread({
+    return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("svg", _objectSpread(_objectSpread({
       viewBox: "0 0 24 24",
       width: "18",
       height: "18",
@@ -73509,13 +73778,13 @@ function FacultyPage() {
       strokeWidth: "2",
       strokeLinecap: "round",
       strokeLinejoin: "round",
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("path", {
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("path", {
         d: "M2 20v-1c0-2.21 3.582-4 8-4s8 1.79 8 4v1"
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("circle", {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("circle", {
         cx: "10",
         cy: "7",
         r: "4"
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("circle", {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("circle", {
         cx: "18",
         cy: "8",
         r: "3"
@@ -73523,7 +73792,7 @@ function FacultyPage() {
     }));
   };
   var reportsIcon = function reportsIcon() {
-    return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("svg", _objectSpread(_objectSpread({
+    return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("svg", _objectSpread(_objectSpread({
       viewBox: "0 0 24 24",
       width: "18",
       height: "18",
@@ -73532,17 +73801,17 @@ function FacultyPage() {
       strokeWidth: "2",
       strokeLinecap: "round",
       strokeLinejoin: "round",
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("path", {
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("path", {
         d: "M3 12h18"
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("path", {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("path", {
         d: "M3 6h18"
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("path", {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("path", {
         d: "M3 18h18"
       })]
     }));
   };
   var profileIcon = function profileIcon() {
-    return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("svg", _objectSpread(_objectSpread({
+    return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("svg", _objectSpread(_objectSpread({
       viewBox: "0 0 24 24",
       width: "18",
       height: "18",
@@ -73551,9 +73820,9 @@ function FacultyPage() {
       strokeWidth: "2",
       strokeLinecap: "round",
       strokeLinejoin: "round",
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("path", {
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("path", {
         d: "M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("circle", {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("circle", {
         cx: "12",
         cy: "7",
         r: "4"
@@ -73561,7 +73830,7 @@ function FacultyPage() {
     }));
   };
   var archiveIcon = function archiveIcon() {
-    return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("svg", _objectSpread(_objectSpread({
+    return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("svg", _objectSpread(_objectSpread({
       viewBox: "0 0 24 24",
       width: "18",
       height: "18",
@@ -73570,15 +73839,15 @@ function FacultyPage() {
       strokeWidth: "2",
       strokeLinecap: "round",
       strokeLinejoin: "round",
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("path", {
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("path", {
         d: "M4 19.5V6a2 2 0 012-2h10l4 4v11.5a1.5 1.5 0 01-1.5 1.5H5.5A1.5 1.5 0 014 19.5z"
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("path", {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("path", {
         d: "M14 4v4h4"
       })]
     }));
   };
   var logoutIcon = function logoutIcon() {
-    return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("svg", _objectSpread(_objectSpread({
+    return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("svg", _objectSpread(_objectSpread({
       viewBox: "0 0 24 24",
       width: "18",
       height: "18",
@@ -73587,11 +73856,11 @@ function FacultyPage() {
       strokeWidth: "2",
       strokeLinecap: "round",
       strokeLinejoin: "round",
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("path", {
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("path", {
         d: "M9 21H5a2 2 0 01-2-2V5a2 2 0 012-2h4"
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("polyline", {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("polyline", {
         points: "16 17 21 12 16 7"
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("line", {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("line", {
         x1: "21",
         y1: "12",
         x2: "9",
@@ -73604,7 +73873,7 @@ function FacultyPage() {
   }).filter(Boolean).join('').slice(0, 2).toUpperCase();
   var renderAvatar = function renderAvatar(name, photoUrl) {
     if (photoUrl) {
-      return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("img", {
+      return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("img", {
         src: photoUrl,
         alt: name,
         className: "avatar-img"
@@ -73613,9 +73882,9 @@ function FacultyPage() {
     var initials = (name || '').split(' ').map(function (n) {
       return n && n[0];
     }).filter(Boolean).join('').slice(0, 2).toUpperCase();
-    return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+    return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
       className: "avatar-sm bg-primary rounded-circle d-flex align-items-center justify-content-center text-white",
-      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("span", {
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("span", {
         className: "fw-bold",
         style: {
           fontSize: '12px'
@@ -73624,78 +73893,78 @@ function FacultyPage() {
       })
     });
   };
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
     className: "sfms-dashboard",
-    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("aside", {
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("aside", {
       className: "sfms-sidebar",
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
         className: "sidebar-brand",
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
           className: "logo",
-          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("img", {
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("img", {
             src: "/img/sfms-logo2.png",
             alt: "SFMS Logo"
           })
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
           className: "brand-text",
           children: "SFMS"
         })]
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("nav", {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("nav", {
         className: "sidebar-nav",
-        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("ul", {
-          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("li", {
-            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(react_router_dom__WEBPACK_IMPORTED_MODULE_2__.Link, {
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("ul", {
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("li", {
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)(react_router_dom__WEBPACK_IMPORTED_MODULE_2__.Link, {
               to: "/dashboard",
-              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("span", {
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("span", {
                 className: "nav-icon",
                 children: dashboardIcon()
               }), "Dashboard"]
             })
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("li", {
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("li", {
             className: "active",
-            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(react_router_dom__WEBPACK_IMPORTED_MODULE_2__.Link, {
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)(react_router_dom__WEBPACK_IMPORTED_MODULE_2__.Link, {
               to: "/dashboard/faculty",
-              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("span", {
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("span", {
                 className: "nav-icon",
                 children: facultyIcon()
               }), "Faculty"]
             })
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("li", {
-            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(react_router_dom__WEBPACK_IMPORTED_MODULE_2__.Link, {
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("li", {
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)(react_router_dom__WEBPACK_IMPORTED_MODULE_2__.Link, {
               to: "/dashboard/students",
-              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("span", {
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("span", {
                 className: "nav-icon",
                 children: studentsIcon()
               }), "Students"]
             })
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("li", {
-            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(react_router_dom__WEBPACK_IMPORTED_MODULE_2__.Link, {
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("li", {
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)(react_router_dom__WEBPACK_IMPORTED_MODULE_2__.Link, {
               to: "/dashboard/calendar",
-              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("span", {
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("span", {
                 className: "nav-icon",
                 children: calendarIcon()
               }), "Calendar"]
             })
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("li", {
-            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(react_router_dom__WEBPACK_IMPORTED_MODULE_2__.Link, {
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("li", {
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)(react_router_dom__WEBPACK_IMPORTED_MODULE_2__.Link, {
               to: "/dashboard/reports",
-              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("span", {
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("span", {
                 className: "nav-icon",
                 children: reportsIcon()
               }), "Reports"]
             })
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("li", {
-            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(react_router_dom__WEBPACK_IMPORTED_MODULE_2__.Link, {
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("li", {
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)(react_router_dom__WEBPACK_IMPORTED_MODULE_2__.Link, {
               to: "/dashboard/settings",
-              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("span", {
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("span", {
                 className: "nav-icon",
                 children: settingsIcon()
               }), "Settings"]
             })
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("li", {
-            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(react_router_dom__WEBPACK_IMPORTED_MODULE_2__.Link, {
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("li", {
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)(react_router_dom__WEBPACK_IMPORTED_MODULE_2__.Link, {
               to: "/dashboard/profile",
-              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("span", {
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("span", {
                 className: "nav-icon",
                 children: profileIcon()
               }), "Profile"]
@@ -73703,42 +73972,50 @@ function FacultyPage() {
           })]
         })
       })]
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("main", {
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("main", {
       className: "sfms-main",
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("header", {
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("header", {
         className: "topbar",
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
           className: "topbar-left",
-          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("h4", {
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("h4", {
             children: "Faculty Management"
           })
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
           className: "topbar-right",
-          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
             className: "top-actions",
-            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("button", {
               className: "btn small outline",
               onClick: function onClick() {
                 return setShowModal(true);
               },
               children: "Add Faculty"
             })
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
             className: "top-icons",
-            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_NotificationBell__WEBPACK_IMPORTED_MODULE_3__["default"], {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_NotificationBell__WEBPACK_IMPORTED_MODULE_3__["default"], {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("button", {
+              className: "icon-circle",
+              title: theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode',
+              onClick: function onClick() {
+                var t = (0,_utils_theme__WEBPACK_IMPORTED_MODULE_4__.toggleTheme)();
+                setTheme(t);
+              },
+              children: theme === 'dark' ? sunIcon() : moonIcon()
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("button", {
               className: "icon-circle",
               title: "Settings",
               onClick: function onClick() {
                 return navigate('/dashboard/settings');
               },
               children: settingsIcon()
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
               className: "profile-menu-wrapper",
               ref: profileMenuRef,
               style: {
                 position: 'relative'
               },
-              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("button", {
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("button", {
                 className: "profile-chip",
                 title: "Profile",
                 onClick: function onClick() {
@@ -73747,14 +74024,14 @@ function FacultyPage() {
                   });
                 },
                 "aria-expanded": showProfileMenu,
-                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("span", {
+                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("span", {
                   className: "avatar-sm",
                   children: userInitials
-                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("span", {
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("span", {
                   className: "profile-name",
                   children: profileData.name || 'Admin'
                 })]
-              }), showProfileMenu && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+              }), showProfileMenu && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
                 className: "notifications-dropdown",
                 style: {
                   position: 'absolute',
@@ -73767,13 +74044,13 @@ function FacultyPage() {
                   overflow: 'hidden',
                   zIndex: 4000
                 },
-                children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("ul", {
+                children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("ul", {
                   className: "dropdown-list",
                   style: {
                     margin: 0,
                     padding: 0
                   },
-                  children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("li", {
+                  children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("li", {
                     className: "dropdown-item",
                     style: {
                       padding: '12px 14px',
@@ -73784,7 +74061,7 @@ function FacultyPage() {
                       navigate('/dashboard/profile');
                     },
                     children: "View Profile"
-                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("li", {
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("li", {
                     className: "dropdown-item",
                     style: {
                       padding: '12px 14px',
@@ -73795,7 +74072,7 @@ function FacultyPage() {
                       navigate('/dashboard/settings');
                     },
                     children: "Settings"
-                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("li", {
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("li", {
                     className: "dropdown-item",
                     style: {
                       padding: '12px 14px',
@@ -73813,59 +74090,59 @@ function FacultyPage() {
             })]
           })]
         })]
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
         className: "faculty-page",
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
           className: "faculty-filters bg-white p-4 mb-4",
-          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
             className: "row g-3 align-items-end",
-            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
               className: "col-md-3",
-              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("label", {
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("label", {
                 className: "form-label",
                 children: "Department"
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("select", {
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("select", {
                 className: "form-select",
                 name: "department",
                 value: filters.department,
                 onChange: handleFilterChange,
-                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("option", {
+                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("option", {
                   value: "",
                   children: "All Departments"
                 }), departments.map(function (dept) {
-                  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("option", {
+                  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("option", {
                     value: dept,
                     children: dept
                   }, dept);
                 })]
               })]
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
               className: "col-md-3",
-              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("label", {
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("label", {
                 className: "form-label",
                 children: "Status"
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("select", {
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("select", {
                 className: "form-select",
                 name: "status",
                 value: filters.status,
                 onChange: handleFilterChange,
-                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("option", {
+                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("option", {
                   value: "",
                   children: "All Status"
-                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("option", {
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("option", {
                   value: "ACTIVE",
                   children: "Active"
-                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("option", {
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("option", {
                   value: "INACTIVE",
                   children: "Inactive"
                 })]
               })]
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
               className: "col-md-4",
-              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("label", {
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("label", {
                 className: "form-label",
                 children: "Search"
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("input", {
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("input", {
                 type: "text",
                 className: "form-control",
                 placeholder: "Search by name, faculty number, position, or email...",
@@ -73873,113 +74150,113 @@ function FacultyPage() {
                 value: filters.search,
                 onChange: handleFilterChange
               })]
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
               className: "col-md-2",
-              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("button", {
                 className: "btn btn-search w-100",
                 onClick: fetchFacultyData,
                 children: "Search"
               })
             })]
           })
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
           className: "faculty-table bg-white",
-          children: loading ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+          children: loading ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
             className: "text-center p-5",
-            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
               className: "spinner-border text-primary",
               role: "status",
-              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("span", {
+              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("span", {
                 className: "visually-hidden",
                 children: "Loading..."
               })
             })
-          }) : facultyData.length > 0 ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("table", {
+          }) : facultyData.length > 0 ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("table", {
             className: "table",
-            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("thead", {
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("thead", {
               className: "table-light",
-              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("tr", {
-                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("th", {
+              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("tr", {
+                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("th", {
                   children: "Photo"
-                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("th", {
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("th", {
                   children: "Faculty Number"
-                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("th", {
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("th", {
                   children: "Name"
-                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("th", {
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("th", {
                   children: "Department"
-                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("th", {
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("th", {
                   children: "Position"
-                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("th", {
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("th", {
                   children: "Gender"
-                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("th", {
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("th", {
                   children: "Date of Birth"
-                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("th", {
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("th", {
                   children: "Age"
-                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("th", {
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("th", {
                   children: "Address"
-                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("th", {
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("th", {
                   children: "Email"
-                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("th", {
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("th", {
                   children: "Contact"
-                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("th", {
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("th", {
                   children: "Status"
-                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("th", {
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("th", {
                   children: "Actions"
                 })]
               })
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("tbody", {
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("tbody", {
               children: facultyData.map(function (faculty) {
                 var _faculty$age;
-                return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("tr", {
-                  children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("td", {
-                    children: renderAvatar(faculty.name, faculty.photo_url || faculty.profile_photo_url)
-                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("td", {
+                return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("tr", {
+                  children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("td", {
+                    children: renderAvatar(faculty.name, faculty.photo_url || faculty.profile_photo_url || uploadedPhotos[faculty.faculty_number])
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("td", {
                     className: "fw-semibold",
                     children: faculty.faculty_number
-                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("td", {
-                    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("td", {
+                    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
                       className: "fw-semibold",
                       children: faculty.name
                     })
-                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("td", {
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("td", {
                     children: faculty.department
-                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("td", {
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("td", {
                     children: faculty.position
-                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("td", {
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("td", {
                     children: faculty.gender || '-'
-                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("td", {
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("td", {
                     children: faculty.dob ? new Date(faculty.dob).toLocaleDateString() : '-'
-                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("td", {
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("td", {
                     children: (_faculty$age = faculty.age) !== null && _faculty$age !== void 0 ? _faculty$age : '-'
-                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("td", {
-                    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("td", {
+                    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
                       className: "small text-muted",
-                      children: [faculty.street_address ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+                      children: [faculty.street_address ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
                         children: faculty.street_address
-                      }) : null, faculty.city_municipality || faculty.province_region || faculty.zip_code ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+                      }) : null, faculty.city_municipality || faculty.province_region || faculty.zip_code ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
                         children: [faculty.city_municipality, faculty.city_municipality && faculty.province_region ? ', ' : '', faculty.province_region, faculty.zip_code && (faculty.city_municipality || faculty.province_region) ? ' - ' + faculty.zip_code : faculty.zip_code || '']
                       }) : null]
                     })
-                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("td", {
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("td", {
                     children: faculty.email
-                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("td", {
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("td", {
                     children: faculty.contact
-                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("td", {
-                    children: faculty.status === 'ACTIVE' ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("span", {
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("td", {
+                    children: faculty.status === 'ACTIVE' ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("span", {
                       className: "badge-active",
                       children: "Active"
-                    }) : /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("span", {
+                    }) : /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("span", {
                       className: "badge-inactive",
                       children: "Inactive"
                     })
-                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("td", {
-                    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("td", {
+                    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("button", {
                       className: "btn btn-sm btn-outline-primary me-2",
                       onClick: function onClick() {
                         return handleEdit(faculty);
                       },
                       children: "Edit"
-                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("button", {
                       className: "btn btn-sm btn-outline-danger",
                       onClick: function onClick() {
                         return handleDelete(faculty);
@@ -73990,16 +74267,16 @@ function FacultyPage() {
                 }, faculty.id);
               })
             })]
-          }) : /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+          }) : /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
             className: "text-center p-5",
-            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("p", {
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("p", {
               className: "text-muted",
               children: "No active faculty members found."
             })
           })
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
           className: "faculty-archive-btn",
-          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("button", {
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("button", {
             className: "btn btn-archive",
             style: {
               backgroundColor: '#0f79e0',
@@ -74007,52 +74284,52 @@ function FacultyPage() {
               color: '#ffffff'
             },
             onClick: openArchivePage,
-            children: [archiveIcon(), " ", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("span", {
+            children: [archiveIcon(), " ", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("span", {
               style: {
                 marginLeft: 8
               },
               children: "View Archive"
             })]
           })
-        }), showModal && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+        }), showModal && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
           className: "sfms-modal",
-          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
             className: "sfms-modal-backdrop",
             onClick: handleCloseModal
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
             className: "sfms-modal-window bg-white",
-            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
               className: "modal-form",
-              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
                 className: "modal-top d-flex justify-content-between align-items-center mb-4",
-                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("h5", {
+                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("h5", {
                   children: editingFaculty ? 'Edit Faculty Member' : 'Add New Faculty Member'
-                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("button", {
                   className: "btn-close",
                   onClick: handleCloseModal,
                   children: "\xD7"
                 })]
-              }), errors.length > 0 && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+              }), errors.length > 0 && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
                 className: "faculty-errors",
-                children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("ul", {
+                children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("ul", {
                   children: errors.map(function (error, index) {
-                    return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("li", {
+                    return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("li", {
                       children: error
                     }, index);
                   })
                 })
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("form", {
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("form", {
                 onSubmit: handleSubmit,
-                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
                   className: "modal-body",
-                  children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+                  children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
                     className: "row g-3",
-                    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+                    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
                       className: "col-md-6",
-                      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("label", {
+                      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("label", {
                         htmlFor: "faculty_number",
                         children: "Faculty Number *"
-                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("input", {
+                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("input", {
                         type: "text",
                         className: "form-control",
                         id: "faculty_number",
@@ -74063,12 +74340,12 @@ function FacultyPage() {
                         placeholder: "e.g., FAC-001",
                         disabled: editingFaculty
                       })]
-                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
                       className: "col-md-6",
-                      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("label", {
+                      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("label", {
                         htmlFor: "name",
                         children: "Full Name *"
-                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("input", {
+                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("input", {
                         type: "text",
                         className: "form-control",
                         id: "name",
@@ -74078,33 +74355,33 @@ function FacultyPage() {
                         required: true,
                         placeholder: "e.g., Dr. John Smith"
                       })]
-                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
                       className: "col-md-6",
-                      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("label", {
+                      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("label", {
                         htmlFor: "department",
                         children: "Department"
-                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("select", {
+                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("select", {
                         className: "form-select",
                         id: "department",
                         name: "department",
                         value: formData.department,
                         onChange: handleInputChange,
-                        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("option", {
+                        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("option", {
                           value: "",
                           children: "Select Department"
                         }), departments.map(function (dept) {
-                          return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("option", {
+                          return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("option", {
                             value: dept,
                             children: dept
                           }, dept);
                         })]
                       })]
-                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
                       className: "col-md-6",
-                      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("label", {
+                      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("label", {
                         htmlFor: "position",
                         children: "Position"
-                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("input", {
+                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("input", {
                         type: "text",
                         className: "form-control",
                         id: "position",
@@ -74113,12 +74390,12 @@ function FacultyPage() {
                         onChange: handleInputChange,
                         placeholder: "e.g., Professor, Associate Professor"
                       })]
-                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
                       className: "col-md-6",
-                      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("label", {
+                      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("label", {
                         htmlFor: "email",
                         children: "Email Address"
-                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("input", {
+                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("input", {
                         type: "email",
                         className: "form-control",
                         id: "email",
@@ -74127,12 +74404,12 @@ function FacultyPage() {
                         onChange: handleInputChange,
                         placeholder: "e.g., faculty@university.edu"
                       })]
-                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
                       className: "col-md-6",
-                      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("label", {
+                      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("label", {
                         htmlFor: "contact",
                         children: "Contact Number"
-                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("input", {
+                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("input", {
                         type: "text",
                         className: "form-control",
                         id: "contact",
@@ -74141,37 +74418,62 @@ function FacultyPage() {
                         onChange: handleInputChange,
                         placeholder: "e.g., +1234567890"
                       })]
-                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
+                      className: "col-md-6",
+                      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("label", {
+                        htmlFor: "photo",
+                        children: "Attach Photo"
+                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("input", {
+                        type: "file",
+                        accept: "image/*",
+                        className: "form-control",
+                        id: "photo",
+                        name: "photo",
+                        onChange: handlePhotoChange
+                      }), photoPreview && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
+                        style: {
+                          marginTop: 8
+                        },
+                        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("img", {
+                          src: photoPreview,
+                          alt: "preview",
+                          style: {
+                            maxWidth: 120,
+                            borderRadius: 8
+                          }
+                        })
+                      })]
+                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
                       className: "col-md-4",
-                      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("label", {
+                      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("label", {
                         htmlFor: "gender",
                         children: "Gender"
-                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("select", {
+                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("select", {
                         className: "form-select",
                         id: "gender",
                         name: "gender",
                         value: formData.gender,
                         onChange: handleInputChange,
-                        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("option", {
+                        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("option", {
                           value: "",
                           children: "Select Gender"
-                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("option", {
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("option", {
                           value: "Male",
                           children: "Male"
-                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("option", {
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("option", {
                           value: "Female",
                           children: "Female"
-                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("option", {
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("option", {
                           value: "Other",
                           children: "Other"
                         })]
                       })]
-                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
                       className: "col-md-4",
-                      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("label", {
+                      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("label", {
                         htmlFor: "dob",
                         children: "Date of Birth"
-                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("input", {
+                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("input", {
                         type: "date",
                         className: "form-control",
                         id: "dob",
@@ -74179,12 +74481,12 @@ function FacultyPage() {
                         value: formData.dob,
                         onChange: handleInputChange
                       })]
-                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
                       className: "col-md-4",
-                      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("label", {
+                      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("label", {
                         htmlFor: "age",
                         children: "Age"
-                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("input", {
+                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("input", {
                         type: "text",
                         readOnly: true,
                         className: "form-control",
@@ -74193,12 +74495,12 @@ function FacultyPage() {
                         value: formData.age,
                         placeholder: "Auto-calculated from Date of Birth"
                       })]
-                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
                       className: "col-md-12",
-                      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("label", {
+                      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("label", {
                         htmlFor: "street_address",
                         children: "Street Address"
-                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("input", {
+                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("input", {
                         type: "text",
                         className: "form-control",
                         id: "street_address",
@@ -74207,12 +74509,12 @@ function FacultyPage() {
                         onChange: handleInputChange,
                         placeholder: "House no., Street"
                       })]
-                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
                       className: "col-md-4",
-                      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("label", {
+                      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("label", {
                         htmlFor: "city_municipality",
                         children: "City / Municipality"
-                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("input", {
+                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("input", {
                         type: "text",
                         className: "form-control",
                         id: "city_municipality",
@@ -74221,12 +74523,12 @@ function FacultyPage() {
                         onChange: handleInputChange,
                         placeholder: "City or Municipality"
                       })]
-                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
                       className: "col-md-4",
-                      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("label", {
+                      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("label", {
                         htmlFor: "province_region",
                         children: "Province / Region"
-                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("input", {
+                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("input", {
                         type: "text",
                         className: "form-control",
                         id: "province_region",
@@ -74235,12 +74537,12 @@ function FacultyPage() {
                         onChange: handleInputChange,
                         placeholder: "Province or Region"
                       })]
-                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
                       className: "col-md-4",
-                      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("label", {
+                      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("label", {
                         htmlFor: "zip_code",
                         children: "ZIP Code"
-                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("input", {
+                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("input", {
                         type: "text",
                         className: "form-control",
                         id: "zip_code",
@@ -74249,36 +74551,36 @@ function FacultyPage() {
                         onChange: handleInputChange,
                         placeholder: "ZIP / Postal Code"
                       })]
-                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
                       className: "col-md-6",
-                      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("label", {
+                      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("label", {
                         htmlFor: "status",
                         children: "Status *"
-                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("select", {
+                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("select", {
                         className: "form-select",
                         id: "status",
                         name: "status",
                         value: formData.status,
                         onChange: handleInputChange,
                         required: true,
-                        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("option", {
+                        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("option", {
                           value: "ACTIVE",
                           children: "Active"
-                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("option", {
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("option", {
                           value: "INACTIVE",
                           children: "Inactive"
                         })]
                       })]
                     })]
                   })
-                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
                   className: "modal-actions d-flex justify-content-end gap-2",
-                  children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                  children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("button", {
                     type: "button",
                     className: "btn btn-outline-secondary",
                     onClick: handleCloseModal,
                     children: "Cancel"
-                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("button", {
                     type: "submit",
                     className: "btn btn-primary",
                     children: editingFaculty ? 'Update Faculty' : 'Add Faculty'
@@ -74287,42 +74589,42 @@ function FacultyPage() {
               })]
             })
           })]
-        }), showArchiveModal && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+        }), showArchiveModal && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
           className: "sfms-modal",
-          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
             className: "sfms-modal-backdrop",
             onClick: handleCloseArchiveModal
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
             className: "sfms-modal-window bg-white",
-            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
               className: "modal-form",
-              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
                 className: "modal-top d-flex justify-content-between align-items-center mb-4",
-                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("h5", {
+                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("h5", {
                   children: "Move Faculty to Inactive"
-                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("button", {
                   className: "btn-close",
                   onClick: handleCloseArchiveModal,
                   children: "\xD7"
                 })]
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
                 className: "modal-body",
-                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("p", {
-                  children: ["Are you sure you want to move ", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("strong", {
+                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("p", {
+                  children: ["Are you sure you want to move ", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("strong", {
                     children: deletingFaculty === null || deletingFaculty === void 0 ? void 0 : deletingFaculty.name
                   }), " to inactive status?"]
-                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("p", {
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("p", {
                   className: "text-muted",
                   children: "This will set the faculty status to INACTIVE and archive the record. You can restore it later from the archive."
                 })]
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
                 className: "modal-actions d-flex justify-content-end gap-2",
-                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("button", {
                   type: "button",
                   className: "btn btn-outline-secondary",
                   onClick: handleCloseArchiveModal,
                   children: "Cancel"
-                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("button", {
                   type: "button",
                   className: "btn btn-warning",
                   onClick: confirmDelete,
@@ -74331,54 +74633,54 @@ function FacultyPage() {
               })]
             })
           })]
-        }), showArchivePage && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+        }), showArchivePage && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
           className: "sfms-modal",
-          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
             className: "sfms-modal-backdrop",
             onClick: closeArchivePage
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
             className: "sfms-modal-window bg-white archive-page-modal",
-            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
               className: "modal-form",
-              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
                 className: "modal-top d-flex justify-content-between align-items-center mb-4",
-                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("h5", {
+                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("h5", {
                   children: "Faculty Archive"
-                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("button", {
                   className: "btn-close",
                   onClick: closeArchivePage,
                   children: "\xD7"
                 })]
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
                 className: "faculty-filters bg-light p-4 mb-4",
-                children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+                children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
                   className: "row g-3 align-items-end",
-                  children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+                  children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
                     className: "col-md-4",
-                    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("label", {
+                    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("label", {
                       className: "form-label",
                       children: "Department"
-                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("select", {
+                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("select", {
                       className: "form-select",
                       name: "department",
                       value: archiveFilters.department,
                       onChange: handleArchiveFilterChange,
-                      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("option", {
+                      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("option", {
                         value: "",
                         children: "All Departments"
                       }), departments.map(function (dept) {
-                        return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("option", {
+                        return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("option", {
                           value: dept,
                           children: dept
                         }, dept);
                       })]
                     })]
-                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
                     className: "col-md-6",
-                    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("label", {
+                    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("label", {
                       className: "form-label",
                       children: "Search"
-                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("input", {
+                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("input", {
                       type: "text",
                       className: "form-control",
                       placeholder: "Search archived records...",
@@ -74386,108 +74688,108 @@ function FacultyPage() {
                       value: archiveFilters.search,
                       onChange: handleArchiveFilterChange
                     })]
-                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
                     className: "col-md-2",
-                    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("button", {
                       className: "btn btn-search w-100",
                       onClick: fetchArchivedData,
                       children: "Search"
                     })
                   })]
                 })
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
                 className: "faculty-table bg-white",
-                children: archiveLoading ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+                children: archiveLoading ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
                   className: "text-center p-5",
-                  children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+                  children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
                     className: "spinner-border text-primary",
                     role: "status",
-                    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("span", {
+                    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("span", {
                       className: "visually-hidden",
                       children: "Loading..."
                     })
                   })
-                }) : archivedData.length > 0 ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("table", {
+                }) : archivedData.length > 0 ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("table", {
                   className: "table",
-                  children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("thead", {
+                  children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("thead", {
                     className: "table-light",
-                    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("tr", {
-                      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("th", {
+                    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("tr", {
+                      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("th", {
                         children: "Photo"
-                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("th", {
+                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("th", {
                         children: "Faculty Number"
-                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("th", {
+                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("th", {
                         children: "Name"
-                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("th", {
+                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("th", {
                         children: "Department"
-                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("th", {
+                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("th", {
                         children: "Position"
-                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("th", {
+                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("th", {
                         children: "Archived Date"
-                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("th", {
+                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("th", {
                         children: "Gender"
-                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("th", {
+                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("th", {
                         children: "Date of Birth"
-                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("th", {
+                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("th", {
                         children: "Age"
-                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("th", {
+                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("th", {
                         children: "Address"
-                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("th", {
+                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("th", {
                         children: "Actions"
                       })]
                     })
-                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("tbody", {
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("tbody", {
                     children: archivedData.map(function (faculty) {
                       var _faculty$age2;
-                      return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("tr", {
-                        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("td", {
-                          children: renderAvatar(faculty.name, faculty.photo_url || faculty.profile_photo_url)
-                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("td", {
+                      return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("tr", {
+                        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("td", {
+                          children: renderAvatar(faculty.name, faculty.photo_url || faculty.profile_photo_url || uploadedPhotos[faculty.faculty_number])
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("td", {
                           className: "fw-semibold",
                           children: faculty.faculty_number
-                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("td", {
-                          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("td", {
+                          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
                             className: "fw-semibold",
                             children: faculty.name
-                          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+                          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
                             className: "text-muted small",
                             children: faculty.email
                           })]
-                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("td", {
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("td", {
                           children: faculty.department
-                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("td", {
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("td", {
                           children: faculty.position
-                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("td", {
-                          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("td", {
+                          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
                             className: "text-muted small",
                             children: new Date(faculty.archived_at).toLocaleDateString()
-                          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+                          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
                             className: "text-muted extra-small",
                             children: new Date(faculty.archived_at).toLocaleTimeString()
                           })]
-                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("td", {
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("td", {
                           children: faculty.gender || '-'
-                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("td", {
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("td", {
                           children: faculty.dob ? new Date(faculty.dob).toLocaleDateString() : '-'
-                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("td", {
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("td", {
                           children: (_faculty$age2 = faculty.age) !== null && _faculty$age2 !== void 0 ? _faculty$age2 : '-'
-                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("td", {
-                          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("td", {
+                          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
                             className: "small text-muted",
-                            children: [faculty.street_address ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+                            children: [faculty.street_address ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
                               children: faculty.street_address
-                            }) : null, faculty.city_municipality || faculty.province_region || faculty.zip_code ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+                            }) : null, faculty.city_municipality || faculty.province_region || faculty.zip_code ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
                               children: [faculty.city_municipality, faculty.city_municipality && faculty.province_region ? ', ' : '', faculty.province_region, faculty.zip_code && (faculty.city_municipality || faculty.province_region) ? ' - ' + faculty.zip_code : faculty.zip_code || '']
                             }) : null]
                           })
-                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("td", {
-                          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("td", {
+                          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("button", {
                             className: "btn btn-sm btn-success me-2",
                             onClick: function onClick() {
                               return handleRestore(faculty);
                             },
                             children: "Restore"
-                          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("button", {
                             className: "btn btn-sm btn-outline-danger",
                             onClick: function onClick() {
                               return handlePermanentDelete(faculty);
@@ -74498,9 +74800,9 @@ function FacultyPage() {
                       }, faculty.id);
                     })
                   })]
-                }) : /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+                }) : /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
                   className: "text-center p-5",
-                  children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("p", {
+                  children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("p", {
                     className: "text-muted",
                     children: "No archived faculty records found."
                   })
@@ -74508,7 +74810,7 @@ function FacultyPage() {
               })]
             })
           })]
-        }), showToast && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+        }), showToast && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
           className: "faculty-toast",
           children: toastMessage
         })]
@@ -74936,12 +75238,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router/dist/index.js");
 /* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/dist/index.js");
 /* harmony import */ var _NotificationBell__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./NotificationBell */ "./resources/js/components/NotificationBell.js");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+/* harmony import */ var _utils_theme__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../utils/theme */ "./resources/js/utils/theme.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
 function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, _typeof(o); }
-function _toConsumableArray(r) { return _arrayWithoutHoles(r) || _iterableToArray(r) || _unsupportedIterableToArray(r) || _nonIterableSpread(); }
-function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
-function _iterableToArray(r) { if ("undefined" != typeof Symbol && null != r[Symbol.iterator] || null != r["@@iterator"]) return Array.from(r); }
-function _arrayWithoutHoles(r) { if (Array.isArray(r)) return _arrayLikeToArray(r); }
 function ownKeys(e, r) { var t = Object.keys(e); if (Object.getOwnPropertySymbols) { var o = Object.getOwnPropertySymbols(e); r && (o = o.filter(function (r) { return Object.getOwnPropertyDescriptor(e, r).enumerable; })), t.push.apply(t, o); } return t; }
 function _objectSpread(e) { for (var r = 1; r < arguments.length; r++) { var t = null != arguments[r] ? arguments[r] : {}; r % 2 ? ownKeys(Object(t), !0).forEach(function (r) { _defineProperty(e, r, t[r]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : ownKeys(Object(t)).forEach(function (r) { Object.defineProperty(e, r, Object.getOwnPropertyDescriptor(t, r)); }); } return e; }
 function _defineProperty(e, r, t) { return (r = _toPropertyKey(r)) in e ? Object.defineProperty(e, r, { value: t, enumerable: !0, configurable: !0, writable: !0 }) : e[r] = t, e; }
@@ -74957,6 +75256,7 @@ function _unsupportedIterableToArray(r, a) { if (r) { if ("string" == typeof r) 
 function _arrayLikeToArray(r, a) { (null == a || a > r.length) && (a = r.length); for (var e = 0, n = Array(a); e < a; e++) n[e] = r[e]; return n; }
 function _iterableToArrayLimit(r, l) { var t = null == r ? null : "undefined" != typeof Symbol && r[Symbol.iterator] || r["@@iterator"]; if (null != t) { var e, n, i, u, a = [], f = !0, o = !1; try { if (i = (t = t.call(r)).next, 0 === l) { if (Object(t) !== t) return; f = !1; } else for (; !(f = (e = i.call(t)).done) && (a.push(e.value), a.length !== l); f = !0); } catch (r) { o = !0, n = r; } finally { try { if (!f && null != t["return"] && (u = t["return"](), Object(u) !== u)) return; } finally { if (o) throw n; } } return a; } }
 function _arrayWithHoles(r) { if (Array.isArray(r)) return r; }
+
 
 
 
@@ -75020,60 +75320,100 @@ function StudentPage() {
       street_address: '',
       city_municipality: '',
       province_region: '',
-      zip_code: ''
+      zip_code: '',
+      // Parent names
+      mother_name: '',
+      father_name: ''
     }),
     _useState20 = _slicedToArray(_useState19, 2),
     formData = _useState20[0],
     setFormData = _useState20[1];
-  var _useState21 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)([]),
+  // File attachments
+  var _useState21 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(null),
     _useState22 = _slicedToArray(_useState21, 2),
-    errors = _useState22[0],
-    setErrors = _useState22[1];
-  var _useState23 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false),
+    photoFile = _useState22[0],
+    setPhotoFile = _useState22[1];
+  var _useState23 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(null),
     _useState24 = _slicedToArray(_useState23, 2),
-    showToast = _useState24[0],
-    setShowToast = _useState24[1];
-  var _useState25 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(''),
+    gradeSlipFile = _useState24[0],
+    setGradeSlipFile = _useState24[1];
+  var _useState25 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(null),
     _useState26 = _slicedToArray(_useState25, 2),
-    toastMessage = _useState26[0],
-    setToastMessage = _useState26[1];
-  var _useState27 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)({
+    photoPreview = _useState26[0],
+    setPhotoPreview = _useState26[1];
+  // Persisted uploaded student photos fallback (student_number -> dataURL)
+  var _useState27 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)({}),
+    _useState28 = _slicedToArray(_useState27, 2),
+    uploadedStudentPhotos = _useState28[0],
+    setUploadedStudentPhotos = _useState28[1];
+  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function () {
+    try {
+      var raw = localStorage.getItem('sfms_uploaded_student_photos');
+      if (raw) setUploadedStudentPhotos(JSON.parse(raw));
+    } catch (e) {
+      console.error('Failed to load uploaded student photos from localStorage', e);
+    }
+  }, []);
+  var saveUploadedStudentPhotos = function saveUploadedStudentPhotos(map) {
+    try {
+      localStorage.setItem('sfms_uploaded_student_photos', JSON.stringify(map || {}));
+    } catch (e) {
+      console.error('Failed to save uploaded student photos to localStorage', e);
+    }
+  };
+  var _useState29 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)([]),
+    _useState30 = _slicedToArray(_useState29, 2),
+    errors = _useState30[0],
+    setErrors = _useState30[1];
+  var _useState31 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false),
+    _useState32 = _slicedToArray(_useState31, 2),
+    showToast = _useState32[0],
+    setShowToast = _useState32[1];
+  var _useState33 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(''),
+    _useState34 = _slicedToArray(_useState33, 2),
+    toastMessage = _useState34[0],
+    setToastMessage = _useState34[1];
+  var _useState35 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)({
       course: '',
       year_level: '',
       status: '',
       search: ''
     }),
-    _useState28 = _slicedToArray(_useState27, 2),
-    filters = _useState28[0],
-    setFilters = _useState28[1];
-  var _useState29 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)({
+    _useState36 = _slicedToArray(_useState35, 2),
+    filters = _useState36[0],
+    setFilters = _useState36[1];
+  var _useState37 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)({
       course: '',
       search: ''
     }),
-    _useState30 = _slicedToArray(_useState29, 2),
-    archiveFilters = _useState30[0],
-    setArchiveFilters = _useState30[1];
+    _useState38 = _slicedToArray(_useState37, 2),
+    archiveFilters = _useState38[0],
+    setArchiveFilters = _useState38[1];
 
   // Load courses and academic years from localStorage
-  var _useState31 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)([]),
-    _useState32 = _slicedToArray(_useState31, 2),
-    courses = _useState32[0],
-    setCourses = _useState32[1];
-  var _useState33 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)([]),
-    _useState34 = _slicedToArray(_useState33, 2),
-    academicYears = _useState34[0],
-    setAcademicYears = _useState34[1];
+  var _useState39 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)([]),
+    _useState40 = _slicedToArray(_useState39, 2),
+    courses = _useState40[0],
+    setCourses = _useState40[1];
+  var _useState41 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)([]),
+    _useState42 = _slicedToArray(_useState41, 2),
+    academicYears = _useState42[0],
+    setAcademicYears = _useState42[1];
   var yearLevels = ['1st Year', '2nd Year', '3rd Year', '4th Year'];
   function logout() {
     localStorage.removeItem('sfms_auth');
     navigate('/login');
   }
   // Menus (profile only)
-  var _useState35 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false),
-    _useState36 = _slicedToArray(_useState35, 2),
-    showProfileMenu = _useState36[0],
-    setShowProfileMenu = _useState36[1];
+  var _useState43 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false),
+    _useState44 = _slicedToArray(_useState43, 2),
+    showProfileMenu = _useState44[0],
+    setShowProfileMenu = _useState44[1];
   var profileMenuRef = react__WEBPACK_IMPORTED_MODULE_0___default().useRef(null);
+  var _useState45 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)('light'),
+    _useState46 = _slicedToArray(_useState45, 2),
+    theme = _useState46[0],
+    setTheme = _useState46[1];
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function () {
     var onDown = function onDown(e) {
       if (profileMenuRef.current && !profileMenuRef.current.contains(e.target)) setShowProfileMenu(false);
@@ -75118,51 +75458,24 @@ function StudentPage() {
     } catch (e) {}
   };
 
-  // Load courses and academic years from localStorage
+  // Load courses and academic years from API (fallback to localStorage)
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function () {
     loadSettingsData();
     fetchProfile();
+    try {
+      var t = (0,_utils_theme__WEBPACK_IMPORTED_MODULE_4__.initTheme)();
+      setTheme(t);
+    } catch (e) {}
   }, []);
-  var loadSettingsData = function loadSettingsData() {
-    // Load courses from localStorage
-    var savedCourses = localStorage.getItem('sfms_courses');
-    if (savedCourses) {
-      var coursesData = JSON.parse(savedCourses);
-      var activeCourses = coursesData.filter(function (course) {
-        return course.status === 'ACTIVE';
-      });
-      setCourses(activeCourses.map(function (course) {
-        return course.name;
-      }));
-    } else {
-      // Fallback to default courses if not found
-      setCourses(['Computer Science', 'Business Administration', 'Arts & Humanities', 'Engineering', 'Mathematics', 'Physics', 'Chemistry', 'Biology', 'Psychology', 'Economics', 'Political Science', 'Sociology']);
-    }
-
-    // Load academic years from localStorage
-    var savedAcademicYears = localStorage.getItem('sfms_academic_years');
-    if (savedAcademicYears) {
-      var yearsData = JSON.parse(savedAcademicYears);
-      var activeYears = yearsData.filter(function (year) {
-        return year.status === 'ACTIVE';
-      });
-      setAcademicYears(activeYears.map(function (year) {
-        return year.year;
-      }));
-    } else {
-      // Fallback to default academic years if not found
-      setAcademicYears(['2023-2024', '2024-2025', '2025-2026']);
-    }
-  };
-  var fetchProfile = /*#__PURE__*/function () {
+  var loadSettingsData = /*#__PURE__*/function () {
     var _ref = _asyncToGenerator(/*#__PURE__*/_regenerator().m(function _callee() {
-      var res, data, u, _t;
+      var res, data, list, defaults, savedAcademicYears, yearsData, activeYears, _t;
       return _regenerator().w(function (_context) {
         while (1) switch (_context.p = _context.n) {
           case 0:
             _context.p = 0;
             _context.n = 1;
-            return fetch('/api/profile');
+            return fetch('/api/courses');
           case 1:
             res = _context.v;
             if (!res.ok) {
@@ -75173,35 +75486,106 @@ function StudentPage() {
             return res.json();
           case 2:
             data = _context.v;
+            list = (data.courses || []).filter(function (c) {
+              return c.status === 'ACTIVE';
+            }).map(function (c) {
+              return {
+                id: c.id,
+                name: (c.name || '').replace(/\s*Program$/i, '')
+              };
+            });
+            setCourses(list);
+            _context.n = 4;
+            break;
+          case 3:
+            throw new Error('API courses not ok');
+          case 4:
+            _context.n = 6;
+            break;
+          case 5:
+            _context.p = 5;
+            _t = _context.v;
+            // Fallback to small default set
+            console.warn('Failed to fetch courses, using defaults', _t);
+            defaults = ['Computer Science', 'Business Administration', 'Arts & Humanities', 'Engineering', 'Mathematics', 'Physics', 'Chemistry', 'Biology', 'Psychology', 'Economics', 'Political Science', 'Sociology'];
+            setCourses(defaults.map(function (n, i) {
+              return {
+                id: i + 1,
+                name: n
+              };
+            }));
+          case 6:
+            // Load academic years from localStorage
+            savedAcademicYears = localStorage.getItem('sfms_academic_years');
+            if (savedAcademicYears) {
+              yearsData = JSON.parse(savedAcademicYears);
+              activeYears = yearsData.filter(function (year) {
+                return year.status === 'ACTIVE';
+              });
+              setAcademicYears(activeYears.map(function (year) {
+                return year.year;
+              }));
+            } else {
+              // Fallback to default academic years if not found
+              setAcademicYears(['2023-2024', '2024-2025', '2025-2026']);
+            }
+          case 7:
+            return _context.a(2);
+        }
+      }, _callee, null, [[0, 5]]);
+    }));
+    return function loadSettingsData() {
+      return _ref.apply(this, arguments);
+    };
+  }();
+  var fetchProfile = /*#__PURE__*/function () {
+    var _ref2 = _asyncToGenerator(/*#__PURE__*/_regenerator().m(function _callee2() {
+      var res, data, u, _t2;
+      return _regenerator().w(function (_context2) {
+        while (1) switch (_context2.p = _context2.n) {
+          case 0:
+            _context2.p = 0;
+            _context2.n = 1;
+            return fetch('/api/profile');
+          case 1:
+            res = _context2.v;
+            if (!res.ok) {
+              _context2.n = 3;
+              break;
+            }
+            _context2.n = 2;
+            return res.json();
+          case 2:
+            data = _context2.v;
             u = data.user || {};
             setProfileData({
               name: u.name || ''
             });
           case 3:
-            _context.n = 5;
+            _context2.n = 5;
             break;
           case 4:
-            _context.p = 4;
-            _t = _context.v;
+            _context2.p = 4;
+            _t2 = _context2.v;
           case 5:
-            return _context.a(2);
+            return _context2.a(2);
         }
-      }, _callee, null, [[0, 4]]);
+      }, _callee2, null, [[0, 4]]);
     }));
     return function fetchProfile() {
-      return _ref.apply(this, arguments);
+      return _ref2.apply(this, arguments);
     };
   }();
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function () {
     fetchStudentData();
   }, [filters]);
   var fetchStudentData = /*#__PURE__*/function () {
-    var _ref2 = _asyncToGenerator(/*#__PURE__*/_regenerator().m(function _callee2() {
-      var queryParams, url, response, data, _t2;
-      return _regenerator().w(function (_context2) {
-        while (1) switch (_context2.p = _context2.n) {
+    var _ref3 = _asyncToGenerator(/*#__PURE__*/_regenerator().m(function _callee3() {
+      var queryParams, url, response, data, list, next, _t3;
+      return _regenerator().w(function (_context3) {
+        while (1) switch (_context3.p = _context3.n) {
           case 0:
-            _context2.p = 0;
+            _context3.p = 0;
             setLoading(true);
             queryParams = new URLSearchParams();
             if (filters.course) queryParams.append('course', filters.course);
@@ -75209,64 +75593,6 @@ function StudentPage() {
             if (filters.status) queryParams.append('status', filters.status);
             if (filters.search) queryParams.append('search', filters.search);
             url = "/api/students".concat(queryParams.toString() ? "?".concat(queryParams.toString()) : '');
-            _context2.n = 1;
-            return fetch(url, {
-              method: 'GET',
-              headers: {
-                'Content-Type': 'application/json',
-                'Accept': 'application/json',
-                'X-Requested-With': 'XMLHttpRequest'
-              }
-            });
-          case 1:
-            response = _context2.v;
-            if (!response.ok) {
-              _context2.n = 3;
-              break;
-            }
-            _context2.n = 2;
-            return response.json();
-          case 2:
-            data = _context2.v;
-            setStudentData(data.students || data);
-            _context2.n = 4;
-            break;
-          case 3:
-            console.error('Failed to fetch student data');
-            setErrors(['Failed to load student data']);
-          case 4:
-            _context2.n = 6;
-            break;
-          case 5:
-            _context2.p = 5;
-            _t2 = _context2.v;
-            console.error('Error fetching student data:', _t2);
-            setErrors(['Network error occurred while loading data']);
-          case 6:
-            _context2.p = 6;
-            setLoading(false);
-            return _context2.f(6);
-          case 7:
-            return _context2.a(2);
-        }
-      }, _callee2, null, [[0, 5, 6, 7]]);
-    }));
-    return function fetchStudentData() {
-      return _ref2.apply(this, arguments);
-    };
-  }();
-  var fetchArchivedData = /*#__PURE__*/function () {
-    var _ref3 = _asyncToGenerator(/*#__PURE__*/_regenerator().m(function _callee3() {
-      var queryParams, url, response, data, _t3;
-      return _regenerator().w(function (_context3) {
-        while (1) switch (_context3.p = _context3.n) {
-          case 0:
-            _context3.p = 0;
-            setArchiveLoading(true);
-            queryParams = new URLSearchParams();
-            if (archiveFilters.course) queryParams.append('course', archiveFilters.course);
-            if (archiveFilters.search) queryParams.append('search', archiveFilters.search);
-            url = "/api/archived-students".concat(queryParams.toString() ? "?".concat(queryParams.toString()) : '');
             _context3.n = 1;
             return fetch(url, {
               method: 'GET',
@@ -75286,31 +75612,105 @@ function StudentPage() {
             return response.json();
           case 2:
             data = _context3.v;
-            setArchivedData(data.archived_students || data);
+            list = data.students || data;
+            setStudentData(list);
+            // Clean up any local fallback images for items that now have server photo_url
+            try {
+              next = _objectSpread({}, uploadedStudentPhotos || {});
+              (Array.isArray(list) ? list : []).forEach(function (s) {
+                if (s && s.student_number && s.photo_url && next[s.student_number]) {
+                  delete next[s.student_number];
+                }
+              });
+              if (JSON.stringify(next) !== JSON.stringify(uploadedStudentPhotos)) {
+                setUploadedStudentPhotos(next);
+                saveUploadedStudentPhotos(next);
+              }
+            } catch (e) {
+              console.error('Error cleaning uploadedStudentPhotos after fetch', e);
+            }
             _context3.n = 4;
             break;
           case 3:
-            console.error('Failed to fetch archived data');
-            setErrors(['Failed to load archived data']);
+            console.error('Failed to fetch student data');
+            setErrors(['Failed to load student data']);
           case 4:
             _context3.n = 6;
             break;
           case 5:
             _context3.p = 5;
             _t3 = _context3.v;
-            console.error('Error fetching archived data:', _t3);
-            setErrors(['Network error occurred while loading archived data']);
+            console.error('Error fetching student data:', _t3);
+            setErrors(['Network error occurred while loading data']);
           case 6:
             _context3.p = 6;
-            setArchiveLoading(false);
+            setLoading(false);
             return _context3.f(6);
           case 7:
             return _context3.a(2);
         }
       }, _callee3, null, [[0, 5, 6, 7]]);
     }));
-    return function fetchArchivedData() {
+    return function fetchStudentData() {
       return _ref3.apply(this, arguments);
+    };
+  }();
+  var fetchArchivedData = /*#__PURE__*/function () {
+    var _ref4 = _asyncToGenerator(/*#__PURE__*/_regenerator().m(function _callee4() {
+      var queryParams, url, response, data, _t4;
+      return _regenerator().w(function (_context4) {
+        while (1) switch (_context4.p = _context4.n) {
+          case 0:
+            _context4.p = 0;
+            setArchiveLoading(true);
+            queryParams = new URLSearchParams();
+            if (archiveFilters.course) queryParams.append('course', archiveFilters.course);
+            if (archiveFilters.search) queryParams.append('search', archiveFilters.search);
+            url = "/api/archived-students".concat(queryParams.toString() ? "?".concat(queryParams.toString()) : '');
+            _context4.n = 1;
+            return fetch(url, {
+              method: 'GET',
+              headers: {
+                'Content-Type': 'application/json',
+                'Accept': 'application/json',
+                'X-Requested-With': 'XMLHttpRequest'
+              }
+            });
+          case 1:
+            response = _context4.v;
+            if (!response.ok) {
+              _context4.n = 3;
+              break;
+            }
+            _context4.n = 2;
+            return response.json();
+          case 2:
+            data = _context4.v;
+            setArchivedData(data.archived_students || data);
+            _context4.n = 4;
+            break;
+          case 3:
+            console.error('Failed to fetch archived data');
+            setErrors(['Failed to load archived data']);
+          case 4:
+            _context4.n = 6;
+            break;
+          case 5:
+            _context4.p = 5;
+            _t4 = _context4.v;
+            console.error('Error fetching archived data:', _t4);
+            setErrors(['Network error occurred while loading archived data']);
+          case 6:
+            _context4.p = 6;
+            setArchiveLoading(false);
+            return _context4.f(6);
+          case 7:
+            return _context4.a(2);
+        }
+      }, _callee4, null, [[0, 5, 6, 7]]);
+    }));
+    return function fetchArchivedData() {
+      return _ref4.apply(this, arguments);
     };
   }();
   var handleInputChange = function handleInputChange(e) {
@@ -75359,50 +75759,84 @@ function StudentPage() {
       return _objectSpread(_objectSpread({}, prev), {}, _defineProperty({}, name, value));
     });
   };
+
+  // File input handlers
+  var handlePhotoChange = function handlePhotoChange(e) {
+    var file = e.target.files && e.target.files[0];
+    if (file) {
+      setPhotoFile(file);
+      try {
+        setPhotoPreview(URL.createObjectURL(file));
+      } catch (err) {
+        console.error(err);
+      }
+    } else {
+      setPhotoFile(null);
+      setPhotoPreview(null);
+    }
+  };
+  var handleGradeSlipChange = function handleGradeSlipChange(e) {
+    var file = e.target.files && e.target.files[0];
+    if (file) setGradeSlipFile(file);else setGradeSlipFile(null);
+  };
   var handleSubmit = /*#__PURE__*/function () {
-    var _ref4 = _asyncToGenerator(/*#__PURE__*/_regenerator().m(function _callee4(e) {
-      var csrfToken, headers, url, method, response, contentType, data, text, errorMessages, _t4;
-      return _regenerator().w(function (_context4) {
-        while (1) switch (_context4.p = _context4.n) {
+    var _ref5 = _asyncToGenerator(/*#__PURE__*/_regenerator().m(function _callee5(e) {
+      var isEdit, url, payload, csrfToken, headers, response, contentType, data, text, studentNumber, reader, errorMessages, _t5;
+      return _regenerator().w(function (_context5) {
+        while (1) switch (_context5.p = _context5.n) {
           case 0:
             e.preventDefault();
             setErrors([]);
-            _context4.p = 1;
+            _context5.p = 1;
+            setLoading(true);
+            isEdit = !!editingStudent;
+            url = isEdit ? "/api/students/".concat(editingStudent.id) : '/api/students';
+            payload = new FormData(); // Append all form fields
+            Object.keys(formData).forEach(function (key) {
+              // skip undefined
+              if (formData[key] !== undefined) payload.append(key, formData[key]);
+            });
+
+            // Attach files if provided
+            if (photoFile) payload.append('photo', photoFile);
+            if (gradeSlipFile) payload.append('grade_slip', gradeSlipFile);
+
+            // If editing, use method override for Laravel
+            if (isEdit) payload.append('_method', 'PUT');
             csrfToken = getCsrfToken();
-            headers = {
-              'Content-Type': 'application/json',
-              'Accept': 'application/json',
+            headers = _objectSpread({
               'X-Requested-With': 'XMLHttpRequest'
-            };
-            if (csrfToken) {
-              headers['X-CSRF-TOKEN'] = csrfToken;
-            }
-            url = editingStudent ? "/api/students/".concat(editingStudent.id) : '/api/students';
-            method = editingStudent ? 'PUT' : 'POST';
-            _context4.n = 2;
+            }, csrfToken ? {
+              'X-CSRF-TOKEN': csrfToken
+            } : {});
+            _context5.n = 2;
             return fetch(url, {
-              method: method,
+              method: 'POST',
+              // use POST so form-data with _method works for PUT
               headers: headers,
-              body: JSON.stringify(formData)
+              body: payload
             });
           case 2:
-            response = _context4.v;
-            contentType = response.headers.get('content-type');
-            if (!(contentType && contentType.includes('application/json'))) {
-              _context4.n = 4;
+            response = _context5.v;
+            contentType = response.headers.get('content-type') || '';
+            data = {};
+            if (!contentType.includes('application/json')) {
+              _context5.n = 4;
               break;
             }
-            _context4.n = 3;
+            _context5.n = 3;
             return response.json();
           case 3:
-            data = _context4.v;
-            _context4.n = 6;
+            data = _context5.v;
+            _context5.n = 6;
             break;
           case 4:
-            _context4.n = 5;
-            return response.text();
+            _context5.n = 5;
+            return response.text()["catch"](function () {
+              return '';
+            });
           case 5:
-            text = _context4.v;
+            text = _context5.v;
             try {
               data = JSON.parse(text);
             } catch (_unused) {
@@ -75411,77 +75845,92 @@ function StudentPage() {
               };
             }
           case 6:
-            if (response.ok) {
-              if (editingStudent) {
-                setStudentData(function (prev) {
-                  return prev.map(function (student) {
-                    return student.id === editingStudent.id ? data.student : student;
-                  });
-                });
-                setToastMessage(data.success || 'Student updated successfully!');
-              } else {
-                setStudentData(function (prev) {
-                  return [data.student].concat(_toConsumableArray(prev));
-                });
-                setToastMessage(data.success || 'Student added successfully!');
-
-                // Add notification for new student
-                pushNotification({
-                  id: "student-create-".concat(Date.now()),
-                  type: 'success',
-                  title: 'New student added',
-                  desc: "".concat(data.student.student_number, " - ").concat(data.student.name),
-                  time: Date.now(),
-                  read: false
-                });
-              }
-              setShowModal(false);
-              setEditingStudent(null);
-              setShowToast(true);
-              setFormData({
-                student_number: '',
-                name: '',
-                course: '',
-                year_level: '',
-                academic_year: academicYears[0] || '',
-                email: '',
-                contact: '',
-                status: 'ACTIVE',
-                gender: '',
-                dob: '',
-                age: '',
-                street_address: '',
-                city_municipality: '',
-                province_region: '',
-                zip_code: ''
-              });
-              setTimeout(function () {
-                return setShowToast(false);
-              }, 3000);
-            } else {
-              if (data.errors) {
-                errorMessages = Object.values(data.errors).flat();
-                setErrors(errorMessages);
-              } else if (data.message) {
-                setErrors([data.message]);
-              } else {
-                setErrors(['Failed to save student. Please try again.']);
+            if (!response.ok) {
+              _context5.n = 8;
+              break;
+            }
+            // If we uploaded a photo file, persist a local dataURL fallback so the avatar
+            // displays immediately and survives refresh if the server doesn't return photo_url.
+            studentNumber = (isEdit ? editingStudent && editingStudent.student_number : formData.student_number) || data && data.student && data.student.student_number || '';
+            if (photoFile && studentNumber) {
+              try {
+                reader = new FileReader();
+                reader.onload = function () {
+                  var dataUrl = reader.result;
+                  var next = _objectSpread({}, uploadedStudentPhotos || {});
+                  next[studentNumber] = dataUrl;
+                  setUploadedStudentPhotos(next);
+                  saveUploadedStudentPhotos(next);
+                };
+                reader.readAsDataURL(photoFile);
+              } catch (e) {
+                console.error('Failed to read uploaded student photo for local persistence', e);
               }
             }
-            _context4.n = 8;
-            break;
+
+            // refresh list
+            _context5.n = 7;
+            return fetchStudentData();
           case 7:
-            _context4.p = 7;
-            _t4 = _context4.v;
-            console.error('Error saving student:', _t4);
-            setErrors(['Network error occurred. Please check your connection and try again.']);
+            setShowModal(false);
+            setEditingStudent(null);
+            setPhotoFile(null);
+            setGradeSlipFile(null);
+            setPhotoPreview(null);
+            setFormData({
+              student_number: '',
+              name: '',
+              course: '',
+              year_level: '',
+              academic_year: academicYears[0] || '',
+              email: '',
+              contact: '',
+              status: 'ACTIVE',
+              gender: '',
+              dob: '',
+              age: '',
+              street_address: '',
+              city_municipality: '',
+              province_region: '',
+              zip_code: '',
+              mother_name: '',
+              father_name: ''
+            });
+            setToastMessage(isEdit ? data.success || 'Student updated successfully!' : data.success || 'Student added successfully!');
+            setShowToast(true);
+            setTimeout(function () {
+              return setShowToast(false);
+            }, 3000);
+            _context5.n = 9;
+            break;
           case 8:
-            return _context4.a(2);
+            if (data.errors) {
+              errorMessages = Object.values(data.errors).flat();
+              setErrors(errorMessages);
+            } else if (data.message) {
+              setErrors([data.message]);
+            } else {
+              setErrors(['Failed to save student. Please try again.']);
+            }
+          case 9:
+            _context5.n = 11;
+            break;
+          case 10:
+            _context5.p = 10;
+            _t5 = _context5.v;
+            console.error('Error saving student:', _t5);
+            setErrors(['Network error occurred. Please check your connection and try again.']);
+          case 11:
+            _context5.p = 11;
+            setLoading(false);
+            return _context5.f(11);
+          case 12:
+            return _context5.a(2);
         }
-      }, _callee4, null, [[1, 7]]);
+      }, _callee5, null, [[1, 10, 11, 12]]);
     }));
     return function handleSubmit(_x) {
-      return _ref4.apply(this, arguments);
+      return _ref5.apply(this, arguments);
     };
   }();
   var handleEdit = function handleEdit(student) {
@@ -75501,8 +75950,27 @@ function StudentPage() {
       street_address: student.street_address || '',
       city_municipality: student.city_municipality || '',
       province_region: student.province_region || '',
-      zip_code: student.zip_code || ''
+      zip_code: student.zip_code || '',
+      mother_name: student.mother_name || '',
+      father_name: student.father_name || ''
     });
+    // try to set course_id if available
+    try {
+      var sel = courses.find(function (c) {
+        return c.name === student.course;
+      });
+      if (sel && sel.id) {
+        setFormData(function (prev) {
+          return _objectSpread(_objectSpread({}, prev), {}, {
+            course_id: sel.id
+          });
+        });
+      }
+    } catch (e) {}
+    // show existing photo if available, prefer server URL then local fallback
+    setPhotoPreview(student.photo_url || student.profile_photo_url || uploadedStudentPhotos[student.student_number] || null);
+    setPhotoFile(null);
+    setGradeSlipFile(null);
     setShowModal(true);
   };
   var handleDelete = function handleDelete(student) {
@@ -75510,18 +75978,18 @@ function StudentPage() {
     setShowArchiveModal(true);
   };
   var confirmDelete = /*#__PURE__*/function () {
-    var _ref5 = _asyncToGenerator(/*#__PURE__*/_regenerator().m(function _callee5() {
-      var csrfToken, headers, response, data, _t5;
-      return _regenerator().w(function (_context5) {
-        while (1) switch (_context5.p = _context5.n) {
+    var _ref6 = _asyncToGenerator(/*#__PURE__*/_regenerator().m(function _callee6() {
+      var csrfToken, headers, response, data, _t6;
+      return _regenerator().w(function (_context6) {
+        while (1) switch (_context6.p = _context6.n) {
           case 0:
             if (deletingStudent) {
-              _context5.n = 1;
+              _context6.n = 1;
               break;
             }
-            return _context5.a(2);
+            return _context6.a(2);
           case 1:
-            _context5.p = 1;
+            _context6.p = 1;
             csrfToken = getCsrfToken();
             headers = {
               'Content-Type': 'application/json',
@@ -75531,15 +75999,15 @@ function StudentPage() {
             if (csrfToken) {
               headers['X-CSRF-TOKEN'] = csrfToken;
             }
-            _context5.n = 2;
+            _context6.n = 2;
             return fetch("/api/students/".concat(deletingStudent.id), {
               method: 'DELETE',
               headers: headers
             });
           case 2:
-            response = _context5.v;
+            response = _context6.v;
             if (!response.ok) {
-              _context5.n = 3;
+              _context6.n = 3;
               break;
             }
             setStudentData(function (prev) {
@@ -75552,43 +76020,43 @@ function StudentPage() {
             setTimeout(function () {
               return setShowToast(false);
             }, 3000);
-            _context5.n = 5;
+            _context6.n = 5;
             break;
           case 3:
-            _context5.n = 4;
+            _context6.n = 4;
             return response.json();
           case 4:
-            data = _context5.v;
+            data = _context6.v;
             setErrors([data.message || 'Failed to archive student.']);
           case 5:
-            _context5.n = 7;
+            _context6.n = 7;
             break;
           case 6:
-            _context5.p = 6;
-            _t5 = _context5.v;
-            console.error('Error deleting student:', _t5);
+            _context6.p = 6;
+            _t6 = _context6.v;
+            console.error('Error deleting student:', _t6);
             setErrors(['Network error occurred. Please try again.']);
           case 7:
-            _context5.p = 7;
+            _context6.p = 7;
             setShowArchiveModal(false);
             setDeletingStudent(null);
-            return _context5.f(7);
+            return _context6.f(7);
           case 8:
-            return _context5.a(2);
+            return _context6.a(2);
         }
-      }, _callee5, null, [[1, 6, 7, 8]]);
+      }, _callee6, null, [[1, 6, 7, 8]]);
     }));
     return function confirmDelete() {
-      return _ref5.apply(this, arguments);
+      return _ref6.apply(this, arguments);
     };
   }();
   var handleRestore = /*#__PURE__*/function () {
-    var _ref6 = _asyncToGenerator(/*#__PURE__*/_regenerator().m(function _callee6(archivedStudent) {
-      var csrfToken, headers, response, data, _t6;
-      return _regenerator().w(function (_context6) {
-        while (1) switch (_context6.p = _context6.n) {
+    var _ref7 = _asyncToGenerator(/*#__PURE__*/_regenerator().m(function _callee7(archivedStudent) {
+      var csrfToken, headers, response, data, _t7;
+      return _regenerator().w(function (_context7) {
+        while (1) switch (_context7.p = _context7.n) {
           case 0:
-            _context6.p = 0;
+            _context7.p = 0;
             csrfToken = getCsrfToken();
             headers = {
               'Content-Type': 'application/json',
@@ -75598,15 +76066,15 @@ function StudentPage() {
             if (csrfToken) {
               headers['X-CSRF-TOKEN'] = csrfToken;
             }
-            _context6.n = 1;
+            _context7.n = 1;
             return fetch("/api/archived-students/".concat(archivedStudent.id, "/restore"), {
               method: 'POST',
               headers: headers
             });
           case 1:
-            response = _context6.v;
+            response = _context7.v;
             if (!response.ok) {
-              _context6.n = 2;
+              _context7.n = 2;
               break;
             }
             setArchivedData(function (prev) {
@@ -75620,44 +76088,44 @@ function StudentPage() {
             setTimeout(function () {
               return setShowToast(false);
             }, 3000);
-            _context6.n = 4;
+            _context7.n = 4;
             break;
           case 2:
-            _context6.n = 3;
+            _context7.n = 3;
             return response.json();
           case 3:
-            data = _context6.v;
+            data = _context7.v;
             setErrors([data.message || 'Failed to restore student.']);
           case 4:
-            _context6.n = 6;
+            _context7.n = 6;
             break;
           case 5:
-            _context6.p = 5;
-            _t6 = _context6.v;
-            console.error('Error restoring student:', _t6);
+            _context7.p = 5;
+            _t7 = _context7.v;
+            console.error('Error restoring student:', _t7);
             setErrors(['Network error occurred. Please try again.']);
           case 6:
-            return _context6.a(2);
+            return _context7.a(2);
         }
-      }, _callee6, null, [[0, 5]]);
+      }, _callee7, null, [[0, 5]]);
     }));
     return function handleRestore(_x2) {
-      return _ref6.apply(this, arguments);
+      return _ref7.apply(this, arguments);
     };
   }();
   var handlePermanentDelete = /*#__PURE__*/function () {
-    var _ref7 = _asyncToGenerator(/*#__PURE__*/_regenerator().m(function _callee7(archivedStudent) {
-      var csrfToken, headers, response, data, _t7;
-      return _regenerator().w(function (_context7) {
-        while (1) switch (_context7.p = _context7.n) {
+    var _ref8 = _asyncToGenerator(/*#__PURE__*/_regenerator().m(function _callee8(archivedStudent) {
+      var csrfToken, headers, response, data, _t8;
+      return _regenerator().w(function (_context8) {
+        while (1) switch (_context8.p = _context8.n) {
           case 0:
             if (window.confirm("Are you sure you want to permanently delete ".concat(archivedStudent.name, "? This action cannot be undone."))) {
-              _context7.n = 1;
+              _context8.n = 1;
               break;
             }
-            return _context7.a(2);
+            return _context8.a(2);
           case 1:
-            _context7.p = 1;
+            _context8.p = 1;
             csrfToken = getCsrfToken();
             headers = {
               'Content-Type': 'application/json',
@@ -75667,15 +76135,15 @@ function StudentPage() {
             if (csrfToken) {
               headers['X-CSRF-TOKEN'] = csrfToken;
             }
-            _context7.n = 2;
+            _context8.n = 2;
             return fetch("/api/archived-students/".concat(archivedStudent.id, "/force"), {
               method: 'DELETE',
               headers: headers
             });
           case 2:
-            response = _context7.v;
+            response = _context8.v;
             if (!response.ok) {
-              _context7.n = 3;
+              _context8.n = 3;
               break;
             }
             setArchivedData(function (prev) {
@@ -75688,46 +76156,46 @@ function StudentPage() {
             setTimeout(function () {
               return setShowToast(false);
             }, 3000);
-            _context7.n = 5;
+            _context8.n = 5;
             break;
           case 3:
-            _context7.n = 4;
+            _context8.n = 4;
             return response.json();
           case 4:
-            data = _context7.v;
+            data = _context8.v;
             setErrors([data.message || 'Failed to delete student.']);
           case 5:
-            _context7.n = 7;
+            _context8.n = 7;
             break;
           case 6:
-            _context7.p = 6;
-            _t7 = _context7.v;
-            console.error('Error deleting student:', _t7);
+            _context8.p = 6;
+            _t8 = _context8.v;
+            console.error('Error deleting student:', _t8);
             setErrors(['Network error occurred. Please try again.']);
           case 7:
-            return _context7.a(2);
+            return _context8.a(2);
         }
-      }, _callee7, null, [[1, 6]]);
+      }, _callee8, null, [[1, 6]]);
     }));
     return function handlePermanentDelete(_x3) {
-      return _ref7.apply(this, arguments);
+      return _ref8.apply(this, arguments);
     };
   }();
   var openArchivePage = /*#__PURE__*/function () {
-    var _ref8 = _asyncToGenerator(/*#__PURE__*/_regenerator().m(function _callee8() {
-      return _regenerator().w(function (_context8) {
-        while (1) switch (_context8.n) {
+    var _ref9 = _asyncToGenerator(/*#__PURE__*/_regenerator().m(function _callee9() {
+      return _regenerator().w(function (_context9) {
+        while (1) switch (_context9.n) {
           case 0:
             setShowArchivePage(true);
-            _context8.n = 1;
+            _context9.n = 1;
             return fetchArchivedData();
           case 1:
-            return _context8.a(2);
+            return _context9.a(2);
         }
-      }, _callee8);
+      }, _callee9);
     }));
     return function openArchivePage() {
-      return _ref8.apply(this, arguments);
+      return _ref9.apply(this, arguments);
     };
   }();
   var closeArchivePage = function closeArchivePage() {
@@ -75753,8 +76221,13 @@ function StudentPage() {
       street_address: '',
       city_municipality: '',
       province_region: '',
-      zip_code: ''
+      zip_code: '',
+      mother_name: '',
+      father_name: ''
     });
+    setPhotoFile(null);
+    setGradeSlipFile(null);
+    setPhotoPreview(null);
   };
   var handleCloseArchiveModal = function handleCloseArchiveModal() {
     setShowArchiveModal(false);
@@ -75785,7 +76258,7 @@ function StudentPage() {
     };
   };
   var calendarIcon = function calendarIcon() {
-    return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("svg", _objectSpread(_objectSpread({
+    return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("svg", _objectSpread(_objectSpread({
       viewBox: "0 0 24 24",
       width: "18",
       height: "18",
@@ -75794,24 +76267,24 @@ function StudentPage() {
       strokeWidth: "2",
       strokeLinecap: "round",
       strokeLinejoin: "round",
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("rect", {
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("rect", {
         x: "3",
         y: "4",
         width: "18",
         height: "18",
         rx: "4",
         ry: "4"
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("line", {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("line", {
         x1: "16",
         y1: "2",
         x2: "16",
         y2: "6"
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("line", {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("line", {
         x1: "8",
         y1: "2",
         x2: "8",
         y2: "6"
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("line", {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("line", {
         x1: "3",
         y1: "10",
         x2: "21",
@@ -75820,7 +76293,7 @@ function StudentPage() {
     }));
   };
   var bellIcon = function bellIcon() {
-    return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("svg", _objectSpread(_objectSpread({
+    return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("svg", _objectSpread(_objectSpread({
       viewBox: "0 0 24 24",
       width: "18",
       height: "18",
@@ -75829,15 +76302,65 @@ function StudentPage() {
       strokeWidth: "2",
       strokeLinecap: "round",
       strokeLinejoin: "round",
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("path", {
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("path", {
         d: "M18 8a6 6 0 10-12 0c0 7-3 8-3 8h18s-3-1-3-8"
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("path", {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("path", {
         d: "M13.73 21a2 2 0 01-3.46 0"
       })]
     }));
   };
+  var sunIcon = function sunIcon() {
+    var isWhite = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : false;
+    return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("svg", _objectSpread(_objectSpread({
+      viewBox: "0 0 24 24",
+      width: "18",
+      height: "18",
+      fill: "none"
+    }, withStroke(isWhite)), {}, {
+      strokeWidth: "2",
+      strokeLinecap: "round",
+      strokeLinejoin: "round",
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("circle", {
+        cx: "12",
+        cy: "12",
+        r: "4"
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("path", {
+        d: "M12 2v2"
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("path", {
+        d: "M12 20v2"
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("path", {
+        d: "M4.93 4.93l1.41 1.41"
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("path", {
+        d: "M17.66 17.66l1.41 1.41"
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("path", {
+        d: "M2 12h2"
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("path", {
+        d: "M20 12h2"
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("path", {
+        d: "M4.93 19.07l1.41-1.41"
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("path", {
+        d: "M17.66 6.34l1.41-1.41"
+      })]
+    }));
+  };
+  var moonIcon = function moonIcon() {
+    var isWhite = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : false;
+    return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("svg", _objectSpread(_objectSpread({
+      viewBox: "0 0 24 24",
+      width: "18",
+      height: "18",
+      fill: "none"
+    }, withStroke(isWhite)), {}, {
+      strokeWidth: "2",
+      strokeLinecap: "round",
+      strokeLinejoin: "round",
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("path", {
+        d: "M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"
+      })
+    }));
+  };
   var settingsIcon = function settingsIcon() {
-    return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("svg", _objectSpread(_objectSpread({
+    return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("svg", _objectSpread(_objectSpread({
       viewBox: "0 0 24 24",
       width: "18",
       height: "18",
@@ -75846,17 +76369,17 @@ function StudentPage() {
       strokeWidth: "2",
       strokeLinecap: "round",
       strokeLinejoin: "round",
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("circle", {
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("circle", {
         cx: "12",
         cy: "12",
         r: "3"
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("path", {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("path", {
         d: "M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 010 2.83 2 2 0 01-2.83 0l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-4 0v-.09a1.65 1.65 0 00-1-1.51 1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 01-2.83 0 2 2 0 010-2.83l.06-.06a1.65 1.65 0 00.33-1.82 1.65 1.65 0 00-1.51-1H3a2 2 0 010-4h.09a1.65 1.65 0 001.51-1 1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 010-2.83 2 2 0 012.83 0l.06.06a1.65 1.65 0 001.82.33H9a1.65 1.65 0 001-1.51V3a2 2 0 014 0v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 012.83 0 2 2 0 010 2.83l-.06.06a1.65 1.65 0 00-.33 1.82V9c0 .69.28 1.32.73 1.77.45.45 1.08.73 1.77.73h.09a2 2 0 010 4h-.09a1.65 1.65 0 00-1.77.73z"
       })]
     }));
   };
   var dashboardIcon = function dashboardIcon() {
-    return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("svg", _objectSpread(_objectSpread({
+    return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("svg", _objectSpread(_objectSpread({
       viewBox: "0 0 24 24",
       width: "18",
       height: "18",
@@ -75865,25 +76388,25 @@ function StudentPage() {
       strokeWidth: "2",
       strokeLinecap: "round",
       strokeLinejoin: "round",
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("rect", {
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("rect", {
         x: "3",
         y: "3",
         width: "7",
         height: "7",
         rx: "2"
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("rect", {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("rect", {
         x: "14",
         y: "3",
         width: "7",
         height: "7",
         rx: "2"
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("rect", {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("rect", {
         x: "14",
         y: "14",
         width: "7",
         height: "7",
         rx: "2"
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("rect", {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("rect", {
         x: "3",
         y: "14",
         width: "7",
@@ -75893,7 +76416,7 @@ function StudentPage() {
     }));
   };
   var studentsIcon = function studentsIcon() {
-    return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("svg", _objectSpread(_objectSpread({
+    return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("svg", _objectSpread(_objectSpread({
       viewBox: "0 0 24 24",
       width: "18",
       height: "18",
@@ -75902,9 +76425,9 @@ function StudentPage() {
       strokeWidth: "2",
       strokeLinecap: "round",
       strokeLinejoin: "round",
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("path", {
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("path", {
         d: "M12 14c-4.418 0-8 1.79-8 4v2"
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("circle", {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("circle", {
         cx: "12",
         cy: "7",
         r: "4"
@@ -75912,7 +76435,7 @@ function StudentPage() {
     }));
   };
   var facultyIcon = function facultyIcon() {
-    return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("svg", _objectSpread(_objectSpread({
+    return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("svg", _objectSpread(_objectSpread({
       viewBox: "0 0 24 24",
       width: "18",
       height: "18",
@@ -75921,13 +76444,13 @@ function StudentPage() {
       strokeWidth: "2",
       strokeLinecap: "round",
       strokeLinejoin: "round",
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("path", {
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("path", {
         d: "M2 20v-1c0-2.21 3.582-4 8-4s8 1.79 8 4v1"
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("circle", {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("circle", {
         cx: "10",
         cy: "7",
         r: "4"
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("circle", {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("circle", {
         cx: "18",
         cy: "8",
         r: "3"
@@ -75935,7 +76458,7 @@ function StudentPage() {
     }));
   };
   var reportsIcon = function reportsIcon() {
-    return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("svg", _objectSpread(_objectSpread({
+    return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("svg", _objectSpread(_objectSpread({
       viewBox: "0 0 24 24",
       width: "18",
       height: "18",
@@ -75944,17 +76467,17 @@ function StudentPage() {
       strokeWidth: "2",
       strokeLinecap: "round",
       strokeLinejoin: "round",
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("path", {
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("path", {
         d: "M3 12h18"
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("path", {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("path", {
         d: "M3 6h18"
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("path", {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("path", {
         d: "M3 18h18"
       })]
     }));
   };
   var profileIcon = function profileIcon() {
-    return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("svg", _objectSpread(_objectSpread({
+    return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("svg", _objectSpread(_objectSpread({
       viewBox: "0 0 24 24",
       width: "18",
       height: "18",
@@ -75963,9 +76486,9 @@ function StudentPage() {
       strokeWidth: "2",
       strokeLinecap: "round",
       strokeLinejoin: "round",
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("path", {
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("path", {
         d: "M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("circle", {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("circle", {
         cx: "12",
         cy: "7",
         r: "4"
@@ -75973,7 +76496,7 @@ function StudentPage() {
     }));
   };
   var archiveIcon = function archiveIcon() {
-    return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("svg", _objectSpread(_objectSpread({
+    return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("svg", _objectSpread(_objectSpread({
       viewBox: "0 0 24 24",
       width: "18",
       height: "18",
@@ -75982,15 +76505,15 @@ function StudentPage() {
       strokeWidth: "2",
       strokeLinecap: "round",
       strokeLinejoin: "round",
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("path", {
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("path", {
         d: "M4 19.5V6a2 2 0 012-2h10l4 4v11.5a1.5 1.5 0 01-1.5 1.5H5.5A1.5 1.5 0 014 19.5z"
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("path", {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("path", {
         d: "M14 4v4h4"
       })]
     }));
   };
   var logoutIcon = function logoutIcon() {
-    return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("svg", _objectSpread(_objectSpread({
+    return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("svg", _objectSpread(_objectSpread({
       viewBox: "0 0 24 24",
       width: "18",
       height: "18",
@@ -75999,11 +76522,11 @@ function StudentPage() {
       strokeWidth: "2",
       strokeLinecap: "round",
       strokeLinejoin: "round",
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("path", {
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("path", {
         d: "M9 21H5a2 2 0 01-2-2V5a2 2 0 012-2h4"
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("polyline", {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("polyline", {
         points: "16 17 21 12 16 7"
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("line", {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("line", {
         x1: "21",
         y1: "12",
         x2: "9",
@@ -76016,7 +76539,7 @@ function StudentPage() {
   }).filter(Boolean).join('').slice(0, 2).toUpperCase();
   var renderAvatar = function renderAvatar(name, photoUrl) {
     if (photoUrl) {
-      return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("img", {
+      return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("img", {
         src: photoUrl,
         alt: name,
         className: "avatar-img"
@@ -76025,9 +76548,9 @@ function StudentPage() {
     var initials = (name || '').split(' ').map(function (n) {
       return n && n[0];
     }).filter(Boolean).join('').slice(0, 2).toUpperCase();
-    return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+    return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
       className: "avatar-sm bg-primary rounded-circle d-flex align-items-center justify-content-center text-white",
-      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("span", {
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("span", {
         className: "fw-bold",
         style: {
           fontSize: '12px'
@@ -76036,78 +76559,78 @@ function StudentPage() {
       })
     });
   };
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
     className: "sfms-dashboard",
-    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("aside", {
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("aside", {
       className: "sfms-sidebar",
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
         className: "sidebar-brand",
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
           className: "logo",
-          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("img", {
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("img", {
             src: "/img/sfms-logo2.png",
             alt: "SFMS Logo"
           })
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
           className: "brand-text",
           children: "SFMS"
         })]
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("nav", {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("nav", {
         className: "sidebar-nav",
-        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("ul", {
-          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("li", {
-            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(react_router_dom__WEBPACK_IMPORTED_MODULE_2__.Link, {
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("ul", {
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("li", {
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)(react_router_dom__WEBPACK_IMPORTED_MODULE_2__.Link, {
               to: "/dashboard",
-              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("span", {
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("span", {
                 className: "nav-icon",
                 children: dashboardIcon()
               }), "Dashboard"]
             })
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("li", {
-            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(react_router_dom__WEBPACK_IMPORTED_MODULE_2__.Link, {
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("li", {
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)(react_router_dom__WEBPACK_IMPORTED_MODULE_2__.Link, {
               to: "/dashboard/faculty",
-              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("span", {
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("span", {
                 className: "nav-icon",
                 children: facultyIcon()
               }), "Faculty"]
             })
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("li", {
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("li", {
             className: "active",
-            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(react_router_dom__WEBPACK_IMPORTED_MODULE_2__.Link, {
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)(react_router_dom__WEBPACK_IMPORTED_MODULE_2__.Link, {
               to: "/dashboard/students",
-              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("span", {
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("span", {
                 className: "nav-icon",
                 children: studentsIcon()
               }), "Students"]
             })
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("li", {
-            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(react_router_dom__WEBPACK_IMPORTED_MODULE_2__.Link, {
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("li", {
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)(react_router_dom__WEBPACK_IMPORTED_MODULE_2__.Link, {
               to: "/dashboard/calendar",
-              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("span", {
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("span", {
                 className: "nav-icon",
                 children: calendarIcon()
               }), "Calendar"]
             })
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("li", {
-            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(react_router_dom__WEBPACK_IMPORTED_MODULE_2__.Link, {
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("li", {
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)(react_router_dom__WEBPACK_IMPORTED_MODULE_2__.Link, {
               to: "/dashboard/reports",
-              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("span", {
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("span", {
                 className: "nav-icon",
                 children: reportsIcon()
               }), "Reports"]
             })
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("li", {
-            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(react_router_dom__WEBPACK_IMPORTED_MODULE_2__.Link, {
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("li", {
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)(react_router_dom__WEBPACK_IMPORTED_MODULE_2__.Link, {
               to: "/dashboard/settings",
-              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("span", {
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("span", {
                 className: "nav-icon",
                 children: settingsIcon()
               }), "Settings"]
             })
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("li", {
-            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(react_router_dom__WEBPACK_IMPORTED_MODULE_2__.Link, {
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("li", {
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)(react_router_dom__WEBPACK_IMPORTED_MODULE_2__.Link, {
               to: "/dashboard/profile",
-              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("span", {
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("span", {
                 className: "nav-icon",
                 children: profileIcon()
               }), "Profile"]
@@ -76115,42 +76638,50 @@ function StudentPage() {
           })]
         })
       })]
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("main", {
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("main", {
       className: "sfms-main",
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("header", {
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("header", {
         className: "topbar",
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
           className: "topbar-left",
-          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("h4", {
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("h4", {
             children: "Student Management"
           })
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
           className: "topbar-right",
-          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
             className: "top-actions",
-            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("button", {
               className: "btn small outline",
               onClick: function onClick() {
                 return setShowModal(true);
               },
               children: "Add Student"
             })
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
             className: "top-icons",
-            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_NotificationBell__WEBPACK_IMPORTED_MODULE_3__["default"], {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_NotificationBell__WEBPACK_IMPORTED_MODULE_3__["default"], {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("button", {
+              className: "icon-circle",
+              title: theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode',
+              onClick: function onClick() {
+                var t = (0,_utils_theme__WEBPACK_IMPORTED_MODULE_4__.toggleTheme)();
+                setTheme(t);
+              },
+              children: theme === 'dark' ? sunIcon() : moonIcon()
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("button", {
               className: "icon-circle",
               title: "Settings",
               onClick: function onClick() {
                 return navigate('/dashboard/settings');
               },
               children: settingsIcon()
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
               className: "profile-menu-wrapper",
               ref: profileMenuRef,
               style: {
                 position: 'relative'
               },
-              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("button", {
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("button", {
                 className: "profile-chip",
                 title: "Profile",
                 onClick: function onClick() {
@@ -76159,14 +76690,14 @@ function StudentPage() {
                   });
                 },
                 "aria-expanded": showProfileMenu,
-                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("span", {
+                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("span", {
                   className: "avatar-sm",
                   children: userInitials
-                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("span", {
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("span", {
                   className: "profile-name",
                   children: profileData.name || 'Admin'
                 })]
-              }), showProfileMenu && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+              }), showProfileMenu && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
                 className: "notifications-dropdown",
                 style: {
                   position: 'absolute',
@@ -76179,13 +76710,13 @@ function StudentPage() {
                   overflow: 'hidden',
                   zIndex: 4000
                 },
-                children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("ul", {
+                children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("ul", {
                   className: "dropdown-list",
                   style: {
                     margin: 0,
                     padding: 0
                   },
-                  children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("li", {
+                  children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("li", {
                     className: "dropdown-item",
                     style: {
                       padding: '12px 14px',
@@ -76196,7 +76727,7 @@ function StudentPage() {
                       navigate('/dashboard/profile');
                     },
                     children: "View Profile"
-                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("li", {
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("li", {
                     className: "dropdown-item",
                     style: {
                       padding: '12px 14px',
@@ -76207,7 +76738,7 @@ function StudentPage() {
                       navigate('/dashboard/settings');
                     },
                     children: "Settings"
-                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("li", {
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("li", {
                     className: "dropdown-item",
                     style: {
                       padding: '12px 14px',
@@ -76225,79 +76756,79 @@ function StudentPage() {
             })]
           })]
         })]
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
         className: "student-page",
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
           className: "student-filters bg-white p-4 mb-4",
-          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
             className: "row g-3 align-items-end",
-            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
               className: "col-md-3",
-              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("label", {
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("label", {
                 className: "form-label",
                 children: "Course"
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("select", {
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("select", {
                 className: "form-select",
                 name: "course",
                 value: filters.course,
                 onChange: handleFilterChange,
-                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("option", {
+                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("option", {
                   value: "",
                   children: "All Courses"
                 }), courses.map(function (course) {
-                  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("option", {
-                    value: course,
-                    children: course
-                  }, course);
+                  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("option", {
+                    value: course.name,
+                    children: course.name
+                  }, course.id || course.name);
                 })]
               })]
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
               className: "col-md-2",
-              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("label", {
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("label", {
                 className: "form-label",
                 children: "Year Level"
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("select", {
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("select", {
                 className: "form-select",
                 name: "year_level",
                 value: filters.year_level,
                 onChange: handleFilterChange,
-                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("option", {
+                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("option", {
                   value: "",
                   children: "All Years"
                 }), yearLevels.map(function (year) {
-                  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("option", {
+                  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("option", {
                     value: year,
                     children: year
                   }, year);
                 })]
               })]
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
               className: "col-md-2",
-              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("label", {
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("label", {
                 className: "form-label",
                 children: "Status"
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("select", {
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("select", {
                 className: "form-select",
                 name: "status",
                 value: filters.status,
                 onChange: handleFilterChange,
-                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("option", {
+                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("option", {
                   value: "",
                   children: "All Status"
-                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("option", {
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("option", {
                   value: "ACTIVE",
                   children: "Active"
-                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("option", {
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("option", {
                   value: "INACTIVE",
                   children: "Inactive"
                 })]
               })]
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
               className: "col-md-4",
-              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("label", {
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("label", {
                 className: "form-label",
                 children: "Search"
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("input", {
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("input", {
                 type: "text",
                 className: "form-control",
                 placeholder: "Search by name or student number...",
@@ -76305,117 +76836,117 @@ function StudentPage() {
                 value: filters.search,
                 onChange: handleFilterChange
               })]
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
               className: "col-md-1",
-              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("button", {
                 className: "btn btn-search w-100",
                 onClick: fetchStudentData,
                 children: "Search"
               })
             })]
           })
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
           className: "student-table bg-white",
-          children: loading ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+          children: loading ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
             className: "text-center p-5",
-            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
               className: "spinner-border text-primary",
               role: "status",
-              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("span", {
+              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("span", {
                 className: "visually-hidden",
                 children: "Loading..."
               })
             })
-          }) : studentData.length > 0 ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("table", {
+          }) : studentData.length > 0 ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("table", {
             className: "table",
-            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("thead", {
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("thead", {
               className: "table-light",
-              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("tr", {
-                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("th", {
+              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("tr", {
+                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("th", {
                   children: "Photo"
-                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("th", {
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("th", {
                   children: "Student Number"
-                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("th", {
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("th", {
                   children: "Name"
-                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("th", {
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("th", {
                   children: "Course"
-                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("th", {
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("th", {
                   children: "Year Level"
-                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("th", {
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("th", {
                   children: "Academic Year"
-                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("th", {
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("th", {
                   children: "Gender"
-                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("th", {
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("th", {
                   children: "Date of Birth"
-                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("th", {
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("th", {
                   children: "Age"
-                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("th", {
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("th", {
                   children: "Address"
-                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("th", {
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("th", {
                   children: "Email"
-                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("th", {
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("th", {
                   children: "Contact"
-                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("th", {
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("th", {
                   children: "Status"
-                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("th", {
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("th", {
                   children: "Actions"
                 })]
               })
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("tbody", {
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("tbody", {
               children: studentData.map(function (student) {
                 var _student$age;
-                return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("tr", {
-                  children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("td", {
-                    children: renderAvatar(student.name, student.photo_url || student.profile_photo_url)
-                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("td", {
+                return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("tr", {
+                  children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("td", {
+                    children: renderAvatar(student.name, student.photo_url || student.profile_photo_url || uploadedStudentPhotos[student.student_number])
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("td", {
                     className: "fw-semibold",
                     children: student.student_number
-                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("td", {
-                    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("td", {
+                    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
                       className: "fw-semibold",
                       children: student.name
                     })
-                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("td", {
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("td", {
                     children: student.course
-                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("td", {
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("td", {
                     children: student.year_level
-                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("td", {
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("td", {
                     children: student.academic_year
-                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("td", {
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("td", {
                     children: student.gender || '-'
-                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("td", {
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("td", {
                     children: student.dob ? new Date(student.dob).toLocaleDateString() : '-'
-                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("td", {
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("td", {
                     children: (_student$age = student.age) !== null && _student$age !== void 0 ? _student$age : '-'
-                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("td", {
-                    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("td", {
+                    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
                       className: "small text-muted",
-                      children: [student.street_address ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+                      children: [student.street_address ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
                         children: student.street_address
-                      }) : null, student.city_municipality || student.province_region || student.zip_code ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+                      }) : null, student.city_municipality || student.province_region || student.zip_code ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
                         children: [student.city_municipality, student.city_municipality && student.province_region ? ', ' : '', student.province_region, student.zip_code && (student.city_municipality || student.province_region) ? ' - ' + student.zip_code : student.zip_code || '']
                       }) : null]
                     })
-                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("td", {
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("td", {
                     children: student.email
-                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("td", {
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("td", {
                     children: student.contact
-                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("td", {
-                    children: student.status === 'ACTIVE' ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("span", {
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("td", {
+                    children: student.status === 'ACTIVE' ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("span", {
                       className: "badge-active",
                       children: "Active"
-                    }) : /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("span", {
+                    }) : /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("span", {
                       className: "badge-inactive",
                       children: "Inactive"
                     })
-                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("td", {
-                    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("td", {
+                    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("button", {
                       className: "btn btn-sm btn-outline-primary me-2",
                       onClick: function onClick() {
                         return handleEdit(student);
                       },
                       children: "Edit"
-                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("button", {
                       className: "btn btn-sm btn-outline-danger",
                       onClick: function onClick() {
                         return handleDelete(student);
@@ -76426,16 +76957,16 @@ function StudentPage() {
                 }, student.id);
               })
             })]
-          }) : /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+          }) : /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
             className: "text-center p-5",
-            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("p", {
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("p", {
               className: "text-muted",
               children: "No active students found."
             })
           })
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
           className: "student-archive-btn",
-          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("button", {
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("button", {
             className: "btn btn-archive",
             style: {
               backgroundColor: '#0f79e0',
@@ -76443,52 +76974,56 @@ function StudentPage() {
               color: '#ffffff'
             },
             onClick: openArchivePage,
-            children: [archiveIcon(), " ", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("span", {
+            children: [archiveIcon(), " ", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("span", {
               style: {
                 marginLeft: 8
               },
               children: "View Archive"
             })]
           })
-        }), showModal && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+        }), showModal && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
           className: "sfms-modal",
-          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
             className: "sfms-modal-backdrop",
             onClick: handleCloseModal
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
             className: "sfms-modal-window bg-white",
-            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+            style: {
+              maxHeight: '80vh',
+              overflowY: 'auto'
+            },
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
               className: "modal-form",
-              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
                 className: "modal-top d-flex justify-content-between align-items-center mb-4",
-                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("h5", {
+                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("h5", {
                   children: editingStudent ? 'Edit Student' : 'Add New Student'
-                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("button", {
                   className: "btn-close",
                   onClick: handleCloseModal,
                   children: "\xD7"
                 })]
-              }), errors.length > 0 && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+              }), errors.length > 0 && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
                 className: "student-errors",
-                children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("ul", {
+                children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("ul", {
                   children: errors.map(function (error, index) {
-                    return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("li", {
+                    return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("li", {
                       children: error
                     }, index);
                   })
                 })
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("form", {
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("form", {
                 onSubmit: handleSubmit,
-                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
                   className: "modal-body",
-                  children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+                  children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
                     className: "row g-3",
-                    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+                    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
                       className: "col-md-6",
-                      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("label", {
+                      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("label", {
                         htmlFor: "student_number",
                         children: "Student Number *"
-                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("input", {
+                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("input", {
                         type: "text",
                         className: "form-control",
                         id: "student_number",
@@ -76499,12 +77034,12 @@ function StudentPage() {
                         placeholder: "e.g., 2023-001",
                         disabled: editingStudent
                       })]
-                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
                       className: "col-md-6",
-                      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("label", {
+                      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("label", {
                         htmlFor: "name",
                         children: "Full Name *"
-                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("input", {
+                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("input", {
                         type: "text",
                         className: "form-control",
                         id: "name",
@@ -76514,78 +77049,89 @@ function StudentPage() {
                         required: true,
                         placeholder: "e.g., John Doe"
                       })]
-                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
                       className: "col-md-6",
-                      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("label", {
+                      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("label", {
                         htmlFor: "course",
                         children: "Course *"
-                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("select", {
+                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("select", {
                         className: "form-select",
                         id: "course",
                         name: "course",
                         value: formData.course,
-                        onChange: handleInputChange,
+                        onChange: function onChange(e) {
+                          var val = e.target.value;
+                          var selected = courses.find(function (c) {
+                            return c.name === val;
+                          });
+                          setFormData(function (prev) {
+                            return _objectSpread(_objectSpread({}, prev), {}, {
+                              course: val,
+                              course_id: selected ? selected.id : null
+                            });
+                          });
+                        },
                         required: true,
-                        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("option", {
+                        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("option", {
                           value: "",
                           children: "Select Course"
                         }), courses.map(function (course) {
-                          return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("option", {
-                            value: course,
-                            children: course
-                          }, course);
+                          return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("option", {
+                            value: course.name,
+                            children: course.name
+                          }, course.id || course.name);
                         })]
                       })]
-                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
                       className: "col-md-6",
-                      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("label", {
+                      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("label", {
                         htmlFor: "year_level",
                         children: "Year Level *"
-                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("select", {
+                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("select", {
                         className: "form-select",
                         id: "year_level",
                         name: "year_level",
                         value: formData.year_level,
                         onChange: handleInputChange,
                         required: true,
-                        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("option", {
+                        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("option", {
                           value: "",
                           children: "Select Year Level"
                         }), yearLevels.map(function (year) {
-                          return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("option", {
+                          return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("option", {
                             value: year,
                             children: year
                           }, year);
                         })]
                       })]
-                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
                       className: "col-md-6",
-                      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("label", {
+                      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("label", {
                         htmlFor: "academic_year",
                         children: "Academic Year *"
-                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("select", {
+                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("select", {
                         className: "form-select",
                         id: "academic_year",
                         name: "academic_year",
                         value: formData.academic_year,
                         onChange: handleInputChange,
                         required: true,
-                        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("option", {
+                        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("option", {
                           value: "",
                           children: "Select Academic Year"
                         }), academicYears.map(function (year) {
-                          return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("option", {
+                          return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("option", {
                             value: year,
                             children: year
                           }, year);
                         })]
                       })]
-                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
                       className: "col-md-6",
-                      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("label", {
+                      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("label", {
                         htmlFor: "email",
                         children: "Email Address"
-                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("input", {
+                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("input", {
                         type: "email",
                         className: "form-control",
                         id: "email",
@@ -76594,12 +77140,12 @@ function StudentPage() {
                         onChange: handleInputChange,
                         placeholder: "e.g., student@university.edu"
                       })]
-                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
                       className: "col-md-6",
-                      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("label", {
+                      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("label", {
                         htmlFor: "contact",
                         children: "Contact Number"
-                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("input", {
+                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("input", {
                         type: "text",
                         className: "form-control",
                         id: "contact",
@@ -76608,37 +77154,65 @@ function StudentPage() {
                         onChange: handleInputChange,
                         placeholder: "e.g., +1234567890"
                       })]
-                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
+                      className: "col-md-6",
+                      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("label", {
+                        htmlFor: "mother_name",
+                        children: "Name of Mother"
+                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("input", {
+                        type: "text",
+                        className: "form-control",
+                        id: "mother_name",
+                        name: "mother_name",
+                        value: formData.mother_name,
+                        onChange: handleInputChange,
+                        placeholder: "e.g., Maria Santos"
+                      })]
+                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
+                      className: "col-md-6",
+                      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("label", {
+                        htmlFor: "father_name",
+                        children: "Name of Father"
+                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("input", {
+                        type: "text",
+                        className: "form-control",
+                        id: "father_name",
+                        name: "father_name",
+                        value: formData.father_name,
+                        onChange: handleInputChange,
+                        placeholder: "e.g., Juan Santos"
+                      })]
+                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
                       className: "col-md-4",
-                      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("label", {
+                      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("label", {
                         htmlFor: "gender",
                         children: "Gender"
-                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("select", {
+                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("select", {
                         className: "form-select",
                         id: "gender",
                         name: "gender",
                         value: formData.gender,
                         onChange: handleInputChange,
-                        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("option", {
+                        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("option", {
                           value: "",
                           children: "Select Gender"
-                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("option", {
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("option", {
                           value: "Male",
                           children: "Male"
-                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("option", {
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("option", {
                           value: "Female",
                           children: "Female"
-                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("option", {
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("option", {
                           value: "Other",
                           children: "Other"
                         })]
                       })]
-                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
                       className: "col-md-4",
-                      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("label", {
+                      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("label", {
                         htmlFor: "dob",
                         children: "Date of Birth"
-                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("input", {
+                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("input", {
                         type: "date",
                         className: "form-control",
                         id: "dob",
@@ -76646,12 +77220,12 @@ function StudentPage() {
                         value: formData.dob,
                         onChange: handleInputChange
                       })]
-                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
                       className: "col-md-4",
-                      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("label", {
+                      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("label", {
                         htmlFor: "age",
                         children: "Age"
-                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("input", {
+                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("input", {
                         type: "text",
                         readOnly: true,
                         className: "form-control",
@@ -76660,12 +77234,12 @@ function StudentPage() {
                         value: formData.age,
                         placeholder: "Auto-calculated from Date of Birth"
                       })]
-                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
                       className: "col-md-12",
-                      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("label", {
+                      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("label", {
                         htmlFor: "street_address",
                         children: "Street Address"
-                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("input", {
+                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("input", {
                         type: "text",
                         className: "form-control",
                         id: "street_address",
@@ -76674,12 +77248,12 @@ function StudentPage() {
                         onChange: handleInputChange,
                         placeholder: "House no., Street"
                       })]
-                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
                       className: "col-md-4",
-                      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("label", {
+                      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("label", {
                         htmlFor: "city_municipality",
                         children: "City / Municipality"
-                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("input", {
+                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("input", {
                         type: "text",
                         className: "form-control",
                         id: "city_municipality",
@@ -76688,12 +77262,12 @@ function StudentPage() {
                         onChange: handleInputChange,
                         placeholder: "City or Municipality"
                       })]
-                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
                       className: "col-md-4",
-                      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("label", {
+                      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("label", {
                         htmlFor: "province_region",
                         children: "Province / Region"
-                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("input", {
+                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("input", {
                         type: "text",
                         className: "form-control",
                         id: "province_region",
@@ -76702,12 +77276,12 @@ function StudentPage() {
                         onChange: handleInputChange,
                         placeholder: "Province or Region"
                       })]
-                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
                       className: "col-md-4",
-                      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("label", {
+                      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("label", {
                         htmlFor: "zip_code",
                         children: "ZIP Code"
-                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("input", {
+                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("input", {
                         type: "text",
                         className: "form-control",
                         id: "zip_code",
@@ -76716,36 +77290,80 @@ function StudentPage() {
                         onChange: handleInputChange,
                         placeholder: "ZIP / Postal Code"
                       })]
-                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
                       className: "col-md-6",
-                      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("label", {
+                      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("label", {
+                        htmlFor: "photo",
+                        children: "Add Photo"
+                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("input", {
+                        type: "file",
+                        accept: "image/*",
+                        className: "form-control",
+                        id: "photo",
+                        name: "photo",
+                        onChange: handlePhotoChange
+                      }), photoPreview && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
+                        style: {
+                          marginTop: 8
+                        },
+                        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("img", {
+                          src: photoPreview,
+                          alt: "preview",
+                          style: {
+                            maxWidth: 120,
+                            borderRadius: 8
+                          }
+                        })
+                      })]
+                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
+                      className: "col-md-6",
+                      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("label", {
+                        htmlFor: "grade_slip",
+                        children: "Grade Slip"
+                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("input", {
+                        type: "file",
+                        accept: "application/pdf,image/*",
+                        className: "form-control",
+                        id: "grade_slip",
+                        name: "grade_slip",
+                        onChange: handleGradeSlipChange
+                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
+                        className: "small text-muted",
+                        style: {
+                          marginTop: 6
+                        },
+                        children: "Accepted: PDF or image"
+                      })]
+                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
+                      className: "col-md-6",
+                      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("label", {
                         htmlFor: "status",
                         children: "Status *"
-                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("select", {
+                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("select", {
                         className: "form-select",
                         id: "status",
                         name: "status",
                         value: formData.status,
                         onChange: handleInputChange,
                         required: true,
-                        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("option", {
+                        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("option", {
                           value: "ACTIVE",
                           children: "Active"
-                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("option", {
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("option", {
                           value: "INACTIVE",
                           children: "Inactive"
                         })]
                       })]
                     })]
                   })
-                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
                   className: "modal-actions d-flex justify-content-end gap-2",
-                  children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                  children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("button", {
                     type: "button",
                     className: "btn btn-outline-secondary",
                     onClick: handleCloseModal,
                     children: "Cancel"
-                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("button", {
                     type: "submit",
                     className: "btn btn-primary",
                     children: editingStudent ? 'Update Student' : 'Add Student'
@@ -76754,42 +77372,46 @@ function StudentPage() {
               })]
             })
           })]
-        }), showArchiveModal && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+        }), showArchiveModal && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
           className: "sfms-modal",
-          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
             className: "sfms-modal-backdrop",
             onClick: handleCloseArchiveModal
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
             className: "sfms-modal-window bg-white",
-            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+            style: {
+              maxHeight: '60vh',
+              overflowY: 'auto'
+            },
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
               className: "modal-form",
-              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
                 className: "modal-top d-flex justify-content-between align-items-center mb-4",
-                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("h5", {
+                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("h5", {
                   children: "Move Student to Inactive"
-                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("button", {
                   className: "btn-close",
                   onClick: handleCloseArchiveModal,
                   children: "\xD7"
                 })]
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
                 className: "modal-body",
-                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("p", {
-                  children: ["Are you sure you want to move ", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("strong", {
+                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("p", {
+                  children: ["Are you sure you want to move ", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("strong", {
                     children: deletingStudent === null || deletingStudent === void 0 ? void 0 : deletingStudent.name
                   }), " to inactive status?"]
-                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("p", {
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("p", {
                   className: "text-muted",
                   children: "This will set the student status to INACTIVE and archive the record. You can restore it later from the archive."
                 })]
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
                 className: "modal-actions d-flex justify-content-end gap-2",
-                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("button", {
                   type: "button",
                   className: "btn btn-outline-secondary",
                   onClick: handleCloseArchiveModal,
                   children: "Cancel"
-                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("button", {
                   type: "button",
                   className: "btn btn-warning",
                   onClick: confirmDelete,
@@ -76798,54 +77420,58 @@ function StudentPage() {
               })]
             })
           })]
-        }), showArchivePage && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+        }), showArchivePage && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
           className: "sfms-modal",
-          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
             className: "sfms-modal-backdrop",
             onClick: closeArchivePage
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
             className: "sfms-modal-window bg-white archive-page-modal",
-            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+            style: {
+              maxHeight: '85vh',
+              overflowY: 'auto'
+            },
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
               className: "modal-form",
-              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
                 className: "modal-top d-flex justify-content-between align-items-center mb-4",
-                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("h5", {
+                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("h5", {
                   children: "Student Archive"
-                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("button", {
                   className: "btn-close",
                   onClick: closeArchivePage,
                   children: "\xD7"
                 })]
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
                 className: "student-filters bg-light p-4 mb-4",
-                children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+                children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
                   className: "row g-3 align-items-end",
-                  children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+                  children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
                     className: "col-md-4",
-                    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("label", {
+                    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("label", {
                       className: "form-label",
                       children: "Course"
-                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("select", {
+                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("select", {
                       className: "form-select",
                       name: "course",
                       value: archiveFilters.course,
                       onChange: handleArchiveFilterChange,
-                      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("option", {
+                      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("option", {
                         value: "",
                         children: "All Courses"
                       }), courses.map(function (course) {
-                        return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("option", {
-                          value: course,
-                          children: course
-                        }, course);
+                        return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("option", {
+                          value: course.name,
+                          children: course.name
+                        }, course.id || course.name);
                       })]
                     })]
-                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
                     className: "col-md-6",
-                    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("label", {
+                    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("label", {
                       className: "form-label",
                       children: "Search"
-                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("input", {
+                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("input", {
                       type: "text",
                       className: "form-control",
                       placeholder: "Search archived records...",
@@ -76853,108 +77479,108 @@ function StudentPage() {
                       value: archiveFilters.search,
                       onChange: handleArchiveFilterChange
                     })]
-                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
                     className: "col-md-2",
-                    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("button", {
                       className: "btn btn-search w-100",
                       onClick: fetchArchivedData,
                       children: "Search"
                     })
                   })]
                 })
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
                 className: "student-table bg-white",
-                children: archiveLoading ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+                children: archiveLoading ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
                   className: "text-center p-5",
-                  children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+                  children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
                     className: "spinner-border text-primary",
                     role: "status",
-                    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("span", {
+                    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("span", {
                       className: "visually-hidden",
                       children: "Loading..."
                     })
                   })
-                }) : archivedData.length > 0 ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("table", {
+                }) : archivedData.length > 0 ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("table", {
                   className: "table",
-                  children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("thead", {
+                  children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("thead", {
                     className: "table-light",
-                    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("tr", {
-                      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("th", {
+                    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("tr", {
+                      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("th", {
                         children: "Photo"
-                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("th", {
+                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("th", {
                         children: "Student Number"
-                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("th", {
+                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("th", {
                         children: "Name"
-                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("th", {
+                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("th", {
                         children: "Course"
-                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("th", {
+                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("th", {
                         children: "Year Level"
-                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("th", {
+                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("th", {
                         children: "Archived Date"
-                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("th", {
+                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("th", {
                         children: "Gender"
-                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("th", {
+                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("th", {
                         children: "Date of Birth"
-                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("th", {
+                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("th", {
                         children: "Age"
-                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("th", {
+                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("th", {
                         children: "Address"
-                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("th", {
+                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("th", {
                         children: "Actions"
                       })]
                     })
-                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("tbody", {
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("tbody", {
                     children: archivedData.map(function (student) {
                       var _student$age2;
-                      return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("tr", {
-                        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("td", {
-                          children: renderAvatar(student.name, student.photo_url || student.profile_photo_url)
-                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("td", {
+                      return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("tr", {
+                        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("td", {
+                          children: renderAvatar(student.name, student.photo_url || student.profile_photo_url || uploadedStudentPhotos[student.student_number])
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("td", {
                           className: "fw-semibold",
                           children: student.student_number
-                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("td", {
-                          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("td", {
+                          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
                             className: "fw-semibold",
                             children: student.name
-                          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+                          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
                             className: "text-muted small",
                             children: student.email
                           })]
-                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("td", {
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("td", {
                           children: student.course
-                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("td", {
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("td", {
                           children: student.year_level
-                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("td", {
-                          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("td", {
+                          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
                             className: "text-muted small",
                             children: new Date(student.archived_at).toLocaleDateString()
-                          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+                          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
                             className: "text-muted extra-small",
                             children: new Date(student.archived_at).toLocaleTimeString()
                           })]
-                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("td", {
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("td", {
                           children: student.gender || '-'
-                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("td", {
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("td", {
                           children: student.dob ? new Date(student.dob).toLocaleDateString() : '-'
-                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("td", {
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("td", {
                           children: (_student$age2 = student.age) !== null && _student$age2 !== void 0 ? _student$age2 : '-'
-                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("td", {
-                          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("td", {
+                          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
                             className: "small text-muted",
-                            children: [student.street_address ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+                            children: [student.street_address ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
                               children: student.street_address
-                            }) : null, student.city_municipality || student.province_region || student.zip_code ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+                            }) : null, student.city_municipality || student.province_region || student.zip_code ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
                               children: [student.city_municipality, student.city_municipality && student.province_region ? ', ' : '', student.province_region, student.zip_code && (student.city_municipality || student.province_region) ? ' - ' + student.zip_code : student.zip_code || '']
                             }) : null]
                           })
-                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("td", {
-                          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("td", {
+                          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("button", {
                             className: "btn btn-sm btn-success me-2",
                             onClick: function onClick() {
                               return handleRestore(student);
                             },
                             children: "Restore"
-                          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("button", {
                             className: "btn btn-sm btn-outline-danger",
                             onClick: function onClick() {
                               return handlePermanentDelete(student);
@@ -76965,9 +77591,9 @@ function StudentPage() {
                       }, student.id);
                     })
                   })]
-                }) : /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+                }) : /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
                   className: "text-center p-5",
-                  children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("p", {
+                  children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("p", {
                     className: "text-muted",
                     children: "No archived student records found."
                   })
@@ -76975,7 +77601,7 @@ function StudentPage() {
               })]
             })
           })]
-        }), showToast && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+        }), showToast && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
           className: "student-toast",
           children: toastMessage
         })]
@@ -77362,7 +77988,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router/dist/index.js");
 /* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/dist/index.js");
 /* harmony import */ var _NotificationBell__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./NotificationBell */ "./resources/js/components/NotificationBell.js");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+/* harmony import */ var _utils_theme__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../utils/theme */ "./resources/js/utils/theme.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
 function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, _typeof(o); }
 function ownKeys(e, r) { var t = Object.keys(e); if (Object.getOwnPropertySymbols) { var o = Object.getOwnPropertySymbols(e); r && (o = o.filter(function (r) { return Object.getOwnPropertyDescriptor(e, r).enumerable; })), t.push.apply(t, o); } return t; }
 function _objectSpread(e) { for (var r = 1; r < arguments.length; r++) { var t = null != arguments[r] ? arguments[r] : {}; r % 2 ? ownKeys(Object(t), !0).forEach(function (r) { _defineProperty(e, r, t[r]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : ownKeys(Object(t)).forEach(function (r) { Object.defineProperty(e, r, Object.getOwnPropertyDescriptor(t, r)); }); } return e; }
@@ -77379,6 +78006,7 @@ function _unsupportedIterableToArray(r, a) { if (r) { if ("string" == typeof r) 
 function _arrayLikeToArray(r, a) { (null == a || a > r.length) && (a = r.length); for (var e = 0, n = Array(a); e < a; e++) n[e] = r[e]; return n; }
 function _iterableToArrayLimit(r, l) { var t = null == r ? null : "undefined" != typeof Symbol && r[Symbol.iterator] || r["@@iterator"]; if (null != t) { var e, n, i, u, a = [], f = !0, o = !1; try { if (i = (t = t.call(r)).next, 0 === l) { if (Object(t) !== t) return; f = !1; } else for (; !(f = (e = i.call(t)).done) && (a.push(e.value), a.length !== l); f = !0); } catch (r) { o = !0, n = r; } finally { try { if (!f && null != t["return"] && (u = t["return"](), Object(u) !== u)) return; } finally { if (o) throw n; } } return a; } }
 function _arrayWithHoles(r) { if (Array.isArray(r)) return r; }
+
 
 
 
@@ -77400,34 +78028,47 @@ function ProfilePage() {
     _useState4 = _slicedToArray(_useState3, 2),
     profileData = _useState4[0],
     setProfileData = _useState4[1];
-  var _useState5 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)({
+  var _useState5 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(''),
+    _useState6 = _slicedToArray(_useState5, 2),
+    profilePic = _useState6[0],
+    setProfilePic = _useState6[1]; // preview URL or server URL
+  var _useState7 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(null),
+    _useState8 = _slicedToArray(_useState7, 2),
+    profilePicFile = _useState8[0],
+    setProfilePicFile = _useState8[1];
+  var _useState9 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(typeof window !== 'undefined' && _utils_theme__WEBPACK_IMPORTED_MODULE_4__.getStoredTheme && (0,_utils_theme__WEBPACK_IMPORTED_MODULE_4__.getStoredTheme)() || 'light'),
+    _useState0 = _slicedToArray(_useState9, 2),
+    theme = _useState0[0],
+    setTheme = _useState0[1];
+  var fileInputRef = (0,react__WEBPACK_IMPORTED_MODULE_0__.useRef)(null);
+  var _useState1 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)({
       currentPassword: '',
       newPassword: '',
       confirmPassword: ''
     }),
-    _useState6 = _slicedToArray(_useState5, 2),
-    passwordData = _useState6[0],
-    setPasswordData = _useState6[1];
-  var _useState7 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)([]),
-    _useState8 = _slicedToArray(_useState7, 2),
-    activityLogs = _useState8[0],
-    setActivityLogs = _useState8[1];
-  var _useState9 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false),
-    _useState0 = _slicedToArray(_useState9, 2),
-    loading = _useState0[0],
-    setLoading = _useState0[1];
-  var _useState1 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)([]),
     _useState10 = _slicedToArray(_useState1, 2),
-    errors = _useState10[0],
-    setErrors = _useState10[1];
-  var _useState11 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false),
+    passwordData = _useState10[0],
+    setPasswordData = _useState10[1];
+  var _useState11 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)([]),
     _useState12 = _slicedToArray(_useState11, 2),
-    showToast = _useState12[0],
-    setShowToast = _useState12[1];
-  var _useState13 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(''),
+    activityLogs = _useState12[0],
+    setActivityLogs = _useState12[1];
+  var _useState13 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false),
     _useState14 = _slicedToArray(_useState13, 2),
-    toastMessage = _useState14[0],
-    setToastMessage = _useState14[1];
+    loading = _useState14[0],
+    setLoading = _useState14[1];
+  var _useState15 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)([]),
+    _useState16 = _slicedToArray(_useState15, 2),
+    errors = _useState16[0],
+    setErrors = _useState16[1];
+  var _useState17 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false),
+    _useState18 = _slicedToArray(_useState17, 2),
+    showToast = _useState18[0],
+    setShowToast = _useState18[1];
+  var _useState19 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(''),
+    _useState20 = _slicedToArray(_useState19, 2),
+    toastMessage = _useState20[0],
+    setToastMessage = _useState20[1];
   function logout() {
     // Log logout activity before clearing auth
     logActivity('Logged out');
@@ -77443,7 +78084,7 @@ function ProfilePage() {
   }, []);
   var fetchProfile = /*#__PURE__*/function () {
     var _ref = _asyncToGenerator(/*#__PURE__*/_regenerator().m(function _callee() {
-      var res, data, u, _t;
+      var res, data, u, local, _t;
       return _regenerator().w(function (_context) {
         while (1) switch (_context.p = _context.n) {
           case 0:
@@ -77469,6 +78110,18 @@ function ProfilePage() {
               lastLogin: u.last_login_at || '',
               joinDate: u.joined_at || ''
             });
+            // set avatar if provided by API, otherwise check local fallback
+            if (u.avatar_url) {
+              setProfilePic(u.avatar_url);
+              try {
+                localStorage.removeItem('sfms_profile_pic');
+              } catch (e) {}
+            } else {
+              try {
+                local = localStorage.getItem('sfms_profile_pic');
+                if (local) setProfilePic(local);
+              } catch (e) {}
+            }
           case 3:
             _context.n = 5;
             break;
@@ -77533,7 +78186,7 @@ function ProfilePage() {
 
   var handleProfileUpdate = /*#__PURE__*/function () {
     var _ref3 = _asyncToGenerator(/*#__PURE__*/_regenerator().m(function _callee3(e) {
-      var res, data;
+      var res, data, form;
       return _regenerator().w(function (_context3) {
         while (1) switch (_context3.p = _context3.n) {
           case 0:
@@ -77541,7 +78194,31 @@ function ProfilePage() {
             setLoading(true);
             setErrors([]);
             _context3.p = 1;
+            if (!profilePicFile) {
+              _context3.n = 4;
+              break;
+            }
+            form = new FormData();
+            form.append('name', profileData.name);
+            form.append('email', profileData.email);
+            form.append('department', profileData.department);
+            form.append('avatar', profilePicFile);
             _context3.n = 2;
+            return fetch('/api/profile', {
+              method: 'POST',
+              // use POST for multipart; backend should accept
+              body: form
+            });
+          case 2:
+            res = _context3.v;
+            _context3.n = 3;
+            return res.json();
+          case 3:
+            data = _context3.v;
+            _context3.n = 7;
+            break;
+          case 4:
+            _context3.n = 5;
             return fetch('/api/profile', {
               method: 'PUT',
               headers: {
@@ -77553,35 +78230,82 @@ function ProfilePage() {
                 department: profileData.department
               })
             });
-          case 2:
+          case 5:
             res = _context3.v;
-            _context3.n = 3;
+            _context3.n = 6;
             return res.json();
-          case 3:
+          case 6:
             data = _context3.v;
+          case 7:
             if (res.ok) {
               setToastMessage(data.success || 'Profile updated successfully!');
               setShowToast(true);
               fetchLogs();
+              // if server returned avatar url update preview
+              if (data.user && data.user.avatar_url) setProfilePic(data.user.avatar_url);
             } else if (data.errors) {
               setErrors(Object.values(data.errors).flat());
             }
-          case 4:
-            _context3.p = 4;
+          case 8:
+            _context3.p = 8;
             setLoading(false);
             setTimeout(function () {
               return setShowToast(false);
             }, 3000);
-            return _context3.f(4);
-          case 5:
+            return _context3.f(8);
+          case 9:
             return _context3.a(2);
         }
-      }, _callee3, null, [[1,, 4, 5]]);
+      }, _callee3, null, [[1,, 8, 9]]);
     }));
     return function handleProfileUpdate(_x) {
       return _ref3.apply(this, arguments);
     };
   }();
+
+  // Handle selecting a local image file for profile picture
+  var handleFileChange = function handleFileChange(e) {
+    var file = e.target.files && e.target.files[0];
+    if (!file) return;
+    // basic client-side validation
+    if (!file.type.startsWith('image/')) {
+      setErrors(['Selected file is not an image']);
+      return;
+    }
+    setProfilePicFile(file);
+    // create preview data URL and persist locally until server returns avatar_url
+    try {
+      var reader = new FileReader();
+      reader.onload = function (evt) {
+        var dataUrl = evt.target.result;
+        setProfilePic(dataUrl);
+        try {
+          localStorage.setItem('sfms_profile_pic', dataUrl);
+        } catch (e) {}
+      };
+      reader.readAsDataURL(file);
+    } catch (e) {
+      // fallback to object URL
+      var url = URL.createObjectURL(file);
+      setProfilePic(url);
+    }
+  };
+  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function () {
+    // cleanup object URL when component unmounts or when a new file is selected
+    return function () {
+      if (profilePic && profilePic.startsWith('blob:')) {
+        URL.revokeObjectURL(profilePic);
+      }
+    };
+  }, [profilePic]);
+
+  // Theme toggle handler for this page
+  var handleToggleTheme = function handleToggleTheme() {
+    try {
+      var next = (0,_utils_theme__WEBPACK_IMPORTED_MODULE_4__.toggleTheme)();
+      setTheme(next);
+    } catch (err) {}
+  };
   var handlePasswordChange = /*#__PURE__*/function () {
     var _ref4 = _asyncToGenerator(/*#__PURE__*/_regenerator().m(function _callee4(e) {
       var validationErrors, res, data;
@@ -77692,7 +78416,7 @@ function ProfilePage() {
     };
   };
   var dashboardIcon = function dashboardIcon() {
-    return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("svg", _objectSpread(_objectSpread({
+    return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("svg", _objectSpread(_objectSpread({
       viewBox: "0 0 24 24",
       width: "18",
       height: "18",
@@ -77701,25 +78425,25 @@ function ProfilePage() {
       strokeWidth: "2",
       strokeLinecap: "round",
       strokeLinejoin: "round",
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("rect", {
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("rect", {
         x: "3",
         y: "3",
         width: "7",
         height: "7",
         rx: "2"
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("rect", {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("rect", {
         x: "14",
         y: "3",
         width: "7",
         height: "7",
         rx: "2"
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("rect", {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("rect", {
         x: "14",
         y: "14",
         width: "7",
         height: "7",
         rx: "2"
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("rect", {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("rect", {
         x: "3",
         y: "14",
         width: "7",
@@ -77729,7 +78453,7 @@ function ProfilePage() {
     }));
   };
   var facultyIcon = function facultyIcon() {
-    return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("svg", _objectSpread(_objectSpread({
+    return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("svg", _objectSpread(_objectSpread({
       viewBox: "0 0 24 24",
       width: "18",
       height: "18",
@@ -77738,13 +78462,13 @@ function ProfilePage() {
       strokeWidth: "2",
       strokeLinecap: "round",
       strokeLinejoin: "round",
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("path", {
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("path", {
         d: "M2 20v-1c0-2.21 3.582-4 8-4s8 1.79 8 4v1"
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("circle", {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("circle", {
         cx: "10",
         cy: "7",
         r: "4"
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("circle", {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("circle", {
         cx: "18",
         cy: "8",
         r: "3"
@@ -77752,7 +78476,7 @@ function ProfilePage() {
     }));
   };
   var studentsIcon = function studentsIcon() {
-    return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("svg", _objectSpread(_objectSpread({
+    return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("svg", _objectSpread(_objectSpread({
       viewBox: "0 0 24 24",
       width: "18",
       height: "18",
@@ -77761,9 +78485,9 @@ function ProfilePage() {
       strokeWidth: "2",
       strokeLinecap: "round",
       strokeLinejoin: "round",
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("path", {
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("path", {
         d: "M12 14c-4.418 0-8 1.79-8 4v2"
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("circle", {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("circle", {
         cx: "12",
         cy: "7",
         r: "4"
@@ -77771,7 +78495,7 @@ function ProfilePage() {
     }));
   };
   var calendarIcon = function calendarIcon() {
-    return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("svg", _objectSpread(_objectSpread({
+    return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("svg", _objectSpread(_objectSpread({
       viewBox: "0 0 24 24",
       width: "18",
       height: "18",
@@ -77780,24 +78504,24 @@ function ProfilePage() {
       strokeWidth: "2",
       strokeLinecap: "round",
       strokeLinejoin: "round",
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("rect", {
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("rect", {
         x: "3",
         y: "4",
         width: "18",
         height: "18",
         rx: "4",
         ry: "4"
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("line", {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("line", {
         x1: "16",
         y1: "2",
         x2: "16",
         y2: "6"
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("line", {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("line", {
         x1: "8",
         y1: "2",
         x2: "8",
         y2: "6"
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("line", {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("line", {
         x1: "3",
         y1: "10",
         x2: "21",
@@ -77806,7 +78530,7 @@ function ProfilePage() {
     }));
   };
   var settingsIcon = function settingsIcon() {
-    return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("svg", _objectSpread(_objectSpread({
+    return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("svg", _objectSpread(_objectSpread({
       viewBox: "0 0 24 24",
       width: "18",
       height: "18",
@@ -77815,17 +78539,17 @@ function ProfilePage() {
       strokeWidth: "2",
       strokeLinecap: "round",
       strokeLinejoin: "round",
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("circle", {
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("circle", {
         cx: "12",
         cy: "12",
         r: "3"
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("path", {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("path", {
         d: "M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 010 2.83 2 2 0 01-2.83 0l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-4 0v-.09a1.65 1.65 0 00-1-1.51 1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 01-2.83 0 2 2 0 010-2.83l.06-.06a1.65 1.65 0 00.33-1.82 1.65 1.65 0 00-1.51-1H3a2 2 0 010-4h.09a1.65 1.65 0 001.51-1 1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 010-2.83 2 2 0 012.83 0l.06.06a1.65 1.65 0 001.82.33H9a1.65 1.65 0 001-1.51V3a2 2 0 014 0v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 012.83 0 2 2 0 010 2.83l-.06.06a1.65 1.65 0 00-.33 1.82V9c0 .69.28 1.32.73 1.77.45.45 1.08.73 1.77.73h.09a2 2 0 010 4h-.09a1.65 1.65 0 00-1.77.73z"
       })]
     }));
   };
   var reportsIcon = function reportsIcon() {
-    return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("svg", _objectSpread(_objectSpread({
+    return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("svg", _objectSpread(_objectSpread({
       viewBox: "0 0 24 24",
       width: "18",
       height: "18",
@@ -77834,17 +78558,17 @@ function ProfilePage() {
       strokeWidth: "2",
       strokeLinecap: "round",
       strokeLinejoin: "round",
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("path", {
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("path", {
         d: "M3 12h18"
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("path", {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("path", {
         d: "M3 6h18"
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("path", {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("path", {
         d: "M3 18h18"
       })]
     }));
   };
   var profileIcon = function profileIcon() {
-    return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("svg", _objectSpread(_objectSpread({
+    return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("svg", _objectSpread(_objectSpread({
       viewBox: "0 0 24 24",
       width: "18",
       height: "18",
@@ -77853,9 +78577,9 @@ function ProfilePage() {
       strokeWidth: "2",
       strokeLinecap: "round",
       strokeLinejoin: "round",
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("path", {
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("path", {
         d: "M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("circle", {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("circle", {
         cx: "12",
         cy: "7",
         r: "4"
@@ -77863,7 +78587,7 @@ function ProfilePage() {
     }));
   };
   var logoutIcon = function logoutIcon() {
-    return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("svg", _objectSpread(_objectSpread({
+    return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("svg", _objectSpread(_objectSpread({
       viewBox: "0 0 24 24",
       width: "18",
       height: "18",
@@ -77872,11 +78596,11 @@ function ProfilePage() {
       strokeWidth: "2",
       strokeLinecap: "round",
       strokeLinejoin: "round",
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("path", {
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("path", {
         d: "M9 21H5a2 2 0 01-2-2V5a2 2 0 012-2h4"
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("polyline", {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("polyline", {
         points: "16 17 21 12 16 7"
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("line", {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("line", {
         x1: "21",
         y1: "12",
         x2: "9",
@@ -77884,78 +78608,78 @@ function ProfilePage() {
       })]
     }));
   };
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
     className: "sfms-dashboard",
-    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("aside", {
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("aside", {
       className: "sfms-sidebar",
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
         className: "sidebar-brand",
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
           className: "logo",
-          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("img", {
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("img", {
             src: "/img/sfms-logo2.png",
             alt: "SFMS Logo"
           })
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
           className: "brand-text",
           children: "SFMS"
         })]
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("nav", {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("nav", {
         className: "sidebar-nav",
-        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("ul", {
-          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("li", {
-            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(react_router_dom__WEBPACK_IMPORTED_MODULE_2__.Link, {
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("ul", {
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("li", {
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)(react_router_dom__WEBPACK_IMPORTED_MODULE_2__.Link, {
               to: "/dashboard",
-              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("span", {
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("span", {
                 className: "nav-icon",
                 children: dashboardIcon()
               }), "Dashboard"]
             })
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("li", {
-            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(react_router_dom__WEBPACK_IMPORTED_MODULE_2__.Link, {
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("li", {
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)(react_router_dom__WEBPACK_IMPORTED_MODULE_2__.Link, {
               to: "/dashboard/faculty",
-              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("span", {
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("span", {
                 className: "nav-icon",
                 children: facultyIcon()
               }), "Faculty"]
             })
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("li", {
-            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(react_router_dom__WEBPACK_IMPORTED_MODULE_2__.Link, {
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("li", {
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)(react_router_dom__WEBPACK_IMPORTED_MODULE_2__.Link, {
               to: "/dashboard/students",
-              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("span", {
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("span", {
                 className: "nav-icon",
                 children: studentsIcon()
               }), "Students"]
             })
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("li", {
-            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(react_router_dom__WEBPACK_IMPORTED_MODULE_2__.Link, {
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("li", {
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)(react_router_dom__WEBPACK_IMPORTED_MODULE_2__.Link, {
               to: "/dashboard/calendar",
-              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("span", {
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("span", {
                 className: "nav-icon",
                 children: calendarIcon()
               }), "Calendar"]
             })
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("li", {
-            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(react_router_dom__WEBPACK_IMPORTED_MODULE_2__.Link, {
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("li", {
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)(react_router_dom__WEBPACK_IMPORTED_MODULE_2__.Link, {
               to: "/dashboard/reports",
-              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("span", {
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("span", {
                 className: "nav-icon",
                 children: reportsIcon()
               }), "Reports"]
             })
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("li", {
-            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(react_router_dom__WEBPACK_IMPORTED_MODULE_2__.Link, {
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("li", {
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)(react_router_dom__WEBPACK_IMPORTED_MODULE_2__.Link, {
               to: "/dashboard/settings",
-              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("span", {
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("span", {
                 className: "nav-icon",
                 children: settingsIcon()
               }), "Settings"]
             })
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("li", {
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("li", {
             className: "active",
-            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("a", {
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("a", {
               href: "#",
-              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("span", {
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("span", {
                 className: "nav-icon",
                 children: profileIcon()
               }), "Profile"]
@@ -77963,26 +78687,27 @@ function ProfilePage() {
           })]
         })
       })]
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("main", {
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("main", {
       className: "sfms-main",
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("header", {
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("header", {
         className: "topbar",
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
           className: "topbar-left",
-          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("h4", {
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("h4", {
             children: "My Profile"
           })
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
           className: "topbar-right",
-          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
             className: "top-icons",
-            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_NotificationBell__WEBPACK_IMPORTED_MODULE_3__["default"], {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_NotificationBell__WEBPACK_IMPORTED_MODULE_3__["default"], {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("button", {
               className: "icon-circle",
-              title: "Settings",
-              onClick: function onClick() {
-                return navigate('/dashboard/settings');
+              title: "Toggle theme",
+              onClick: handleToggleTheme,
+              style: {
+                marginRight: 8
               },
-              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("svg", {
+              children: theme === 'dark' ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("svg", {
                 viewBox: "0 0 24 24",
                 width: "18",
                 height: "18",
@@ -77991,85 +78716,164 @@ function ProfilePage() {
                 strokeWidth: "2",
                 strokeLinecap: "round",
                 strokeLinejoin: "round",
-                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("circle", {
+                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("circle", {
+                  cx: "12",
+                  cy: "12",
+                  r: "5"
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("path", {
+                  d: "M12 1v2"
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("path", {
+                  d: "M12 21v2"
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("path", {
+                  d: "M4.22 4.22l1.42 1.42"
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("path", {
+                  d: "M18.36 18.36l1.42 1.42"
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("path", {
+                  d: "M1 12h2"
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("path", {
+                  d: "M21 12h2"
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("path", {
+                  d: "M4.22 19.78l1.42-1.42"
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("path", {
+                  d: "M18.36 5.64l1.42-1.42"
+                })]
+              }) : /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("svg", {
+                viewBox: "0 0 24 24",
+                width: "18",
+                height: "18",
+                fill: "none",
+                stroke: "currentColor",
+                strokeWidth: "2",
+                strokeLinecap: "round",
+                strokeLinejoin: "round",
+                children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("path", {
+                  d: "M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"
+                })
+              })
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("button", {
+              className: "icon-circle",
+              title: "Settings",
+              onClick: function onClick() {
+                return navigate('/dashboard/settings');
+              },
+              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("svg", {
+                viewBox: "0 0 24 24",
+                width: "18",
+                height: "18",
+                fill: "none",
+                stroke: "currentColor",
+                strokeWidth: "2",
+                strokeLinecap: "round",
+                strokeLinejoin: "round",
+                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("circle", {
                   cx: "12",
                   cy: "12",
                   r: "3"
-                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("path", {
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("path", {
                   d: "M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 010 2.83 2 2 0 01-2.83 0l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-4 0v-.09a1.65 1.65 0 00-1-1.51 1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 01-2.83 0 2 2 0 010-2.83l.06-.06a1.65 1.65 0 00.33-1.82 1.65 1.65 0 00-1.51-1H3a2 2 0 010-4h.09a1.65 1.65 0 001.51-1 1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 010-2.83 2 2 0 012.83 0l.06.06a1.65 1.65 0 001.82.33H9a1.65 1.65 0 001-1.51V3a2 2 0 014 0v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 012.83 0 2 2 0 010 2.83l-.06.06a1.65 1.65 0 00-.33 1.82V9c0 .69.28 1.32.73 1.77.45.45 1.08.73 1.77.73h.09a2 2 0 010 4h-.09a1.65 1.65 0 00-1.77.73z"
                 })]
               })
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("button", {
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("button", {
               className: "profile-chip",
               title: "Profile",
               onClick: function onClick() {
                 return navigate('/dashboard/profile');
               },
-              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("span", {
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("span", {
                 className: "avatar-sm",
                 children: profileData.name.split(' ').map(function (n) {
                   return n[0];
                 }).join('')
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("span", {
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("span", {
                 className: "profile-name",
                 children: profileData.name || 'Admin'
               })]
             })]
           })
         })]
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
         className: "profile-page",
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
           className: "profile-header bg-white p-4 mb-4",
-          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("h1", {
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("h1", {
             children: "My Profile"
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("p", {
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("p", {
             className: "text-muted",
             children: "Manage your account settings and view activity logs"
           })]
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
           className: "profile-content",
-          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
             className: "row",
-            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
               className: "col-md-3",
-              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
                 className: "profile-nav bg-white p-4",
-                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
                   className: "user-info text-center mb-4",
-                  children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
-                    className: "avatar-lg bg-primary rounded-circle d-flex align-items-center justify-content-center mx-auto mb-3",
-                    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("span", {
+                  children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
+                    className: "avatar-lg bg-primary rounded-circle d-flex align-items-center justify-content-center mx-auto mb-2",
+                    style: {
+                      width: 96,
+                      height: 96,
+                      overflow: 'hidden'
+                    },
+                    children: profilePic ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("img", {
+                      src: profilePic,
+                      alt: "Profile",
+                      style: {
+                        width: '100%',
+                        height: '100%',
+                        objectFit: 'cover'
+                      }
+                    }) : /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("span", {
                       className: "text-white fs-4",
                       children: profileData.name.split(' ').map(function (n) {
                         return n[0];
                       }).join('')
                     })
-                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("h5", {
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
+                    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("button", {
+                      type: "button",
+                      className: "btn btn-sm btn-outline-secondary mb-2",
+                      onClick: function onClick() {
+                        return fileInputRef.current && fileInputRef.current.click();
+                      },
+                      children: "Change Photo"
+                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("input", {
+                      ref: fileInputRef,
+                      type: "file",
+                      accept: "image/*",
+                      style: {
+                        display: 'none'
+                      },
+                      onChange: handleFileChange
+                    })]
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("h5", {
                     className: "mb-1",
                     children: profileData.name
-                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("p", {
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("p", {
                     className: "text-muted mb-2",
                     children: profileData.role
-                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("small", {
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("small", {
                     className: "text-muted",
                     children: ["Member since ", profileData.joinDate ? new Date(profileData.joinDate).toLocaleDateString() : '—']
                   })]
-                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("nav", {
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("nav", {
                   className: "profile-nav-links",
-                  children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                  children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("button", {
                     className: "nav-link ".concat(activeTab === 'profile' ? 'active' : ''),
                     onClick: function onClick() {
                       return setActiveTab('profile');
                     },
                     children: "Profile Information"
-                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("button", {
                     className: "nav-link ".concat(activeTab === 'password' ? 'active' : ''),
                     onClick: function onClick() {
                       return setActiveTab('password');
                     },
                     children: "Change Password"
-                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("button", {
                     className: "nav-link ".concat(activeTab === 'activity' ? 'active' : ''),
                     onClick: function onClick() {
                       return setActiveTab('activity');
@@ -78078,24 +78882,24 @@ function ProfilePage() {
                   })]
                 })]
               })
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
               className: "col-md-9",
-              children: [activeTab === 'profile' && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+              children: [activeTab === 'profile' && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
                 className: "profile-tab bg-white p-4",
-                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("h5", {
+                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("h5", {
                   className: "mb-4",
                   children: "Profile Information"
-                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("form", {
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("form", {
                   onSubmit: handleProfileUpdate,
-                  children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+                  children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
                     className: "row g-3",
-                    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+                    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
                       className: "col-md-6",
-                      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("label", {
+                      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("label", {
                         htmlFor: "name",
                         className: "form-label",
                         children: "Full Name *"
-                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("input", {
+                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("input", {
                         type: "text",
                         className: "form-control",
                         id: "name",
@@ -78104,13 +78908,13 @@ function ProfilePage() {
                         onChange: handleProfileInputChange,
                         required: true
                       })]
-                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
                       className: "col-md-6",
-                      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("label", {
+                      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("label", {
                         htmlFor: "email",
                         className: "form-label",
                         children: "Email Address *"
-                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("input", {
+                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("input", {
                         type: "email",
                         className: "form-control",
                         id: "email",
@@ -78119,13 +78923,13 @@ function ProfilePage() {
                         onChange: handleProfileInputChange,
                         required: true
                       })]
-                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
                       className: "col-md-6",
-                      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("label", {
+                      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("label", {
                         htmlFor: "role",
                         className: "form-label",
                         children: "Role"
-                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("input", {
+                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("input", {
                         type: "text",
                         className: "form-control",
                         id: "role",
@@ -78134,13 +78938,13 @@ function ProfilePage() {
                         onChange: handleProfileInputChange,
                         disabled: true
                       })]
-                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
                       className: "col-md-6",
-                      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("label", {
+                      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("label", {
                         htmlFor: "department",
                         className: "form-label",
                         children: "Department"
-                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("input", {
+                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("input", {
                         type: "text",
                         className: "form-control",
                         id: "department",
@@ -78148,32 +78952,32 @@ function ProfilePage() {
                         value: profileData.department,
                         onChange: handleProfileInputChange
                       })]
-                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
                       className: "col-md-6",
-                      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("label", {
+                      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("label", {
                         className: "form-label",
                         children: "Last Login"
-                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("input", {
+                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("input", {
                         type: "text",
                         className: "form-control",
                         value: profileData.lastLogin ? formatDate(profileData.lastLogin) : '—',
                         disabled: true
                       })]
-                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
                       className: "col-md-6",
-                      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("label", {
+                      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("label", {
                         className: "form-label",
                         children: "Admin Since"
-                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("input", {
+                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("input", {
                         type: "text",
                         className: "form-control",
                         value: new Date(profileData.joinDate).toLocaleDateString(),
                         disabled: true
                       })]
                     })]
-                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
                     className: "mt-4",
-                    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("button", {
                       type: "submit",
                       className: "btn btn-primary",
                       disabled: loading,
@@ -78181,32 +78985,32 @@ function ProfilePage() {
                     })
                   })]
                 })]
-              }), activeTab === 'password' && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+              }), activeTab === 'password' && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
                 className: "password-tab bg-white p-4",
-                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("h5", {
+                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("h5", {
                   className: "mb-4",
                   children: "Change Password"
-                }), errors.length > 0 && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+                }), errors.length > 0 && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
                   className: "alert alert-danger",
-                  children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("ul", {
+                  children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("ul", {
                     className: "mb-0",
                     children: errors.map(function (error, index) {
-                      return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("li", {
+                      return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("li", {
                         children: error
                       }, index);
                     })
                   })
-                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("form", {
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("form", {
                   onSubmit: handlePasswordChange,
-                  children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+                  children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
                     className: "row g-3",
-                    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+                    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
                       className: "col-md-12",
-                      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("label", {
+                      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("label", {
                         htmlFor: "currentPassword",
                         className: "form-label",
                         children: "Current Password *"
-                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("input", {
+                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("input", {
                         type: "password",
                         className: "form-control",
                         id: "currentPassword",
@@ -78216,13 +79020,13 @@ function ProfilePage() {
                         required: true,
                         placeholder: "Enter current password"
                       })]
-                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
                       className: "col-md-12",
-                      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("label", {
+                      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("label", {
                         htmlFor: "newPassword",
                         className: "form-label",
                         children: "New Password *"
-                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("input", {
+                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("input", {
                         type: "password",
                         className: "form-control",
                         id: "newPassword",
@@ -78231,17 +79035,17 @@ function ProfilePage() {
                         onChange: handlePasswordInputChange,
                         required: true,
                         placeholder: "Enter new password"
-                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
                         className: "form-text",
                         children: "Password must be at least 8 characters long"
                       })]
-                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
                       className: "col-md-12",
-                      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("label", {
+                      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("label", {
                         htmlFor: "confirmPassword",
                         className: "form-label",
                         children: "Confirm New Password *"
-                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("input", {
+                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("input", {
                         type: "password",
                         className: "form-control",
                         id: "confirmPassword",
@@ -78252,9 +79056,9 @@ function ProfilePage() {
                         placeholder: "Confirm new password"
                       })]
                     })]
-                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
                     className: "mt-4",
-                    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("button", {
                       type: "submit",
                       className: "btn btn-primary",
                       disabled: loading,
@@ -78262,45 +79066,45 @@ function ProfilePage() {
                     })
                   })]
                 })]
-              }), activeTab === 'activity' && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+              }), activeTab === 'activity' && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
                 className: "activity-tab bg-white p-4",
-                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("h5", {
+                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("h5", {
                   className: "mb-4",
                   children: "Activity Log"
-                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("p", {
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("p", {
                   className: "text-muted mb-4",
                   children: "Recent activities and system access logs"
-                }), activityLogs.length > 0 ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+                }), activityLogs.length > 0 ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
                   className: "table-responsive",
-                  children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("table", {
+                  children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("table", {
                     className: "table table-striped",
-                    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("thead", {
+                    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("thead", {
                       className: "table-light",
-                      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("tr", {
-                        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("th", {
+                      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("tr", {
+                        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("th", {
                           children: "Date & Time"
-                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("th", {
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("th", {
                           children: "Activity"
-                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("th", {
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("th", {
                           children: "IP Address"
-                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("th", {
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("th", {
                           children: "Details"
                         })]
                       })
-                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("tbody", {
+                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("tbody", {
                       children: activityLogs.map(function (log) {
-                        return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("tr", {
-                          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("td", {
+                        return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("tr", {
+                          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("td", {
                             className: "text-nowrap",
                             children: formatDate(log.timestamp)
-                          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("td", {
-                            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("strong", {
+                          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("td", {
+                            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("strong", {
                               children: log.activity
                             })
-                          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("td", {
+                          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("td", {
                             children: log.ipAddress
-                          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("td", {
-                            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("small", {
+                          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("td", {
+                            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("small", {
                               className: "text-muted",
                               children: log.details || '—'
                             })
@@ -78309,9 +79113,9 @@ function ProfilePage() {
                       })
                     })]
                   })
-                }) : /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+                }) : /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
                   className: "text-center p-5",
-                  children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("p", {
+                  children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("p", {
                     className: "text-muted",
                     children: "No activity logs found."
                   })
@@ -78319,7 +79123,7 @@ function ProfilePage() {
               })]
             })]
           })
-        }), showToast && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+        }), showToast && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
           className: "profile-toast",
           children: toastMessage
         })]
@@ -78346,7 +79150,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router/dist/index.js");
 /* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/dist/index.js");
 /* harmony import */ var _NotificationBell__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./NotificationBell */ "./resources/js/components/NotificationBell.js");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+/* harmony import */ var _utils_theme__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../utils/theme */ "./resources/js/utils/theme.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
 function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, _typeof(o); }
 function _toConsumableArray(r) { return _arrayWithoutHoles(r) || _iterableToArray(r) || _unsupportedIterableToArray(r) || _nonIterableSpread(); }
 function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
@@ -78367,6 +79172,7 @@ function _unsupportedIterableToArray(r, a) { if (r) { if ("string" == typeof r) 
 function _arrayLikeToArray(r, a) { (null == a || a > r.length) && (a = r.length); for (var e = 0, n = Array(a); e < a; e++) n[e] = r[e]; return n; }
 function _iterableToArrayLimit(r, l) { var t = null == r ? null : "undefined" != typeof Symbol && r[Symbol.iterator] || r["@@iterator"]; if (null != t) { var e, n, i, u, a = [], f = !0, o = !1; try { if (i = (t = t.call(r)).next, 0 === l) { if (Object(t) !== t) return; f = !1; } else for (; !(f = (e = i.call(t)).done) && (a.push(e.value), a.length !== l); f = !0); } catch (r) { o = !0, n = r; } finally { try { if (!f && null != t["return"] && (u = t["return"](), Object(u) !== u)) return; } finally { if (o) throw n; } } return a; } }
 function _arrayWithHoles(r) { if (Array.isArray(r)) return r; }
+
 
 
 
@@ -78427,6 +79233,38 @@ function ReportsPage() {
     _useState18 = _slicedToArray(_useState17, 2),
     academicYears = _useState18[0],
     setAcademicYears = _useState18[1];
+  var _useState19 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false),
+    _useState20 = _slicedToArray(_useState19, 2),
+    showReportModal = _useState20[0],
+    setShowReportModal = _useState20[1];
+  var _useState21 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)({
+      course: '',
+      year_level: '',
+      academic_year: ''
+    }),
+    _useState22 = _slicedToArray(_useState21, 2),
+    reportFilters = _useState22[0],
+    setReportFilters = _useState22[1];
+  var _useState23 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)([]),
+    _useState24 = _slicedToArray(_useState23, 2),
+    reportData = _useState24[0],
+    setReportData = _useState24[1];
+  // Faculty-specific report modal state (separate from student modal)
+  var _useState25 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false),
+    _useState26 = _slicedToArray(_useState25, 2),
+    showFacultyReportModal = _useState26[0],
+    setShowFacultyReportModal = _useState26[1];
+  var _useState27 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)({
+      department: '',
+      status: ''
+    }),
+    _useState28 = _slicedToArray(_useState27, 2),
+    facultyReportFilters = _useState28[0],
+    setFacultyReportFilters = _useState28[1];
+  var _useState29 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)([]),
+    _useState30 = _slicedToArray(_useState29, 2),
+    facultyReportData = _useState30[0],
+    setFacultyReportData = _useState30[1];
   var yearLevels = ['1st Year', '2nd Year', '3rd Year', '4th Year'];
   function logout() {
     localStorage.removeItem('sfms_auth');
@@ -78434,11 +79272,15 @@ function ReportsPage() {
   }
 
   // Menus (profile only)
-  var _useState19 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false),
-    _useState20 = _slicedToArray(_useState19, 2),
-    showProfileMenu = _useState20[0],
-    setShowProfileMenu = _useState20[1];
+  var _useState31 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false),
+    _useState32 = _slicedToArray(_useState31, 2),
+    showProfileMenu = _useState32[0],
+    setShowProfileMenu = _useState32[1];
   var profileMenuRef = react__WEBPACK_IMPORTED_MODULE_0___default().useRef(null);
+  var _useState33 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)('light'),
+    _useState34 = _slicedToArray(_useState33, 2),
+    theme = _useState34[0],
+    setTheme = _useState34[1];
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function () {
     var onDown = function onDown(e) {
       if (profileMenuRef.current && !profileMenuRef.current.contains(e.target)) setShowProfileMenu(false);
@@ -78467,99 +79309,198 @@ function ReportsPage() {
     return null;
   };
 
-  // Load settings data from localStorage
+  // Load settings data from API (courses/departments) and local defaults for academic years
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function () {
-    loadSettingsData();
-    fetchProfile();
-  }, []);
-  var loadSettingsData = function loadSettingsData() {
-    try {
-      // Load courses from localStorage
-      var savedCourses = localStorage.getItem('sfms_courses');
-      if (savedCourses) {
-        var coursesData = JSON.parse(savedCourses);
-        var activeCourses = coursesData.filter(function (course) {
-          return course.status === 'ACTIVE';
-        });
-        setCourses(activeCourses.map(function (course) {
-          return course.name;
-        }));
-      } else {
-        // Use default courses if not found
-        var defaultCourses = ['Computer Science Program', 'Business Administration Program', 'Arts & Sciences Program', 'Engineering Program', 'Teachers Education Program', 'Accountancy Program', 'Nursing Program', 'Criminal Justice Program', 'Tourism Management Program'];
-        setCourses(defaultCourses);
-      }
-
-      // Load departments from localStorage
-      var savedDepartments = localStorage.getItem('sfms_departments');
-      if (savedDepartments) {
-        var deptData = JSON.parse(savedDepartments);
-        var activeDepartments = deptData.filter(function (dept) {
-          return dept.status === 'ACTIVE';
-        });
-        setDepartments(activeDepartments.map(function (dept) {
-          return dept.name;
-        }));
-      } else {
-        // Use default departments if not found
-        var defaultDepartments = ['Computer Science Program', 'Business Administration Program', 'Arts & Sciences Program', 'Engineering Program', 'Teachers Education Program', 'Accountancy Program', 'Nursing Program', 'Criminal Justice Program', 'Tourism Management Program'];
-        setDepartments(defaultDepartments);
-      }
-
-      // Load academic years from localStorage
-      var savedAcademicYears = localStorage.getItem('sfms_academic_years');
-      if (savedAcademicYears) {
-        var yearsData = JSON.parse(savedAcademicYears);
-        var activeYears = yearsData.filter(function (year) {
-          return year.status === 'ACTIVE';
-        });
-        setAcademicYears(activeYears.map(function (year) {
-          return year.year;
-        }));
-      } else {
-        // Use default academic years if not found
-        setAcademicYears(['2023-2024', '2024-2025', '2025-2026']);
-      }
-    } catch (error) {
-      console.error('Error loading settings data:', error);
-    }
-  };
-  var fetchProfile = /*#__PURE__*/function () {
-    var _ref = _asyncToGenerator(/*#__PURE__*/_regenerator().m(function _callee() {
-      var res, data, u, _t;
+    _asyncToGenerator(/*#__PURE__*/_regenerator().m(function _callee() {
+      var t;
       return _regenerator().w(function (_context) {
-        while (1) switch (_context.p = _context.n) {
+        while (1) switch (_context.n) {
           case 0:
-            _context.p = 0;
             _context.n = 1;
-            return fetch('/api/profile');
+            return loadSettingsData();
           case 1:
-            res = _context.v;
+            fetchProfile();
+            try {
+              t = (0,_utils_theme__WEBPACK_IMPORTED_MODULE_4__.initTheme)();
+              setTheme(t);
+            } catch (e) {}
+          case 2:
+            return _context.a(2);
+        }
+      }, _callee);
+    }))();
+  }, []);
+  var loadSettingsData = /*#__PURE__*/function () {
+    var _ref2 = _asyncToGenerator(/*#__PURE__*/_regenerator().m(function _callee2() {
+      var res, data, list, activeCourses, resd, ddata, dlist, activeDepartments, resy, ydata, ylist, _t, _t2, _t3, _t4;
+      return _regenerator().w(function (_context2) {
+        while (1) switch (_context2.p = _context2.n) {
+          case 0:
+            _context2.p = 0;
+            _context2.p = 1;
+            _context2.n = 2;
+            return fetch('/api/courses', {
+              method: 'GET',
+              headers: {
+                'Accept': 'application/json',
+                'X-Requested-With': 'XMLHttpRequest'
+              }
+            });
+          case 2:
+            res = _context2.v;
             if (!res.ok) {
-              _context.n = 3;
+              _context2.n = 4;
               break;
             }
-            _context.n = 2;
+            _context2.n = 3;
+            return res.json();
+          case 3:
+            data = _context2.v;
+            list = Array.isArray(data) ? data : data.courses || [];
+            activeCourses = list.filter ? list.filter(function (c) {
+              return c.status === 'ACTIVE';
+            }) : [];
+            setCourses(activeCourses.map(function (course) {
+              return (course.name || '').replace(/\s*Program$/i, '');
+            }));
+            _context2.n = 5;
+            break;
+          case 4:
+            throw new Error('Failed to fetch courses');
+          case 5:
+            _context2.n = 7;
+            break;
+          case 6:
+            _context2.p = 6;
+            _t = _context2.v;
+            console.warn('Falling back to default courses due to error:', _t);
+            setCourses(['Computer Science', 'Business Administration', 'Arts & Humanities', 'Engineering', 'Teacher Education', 'Accountancy', 'Nursing', 'Criminal Justice', 'Tourism Management']);
+          case 7:
+            _context2.p = 7;
+            _context2.n = 8;
+            return fetch('/api/departments', {
+              method: 'GET',
+              headers: {
+                'Accept': 'application/json',
+                'X-Requested-With': 'XMLHttpRequest'
+              }
+            });
+          case 8:
+            resd = _context2.v;
+            if (!resd.ok) {
+              _context2.n = 10;
+              break;
+            }
+            _context2.n = 9;
+            return resd.json();
+          case 9:
+            ddata = _context2.v;
+            dlist = Array.isArray(ddata) ? ddata : ddata.departments || [];
+            activeDepartments = dlist.filter ? dlist.filter(function (d) {
+              return d.status === 'ACTIVE';
+            }) : [];
+            setDepartments(activeDepartments.map(function (dept) {
+              return (dept.name || '').replace(/\s*Program$/i, '');
+            }));
+            _context2.n = 11;
+            break;
+          case 10:
+            throw new Error('Failed to fetch departments');
+          case 11:
+            _context2.n = 13;
+            break;
+          case 12:
+            _context2.p = 12;
+            _t2 = _context2.v;
+            console.warn('Falling back to default departments due to error:', _t2);
+            setDepartments(['Computer Science', 'Business Administration', 'Arts & Humanities', 'Engineering', 'Teacher Education', 'Accountancy', 'Nursing', 'Criminal Justice', 'Tourism Management']);
+          case 13:
+            _context2.p = 13;
+            _context2.n = 14;
+            return fetch('/api/academic-years', {
+              method: 'GET',
+              headers: {
+                'Accept': 'application/json',
+                'X-Requested-With': 'XMLHttpRequest'
+              }
+            });
+          case 14:
+            resy = _context2.v;
+            if (!resy.ok) {
+              _context2.n = 16;
+              break;
+            }
+            _context2.n = 15;
+            return resy.json();
+          case 15:
+            ydata = _context2.v;
+            ylist = Array.isArray(ydata) ? ydata : ydata.years || [];
+            if (ylist && ylist.length > 0) setAcademicYears(ylist.map(function (y) {
+              return y.year || y;
+            }));else setAcademicYears(['2023-2024', '2024-2025', '2025-2026']);
+            _context2.n = 17;
+            break;
+          case 16:
+            setAcademicYears(['2023-2024', '2024-2025', '2025-2026']);
+          case 17:
+            _context2.n = 19;
+            break;
+          case 18:
+            _context2.p = 18;
+            _t3 = _context2.v;
+            setAcademicYears(['2023-2024', '2024-2025', '2025-2026']);
+          case 19:
+            _context2.n = 21;
+            break;
+          case 20:
+            _context2.p = 20;
+            _t4 = _context2.v;
+            console.error('Error loading settings data:', _t4);
+          case 21:
+            return _context2.a(2);
+        }
+      }, _callee2, null, [[13, 18], [7, 12], [1, 6], [0, 20]]);
+    }));
+    return function loadSettingsData() {
+      return _ref2.apply(this, arguments);
+    };
+  }();
+  var fetchProfile = /*#__PURE__*/function () {
+    var _ref3 = _asyncToGenerator(/*#__PURE__*/_regenerator().m(function _callee3() {
+      var res, data, u, _t5;
+      return _regenerator().w(function (_context3) {
+        while (1) switch (_context3.p = _context3.n) {
+          case 0:
+            _context3.p = 0;
+            _context3.n = 1;
+            return fetch('/api/profile');
+          case 1:
+            res = _context3.v;
+            if (!res.ok) {
+              _context3.n = 3;
+              break;
+            }
+            _context3.n = 2;
             return res.json();
           case 2:
-            data = _context.v;
+            data = _context3.v;
             u = data.user || {};
             setProfileData({
               name: u.name || ''
             });
           case 3:
-            _context.n = 5;
+            _context3.n = 5;
             break;
           case 4:
-            _context.p = 4;
-            _t = _context.v;
+            _context3.p = 4;
+            _t5 = _context3.v;
           case 5:
-            return _context.a(2);
+            return _context3.a(2);
         }
-      }, _callee, null, [[0, 4]]);
+      }, _callee3, null, [[0, 4]]);
     }));
     return function fetchProfile() {
-      return _ref.apply(this, arguments);
+      return _ref3.apply(this, arguments);
     };
   }();
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function () {
@@ -78577,16 +79518,16 @@ function ReportsPage() {
 
   // Fetch combined student data (active + archived)
   var fetchStudentData = /*#__PURE__*/function () {
-    var _ref2 = _asyncToGenerator(/*#__PURE__*/_regenerator().m(function _callee2() {
-      var activeResponse, archivedResponse, activeData, archivedData, activeStudents, archivedStudents, processedArchived, allStudents, _t2;
-      return _regenerator().w(function (_context2) {
-        while (1) switch (_context2.p = _context2.n) {
+    var _ref4 = _asyncToGenerator(/*#__PURE__*/_regenerator().m(function _callee4() {
+      var activeResponse, archivedResponse, activeData, archivedData, activeStudents, archivedStudents, processedArchived, allStudents, _t6;
+      return _regenerator().w(function (_context4) {
+        while (1) switch (_context4.p = _context4.n) {
           case 0:
-            _context2.p = 0;
+            _context4.p = 0;
             setLoading(true);
 
             // Fetch active students
-            _context2.n = 1;
+            _context4.n = 1;
             return fetch('/api/students', {
               method: 'GET',
               headers: {
@@ -78596,8 +79537,8 @@ function ReportsPage() {
               }
             });
           case 1:
-            activeResponse = _context2.v;
-            _context2.n = 2;
+            activeResponse = _context4.v;
+            _context4.n = 2;
             return fetch('/api/archived-students', {
               method: 'GET',
               headers: {
@@ -78607,19 +79548,19 @@ function ReportsPage() {
               }
             });
           case 2:
-            archivedResponse = _context2.v;
+            archivedResponse = _context4.v;
             if (!(activeResponse.ok && archivedResponse.ok)) {
-              _context2.n = 5;
+              _context4.n = 5;
               break;
             }
-            _context2.n = 3;
+            _context4.n = 3;
             return activeResponse.json();
           case 3:
-            activeData = _context2.v;
-            _context2.n = 4;
+            activeData = _context4.v;
+            _context4.n = 4;
             return archivedResponse.json();
           case 4:
-            archivedData = _context2.v;
+            archivedData = _context4.v;
             // Combine and process data
             activeStudents = Array.isArray(activeData) ? activeData : activeData.students || [];
             archivedStudents = Array.isArray(archivedData) ? archivedData : archivedData.archived_students || []; // Mark archived students as INACTIVE
@@ -78631,43 +79572,43 @@ function ReportsPage() {
             });
             allStudents = [].concat(_toConsumableArray(activeStudents), _toConsumableArray(processedArchived));
             setStudentData(allStudents);
-            _context2.n = 6;
+            _context4.n = 6;
             break;
           case 5:
             console.error('Failed to fetch student data');
           case 6:
-            _context2.n = 8;
+            _context4.n = 8;
             break;
           case 7:
-            _context2.p = 7;
-            _t2 = _context2.v;
-            console.error('Error fetching student data:', _t2);
+            _context4.p = 7;
+            _t6 = _context4.v;
+            console.error('Error fetching student data:', _t6);
           case 8:
-            _context2.p = 8;
+            _context4.p = 8;
             setLoading(false);
-            return _context2.f(8);
+            return _context4.f(8);
           case 9:
-            return _context2.a(2);
+            return _context4.a(2);
         }
-      }, _callee2, null, [[0, 7, 8, 9]]);
+      }, _callee4, null, [[0, 7, 8, 9]]);
     }));
     return function fetchStudentData() {
-      return _ref2.apply(this, arguments);
+      return _ref4.apply(this, arguments);
     };
   }();
 
   // Fetch combined faculty data (active + archived)
   var fetchFacultyData = /*#__PURE__*/function () {
-    var _ref3 = _asyncToGenerator(/*#__PURE__*/_regenerator().m(function _callee3() {
-      var activeResponse, archivedResponse, activeData, archivedData, activeFaculty, archivedFaculty, processedArchived, allFaculty, _t3;
-      return _regenerator().w(function (_context3) {
-        while (1) switch (_context3.p = _context3.n) {
+    var _ref5 = _asyncToGenerator(/*#__PURE__*/_regenerator().m(function _callee5() {
+      var activeResponse, archivedResponse, activeData, archivedData, activeFaculty, archivedFaculty, processedArchived, allFaculty, _t7;
+      return _regenerator().w(function (_context5) {
+        while (1) switch (_context5.p = _context5.n) {
           case 0:
-            _context3.p = 0;
+            _context5.p = 0;
             setLoading(true);
 
             // Fetch active faculty
-            _context3.n = 1;
+            _context5.n = 1;
             return fetch('/api/faculties', {
               method: 'GET',
               headers: {
@@ -78677,8 +79618,8 @@ function ReportsPage() {
               }
             });
           case 1:
-            activeResponse = _context3.v;
-            _context3.n = 2;
+            activeResponse = _context5.v;
+            _context5.n = 2;
             return fetch('/api/archived-faculties', {
               method: 'GET',
               headers: {
@@ -78688,19 +79629,19 @@ function ReportsPage() {
               }
             });
           case 2:
-            archivedResponse = _context3.v;
+            archivedResponse = _context5.v;
             if (!(activeResponse.ok && archivedResponse.ok)) {
-              _context3.n = 5;
+              _context5.n = 5;
               break;
             }
-            _context3.n = 3;
+            _context5.n = 3;
             return activeResponse.json();
           case 3:
-            activeData = _context3.v;
-            _context3.n = 4;
+            activeData = _context5.v;
+            _context5.n = 4;
             return archivedResponse.json();
           case 4:
-            archivedData = _context3.v;
+            archivedData = _context5.v;
             // Combine and process data
             activeFaculty = Array.isArray(activeData) ? activeData : activeData.faculties || [];
             archivedFaculty = Array.isArray(archivedData) ? archivedData : archivedData.archived_faculties || []; // Mark archived faculty as INACTIVE
@@ -78712,28 +79653,28 @@ function ReportsPage() {
             });
             allFaculty = [].concat(_toConsumableArray(activeFaculty), _toConsumableArray(processedArchived));
             setFacultyData(allFaculty);
-            _context3.n = 6;
+            _context5.n = 6;
             break;
           case 5:
             console.error('Failed to fetch faculty data');
           case 6:
-            _context3.n = 8;
+            _context5.n = 8;
             break;
           case 7:
-            _context3.p = 7;
-            _t3 = _context3.v;
-            console.error('Error fetching faculty data:', _t3);
+            _context5.p = 7;
+            _t7 = _context5.v;
+            console.error('Error fetching faculty data:', _t7);
           case 8:
-            _context3.p = 8;
+            _context5.p = 8;
             setLoading(false);
-            return _context3.f(8);
+            return _context5.f(8);
           case 9:
-            return _context3.a(2);
+            return _context5.a(2);
         }
-      }, _callee3, null, [[0, 7, 8, 9]]);
+      }, _callee5, null, [[0, 7, 8, 9]]);
     }));
     return function fetchFacultyData() {
-      return _ref3.apply(this, arguments);
+      return _ref5.apply(this, arguments);
     };
   }();
   var handleFilterChange = function handleFilterChange(e) {
@@ -78800,35 +79741,23 @@ function ReportsPage() {
     return summary;
   };
 
-  // Export student data to CSV
-  var exportStudentData = function exportStudentData() {
-    var filteredStudents = getFilteredStudentData();
-    var headers = ['Student Number', 'Name', 'Course', 'Year Level', 'Academic Year', 'Email', 'Contact', 'Status'];
-    var csvData = filteredStudents.map(function (student) {
-      return [student.student_number, student.name, student.course, student.year_level, student.academic_year, student.email || 'N/A', student.contact || 'N/A', student.status];
-    });
-    downloadCSV([headers].concat(_toConsumableArray(csvData)), 'student_report.csv');
+  // Build an Excel-compatible HTML table and trigger download as .xls
+  // Excel will open .xls files containing HTML tables correctly.
+  var buildExcelHtml = function buildExcelHtml(title, headers, rows) {
+    var styles = "\n            <style>\n                table { border-collapse:collapse; width:100%; }\n                th, td { border:1px solid #ddd; padding:8px; }\n                th { background:#f4f6fb; font-weight:700; }\n                .title { font-size:16px; font-weight:700; padding:8px 0; }\n            </style>\n        ";
+    var headerHtml = headers.map(function (h) {
+      return "<th>".concat(h, "</th>");
+    }).join('');
+    var rowsHtml = rows.map(function (r) {
+      return "<tr>".concat(r.map(function (c) {
+        return "<td>".concat(c !== null && c !== undefined ? String(c) : '', "</td>");
+      }).join(''), "</tr>");
+    }).join('');
+    return "<!DOCTYPE html><html><head><meta charset=\"utf-8\"/>".concat(styles, "</head><body>") + "<div class=\"title\">".concat(title, "</div>") + "<table><thead><tr>".concat(headerHtml, "</tr></thead><tbody>").concat(rowsHtml, "</tbody></table></body></html>");
   };
-
-  // Export faculty data to CSV
-  var exportFacultyData = function exportFacultyData() {
-    var filteredFaculty = getFilteredFacultyData();
-    var headers = ['Faculty Number', 'Name', 'Department', 'Position', 'Email', 'Contact', 'Status'];
-    var csvData = filteredFaculty.map(function (faculty) {
-      return [faculty.faculty_number, faculty.name, faculty.department || 'N/A', faculty.position || 'N/A', faculty.email || 'N/A', faculty.contact || 'N/A', faculty.status];
-    });
-    downloadCSV([headers].concat(_toConsumableArray(csvData)), 'faculty_report.csv');
-  };
-
-  // Download CSV file
-  var downloadCSV = function downloadCSV(data, filename) {
-    var csvContent = data.map(function (row) {
-      return row.map(function (field) {
-        return "\"".concat(field, "\"");
-      }).join(',');
-    }).join('\n');
-    var blob = new Blob([csvContent], {
-      type: 'text/csv'
+  var downloadExcel = function downloadExcel(html, filename) {
+    var blob = new Blob([html], {
+      type: 'application/vnd.ms-excel'
     });
     var url = URL.createObjectURL(blob);
     var a = document.createElement('a');
@@ -78838,6 +79767,104 @@ function ReportsPage() {
     a.click();
     document.body.removeChild(a);
     URL.revokeObjectURL(url);
+  };
+
+  // Export student data to an Excel (.xls) file with organized table
+  var exportStudentData = function exportStudentData() {
+    var filteredStudents = getFilteredStudentData();
+    var headers = ['Student Number', 'Name', 'Course', 'Year Level', 'Academic Year', 'Email', 'Contact', 'Status'];
+    var rows = filteredStudents.map(function (student) {
+      return [student.student_number, student.name, student.course, student.year_level, student.academic_year, student.email || 'N/A', student.contact || 'N/A', student.status];
+    });
+    var html = buildExcelHtml('Student Report', headers, rows);
+    downloadExcel(html, 'student_report.xls');
+  };
+
+  // Create a more organized student report (grouped by course, then year) and download as Excel
+  var exportFilteredStudentReport = function exportFilteredStudentReport() {
+    var students = getFilteredStudentData();
+    // Build rows grouped by course and year level with subtotals
+    var headers = ['Course', 'Year Level', 'Student Number', 'Name', 'Academic Year', 'Email', 'Contact', 'Status'];
+    var rows = [];
+    var byCourse = {};
+    students.forEach(function (s) {
+      var course = s.course || 'Unspecified';
+      if (!byCourse[course]) byCourse[course] = [];
+      byCourse[course].push(s);
+    });
+    Object.keys(byCourse).sort().forEach(function (course) {
+      var group = byCourse[course];
+      ['1st Year', '2nd Year', '3rd Year', '4th Year'].forEach(function (yl) {
+        var subset = group.filter(function (x) {
+          return x.year_level === yl;
+        });
+        subset.forEach(function (student) {
+          rows.push([course, yl, student.student_number, student.name, student.academic_year || '', student.email || 'N/A', student.contact || 'N/A', student.status]);
+        });
+        if (subset.length > 0) {
+          // subtotal row for this course/year
+          rows.push([course, "".concat(yl, " Subtotal"), subset.length, '', '', '', '', '']);
+        }
+      });
+      // course total
+      rows.push([course, 'Course Total', group.length, '', '', '', '', '']);
+      // blank spacer row
+      rows.push(['', '', '', '', '', '', '', '']);
+    });
+    var html = buildExcelHtml('Student Records Report', headers, rows);
+    var now = new Date().toISOString().slice(0, 19).replace(/[:T]/g, '-');
+    downloadExcel(html, "student_records_report_".concat(now, ".xls"));
+  };
+  var createReportFromModal = function createReportFromModal() {
+    // apply filters from reportFilters to build the reportData
+    var filtered = studentData.filter(function (s) {
+      var courseMatch = !reportFilters.course || s.course === reportFilters.course;
+      var yearMatch = !reportFilters.year_level || s.year_level === reportFilters.year_level;
+      var yearAcadMatch = !reportFilters.academic_year || s.academic_year === reportFilters.academic_year;
+      return courseMatch && yearMatch && yearAcadMatch;
+    });
+    setReportData(filtered);
+  };
+  var exportReportModalCsv = function exportReportModalCsv() {
+    var rows = reportData.map(function (student) {
+      return [student.student_number, student.name, student.course, student.year_level, student.academic_year, student.email || 'N/A', student.contact || 'N/A', student.status];
+    });
+    var headers = ['Student Number', 'Name', 'Course', 'Year Level', 'Academic Year', 'Email', 'Contact', 'Status'];
+    var html = buildExcelHtml('Student Report (Filtered)', headers, rows);
+    var now = new Date().toISOString().slice(0, 19).replace(/[:T]/g, '-');
+    downloadExcel(html, "student_report_filtered_".concat(now, ".xls"));
+  };
+
+  // Export faculty data to an Excel (.xls) file with organized table
+  var exportFacultyData = function exportFacultyData() {
+    var filteredFaculty = getFilteredFacultyData();
+    var headers = ['Faculty Number', 'Name', 'Department', 'Position', 'Email', 'Contact', 'Status'];
+    var rows = filteredFaculty.map(function (faculty) {
+      return [faculty.faculty_number, faculty.name, faculty.department || 'N/A', faculty.position || 'N/A', faculty.email || 'N/A', faculty.contact || 'N/A', faculty.status];
+    });
+    var html = buildExcelHtml('Faculty Report', headers, rows);
+    downloadExcel(html, 'faculty_report.xls');
+  };
+
+  // Create faculty report from the faculty modal filters
+  var createFacultyReportFromModal = function createFacultyReportFromModal() {
+    var filtered = facultyData.filter(function (f) {
+      var deptMatch = !facultyReportFilters.department || (f.department || '') === facultyReportFilters.department;
+      var statusMatch = !facultyReportFilters.status || (f.status || '') === facultyReportFilters.status;
+      return deptMatch && statusMatch;
+    });
+    setFacultyReportData(filtered);
+  };
+
+  // Export the faculty report currently previewed in the faculty modal
+  var exportFacultyReportModalCsv = function exportFacultyReportModalCsv() {
+    var rows = facultyReportData.map(function (faculty) {
+      return [faculty.faculty_number, faculty.name, faculty.department || 'N/A', faculty.position || 'N/A', faculty.email || 'N/A', faculty.contact || 'N/A', faculty.status || 'N/A'];
+    });
+    var headers = ['Faculty Number', 'Name', 'Department', 'Position', 'Email', 'Contact', 'Status'];
+    var html = buildExcelHtml('Faculty Report (Filtered)', headers, rows);
+    var now = new Date().toISOString().slice(0, 19).replace(/[:T]/g, '-');
+    downloadExcel(html, "faculty_report_filtered_".concat(now, ".xls"));
   };
   var filteredStudents = getFilteredStudentData();
   var filteredFaculty = getFilteredFacultyData();
@@ -78850,7 +79877,7 @@ function ReportsPage() {
     };
   };
   var calendarIcon = function calendarIcon() {
-    return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("svg", _objectSpread(_objectSpread({
+    return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("svg", _objectSpread(_objectSpread({
       viewBox: "0 0 24 24",
       width: "18",
       height: "18",
@@ -78859,24 +79886,24 @@ function ReportsPage() {
       strokeWidth: "2",
       strokeLinecap: "round",
       strokeLinejoin: "round",
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("rect", {
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("rect", {
         x: "3",
         y: "4",
         width: "18",
         height: "18",
         rx: "4",
         ry: "4"
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("line", {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("line", {
         x1: "16",
         y1: "2",
         x2: "16",
         y2: "6"
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("line", {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("line", {
         x1: "8",
         y1: "2",
         x2: "8",
         y2: "6"
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("line", {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("line", {
         x1: "3",
         y1: "10",
         x2: "21",
@@ -78885,7 +79912,7 @@ function ReportsPage() {
     }));
   };
   var bellIcon = function bellIcon() {
-    return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("svg", _objectSpread(_objectSpread({
+    return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("svg", _objectSpread(_objectSpread({
       viewBox: "0 0 24 24",
       width: "18",
       height: "18",
@@ -78894,15 +79921,65 @@ function ReportsPage() {
       strokeWidth: "2",
       strokeLinecap: "round",
       strokeLinejoin: "round",
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("path", {
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("path", {
         d: "M18 8a6 6 0 10-12 0c0 7-3 8-3 8h18s-3-1-3-8"
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("path", {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("path", {
         d: "M13.73 21a2 2 0 01-3.46 0"
       })]
     }));
   };
+  var sunIcon = function sunIcon() {
+    var isWhite = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : false;
+    return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("svg", _objectSpread(_objectSpread({
+      viewBox: "0 0 24 24",
+      width: "18",
+      height: "18",
+      fill: "none"
+    }, withStroke(isWhite)), {}, {
+      strokeWidth: "2",
+      strokeLinecap: "round",
+      strokeLinejoin: "round",
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("circle", {
+        cx: "12",
+        cy: "12",
+        r: "4"
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("path", {
+        d: "M12 2v2"
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("path", {
+        d: "M12 20v2"
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("path", {
+        d: "M4.93 4.93l1.41 1.41"
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("path", {
+        d: "M17.66 17.66l1.41 1.41"
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("path", {
+        d: "M2 12h2"
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("path", {
+        d: "M20 12h2"
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("path", {
+        d: "M4.93 19.07l1.41-1.41"
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("path", {
+        d: "M17.66 6.34l1.41-1.41"
+      })]
+    }));
+  };
+  var moonIcon = function moonIcon() {
+    var isWhite = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : false;
+    return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("svg", _objectSpread(_objectSpread({
+      viewBox: "0 0 24 24",
+      width: "18",
+      height: "18",
+      fill: "none"
+    }, withStroke(isWhite)), {}, {
+      strokeWidth: "2",
+      strokeLinecap: "round",
+      strokeLinejoin: "round",
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("path", {
+        d: "M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"
+      })
+    }));
+  };
   var settingsIcon = function settingsIcon() {
-    return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("svg", _objectSpread(_objectSpread({
+    return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("svg", _objectSpread(_objectSpread({
       viewBox: "0 0 24 24",
       width: "18",
       height: "18",
@@ -78911,17 +79988,17 @@ function ReportsPage() {
       strokeWidth: "2",
       strokeLinecap: "round",
       strokeLinejoin: "round",
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("circle", {
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("circle", {
         cx: "12",
         cy: "12",
         r: "3"
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("path", {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("path", {
         d: "M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 010 2.83 2 2 0 01-2.83 0l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-4 0v-.09a1.65 1.65 0 00-1-1.51 1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 01-2.83 0 2 2 0 010-2.83l.06-.06a1.65 1.65 0 00.33-1.82 1.65 1.65 0 00-1.51-1H3a2 2 0 010-4h.09a1.65 1.65 0 001.51-1 1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 010-2.83 2 2 0 012.83 0l.06.06a1.65 1.65 0 001.82.33H9a1.65 1.65 0 001-1.51V3a2 2 0 014 0v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 012.83 0 2 2 0 010 2.83l-.06.06a1.65 1.65 0 00-.33 1.82V9c0 .69.28 1.32.73 1.77.45.45 1.08.73 1.77.73h.09a2 2 0 010 4h-.09a1.65 1.65 0 00-1.77.73z"
       })]
     }));
   };
   var dashboardIcon = function dashboardIcon() {
-    return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("svg", _objectSpread(_objectSpread({
+    return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("svg", _objectSpread(_objectSpread({
       viewBox: "0 0 24 24",
       width: "18",
       height: "18",
@@ -78930,25 +80007,25 @@ function ReportsPage() {
       strokeWidth: "2",
       strokeLinecap: "round",
       strokeLinejoin: "round",
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("rect", {
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("rect", {
         x: "3",
         y: "3",
         width: "7",
         height: "7",
         rx: "2"
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("rect", {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("rect", {
         x: "14",
         y: "3",
         width: "7",
         height: "7",
         rx: "2"
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("rect", {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("rect", {
         x: "14",
         y: "14",
         width: "7",
         height: "7",
         rx: "2"
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("rect", {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("rect", {
         x: "3",
         y: "14",
         width: "7",
@@ -78958,7 +80035,7 @@ function ReportsPage() {
     }));
   };
   var studentsIcon = function studentsIcon() {
-    return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("svg", _objectSpread(_objectSpread({
+    return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("svg", _objectSpread(_objectSpread({
       viewBox: "0 0 24 24",
       width: "18",
       height: "18",
@@ -78967,9 +80044,9 @@ function ReportsPage() {
       strokeWidth: "2",
       strokeLinecap: "round",
       strokeLinejoin: "round",
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("path", {
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("path", {
         d: "M12 14c-4.418 0-8 1.79-8 4v2"
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("circle", {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("circle", {
         cx: "12",
         cy: "7",
         r: "4"
@@ -78977,7 +80054,7 @@ function ReportsPage() {
     }));
   };
   var facultyIcon = function facultyIcon() {
-    return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("svg", _objectSpread(_objectSpread({
+    return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("svg", _objectSpread(_objectSpread({
       viewBox: "0 0 24 24",
       width: "18",
       height: "18",
@@ -78986,13 +80063,13 @@ function ReportsPage() {
       strokeWidth: "2",
       strokeLinecap: "round",
       strokeLinejoin: "round",
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("path", {
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("path", {
         d: "M2 20v-1c0-2.21 3.582-4 8-4s8 1.79 8 4v1"
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("circle", {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("circle", {
         cx: "10",
         cy: "7",
         r: "4"
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("circle", {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("circle", {
         cx: "18",
         cy: "8",
         r: "3"
@@ -79000,7 +80077,7 @@ function ReportsPage() {
     }));
   };
   var reportsIcon = function reportsIcon() {
-    return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("svg", _objectSpread(_objectSpread({
+    return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("svg", _objectSpread(_objectSpread({
       viewBox: "0 0 24 24",
       width: "18",
       height: "18",
@@ -79009,17 +80086,17 @@ function ReportsPage() {
       strokeWidth: "2",
       strokeLinecap: "round",
       strokeLinejoin: "round",
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("path", {
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("path", {
         d: "M3 12h18"
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("path", {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("path", {
         d: "M3 6h18"
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("path", {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("path", {
         d: "M3 18h18"
       })]
     }));
   };
   var profileIcon = function profileIcon() {
-    return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("svg", _objectSpread(_objectSpread({
+    return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("svg", _objectSpread(_objectSpread({
       viewBox: "0 0 24 24",
       width: "18",
       height: "18",
@@ -79028,9 +80105,9 @@ function ReportsPage() {
       strokeWidth: "2",
       strokeLinecap: "round",
       strokeLinejoin: "round",
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("path", {
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("path", {
         d: "M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("circle", {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("circle", {
         cx: "12",
         cy: "7",
         r: "4"
@@ -79038,7 +80115,7 @@ function ReportsPage() {
     }));
   };
   var logoutIcon = function logoutIcon() {
-    return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("svg", _objectSpread(_objectSpread({
+    return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("svg", _objectSpread(_objectSpread({
       viewBox: "0 0 24 24",
       width: "18",
       height: "18",
@@ -79047,11 +80124,11 @@ function ReportsPage() {
       strokeWidth: "2",
       strokeLinecap: "round",
       strokeLinejoin: "round",
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("path", {
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("path", {
         d: "M9 21H5a2 2 0 01-2-2V5a2 2 0 012-2h4"
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("polyline", {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("polyline", {
         points: "16 17 21 12 16 7"
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("line", {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("line", {
         x1: "21",
         y1: "12",
         x2: "9",
@@ -79062,78 +80139,78 @@ function ReportsPage() {
   var userInitials = (profileData.name || 'Admin').split(' ').map(function (n) {
     return n && n[0];
   }).filter(Boolean).join('').slice(0, 2).toUpperCase();
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
     className: "sfms-dashboard",
-    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("aside", {
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("aside", {
       className: "sfms-sidebar",
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
         className: "sidebar-brand",
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
           className: "logo",
-          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("img", {
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("img", {
             src: "/img/sfms-logo2.png",
             alt: "SFMS Logo"
           })
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
           className: "brand-text",
           children: "SFMS"
         })]
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("nav", {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("nav", {
         className: "sidebar-nav",
-        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("ul", {
-          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("li", {
-            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(react_router_dom__WEBPACK_IMPORTED_MODULE_2__.Link, {
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("ul", {
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("li", {
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)(react_router_dom__WEBPACK_IMPORTED_MODULE_2__.Link, {
               to: "/dashboard",
-              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("span", {
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("span", {
                 className: "nav-icon",
                 children: dashboardIcon()
               }), "Dashboard"]
             })
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("li", {
-            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(react_router_dom__WEBPACK_IMPORTED_MODULE_2__.Link, {
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("li", {
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)(react_router_dom__WEBPACK_IMPORTED_MODULE_2__.Link, {
               to: "/dashboard/faculty",
-              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("span", {
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("span", {
                 className: "nav-icon",
                 children: facultyIcon()
               }), "Faculty"]
             })
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("li", {
-            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(react_router_dom__WEBPACK_IMPORTED_MODULE_2__.Link, {
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("li", {
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)(react_router_dom__WEBPACK_IMPORTED_MODULE_2__.Link, {
               to: "/dashboard/students",
-              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("span", {
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("span", {
                 className: "nav-icon",
                 children: studentsIcon()
               }), "Students"]
             })
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("li", {
-            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(react_router_dom__WEBPACK_IMPORTED_MODULE_2__.Link, {
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("li", {
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)(react_router_dom__WEBPACK_IMPORTED_MODULE_2__.Link, {
               to: "/dashboard/calendar",
-              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("span", {
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("span", {
                 className: "nav-icon",
                 children: calendarIcon()
               }), "Calendar"]
             })
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("li", {
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("li", {
             className: "active",
-            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("a", {
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("a", {
               href: "#",
-              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("span", {
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("span", {
                 className: "nav-icon",
                 children: reportsIcon()
               }), "Reports"]
             })
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("li", {
-            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(react_router_dom__WEBPACK_IMPORTED_MODULE_2__.Link, {
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("li", {
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)(react_router_dom__WEBPACK_IMPORTED_MODULE_2__.Link, {
               to: "/dashboard/settings",
-              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("span", {
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("span", {
                 className: "nav-icon",
                 children: settingsIcon()
               }), "Settings"]
             })
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("li", {
-            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(react_router_dom__WEBPACK_IMPORTED_MODULE_2__.Link, {
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("li", {
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)(react_router_dom__WEBPACK_IMPORTED_MODULE_2__.Link, {
               to: "/dashboard/profile",
-              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("span", {
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("span", {
                 className: "nav-icon",
                 children: profileIcon()
               }), "Profile"]
@@ -79141,33 +80218,41 @@ function ReportsPage() {
           })]
         })
       })]
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("main", {
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("main", {
       className: "sfms-main",
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("header", {
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("header", {
         className: "topbar",
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
           className: "topbar-left",
-          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("h4", {
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("h4", {
             children: "Reports & Analytics"
           })
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
           className: "topbar-right",
-          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
             className: "top-icons",
-            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_NotificationBell__WEBPACK_IMPORTED_MODULE_3__["default"], {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_NotificationBell__WEBPACK_IMPORTED_MODULE_3__["default"], {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("button", {
+              className: "icon-circle",
+              title: theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode',
+              onClick: function onClick() {
+                var t = (0,_utils_theme__WEBPACK_IMPORTED_MODULE_4__.toggleTheme)();
+                setTheme(t);
+              },
+              children: theme === 'dark' ? sunIcon() : moonIcon()
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("button", {
               className: "icon-circle",
               title: "Settings",
               onClick: function onClick() {
                 return navigate('/dashboard/settings');
               },
               children: settingsIcon()
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
               className: "profile-menu-wrapper",
               ref: profileMenuRef,
               style: {
                 position: 'relative'
               },
-              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("button", {
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("button", {
                 className: "profile-chip",
                 title: "Profile",
                 onClick: function onClick() {
@@ -79176,14 +80261,14 @@ function ReportsPage() {
                   });
                 },
                 "aria-expanded": showProfileMenu,
-                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("span", {
+                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("span", {
                   className: "avatar-sm",
                   children: userInitials
-                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("span", {
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("span", {
                   className: "profile-name",
                   children: profileData.name || 'Admin'
                 })]
-              }), showProfileMenu && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+              }), showProfileMenu && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
                 className: "notifications-dropdown",
                 style: {
                   position: 'absolute',
@@ -79196,13 +80281,13 @@ function ReportsPage() {
                   overflow: 'hidden',
                   zIndex: 4000
                 },
-                children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("ul", {
+                children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("ul", {
                   className: "dropdown-list",
                   style: {
                     margin: 0,
                     padding: 0
                   },
-                  children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("li", {
+                  children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("li", {
                     className: "dropdown-item",
                     style: {
                       padding: '12px 14px',
@@ -79213,7 +80298,7 @@ function ReportsPage() {
                       navigate('/dashboard/profile');
                     },
                     children: "View Profile"
-                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("li", {
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("li", {
                     className: "dropdown-item",
                     style: {
                       padding: '12px 14px',
@@ -79224,7 +80309,7 @@ function ReportsPage() {
                       navigate('/dashboard/settings');
                     },
                     children: "Settings"
-                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("li", {
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("li", {
                     className: "dropdown-item",
                     style: {
                       padding: '12px 14px',
@@ -79242,27 +80327,27 @@ function ReportsPage() {
             })]
           })
         })]
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
         className: "reports-page",
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
           className: "reports-header bg-white p-4 mb-4",
-          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("h1", {
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("h1", {
             children: "Reports & Analytics"
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("p", {
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("p", {
             className: "text-muted",
             children: "Generate comprehensive reports for students and faculty"
           })]
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
           className: "reports-nav bg-white p-4 mb-4",
-          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
             className: "nav-buttons",
-            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("button", {
               className: "nav-btn ".concat(currentView === 'student' ? 'active' : ''),
               onClick: function onClick() {
                 return setCurrentView('student');
               },
               children: "Student Report"
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("button", {
               className: "nav-btn ".concat(currentView === 'faculty' ? 'active' : ''),
               onClick: function onClick() {
                 return setCurrentView('faculty');
@@ -79270,99 +80355,99 @@ function ReportsPage() {
               children: "Faculty Reports"
             })]
           })
-        }), currentView === 'student' && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+        }), currentView === 'student' && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
           className: "student-report",
-          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
             className: "student-filters bg-white p-4 mb-4",
-            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
               className: "row g-3 align-items-end",
-              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
                 className: "col-md-3",
-                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("label", {
+                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("label", {
                   className: "form-label",
                   children: "Course"
-                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("select", {
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("select", {
                   className: "form-select",
                   name: "course",
                   value: filters.course,
                   onChange: handleFilterChange,
-                  children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("option", {
+                  children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("option", {
                     value: "",
                     children: "All Courses"
                   }), courses.map(function (course) {
-                    return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("option", {
+                    return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("option", {
                       value: course,
                       children: course
                     }, course);
                   })]
                 })]
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
                 className: "col-md-2",
-                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("label", {
+                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("label", {
                   className: "form-label",
                   children: "Year Level"
-                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("select", {
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("select", {
                   className: "form-select",
                   name: "year_level",
                   value: filters.year_level,
                   onChange: handleFilterChange,
-                  children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("option", {
+                  children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("option", {
                     value: "",
                     children: "All Years"
                   }), yearLevels.map(function (year) {
-                    return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("option", {
+                    return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("option", {
                       value: year,
                       children: year
                     }, year);
                   })]
                 })]
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
                 className: "col-md-2",
-                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("label", {
+                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("label", {
                   className: "form-label",
                   children: "Status"
-                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("select", {
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("select", {
                   className: "form-select",
                   name: "status",
                   value: filters.status,
                   onChange: handleFilterChange,
-                  children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("option", {
+                  children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("option", {
                     value: "",
                     children: "All Status"
-                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("option", {
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("option", {
                     value: "ACTIVE",
                     children: "Active"
-                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("option", {
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("option", {
                     value: "INACTIVE",
                     children: "Inactive"
                   })]
                 })]
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
                 className: "col-md-2",
-                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("label", {
+                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("label", {
                   className: "form-label",
                   children: "Academic Year"
-                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("select", {
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("select", {
                   className: "form-select",
                   name: "academic_year",
                   value: filters.academic_year,
                   onChange: handleFilterChange,
-                  children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("option", {
+                  children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("option", {
                     value: "",
                     children: "All Years"
                   }), academicYears.map(function (year) {
-                    return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("option", {
+                    return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("option", {
                       value: year,
                       children: year
                     }, year);
                   })]
                 })]
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
                 className: "col-md-3",
-                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("label", {
+                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("label", {
                   className: "form-label",
                   children: "Search"
-                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("input", {
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("input", {
                   type: "text",
                   className: "form-control",
                   placeholder: "Search by name or student number...",
@@ -79370,87 +80455,99 @@ function ReportsPage() {
                   value: filters.search,
                   onChange: handleFilterChange
                 })]
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
                 className: "col-md-2",
-                children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
-                  className: "btn btn-primary w-100",
-                  onClick: exportStudentData,
-                  children: "Export CSV"
+                children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
+                  className: "d-flex gap-2",
+                  children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("button", {
+                    type: "button",
+                    className: "btn btn-primary w-100",
+                    onClick: exportStudentData,
+                    children: "Export CSV"
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("button", {
+                    type: "button",
+                    className: "btn btn-success w-100",
+                    onClick: function onClick() {
+                      return setShowReportModal(true);
+                    },
+                    title: "Open report builder",
+                    children: "Make Report"
+                  })]
                 })
               })]
             })
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
             className: "summary-section bg-white p-4 mb-4",
-            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("h5", {
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("h5", {
               className: "mb-4",
               children: "Student Report Details"
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
               className: "summary-table",
-              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("table", {
+              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("table", {
                 className: "table table-bordered",
-                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("thead", {
+                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("thead", {
                   className: "table-light",
-                  children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("tr", {
-                    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("th", {
+                  children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("tr", {
+                    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("th", {
                       children: "Course"
-                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("th", {
+                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("th", {
                       children: "Year 1"
-                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("th", {
+                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("th", {
                       children: "Year 2"
-                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("th", {
+                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("th", {
                       children: "Year 3"
-                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("th", {
+                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("th", {
                       children: "Year 4"
-                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("th", {
+                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("th", {
                       children: "Total"
                     })]
                   })
-                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("tbody", {
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("tbody", {
                   children: [courses.map(function (course) {
                     var _studentSummary$cours, _studentSummary$cours2, _studentSummary$cours3, _studentSummary$cours4, _studentSummary$cours5;
-                    return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("tr", {
-                      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("td", {
+                    return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("tr", {
+                      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("td", {
                         className: "fw-semibold",
                         children: course
-                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("td", {
+                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("td", {
                         children: ((_studentSummary$cours = studentSummary[course]) === null || _studentSummary$cours === void 0 ? void 0 : _studentSummary$cours.year1) || 0
-                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("td", {
+                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("td", {
                         children: ((_studentSummary$cours2 = studentSummary[course]) === null || _studentSummary$cours2 === void 0 ? void 0 : _studentSummary$cours2.year2) || 0
-                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("td", {
+                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("td", {
                         children: ((_studentSummary$cours3 = studentSummary[course]) === null || _studentSummary$cours3 === void 0 ? void 0 : _studentSummary$cours3.year3) || 0
-                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("td", {
+                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("td", {
                         children: ((_studentSummary$cours4 = studentSummary[course]) === null || _studentSummary$cours4 === void 0 ? void 0 : _studentSummary$cours4.year4) || 0
-                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("td", {
+                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("td", {
                         className: "fw-bold",
                         children: ((_studentSummary$cours5 = studentSummary[course]) === null || _studentSummary$cours5 === void 0 ? void 0 : _studentSummary$cours5.total) || 0
                       })]
                     }, course);
-                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("tr", {
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("tr", {
                     className: "table-light",
-                    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("td", {
+                    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("td", {
                       className: "fw-bold",
                       children: "Grand Total"
-                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("td", {
+                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("td", {
                       className: "fw-bold",
                       children: filteredStudents.filter(function (s) {
                         return s.year_level === '1st Year';
                       }).length
-                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("td", {
+                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("td", {
                       className: "fw-bold",
                       children: filteredStudents.filter(function (s) {
                         return s.year_level === '2nd Year';
                       }).length
-                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("td", {
+                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("td", {
                       className: "fw-bold",
                       children: filteredStudents.filter(function (s) {
                         return s.year_level === '3rd Year';
                       }).length
-                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("td", {
+                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("td", {
                       className: "fw-bold",
                       children: filteredStudents.filter(function (s) {
                         return s.year_level === '4th Year';
                       }).length
-                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("td", {
+                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("td", {
                       className: "fw-bold",
                       children: filteredStudents.length
                     })]
@@ -79458,90 +80555,90 @@ function ReportsPage() {
                 })]
               })
             })]
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
             className: "student-data-section bg-white p-4",
-            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
               className: "d-flex justify-content-between align-items-center mb-3",
-              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("h5", {
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("h5", {
                 children: "Student Records"
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("span", {
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("span", {
                 className: "text-muted",
                 children: ["Showing ", filteredStudents.length, " records"]
               })]
-            }), loading ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+            }), loading ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
               className: "text-center p-5",
-              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
                 className: "spinner-border text-primary",
                 role: "status",
-                children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("span", {
+                children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("span", {
                   className: "visually-hidden",
                   children: "Loading..."
                 })
               })
-            }) : filteredStudents.length > 0 ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+            }) : filteredStudents.length > 0 ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
               className: "table-responsive",
-              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("table", {
+              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("table", {
                 className: "table table-striped",
-                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("thead", {
+                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("thead", {
                   className: "table-light",
-                  children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("tr", {
-                    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("th", {
+                  children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("tr", {
+                    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("th", {
                       children: "Student Number"
-                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("th", {
+                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("th", {
                       children: "Name"
-                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("th", {
+                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("th", {
                       children: "Course"
-                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("th", {
+                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("th", {
                       children: "Year Level"
-                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("th", {
+                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("th", {
                       children: "Academic Year"
-                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("th", {
+                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("th", {
                       children: "Email"
-                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("th", {
+                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("th", {
                       children: "Contact"
-                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("th", {
+                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("th", {
                       children: "Status"
                     })]
                   })
-                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("tbody", {
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("tbody", {
                   children: filteredStudents.map(function (student) {
-                    return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("tr", {
-                      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("td", {
+                    return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("tr", {
+                      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("td", {
                         className: "fw-semibold",
                         children: student.student_number
-                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("td", {
-                        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("td", {
+                        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
                           className: "d-flex align-items-center",
-                          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+                          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
                             className: "avatar-sm bg-light rounded-circle d-flex align-items-center justify-content-center me-3",
-                            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("span", {
+                            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("span", {
                               className: "text-muted",
                               children: student.name.split(' ').map(function (n) {
                                 return n[0];
                               }).join('')
                             })
-                          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
-                            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+                          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
+                            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
                               className: "fw-semibold",
                               children: student.name
                             })
                           })]
                         })
-                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("td", {
+                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("td", {
                         children: student.course
-                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("td", {
+                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("td", {
                         children: student.year_level
-                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("td", {
+                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("td", {
                         children: student.academic_year
-                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("td", {
+                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("td", {
                         children: student.email || 'N/A'
-                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("td", {
+                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("td", {
                         children: student.contact || 'N/A'
-                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("td", {
-                        children: student.status === 'ACTIVE' ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("span", {
+                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("td", {
+                        children: student.status === 'ACTIVE' ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("span", {
                           className: "badge-active",
                           children: "Active"
-                        }) : /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("span", {
+                        }) : /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("span", {
                           className: "badge-inactive",
                           children: "Inactive"
                         })
@@ -79550,67 +80647,273 @@ function ReportsPage() {
                   })
                 })]
               })
-            }) : /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+            }) : /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
               className: "text-center p-5",
-              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("p", {
+              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("p", {
                 className: "text-muted",
                 children: "No student records found."
               })
             })]
+          }), showReportModal && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
+            className: "sfms-modal",
+            style: {
+              position: 'fixed',
+              left: 0,
+              top: 0,
+              width: '100%',
+              height: '100%',
+              zIndex: 5050
+            },
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
+              onClick: function onClick() {
+                setShowReportModal(false);
+                setReportData([]);
+              },
+              style: {
+                position: 'fixed',
+                left: 0,
+                top: 0,
+                width: '100%',
+                height: '100%',
+                background: 'rgba(0,0,0,0.35)',
+                zIndex: 5050
+              }
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
+              role: "dialog",
+              "aria-modal": "true",
+              onClick: function onClick(e) {
+                return e.stopPropagation();
+              },
+              style: {
+                position: 'fixed',
+                left: '50%',
+                top: '50%',
+                transform: 'translate(-50%, -50%)',
+                width: '92%',
+                maxWidth: 920,
+                maxHeight: '85vh',
+                overflow: 'auto',
+                background: 'var(--bs-body-bg, #fff)',
+                color: 'var(--bs-body-color, #000)',
+                borderRadius: 12,
+                padding: 20,
+                boxShadow: '0 24px 60px rgba(2,6,23,0.5)',
+                zIndex: 5060
+              },
+              className: "settings-modal-window",
+              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
+                className: "modal-form",
+                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
+                  className: "modal-top d-flex justify-content-between align-items-center mb-4",
+                  children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("h5", {
+                    children: "Create Student Report"
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("button", {
+                    type: "button",
+                    className: "btn-close",
+                    onClick: function onClick() {
+                      setShowReportModal(false);
+                      setReportData([]);
+                    },
+                    children: "\xD7"
+                  })]
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
+                  className: "row g-3 mb-3",
+                  children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
+                    className: "col-md-4",
+                    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("label", {
+                      children: "Course"
+                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("select", {
+                      className: "form-select",
+                      value: reportFilters.course,
+                      onChange: function onChange(e) {
+                        return setReportFilters(function (prev) {
+                          return _objectSpread(_objectSpread({}, prev), {}, {
+                            course: e.target.value
+                          });
+                        });
+                      },
+                      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("option", {
+                        value: "",
+                        children: "All Courses"
+                      }), courses.map(function (c) {
+                        return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("option", {
+                          value: c,
+                          children: c
+                        }, c);
+                      })]
+                    })]
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
+                    className: "col-md-4",
+                    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("label", {
+                      children: "Year Level"
+                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("select", {
+                      className: "form-select",
+                      value: reportFilters.year_level,
+                      onChange: function onChange(e) {
+                        return setReportFilters(function (prev) {
+                          return _objectSpread(_objectSpread({}, prev), {}, {
+                            year_level: e.target.value
+                          });
+                        });
+                      },
+                      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("option", {
+                        value: "",
+                        children: "All Years"
+                      }), yearLevels.map(function (y) {
+                        return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("option", {
+                          value: y,
+                          children: y
+                        }, y);
+                      })]
+                    })]
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
+                    className: "col-md-4",
+                    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("label", {
+                      children: "Academic Year"
+                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("select", {
+                      className: "form-select",
+                      value: reportFilters.academic_year,
+                      onChange: function onChange(e) {
+                        return setReportFilters(function (prev) {
+                          return _objectSpread(_objectSpread({}, prev), {}, {
+                            academic_year: e.target.value
+                          });
+                        });
+                      },
+                      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("option", {
+                        value: "",
+                        children: "All Years"
+                      }), academicYears.map(function (y) {
+                        return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("option", {
+                          value: y,
+                          children: y
+                        }, y);
+                      })]
+                    })]
+                  })]
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
+                  className: "d-flex justify-content-end gap-2",
+                  children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("button", {
+                    type: "button",
+                    className: "btn btn-outline-secondary",
+                    onClick: function onClick() {
+                      setShowReportModal(false);
+                      setReportData([]);
+                    },
+                    children: "Cancel"
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("button", {
+                    type: "button",
+                    className: "btn btn-primary",
+                    onClick: function onClick() {
+                      createReportFromModal();
+                    },
+                    children: "Create"
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("button", {
+                    type: "button",
+                    className: "btn btn-success",
+                    disabled: !(reportData && reportData.length > 0),
+                    onClick: function onClick() {
+                      exportReportModalCsv();
+                    },
+                    children: reportData && reportData.length > 0 ? 'Export CSV' : 'Export (Create first)'
+                  })]
+                }), reportData && reportData.length > 0 && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
+                  className: "mt-4",
+                  children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("h6", {
+                    children: ["Preview: ", reportData.length, " records"]
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
+                    style: {
+                      maxHeight: 260,
+                      overflowY: 'auto'
+                    },
+                    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("table", {
+                      className: "table table-sm",
+                      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("thead", {
+                        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("tr", {
+                          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("th", {
+                            children: "Student #"
+                          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("th", {
+                            children: "Name"
+                          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("th", {
+                            children: "Course"
+                          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("th", {
+                            children: "Year"
+                          })]
+                        })
+                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("tbody", {
+                        children: reportData.slice(0, 50).map(function (s) {
+                          return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("tr", {
+                            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("td", {
+                              children: s.student_number
+                            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("td", {
+                              children: s.name
+                            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("td", {
+                              children: s.course
+                            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("td", {
+                              children: s.year_level
+                            })]
+                          }, s.id);
+                        })
+                      })]
+                    })
+                  })]
+                })]
+              })
+            })]
           })]
-        }), currentView === 'faculty' && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+        }), currentView === 'faculty' && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
           className: "faculty-report",
-          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
             className: "faculty-filters bg-white p-4 mb-4",
-            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
               className: "row g-3 align-items-end",
-              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
                 className: "col-md-3",
-                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("label", {
+                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("label", {
                   className: "form-label",
                   children: "Department"
-                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("select", {
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("select", {
                   className: "form-select",
                   name: "department",
                   value: facultyFilters.department,
                   onChange: handleFacultyFilterChange,
-                  children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("option", {
+                  children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("option", {
                     value: "",
                     children: "All Departments"
                   }), departments.map(function (dept) {
-                    return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("option", {
+                    return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("option", {
                       value: dept,
                       children: dept
                     }, dept);
                   })]
                 })]
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
                 className: "col-md-2",
-                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("label", {
+                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("label", {
                   className: "form-label",
                   children: "Status"
-                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("select", {
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("select", {
                   className: "form-select",
                   name: "status",
                   value: facultyFilters.status,
                   onChange: handleFacultyFilterChange,
-                  children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("option", {
+                  children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("option", {
                     value: "",
                     children: "All Status"
-                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("option", {
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("option", {
                     value: "ACTIVE",
                     children: "Active"
-                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("option", {
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("option", {
                     value: "INACTIVE",
                     children: "Inactive"
                   })]
                 })]
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
                 className: "col-md-3",
-                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("label", {
+                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("label", {
                   className: "form-label",
                   children: "Search"
-                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("input", {
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("input", {
                   type: "text",
                   className: "form-control",
                   placeholder: "Search by name or faculty number...",
@@ -79618,141 +80921,158 @@ function ReportsPage() {
                   value: facultyFilters.search,
                   onChange: handleFacultyFilterChange
                 })]
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
                 className: "col-md-2",
-                children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
-                  className: "btn btn-primary w-100",
-                  onClick: exportFacultyData,
-                  children: "Export CSV"
+                children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
+                  className: "d-flex gap-2",
+                  children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("button", {
+                    className: "btn btn-primary w-100",
+                    onClick: exportFacultyData,
+                    children: "Export CSV"
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("button", {
+                    type: "button",
+                    className: "btn btn-success w-100",
+                    onClick: function onClick() {
+                      // Prefill faculty modal filters from visible filters
+                      setFacultyReportFilters({
+                        department: facultyFilters.department || '',
+                        status: facultyFilters.status || ''
+                      });
+                      setFacultyReportData([]);
+                      setShowFacultyReportModal(true);
+                    },
+                    title: "Open faculty report builder",
+                    children: "Make Report"
+                  })]
                 })
               })]
             })
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
             className: "faculty-summary bg-white p-4 mb-4",
-            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
               className: "row",
-              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
                 className: "col-md-4",
-                children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+                children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
                   className: "summary-card text-center p-3 border rounded",
-                  children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("h3", {
+                  children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("h3", {
                     className: "text-primary",
                     children: facultyData.length
-                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("p", {
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("p", {
                     className: "text-muted mb-0",
                     children: "Total Faculty"
                   })]
                 })
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
                 className: "col-md-4",
-                children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+                children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
                   className: "summary-card text-center p-3 border rounded",
-                  children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("h3", {
+                  children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("h3", {
                     className: "text-success",
                     children: facultyData.filter(function (f) {
                       return f.status === 'ACTIVE';
                     }).length
-                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("p", {
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("p", {
                     className: "text-muted mb-0",
                     children: "Active Faculty"
                   })]
                 })
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
                 className: "col-md-4",
-                children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+                children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
                   className: "summary-card text-center p-3 border rounded",
-                  children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("h3", {
+                  children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("h3", {
                     className: "text-warning",
                     children: facultyData.filter(function (f) {
                       return f.status === 'INACTIVE';
                     }).length
-                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("p", {
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("p", {
                     className: "text-muted mb-0",
                     children: "Inactive Faculty"
                   })]
                 })
               })]
             })
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
             className: "faculty-data-section bg-white p-4",
-            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
               className: "d-flex justify-content-between align-items-center mb-3",
-              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("h5", {
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("h5", {
                 children: "Faculty Records"
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("span", {
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("span", {
                 className: "text-muted",
                 children: ["Showing ", filteredFaculty.length, " records"]
               })]
-            }), loading ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+            }), loading ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
               className: "text-center p-5",
-              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
                 className: "spinner-border text-primary",
                 role: "status",
-                children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("span", {
+                children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("span", {
                   className: "visually-hidden",
                   children: "Loading..."
                 })
               })
-            }) : filteredFaculty.length > 0 ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+            }) : filteredFaculty.length > 0 ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
               className: "table-responsive",
-              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("table", {
+              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("table", {
                 className: "table table-striped",
-                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("thead", {
+                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("thead", {
                   className: "table-light",
-                  children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("tr", {
-                    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("th", {
+                  children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("tr", {
+                    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("th", {
                       children: "Faculty Number"
-                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("th", {
+                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("th", {
                       children: "Name"
-                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("th", {
+                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("th", {
                       children: "Department"
-                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("th", {
+                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("th", {
                       children: "Position"
-                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("th", {
+                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("th", {
                       children: "Email"
-                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("th", {
+                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("th", {
                       children: "Contact"
-                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("th", {
+                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("th", {
                       children: "Status"
                     })]
                   })
-                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("tbody", {
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("tbody", {
                   children: filteredFaculty.map(function (faculty) {
-                    return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("tr", {
-                      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("td", {
+                    return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("tr", {
+                      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("td", {
                         className: "fw-semibold",
                         children: faculty.faculty_number
-                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("td", {
-                        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("td", {
+                        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
                           className: "d-flex align-items-center",
-                          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+                          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
                             className: "avatar-sm bg-light rounded-circle d-flex align-items-center justify-content-center me-3",
-                            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("span", {
+                            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("span", {
                               className: "text-muted",
                               children: faculty.name.split(' ').map(function (n) {
                                 return n[0];
                               }).join('')
                             })
-                          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
-                            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+                          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
+                            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
                               className: "fw-semibold",
                               children: faculty.name
                             })
                           })]
                         })
-                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("td", {
+                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("td", {
                         children: faculty.department || 'N/A'
-                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("td", {
+                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("td", {
                         children: faculty.position || 'N/A'
-                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("td", {
+                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("td", {
                         children: faculty.email || 'N/A'
-                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("td", {
+                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("td", {
                         children: faculty.contact || 'N/A'
-                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("td", {
-                        children: faculty.status === 'ACTIVE' ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("span", {
+                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("td", {
+                        children: faculty.status === 'ACTIVE' ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("span", {
                           className: "badge-active",
                           children: "Active"
-                        }) : /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("span", {
+                        }) : /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("span", {
                           className: "badge-inactive",
                           children: "Inactive"
                         })
@@ -79761,13 +81081,196 @@ function ReportsPage() {
                   })
                 })]
               })
-            }) : /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+            }) : /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
               className: "text-center p-5",
-              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("p", {
+              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("p", {
                 className: "text-muted",
                 children: "No faculty records found."
               })
             })]
+          })]
+        }), showFacultyReportModal && currentView === 'faculty' && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
+          className: "sfms-modal",
+          style: {
+            position: 'fixed',
+            left: 0,
+            top: 0,
+            width: '100%',
+            height: '100%',
+            zIndex: 5050
+          },
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
+            onClick: function onClick() {
+              setShowFacultyReportModal(false);
+              setFacultyReportData([]);
+            },
+            style: {
+              position: 'fixed',
+              left: 0,
+              top: 0,
+              width: '100%',
+              height: '100%',
+              background: 'rgba(0,0,0,0.35)',
+              zIndex: 5050
+            }
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
+            role: "dialog",
+            "aria-modal": "true",
+            onClick: function onClick(e) {
+              return e.stopPropagation();
+            },
+            style: {
+              position: 'fixed',
+              left: '50%',
+              top: '50%',
+              transform: 'translate(-50%, -50%)',
+              width: '92%',
+              maxWidth: 760,
+              maxHeight: '80vh',
+              overflow: 'auto',
+              background: 'var(--bs-body-bg, #fff)',
+              color: 'var(--bs-body-color, #000)',
+              borderRadius: 12,
+              padding: 20,
+              boxShadow: '0 24px 60px rgba(2,6,23,0.5)',
+              zIndex: 5060
+            },
+            className: "settings-modal-window",
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
+              className: "modal-form",
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
+                className: "modal-top d-flex justify-content-between align-items-center mb-4",
+                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("h5", {
+                  children: "Create Faculty Report"
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("button", {
+                  type: "button",
+                  className: "btn-close",
+                  onClick: function onClick() {
+                    setShowFacultyReportModal(false);
+                    setFacultyReportData([]);
+                  },
+                  children: "\xD7"
+                })]
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
+                className: "row g-3 mb-3",
+                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
+                  className: "col-md-6",
+                  children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("label", {
+                    children: "Department"
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("select", {
+                    className: "form-select",
+                    value: facultyReportFilters.department,
+                    onChange: function onChange(e) {
+                      return setFacultyReportFilters(function (prev) {
+                        return _objectSpread(_objectSpread({}, prev), {}, {
+                          department: e.target.value
+                        });
+                      });
+                    },
+                    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("option", {
+                      value: "",
+                      children: "All Departments"
+                    }), departments.map(function (d) {
+                      return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("option", {
+                        value: d,
+                        children: d
+                      }, d);
+                    })]
+                  })]
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
+                  className: "col-md-6",
+                  children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("label", {
+                    children: "Status"
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("select", {
+                    className: "form-select",
+                    value: facultyReportFilters.status,
+                    onChange: function onChange(e) {
+                      return setFacultyReportFilters(function (prev) {
+                        return _objectSpread(_objectSpread({}, prev), {}, {
+                          status: e.target.value
+                        });
+                      });
+                    },
+                    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("option", {
+                      value: "",
+                      children: "All Status"
+                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("option", {
+                      value: "ACTIVE",
+                      children: "Active"
+                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("option", {
+                      value: "INACTIVE",
+                      children: "Inactive"
+                    })]
+                  })]
+                })]
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
+                className: "d-flex justify-content-end gap-2",
+                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("button", {
+                  type: "button",
+                  className: "btn btn-outline-secondary",
+                  onClick: function onClick() {
+                    setShowFacultyReportModal(false);
+                    setFacultyReportData([]);
+                  },
+                  children: "Cancel"
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("button", {
+                  type: "button",
+                  className: "btn btn-primary",
+                  onClick: function onClick() {
+                    createFacultyReportFromModal();
+                  },
+                  children: "Create"
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("button", {
+                  type: "button",
+                  className: "btn btn-success",
+                  disabled: !(facultyReportData && facultyReportData.length > 0),
+                  onClick: function onClick() {
+                    exportFacultyReportModalCsv();
+                  },
+                  children: facultyReportData && facultyReportData.length > 0 ? 'Export CSV' : 'Export (Create first)'
+                })]
+              }), facultyReportData && facultyReportData.length > 0 && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
+                className: "mt-4",
+                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("h6", {
+                  children: ["Preview: ", facultyReportData.length, " records"]
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
+                  style: {
+                    maxHeight: 300,
+                    overflowY: 'auto'
+                  },
+                  children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("table", {
+                    className: "table table-sm",
+                    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("thead", {
+                      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("tr", {
+                        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("th", {
+                          children: "Faculty #"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("th", {
+                          children: "Name"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("th", {
+                          children: "Department"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("th", {
+                          children: "Position"
+                        })]
+                      })
+                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("tbody", {
+                      children: facultyReportData.slice(0, 200).map(function (f) {
+                        return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("tr", {
+                          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("td", {
+                            children: f.faculty_number
+                          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("td", {
+                            children: f.name
+                          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("td", {
+                            children: f.department
+                          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("td", {
+                            children: f.position
+                          })]
+                        }, f.id || f.faculty_number);
+                      })
+                    })]
+                  })
+                })]
+              })]
+            })
           })]
         })]
       })]
@@ -79892,7 +81395,7 @@ function SettingsPage() {
   var DEPARTMENTS_VERSION = '2';
 
   // Default options that should always be available
-  var defaultDepartments = ['Computer Science Program', 'Business Administration Program', 'Arts & Sciences Program', 'Engineering Program', 'Teachers Eductation Program', 'Accountancy Program', 'Nursing Program', 'Criminal Justice Program', 'Tourism Management Program'];
+  var defaultDepartments = ['Computer Science', 'Business Administration', 'Arts & Humanities', 'Engineering', 'Teacher Education', 'Accountancy', 'Nursing', 'Criminal Justice', 'Tourism Management'];
   var defaultAcademicYears = ['2023-2024', '2024-2025', '2025-2026'];
   function logout() {
     localStorage.removeItem('sfms_auth');
@@ -79931,6 +81434,49 @@ function SettingsPage() {
     console.warn('CSRF token not found');
     return null;
   };
+  var refetchCourses = /*#__PURE__*/function () {
+    var _ref = _asyncToGenerator(/*#__PURE__*/_regenerator().m(function _callee() {
+      var res, data, list, _t;
+      return _regenerator().w(function (_context) {
+        while (1) switch (_context.p = _context.n) {
+          case 0:
+            _context.p = 0;
+            _context.n = 1;
+            return fetch('/api/courses');
+          case 1:
+            res = _context.v;
+            if (!res.ok) {
+              _context.n = 3;
+              break;
+            }
+            _context.n = 2;
+            return res.json();
+          case 2:
+            data = _context.v;
+            list = (data.courses || []).map(function (c) {
+              return {
+                id: c.id,
+                name: (c.name || '').replace(/\s*Program$/i, ''),
+                status: c.status,
+                is_default: !!c.is_default
+              };
+            });
+            setCourses(list);
+          case 3:
+            _context.n = 5;
+            break;
+          case 4:
+            _context.p = 4;
+            _t = _context.v;
+          case 5:
+            return _context.a(2);
+        }
+      }, _callee, null, [[0, 4]]);
+    }));
+    return function refetchCourses() {
+      return _ref.apply(this, arguments);
+    };
+  }();
   var pushNotification = function pushNotification(notification) {
     try {
       var raw = localStorage.getItem('sfms_notifications');
@@ -79956,12 +81502,6 @@ function SettingsPage() {
   var saveToLocalStorage = function saveToLocalStorage(key, data) {
     try {
       localStorage.setItem(key, JSON.stringify(data));
-      if (key === 'sfms_departments') {
-        localStorage.setItem('sfms_departments_meta', JSON.stringify({
-          version: DEPARTMENTS_VERSION,
-          updatedAt: Date.now()
-        }));
-      }
     } catch (error) {
       console.error('Error saving to localStorage:', error);
     }
@@ -79969,57 +81509,38 @@ function SettingsPage() {
 
   // Load data from localStorage first, then refresh departments from API (persisted)
   var loadFromLocalStorage = /*#__PURE__*/function () {
-    var _ref = _asyncToGenerator(/*#__PURE__*/_regenerator().m(function _callee() {
-      var savedDepartmentsRaw, savedDepartmentsMetaRaw, useSavedDepartments, meta, initialDepartments, res, data, deptList, savedCourses, initialCourses, savedAcademicYears, initialAcademicYears, _t, _t2;
-      return _regenerator().w(function (_context) {
-        while (1) switch (_context.p = _context.n) {
+    var _ref2 = _asyncToGenerator(/*#__PURE__*/_regenerator().m(function _callee2() {
+      var initialDepartments, res, data, deptList, _res, _data, list, savedAcademicYears, initialAcademicYears, _t2, _t3, _t4;
+      return _regenerator().w(function (_context2) {
+        while (1) switch (_context2.p = _context2.n) {
           case 0:
             setLoading(true);
-            _context.p = 1;
-            // Departments with version check (local cache)
-            savedDepartmentsRaw = localStorage.getItem('sfms_departments');
-            savedDepartmentsMetaRaw = localStorage.getItem('sfms_departments_meta');
-            useSavedDepartments = false;
-            if (savedDepartmentsRaw && savedDepartmentsMetaRaw) {
-              try {
-                meta = JSON.parse(savedDepartmentsMetaRaw);
-                if (meta && meta.version === DEPARTMENTS_VERSION) {
-                  useSavedDepartments = true;
-                }
-              } catch (e) {
-                useSavedDepartments = false;
-              }
-            }
-            if (useSavedDepartments && savedDepartmentsRaw) {
-              setDepartments(JSON.parse(savedDepartmentsRaw));
-            } else {
-              // Initialize with defaults (temporary) until API loads
-              initialDepartments = defaultDepartments.map(function (name, index) {
-                return {
-                  id: index + 1,
-                  name: name,
-                  status: 'ACTIVE',
-                  is_default: true
-                };
-              });
-              setDepartments(initialDepartments);
-              saveToLocalStorage('sfms_departments', initialDepartments);
-            }
+            _context2.p = 1;
+            // Initialize defaults while API loads
+            initialDepartments = defaultDepartments.map(function (name, index) {
+              return {
+                id: index + 1,
+                name: name,
+                status: 'ACTIVE',
+                is_default: true
+              };
+            });
+            setDepartments(initialDepartments);
 
-            // Always try to refresh from API so data persists to MySQL
-            _context.p = 2;
-            _context.n = 3;
+            // Try to load real departments from API
+            _context2.p = 2;
+            _context2.n = 3;
             return fetch('/api/departments');
           case 3:
-            res = _context.v;
+            res = _context2.v;
             if (!res.ok) {
-              _context.n = 5;
+              _context2.n = 5;
               break;
             }
-            _context.n = 4;
+            _context2.n = 4;
             return res.json();
           case 4:
-            data = _context.v;
+            data = _context2.v;
             deptList = (data.departments || []).map(function (d) {
               return {
                 id: d.id,
@@ -80028,34 +81549,48 @@ function SettingsPage() {
                 is_default: !!d.is_default
               };
             });
-            if (deptList.length > 0) {
-              setDepartments(deptList);
-              saveToLocalStorage('sfms_departments', deptList);
-            }
+            if (deptList.length > 0) setDepartments(deptList);
           case 5:
-            _context.n = 7;
+            _context2.n = 7;
             break;
           case 6:
-            _context.p = 6;
-            _t = _context.v;
+            _context2.p = 6;
+            _t2 = _context2.v;
           case 7:
-            // Courses (keep behaviour as before — reuse defaultDepartments)
-            savedCourses = localStorage.getItem('sfms_courses');
-            if (savedCourses) {
-              setCourses(JSON.parse(savedCourses));
-            } else {
-              initialCourses = defaultDepartments.map(function (name, index) {
-                return {
-                  id: index + 1,
-                  name: name,
-                  status: 'ACTIVE',
-                  isDefault: true
-                };
-              });
-              setCourses(initialCourses);
-              localStorage.setItem('sfms_courses', JSON.stringify(initialCourses));
+            _context2.p = 7;
+            _context2.n = 8;
+            return fetch('/api/courses');
+          case 8:
+            _res = _context2.v;
+            if (!_res.ok) {
+              _context2.n = 10;
+              break;
             }
-
+            _context2.n = 9;
+            return _res.json();
+          case 9:
+            _data = _context2.v;
+            list = (_data.courses || []).map(function (c) {
+              return {
+                id: c.id,
+                name: (c.name || '').replace(/\s*Program$/i, ''),
+                status: c.status,
+                is_default: !!c.is_default
+              };
+            });
+            setCourses(list);
+            _context2.n = 11;
+            break;
+          case 10:
+            setCourses([]);
+          case 11:
+            _context2.n = 13;
+            break;
+          case 12:
+            _context2.p = 12;
+            _t3 = _context2.v;
+            setCourses([]);
+          case 13:
             // Academic years (same as before)
             savedAcademicYears = localStorage.getItem('sfms_academic_years');
             if (savedAcademicYears) {
@@ -80072,61 +81607,61 @@ function SettingsPage() {
               setAcademicYears(initialAcademicYears);
               localStorage.setItem('sfms_academic_years', JSON.stringify(initialAcademicYears));
             }
-            _context.n = 9;
+            _context2.n = 15;
             break;
-          case 8:
-            _context.p = 8;
-            _t2 = _context.v;
-            console.error('Error loading data from localStorage:', _t2);
-          case 9:
-            _context.p = 9;
+          case 14:
+            _context2.p = 14;
+            _t4 = _context2.v;
+            console.error('Error loading data from localStorage:', _t4);
+          case 15:
+            _context2.p = 15;
             setLoading(false);
-            return _context.f(9);
-          case 10:
-            return _context.a(2);
+            return _context2.f(15);
+          case 16:
+            return _context2.a(2);
         }
-      }, _callee, null, [[2, 6], [1, 8, 9, 10]]);
+      }, _callee2, null, [[7, 12], [2, 6], [1, 14, 15, 16]]);
     }));
     return function loadFromLocalStorage() {
-      return _ref.apply(this, arguments);
+      return _ref2.apply(this, arguments);
     };
   }();
   var fetchProfile = /*#__PURE__*/function () {
-    var _ref2 = _asyncToGenerator(/*#__PURE__*/_regenerator().m(function _callee2() {
-      var res, data, u, _t3;
-      return _regenerator().w(function (_context2) {
-        while (1) switch (_context2.p = _context2.n) {
+    var _ref3 = _asyncToGenerator(/*#__PURE__*/_regenerator().m(function _callee3() {
+      var res, data, u, _t5;
+      return _regenerator().w(function (_context3) {
+        while (1) switch (_context3.p = _context3.n) {
           case 0:
-            _context2.p = 0;
-            _context2.n = 1;
+            _context3.p = 0;
+            _context3.n = 1;
             return fetch('/api/profile');
           case 1:
-            res = _context2.v;
+            res = _context3.v;
             if (!res.ok) {
-              _context2.n = 3;
+              _context3.n = 3;
               break;
             }
-            _context2.n = 2;
+            _context3.n = 2;
             return res.json();
           case 2:
-            data = _context2.v;
+            data = _context3.v;
             u = data.user || {};
             setProfileData({
               name: u.name || ''
             });
           case 3:
-            _context2.n = 5;
+            _context3.n = 5;
             break;
           case 4:
-            _context2.p = 4;
-            _t3 = _context2.v;
+            _context3.p = 4;
+            _t5 = _context3.v;
           case 5:
-            return _context2.a(2);
+            return _context3.a(2);
         }
-      }, _callee2, null, [[0, 4]]);
+      }, _callee3, null, [[0, 4]]);
     }));
     return function fetchProfile() {
-      return _ref2.apply(this, arguments);
+      return _ref3.apply(this, arguments);
     };
   }();
   var handleInputChange = function handleInputChange(e) {
@@ -80154,16 +81689,16 @@ function SettingsPage() {
     });
   };
   var handleSubmit = /*#__PURE__*/function () {
-    var _ref3 = _asyncToGenerator(/*#__PURE__*/_regenerator().m(function _callee3(e) {
-      var newItem, updatedData, csrfToken, headers, res, data, _res, _data, err, _t4;
-      return _regenerator().w(function (_context3) {
-        while (1) switch (_context3.p = _context3.n) {
+    var _ref4 = _asyncToGenerator(/*#__PURE__*/_regenerator().m(function _callee4(e) {
+      var newItem, updatedData, csrfToken, headers, res, data, _res2, _data2, err, _csrfToken, _headers, _res3, _data3, _res4, _data4, _err, _t6;
+      return _regenerator().w(function (_context4) {
+        while (1) switch (_context4.p = _context4.n) {
           case 0:
             e.preventDefault();
             setErrors([]);
-            _context3.p = 1;
+            _context4.p = 1;
             if (!(currentView === 'departments')) {
-              _context3.n = 12;
+              _context4.n = 12;
               break;
             }
             csrfToken = getCsrfToken();
@@ -80174,10 +81709,10 @@ function SettingsPage() {
             };
             if (csrfToken) headers['X-CSRF-TOKEN'] = csrfToken;
             if (!editingItem) {
-              _context3.n = 6;
+              _context4.n = 6;
               break;
             }
-            _context3.n = 2;
+            _context4.n = 2;
             return fetch("/api/departments/".concat(editingItem.id), {
               method: 'PUT',
               headers: headers,
@@ -80187,26 +81722,26 @@ function SettingsPage() {
               })
             });
           case 2:
-            res = _context3.v;
-            _context3.n = 3;
+            res = _context4.v;
+            _context4.n = 3;
             return res.json();
           case 3:
-            data = _context3.v;
+            data = _context4.v;
             if (res.ok) {
-              _context3.n = 4;
+              _context4.n = 4;
               break;
             }
             setErrors([data.message || 'Failed to update department']);
-            return _context3.a(2);
+            return _context4.a(2);
           case 4:
-            _context3.n = 5;
+            _context4.n = 5;
             return refetchDepartments();
           case 5:
             setToastMessage(data.success || 'Department updated successfully!');
-            _context3.n = 11;
+            _context4.n = 11;
             break;
           case 6:
-            _context3.n = 7;
+            _context4.n = 7;
             return fetch('/api/departments', {
               method: 'POST',
               headers: headers,
@@ -80216,23 +81751,23 @@ function SettingsPage() {
               })
             });
           case 7:
-            _res = _context3.v;
-            _context3.n = 8;
-            return _res.json();
+            _res2 = _context4.v;
+            _context4.n = 8;
+            return _res2.json();
           case 8:
-            _data = _context3.v;
-            if (_res.ok) {
-              _context3.n = 9;
+            _data2 = _context4.v;
+            if (_res2.ok) {
+              _context4.n = 9;
               break;
             }
-            err = _data.errors ? Object.values(_data.errors).flat() : [_data.message || 'Failed to add department'];
+            err = _data2.errors ? Object.values(_data2.errors).flat() : [_data2.message || 'Failed to add department'];
             setErrors(err);
-            return _context3.a(2);
+            return _context4.a(2);
           case 9:
-            _context3.n = 10;
+            _context4.n = 10;
             return refetchDepartments();
           case 10:
-            setToastMessage(_data.success || 'Department added successfully!');
+            setToastMessage(_data2.success || 'Department added successfully!');
 
             // Add notification for new department
             pushNotification({
@@ -80244,40 +81779,95 @@ function SettingsPage() {
               read: false
             });
           case 11:
-            _context3.n = 13;
+            _context4.n = 24;
             break;
           case 12:
-            if (currentView === 'courses') {
-              if (editingItem) {
-                updatedData = courses.map(function (course) {
-                  return course.id === editingItem.id ? _objectSpread(_objectSpread({}, course), courseFormData) : course;
-                });
-                setCourses(updatedData);
-                saveToLocalStorage('sfms_courses', updatedData);
-                setToastMessage('Course updated successfully!');
-              } else {
-                newItem = {
-                  id: Date.now(),
-                  name: courseFormData.name,
-                  status: courseFormData.status,
-                  isDefault: false
-                };
-                updatedData = [newItem].concat(_toConsumableArray(courses));
-                setCourses(updatedData);
-                saveToLocalStorage('sfms_courses', updatedData);
-                setToastMessage('Course added successfully!');
+            if (!(currentView === 'courses')) {
+              _context4.n = 23;
+              break;
+            }
+            _csrfToken = getCsrfToken();
+            _headers = {
+              'Content-Type': 'application/json',
+              'Accept': 'application/json',
+              'X-Requested-With': 'XMLHttpRequest'
+            };
+            if (_csrfToken) _headers['X-CSRF-TOKEN'] = _csrfToken;
+            if (!editingItem) {
+              _context4.n = 17;
+              break;
+            }
+            _context4.n = 13;
+            return fetch("/api/courses/".concat(editingItem.id), {
+              method: 'PUT',
+              headers: _headers,
+              body: JSON.stringify({
+                name: courseFormData.name,
+                status: courseFormData.status
+              })
+            });
+          case 13:
+            _res3 = _context4.v;
+            _context4.n = 14;
+            return _res3.json();
+          case 14:
+            _data3 = _context4.v;
+            if (_res3.ok) {
+              _context4.n = 15;
+              break;
+            }
+            setErrors([_data3.message || 'Failed to update course']);
+            return _context4.a(2);
+          case 15:
+            _context4.n = 16;
+            return refetchCourses();
+          case 16:
+            setToastMessage(_data3.success || 'Course updated successfully!');
+            _context4.n = 22;
+            break;
+          case 17:
+            _context4.n = 18;
+            return fetch('/api/courses', {
+              method: 'POST',
+              headers: _headers,
+              body: JSON.stringify({
+                name: courseFormData.name,
+                status: courseFormData.status
+              })
+            });
+          case 18:
+            _res4 = _context4.v;
+            _context4.n = 19;
+            return _res4.json();
+          case 19:
+            _data4 = _context4.v;
+            if (_res4.ok) {
+              _context4.n = 20;
+              break;
+            }
+            _err = _data4.errors ? Object.values(_data4.errors).flat() : [_data4.message || 'Failed to add course'];
+            setErrors(_err);
+            return _context4.a(2);
+          case 20:
+            _context4.n = 21;
+            return refetchCourses();
+          case 21:
+            setToastMessage(_data4.success || 'Course added successfully!');
 
-                // Add notification for new course
-                pushNotification({
-                  id: "course-create-".concat(Date.now()),
-                  type: 'success',
-                  title: 'New course added',
-                  desc: courseFormData.name,
-                  time: Date.now(),
-                  read: false
-                });
-              }
-            } else if (currentView === 'academic-years') {
+            // Add notification for new course
+            pushNotification({
+              id: "course-create-".concat(Date.now()),
+              type: 'success',
+              title: 'New course added',
+              desc: courseFormData.name,
+              time: Date.now(),
+              read: false
+            });
+          case 22:
+            _context4.n = 24;
+            break;
+          case 23:
+            if (currentView === 'academic-years') {
               if (editingItem) {
                 updatedData = academicYears.map(function (year) {
                   return year.id === editingItem.id ? _objectSpread(_objectSpread({}, year), academicYearFormData) : year;
@@ -80308,7 +81898,7 @@ function SettingsPage() {
                 });
               }
             }
-          case 13:
+          case 24:
             setShowModal(false);
             setEditingItem(null);
             setShowToast(true);
@@ -80316,41 +81906,41 @@ function SettingsPage() {
             setTimeout(function () {
               return setShowToast(false);
             }, 3000);
-            _context3.n = 15;
+            _context4.n = 26;
             break;
-          case 14:
-            _context3.p = 14;
-            _t4 = _context3.v;
-            console.error('Error saving:', _t4);
+          case 25:
+            _context4.p = 25;
+            _t6 = _context4.v;
+            console.error('Error saving:', _t6);
             setErrors(['Error occurred while saving. Please try again.']);
-          case 15:
-            return _context3.a(2);
+          case 26:
+            return _context4.a(2);
         }
-      }, _callee3, null, [[1, 14]]);
+      }, _callee4, null, [[1, 25]]);
     }));
     return function handleSubmit(_x) {
-      return _ref3.apply(this, arguments);
+      return _ref4.apply(this, arguments);
     };
   }();
   var refetchDepartments = /*#__PURE__*/function () {
-    var _ref4 = _asyncToGenerator(/*#__PURE__*/_regenerator().m(function _callee4() {
-      var res, data, list, _t5;
-      return _regenerator().w(function (_context4) {
-        while (1) switch (_context4.p = _context4.n) {
+    var _ref5 = _asyncToGenerator(/*#__PURE__*/_regenerator().m(function _callee5() {
+      var res, data, list, _t7;
+      return _regenerator().w(function (_context5) {
+        while (1) switch (_context5.p = _context5.n) {
           case 0:
-            _context4.p = 0;
-            _context4.n = 1;
+            _context5.p = 0;
+            _context5.n = 1;
             return fetch('/api/departments');
           case 1:
-            res = _context4.v;
+            res = _context5.v;
             if (!res.ok) {
-              _context4.n = 3;
+              _context5.n = 3;
               break;
             }
-            _context4.n = 2;
+            _context5.n = 2;
             return res.json();
           case 2:
-            data = _context4.v;
+            data = _context5.v;
             list = (data.departments || []).map(function (d) {
               return {
                 id: d.id,
@@ -80360,20 +81950,19 @@ function SettingsPage() {
               };
             });
             setDepartments(list);
-            saveToLocalStorage('sfms_departments', list);
           case 3:
-            _context4.n = 5;
+            _context5.n = 5;
             break;
           case 4:
-            _context4.p = 4;
-            _t5 = _context4.v;
+            _context5.p = 4;
+            _t7 = _context5.v;
           case 5:
-            return _context4.a(2);
+            return _context5.a(2);
         }
-      }, _callee4, null, [[0, 4]]);
+      }, _callee5, null, [[0, 4]]);
     }));
     return function refetchDepartments() {
-      return _ref4.apply(this, arguments);
+      return _ref5.apply(this, arguments);
     };
   }();
   var resetForms = function resetForms() {
@@ -80411,87 +82000,107 @@ function SettingsPage() {
     setShowModal(true);
   };
   var handleDelete = /*#__PURE__*/function () {
-    var _ref5 = _asyncToGenerator(/*#__PURE__*/_regenerator().m(function _callee5(item) {
-      var updatedData, res, data, _t6;
-      return _regenerator().w(function (_context5) {
-        while (1) switch (_context5.p = _context5.n) {
+    var _ref6 = _asyncToGenerator(/*#__PURE__*/_regenerator().m(function _callee6(item) {
+      var updatedData, res, data, _res5, _data5, _t8;
+      return _regenerator().w(function (_context6) {
+        while (1) switch (_context6.p = _context6.n) {
           case 0:
             if (!item.is_default) {
-              _context5.n = 1;
+              _context6.n = 1;
               break;
             }
             alert('Default items cannot be deleted.');
-            return _context5.a(2);
+            return _context6.a(2);
           case 1:
             if (window.confirm("Are you sure you want to delete \"".concat(item.name || item.year, "\"?"))) {
-              _context5.n = 2;
+              _context6.n = 2;
               break;
             }
-            return _context5.a(2);
+            return _context6.a(2);
           case 2:
-            _context5.p = 2;
+            _context6.p = 2;
             if (!(currentView === 'departments')) {
-              _context5.n = 6;
+              _context6.n = 6;
               break;
             }
-            _context5.n = 3;
+            _context6.n = 3;
             return fetch("/api/departments/".concat(item.id), {
               method: 'DELETE'
             });
           case 3:
-            res = _context5.v;
+            res = _context6.v;
             if (res.ok) {
-              _context5.n = 5;
+              _context6.n = 5;
               break;
             }
-            _context5.n = 4;
+            _context6.n = 4;
             return res.json();
           case 4:
-            data = _context5.v;
+            data = _context6.v;
             setErrors([data.message || 'Failed to delete department.']);
-            return _context5.a(2);
+            return _context6.a(2);
           case 5:
             updatedData = departments.filter(function (dept) {
               return dept.id !== item.id;
             });
             setDepartments(updatedData);
-            saveToLocalStorage('sfms_departments', updatedData);
-            _context5.n = 7;
+            _context6.n = 12;
             break;
           case 6:
-            if (currentView === 'courses') {
-              updatedData = courses.filter(function (course) {
-                return course.id !== item.id;
-              });
-              setCourses(updatedData);
-              saveToLocalStorage('sfms_courses', updatedData);
-            } else if (currentView === 'academic-years') {
+            if (!(currentView === 'courses')) {
+              _context6.n = 11;
+              break;
+            }
+            _context6.n = 7;
+            return fetch("/api/courses/".concat(item.id), {
+              method: 'DELETE'
+            });
+          case 7:
+            _res5 = _context6.v;
+            if (_res5.ok) {
+              _context6.n = 9;
+              break;
+            }
+            _context6.n = 8;
+            return _res5.json();
+          case 8:
+            _data5 = _context6.v;
+            setErrors([_data5.message || 'Failed to delete course.']);
+            return _context6.a(2);
+          case 9:
+            _context6.n = 10;
+            return refetchCourses();
+          case 10:
+            _context6.n = 12;
+            break;
+          case 11:
+            if (currentView === 'academic-years') {
               updatedData = academicYears.filter(function (year) {
                 return year.id !== item.id;
               });
               setAcademicYears(updatedData);
               saveToLocalStorage('sfms_academic_years', updatedData);
             }
-          case 7:
+          case 12:
             setToastMessage('Item deleted successfully!');
             setShowToast(true);
             setTimeout(function () {
               return setShowToast(false);
             }, 3000);
-            _context5.n = 9;
+            _context6.n = 14;
             break;
-          case 8:
-            _context5.p = 8;
-            _t6 = _context5.v;
-            console.error('Error deleting:', _t6);
+          case 13:
+            _context6.p = 13;
+            _t8 = _context6.v;
+            console.error('Error deleting:', _t8);
             setErrors(['Error occurred while deleting. Please try again.']);
-          case 9:
-            return _context5.a(2);
+          case 14:
+            return _context6.a(2);
         }
-      }, _callee5, null, [[2, 8]]);
+      }, _callee6, null, [[2, 13]]);
     }));
     return function handleDelete(_x2) {
-      return _ref5.apply(this, arguments);
+      return _ref6.apply(this, arguments);
     };
   }();
   var openAddModal = function openAddModal() {
@@ -80506,25 +82115,25 @@ function SettingsPage() {
     resetForms();
   };
   var toggleStatus = /*#__PURE__*/function () {
-    var _ref6 = _asyncToGenerator(/*#__PURE__*/_regenerator().m(function _callee6(item) {
-      var updatedData, newStatus, res, data, _t7;
-      return _regenerator().w(function (_context6) {
-        while (1) switch (_context6.p = _context6.n) {
+    var _ref7 = _asyncToGenerator(/*#__PURE__*/_regenerator().m(function _callee7(item) {
+      var updatedData, newStatus, res, data, _res6, _data6, _t9;
+      return _regenerator().w(function (_context7) {
+        while (1) switch (_context7.p = _context7.n) {
           case 0:
             if (!item.is_default) {
-              _context6.n = 1;
+              _context7.n = 1;
               break;
             }
             alert('Default items status cannot be changed.');
-            return _context6.a(2);
+            return _context7.a(2);
           case 1:
-            _context6.p = 1;
+            _context7.p = 1;
             newStatus = item.status === 'ACTIVE' ? 'INACTIVE' : 'ACTIVE';
             if (!(currentView === 'departments')) {
-              _context6.n = 5;
+              _context7.n = 5;
               break;
             }
-            _context6.n = 2;
+            _context7.n = 2;
             return fetch("/api/departments/".concat(item.id), {
               method: 'PUT',
               headers: {
@@ -80535,17 +82144,17 @@ function SettingsPage() {
               })
             });
           case 2:
-            res = _context6.v;
+            res = _context7.v;
             if (res.ok) {
-              _context6.n = 4;
+              _context7.n = 4;
               break;
             }
-            _context6.n = 3;
+            _context7.n = 3;
             return res.json();
           case 3:
-            data = _context6.v;
+            data = _context7.v;
             setErrors([data.message || 'Failed to update status.']);
-            return _context6.a(2);
+            return _context7.a(2);
           case 4:
             updatedData = departments.map(function (dept) {
               return dept.id === item.id ? _objectSpread(_objectSpread({}, dept), {}, {
@@ -80553,19 +82162,43 @@ function SettingsPage() {
               }) : dept;
             });
             setDepartments(updatedData);
-            saveToLocalStorage('sfms_departments', updatedData);
-            _context6.n = 6;
+            _context7.n = 11;
             break;
           case 5:
-            if (currentView === 'courses') {
-              updatedData = courses.map(function (course) {
-                return course.id === item.id ? _objectSpread(_objectSpread({}, course), {}, {
-                  status: newStatus
-                }) : course;
-              });
-              setCourses(updatedData);
-              saveToLocalStorage('sfms_courses', updatedData);
-            } else if (currentView === 'academic-years') {
+            if (!(currentView === 'courses')) {
+              _context7.n = 10;
+              break;
+            }
+            _context7.n = 6;
+            return fetch("/api/courses/".concat(item.id), {
+              method: 'PUT',
+              headers: {
+                'Content-Type': 'application/json'
+              },
+              body: JSON.stringify({
+                status: newStatus
+              })
+            });
+          case 6:
+            _res6 = _context7.v;
+            if (_res6.ok) {
+              _context7.n = 8;
+              break;
+            }
+            _context7.n = 7;
+            return _res6.json();
+          case 7:
+            _data6 = _context7.v;
+            setErrors([_data6.message || 'Failed to update status.']);
+            return _context7.a(2);
+          case 8:
+            _context7.n = 9;
+            return refetchCourses();
+          case 9:
+            _context7.n = 11;
+            break;
+          case 10:
+            if (currentView === 'academic-years') {
               updatedData = academicYears.map(function (year) {
                 return year.id === item.id ? _objectSpread(_objectSpread({}, year), {}, {
                   status: newStatus
@@ -80574,26 +82207,26 @@ function SettingsPage() {
               setAcademicYears(updatedData);
               saveToLocalStorage('sfms_academic_years', updatedData);
             }
-          case 6:
+          case 11:
             setToastMessage('Status updated successfully!');
             setShowToast(true);
             setTimeout(function () {
               return setShowToast(false);
             }, 3000);
-            _context6.n = 8;
+            _context7.n = 13;
             break;
-          case 7:
-            _context6.p = 7;
-            _t7 = _context6.v;
-            console.error('Error updating status:', _t7);
+          case 12:
+            _context7.p = 12;
+            _t9 = _context7.v;
+            console.error('Error updating status:', _t9);
             setErrors(['Error occurred while updating status. Please try again.']);
-          case 8:
-            return _context6.a(2);
+          case 13:
+            return _context7.a(2);
         }
-      }, _callee6, null, [[1, 7]]);
+      }, _callee7, null, [[1, 12]]);
     }));
     return function toggleStatus(_x3) {
-      return _ref6.apply(this, arguments);
+      return _ref7.apply(this, arguments);
     };
   }();
 
@@ -81410,7 +83043,7 @@ function SettingsPage() {
                         value: formData.name,
                         onChange: handleInputChange,
                         required: true,
-                        placeholder: "e.g., Computer Science Program"
+                        placeholder: "e.g., Computer Science"
                       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
                         className: "form-text",
                         children: "This will appear in the \"Department\" dropdown when adding faculty members."
@@ -81451,7 +83084,7 @@ function SettingsPage() {
                         value: courseFormData.name,
                         onChange: handleCourseInputChange,
                         required: true,
-                        placeholder: "e.g., Computer Science Program"
+                        placeholder: "e.g., Computer Science"
                       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
                         className: "form-text",
                         children: "This will appear in the \"Course\" dropdown when adding students."
@@ -81543,6 +83176,146 @@ function SettingsPage() {
     })]
   });
 }
+
+/***/ }),
+
+/***/ "./resources/js/utils/theme.js":
+/*!*************************************!*\
+  !*** ./resources/js/utils/theme.js ***!
+  \*************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   applyTheme: () => (/* binding */ applyTheme),
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__),
+/* harmony export */   getStoredTheme: () => (/* binding */ getStoredTheme),
+/* harmony export */   initTheme: () => (/* binding */ initTheme),
+/* harmony export */   saveTheme: () => (/* binding */ saveTheme),
+/* harmony export */   toggleTheme: () => (/* binding */ toggleTheme)
+/* harmony export */ });
+// Theme utility: manages light/dark theme by toggling a CSS class and
+// the Bootstrap `data-bs-theme` attribute on the document element.
+// We set the attribute so Bootstrap variable overrides are applied while
+// leaving accent colors (like the primary blue) intact.
+var THEME_KEY = 'sfms_theme';
+var DARK_CLASS = 'sfms-theme-dark';
+function setDocumentThemeAttribute(theme) {
+  try {
+    var root = document.documentElement || document.body;
+    if (theme === 'dark') {
+      root.classList.add(DARK_CLASS);
+      root.setAttribute('data-bs-theme', 'dark');
+      // inject runtime overrides so components using .bg-white become dark
+      try {
+        injectDarkOverrides();
+      } catch (e) {}
+    } else {
+      root.classList.remove(DARK_CLASS);
+      // explicit set to light so Bootstrap uses light variables
+      root.setAttribute('data-bs-theme', 'light');
+      try {
+        removeDarkOverrides();
+      } catch (e) {}
+    }
+  } catch (e) {}
+}
+
+// Runtime CSS overrides injected for dark mode to ensure elements that use
+// explicit `bg-white` classes (and similar) become dark without rebuilding
+// CSS. We also add support for components like cards, modal windows, and
+// dropdowns used in this app.
+var DARK_OVERRIDES_ID = 'sfms-dark-overrides';
+var DARK_OVERRIDES_CSS = "\n[data-bs-theme=\"dark\"] .bg-white,\n.sfms-theme-dark .bg-white,\n[data-bs-theme=\"dark\"] .card,\n.sfms-theme-dark .card,\n[data-bs-theme=\"dark\"] .sfms-modal-window,\n.sfms-theme-dark .sfms-modal-window,\n[data-bs-theme=\"dark\"] .notifications-dropdown,\n.sfms-theme-dark .notifications-dropdown {\n    background-color: var(--bs-light-bg-subtle) !important;\n    color: var(--bs-body-color) !important;\n    border-color: var(--bs-border-color) !important;\n}\n\n/* Notifications dropdown: ensure all text inside the dropdown is readable\n   and that selection/highlight colors are appropriate in dark mode. */\n[data-bs-theme=\"dark\"] .notifications-dropdown,\n.sfms-theme-dark .notifications-dropdown {\n    background-color: var(--bs-light-bg-subtle) !important;\n    color: var(--bs-body-color) !important;\n}\n[data-bs-theme=\"dark\"] .notifications-dropdown .dropdown-list,\n.sfms-theme-dark .notifications-dropdown .dropdown-list,\n[data-bs-theme=\"dark\"] .notifications-dropdown .dropdown-item,\n.sfms-theme-dark .notifications-dropdown .dropdown-item {\n    color: var(--bs-body-color) !important;\n}\n[data-bs-theme=\"dark\"] .notifications-dropdown a,\n.sfms-theme-dark .notifications-dropdown a {\n    color: var(--bs-primary) !important;\n}\n[data-bs-theme=\"dark\"] .notifications-dropdown ::selection,\n.sfms-theme-dark .notifications-dropdown ::selection {\n    background: rgba(0,123,255,0.35) !important;\n    color: #fff !important;\n}\n\n/* Profile page panels: header, left nav and right tab panels */\n[data-bs-theme=\"dark\"] .profile-header,\n.sfms-theme-dark .profile-header,\n[data-bs-theme=\"dark\"] .profile-nav,\n.sfms-theme-dark .profile-nav,\n[data-bs-theme=\"dark\"] .profile-tab,\n.sfms-theme-dark .profile-tab,\n[data-bs-theme=\"dark\"] .profile-content,\n.sfms-theme-dark .profile-content {\n    background-color: var(--bs-light-bg-subtle) !important;\n    color: var(--bs-body-color) !important;\n    border-color: var(--bs-border-color) !important;\n}\n\n[data-bs-theme=\"dark\"] .topbar,\n.sfms-theme-dark .topbar {\n    background-color: var(--bs-secondary-bg) !important;\n    color: var(--bs-body-color) !important;\n}\n\n/* Ensure all common text elements inside dark panels and main content are readable.\n   This forces headings, paragraphs, links, table cells, labels, and small text\n   to use the theme body color. We still keep semantic classes like .text-primary\n   and .btn-primary untouched elsewhere. */\n[data-bs-theme=\"dark\"] .sfms-modal *,\n.sfms-theme-dark .sfms-modal *,\n[data-bs-theme=\"dark\"] .settings-modal-window *,\n.sfms-theme-dark .settings-modal-window *,\n[data-bs-theme=\"dark\"] .sfms-main *,\n.sfms-theme-dark .sfms-main *,\n[data-bs-theme=\"dark\"] .reports-page *,\n.sfms-theme-dark .reports-page *,\n[data-bs-theme=\"dark\"] .faculty-page *,\n.sfms-theme-dark .faculty-page *,\n[data-bs-theme=\"dark\"] .student-report *,\n.sfms-theme-dark .student-report *,\n[data-bs-theme=\"dark\"] .faculty-report *,\n.sfms-theme-dark .faculty-report * {\n    color: var(--bs-body-color) !important;\n}\n\n/* Ensure links inside dark panels remain visible but keep primary accents */\n[data-bs-theme=\"dark\"] .sfms-modal a,\n.sfms-theme-dark .sfms-modal a,\n[data-bs-theme=\"dark\"] .sfms-main a,\n.sfms-theme-dark .sfms-main a {\n    color: var(--bs-primary) !important;\n}\n\n/* Selection contrast inside dark panels */\n[data-bs-theme=\"dark\"] .sfms-modal ::selection,\n.sfms-theme-dark .sfms-modal ::selection,\n[data-bs-theme=\"dark\"] .sfms-main ::selection,\n.sfms-theme-dark .sfms-main ::selection {\n    background: rgba(0,123,255,0.35) !important;\n    color: #fff !important;\n}\n/* Tone down very bright accent surfaces (table header, pills, action buttons)\n   so they appear static and not overly luminous in dark mode. Keep brand blue\n   for active states but use slightly darker/muted fills and remove heavy glows. */\n[data-bs-theme=\"dark\"] .table thead th,\n.sfms-theme-dark .table thead th {\n    background: linear-gradient(180deg, rgba(10,90,180,0.98), rgba(8,76,153,0.98)) !important;\n    color: #ffffff !important;\n    border-bottom: 1px solid rgba(0,0,0,0.25) !important;\n}\n\n[data-bs-theme=\"dark\"] .pill,\n.sfms-theme-dark .pill,\n[data-bs-theme=\"dark\"] .nav-pills .nav-link,\n.sfms-theme-dark .nav-pills .nav-link {\n    background-color: rgba(255,255,255,0.03) !important;\n    color: var(--bs-body-color) !important;\n    border: 1px solid rgba(255,255,255,0.05) !important;\n}\n\n[data-bs-theme=\"dark\"] .pill.active,\n.sfms-theme-dark .pill.active,\n[data-bs-theme=\"dark\"] .nav-pills .nav-link.active,\n.sfms-theme-dark .nav-pills .nav-link.active {\n    background-color: var(--bs-primary) !important;\n    color: #fff !important;\n    box-shadow: none !important;\n}\n\n/* Action buttons (Edit/Delete) - keep blue but remove heavy shadow/highlight */\n[data-bs-theme=\"dark\"] .btn-primary,\n.sfms-theme-dark .btn-primary {\n    background-color: #0b74d9 !important;\n    border-color: #0b74d9 !important;\n    color: #fff !important;\n    box-shadow: none !important;\n}\n\n[data-bs-theme=\"dark\"] .btn-primary:hover,\n.sfms-theme-dark .btn-primary:hover {\n    filter: brightness(0.95) !important;\n}\n\n/* Status badges - slightly muted green */\n[data-bs-theme=\"dark\"] .badge-active,\n.sfms-theme-dark .badge-active {\n    background-color: rgba(144, 238, 144, 0.18) !important;\n    color: #dfffe0 !important;\n    border: 1px solid rgba(144,238,144,0.06) !important;\n}\n\n/* Topbar small controls (notification, settings, avatar) - muted backgrounds */\n[data-bs-theme=\"dark\"] .top-icons .icon-circle,\n.sfms-theme-dark .top-icons .icon-circle,\n[data-bs-theme=\"dark\"] .profile-chip,\n.sfms-theme-dark .profile-chip {\n    background-color: rgba(255,255,255,0.03) !important;\n    color: var(--bs-body-color) !important;\n    border: 1px solid rgba(255,255,255,0.05) !important;\n}\n\n/* Ensure table rows text remains readable while reducing high-contrast whites */\n[data-bs-theme=\"dark\"] .table td,\n.sfms-theme-dark .table td,\n[data-bs-theme=\"dark\"] .table th,\n.sfms-theme-dark .table th {\n    color: var(--bs-body-color) !important;\n}\n/* Ensure the page background and main content areas also switch to dark */\n[data-bs-theme=\"dark\"],\n.sfms-theme-dark,\n[data-bs-theme=\"dark\"] body,\n.sfms-theme-dark body,\n[data-bs-theme=\"dark\"] .sfms-main,\n.sfms-theme-dark .sfms-main,\n[data-bs-theme=\"dark\"] .settings-page,\n.sfms-theme-dark .settings-page,\n[data-bs-theme=\"dark\"] .settings-content,\n.sfms-theme-dark .settings-content,\n[data-bs-theme=\"dark\"] .reports-page,\n.sfms-theme-dark .reports-page,\n[data-bs-theme=\"dark\"] .faculty-page,\n.sfms-theme-dark .faculty-page,\n[data-bs-theme=\"dark\"] .student-report,\n.sfms-theme-dark .student-report,\n[data-bs-theme=\"dark\"] .faculty-report,\n.sfms-theme-dark .faculty-report {\n    background-color: var(--bs-body-bg) !important;\n    color: var(--bs-body-color) !important;\n}\n\n/* Ensure modal backdrop content uses dark surface */\n[data-bs-theme=\"dark\"] .sfms-modal-window .modal-form,\n.sfms-theme-dark .sfms-modal-window .modal-form {\n    background-color: transparent !important;\n}\n\n/* Muted pill / nav buttons and outline adjustments so inactive pills aren't bright white */\n[data-bs-theme=\"dark\"] .nav-btn,\n.sfms-theme-dark .nav-btn {\n    background-color: rgba(255,255,255,0.02) !important;\n    color: var(--bs-body-color) !important;\n    border: 1px solid rgba(255,255,255,0.06) !important;\n    box-shadow: none !important;\n}\n\n[data-bs-theme=\"dark\"] .nav-btn.active,\n.sfms-theme-dark .nav-btn.active {\n    background-color: var(--bs-primary) !important;\n    color: #fff !important;\n    box-shadow: none !important;\n}\n\n/* FullCalendar: make calendar panels and day cells readable in dark mode */\n[data-bs-theme=\"dark\"] .fc,\n.sfms-theme-dark .fc {\n    background: transparent !important;\n    color: var(--bs-body-color) !important;\n}\n[data-bs-theme=\"dark\"] .fc .fc-toolbar,\n.sfms-theme-dark .fc .fc-toolbar {\n    background: rgba(255,255,255,0.02) !important;\n    color: var(--bs-body-color) !important;\n    border-bottom: 1px solid rgba(255,255,255,0.06) !important;\n}\n[data-bs-theme=\"dark\"] .fc .fc-scrollgrid,\n.sfms-theme-dark .fc .fc-scrollgrid {\n    background: transparent !important;\n}\n[data-bs-theme=\"dark\"] .fc .fc-daygrid-day-frame,\n.sfms-theme-dark .fc .fc-daygrid-day-frame {\n    background: rgba(255,255,255,0.02) !important;\n    border: 1px solid rgba(255,255,255,0.03) !important;\n    color: var(--bs-body-color) !important;\n}\n[data-bs-theme=\"dark\"] .fc .fc-daygrid-day-number,\n.sfms-theme-dark .fc .fc-daygrid-day-number {\n    color: rgba(255,255,255,0.55) !important;\n}\n\n/* Aggressively target the calendar surface container (cards & wrappers) */\n[data-bs-theme=\"dark\"] .card .fc,\n.sfms-theme-dark .card .fc,\n[data-bs-theme=\"dark\"] .calendar-card,\n.sfms-theme-dark .calendar-card,\n[data-bs-theme=\"dark\"] .calendar-wrapper,\n.sfms-theme-dark .calendar-wrapper {\n    background-color: rgba(255,255,255,0.02) !important;\n    color: var(--bs-body-color) !important;\n}\n\n/* Ensure the big white calendar panel that FullCalendar sometimes renders is covered */\n[data-bs-theme=\"dark\"] .fc .fc-daygrid,\n.sfms-theme-dark .fc .fc-daygrid,\n[data-bs-theme=\"dark\"] .fc .fc-view-harness,\n.sfms-theme-dark .fc .fc-view-harness,\n[data-bs-theme=\"dark\"] .fc .fc-scroller,\n.sfms-theme-dark .fc .fc-scroller,\n[data-bs-theme=\"dark\"] .fc .fc-daygrid-body,\n.sfms-theme-dark .fc .fc-daygrid-body {\n    background: rgba(255,255,255,0.01) !important;\n}\n\n/* Table body rows: reduce bright whites and give subtle separation */\n[data-bs-theme=\"dark\"] .table tbody tr,\n.sfms-theme-dark .table tbody tr {\n    background-color: rgba(255,255,255,0.01) !important;\n    border-top: 1px solid rgba(255,255,255,0.03) !important;\n}\n[data-bs-theme=\"dark\"] .table tbody tr:hover,\n.sfms-theme-dark .table tbody tr:hover {\n    background-color: rgba(255,255,255,0.02) !important;\n}\n\n/* Muted table footer (Grand Total) */\n[data-bs-theme=\"dark\"] .table tfoot,\n.sfms-theme-dark .table tfoot,\n[data-bs-theme=\"dark\"] .table tfoot tr,\n.sfms-theme-dark .table tfoot tr,\n[data-bs-theme=\"dark\"] .table tfoot td,\n.sfms-theme-dark .table tfoot td,\n[data-bs-theme=\"dark\"] .table tfoot th,\n.sfms-theme-dark .table tfoot th {\n    background-color: rgba(255,255,255,0.02) !important;\n    color: rgba(15, 14, 14, 0.65) !important;\n    border-top: 1px solid rgba(255,255,255,0.03) !important;\n}\n\n/* Reports footer (grand total) - slightly brighter but muted */\n[data-bs-theme=\"dark\"] .report-footer,\n.sfms-theme-dark .report-footer {\n    background-color: rgba(255,255,255,0.02) !important;\n    color: rgba(14, 13, 13, 0.27) !important;\n}\n\n/* Settings lists and rows */\n[data-bs-theme=\"dark\"] .settings-table tbody tr,\n.sfms-theme-dark .settings-table tbody tr,\n[data-bs-theme=\"dark\"] .list-group-item,\n.sfms-theme-dark .list-group-item {\n    background-color: rgba(255,255,255,0.02) !important;\n    color: var(--bs-body-color) !important;\n    border: 1px solid rgba(255,255,255,0.03) !important;\n}\n\n/* When a surface is light (mini white block) ensure the text inside is dark so\n   it remains readable in dark mode. We only target small/light surfaces we\n   intentionally converted to low-alpha white backgrounds above. This keeps\n   overall page chrome readable while fixing text contrast on mini panels. */\n[data-bs-theme=\"dark\"] .bg-white,\n.sfms-theme-dark .bg-white,\n[data-bs-theme=\"dark\"] .card .card-body,\n.sfms-theme-dark .card .card-body,\n[data-bs-theme=\"dark\"] .fc .fc-daygrid-day-frame,\n.sfms-theme-dark .fc .fc-daygrid-day-frame,\n[data-bs-theme=\"dark\"] .table tfoot td,\n.sfms-theme-dark .table tfoot td,\n[data-bs-theme=\"dark\"] .table tfoot th,\n.sfms-theme-dark .table tfoot th,\n[data-bs-theme=\"dark\"] .settings-table tbody tr,\n.sfms-theme-dark .settings-table tbody tr,\n[data-bs-theme=\"dark\"] .list-group-item,\n.sfms-theme-dark .list-group-item,\n[data-bs-theme=\"dark\"] .report-footer,\n.sfms-theme-dark .report-footer {\n    color: rgba(0,0,0,0.85) !important;\n}\n\n/* Dashboard stat card values use background-clip gradient in light mode which\n   becomes hard to read when the card is muted. Force a solid, dark value color\n   for readability inside small white cards. */\n[data-bs-theme=\"dark\"] .stat-card .stat-value,\n.sfms-theme-dark .stat-card .stat-value {\n    background: none !important;\n    -webkit-background-clip: unset !important;\n    background-clip: unset !important;\n    -webkit-text-fill-color: rgba(0,0,0,0.9) !important;\n    color: rgba(0,0,0,0.9) !important;\n}\n\n/* Chart titles, labels, and legend items inside chart cards should be dark\n   when the card surface is light. */\n[data-bs-theme=\"dark\"] .chart-card .chart-header h3,\n.sfms-theme-dark .chart-card .chart-header h3,\n[data-bs-theme=\"dark\"] .chart-card .chart-container,\n.sfms-theme-dark .chart-card .chart-container,\n[data-bs-theme=\"dark\"] .chart-card .bar-label,\n.sfms-theme-dark .chart-card .bar-label,\n[data-bs-theme=\"dark\"] .donut-chart-center .donut-total,\n.sfms-theme-dark .donut-chart-center .donut-total,\n[data-bs-theme=\"dark\"] .donut-chart-center .donut-label,\n.sfms-theme-dark .donut-chart-center .donut-label,\n[data-bs-theme=\"dark\"] .legend-label .legend-department,\n.sfms-theme-dark .legend-label .legend-department,\n[data-bs-theme=\"dark\"] .legend-label .legend-count,\n.sfms-theme-dark .legend-label .legend-count {\n    color: rgba(0,0,0,0.85) !important;\n}\n\n/* Small caption/text inside stat cards */\n[data-bs-theme=\"dark\"] .stat-card .stat-label,\n.sfms-theme-dark .stat-card .stat-label,\n[data-bs-theme=\"dark\"] .stat-card .stat-change,\n.sfms-theme-dark .stat-card .stat-change {\n    color: rgba(0,0,0,0.65) !important;\n}\n\n/* Muted toggle / pill labels inside table cells: the capsule background is light\n   so the label text should be dark to be readable. This targets labels and\n   any small text inside the pill controls. */\n[data-bs-theme=\"dark\"] .table .form-check-label,\n.sfms-theme-dark .table .form-check-label,\n[data-bs-theme=\"dark\"] .table .pill,\n.sfms-theme-dark .table .pill,\n[data-bs-theme=\"dark\"] .table .pill *,\n.sfms-theme-dark .table .pill * {\n    color: rgba(0,0,0,0.75) !important;\n}\n\n/* FullCalendar day numbers inside light day boxes should be darker */\n[data-bs-theme=\"dark\"] .fc .fc-daygrid-day-number,\n.sfms-theme-dark .fc .fc-daygrid-day-number {\n    color: rgba(0,0,0,0.55) !important;\n    font-weight: 600 !important;\n}\n\n/* Muted toggle / pill inputs inside tables (type column) */\n[data-bs-theme=\"dark\"] .table .form-switch,\n.sfms-theme-dark .table .form-switch,\n[data-bs-theme=\"dark\"] .table .form-check,\n.sfms-theme-dark .table .form-check,\n[data-bs-theme=\"dark\"] .table .switch,\n.sfms-theme-dark .table .switch,\n[data-bs-theme=\"dark\"] .table .onoffswitch,\n.sfms-theme-dark .table .onoffswitch {\n    background-color: rgba(255,255,255,0.02) !important;\n    border-radius: 999px !important;\n    padding: 4px !important;\n}\n[data-bs-theme=\"dark\"] .table .form-check-input,\n.sfms-theme-dark .table .form-check-input,\n[data-bs-theme=\"dark\"] .table .onoffswitch input,\n.sfms-theme-dark .table .onoffswitch input {\n    /* Muted knob / input so it's not a bright white spot */\n    background-color: rgba(255,255,255,0.14) !important;\n    border: 1px solid rgba(255,255,255,0.06) !important;\n    box-shadow: none !important;\n    color: var(--bs-body-color) !important;\n}\n    \n\n\n/* Make outline/light buttons muted in dark mode (not pure white) */\n[data-bs-theme=\"dark\"] .btn-outline-light,\n.sfms-theme-dark .btn-outline-light,\n[data-bs-theme=\"dark\"] .btn-outline-secondary,\n.sfms-theme-dark .btn-outline-secondary {\n    background-color: rgba(255,255,255,0.02) !important;\n    color: var(--bs-body-color) !important;\n    border-color: rgba(255,255,255,0.06) !important;\n}\n";
+function injectDarkOverrides() {
+  try {
+    if (document.getElementById(DARK_OVERRIDES_ID)) return;
+    var el = document.createElement('style');
+    el.id = DARK_OVERRIDES_ID;
+    el.appendChild(document.createTextNode(DARK_OVERRIDES_CSS));
+    document.head.appendChild(el);
+  } catch (e) {}
+}
+function removeDarkOverrides() {
+  try {
+    var el = document.getElementById(DARK_OVERRIDES_ID);
+    if (el && el.parentNode) el.parentNode.removeChild(el);
+  } catch (e) {}
+}
+
+// Remove trailing " Program" from visible course/department names at runtime.
+// This is a lightweight DOM fix so pages that still render names with
+// the trailing " Program" will have it stripped without changing backend code.
+function removeProgramSuffixFromElements() {
+  try {
+    var selectors = ['.course-name', '.course-title', '.list-course', '.course-col', '.department-name', '.name-col',
+    // table cells in common pages (settings, reports, faculty, student)
+    '.settings-page table td', '.reports-page table td', '.faculty-page table td', '.student-report table td', '.faculty-report table td',
+    // specific settings table first column
+    '.settings-table tbody tr td:first-child'];
+    selectors.forEach(function (sel) {
+      document.querySelectorAll(sel).forEach(function (node) {
+        try {
+          // Only replace text nodes and simple innerText to avoid breaking markup
+          var txt = node.innerText || node.textContent || '';
+          var replaced = txt.replace(/\s*Program$/i, '');
+          if (replaced !== txt) {
+            // preserve simple markup: if node has children, try to update only text nodes
+            if (node.children && node.children.length) {
+              // fallback: set innerText (simpler, avoids breaking markup)
+              node.innerText = replaced;
+            } else {
+              node.textContent = replaced;
+            }
+          }
+        } catch (e) {}
+      });
+    });
+  } catch (e) {}
+}
+function applyTheme(theme) {
+  setDocumentThemeAttribute(theme);
+}
+function saveTheme(theme) {
+  try {
+    localStorage.setItem(THEME_KEY, theme);
+  } catch (e) {}
+}
+function getStoredTheme() {
+  try {
+    return localStorage.getItem(THEME_KEY);
+  } catch (e) {
+    return null;
+  }
+}
+function initTheme() {
+  var stored = getStoredTheme();
+  var theme = stored || 'light';
+  applyTheme(theme);
+  // run DOM cleanup for course names immediately
+  try {
+    removeProgramSuffixFromElements();
+  } catch (e) {}
+  return theme;
+}
+function toggleTheme() {
+  var current = getStoredTheme() || (typeof document !== 'undefined' && (document.documentElement || document.body).classList.contains(DARK_CLASS) ? 'dark' : 'light');
+  var next = current === 'dark' ? 'light' : 'dark';
+  applyTheme(next);
+  saveTheme(next);
+  // ensure any course names are normalized after content changes
+  try {
+    removeProgramSuffixFromElements();
+  } catch (e) {}
+  return next;
+}
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+  initTheme: initTheme,
+  toggleTheme: toggleTheme,
+  applyTheme: applyTheme,
+  getStoredTheme: getStoredTheme
+});
 
 /***/ }),
 

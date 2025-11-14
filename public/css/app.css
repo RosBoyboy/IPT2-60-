@@ -15042,8 +15042,8 @@ body.sfms-modal-open {
 .settings-page .settings-content .departments-table .table .btn.btn-outline-danger:disabled,
 .settings-page .settings-content .courses-table .table .btn.btn-outline-danger:disabled,
 .settings-page .settings-content .academic-years-table .table .btn.btn-outline-danger:disabled {
-  color: #6c757d;
-  border-color: #6c757d;
+  color: #202122;
+  border-color: #8b9fb3;
   background: transparent;
   cursor: not-allowed;
 }

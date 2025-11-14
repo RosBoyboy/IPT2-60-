@@ -33,15 +33,15 @@ export default function SettingsPage() {
 
     // Default options that should always be available
     const defaultDepartments = [
-        'Computer Science Program',
-        'Business Administration Program',
-        'Arts & Sciences Program',
-        'Engineering Program',
-        'Teachers Eductation Program',
-        'Accountancy Program',
-        'Nursing Program',
-        'Criminal Justice Program',
-        'Tourism Management Program'
+        'Computer Science',
+        'Business Administration',
+        'Arts & Humanities',
+        'Engineering',
+        'Teacher Education',
+        'Accountancy',
+        'Nursing',
+        'Criminal Justice',
+        'Tourism Management'
     ];
 
     const defaultAcademicYears = [
@@ -88,6 +88,22 @@ export default function SettingsPage() {
         return null;
     };
 
+    const refetchCourses = async () => {
+        try {
+            const res = await fetch('/api/courses');
+            if (res.ok) {
+                const data = await res.json();
+                const list = (data.courses || []).map(c => ({
+                    id: c.id,
+                    name: (c.name || '').replace(/\s*Program$/i, ''),
+                    status: c.status,
+                    is_default: !!c.is_default
+                }));
+                setCourses(list);
+            }
+        } catch (e) {}
+    };
+
     const pushNotification = (notification) => {
         try {
             const raw = localStorage.getItem('sfms_notifications');
@@ -108,9 +124,6 @@ export default function SettingsPage() {
     const saveToLocalStorage = (key, data) => {
         try {
             localStorage.setItem(key, JSON.stringify(data));
-            if (key === 'sfms_departments') {
-                localStorage.setItem('sfms_departments_meta', JSON.stringify({ version: DEPARTMENTS_VERSION, updatedAt: Date.now() }));
-            }
         } catch (error) {
             console.error('Error saving to localStorage:', error);
         }
@@ -120,37 +133,16 @@ export default function SettingsPage() {
     const loadFromLocalStorage = async () => {
         setLoading(true);
         try {
-            // Departments with version check (local cache)
-            const savedDepartmentsRaw = localStorage.getItem('sfms_departments');
-            const savedDepartmentsMetaRaw = localStorage.getItem('sfms_departments_meta');
-            let useSavedDepartments = false;
+            // Initialize defaults while API loads
+            const initialDepartments = defaultDepartments.map((name, index) => ({
+                id: index + 1,
+                name: name,
+                status: 'ACTIVE',
+                is_default: true
+            }));
+            setDepartments(initialDepartments);
 
-            if (savedDepartmentsRaw && savedDepartmentsMetaRaw) {
-                try {
-                    const meta = JSON.parse(savedDepartmentsMetaRaw);
-                    if (meta && meta.version === DEPARTMENTS_VERSION) {
-                        useSavedDepartments = true;
-                    }
-                } catch (e) {
-                    useSavedDepartments = false;
-                }
-            }
-
-            if (useSavedDepartments && savedDepartmentsRaw) {
-                setDepartments(JSON.parse(savedDepartmentsRaw));
-            } else {
-                // Initialize with defaults (temporary) until API loads
-                const initialDepartments = defaultDepartments.map((name, index) => ({
-                    id: index + 1,
-                    name: name,
-                    status: 'ACTIVE',
-                    is_default: true
-                }));
-                setDepartments(initialDepartments);
-                saveToLocalStorage('sfms_departments', initialDepartments);
-            }
-
-            // Always try to refresh from API so data persists to MySQL
+            // Try to load real departments from API
             try {
                 const res = await fetch('/api/departments');
                 if (res.ok) {
@@ -161,28 +153,30 @@ export default function SettingsPage() {
                         status: d.status,
                         is_default: !!d.is_default
                     }));
-                    if (deptList.length > 0) {
-                        setDepartments(deptList);
-                        saveToLocalStorage('sfms_departments', deptList);
-                    }
+                    if (deptList.length > 0) setDepartments(deptList);
                 }
             } catch (e) {
-                // ignore API errors; UI will keep using cache/defaults
+                // ignore API errors; UI will keep using defaults
             }
 
-            // Courses (keep behaviour as before — reuse defaultDepartments)
-            const savedCourses = localStorage.getItem('sfms_courses');
-            if (savedCourses) {
-                setCourses(JSON.parse(savedCourses));
-            } else {
-                const initialCourses = defaultDepartments.map((name, index) => ({
-                    id: index + 1,
-                    name: name,
-                    status: 'ACTIVE',
-                    isDefault: true
-                }));
-                setCourses(initialCourses);
-                localStorage.setItem('sfms_courses', JSON.stringify(initialCourses));
+            // Courses — try to load from API first, fallback to localStorage
+            // Load courses from API
+            try {
+                const res = await fetch('/api/courses');
+                if (res.ok) {
+                    const data = await res.json();
+                    const list = (data.courses || []).map(c => ({
+                        id: c.id,
+                        name: (c.name || '').replace(/\s*Program$/i, ''),
+                        status: c.status,
+                        is_default: !!c.is_default
+                    }));
+                    setCourses(list);
+                } else {
+                    setCourses([]);
+                }
+            } catch (e) {
+                setCourses([]);
             }
 
             // Academic years (same as before)
@@ -297,24 +291,41 @@ export default function SettingsPage() {
                     });
                 }
             } else if (currentView === 'courses') {
+                const csrfToken = getCsrfToken();
+                const headers = {
+                    'Content-Type': 'application/json',
+                    'Accept': 'application/json',
+                    'X-Requested-With': 'XMLHttpRequest',
+                };
+                if (csrfToken) headers['X-CSRF-TOKEN'] = csrfToken;
+
                 if (editingItem) {
-                    updatedData = courses.map(course => 
-                        course.id === editingItem.id ? { ...course, ...courseFormData } : course
-                    );
-                    setCourses(updatedData);
-                    saveToLocalStorage('sfms_courses', updatedData);
-                    setToastMessage('Course updated successfully!');
+                    const res = await fetch(`/api/courses/${editingItem.id}`, {
+                        method: 'PUT',
+                        headers,
+                        body: JSON.stringify({ name: courseFormData.name, status: courseFormData.status })
+                    });
+                    const data = await res.json();
+                    if (!res.ok) {
+                        setErrors([data.message || 'Failed to update course']);
+                        return;
+                    }
+                    await refetchCourses();
+                    setToastMessage(data.success || 'Course updated successfully!');
                 } else {
-                    newItem = {
-                        id: Date.now(),
-                        name: courseFormData.name,
-                        status: courseFormData.status,
-                        isDefault: false
-                    };
-                    updatedData = [newItem, ...courses];
-                    setCourses(updatedData);
-                    saveToLocalStorage('sfms_courses', updatedData);
-                    setToastMessage('Course added successfully!');
+                    const res = await fetch('/api/courses', {
+                        method: 'POST',
+                        headers,
+                        body: JSON.stringify({ name: courseFormData.name, status: courseFormData.status })
+                    });
+                    const data = await res.json();
+                    if (!res.ok) {
+                        const err = data.errors ? Object.values(data.errors).flat() : [data.message || 'Failed to add course'];
+                        setErrors(err);
+                        return;
+                    }
+                    await refetchCourses();
+                    setToastMessage(data.success || 'Course added successfully!');
 
                     // Add notification for new course
                     pushNotification({
@@ -382,7 +393,6 @@ export default function SettingsPage() {
                     is_default: !!d.is_default
                 }));
                 setDepartments(list);
-                saveToLocalStorage('sfms_departments', list);
             }
         } catch (e) {}
     };
@@ -444,11 +454,15 @@ export default function SettingsPage() {
                 }
                 updatedData = departments.filter(dept => dept.id !== item.id);
                 setDepartments(updatedData);
-                saveToLocalStorage('sfms_departments', updatedData);
             } else if (currentView === 'courses') {
-                updatedData = courses.filter(course => course.id !== item.id);
-                setCourses(updatedData);
-                saveToLocalStorage('sfms_courses', updatedData);
+                // delete via API
+                const res = await fetch(`/api/courses/${item.id}`, { method: 'DELETE' });
+                if (!res.ok) {
+                    const data = await res.json();
+                    setErrors([data.message || 'Failed to delete course.']);
+                    return;
+                }
+                await refetchCourses();
             } else if (currentView === 'academic-years') {
                 updatedData = academicYears.filter(year => year.id !== item.id);
                 setAcademicYears(updatedData);
@@ -501,13 +515,19 @@ export default function SettingsPage() {
                     dept.id === item.id ? { ...dept, status: newStatus } : dept
                 );
                 setDepartments(updatedData);
-                saveToLocalStorage('sfms_departments', updatedData);
             } else if (currentView === 'courses') {
-                updatedData = courses.map(course => 
-                    course.id === item.id ? { ...course, status: newStatus } : course
-                );
-                setCourses(updatedData);
-                saveToLocalStorage('sfms_courses', updatedData);
+                // update status via API
+                const res = await fetch(`/api/courses/${item.id}`, {
+                    method: 'PUT',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ status: newStatus })
+                });
+                if (!res.ok) {
+                    const data = await res.json();
+                    setErrors([data.message || 'Failed to update status.']);
+                    return;
+                }
+                await refetchCourses();
             } else if (currentView === 'academic-years') {
                 updatedData = academicYears.map(year => 
                     year.id === item.id ? { ...year, status: newStatus } : year
@@ -1015,7 +1035,7 @@ export default function SettingsPage() {
                                                             value={formData.name}
                                                             onChange={handleInputChange}
                                                             required
-                                                            placeholder="e.g., Computer Science Program"
+                                                            placeholder="e.g., Computer Science"
                                                         />
                                                         <div className="form-text">
                                                             This will appear in the "Department" dropdown when adding faculty members.
@@ -1050,7 +1070,7 @@ export default function SettingsPage() {
                                                             value={courseFormData.name}
                                                             onChange={handleCourseInputChange}
                                                             required
-                                                            placeholder="e.g., Computer Science Program"
+                                                            placeholder="e.g., Computer Science"
                                                         />
                                                         <div className="form-text">
                                                             This will appear in the "Course" dropdown when adding students.

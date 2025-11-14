@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Student;
+use App\Models\Course;
 use App\Models\ArchivedStudent;
 use App\Models\ActivityLog;
 use Illuminate\Http\Request;
@@ -14,7 +15,10 @@ class StudentController extends Controller
     {
         $query = Student::where('status', 'ACTIVE');
 
-        if ($request->filled('course') && $request->course !== 'All Courses') {
+        // Support filtering by course_id (preferred) or fallback to course name
+        if ($request->filled('course_id')) {
+            $query->where('course_id', $request->course_id);
+        } else if ($request->filled('course') && $request->course !== 'All Courses') {
             $query->where('course', $request->course);
         }
         if ($request->filled('year_level') && $request->year_level !== 'All Years') {
@@ -42,7 +46,8 @@ class StudentController extends Controller
         $validated = $request->validate([
             'student_number' => 'required|string|max:50|unique:students,student_number',
             'name'           => 'required|string|max:255',
-            'course'         => 'required|string|max:255',
+            'course'         => 'nullable|string|max:255',
+            'course_id'      => 'nullable|integer|exists:courses,id',
             'year_level'     => 'required|string|max:50',
             'academic_year'  => 'required|string|max:50',
             'email'          => 'nullable|email|max:255',
@@ -63,6 +68,14 @@ class StudentController extends Controller
                 $validated['age'] = Carbon::parse($validated['dob'])->age;
             } catch (\Exception $e) {
                 // ignore parse issues, age will remain as provided or null
+            }
+        }
+
+        // If course_id provided, resolve and set course name for backward compatibility
+        if (!empty($validated['course_id'])) {
+            $c = Course::find($validated['course_id']);
+            if ($c) {
+                $validated['course'] = $c->name;
             }
         }
 
@@ -90,7 +103,8 @@ class StudentController extends Controller
         $validated = $request->validate([
             'student_number' => 'required|string|max:50|unique:students,student_number,' . $student->id,
             'name'           => 'required|string|max:255',
-            'course'         => 'required|string|max:255',
+            'course'         => 'nullable|string|max:255',
+            'course_id'      => 'nullable|integer|exists:courses,id',
             'year_level'     => 'required|string|max:50',
             'academic_year'  => 'required|string|max:50',
             'email'          => 'nullable|email|max:255',
@@ -109,6 +123,14 @@ class StudentController extends Controller
             try {
                 $validated['age'] = Carbon::parse($validated['dob'])->age;
             } catch (\Exception $e) {
+            }
+        }
+
+        // If course_id provided, resolve name for backward compatibility
+        if (!empty($validated['course_id'])) {
+            $c = Course::find($validated['course_id']);
+            if ($c) {
+                $validated['course'] = $c->name;
             }
         }
 
@@ -175,7 +197,9 @@ class StudentController extends Controller
     {
         $query = ArchivedStudent::query();
 
-        if ($request->filled('course') && $request->course !== 'All Courses') {
+        if ($request->filled('course_id')) {
+            $query->where('course_id', $request->course_id);
+        } else if ($request->filled('course') && $request->course !== 'All Courses') {
             $query->where('course', $request->course);
         }
         if ($request->filled('search')) {
